@@ -1,0 +1,5 @@
+platform: group
+name: Development all lights
+entities:
+  - light.development_main_light
+  - light.development_ambient_light

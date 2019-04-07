@@ -1,0 +1,35 @@
+- platform: mqtt
+  name: "Development: Sensorio Temp"
+  state_topic: "/sensorio/development_1/DATA"
+  unit_of_measurement: "°C"
+  value_template: "{{ value_json.temperature }}"
+
+- platform: mqtt
+  name: "Development: Sensorio Hum"
+  state_topic: "/sensorio/development_1/DATA"
+  unit_of_measurement: "%"
+  value_template: "{{ value_json.humidity }}"
+
+- platform: mqtt
+  name: "Development: Sensorio Light"
+  state_topic: "/sensorio/development_1/DATA"
+  unit_of_measurement: "lux"
+  value_template: "{{ value_json.visibleLight }}"
+
+- platform: mqtt
+  name: "Development: Sensorio RSSI"
+  state_topic: "/sensorio/development_1/DATA"
+  unit_of_measurement: "dBm"
+  value_template: "{{ value_json.RSSI }}"
+
+- platform: mqtt
+  name: "Development: Sensorio Press"
+  state_topic: "/sensorio/development_1/DATA"
+  unit_of_measurement: "pa"
+  value_template: "{{ value_json.pressure }}"
+
+- platform: mqtt
+  name: "Development: Sensorio motion"
+  state_topic: "/sensorio/development_1/EVENT/MOTION"
+  value_template: "{{ value_json.data }}"
+  retain: false

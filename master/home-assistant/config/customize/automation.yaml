@@ -1,0 +1,27 @@
+# tasmota is not responding ...
+- alias: "Initial get all tasmota statuses"
+  hide_entity: true
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: mqtt.publish
+      data:
+        topic: "tasmota/lights/cmnd/STATE"
+    - service: mqtt.publish
+      data:
+        topic: "tasmota/switches/cmnd/STATE"
+
+- alias: "Touch controlled ambient lights"
+  hide_entity: true
+  trigger:
+    platform: mqtt
+    topic: "cmnd/+/+/POWER"
+    payload: "HOLD"
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.{{ trigger.topic | regex_findall_index("cmnd/(.*?)/.*") }}_ambient_light  
+    - service: system_log.write
+      data_template:
+        message: DEBUG light.{{ trigger.topic | regex_findall_index("cmnd/(.*?)/.*") }}_ambient_light  

@@ -1,0 +1,12 @@
+# light.development_main_light
+platform: mqtt
+name: "Development: Main Light"
+state_topic: "stat/development/touch1/POWER"
+command_topic: "cmnd/development/touch1/POWER"
+availability_topic: "tele/development/touch1/LWT"
+qos: 1
+payload_on: "ON"
+payload_off: "OFF"
+payload_available: "Online"
+payload_not_available: "Offline"
+retain: false

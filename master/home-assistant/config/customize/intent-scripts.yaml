@@ -1,0 +1,120 @@
+turn_on_lights:
+  speech:
+    type: plain
+    text: <p>Turned on.</p>
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.{{ site_id | replace("satellite-", "") }}_{{ item | default("main_light") }}
+
+turn_off_lights:
+  speech:
+    type: plain
+    text: <p>Turned off.</p>
+  action:
+    - service: light.turn_off
+      data_template:
+        entity_id: >
+          {%- if item -%}
+            light.{{ site_id | replace("satellite-", "") }}_{{ item }}
+          {%- else -%}
+            light.{{ site_id | replace("satellite-", "") }}_all_lights
+          {%- endif -%}
+
+toggle:
+  speech:
+    type: plain
+    text: <p>Switched.</p>
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: >
+          {%- if item -%}
+            light.{{ site_id | replace("satellite-", "") }}_{{ item }}
+          {%- else -%}
+            light.{{ site_id | replace("satellite-", "") }}_all_lights
+          {%- endif -%}
+
+set_brightness:
+  speech:
+    type: plain
+    text: <p>Adjusted.</p>
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: >
+          {%- if item -%}
+            light.{{ site_id | replace("satellite-", "") }}_{{ item }}
+          {%- else -%}
+            light.{{ site_id | replace("satellite-", "") }}_all_lights
+          {%- endif -%}
+        brightness_pct: >
+          {%- if level == "maximal" -%}
+            100
+          {%- elif level == "high" -%}
+            75
+          {%- elif level == "medium" -%}
+            45
+          {%- elif level == "low" -%}
+            5
+          {%- else -%}
+            {{ brightness }}
+          {%- endif -%}
+
+set_color:
+  speech:
+    type: plain
+    text: <p>Color was changed to {{ color }}.</p>
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: >
+          {%- if item -%}
+            light.{{ site_id | replace("satellite-", "") }}_{{ item }}
+          {%- else -%}
+            light.{{ site_id | replace("satellite-", "") }}_all_lights
+          {%- endif -%}
+        color_name: "{{ color }}"
+
+set_light_temperature:
+  speech:
+    type: plain
+    text: <p>{{ item | replace("_", " ") }} temperature was adjusted.</p>
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.{{ site_id | replace("satellite-", "") }}_{{ item | default("main_light") }}
+        color_temp: >
+          {%- if level == "maximal" -%}
+            500
+          {%- elif level == "high" -%}
+            400
+          {%- elif level == "medium" -%}
+            300
+          {%- elif level == "low" -%}
+            153
+          {%- endif -%}
+
+increase_light:
+  speech:
+    type: plain
+    text: <p>Increasing lights itensity.</p>
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.{{ site_id | replace("satellite-", "") }}_all_lights
+        brightness: >
+          {% set n = states.light.development_main_light.attributes.brightness + 25 %}
+          {% if n > 255 %}
+            255
+          {% else %}
+            {{ n }}
+          {% endif %}
+
+
+weather_forecast:
+  speech:
+    type: plain
+    text: >
+      <p>The weather is currently {{ states('sensor.weather_forecast_temperature') | round(0) }} degrees outside and {{ states('sensor.weather_forecast_summary') }}.</p>
+      <p>The high today will be {{ states('sensor.weather_forecast_daily_high_temperature') | round(0) }} and {{ states('sensor.weather_forecast_hourly_summary') }}</p>

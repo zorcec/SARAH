@@ -1,0 +1,15 @@
+broker: mqtt
+port: 1883
+client_id: home-assistant-main
+keepalive: 60
+protocol: 3.1
+birth_message:
+  topic: "tele/home-assistant-main/LWT"
+  payload: "Online"
+  qos: 1
+  retain: false
+will_message:
+  topic: "tele/home-assistant-main/LWT"
+  payload: "Offline"
+  qos: 1
+  retain: false

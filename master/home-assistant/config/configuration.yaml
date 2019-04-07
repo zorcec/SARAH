@@ -1,0 +1,54 @@
+homeassistant: !include customize/homeassistant.yaml
+
+mqtt: !include customize/mqtt.yaml
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
+
+# Cloud
+cloud:
+
+# Snips
+snips:
+
+group: !include customize/groups.yaml
+script: !include customize/scripts.yaml
+automation: !include customize/automation.yaml
+intent_script: !include customize/intent-scripts.yaml
+
+light: !include_dir_list customize/devices/lights/
+sensor: !include_dir_merge_list customize/devices/sensors/

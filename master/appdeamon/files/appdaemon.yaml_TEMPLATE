@@ -1,0 +1,7 @@
+appdaemon:
+  threads: 10
+  plugins:
+    HASS:
+      type: hass
+      ha_url: http://home-assistant:8123
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDkwMjk5NTcsImV4cCI6MTg2NDM4OTk1NywiaXNzIjoiYjE3MzViMmE3NDdmNGZkMjliMzAxM2Q5Zjc4MmEzNmIifQ.dpBs7TT9a98CrLzKKgum2_raSb2Q8kPCm-yP_PvRCIc

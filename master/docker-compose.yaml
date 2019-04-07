@@ -1,0 +1,57 @@
+version: "3.7"
+services:
+  
+  home-assistant:
+    container_name: home-assistant
+    build:
+      context: ./home-assistant
+    ports:
+      - "0.0.0.0:8123:8123"
+    external_links:
+      - mosquitto:mqtt
+    networks:
+      - smart-home-network
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./home-assistant/config:/config
+
+  appdeamon:
+    container_name: appdeamon
+    build:
+      context: ./appdeamon
+    ports:
+      - "0.0.0.0:5050:5050"
+    external_links:
+      - mosquitto:mqtt
+      - home-assistant:home-assistant
+    networks:
+      - smart-home-network
+    volumes:
+      - ./appdeamon/apps:/src/apps
+
+  mosquitto:
+    container_name: mosquitto
+    build:
+      context: ./mosquitto
+    ports:
+      - "0.0.0.0:1883:1883"
+    networks:
+      - smart-home-network
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+
+  mqtt-deamon:
+    container_name: mqtt-deamon
+    build:
+      context: ./mqtt-deamon
+    external_links:
+      - mosquitto:mqtt
+    networks:
+      - smart-home-network
+    volumes:
+      - ./mqtt-deamon/files:/files
+      - ./mqtt-deamon/config:/config
+
+networks:
+  smart-home-network:
+    external: true

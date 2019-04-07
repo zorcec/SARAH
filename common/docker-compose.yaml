@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+
+  base-debian-python3:
+    container_name: base-debian-python3
+    build:
+      context: base-debian-python3
