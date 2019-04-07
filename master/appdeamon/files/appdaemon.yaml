@@ -4,4 +4,4 @@ appdaemon:
     HASS:
       type: hass
       ha_url: http://home-assistant:8123
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NDkwMjk5NTcsImV4cCI6MTg2NDM4OTk1NywiaXNzIjoiYjE3MzViMmE3NDdmNGZkMjliMzAxM2Q5Zjc4MmEzNmIifQ.dpBs7TT9a98CrLzKKgum2_raSb2Q8kPCm-yP_PvRCIc
+      token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1MTUxOTQ5NGI2MWE0ZjM2OTViZTU2N2RhN2I0MDNiYSIsImlhdCI6MTU1NDY0NTU2OSwiZXhwIjoxODcwMDA1NTY5fQ.Bpx_KOmpNr7vgN4qUxzTqbT2I5aYkMf-ncK0rWFddps

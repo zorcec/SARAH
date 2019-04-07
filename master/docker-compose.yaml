@@ -40,18 +40,6 @@ services:
     volumes:
       - ./mosquitto/config:/mosquitto/config
 
-  mqtt-deamon:
-    container_name: mqtt-deamon
-    build:
-      context: ./mqtt-deamon
-    external_links:
-      - mosquitto:mqtt
-    networks:
-      - smart-home-network
-    volumes:
-      - ./mqtt-deamon/files:/files
-      - ./mqtt-deamon/config:/config
-
 networks:
   smart-home-network:
     external: true
