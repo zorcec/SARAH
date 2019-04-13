@@ -37,6 +37,18 @@ cloud:
 # Snips
 # snips:
 
+google_assistant:
+  project_id: sarah-f0a98
+  api_key: !secret google_assistant_api_key
+  exposed_domains:
+    - switch
+    - light
+  entity_config:
+    light.development_main_light:
+      room: Development
+    light.development_ambient_light:
+      room: Development
+
 group: !include customize/groups.yaml
 script: !include customize/scripts.yaml
 automation: !include customize/automation.yaml

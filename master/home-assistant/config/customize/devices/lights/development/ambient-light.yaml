@@ -1,6 +1,6 @@
 # light.development_ambient_light
 platform: mqtt
-name: "Development: Ambient Light"
+name: "Ambient lights"
 state_topic: "stat/DVES_B46630/POWER"
 command_topic: "cmnd/DVES_B46630/POWER"
 availability_topic: "tele/DVES_B46630/LWT"

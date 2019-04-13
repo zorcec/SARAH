@@ -1,6 +1,6 @@
 # light.development_main_light
 platform: mqtt
-name: "Development: Main Light"
+name: "Main light"
 state_topic: "stat/development/touch1/POWER"
 command_topic: "cmnd/development/touch1/POWER"
 availability_topic: "tele/development/touch1/LWT"

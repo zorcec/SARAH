@@ -3,5 +3,5 @@ appdaemon:
   plugins:
     HASS:
       type: hass
-      ha_url: http://home-assistant:8123
+      ha_url: https://home-assistant:8123
       token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI1MTUxOTQ5NGI2MWE0ZjM2OTViZTU2N2RhN2I0MDNiYSIsImlhdCI6MTU1NDY0NTU2OSwiZXhwIjoxODcwMDA1NTY5fQ.Bpx_KOmpNr7vgN4qUxzTqbT2I5aYkMf-ncK0rWFddps
