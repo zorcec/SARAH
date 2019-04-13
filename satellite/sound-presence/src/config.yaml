@@ -1,0 +1,8 @@
+mqtt_host: "mqtt"
+presence_difference_trigger: 2
+presence_min_multiplayer_trigger: 4
+mid_term_buffer_size_sec: 1
+duration: 1
+fs: 8000
+output_directory: "../temp"
+device_name: "development_1"

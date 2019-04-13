@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+
+  google-assistant:
+    container_name: google-assistant
+    privileged: true
+    build:
+      context: ./google-assistant
+    devices:
+      - "/dev/snd"
+    networks:
+      - smart-home-network
+    expose:
+      - "22"
+    volumes:
+      - /run/user/1000/pulse:/run/user/1000/pulse
+      - /etc/machine-id:/etc/machine-id
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ./google-assistant/src:/src
+
+  sound-presence:
+    container_name: sound-presence
+    privileged: true
+    build:
+      context: ./sound-presence
+    devices:
+      - "/dev/snd"
+    external_links:
+      - mosquitto:mqtt
+    networks:
+      - smart-home-network
+    volumes:
+      - /run/user/1000/pulse:/run/user/1000/pulse
+      - /etc/machine-id:/etc/machine-id
+      - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ./sound-presence/src:/src
+
+networks:
+  smart-home-network:
+    external: true

@@ -1,0 +1,11 @@
+numpy
+matplotlib
+scipy
+sklearn
+hmmlearn
+simplejson
+eyed3
+pydub
+pyalsaaudio
+paho-mqtt
+pyyaml
