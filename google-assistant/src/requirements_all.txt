@@ -1,3 +1,0 @@
-google-assistant-library===1.0.1
-google-auth-oauthlib[tool]===0.3.0
-google-assistant-sdk[samples]

@@ -1,0 +1,3 @@
+[submodule "satellite/google-assistant"]
+	path = satellite/google-assistant
+	url = git@github.com:zorcec/google-assistant-webserver.git

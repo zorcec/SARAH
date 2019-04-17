@@ -10,13 +10,18 @@ services:
       - "/dev/snd"
     networks:
       - smart-home-network
-    expose:
-      - "22"
+    ports:
+      - "0.0.0.0:9324:9324"
+      - "0.0.0.0:5000:5000"
+    environment:
+        - CLIENT_SECRET=secret.json
+        - DEVICE_MODEL_ID=sarahdevices-2c873-docker-rl7zrq
+        - PROJECT_ID=sarahdevices-2c873
     volumes:
       - /run/user/1000/pulse:/run/user/1000/pulse
       - /etc/machine-id:/etc/machine-id
       - ~/.config/pulse/cookie:/root/.config/pulse/cookie
-      - ./google-assistant/src:/src
+      - ./google-assistant/config:/config
 
   sound-presence:
     container_name: sound-presence
