@@ -1,5 +1,0 @@
-/src
-/config/**/*.log
-/config/**/*.db
-/config/.*
-/config/secrets.yaml
