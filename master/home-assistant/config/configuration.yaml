@@ -15,6 +15,8 @@ http:
 
 # Discover some devices automatically
 discovery:
+  enable:
+    - dlna_dmr
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -34,8 +36,15 @@ sun:
 # Cloud
 cloud:
 
+system_health:
+
 # Snips
 # snips:
+
+logger:
+  default: error
+  logs:
+    custom_components.tasmota.light: debug
 
 google_assistant:
   project_id: sarah-f0a98

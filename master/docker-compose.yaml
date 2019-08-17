@@ -7,6 +7,7 @@ services:
       context: ./home-assistant
     ports:
       - "0.0.0.0:8123:8123"
+      - "0.0.0.0:5678:5678"
     external_links:
       - mosquitto:mqtt
     networks:

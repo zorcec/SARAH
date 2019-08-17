@@ -1,0 +1,8 @@
+{
+    "domain": "tasmota",
+    "name": "Tasmota",
+    "documentation": "",
+    "dependencies": ["mqtt"],
+    "codeowners": [],
+    "requirements": []
+  }
