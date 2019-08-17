@@ -42,9 +42,25 @@ services:
     volumes:
       - ./mosquitto/config:/mosquitto/config
 
+  find3:
+    image: schollz/find3
+    container_name: find3
+    networks:
+      - smart-home-network
+    external_links:
+      - mosquitto:mqtt
+    volumes:
+      - ./find3/data:/data
+    ports:
+      - "0.0.0.0:8003:8003"
+    environment:
+      - MQTT_EXTERNAL=mqtt
+
   duckdns:
     image: linuxserver/duckdns
     container_name: duckdns
+    networks:
+      - smart-home-network
     environment:
       - TZ=Europe/London
       - SUBDOMAINS=zorcec.duckdns.org
@@ -54,6 +70,8 @@ services:
   letsencrypt:
     image: linuxserver/letsencrypt
     container_name: letsencrypt
+    networks:
+      - smart-home-network
     cap_add:
       - NET_ADMIN
     environment:
@@ -70,6 +88,16 @@ services:
     ports:
       - "0.0.0.0:443:443"
       - "0.0.0.0:80:80"
+
+#  proxy-manager:
+#    container_name: proxy-manager
+#    image: jlesage/nginx-proxy-manager
+#    ports:
+#      - "0.0.0.0:8181:8181"
+#      - "0.0.0.0:8080:8080"
+#      - "0.0.0.0:4443:4443"
+#    volumes:
+#      - "/proxy-manager/config:/config:rw"
 
 networks:
   smart-home-network:

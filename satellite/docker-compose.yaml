@@ -22,6 +22,7 @@ services:
       - /etc/machine-id:/etc/machine-id
       - ~/.config/pulse/cookie:/root/.config/pulse/cookie
       - ./google-assistant/config:/config
+      - ./google-assistant/src:/src
 
   sound-presence:
     container_name: sound-presence
