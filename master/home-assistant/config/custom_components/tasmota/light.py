@@ -10,7 +10,15 @@ from homeassistant.components.mqtt.light.schema_basic import (
     MqttLight,
     DEFAULT_ON_COMMAND_TYPE,
     CONF_BRIGHTNESS_SCALE,
-    CONF_ON_COMMAND_TYPE
+    CONF_ON_COMMAND_TYPE,
+    CONF_BRIGHTNESS_COMMAND_TOPIC,
+    CONF_BRIGHTNESS_STATE_TOPIC,
+    CONF_COLOR_TEMP_COMMAND_TOPIC,
+    CONF_COLOR_TEMP_STATE_TOPIC,
+    CONF_WHITE_VALUE_STATE_TOPIC,
+    CONF_WHITE_VALUE_COMMAND_TOPIC,
+    CONF_WHITE_VALUE_SCALE,
+    CONF_RGB_COMMAND_TOPIC
 )
 
 from homeassistant.components.mqtt import (
@@ -68,11 +76,14 @@ class TasmotaLight(MqttLight):
     def __init__(self, hass, config, config_entry, discovery_hash):
         """Initializes a Tasmota light."""
         self._internal_id = config.get(_CONF_INTERNAL_ID, None)
-        self._hass = hass
+        self.hass = hass
         _LOGGER.info("Initializing %s" % self._internal_id)
         MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
 
     def _get_config(self, config):
+        config.setdefault(CONF_OPTIMISTIC, False)
+        config.setdefault(CONF_RETAIN, False)
+        config.setdefault(CONF_QOS, 1)
         config.setdefault(CONF_COMMAND_TOPIC, "cmnd/%s/POWER" % self._internal_id)
         config.setdefault(CONF_STATE_TOPIC, "stat/%s/POWER" % self._internal_id)
         config.setdefault(CONF_AVAILABILITY_TOPIC, "tele/%s/LWT" % self._internal_id)
@@ -80,25 +91,12 @@ class TasmotaLight(MqttLight):
         config.setdefault(CONF_PAYLOAD_OFF, "OFF")
         config.setdefault(CONF_PAYLOAD_AVAILABLE, "Online")
         config.setdefault(CONF_PAYLOAD_NOT_AVAILABLE, "Offline")
-        config.setdefault(CONF_OPTIMISTIC, False)
-        config.setdefault(CONF_QOS, 0)
-        config.setdefault(CONF_RETAIN, False)
         config.setdefault(CONF_ON_COMMAND_TYPE, DEFAULT_ON_COMMAND_TYPE)
+        config.setdefault(CONF_BRIGHTNESS_SCALE, 100)
+        config.setdefault(CONF_BRIGHTNESS_COMMAND_TOPIC, "cmnd/%s/DIMMER" % self._internal_id)
+        config.setdefault(CONF_RGB_COMMAND_TOPIC, "cmnd/%s/Color" % self._internal_id)
+        config.setdefault(CONF_COLOR_TEMP_COMMAND_TOPIC, "cmnd/%s/CT" % self._internal_id)
+        config.setdefault(CONF_WHITE_VALUE_COMMAND_TOPIC, "cmnd/%s/Channel4" % self._internal_id)
+        config.setdefault(CONF_WHITE_VALUE_SCALE, 100)
+
         return config
-"""
-        config[CONF_BRIGHTNESS_SCALE] = 100
-        config["brightness_command_topic"] = "cmnd/%s/DIMMER" % self._internal_id
-        config["brightness_state_topic"] = "stat/%s/RESULT" % self._internal_id
-        config["brightness_value_template"] = "{%- if value_json.Dimmer is defined -%}{{ value_json.Dimmer | default(0) }}{%- endif -%}"
-        config["rgb_command_template"] = "{{ '%02x%02x%02x00' | format(red, green, blue) }}"
-        config["rgb_command_topic"] = "cmnd/%s/Color" % self._internal_id
-
-        config["color_temp_command_topic"] = "cmnd/%s/CT" % self._internal_id
-        config["color_temp_state_topic"] = "stat/%s/RESULT" % self._internal_id
-        config["color_temp_value_template"] = "{%- if value_json.Channel is defined -%}{{ value_json.CT }}{%- endif -%}"
-
-        config["white_value_state_topic"] = "stat/%s/RESULT" % self._internal_id
-        config["white_value_command_topic"] = "cmnd/%s/Channel4" % self._internal_id
-        config["white_value_scale"] = 100
-        config["white_value_template"] = "{%- if value_json.Channel is defined -%}{{ value_json.Channel[3] }}{%- endif -%}"
-"""
