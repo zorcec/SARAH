@@ -2,8 +2,6 @@ import voluptuous as vol
 import logging
 import ptvsd
 
-from homeassistant.core import callback
-from homeassistant.const import DEVICE_DEFAULT_NAME
 import homeassistant.helpers.config_validation as cv
 
 from homeassistant.components.mqtt.light.schema_basic import ( 
@@ -51,17 +49,21 @@ from homeassistant.const import (
     CONF_XY
 )
 
+from . import motion
+
 ptvsd.enable_attach()
 #ptvsd.wait_for_attach()
 
 _LOGGER = logging.getLogger(__name__)
 
-_CONF_INTERNAL_ID = "internal_id"
+CONF_INTERNAL_ID = "internal_id"
+CONF_ROOM_NAME = "room_name"
 
 PLATFORM_SCHEMA = vol.Schema({
     vol.Required(CONF_PLATFORM): cv.string,
     vol.Required(CONF_NAME): cv.string,
-    vol.Required(_CONF_INTERNAL_ID): cv.string
+    vol.Required(CONF_ROOM_NAME): cv.string,
+    vol.Required(CONF_INTERNAL_ID): cv.string
 }, extra = vol.ALLOW_EXTRA)
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
@@ -75,10 +77,13 @@ class TasmotaLight(MqttLight):
 
     def __init__(self, hass, config, config_entry, discovery_hash):
         """Initializes a Tasmota light."""
-        self._internal_id = config.get(_CONF_INTERNAL_ID, None)
+        self._internal_id = config.get(CONF_INTERNAL_ID, None)
         self.hass = hass
         _LOGGER.info("Initializing %s" % self._internal_id)
         MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
+
+        if "motion_iterval" in config:
+            self.motionTimer = motion.Timer(hass, _LOGGER, config)
 
     def _get_config(self, config):
         config.setdefault(CONF_OPTIMISTIC, False)

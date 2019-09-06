@@ -1,0 +1,4 @@
+- platform: sensorio
+  internal_id: room
+  name: Development Sensorio 1
+  room_name: room

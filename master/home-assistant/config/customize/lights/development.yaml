@@ -1,0 +1,5 @@
+- platform: tasmota
+  internal_id: DVES_B46630
+  name: Ambient lights
+  room_name: Development
+  motion_iterval: 10

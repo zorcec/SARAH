@@ -1,0 +1,8 @@
+{
+    "domain": "sensorio",
+    "name": "Sensorio",
+    "documentation": "",
+    "dependencies": ["mqtt"],
+    "codeowners": [],
+    "requirements": []
+  }

@@ -42,19 +42,19 @@ services:
     volumes:
       - ./mosquitto/config:/mosquitto/config
 
-  find3:
-    image: schollz/find3
-    container_name: find3
-    networks:
-      - smart-home-network
-    external_links:
-      - mosquitto:mqtt
-    volumes:
-      - ./find3/data:/data
-    ports:
-      - "0.0.0.0:8003:8003"
-    environment:
-      - MQTT_EXTERNAL=mqtt
+  #find3:
+  #  image: schollz/find3
+  #  container_name: find3
+  ##  networks:
+  #    - smart-home-network
+  #  external_links:
+  #    - mosquitto:mqtt
+  #  volumes:
+  #    - ./find3/data:/data
+  #  ports:
+  #    - "0.0.0.0:8003:8003"
+  #  environment:
+  #    - MQTT_EXTERNAL=mqtt
 
   duckdns:
     image: linuxserver/duckdns
