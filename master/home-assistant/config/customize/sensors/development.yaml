@@ -1,4 +1,5 @@
 - platform: sensorio
+  type: motion_detector
   internal_id: room
-  name: Development Sensorio 1
+  name: Development Sensorio I
   room_name: room
