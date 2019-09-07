@@ -19,7 +19,6 @@ ptvsd.enable_attach()
 
 _LOGGER = logging.getLogger(__name__)
 
-CONF_ROOM_NAME = "room_name"
 CONF_INTERNAL_ID = "internal_id"
 CONF_TYPE = "type"
 
@@ -31,8 +30,6 @@ TYPE_BOX = "box"
 PLATFORM_SCHEMA = vol.Schema({
     vol.Required(CONF_PLATFORM): cv.string,
     vol.Required(CONF_NAME): cv.string,
-    vol.Required(CONF_ROOM_NAME): cv.string,
-    vol.Required(CONF_INTERNAL_ID): cv.string,
     vol.Required(CONF_TYPE): cv.string
 }, extra = vol.ALLOW_EXTRA)
 
@@ -75,9 +72,9 @@ class Sensorio(Entity):
             _data = json.loads(payload)
             _event_name = re.split(".*/EVENT/", topic)[1]
             _LOGGER.debug("Event received: %s, %s" % (self._internal_id, _event_name))
-            self._hass.bus.fire("sensorio:%s" % _event_name.lower(), {
+            self._hass.bus.async_fire("sensorio:%s" % _event_name.lower(), {
                 **_data,
-                "internal_name": self._internal_id
+                "internal_id": self._internal_id
             })
 
         await mqtt.async_subscribe(self._hass, _data_topic, data_message)

@@ -57,12 +57,10 @@ ptvsd.enable_attach()
 _LOGGER = logging.getLogger(__name__)
 
 CONF_INTERNAL_ID = "internal_id"
-CONF_ROOM_NAME = "room_name"
 
 PLATFORM_SCHEMA = vol.Schema({
     vol.Required(CONF_PLATFORM): cv.string,
     vol.Required(CONF_NAME): cv.string,
-    vol.Required(CONF_ROOM_NAME): cv.string,
     vol.Required(CONF_INTERNAL_ID): cv.string
 }, extra = vol.ALLOW_EXTRA)
 
@@ -83,7 +81,7 @@ class TasmotaLight(MqttLight):
         MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
 
         if "motion_iterval" in config:
-            self.motionTimer = motion.Timer(hass, _LOGGER, config)
+            self.motionTimer = motion.Timer(hass, _LOGGER, config, self)
 
     def _get_config(self, config):
         config.setdefault(CONF_OPTIMISTIC, False)
