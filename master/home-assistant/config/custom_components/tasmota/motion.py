@@ -1,7 +1,6 @@
 import time
 import threading
 import ptvsd
-import asyncio
 
 from homeassistant.core import callback
 
@@ -28,17 +27,8 @@ class Timer():
         self._last_motion_time = time.time()
         self._interval_time = time.time()
 
-        self._loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(self._loop)
-
         self.listen_for_events()
         self.start_timers()
-
-    def turn_on(self):
-        self._loop.run_until_complete(self._device.async_turn_on())
-    
-    def turn_off(self):
-        self._loop.run_until_complete(self._device.async_turn_off())
 
     def listen_for_events(self):
         _motion_trackers = self._config[_CONF_MOTION_TRACKERS]
@@ -50,7 +40,7 @@ class Timer():
             for _motion_tracker in _motion_trackers:
                 if internal_id == _motion_tracker:
                     """Relevant motion"""
-                    self.turn_on()
+                    self._device.turn_on()
                     _is_relevant = True
             if _is_relevant:
                 if _is_movement:
@@ -70,7 +60,7 @@ class Timer():
     def interval_finished(self):
         self._logger.debug("Interval was finished: %s" % self._config["internal_id"])
         self._interval_timer = None
-        self.turn_off()
+        self._device.turn_off()
 
     def restart_timers(self):
         self._logger.debug("Restarting interval: %s" % self._config["internal_id"])

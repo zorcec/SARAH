@@ -3,4 +3,4 @@
   name: Ambient lights
   motion_trackers:
     - room
-  motion_iterval: 5
+  motion_iterval: 300

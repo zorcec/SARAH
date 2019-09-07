@@ -1,6 +1,7 @@
 import voluptuous as vol
 import logging
 import ptvsd
+import asyncio
 
 import homeassistant.helpers.config_validation as cv
 
@@ -16,7 +17,8 @@ from homeassistant.components.mqtt.light.schema_basic import (
     CONF_WHITE_VALUE_STATE_TOPIC,
     CONF_WHITE_VALUE_COMMAND_TOPIC,
     CONF_WHITE_VALUE_SCALE,
-    CONF_RGB_COMMAND_TOPIC
+    CONF_RGB_COMMAND_TOPIC,
+    ATTR_BRIGHTNESS
 )
 
 from homeassistant.components.mqtt import (
@@ -77,8 +79,10 @@ class TasmotaLight(MqttLight):
         """Initializes a Tasmota light."""
         self._internal_id = config.get(CONF_INTERNAL_ID, None)
         self.hass = hass
+        self._loop = asyncio.new_event_loop()
         _LOGGER.info("Initializing %s" % self._internal_id)
         MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
+        asyncio.set_event_loop(self._loop)
 
         if "motion_iterval" in config:
             self.motionTimer = motion.Timer(hass, _LOGGER, config, self)
@@ -103,3 +107,9 @@ class TasmotaLight(MqttLight):
         config.setdefault(CONF_WHITE_VALUE_SCALE, 100)
 
         return config
+
+    def turn_on(self):
+        self._loop.run_until_complete(self.async_turn_on())
+    
+    def turn_off(self):
+        self._loop.run_until_complete(self.async_turn_off())
