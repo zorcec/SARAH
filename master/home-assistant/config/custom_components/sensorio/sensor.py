@@ -54,6 +54,11 @@ class Sensorio(Entity):
         self._hass = hass
         _LOGGER.info("Initializing %s" % self._internal_id)
 
+    async def refresh(self):
+        _LOGGER.debug("Refreshing data: %s" % self._internal_id)
+        _cmd_data_topic = "/cmd/sensorio/%s/DATA" % self._internal_id
+        mqtt.async_publish(self._hass, _cmd_data_topic, "")
+
     async def subscribe(self):
         _data_topic = "/sensorio/%s/DATA" % self._internal_id
         _event_topic = "/sensorio/%s/EVENT/#" % self._internal_id
@@ -79,6 +84,7 @@ class Sensorio(Entity):
 
         await mqtt.async_subscribe(self._hass, _data_topic, data_message)
         await mqtt.async_subscribe(self._hass, _event_topic, event_message)
+        await self.refresh()
 
     @property
     def device_info(self):

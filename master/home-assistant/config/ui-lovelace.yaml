@@ -1,0 +1,29 @@
+resources:
+  - url: /local/monster-card.js?v=1
+    type: js
+
+views:
+  - title: Important
+    cards:
+      - type: entity-filter
+        card:
+          type: light
+          title: Light that are on
+        entities:
+          domain: light
+        state_filter:
+          - on
+
+  - title: Development
+    cards:
+      - type: markdown
+        title: Notice
+        content: >
+          Used for development only
+      - type: entities
+        card:
+          type: light
+          title: Lights
+        entities:
+          - light.development_ambient
+          - light.development_main

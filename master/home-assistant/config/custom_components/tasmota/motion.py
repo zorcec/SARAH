@@ -11,7 +11,12 @@ from . import light
 
 _CONF_MOTION_INTERVAL = "motion_iterval"
 _CONF_MOTION_TRACKERS = "motion_trackers"
+_CONF_MOTION_MODE = "motion_mode"
 _EVENT_SENSORIO_MOTION = "sensorio:motion"
+
+_MODE_OFF = "off"
+_MODE_ON = "on"
+_MODE_BOTH = "both"
 
 class Timer():
 
@@ -22,6 +27,7 @@ class Timer():
         self._device = device
         self._motion_interval = int(self._config[_CONF_MOTION_INTERVAL])
         self._internal_id = self._config[light.CONF_INTERNAL_ID]
+        self._mode = self._config[_CONF_MOTION_MODE] or _MODE_BOTH
         self._logger.info("Initializing motion timer: %s, %is" % (self._internal_id, self._motion_interval))
         self._interval_timer = None
         self._last_motion_time = time.time()
@@ -40,7 +46,8 @@ class Timer():
             for _motion_tracker in _motion_trackers:
                 if internal_id == _motion_tracker:
                     """Relevant motion"""
-                    self._device.turn_on()
+                    if self._mode == _MODE_ON or self._mode == _MODE_BOTH:
+                        self._device.turn_on()
                     _is_relevant = True
             if _is_relevant:
                 if _is_movement:
@@ -60,7 +67,8 @@ class Timer():
     def interval_finished(self):
         self._logger.debug("Interval was finished: %s" % self._config["internal_id"])
         self._interval_timer = None
-        self._device.turn_off()
+        if self._mode == _MODE_OFF or self._mode == _MODE_BOTH:
+            self._device.turn_off()
 
     def restart_timers(self):
         self._logger.debug("Restarting interval: %s" % self._config["internal_id"])
