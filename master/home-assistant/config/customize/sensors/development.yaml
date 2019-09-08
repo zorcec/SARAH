@@ -1,4 +1,9 @@
 - platform: sensorio
   type: motion_detector
   internal_id: room
-  name: Development Sensorio I
+  name: Development Sensorio 1
+  sensors:
+    - type: temperature
+    - type: pressure
+    - type: humidity
+    - type: brightness

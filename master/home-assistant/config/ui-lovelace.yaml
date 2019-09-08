@@ -1,6 +1,8 @@
 resources:
   - url: /local/monster-card.js?v=1
     type: js
+  - url: /local/attribute-entity-row.js?v=1.1.0
+    type: js
 
 views:
   - title: Important
@@ -27,3 +29,19 @@ views:
         entities:
           - light.development_ambient
           - light.development_main
+      - type: entities
+        title: Air
+        hide_state: true
+        entities:
+          - entity: sensor.development_sensorio_1
+            type: custom:attribute-entity-row
+            primary:
+              key: temperature
+              name: Temp
+              unit: "°C"
+          - entity: sensor.development_sensorio_1
+            type: custom:attribute-entity-row
+            primary:
+              key: humidity
+              name: Hum
+              unit: "%"

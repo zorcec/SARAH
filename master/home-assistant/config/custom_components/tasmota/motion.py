@@ -14,8 +14,8 @@ _CONF_MOTION_TRACKERS = "motion_trackers"
 _CONF_MOTION_MODE = "motion_mode"
 _EVENT_SENSORIO_MOTION = "sensorio:motion"
 
-_MODE_OFF = "off"
-_MODE_ON = "on"
+_MODE_OFF = "turn_off"
+_MODE_ON = "turn_on"
 _MODE_BOTH = "both"
 
 class Timer():

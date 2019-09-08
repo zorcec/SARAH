@@ -1,6 +1,16 @@
 - platform: tasmota
-  internal_id: DVES_B46630
+  internal_id: development/ambient1
   name: Development Ambient
+  type: led_controller
+  motion_mode: turn_off
+  motion_iterval: 300
+  motion_trackers:
+    - room
+
+- platform: tasmota
+  internal_id: development/touch1
+  name: Development Main
+  type: touch
   motion_mode: turn_off
   motion_iterval: 300
   motion_trackers:

@@ -46,8 +46,8 @@ logger:
   logs:
     custom_components: debug
 
-lovelace:
-  mode: yaml
+#lovelace:
+#  mode: yaml
 
 google_assistant:
   project_id: sarah-f0a98

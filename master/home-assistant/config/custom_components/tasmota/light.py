@@ -53,17 +53,51 @@ from homeassistant.const import (
 
 from . import motion
 
+from ..sarah import (
+    CONF_INTERNAL_ID,
+    CONF_TYPE
+)
+
+_TYPE_COMMON = "common"
+
+_TYPES = {
+    _TYPE_COMMON: {
+        CONF_OPTIMISTIC: False,
+        CONF_RETAIN: False,
+        CONF_QOS: 1,
+        CONF_COMMAND_TOPIC: "cmnd/{internal_id}/POWER",
+        CONF_STATE_TOPIC: "stat/{internal_id}/POWER",
+        CONF_AVAILABILITY_TOPIC: "tele/{internal_id}/LWT",
+        CONF_PAYLOAD_ON: "ON",
+        CONF_PAYLOAD_OFF: "OFF",
+        CONF_PAYLOAD_AVAILABLE: "Online",
+        CONF_PAYLOAD_NOT_AVAILABLE: "Offline",
+        CONF_ON_COMMAND_TYPE: DEFAULT_ON_COMMAND_TYPE
+    },
+    "led_controller": {
+        CONF_BRIGHTNESS_SCALE: 100,
+        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
+        CONF_RGB_COMMAND_TOPIC: "cmnd/{internal_id}/Color",
+        CONF_COLOR_TEMP_COMMAND_TOPIC: "cmnd/{internal_id}/CT",
+        CONF_WHITE_VALUE_COMMAND_TOPIC: "cmnd/{internal_id}/Channel4" ,
+        CONF_WHITE_VALUE_SCALE: 100
+    },
+    "dimmer": {
+        CONF_BRIGHTNESS_SCALE: 100,
+        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER"
+    }
+}
+
 ptvsd.enable_attach()
 #ptvsd.wait_for_attach()
 
 _LOGGER = logging.getLogger(__name__)
 
-CONF_INTERNAL_ID = "internal_id"
-
 PLATFORM_SCHEMA = vol.Schema({
     vol.Required(CONF_PLATFORM): cv.string,
     vol.Required(CONF_NAME): cv.string,
-    vol.Required(CONF_INTERNAL_ID): cv.string
+    vol.Required(CONF_INTERNAL_ID): cv.string,
+    vol.Required(CONF_TYPE): cv.string
 }, extra = vol.ALLOW_EXTRA)
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
@@ -88,25 +122,21 @@ class TasmotaLight(MqttLight):
             self.motionTimer = motion.Timer(hass, _LOGGER, config, self)
 
     def _get_config(self, config):
-        config.setdefault(CONF_OPTIMISTIC, False)
-        config.setdefault(CONF_RETAIN, False)
-        config.setdefault(CONF_QOS, 1)
-        config.setdefault(CONF_COMMAND_TOPIC, "cmnd/%s/POWER" % self._internal_id)
-        config.setdefault(CONF_STATE_TOPIC, "stat/%s/POWER" % self._internal_id)
-        config.setdefault(CONF_AVAILABILITY_TOPIC, "tele/%s/LWT" % self._internal_id)
-        config.setdefault(CONF_PAYLOAD_ON, "ON")
-        config.setdefault(CONF_PAYLOAD_OFF, "OFF")
-        config.setdefault(CONF_PAYLOAD_AVAILABLE, "Online")
-        config.setdefault(CONF_PAYLOAD_NOT_AVAILABLE, "Offline")
-        config.setdefault(CONF_ON_COMMAND_TYPE, DEFAULT_ON_COMMAND_TYPE)
-        config.setdefault(CONF_BRIGHTNESS_SCALE, 100)
-        config.setdefault(CONF_BRIGHTNESS_COMMAND_TOPIC, "cmnd/%s/DIMMER" % self._internal_id)
-        config.setdefault(CONF_RGB_COMMAND_TOPIC, "cmnd/%s/Color" % self._internal_id)
-        config.setdefault(CONF_COLOR_TEMP_COMMAND_TOPIC, "cmnd/%s/CT" % self._internal_id)
-        config.setdefault(CONF_WHITE_VALUE_COMMAND_TOPIC, "cmnd/%s/Channel4" % self._internal_id)
-        config.setdefault(CONF_WHITE_VALUE_SCALE, 100)
+        self.set_config(config, _TYPES.get(_TYPE_COMMON))
+        if CONF_TYPE in config and config.get(CONF_TYPE) in _TYPES:
+            self.set_config(config, _TYPES.get(config.get(CONF_TYPE)))
 
         return config
+
+    def set_config(self, config, data):
+        _environment_values = {
+            "internal_id": self._internal_id
+        }
+        for key in data:
+            _value = data.get(key)
+            if isinstance(_value, str):
+                _value = _value.format(**_environment_values)
+            config.setdefault(key, _value)
 
     def turn_on(self):
         self._loop.run_until_complete(self.async_turn_on())
