@@ -1,0 +1,4 @@
+- platform: tasmota
+  internal_id: top/switch1
+  name: Test top/switch1 (as switch)
+  type: basic

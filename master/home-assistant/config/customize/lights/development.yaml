@@ -1,17 +1,18 @@
 - platform: tasmota
-  internal_id: development/ambient1
-  name: Development Ambient
+  internal_id: top/led1
+  name: TEST top/led1
   type: led_controller
-  motion_mode: turn_off
+  motion_mode: turn_on
   motion_iterval: 300
   motion_trackers:
     - room
 
 - platform: tasmota
-  internal_id: development/touch1
-  name: Development Main
+  internal_id: top/touch2
+  name: TEST top/touch2
   type: touch
-  motion_mode: turn_off
-  motion_iterval: 300
-  motion_trackers:
-    - room
+
+- platform: tasmota
+  internal_id: top/switch1
+  name: Test top/switch1 (as light)
+  type: switch

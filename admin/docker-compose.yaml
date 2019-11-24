@@ -13,6 +13,14 @@ services:
       - ./mqtt-deamon/files:/files
       - ./mqtt-deamon/config:/config
 
+  tasmota-admin:
+    container_name: tasmota-admin
+    image: raymondmm/tasmoadmin
+    ports:
+      - "0.0.0.0:9999:80"
+    volumes:
+      - ./tasmota-admin/data:/data
+
 networks:
   smart-home-network:
     external: true

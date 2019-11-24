@@ -32,7 +32,8 @@ _SENSOR_TYPES = {
     "temperature": {
         "attribute": "temperature",
         "icon": "mdi:temperature-celsius",
-        "name": "Temperature"
+        "name": "Temperature",
+        "unit_of_measurement": "degrees"
     },
     "pressure": {
         "attribute": "pressure",
@@ -42,12 +43,14 @@ _SENSOR_TYPES = {
     "humidity": {
         "attribute": "humidity",
         "icon": "mdi:water",
-        "name": "Humidity"
+        "name": "Humidity",
+        "unit_of_measurement": "percentage"
     },
     "brightness": {
         "attribute": "brightness",
         "icon": "mdi:brightness-6",
-        "name": "Bightness"
+        "name": "Bightness",
+        "unit_of_measurement": "percentage"
     }
 }
 
@@ -181,6 +184,11 @@ class SensorioSensor(Entity):
     def state(self):
         """Return the state of the sensor."""
         return self._state
+
+    @property
+    def unit_of_measurement(self):
+        """Return unit of measurement; neede for graphs."""
+        return self._config.get("unit_of_measurement")
 
     @property
     def icon(self):

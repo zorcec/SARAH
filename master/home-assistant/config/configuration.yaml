@@ -56,10 +56,17 @@ google_assistant:
     - switch
     - light
   entity_config:
-    light.development_main_light:
-      room: Development
-    light.development_ambient_light:
-      room: Development
+    light.top_terasse_light:
+      room: top
+      aliases:
+        - terrase light
+        - outside light
+    light.top_main_light:
+      room: top
+      aliases:
+        - "main light"
+    light.top_workplace_light:
+      room: top
 
 group: !include customize/groups.yaml
 script: !include customize/scripts.yaml
@@ -67,4 +74,5 @@ automation: !include customize/automation.yaml
 intent_script: !include customize/intent-scripts.yaml
 
 light: !include_dir_merge_list customize/lights/
+switch: !include_dir_merge_list customize/switches/
 sensor: !include_dir_merge_list customize/sensors/

@@ -5,22 +5,6 @@ import asyncio
 
 import homeassistant.helpers.config_validation as cv
 
-from homeassistant.components.mqtt.light.schema_basic import ( 
-    MqttLight,
-    DEFAULT_ON_COMMAND_TYPE,
-    CONF_BRIGHTNESS_SCALE,
-    CONF_ON_COMMAND_TYPE,
-    CONF_BRIGHTNESS_COMMAND_TOPIC,
-    CONF_BRIGHTNESS_STATE_TOPIC,
-    CONF_COLOR_TEMP_COMMAND_TOPIC,
-    CONF_COLOR_TEMP_STATE_TOPIC,
-    CONF_WHITE_VALUE_STATE_TOPIC,
-    CONF_WHITE_VALUE_COMMAND_TOPIC,
-    CONF_WHITE_VALUE_SCALE,
-    CONF_RGB_COMMAND_TOPIC,
-    ATTR_BRIGHTNESS
-)
-
 from homeassistant.components.mqtt import (
     CONF_COMMAND_TOPIC,
     CONF_AVAILABILITY_TOPIC,
@@ -58,6 +42,10 @@ from ..sarah import (
     CONF_TYPE
 )
 
+from homeassistant.components.mqtt.switch import ( 
+    MqttSwitch
+)
+
 _TYPE_COMMON = "common"
 
 _TYPES = {
@@ -71,26 +59,10 @@ _TYPES = {
         CONF_PAYLOAD_ON: "ON",
         CONF_PAYLOAD_OFF: "OFF",
         CONF_PAYLOAD_AVAILABLE: "Online",
-        CONF_PAYLOAD_NOT_AVAILABLE: "Offline",
-        CONF_ON_COMMAND_TYPE: DEFAULT_ON_COMMAND_TYPE
+        CONF_PAYLOAD_NOT_AVAILABLE: "Offline"
     },
-    "led_controller": {
-        CONF_BRIGHTNESS_SCALE: 100,
-        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
-        CONF_RGB_COMMAND_TOPIC: "cmnd/{internal_id}/Color",
-        CONF_COLOR_TEMP_COMMAND_TOPIC: "cmnd/{internal_id}/CT",
-        CONF_WHITE_VALUE_COMMAND_TOPIC: "cmnd/{internal_id}/Channel4" ,
-        CONF_WHITE_VALUE_SCALE: 100
-    },
-    "dimmer": {
-        CONF_BRIGHTNESS_SCALE: 100,
-        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER"
-    },
-    "switch": {}
+    "basic": {}
 }
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -106,9 +78,9 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     await _async_setup_entity(hass, config, async_add_entities)
 
 async def _async_setup_entity(hass, config, async_add_entities, config_entry=None, discovery_hash=None):
-    async_add_entities([TasmotaLight(hass, config, config_entry, discovery_hash)])
+    async_add_entities([TasmotaSwitch(hass, config, config_entry, discovery_hash)])
 
-class TasmotaLight(MqttLight):
+class TasmotaSwitch(MqttSwitch):
 
     def __init__(self, hass, config, config_entry, discovery_hash):
         """Initializes a Tasmota light."""
@@ -116,7 +88,7 @@ class TasmotaLight(MqttLight):
         self.hass = hass
         self._loop = asyncio.new_event_loop()
         _LOGGER.info("Initializing %s" % self._internal_id)
-        MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
+        MqttSwitch.__init__(self, self._get_config(config), config_entry, discovery_hash)
         asyncio.set_event_loop(self._loop)
 
         if "motion_iterval" in config:
