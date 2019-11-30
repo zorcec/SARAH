@@ -8,6 +8,15 @@
     - room
 
 - platform: tasmota
+  internal_id: top/led2
+  name: TEST top/led2
+  type: led_controller
+  motion_mode: turn_on
+  motion_iterval: 300
+  motion_trackers:
+    - room
+
+- platform: tasmota
   internal_id: top/touch2
   name: TEST top/touch2
   type: touch
