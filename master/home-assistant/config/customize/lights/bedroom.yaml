@@ -1,6 +1,6 @@
 - platform: tasmota
   internal_id: bedroom/touch1
-  name: Beedrom Main
+  name: Bedrom Main
   type: touch
 
 - platform: tasmota
@@ -10,5 +10,5 @@
 
 - platform: tasmota
   internal_id: bedroom/touch3
-  name: Beedroom Balcony
+  name: Bedroom Balcony
   type: touch

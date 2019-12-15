@@ -1,27 +1,15 @@
 - platform: tasmota
-  internal_id: top/led1
-  name: TEST top/led1
-  type: led_controller
-  motion_mode: turn_on
-  motion_iterval: 300
-  motion_trackers:
-    - room
-
-- platform: tasmota
-  internal_id: top/led2
-  name: TEST top/led2
-  type: led_controller
-  motion_mode: turn_on
-  motion_iterval: 300
-  motion_trackers:
-    - room
-
-- platform: tasmota
-  internal_id: top/touch2
-  name: TEST top/touch2
+  internal_id: undefined/touch
+  name: Undefined touch light
   type: touch
+  multipress:
 
 - platform: tasmota
-  internal_id: top/switch1
-  name: Test top/switch1 (as light)
+  internal_id: undefined/switch
+  name: Undefined switch as light
   type: switch
+
+- platform: tasmota
+  internal_id: undefined/led
+  name: Undefined LED controller
+  type: led_controller_rgbw

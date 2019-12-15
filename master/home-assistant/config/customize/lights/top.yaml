@@ -12,8 +12,14 @@
   internal_id: top/dimmer1
   name: Top Main
   type: dimmer
+  multipress:
 
 - platform: tasmota
   internal_id: top/dimmer2
   name: Top Workplace
   type: dimmer
+
+- platform: tasmota
+  internal_id: top/workplace_led
+  name: Top Workplace LED
+  type: led_controller_rgb
