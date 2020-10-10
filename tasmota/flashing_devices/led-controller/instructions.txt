@@ -1,0 +1,14 @@
+LED controller (magic home - LG01 / RGB)
+
+Config
+-----
+Arilux LC01
+
+MagicHome RGBW
+{"NAME":"MagicHome RGBW","GPIO":[0,0,0,0,51,38,0,0,37,39,0,40,0],"FLAG":0,"BASE":34}
+
+MQTT
+-----
+Client & Topic
+undefined/led
+

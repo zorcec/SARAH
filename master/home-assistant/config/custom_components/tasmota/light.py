@@ -3,91 +3,35 @@ import logging
 import ptvsd
 import asyncio
 
+from homeassistant.core import callback
+
+import homeassistant.components.mqtt as mqtt
 import homeassistant.helpers.config_validation as cv
 
 from homeassistant.components.mqtt.light.schema_basic import ( 
-    MqttLight,
-    DEFAULT_ON_COMMAND_TYPE,
-    CONF_BRIGHTNESS_SCALE,
-    CONF_ON_COMMAND_TYPE,
-    CONF_BRIGHTNESS_COMMAND_TOPIC,
-    CONF_BRIGHTNESS_STATE_TOPIC,
-    CONF_COLOR_TEMP_COMMAND_TOPIC,
-    CONF_COLOR_TEMP_STATE_TOPIC,
-    CONF_WHITE_VALUE_STATE_TOPIC,
-    CONF_WHITE_VALUE_COMMAND_TOPIC,
-    CONF_WHITE_VALUE_SCALE,
-    CONF_RGB_COMMAND_TOPIC,
-    ATTR_BRIGHTNESS
-)
-
-from homeassistant.components.mqtt import (
-    CONF_COMMAND_TOPIC,
-    CONF_AVAILABILITY_TOPIC,
-    CONF_QOS,
-    CONF_RETAIN,
-    CONF_STATE_TOPIC,
-    CONF_UNIQUE_ID,
-    CONF_PAYLOAD_NOT_AVAILABLE,
-    CONF_PAYLOAD_AVAILABLE
+    MqttLight
 )
 
 from homeassistant.const import ( 
     CONF_PLATFORM, 
-    CONF_NAME,
-    CONF_BRIGHTNESS,
-    CONF_COLOR_TEMP,
-    CONF_DEVICE,
-    CONF_EFFECT,
-    CONF_HS,
-    CONF_NAME,
-    CONF_OPTIMISTIC,
-    CONF_PAYLOAD_OFF,
-    CONF_PAYLOAD_ON,
-    CONF_RGB,
-    CONF_STATE,
-    CONF_VALUE_TEMPLATE,
-    CONF_WHITE_VALUE,
-    CONF_XY
+    CONF_NAME
+)
+
+from homeassistant.components.mqtt import (
+    CONF_COMMAND_TOPIC
 )
 
 from . import motion
+from . import configurator
 
 from ..sarah import (
     CONF_INTERNAL_ID,
     CONF_TYPE
 )
 
-_TYPE_COMMON = "common"
-
-_TYPES = {
-    _TYPE_COMMON: {
-        CONF_OPTIMISTIC: False,
-        CONF_RETAIN: False,
-        CONF_QOS: 1,
-        CONF_COMMAND_TOPIC: "cmnd/{internal_id}/POWER",
-        CONF_STATE_TOPIC: "stat/{internal_id}/POWER",
-        CONF_AVAILABILITY_TOPIC: "tele/{internal_id}/LWT",
-        CONF_PAYLOAD_ON: "ON",
-        CONF_PAYLOAD_OFF: "OFF",
-        CONF_PAYLOAD_AVAILABLE: "Online",
-        CONF_PAYLOAD_NOT_AVAILABLE: "Offline",
-        CONF_ON_COMMAND_TYPE: DEFAULT_ON_COMMAND_TYPE
-    },
-    "led_controller": {
-        CONF_BRIGHTNESS_SCALE: 100,
-        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
-        CONF_RGB_COMMAND_TOPIC: "cmnd/{internal_id}/Color",
-        CONF_COLOR_TEMP_COMMAND_TOPIC: "cmnd/{internal_id}/CT",
-        CONF_WHITE_VALUE_COMMAND_TOPIC: "cmnd/{internal_id}/Channel4" ,
-        CONF_WHITE_VALUE_SCALE: 100
-    },
-    "dimmer": {
-        CONF_BRIGHTNESS_SCALE: 100,
-        CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER"
-    },
-    "switch": {}
-}
+# centralize
+_EVENT_SENSORIO_MOTION = "sensorio:motion"
+_TOPIC_MOTION_EVENT = "motion_event_topic"
 
 ptvsd.enable_attach()
 #ptvsd.wait_for_attach()
@@ -106,38 +50,60 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     await _async_setup_entity(hass, config, async_add_entities)
 
 async def _async_setup_entity(hass, config, async_add_entities, config_entry=None, discovery_hash=None):
-    async_add_entities([TasmotaLight(hass, config, config_entry, discovery_hash)])
+    internal_id = config.get(CONF_INTERNAL_ID, None)
+    async_add_entities([await TasmotaLight(hass, config_entry, internal_id, discovery_hash).create(config)])
 
 class TasmotaLight(MqttLight):
 
-    def __init__(self, hass, config, config_entry, discovery_hash):
+    def __init__(self, hass, config_entry, internal_id, discovery_hash):
         """Initializes a Tasmota light."""
-        self._internal_id = config.get(CONF_INTERNAL_ID, None)
-        self.hass = hass
+        self._internal_id = internal_id
+        self._hass = hass
+        self._config_entry = config_entry
+        self._discovery_hash = discovery_hash
         self._loop = asyncio.new_event_loop()
         _LOGGER.info("Initializing %s" % self._internal_id)
-        MqttLight.__init__(self, self._get_config(config), config_entry, discovery_hash)
         asyncio.set_event_loop(self._loop)
 
-        if "motion_iterval" in config:
-            self.motionTimer = motion.Timer(hass, _LOGGER, config, self)
+    async def create(self, config):
+        self.configurator = configurator.Configurator(self._hass, config)
+        self._config = self.configurator.getConfig()
+        MqttLight.__init__(self, config, self._config_entry, self._discovery_hash)
 
-    def _get_config(self, config):
-        self.set_config(config, _TYPES.get(_TYPE_COMMON))
-        if CONF_TYPE in config and config.get(CONF_TYPE) in _TYPES:
-            self.set_config(config, _TYPES.get(config.get(CONF_TYPE)))
+        self.refresh()
 
-        return config
+        if "motion_iterval" in self._config:
+            self.motionTimer = motion.Timer(self._hass, _LOGGER, self._config, self)
 
-    def set_config(self, config, data):
-        _environment_values = {
-            "internal_id": self._internal_id
-        }
-        for key in data:
-            _value = data.get(key)
-            if isinstance(_value, str):
-                _value = _value.format(**_environment_values)
-            config.setdefault(key, _value)
+        if "motion_event_topic" in self._config:
+            await self.simulate_sensorio_motion()
+
+        return self
+
+    def refresh(self):
+        _request_topics = [
+            self._config.get(CONF_COMMAND_TOPIC)
+        ]
+        for _request_topic in _request_topics:
+            mqtt.async_publish(self._hass, _request_topic, "")
+
+    async def simulate_sensorio_motion(self):
+
+        @callback
+        def event_message(topic, payload, qos):
+            """Handle received MQTT message."""
+            _data = "0"
+            if payload == "ON":
+                _data = "1"
+            _LOGGER.debug("Simulating sensorio event: %s, %s, %s" % (self._internal_id, _EVENT_SENSORIO_MOTION, _data))
+            self._hass.bus.async_fire(_EVENT_SENSORIO_MOTION, {
+                "data": _data,
+                "internal_id": self._internal_id
+            })
+            
+        if self._config.get(_TOPIC_MOTION_EVENT):
+            _LOGGER.debug("Simulating sensorio motion on tasmota: %s, %s" % (self._internal_id, self._config.get(_TOPIC_MOTION_EVENT)))
+            await mqtt.async_subscribe(self._hass, self._config.get(_TOPIC_MOTION_EVENT), event_message)
 
     def turn_on(self):
         self._loop.run_until_complete(self.async_turn_on())

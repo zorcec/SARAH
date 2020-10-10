@@ -1,0 +1,8 @@
+- platform: tasmota
+  internal_id: middle/switch1
+  name: Middle hall
+  type: switch
+  mac_address: DC:4F:22:FA:4C:F2
+  motion_mode: none
+  motion_iterval: 30
+  motion_event_topic: stat/middle/switch1/POWER2

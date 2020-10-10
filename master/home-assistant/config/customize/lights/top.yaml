@@ -2,18 +2,44 @@
   internal_id: top/touch1
   name: Top Terasse
   type: touch
+  mac_address: 60:01:94:B4:66:29
+  customize:
+      WiFiPower: 12
 
 - platform: tasmota
-  internal_id: top/touch2
+  internal_id: top/switch1
   name: Top Stairway
-  type: touch
+  type: switch
+  motion_mode: None
+  motion_iterval: 5
+  motion_event_topic: stat/top/switch1/POWER2
+  mac_address: D8:F1:5B:C7:A9:A8
+  customize:
+        WiFiPower: 16
 
 - platform: tasmota
   internal_id: top/dimmer1
   name: Top Main
   type: dimmer
+  mac_address: 84:F3:EB:F9:6B:19
+  customize:
+      WiFiPower: 16
 
 - platform: tasmota
   internal_id: top/dimmer2
   name: Top Workplace
   type: dimmer
+  mac_address: 2C:F4:32:19:E1:D0
+  customize:
+      WiFiPower: 16
+      DimmerRange: 60,100
+
+- platform: tasmota
+  internal_id: top/workplace_led
+  name: Top Workplace LED
+  type: led_controller_rgb
+  mac_address: 60:01:94:B9:A4:F6
+  motion_mode: None
+  motion_iterval: 5
+  motion_trackers:
+    - undefined/switch

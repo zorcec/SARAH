@@ -90,12 +90,12 @@ class Sensorio(Entity):
 
     async def refresh(self):
         _LOGGER.debug("Refreshing data: %s" % self._internal_id)
-        _cmd_data_topic = "/cmd/sensorio/%s/DATA" % self._internal_id
+        _cmd_data_topic = "cmnd/sensorio/%s/DATA" % self._internal_id
         mqtt.async_publish(self._hass, _cmd_data_topic, "")
 
     async def subscribe(self):
-        _data_topic = "/sensorio/%s/DATA" % self._internal_id
-        _event_topic = "/sensorio/%s/EVENT/#" % self._internal_id
+        _data_topic = "sensorio/%s/DATA" % self._internal_id
+        _event_topic = "sensorio/%s/EVENT/#" % self._internal_id
 
         @callback
         def data_message(topic, payload, qos):

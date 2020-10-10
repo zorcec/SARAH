@@ -31,15 +31,18 @@ logbook:
 #map:
 
 # Track the sun
-#sun:
+sun:
 
 # Cloud
 #cloud:
 
-#system_health:
+system_health:
 
 # Snips
 # snips:
+
+tasmota_information:
+  ip_range: "192.168.0.10-192.168.0.75"
 
 logger:
   default: error

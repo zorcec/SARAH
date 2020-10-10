@@ -1,0 +1,59 @@
+Sonoff Basic switch
+
+Config
+-----
+None
+
+MQTT
+-----
+Client & Topic
+undefined/switch
+
+
+PIR
+-----
+T1 1CH
+SerialLog 0
+SwitchMode 1 (invert for older versions)
+
+GPIO1 (serial out) - Relay2
+GPIO3 (serial in) - Switch2
+
+PIR MQTT message
+---
+Rule1
+ ON Rules#Timer=1 DO
+   Power1 0
+ ENDON
+ ON Power2#State==ON DO BACKLOG
+   PUBLISH stat/middle/switch1/PIR 1;
+   IF (TIME > SUNSET-60m OR TIME < SUNRISE+60m) POWER 1 ENDIF;
+   RuleTimer1 0
+ ENDON
+ ON Power2#State==OFF DO BACKLOG
+   PUBLISH stat/middle/switch1/PIR 0;
+   RuleTimer1 30
+ ENDON
+
+Auto-on rule
+---
+Rule3 ON Power2#State==ON DO Power 1 ENDON
+   
+Auto-off rule (30s)
+---
+Rule2
+  on Power1#State==ON do backlog power1 %value%;
+  RuleTimer1 30;
+  power2 0 endon
+  on Rules#Timer=1 do power1 off endon
+
+Old PIR state
+---
+Rule2
+  ON Switch2#State=1 DO
+   PUBLISH stat/top/switch1/PIR 1
+  ENDON
+  ON Switch2#State=0 DO
+   PUBLISH stat/top/switch1/PIR 0
+  ENDON
+

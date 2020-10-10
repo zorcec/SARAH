@@ -1,0 +1,11 @@
+Not sonoff
+
+Config
+-----
+general
+
+MQTT
+-----
+Client & Topic
+undefined/touch
+

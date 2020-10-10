@@ -1,0 +1,28 @@
+Touch example:
+cmnd/development/touch1/Power1 => on/off/toggle
+cmnd/development/touch1/Status1
+
+Enable hold & double:
+SetOption1 1
+SetOption11 1
+StateText3 DOUBLE
+ButtonTopic touch
+// > 1.5 s delay
+SetOption32 15
+
+// mqtt
+FullTopic %prefix%/development/touch1/
+MqttClient development/touch1
+GroupTopic tasmota/lights or GroupTopic tasmota/touches
+
+mqtt msgs:
+stat/development/touch1/POWER = ON
+cmnd/development/touch1/POWER = HOLD
+cmnd/development/touch1/POWER = DOUBLE
+
+List of commands:
+https://github.com/arendst/Sonoff-Tasmota/wiki/Commands
+
+New usb:
+ls /dev/ > ~/dev_list.txt
+ls /dev/ | diff --suppress-common-lines -y - ~/dev_list.txt

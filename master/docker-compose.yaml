@@ -89,6 +89,16 @@ services:
       - "0.0.0.0:443:443"
       - "0.0.0.0:80:80"
 
+  tasmota-webserver:
+    image: nginx
+    container_name: tasmota-webserver
+    networks:
+      - smart-home-network
+    volumes:
+      - ./tasmota-webserver:/usr/share/nginx/html
+    ports:
+      - "0.0.0.0:8888:80"
+
 #  proxy-manager:
 #    container_name: proxy-manager
 #    image: jlesage/nginx-proxy-manager
@@ -98,6 +108,15 @@ services:
 #      - "0.0.0.0:4443:4443"
 #    volumes:
 #      - "/proxy-manager/config:/config:rw"
+
+#  torproxy:
+#    image: dperson/torproxy
+#    container_name: tor-proxy
+#    volumes:
+#      - "./torproxy/etc/tor:/etc/tor"
+#    ports:
+#      - "0.0.0.0:8118:8118"
+#      - "0.0.0.0:9050:9050"
 
 networks:
   smart-home-network:

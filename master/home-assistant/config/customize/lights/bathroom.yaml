@@ -1,0 +1,5 @@
+- platform: tasmota
+  internal_id: bathroom/touch1
+  name: Bathroom Main
+  type: touch
+  mac_address: 84:0D:8E:49:99:E5

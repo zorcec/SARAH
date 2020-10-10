@@ -1,14 +1,25 @@
 - platform: tasmota
   internal_id: bedroom/touch1
-  name: Beedrom Main
+  name: Bedrom Main
   type: touch
+  mac_address: 60:01:94:E3:1A:FA
 
 - platform: tasmota
   internal_id: bedroom/touch2
   name: Bedroom Reading
   type: touch
+  mac_address: 60:01:94:E3:1A:91
 
 - platform: tasmota
   internal_id: bedroom/touch3
-  name: Beedroom Balcony
+  name: Bedroom Balcony
   type: touch
+  mac_address: D8:F1:5B:8F:86:BF
+
+- platform: tasmota
+  internal_id: bedroom/led
+  name: Bedroom LED controller
+  type: led_controller_rgbw
+  mac_address: 60:01:94:AC:4E:82
+  customize:
+        WiFiPower: 17

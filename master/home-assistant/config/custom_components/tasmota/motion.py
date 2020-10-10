@@ -3,6 +3,7 @@ import threading
 import ptvsd
 
 from homeassistant.core import callback
+import homeassistant.components.mqtt as mqtt
 
 ptvsd.enable_attach()
 #ptvsd.wait_for_attach()
@@ -37,7 +38,7 @@ class Timer():
         self.start_timers()
 
     def listen_for_events(self):
-        _motion_trackers = self._config[_CONF_MOTION_TRACKERS]
+        _motion_trackers = self._config.get(_CONF_MOTION_TRACKERS, [self._internal_id])
 
         def motion(event):
             internal_id = event.data.get("internal_id")

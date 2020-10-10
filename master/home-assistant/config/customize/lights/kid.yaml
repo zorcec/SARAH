@@ -1,0 +1,7 @@
+- platform: tasmota
+  internal_id: kid/dimmer1
+  name: Kid Main
+  type: touch
+  mac_address: 84:F3:EB:F9:9D:9F
+  customize:
+      WiFiPower: 2

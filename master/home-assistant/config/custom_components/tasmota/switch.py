@@ -85,7 +85,7 @@ class TasmotaSwitch(MqttSwitch):
     def __init__(self, hass, config, config_entry, discovery_hash):
         """Initializes a Tasmota light."""
         self._internal_id = config.get(CONF_INTERNAL_ID, None)
-        self.hass = hass
+        self._hass = hass
         self._loop = asyncio.new_event_loop()
         _LOGGER.info("Initializing %s" % self._internal_id)
         MqttSwitch.__init__(self, self._get_config(config), config_entry, discovery_hash)

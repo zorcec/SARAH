@@ -1,17 +1,17 @@
 version: "3.7"
 services:
   
-  mqtt-deamon:
-    container_name: mqtt-deamon
-    build:
-      context: ./mqtt-deamon
-    external_links:
-      - mosquitto:mqtt
-    networks:
-      - smart-home-network
-    volumes:
-      - ./mqtt-deamon/files:/files
-      - ./mqtt-deamon/config:/config
+  #mqtt-deamon:
+  #  container_name: mqtt-deamon
+  #  build:
+  #    context: ./mqtt-deamon
+  #  external_links:
+  #    - mosquitto:mqtt
+  #  networks:
+  #    - smart-home-network
+  #  volumes:
+  #    - ./mqtt-deamon/files:/files
+  #    - ./mqtt-deamon/config:/config
 
   tasmota-admin:
     container_name: tasmota-admin

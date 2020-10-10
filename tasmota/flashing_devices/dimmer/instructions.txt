@@ -1,0 +1,24 @@
+Tuya dimmer:
+VCC + GND na izvodima ne na cipu (externo jace napajanje!!!)
+TX, RX na cipu
+GPIO0 na GND
+Flash i podesiti po standardu
+
+Config
+-----
+Tuya MCU
+GPIO1 - Tuya Tx
+GPIO3 - Tuya Rx
+
+Console options
+-----
+SetOption34 2
+
+MQTT
+-----
+Client & Topic
+top/dimmer1
+
+Configure dimming (v4)
+----
+TuyaMCU 21,2

@@ -1,6 +1,6 @@
-FROM alpine:3.6
+FROM alpine:3.11
 
-RUN apk update && apk --no-cache add mosquitto=1.4.15-r0 && \
+RUN apk update && apk --no-cache add mosquitto=1.6.8-r0 && \
     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && \
     cp /etc/mosquitto/mosquitto.conf /mosquitto/config && \
     chown -R mosquitto:mosquitto /mosquitto
