@@ -13,6 +13,7 @@
 - platform: tasmota
   internal_id: bedroom/touch3
   name: Bedroom Balcony
+<<<<<<< HEAD
   type: touch
   mac_address: D8:F1:5B:8F:86:BF
 
@@ -23,3 +24,6 @@
   mac_address: 60:01:94:AC:4E:82
   customize:
         WiFiPower: 17
+=======
+  type: touch
+>>>>>>> 23050ec8e152904322783ac24d3102681dd73bcd
