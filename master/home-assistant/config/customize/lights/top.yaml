@@ -21,35 +21,25 @@
   internal_id: top/dimmer1
   name: Top Main
   type: dimmer
-<<<<<<< HEAD
   mac_address: 84:F3:EB:F9:6B:19
   customize:
       WiFiPower: 16
-=======
-  multipress:
->>>>>>> 23050ec8e152904322783ac24d3102681dd73bcd
 
 - platform: tasmota
   internal_id: top/dimmer2
   name: Top Workplace
   type: dimmer
-<<<<<<< HEAD
   mac_address: 2C:F4:32:19:E1:D0
   customize:
       WiFiPower: 16
       DimmerRange: 60,100
-=======
->>>>>>> 23050ec8e152904322783ac24d3102681dd73bcd
 
 - platform: tasmota
   internal_id: top/workplace_led
   name: Top Workplace LED
   type: led_controller_rgb
-<<<<<<< HEAD
   mac_address: 60:01:94:B9:A4:F6
   motion_mode: None
   motion_iterval: 5
   motion_trackers:
     - undefined/switch
-=======
->>>>>>> 23050ec8e152904322783ac24d3102681dd73bcd

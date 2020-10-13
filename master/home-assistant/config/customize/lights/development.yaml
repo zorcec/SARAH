@@ -3,7 +3,6 @@
   name: Undefined touch light
   type: touch
   multipress:
-<<<<<<< HEAD
 
 - platform: tasmota
   internal_id: undefined/switch
@@ -21,15 +20,3 @@
   internal_id: undefined/dimmer
   name: Undefined dimmer
   type: dimmer
-=======
-
-- platform: tasmota
-  internal_id: undefined/switch
-  name: Undefined switch as light
-  type: switch
-
-- platform: tasmota
-  internal_id: undefined/led
-  name: Undefined LED controller
-  type: led_controller_rgbw
->>>>>>> 23050ec8e152904322783ac24d3102681dd73bcd

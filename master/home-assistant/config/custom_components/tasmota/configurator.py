@@ -87,7 +87,7 @@ _SPECIAL_CONFIG = {
 }
 
 _INIT_CONFIG = {
-    "MqttHost": "192.168.0.100",
+    "MqttHost": "192.168.0.101",
     "MqttUser": "smart_device",
     "MqttClient": "{internal_id}",
     "Topic": "{internal_id}",
