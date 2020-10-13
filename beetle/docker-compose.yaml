@@ -8,7 +8,5 @@ services:
       context: ./mosquitto
     ports:
       - "0.0.0.0:1883:1883"
-    networks:
-      - smart-home-network
     volumes:
       - ./mosquitto/config:/mosquitto/config
