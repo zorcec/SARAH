@@ -68,7 +68,7 @@ services:
       - LOG_FILE=false
 
   letsencrypt:
-    image: linuxserver/letsencrypt
+    image: linuxserver/swag
     container_name: letsencrypt
     networks:
       - smart-home-network

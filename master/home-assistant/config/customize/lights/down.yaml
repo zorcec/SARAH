@@ -1,0 +1,10 @@
+- platform: tasmota
+  internal_id: down/dimmer1
+  name: Down Main
+  type: dimmer
+  mac_address: 84:F3:EB:F9:A3:87
+  customize:
+      WiFiPower: 16
+      PwmFrequency: 3200
+      DimmerRange: 30,100
+  auto_configure: False

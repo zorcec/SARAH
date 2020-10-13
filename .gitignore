@@ -11,3 +11,5 @@ master/home-assistant/config/secrets.yaml
 master/appdeamon/files/appdeamon.yaml
 master/appdeamon/apps/__pycache__/
 admin/tasmota-admin
+master/home-assistant/config/home-assistant_v2.db
+tasmota

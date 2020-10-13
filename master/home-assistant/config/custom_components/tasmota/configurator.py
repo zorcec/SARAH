@@ -72,6 +72,7 @@ CONF_MAC_ADDRESS = "mac_address"
 
 _TYPE_COMMON = "common"
 _CONF_AUTO_CONFIG = "auto_config"
+_ATTR_AUTO_CONFIG = "auto_configure"
 _ATTR_CUSTOMIZE = "customize"
 
 _AUTOCONFIGURE_ACTIVE = False
@@ -175,6 +176,7 @@ class Configurator():
         self._internal_id = config.get(CONF_INTERNAL_ID)
         self._config = self._get_config(config)
         self._mac_address = self._config.get(CONF_MAC_ADDRESS)
+        self._should_auto_configure = config.get(_ATTR_AUTO_CONFIG, False)
 
         if self._mac_address is not None:
             self._device_information = getDeviceByMac(self._mac_address)
@@ -241,7 +243,7 @@ class Configurator():
         _special_config = self._get_special_config()
         _backlogCmd += self._get_backlog_special_cmd(_special_config)
 
-        if _AUTOCONFIGURE_ACTIVE and _backlogCmd is not "":
+        if (_AUTOCONFIGURE_ACTIVE or self._should_auto_configure) and _backlogCmd is not "":
             self._configure_via_http(_backlogCmd)
 
     def _configure_via_http(self, cmd):
@@ -277,10 +279,10 @@ class Configurator():
                     if _current_config_name == _config_name:
                         _option_found = True
                         if _current_config_value != _config_value:
-                            self._logger.debug("New configuration for %s: %s, %s => %s" % (self._internal_id, _current_config_name, _config_value, _current_config_value))
+                            # self._logger.debug("New configuration for %s: %s, %s => %s" % (self._internal_id, _current_config_name, _config_value, _current_config_value))
                             _backlogCmd += "%s %s;" % (_config_name, _current_config_value)
             if _option_found == False:
-                self._logger.debug("Configuration not found for %s: %s, %s" % (self._internal_id, _current_config_name, _current_config_value))
+                # self._logger.debug("Configuration not found for %s: %s, %s" % (self._internal_id, _current_config_name, _current_config_value))
                 _backlogCmd += "%s %s;" % (_current_config_name, _current_config_value)
             
 

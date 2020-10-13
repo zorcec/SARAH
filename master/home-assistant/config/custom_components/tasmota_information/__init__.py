@@ -36,7 +36,7 @@ def _get_information(hass, config):
     _ip_addreses = _generate_ips(config.get("ip_range"))
     for _ip_address in _ip_addreses:
         try:
-            _logger.debug("Checking: %s" % _ip_address)
+            # _logger.debug("Checking: %s" % _ip_address)
             response = urllib.request.urlopen("http://%s/cm?cmnd=STATUS%%200" % _ip_address, timeout=1)
             _data = json.loads(response.read())
             _mac = _data.get(STATUS_NETWORK, {}).get("Mac")
