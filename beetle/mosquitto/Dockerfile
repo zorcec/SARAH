@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM arm32v6/alpine:3.12
 
 RUN apk update && apk --no-cache add mosquitto=1.6.8-r0 && \
     mkdir -p /mosquitto/config /mosquitto/data /mosquitto/log && \
