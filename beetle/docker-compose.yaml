@@ -2,11 +2,9 @@ version: "3.3"
 services:
 
   mosquitto:
-    container_name: mosquitto
+    image: arm32v6/eclipse-mosquitto
     restart: always
     build:
       context: ./mosquitto
     ports:
       - "0.0.0.0:1883:1883"
-    volumes:
-      - ./mosquitto/config:/mosquitto/config
