@@ -1,13 +1,13 @@
 .idea
 /**/*.pyc
 /**/secret.json
+/**/secrets.yaml
 
 master/letsencrypt/
 master/find3/
 master/home-assistant/src
 master/home-assistant/config/**/*.log
 master/home-assistant/config/.*
-master/home-assistant/config/secrets.yaml
 master/appdeamon/files/appdeamon.yaml
 master/appdeamon/apps/__pycache__/
 admin/tasmota-admin
