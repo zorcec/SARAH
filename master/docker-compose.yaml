@@ -17,45 +17,6 @@ services:
       - ./home-assistant/config:/config
       - ./letsencrypt:/letsencrypt
 
-  #appdeamon:
-  #  container_name: appdeamon
-  #  build:
-  #    context: ./appdeamon
-  #  ports:
-  #    - "0.0.0.0:5050:5050"
-  #  external_links:
-  #    - mosquitto:mqtt
-  #    - home-assistant:home-assistant
-  #  networks:
-  #    - smart-home-network
-  #  volumes:
-  #    - ./appdeamon/apps:/src/apps
-
-  mosquitto:
-    container_name: mosquitto
-    build:
-      context: ./mosquitto
-    ports:
-      - "0.0.0.0:1883:1883"
-    networks:
-      - smart-home-network
-    volumes:
-      - ./mosquitto/config:/mosquitto/config
-
-  #find3:
-  #  image: schollz/find3
-  #  container_name: find3
-  ##  networks:
-  #    - smart-home-network
-  #  external_links:
-  #    - mosquitto:mqtt
-  #  volumes:
-  #    - ./find3/data:/data
-  #  ports:
-  #    - "0.0.0.0:8003:8003"
-  #  environment:
-  #    - MQTT_EXTERNAL=mqtt
-
   duckdns:
     image: linuxserver/duckdns
     container_name: duckdns
@@ -98,25 +59,6 @@ services:
       - ./tasmota-webserver:/usr/share/nginx/html
     ports:
       - "0.0.0.0:8888:80"
-
-#  proxy-manager:
-#    container_name: proxy-manager
-#    image: jlesage/nginx-proxy-manager
-#    ports:
-#      - "0.0.0.0:8181:8181"
-#      - "0.0.0.0:8080:8080"
-#      - "0.0.0.0:4443:4443"
-#    volumes:
-#      - "/proxy-manager/config:/config:rw"
-
-#  torproxy:
-#    image: dperson/torproxy
-#    container_name: tor-proxy
-#    volumes:
-#      - "./torproxy/etc/tor:/etc/tor"
-#    ports:
-#      - "0.0.0.0:8118:8118"
-#      - "0.0.0.0:9050:9050"
 
 networks:
   smart-home-network:

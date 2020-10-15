@@ -62,7 +62,6 @@ class TasmotaLight(MqttLight):
         self._config_entry = config_entry
         self._discovery_hash = discovery_hash
         self._loop = asyncio.new_event_loop()
-        self._config = self._get_config(config)
         _LOGGER.info("Initializing %s" % self._internal_id)
         asyncio.set_event_loop(self._loop)
 

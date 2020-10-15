@@ -75,7 +75,7 @@ _CONF_AUTO_CONFIG = "auto_config"
 _ATTR_AUTO_CONFIG = "auto_configure"
 _ATTR_CUSTOMIZE = "customize"
 
-_AUTOCONFIGURE_ACTIVE = False
+_AUTOCONFIGURE_ACTIVE = True
 
 # cannot be checked generic way
 _SPECIAL_CONFIG = {
