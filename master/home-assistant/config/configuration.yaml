@@ -14,33 +14,8 @@ http:
   ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
   ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
 
-# Discover some devices automatically
-discovery:
-  enable:
-    - dlna_dmr
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-#conversation:
-
 # Enables support for tracking state changes over time
 history:
-
-# View all events in a logbook
-logbook:
-
-# Enables a map showing the location of tracked devices
-#map:
-
-# Track the sun
-sun:
-
-# Cloud
-#cloud:
-
-system_health:
-
-# Snips
-# snips:
 
 tasmota_information:
   ip_range: "192.168.0.10-192.168.0.50"
@@ -49,28 +24,6 @@ logger:
   default: error
   logs:
     custom_components: debug
-
-#lovelace:
-#  mode: yaml
-
-google_assistant:
-  project_id: sarah-f0a98
-  api_key: !secret google_assistant_api_key
-  exposed_domains:
-    - switch
-    - light
-  entity_config:
-    light.top_terasse_light:
-      room: top
-      aliases:
-        - terrase light
-        - outside light
-    light.top_main_light:
-      room: top
-      aliases:
-        - "main light"
-    light.top_workplace_light:
-      room: top
 
 group: !include customize/groups.yaml
 script: !include customize/scripts.yaml

@@ -9,6 +9,7 @@ services:
 
   home-assistant:
       container_name: home-assistant
+      restart: always
       build:
         context: ./home-assistant
       ports:
@@ -23,6 +24,7 @@ services:
 
   letsencrypt:
       image: linuxserver/swag:arm32v7-version-1.9.0
+      restart: always
       container_name: letsencrypt
       cap_add:
         - NET_ADMIN
@@ -43,6 +45,7 @@ services:
 
   duckdns:
     image: linuxserver/duckdns:arm32v7-latest
+    restart: always
     container_name: duckdns
     environment:
       - TZ=Europe/London
