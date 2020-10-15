@@ -16,8 +16,6 @@ services:
         - "0.0.0.0:5678:5678"
       external_links:
         - mosquitto:mqtt
-      networks:
-        - smart-home-network
       volumes:
         - /etc/localtime:/etc/localtime:ro
         - ./home-assistant/config:/config
@@ -26,8 +24,6 @@ services:
   letsencrypt:
       image: linuxserver/swag:arm32v7-version-1.9.0
       container_name: letsencrypt
-      networks:
-        - smart-home-network
       cap_add:
         - NET_ADMIN
       environment:
@@ -48,8 +44,6 @@ services:
   duckdns:
     image: linuxserver/duckdns:arm32v7-latest
     container_name: duckdns
-    networks:
-      - smart-home-network
     environment:
       - TZ=Europe/London
       - SUBDOMAINS=zorcec.duckdns.org
