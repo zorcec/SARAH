@@ -8,3 +8,16 @@
       PwmFrequency: 3200
       DimmerRange: 30,100
   auto_configure: False
+
+
+- platform: tasmota
+  internal_id: down/touch1
+  name: Down Kitchen
+  type: touch
+  _motion_mode: None
+  _motion_iterval: 5
+  _motion_event_topic: stat/down/touch1/POWER2
+  mac_address: C4:4F:33:9E:B8:CB
+  customize:
+        WiFiPower: 16
+  auto_configure: False

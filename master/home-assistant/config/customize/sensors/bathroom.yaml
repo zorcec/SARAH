@@ -1,0 +1,10 @@
+- platform: tasmota
+  internal_id: bathroom/sensor
+  name: Bathroom Sensors
+  type: sensors
+  mac_address: CC:50:E3:08:20:68
+  auto_configure: False
+  sensors:
+    - type: temperature
+    - type: pressure
+    - type: humidity

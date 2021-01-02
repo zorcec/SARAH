@@ -1,0 +1,9 @@
+- platform: tasmota
+  internal_id: down/sensor
+  name: Down Sensors
+  type: sensors
+  mac_address: BC:DD:C2:2F:D4:DB
+  auto_configure: False
+  sensors:
+    - type: temperature
+    - type: humidity

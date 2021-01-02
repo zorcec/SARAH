@@ -10,9 +10,9 @@
   internal_id: top/switch1
   name: Top Stairway
   type: switch
-  motion_mode: None
-  motion_iterval: 5
-  motion_event_topic: stat/top/switch1/POWER2
+  _motion_mode: None
+  _motion_iterval: 5
+  -motion_event_topic: stat/top/switch1/POWER2
   mac_address: D8:F1:5B:C7:A9:A8
   customize:
         WiFiPower: 16
@@ -39,7 +39,7 @@
   name: Top Workplace LED
   type: led_controller_rgb
   mac_address: 60:01:94:B9:A4:F6
-  motion_mode: None
-  motion_iterval: 5
-  motion_trackers:
+  _motion_mode: None
+  _motion_iterval: 5
+  _motion_trackers:
     - undefined/switch

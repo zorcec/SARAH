@@ -1,0 +1,10 @@
+- platform: tasmota
+  internal_id: top/sensor
+  name: Top Sensors
+  type: sensors
+  mac_address: DC:4F:22:55:DA:78
+  auto_configure: True
+  sensors:
+    - type: temperature
+    - type: humidity
+    - type: pressure

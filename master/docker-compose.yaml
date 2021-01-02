@@ -10,29 +10,14 @@ services:
       - "0.0.0.0:5678:5678"
     external_links:
       - mosquitto:mqtt
-    networks:
-      - smart-home-network
     volumes:
       - /etc/localtime:/etc/localtime:ro
       - ./home-assistant/config:/config
       - ./letsencrypt:/letsencrypt
 
-  duckdns:
-    image: linuxserver/duckdns
-    container_name: duckdns
-    networks:
-      - smart-home-network
-    environment:
-      - TZ=Europe/London
-      - SUBDOMAINS=zorcec.duckdns.org
-      - TOKEN=ff8777ce-260b-47fc-8939-8d08493546cd
-      - LOG_FILE=false
-
   letsencrypt:
     image: linuxserver/swag
     container_name: letsencrypt
-    networks:
-      - smart-home-network
     cap_add:
       - NET_ADMIN
     environment:
@@ -53,13 +38,22 @@ services:
   tasmota-webserver:
     image: nginx
     container_name: tasmota-webserver
-    networks:
-      - smart-home-network
     volumes:
       - ./tasmota-webserver:/usr/share/nginx/html
     ports:
       - "0.0.0.0:8888:80"
 
-networks:
-  smart-home-network:
-    external: true
+  duckdns:
+    image: linuxserver/duckdns
+    container_name: duckdns
+    environment:
+      - TZ=Europe/London
+      - SUBDOMAINS=zorcec.duckdns.org
+      - TOKEN=ff8777ce-260b-47fc-8939-8d08493546cd
+      - LOG_FILE=false
+
+  mosquitto:
+      image: arm32v6/eclipse-mosquitto
+      restart: always
+      ports:
+        - "0.0.0.0:1883:1883"

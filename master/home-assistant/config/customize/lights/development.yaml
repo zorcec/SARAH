@@ -8,7 +8,7 @@
   internal_id: undefined/switch
   name: Undefined switch as light
   type: switch
-  motion_event_topic: stat/undefined/switch/POWER2
+  _motion_event_topic: stat/undefined/switch/POWER2
 
 - platform: tasmota
   internal_id: undefined/led

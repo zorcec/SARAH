@@ -75,7 +75,7 @@ _CONF_AUTO_CONFIG = "auto_config"
 _ATTR_AUTO_CONFIG = "auto_configure"
 _ATTR_CUSTOMIZE = "customize"
 
-_AUTOCONFIGURE_ACTIVE = True
+_AUTOCONFIGURE_ACTIVE = False
 
 # cannot be checked generic way
 _SPECIAL_CONFIG = {
@@ -87,12 +87,12 @@ _SPECIAL_CONFIG = {
 }
 
 _INIT_CONFIG = {
-    "MqttHost": "192.168.0.101",
+    "MqttHost": "192.168.0.100",
     "MqttUser": "smart_device",
     "MqttClient": "{internal_id}",
     "Topic": "{internal_id}",
     "OtaUrl": "http://192.168.0.100:8888/840.bin",
-    "GroupTopic": "sonoff"
+    "GroupTopic": "tasmota"
 }
 
 _CONF_MULTIPRESS = {
@@ -118,17 +118,21 @@ _TYPES = {
         CONF_PAYLOAD_NOT_AVAILABLE: "Offline",
         CONF_ON_COMMAND_TYPE: DEFAULT_ON_COMMAND_TYPE,
         _CONF_AUTO_CONFIG: {
+            #"SetOption3": 1,           # MQTT
             "Timezone": 2,
-            "Longitude":2.294442,
-            "Latitude":48.858360,
+            "Longitude": 2.294442,
+            "Latitude": 48.858360,
             "PowerOnState": 0,
             "LedState": 0,
-            "Sleep": 250,
+            "Sleep": 50,
             "SerialLog": 0,
             "WiFiPower": 8,
-            "TelePeriod": 55,
-            "SaveData": 3600,          # Save every hour (max)
-            "SetOption31": 0           # Disable status LED blinking during Wi-Fi and MQTT connection problems. (1 is ON )
+            "TelePeriod": 30,
+            "SaveData": 3600,         # Save every hour (max)
+            "SetOption31": 0,         # Disable status LED blinking during Wi-Fi and MQTT connection problems. (1 is ON )
+            "SetOption1": 0,          # Multipress support off
+            "SetOption11": 0,         # Multipress support off
+            "SetOption13": 1         # Will react instantly
         }
     },
     "led_controller_rgb": {
@@ -136,7 +140,7 @@ _TYPES = {
         CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
         CONF_RGB_COMMAND_TOPIC: "cmnd/{internal_id}/Color",
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 1760
+            "PwmFrequency": 4000
         }
     },
     "led_controller_rgbw": {
@@ -146,14 +150,14 @@ _TYPES = {
         CONF_WHITE_VALUE_COMMAND_TOPIC: "cmnd/{internal_id}/Channel4" ,
         CONF_WHITE_VALUE_SCALE: 100,
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 1760
+            "PwmFrequency": 4000
         }
     },
     "dimmer": {
         CONF_BRIGHTNESS_SCALE: 100,
         CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 1760,
+            "PwmFrequency": 4000,
             "DimmerRange": "25,100"
         }
     },
@@ -165,6 +169,11 @@ _TYPES = {
     },
     "switch": {
         _CONF_AUTO_CONFIG: {}
+    },
+    "sensors": {
+        _CONF_AUTO_CONFIG: {
+            "TelePeriod": 10
+        }
     }
 }
 
@@ -192,6 +201,7 @@ class Configurator():
         self.set_config(config, _TYPES.get(_TYPE_COMMON))
         if CONF_TYPE in config and config.get(CONF_TYPE) in _TYPES:
             self.set_config(config, _TYPES.get(config.get(CONF_TYPE)))
+
         return config
 
     def set_config(self, config, data):
@@ -243,7 +253,7 @@ class Configurator():
         _special_config = self._get_special_config()
         _backlogCmd += self._get_backlog_special_cmd(_special_config)
 
-        if (_AUTOCONFIGURE_ACTIVE or self._should_auto_configure) and _backlogCmd is not "":
+        if (_AUTOCONFIGURE_ACTIVE or self._should_auto_configure) and _backlogCmd != "":
             self._configure_via_http(_backlogCmd)
 
     def _configure_via_http(self, cmd):
@@ -279,12 +289,11 @@ class Configurator():
                     if _current_config_name == _config_name:
                         _option_found = True
                         if _current_config_value != _config_value:
-                            # self._logger.debug("New configuration for %s: %s, %s => %s" % (self._internal_id, _current_config_name, _config_value, _current_config_value))
+                            #self._logger.debug("New configuration for %s: %s, %s => %s" % (self._internal_id, _current_config_name, _config_value, _current_config_value))
                             _backlogCmd += "%s %s;" % (_config_name, _current_config_value)
             if _option_found == False:
-                # self._logger.debug("Configuration not found for %s: %s, %s" % (self._internal_id, _current_config_name, _current_config_value))
+                #self._logger.debug("Configuration not found for %s: %s, %s" % (self._internal_id, _current_config_name, _current_config_value))
                 _backlogCmd += "%s %s;" % (_current_config_name, _current_config_value)
-            
 
         return _backlogCmd
 
