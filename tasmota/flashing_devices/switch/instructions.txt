@@ -26,16 +26,29 @@ Rule1
    Power1 0
  ENDON
  ON Power2#State==ON DO BACKLOG
-   IF (TIME > SUNSET-60m OR TIME < SUNRISE+60m) Power1 1 ENDIF;
-   RuleTimer1 0
-   PUBLISH stat/%topic%/PIR 1;
+   IF (Var1 > 0 AND (TIME > SUNSET-60m OR TIME < SUNRISE+60m)) Power1 1 ENDIF;
+   RuleTimer1 0;
+   PUBLISH stat/%topic%/PIR 1
  ENDON
  ON Power2#State==OFF DO BACKLOG
-   RuleTimer1 60
-   PUBLISH stat/%topic%/PIR 0;
+   IF (Var1 > 0) RuleTimer1 Var1 ENDIF;
+   PUBLISH stat/%topic%/PIR 0
  ENDON
- ON System#Init DO 
-  Power2 0
+ ON System#Init DO BACKLOG
+  Power2 0;
+  Power1 0;
+  Var1 60
+ ENDON
+ ON mqtt#connected DO BACKLOG
+  Subscribe PIR, set/%topic%/PIR
+ ENDON
+ ON Event#PIR==1 DO BACKLOG
+  Var1 60;
+  PUBLISH stat/%topic%/PIRTIMEOUT 60
+ ENDON
+ ON Event#PIR==0 DO BACKLOG
+  Var1 0;
+  PUBLISH stat/%topic%/PIRTIMEOUT 0
  ENDON
 
 Auto-on rule

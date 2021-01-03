@@ -15,7 +15,6 @@
   name: Undefined LED controller
   type: led_controller_rgbw
 
-
 - platform: tasmota
   internal_id: undefined/dimmer
   name: Undefined dimmer

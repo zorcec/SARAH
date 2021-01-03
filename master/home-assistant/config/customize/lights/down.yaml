@@ -4,11 +4,10 @@
   type: dimmer
   mac_address: 84:F3:EB:F9:A3:87
   customize:
-      WiFiPower: 16
-      PwmFrequency: 3200
-      DimmerRange: 30,100
+    WiFiPower: 16
+    PwmFrequency: 3200
+    DimmerRange: 30,100
   auto_configure: False
-
 
 - platform: tasmota
   internal_id: down/touch1
@@ -19,5 +18,5 @@
   _motion_event_topic: stat/down/touch1/POWER2
   mac_address: C4:4F:33:9E:B8:CB
   customize:
-        WiFiPower: 16
+    WiFiPower: 16
   auto_configure: False

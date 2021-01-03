@@ -7,3 +7,4 @@
   sensors:
     - type: temperature
     - type: humidity
+      offset: 1.2

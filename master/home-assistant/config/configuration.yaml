@@ -10,7 +10,6 @@ config:
 
 http:
   base_url: https://zorcec.duckdns.org:8123
-  base_url: http://zorcec.duckdns.org:8123
   ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
   ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
 

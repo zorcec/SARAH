@@ -21,5 +21,6 @@
   name: Bedroom LED controller
   type: led_controller_rgbw
   mac_address: 60:01:94:AC:4E:82
+  auto_configure: False
   customize:
         WiFiPower: 17

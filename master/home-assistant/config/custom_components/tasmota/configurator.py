@@ -132,7 +132,9 @@ _TYPES = {
             "SetOption31": 0,         # Disable status LED blinking during Wi-Fi and MQTT connection problems. (1 is ON )
             "SetOption1": 0,          # Multipress support off
             "SetOption11": 0,         # Multipress support off
-            "SetOption13": 1         # Will react instantly
+            "SetOption13": 1,         # Will react instantly
+            "SetOption0": 1,          # Restore power after restart
+            "SetOption53": 1          # Display hostname & IP
         }
     },
     "led_controller_rgb": {
@@ -172,7 +174,11 @@ _TYPES = {
     },
     "sensors": {
         _CONF_AUTO_CONFIG: {
-            "TelePeriod": 10
+            "TelePeriod": 10,
+            "AmpRes": 3,
+            "HumRes": 1,
+            "TempRes": 3,
+            "PressRes": 0
         }
     }
 }
