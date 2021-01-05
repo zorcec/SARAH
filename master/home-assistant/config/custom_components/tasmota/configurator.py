@@ -80,6 +80,7 @@ _AUTOCONFIGURE_ACTIVE = False
 # cannot be checked generic way
 _SPECIAL_CONFIG = {
     "SSID1": "IoT",
+
     "Password1": "sarah_is_awesome",
     "SSID2": "SARAH",
     "Password2": "sarah",
@@ -170,15 +171,17 @@ _TYPES = {
         }
     },
     "switch": {
-        _CONF_AUTO_CONFIG: {}
+        _CONF_AUTO_CONFIG: {
+            "SetOption60": 1
+        }
     },
     "sensors": {
         _CONF_AUTO_CONFIG: {
             "TelePeriod": 10,
             "AmpRes": 3,
-            "HumRes": 1,
+            "HumRes": 3,
             "TempRes": 3,
-            "PressRes": 0
+            "PressRes": 3
         }
     }
 }

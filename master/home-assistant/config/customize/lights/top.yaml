@@ -10,14 +10,12 @@
   internal_id: top/switch1
   name: Top Stairway
   type: switch
-  _motion_mode: None
-  _motion_iterval: 5
-  -motion_event_topic: stat/top/switch1/POWER2
   mac_address: D8:F1:5B:C7:A9:A8
+  auto_configure: False
   customize:
         WiFiPower: 16
 
-- platform: tasmota
+- platform: tasmotaco
   internal_id: top/dimmer1
   name: Top Main
   type: dimmer

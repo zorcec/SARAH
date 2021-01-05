@@ -20,3 +20,12 @@
   customize:
     WiFiPower: 16
   auto_configure: False
+
+- platform: tasmota
+  internal_id: down/switch1
+  name: Downstairs Stairway
+  type: switch
+  mac_address: DC:4F:22:F9:85:BB
+  customize:
+        WiFiPower: 16
+  auto_configure: False

@@ -18,5 +18,7 @@
   type: sensors
   mac_address: 80:7D:3A:B7:AB:70
   auto_configure: False
+  customize:
+    WiFiPower: 17
   sensors:
     - type: temperature

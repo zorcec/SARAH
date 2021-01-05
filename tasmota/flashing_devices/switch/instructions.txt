@@ -35,16 +35,15 @@ Rule1
    PUBLISH stat/%topic%/PIR 0
  ENDON
  ON System#Init DO BACKLOG
-  Power2 0;
-  Power1 0;
   Var1 60
  ENDON
  ON mqtt#connected DO BACKLOG
-  Subscribe PIR, set/%topic%/PIR
+  Subscribe PIR, set/%topic%/PIR;
+  PUBLISH stat/%topic%/PIRTIMEOUT %Var1%
  ENDON
  ON Event#PIR==1 DO BACKLOG
   Var1 60;
-  PUBLISH stat/%topic%/PIRTIMEOUT 60
+  PUBLISH stat/%topic%/PIRTIMEOUT %Var1%
  ENDON
  ON Event#PIR==0 DO BACKLOG
   Var1 0;

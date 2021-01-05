@@ -36,6 +36,7 @@ from homeassistant.const import (
 )
 
 from . import motion
+from . import sensor
 
 from ..sarah import (
     CONF_INTERNAL_ID,
@@ -74,8 +75,10 @@ PLATFORM_SCHEMA = vol.Schema({
 }, extra = vol.ALLOW_EXTRA)
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
-    """Set up Tasmota light through configuration.yaml."""
+    """Set up Tasmota switch through configuration.yaml."""
     await _async_setup_entity(hass, config, async_add_entities)
+    # add sensors (PIR)
+    await sensor.async_setup_platform(hass, config, async_add_entities)
 
 async def _async_setup_entity(hass, config, async_add_entities, config_entry=None, discovery_hash=None):
     async_add_entities([TasmotaSwitch(hass, config, config_entry, discovery_hash)])
