@@ -4,7 +4,7 @@
   type: touch
   mac_address: 60:01:94:B4:66:29
   customize:
-      WiFiPower: 12
+    WiFiPower: 12
 
 - platform: tasmota
   internal_id: top/switch1
@@ -13,15 +13,15 @@
   mac_address: D8:F1:5B:C7:A9:A8
   auto_configure: False
   customize:
-        WiFiPower: 16
+    WiFiPower: 16
 
-- platform: tasmotaco
+- platform: tasmota
   internal_id: top/dimmer1
   name: Top Main
   type: dimmer
   mac_address: 84:F3:EB:F9:6B:19
   customize:
-      WiFiPower: 16
+    WiFiPower: 16
 
 - platform: tasmota
   internal_id: top/dimmer2
@@ -29,15 +29,12 @@
   type: dimmer
   mac_address: 2C:F4:32:19:E1:D0
   customize:
-      WiFiPower: 16
-      DimmerRange: 60,100
+    WiFiPower: 16
+    DimmerRange: 60,100
 
 - platform: tasmota
   internal_id: top/workplace_led
   name: Top Workplace LED
   type: led_controller_rgb
   mac_address: 60:01:94:B9:A4:F6
-  _motion_mode: None
-  _motion_iterval: 5
-  _motion_trackers:
-    - undefined/switch
+  auto_configure: False

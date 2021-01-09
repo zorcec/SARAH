@@ -4,7 +4,9 @@
   type: sensors
   mac_address: BC:DD:C2:2F:D4:DB
   auto_configure: False
+  customize:
+    WiFiPower: 4
   sensors:
     - type: temperature
     - type: humidity
-      offset: 1.2
+      offset: 1.1

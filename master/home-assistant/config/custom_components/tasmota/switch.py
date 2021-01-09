@@ -77,7 +77,6 @@ PLATFORM_SCHEMA = vol.Schema({
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up Tasmota switch through configuration.yaml."""
     await _async_setup_entity(hass, config, async_add_entities)
-    # add sensors (PIR)
     await sensor.async_setup_platform(hass, config, async_add_entities)
 
 async def _async_setup_entity(hass, config, async_add_entities, config_entry=None, discovery_hash=None):

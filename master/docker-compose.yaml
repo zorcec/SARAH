@@ -3,6 +3,7 @@ services:
   
   home-assistant:
     container_name: home-assistant
+    restart: always
     build:
       context: ./home-assistant
     ports:
@@ -17,6 +18,7 @@ services:
 
   letsencrypt:
     image: linuxserver/swag
+    restart: always
     container_name: letsencrypt
     cap_add:
       - NET_ADMIN
@@ -37,6 +39,7 @@ services:
 
   tasmota-webserver:
     image: nginx
+    restart: always
     container_name: tasmota-webserver
     volumes:
       - ./tasmota-webserver:/usr/share/nginx/html
@@ -45,6 +48,7 @@ services:
 
   duckdns:
     image: linuxserver/duckdns
+    restart: always
     container_name: duckdns
     environment:
       - TZ=Europe/London

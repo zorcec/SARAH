@@ -5,12 +5,12 @@
   mac_address: CC:50:E3:08:20:68
   auto_configure: False
   customize:
-    WiFiPower: 17
+    WiFiPower: 4
   sensors:
     - type: temperature
     - type: pressure
     - type: humidity
-      offset: 1.2
+      offset: 1.1
 
 - platform: tasmota
   internal_id: bathroom/water_sensor
@@ -19,6 +19,6 @@
   mac_address: 80:7D:3A:B7:AB:70
   auto_configure: False
   customize:
-    WiFiPower: 17
+    WiFiPower: 12
   sensors:
     - type: temperature

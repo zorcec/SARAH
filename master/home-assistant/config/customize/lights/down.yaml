@@ -27,5 +27,23 @@
   type: switch
   mac_address: DC:4F:22:F9:85:BB
   customize:
-        WiFiPower: 16
+    WiFiPower: 16
   auto_configure: False
+
+- platform: tasmota
+  internal_id: down/led_sofa
+  name: Down LED Sofa
+  type: led_controller_rgb
+  mac_address: DC:4F:22:F6:8C:2C
+  auto_configure: False
+  cutomize:
+    topic: down/led_kitchen
+    WiFiPower: 16
+
+- platform: tasmota
+  internal_id: down/led_kitchen
+  name: Down LED Kitchen
+  type: led_controller_rgb
+  mac_address: DC:4F:22:F5:14:D9
+  auto_configure: False
+  WiFiPower: 16

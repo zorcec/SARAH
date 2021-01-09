@@ -324,7 +324,6 @@ class Configurator():
 
         return _backlogCmd
 
-
     def _listen_for_new_devices(self):
 
         def tasmota_detected(event):
