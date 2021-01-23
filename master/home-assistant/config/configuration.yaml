@@ -16,6 +16,13 @@ http:
 # Enables support for tracking state changes over time
 history:
 
+recorder:
+  purge_keep_days: 30
+  commit_interval: 10
+  db_url: mysql://root:admin@mariadb/ha?charset=utf8mb4
+
+mobile_app:
+
 tasmota_information:
   ip_range: "192.168.0.10-192.168.0.50"
 
