@@ -120,15 +120,18 @@ _TYPES = {
         CONF_ON_COMMAND_TYPE: DEFAULT_ON_COMMAND_TYPE,
         _CONF_AUTO_CONFIG: {
             #"SetOption3": 1,           # MQTT
+            "Hostname": "{internal_id}",
             "Timezone": 2,
             "Longitude": 2.294442,
             "Latitude": 48.858360,
+            "NtpServer": "time.cloudflare.com",
             "PowerOnState": 0,
             "LedState": 0,
             "Sleep": 50,
             "SerialLog": 0,
             "WiFiPower": 8,
             "TelePeriod": 30,
+            "MqttRetry": 120,
             "SaveData": 3600,         # Save every hour (max)
             "SetOption31": 0,         # Disable status LED blinking during Wi-Fi and MQTT connection problems. (1 is ON )
             "SetOption1": 0,          # Multipress support off
@@ -143,7 +146,7 @@ _TYPES = {
         CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
         CONF_RGB_COMMAND_TOPIC: "cmnd/{internal_id}/Color",
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 4000
+            "PwmFrequency": 1
         }
     },
     "led_controller_rgbw": {
@@ -153,14 +156,14 @@ _TYPES = {
         CONF_WHITE_VALUE_COMMAND_TOPIC: "cmnd/{internal_id}/Channel4" ,
         CONF_WHITE_VALUE_SCALE: 100,
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 4000
+            "PwmFrequency": 1
         }
     },
     "dimmer": {
         CONF_BRIGHTNESS_SCALE: 100,
         CONF_BRIGHTNESS_COMMAND_TOPIC: "cmnd/{internal_id}/DIMMER",
         _CONF_AUTO_CONFIG: {
-            "PwmFrequency": 4000,
+            "PwmFrequency": 1,
             "DimmerRange": "25,100"
         }
     },
@@ -172,12 +175,23 @@ _TYPES = {
     },
     "switch": {
         _CONF_AUTO_CONFIG: {
+            "Sleep": 1,
             "SetOption60": 1
         }
     },
     "sensors": {
         _CONF_AUTO_CONFIG: {
             "TelePeriod": 10,
+            "AmpRes": 3,
+            "HumRes": 3,
+            "TempRes": 3,
+            "PressRes": 3
+        }
+    },
+    "sensor-dp": {
+        _CONF_AUTO_CONFIG: {
+            "DeepSleepTime": 600,
+            "TelePeriod": 5,
             "AmpRes": 3,
             "HumRes": 3,
             "TempRes": 3,

@@ -84,13 +84,13 @@ async def _async_setup_entity(hass, config, async_add_entities, config_entry=Non
 
 class TasmotaSwitch(MqttSwitch):
 
-    def __init__(self, hass, config, config_entry, discovery_hash):
+    def __init__(self, hass, config, config_entry, discovery_data):
         """Initializes a Tasmota light."""
         self._internal_id = config.get(CONF_INTERNAL_ID, None)
         self._hass = hass
         self._loop = asyncio.new_event_loop()
         _LOGGER.info("Initializing %s" % self._internal_id)
-        MqttSwitch.__init__(self, self._get_config(config), config_entry, discovery_hash)
+        MqttSwitch.__init__(self, hass = self._hass, config = self._get_config(config), config_entry = config_entry, discovery_data = discovery_data)
         asyncio.set_event_loop(self._loop)
 
         if "motion_iterval" in config:

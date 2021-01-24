@@ -70,7 +70,7 @@ class TasmotaLight(MqttLight):
     async def create(self, config):
         self.configurator = configurator.Configurator(self._hass, config)
         self._config = self.configurator.getConfig()
-        MqttLight.__init__(self, config, self._config_entry, self._discovery_hash)
+        MqttLight.__init__(self, hass = self._hass, config = config, config_entry = self._config_entry, discovery_data = self._discovery_hash)
 
         self.refresh()
 

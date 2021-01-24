@@ -25,9 +25,13 @@ Rule1
  ON Rules#Timer=1 DO
    Power1 0
  ENDON
+ ON Rules#Timer=2 DO
+   Power2 0
+ ENDON
  ON Power2#State==ON DO BACKLOG
    IF (Var1 > 0 AND (TIME > SUNSET-60m OR TIME < SUNRISE+60m)) Power1 1 ENDIF;
    RuleTimer1 0;
+   RuleTimer2 60;
    PUBLISH stat/%topic%/PIR 1
  ENDON
  ON Power2#State==OFF DO BACKLOG
@@ -35,7 +39,8 @@ Rule1
    PUBLISH stat/%topic%/PIR 0
  ENDON
  ON System#Init DO BACKLOG
-  Var1 60
+  Var1 60;
+  RuleTimer2 60;
  ENDON
  ON mqtt#connected DO BACKLOG
   Subscribe PIR, set/%topic%/PIR;

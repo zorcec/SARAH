@@ -72,6 +72,31 @@ services:
     volumes:
       - ./mariadb/data:/var/lib/mysql
 
+  ntp:
+    image: cturra/ntp
+    restart: always
+    ports:
+      - "0.0.0.0:123:123/udp"
+    tmpfs:
+      - /etc/chrony:rw,mode=1750
+      - /run/chrony:rw,mode=1750
+      - /var/lib/chrony:rw,mode=1750
+    environment:
+      - NTP_SERVERS=time.cloudflare.com
+
+#  dnsmasq:
+#    build:
+#      context: dnsmasq
+#    restart: always
+#    ports:
+#      - 0.0.0.0:53:53/udp
+#      - 0.0.0.0:5380:8080
+#    cap_add:
+#      - NET_ADMIN
+#    network_mode: host
+#    volumes:
+#      - ./dnsmasq/etc/config:/etc/config
+
 #  adminer:
 #    image: adminer
 #    restart: always
