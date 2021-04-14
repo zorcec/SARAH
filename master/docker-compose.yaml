@@ -59,7 +59,7 @@ services:
       - LOG_FILE=false
 
   mosquitto:
-      image: arm32v6/eclipse-mosquitto
+      image: eclipse-mosquitto
       restart: always
       ports:
         - "0.0.0.0:1883:1883"
@@ -83,6 +83,14 @@ services:
       - /var/lib/chrony:rw,mode=1750
     environment:
       - NTP_SERVERS=time.cloudflare.com
+      
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 0.0.0.0:1111:8080
+    links:
+      - "mariadb:mariadb"
 
 #  dnsmasq:
 #    build:
@@ -96,11 +104,3 @@ services:
 #    network_mode: host
 #    volumes:
 #      - ./dnsmasq/etc/config:/etc/config
-
-#  adminer:
-#    image: adminer
-#    restart: always
-#    ports:
-#      - 0.0.0.0:1111:8080
-#    links:
-#      - "mariadb:mariadb"
