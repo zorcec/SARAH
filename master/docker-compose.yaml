@@ -59,7 +59,7 @@ services:
       - LOG_FILE=false
 
   mosquitto:
-      image: eclipse-mosquitto
+      image: eclipse-mosquitto:1.6.14
       restart: always
       ports:
         - "0.0.0.0:1883:1883"
