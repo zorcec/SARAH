@@ -1,6 +1,5 @@
 import voluptuous as vol
 import logging
-import ptvsd
 import json
 import re
 
@@ -20,9 +19,6 @@ from ..sarah import (
     ICON_GENERIC,
     CONF_INTERNAL_ID
 )
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 _LOGGER = logging.getLogger(__name__)
 

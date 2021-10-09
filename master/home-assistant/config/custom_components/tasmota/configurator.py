@@ -1,6 +1,5 @@
 import voluptuous as vol
 import logging
-import ptvsd
 import urllib
 import json
 
@@ -64,9 +63,6 @@ from ..sarah import (
     CONF_INTERNAL_ID,
     CONF_TYPE
 )
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 CONF_MAC_ADDRESS = "mac_address"
 

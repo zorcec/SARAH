@@ -1,6 +1,5 @@
 import voluptuous as vol
 import logging
-import ptvsd
 import asyncio
 
 from homeassistant.core import callback
@@ -33,9 +32,6 @@ from ..sarah import (
 # centralize
 _EVENT_SENSORIO_MOTION = "sensorio:motion"
 _TOPIC_MOTION_EVENT = "motion_event_topic"
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 _LOGGER = logging.getLogger(__name__)
 

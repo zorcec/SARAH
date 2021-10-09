@@ -1,6 +1,5 @@
 import voluptuous as vol
 import logging
-import ptvsd
 import asyncio
 
 import homeassistant.helpers.config_validation as cv

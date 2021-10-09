@@ -1,12 +1,8 @@
 import time
 import threading
-import ptvsd
 
 from homeassistant.core import callback
 import homeassistant.components.mqtt as mqtt
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 from . import light
 
