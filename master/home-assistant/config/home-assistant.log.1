@@ -1,0 +1,88 @@
+2021-10-09 14:28:41 WARNING (MainThread) [homeassistant.loader] You are using a custom integration for tasmota_information which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.config] Invalid config for [http]: not a file for dictionary value @ data['http']['ssl_certificate']. Got '/letsencrypt/keys/letsencrypt/cert.pem'
+not a file for dictionary value @ data['http']['ssl_key']. Got '/letsencrypt/keys/letsencrypt/privkey.pem'. (See /config/configuration.yaml, line 11). Please check the docs at https://www.home-assistant.io/integrations/http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for http: Invalid config.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of system_log. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for system_log: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of api. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for api: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of config. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for config: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of websocket_api. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for websocket_api: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of image. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for image: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of auth. Setup failed for dependencies: http
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for auth: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of search. Setup failed for dependencies: websocket_api
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for search: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of person. Setup failed for dependencies: image
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for person: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of onboarding. Setup failed for dependencies: auth, http, person
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for onboarding: Could not set up all dependencies.
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of frontend. Setup failed for dependencies: api, auth, config, http, onboarding, search, system_log, websocket_api
+2021-10-09 14:28:42 ERROR (MainThread) [homeassistant.setup] Setup failed for frontend: Could not set up all dependencies.
+2021-10-09 14:28:43 INFO (MainThread) [custom_components.tasmota_information] Gathering information ...
+2021-10-09 14:28:43 INFO (Thread-7) [custom_components.tasmota_information] New device detected: top/touch1
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of webhook. Setup failed for dependencies: http
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Setup failed for webhook: Could not set up all dependencies.
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of history. Setup failed for dependencies: http
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Setup failed for history: Could not set up all dependencies.
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of mqtt. Setup failed for dependencies: http
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Setup failed for mqtt: Could not set up all dependencies.
+2021-10-09 14:28:43 INFO (Thread-7) [custom_components.tasmota_information] New device detected: down/sensor
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of mobile_app. Setup failed for dependencies: http, webhook, person
+2021-10-09 14:28:43 ERROR (MainThread) [homeassistant.setup] Setup failed for mobile_app: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.switch: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.switch: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of tasmota. Setup failed for dependencies: mqtt
+2021-10-09 14:28:44 ERROR (MainThread) [homeassistant.setup] Unable to prepare setup for platform tasmota.light: Could not set up all dependencies.
+2021-10-09 14:28:44 INFO (Thread-7) [custom_components.tasmota_information] New device detected: bedroom/sensor
+2021-10-09 14:28:45 INFO (Thread-7) [custom_components.tasmota_information] New device detected: bedroom/touch1
+2021-10-09 14:28:46 INFO (Thread-7) [custom_components.tasmota_information] New device detected: top/dimmer2
+2021-10-09 14:28:46 INFO (Thread-7) [custom_components.tasmota_information] New device detected: bathroom/sensor
+2021-10-09 14:28:49 INFO (Thread-7) [custom_components.tasmota_information] New device detected: down/switch1
+2021-10-09 14:28:53 INFO (Thread-7) [custom_components.tasmota_information] New device detected: top/sofa_led
+2021-10-09 14:28:57 INFO (Thread-7) [custom_components.tasmota_information] New device detected: top/switch1
