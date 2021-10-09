@@ -2,7 +2,8 @@
     "domain": "tasmota",
     "name": "Tasmota",
     "documentation": "",
-    "dependencies": ["mqtt", "sensor", "switch", "light"],
+    "dependencies": [],
     "codeowners": [],
-    "requirements": []
+    "requirements": [],
+    "version": "1.0"
   }
