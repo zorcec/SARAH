@@ -2,7 +2,8 @@
     "domain": "sensorio",
     "name": "Sensorio",
     "documentation": "",
-    "dependencies": ["mqtt"],
+    "dependencies": [],
     "codeowners": [],
-    "requirements": []
+    "requirements": [],
+    "version": "1.0"
   }

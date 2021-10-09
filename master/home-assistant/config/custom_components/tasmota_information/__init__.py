@@ -3,7 +3,6 @@ import logging
 import urllib.request
 import urllib.parse
 import json
-import ptvsd
 import threading
 
 from ipaddress import ip_address
@@ -11,9 +10,6 @@ from ipaddress import ip_address
 from ..sarah import (
     CONF_INTERNAL_ID
 )
-
-ptvsd.enable_attach()
-#ptvsd.wait_for_attach()
 
 EVENT_TASMOTA_DETECTED = "new_tasmota_detected"
 STATUS_MQTT = "StatusMQT"
