@@ -91,6 +91,15 @@ services:
       - 0.0.0.0:1111:8080
     links:
       - "mariadb:mariadb"
+      
+  portainer:
+    image: portainer/portainer
+    restart: always
+    ports:
+     - 0.0.0.0:9000:9000
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - ./portainer/data:/data portainer/portainer-ce
 
 #  dnsmasq:
 #    build:
