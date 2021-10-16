@@ -22,17 +22,6 @@ from homeassistant.components.mqtt.light.schema_basic import (
     ATTR_BRIGHTNESS
 )
 
-from homeassistant.components.mqtt import (
-    CONF_COMMAND_TOPIC,
-    CONF_AVAILABILITY_TOPIC,
-    CONF_QOS,
-    CONF_RETAIN,
-    CONF_STATE_TOPIC,
-    CONF_UNIQUE_ID,
-    CONF_PAYLOAD_NOT_AVAILABLE,
-    CONF_PAYLOAD_AVAILABLE
-)
-
 from homeassistant.const import ( 
     CONF_PLATFORM, 
     CONF_NAME,
@@ -61,7 +50,14 @@ from ..tasmota_information import (
 
 from ..sarah import (
     CONF_INTERNAL_ID,
-    CONF_TYPE
+    CONF_TYPE,
+    CONF_AVAILABILITY_TOPIC,
+    CONF_COMMAND_TOPIC,
+    CONF_QOS,
+    CONF_RETAIN,
+    CONF_STATE_TOPIC,
+    CONF_PAYLOAD_NOT_AVAILABLE,
+    CONF_PAYLOAD_AVAILABLE
 )
 
 CONF_MAC_ADDRESS = "mac_address"

@@ -4,16 +4,6 @@ import asyncio
 
 import homeassistant.helpers.config_validation as cv
 
-from homeassistant.components.mqtt import (
-    CONF_COMMAND_TOPIC,
-    CONF_QOS,
-    CONF_RETAIN,
-    CONF_STATE_TOPIC,
-    CONF_UNIQUE_ID,
-    CONF_PAYLOAD_NOT_AVAILABLE,
-    CONF_PAYLOAD_AVAILABLE
-)
-
 from homeassistant.const import ( 
     CONF_PLATFORM, 
     CONF_NAME,
@@ -39,7 +29,13 @@ from . import motion
 from ..sarah import (
     CONF_INTERNAL_ID,
     CONF_TYPE,
-    CONF_AVAILABILITY_TOPIC
+    CONF_AVAILABILITY_TOPIC,
+    CONF_COMMAND_TOPIC,
+    CONF_QOS,
+    CONF_RETAIN,
+    CONF_STATE_TOPIC,
+    CONF_PAYLOAD_NOT_AVAILABLE,
+    CONF_PAYLOAD_AVAILABLE
 )
 
 from homeassistant.components.mqtt.switch import ( 
