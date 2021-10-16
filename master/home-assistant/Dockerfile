@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:2021.10.5
+FROM homeassistant/home-assistant:2021.11.0.dev20211015
 
 RUN mkdir -p /certificates
 
