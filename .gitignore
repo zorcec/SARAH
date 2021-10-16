@@ -2,12 +2,12 @@
 /**/*.pyc
 /**/secret.json
 /**/secrets.yaml
-/**/*.log.*
 
 master/letsencrypt/
 master/find3/
 master/home-assistant/src
 master/home-assistant/config/**/*.log
+master/home-assistant/config/**/*.log.*
 master/home-assistant/config/.*
 master/appdeamon/files/appdeamon.yaml
 master/appdeamon/apps/__pycache__/

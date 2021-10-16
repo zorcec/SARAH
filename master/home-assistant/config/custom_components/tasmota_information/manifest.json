@@ -1,6 +1,6 @@
 {
-    "domain": "tasmota-information",
-    "name": "Tasmota infromation",
+    "domain": "tasmota_information",
+    "name": "TasmotaInformation",
     "documentation": "",
     "dependencies": [],
     "codeowners": [],

@@ -1,4 +1,3 @@
-import voluptuous as vol
 import logging
 import urllib.request
 import urllib.parse
