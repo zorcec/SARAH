@@ -1,0 +1,9 @@
+{
+    "domain": "tasmota-information",
+    "name": "Tasmota infromation",
+    "documentation": "",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "version": "1.0"
+  }
