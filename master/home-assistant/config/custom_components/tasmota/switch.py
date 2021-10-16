@@ -6,7 +6,6 @@ import homeassistant.helpers.config_validation as cv
 
 from homeassistant.components.mqtt import (
     CONF_COMMAND_TOPIC,
-    CONF_AVAILABILITY_TOPIC,
     CONF_QOS,
     CONF_RETAIN,
     CONF_STATE_TOPIC,
@@ -39,7 +38,8 @@ from . import motion
 
 from ..sarah import (
     CONF_INTERNAL_ID,
-    CONF_TYPE
+    CONF_TYPE,
+    CONF_AVAILABILITY_TOPIC
 )
 
 from homeassistant.components.mqtt.switch import ( 
