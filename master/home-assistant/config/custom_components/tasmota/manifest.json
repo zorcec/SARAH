@@ -1,9 +1,0 @@
-{
-    "domain": "tasmota",
-    "name": "Tasmota",
-    "documentation": "",
-    "dependencies": [],
-    "codeowners": [],
-    "requirements": [],
-    "version": "1.0"
-  }

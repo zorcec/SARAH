@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "title": "Linz",
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "General",
+          "path": "general",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entity-filter",
+              "entities": [
+                {
+                  "entity": "light.bed_led"
+                },
+                {
+                  "entity": "switch.tasmota_4"
+                },
+                {
+                  "entity": "switch.tasmota_3"
+                },
+                {
+                  "entity": "switch.bedrom_main_light"
+                },
+                {
+                  "entity": "switch.main_light"
+                },
+                {
+                  "entity": "light.tasmota_2"
+                },
+                {
+                  "entity": "light.kid_dimmer1"
+                },
+                {
+                  "entity": "light.tasmota_3"
+                },
+                {
+                  "entity": "switch.kitchen_light"
+                },
+                {
+                  "entity": "switch.tasmota_6"
+                },
+                {
+                  "entity": "switch.tasmota_5"
+                },
+                {
+                  "entity": "light.tasmota"
+                },
+                {
+                  "entity": "switch.workplace_light"
+                }
+              ],
+              "state_filter": [
+                "on",
+                "open"
+              ],
+              "show_empty": false,
+              "card": {
+                "type": "glance",
+                "title": "lights and switches currently on"
+              }
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "path": "default_view",
+          "title": "Downstairs",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.tasmota_2"
+                },
+                {
+                  "entity": "light.tasmota_3"
+                },
+                {
+                  "entity": "switch.kitchen_light",
+                  "icon": "mdi:lightbulb"
+                }
+              ]
+            },
+            {
+              "type": "light",
+              "entity": "light.tasmota_3"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.tasmota_si7021_temperature_2",
+              "detail": 1,
+              "name": "Temperature"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "detail": 1,
+              "entity": "sensor.tasmota_si7021_humidity_2",
+              "name": "Humidity"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Bathroom",
+          "path": "bathroom",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.tasmota_3",
+                  "icon": "mdi:lightbulb"
+                }
+              ]
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.tasmota_si7021_temperature",
+              "detail": 1,
+              "name": "Temperature"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.tasmota_si7021_humidity",
+              "detail": 1,
+              "name": "Humidity"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Bedroom",
+          "path": "bedroom",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.bed_led"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Kid",
+          "path": "kid",
+          "badges": [],
+          "cards": [
+            {
+              "type": "light",
+              "entity": "light.kid_dimmer1"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Top",
+          "path": "top",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.tasmota"
+                },
+                {
+                  "entity": "switch.workplace_light",
+                  "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.terrace_light",
+                  "icon": "mdi:lightbulb"
+                }
+              ]
+            },
+            {
+              "type": "light",
+              "entity": "light.tasmota"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "detail": 1,
+              "entity": "sensor.top_sensor_bme280_temperature",
+              "name": "Temperature"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "detail": 1,
+              "entity": "sensor.top_sensor_bme280_humidity",
+              "name": "Humidity"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

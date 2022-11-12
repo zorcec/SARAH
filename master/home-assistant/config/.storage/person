@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "Tomislav",
+        "user_id": "d81d3d7902634864b794b15fc153555e",
+        "device_trackers": [],
+        "id": "tomislav"
+      }
+    ]
+  }
+}

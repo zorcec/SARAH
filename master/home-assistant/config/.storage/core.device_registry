@@ -1,0 +1,441 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "1fad98852b40103460bfea301f46391b"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "9f193044c6866d50a0fdc573b82395c9",
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.13/",
+        "connections": [
+          [
+            "mac",
+            "84:f3:eb:f9:6b:19"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5f7953a4dcd36d3b3815c06c8bb50127",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Tuya MCU",
+        "name_by_user": null,
+        "name": "top-dimmer1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.14/",
+        "connections": [
+          [
+            "mac",
+            "84:f3:eb:f9:a3:87"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "25d3ef8988dc0179e7b6fa79f87efc3e",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Tuya MCU",
+        "name_by_user": null,
+        "name": "down-dimmer1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bathroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.21/",
+        "connections": [
+          [
+            "mac",
+            "cc:50:e3:08:20:68"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a8e362d845cdce7654b202094d3db3b7",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "bathroom-sensor",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.32/",
+        "connections": [
+          [
+            "mac",
+            "2c:f4:32:19:e1:d0"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "24e2f44a884006a8f9d8f10b8fb2ca91",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Tuya MCU",
+        "name_by_user": null,
+        "name": "down-dimmer2",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bathroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.12/",
+        "connections": [
+          [
+            "mac",
+            "84:0d:8e:49:99:e5"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d6422fd2cc76109087b8f60b0bde773d",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "bathoom-touch1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.20/",
+        "connections": [
+          [
+            "mac",
+            "bc:dd:c2:2f:d4:db"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8f62ef6c8f2aae8181296f37f450d608",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "down-sensor",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.19/",
+        "connections": [
+          [
+            "mac",
+            "60:01:94:e3:1a:91"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d26c1d8f5e6a13d95845c0a2b05f69ff",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "bedroom-touch2",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kid",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.18/",
+        "connections": [
+          [
+            "mac",
+            "84:f3:eb:f9:9d:9f"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "bfee1a862312e6adc4c7bc1218f4c91d",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Tuya MCU",
+        "name_by_user": null,
+        "name": "kid-dimmer1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.17/",
+        "connections": [
+          [
+            "mac",
+            "d8:f1:5b:c7:cb:0d"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0ac618c89fbe6ecbd3b789e5f03f6351",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "top-switch1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.11/",
+        "connections": [
+          [
+            "mac",
+            "d8:f1:5b:8f:86:bf"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4c61c9119e752806074d81a11a25215f",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "bedroom-touch3",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.22/",
+        "connections": [
+          [
+            "mac",
+            "60:01:94:ac:4e:82"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "77de8b6b6e79c36ee19e56f3eef18983",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "",
+        "name_by_user": null,
+        "name": "bedroom-led",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.15/",
+        "connections": [
+          [
+            "mac",
+            "60:01:94:e3:1a:fa"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2add014bb83835638b865a5b4205044e",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "bedroom-touch1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.28/",
+        "connections": [
+          [
+            "mac",
+            "c4:4f:33:9e:b8:c5"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "fccddb1d7ae83ce59989a64862e21cd9",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "top-touch2",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.30/",
+        "connections": [
+          [
+            "mac",
+            "60:01:94:e3:14:c4"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2074700a67536ebc556f7568210b4407",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Touch",
+        "name_by_user": null,
+        "name": "down-touch2",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.31/",
+        "connections": [
+          [
+            "mac",
+            "c4:4f:33:9e:b8:cb"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "442225704d1be0392172efd226388d00",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "down-touch1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.29/",
+        "connections": [
+          [
+            "mac",
+            "dc:4f:22:55:da:78"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "769459500b0edf3cc50fa09061fcae41",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "top-sensor",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.34/",
+        "connections": [
+          [
+            "mac",
+            "dc:4f:22:f9:85:bb"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "01d709edbe9710f7a9047db31711bb3b",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "down-switch1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": []
+  }
+}

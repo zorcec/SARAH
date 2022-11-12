@@ -9,9 +9,10 @@ frontend:
 config:
 
 http:
-  base_url: https://zorcec.duckdns.org:8123
-  ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
-  ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
+  base_url: http://zorcec.duckdns.org:8123
+  #base_url: https://zorcec.duckdns.org:8123
+  #ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
+  #ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
 
 # Enables support for tracking state changes over time
 history:
@@ -23,9 +24,6 @@ recorder:
 
 mobile_app:
 
-tasmota_information:
-  ip_range: "192.168.0.10-192.168.0.50"
-
 logger:
   default: error
   logs:
@@ -36,7 +34,7 @@ script: !include customize/scripts.yaml
 automation: !include customize/automation.yaml
 intent_script: !include customize/intent-scripts.yaml
 
-light: !include_dir_merge_list customize/lights/
-switch: !include_dir_merge_list customize/switches/
-sensor: !include_dir_merge_list customize/sensors/
-climate: !include_dir_merge_list customize/climate/
+#light: !include_dir_merge_list customize/lights/
+#switch: !include_dir_merge_list customize/switches/
+#sensor: !include_dir_merge_list customize/sensors/
+#climate: !include_dir_merge_list customize/climate/

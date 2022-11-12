@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.tomislav",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "tomislav",
+          "user_id": "d81d3d7902634864b794b15fc153555e",
+          "friendly_name": "Tomislav"
+        },
+        "last_changed": "2022-11-12T19:34:00.064204+00:00",
+        "last_updated": "2022-11-12T19:34:05.142651+00:00",
+        "context": {
+          "id": "01GHPNBE2PQ0XQSSK2DJQG4PSQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-11-12T20:19:05.690371+00:00"
+    }
+  ]
+}

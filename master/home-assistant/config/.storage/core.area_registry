@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "name": "Top",
+        "id": "living_room",
+        "picture": null
+      },
+      {
+        "name": "Downstairs",
+        "id": "kitchen",
+        "picture": null
+      },
+      {
+        "name": "Master Bedroom",
+        "id": "bedroom",
+        "picture": null
+      },
+      {
+        "name": "Bathroom",
+        "id": "bathroom",
+        "picture": null
+      },
+      {
+        "name": "Kid",
+        "id": "kid",
+        "picture": null
+      }
+    ]
+  }
+}

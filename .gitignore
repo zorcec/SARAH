@@ -8,7 +8,6 @@ master/find3/
 master/home-assistant/src
 master/home-assistant/config/**/*.log
 master/home-assistant/config/**/*.log.*
-master/home-assistant/config/.*
 master/appdeamon/files/appdeamon.yaml
 master/appdeamon/apps/__pycache__/
 master/mariadb/data

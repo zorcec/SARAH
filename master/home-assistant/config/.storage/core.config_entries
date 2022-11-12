@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "1fad98852b40103460bfea301f46391b",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "7c3b832799f4056db7fb89efe4af3466",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "309484e349e26c9344076c88446c44e8",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "192.168.0.100",
+        "data": {
+          "broker": "192.168.0.100",
+          "port": 1883,
+          "discovery": true,
+          "client_id": "home-assistant-dev",
+          "keepalive": 60,
+          "protocol": "3.1",
+          "discovery_prefix": "homeassistant"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "18b02218197fab69398e60bed0a1f821",
+        "version": 1,
+        "domain": "tasmota",
+        "title": "Tasmota",
+        "data": {
+          "discovery_prefix": "tasmota/discovery"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "mqtt",
+        "unique_id": "tasmota",
+        "disabled_by": null
+      }
+    ]
+  }
+}
