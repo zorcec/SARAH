@@ -14,3 +14,9 @@ master/mariadb/data
 admin/tasmota-admin
 master/home-assistant/config/home-assistant_v2.db
 tasmota
+
+home-assistant/config/.storage/auth
+home-assistant/config/.storage/core.entity_registry
+home-assistant/config/.storage/core.restore_state
+home-assistant/config/.storage/http
+home-assistant/config/home-assistant.log.*
