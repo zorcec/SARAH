@@ -1,7 +1,5 @@
 homeassistant: !include customize/homeassistant.yaml
 
-mqtt: !include customize/mqtt.yaml
-
 # Enables the frontend
 frontend:
 

@@ -24,14 +24,20 @@ services:
     links:
       - "mariadb:mariadb"
 
-  tasmoadmin:
-    container_name: tasmoadmin
+  tasmota-webserver:
+    image: nginx
     restart: always
-    image: raymondmm/tasmoadmin
-    ports:
-      - "0.0.0.0:8124:80"
+    container_name: tasmota-webserver
     volumes:
-     - ./tasmoadmin:/host/data:/data
+      - ./tasmota-webserver:/usr/share/nginx/html
+    ports:
+      - "0.0.0.0:8888:80"
+
+  netdata:
+    image: netdata/netdata
+    restart: always
+    ports:
+      - "0.0.0.0:19999:19999"
 
   #letsencrypt:
   #  image: linuxserver/swag
@@ -53,15 +59,6 @@ services:
   #  ports:
   #    - "0.0.0.0:443:443"
   #    - "0.0.0.0:80:80"
-
-  tasmota-webserver:
-    image: nginx
-    restart: always
-    container_name: tasmota-webserver
-    volumes:
-      - ./tasmota-webserver:/usr/share/nginx/html
-    ports:
-      - "0.0.0.0:8888:80"
 
   #duckdns:
   #  image: linuxserver/duckdns
