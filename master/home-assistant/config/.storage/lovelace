@@ -85,6 +85,10 @@
                 {
                   "entity": "switch.kitchen_light",
                   "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.tasmota_6",
+                  "icon": "mdi:lightbulb"
                 }
               ]
             },
@@ -140,6 +144,13 @@
               "entity": "sensor.tasmota_si7021_humidity",
               "detail": 1,
               "name": "Humidity"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                "switch.tasmota"
+              ],
+              "title": "Motion"
             }
           ]
         },
@@ -189,6 +200,10 @@
                 },
                 {
                   "entity": "switch.terrace_light",
+                  "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.tasmota_5",
                   "icon": "mdi:lightbulb"
                 }
               ]
