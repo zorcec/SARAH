@@ -101,14 +101,14 @@
               "graph": "line",
               "type": "sensor",
               "entity": "sensor.tasmota_si7021_temperature_2",
-              "detail": 1,
+              "detail": 2,
               "name": "Temperature"
             },
             {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
-              "detail": 1,
+              "detail": 2,
               "entity": "sensor.tasmota_si7021_humidity_2",
               "name": "Humidity"
             }
@@ -134,7 +134,7 @@
               "graph": "line",
               "type": "sensor",
               "entity": "sensor.tasmota_si7021_temperature",
-              "detail": 1,
+              "detail": 2,
               "name": "Temperature"
             },
             {
@@ -142,7 +142,7 @@
               "graph": "line",
               "type": "sensor",
               "entity": "sensor.tasmota_si7021_humidity",
-              "detail": 1,
+              "detail": 2,
               "name": "Humidity"
             },
             {
@@ -150,7 +150,8 @@
               "entities": [
                 "switch.tasmota"
               ],
-              "title": "Motion"
+              "title": "Motion",
+              "hours_to_show": 24
             }
           ]
         },
@@ -176,6 +177,14 @@
           "path": "kid",
           "badges": [],
           "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.kid_dimmer1"
+                }
+              ]
+            },
             {
               "type": "light",
               "entity": "light.kid_dimmer1"
@@ -216,7 +225,7 @@
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
-              "detail": 1,
+              "detail": 2,
               "entity": "sensor.top_sensor_bme280_temperature",
               "name": "Temperature"
             },
@@ -224,7 +233,7 @@
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
-              "detail": 1,
+              "detail": 2,
               "entity": "sensor.top_sensor_bme280_humidity",
               "name": "Humidity"
             }

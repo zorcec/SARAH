@@ -434,6 +434,30 @@
         "name": "down-switch1",
         "sw_version": "12.2.0",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.35/",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:7a:6f:f8"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "733d4da48d509c9b1dbeb2346c2228e6",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "bathroom-water",
+        "sw_version": "12.2.0",
+        "via_device_id": null
       }
     ],
     "deleted_devices": []
