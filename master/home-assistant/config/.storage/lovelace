@@ -13,6 +13,12 @@
           "badges": [],
           "cards": [
             {
+              "show_current": true,
+              "show_forecast": true,
+              "type": "weather-forecast",
+              "entity": "weather.forecast_linz"
+            },
+            {
               "type": "entity-filter",
               "entities": [
                 {
