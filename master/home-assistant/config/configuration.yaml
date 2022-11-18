@@ -8,8 +8,6 @@ config:
 
 automation:
 
-scripts:
-
 http:
   base_url: http://zorcec.duckdns.org:8123
   #base_url: https://zorcec.duckdns.org:8123
