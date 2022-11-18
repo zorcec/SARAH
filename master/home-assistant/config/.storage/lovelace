@@ -95,12 +95,20 @@
                 {
                   "entity": "switch.tasmota_6",
                   "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.terrace_light",
+                  "icon": "mdi:lightbulb"
                 }
               ]
             },
             {
               "type": "light",
               "entity": "light.tasmota_3"
+            },
+            {
+              "type": "light",
+              "entity": "light.tasmota_2"
             },
             {
               "hours_to_show": 24,
@@ -158,6 +166,31 @@
               ],
               "title": "Motion",
               "hours_to_show": 24
+            },
+            {
+              "type": "conditional",
+              "conditions": [
+                {
+                  "entity": "sensor.my_sensor",
+                  "state_not": "unknown"
+                },
+                {
+                  "entity": "sensor.my_sensor",
+                  "state_not": "unavailable"
+                }
+              ],
+              "card": {
+                "type": "gauge",
+                "entity": "sensor.tasmota_ds18b20_temperature",
+                "min": 25,
+                "max": 50,
+                "severity": {
+                  "green": 37,
+                  "yellow": 40,
+                  "red": 42
+                },
+                "name": "Water Temp."
+              }
             }
           ]
         },
@@ -171,9 +204,41 @@
               "type": "entities",
               "entities": [
                 {
+                  "entity": "switch.main_light",
+                  "icon": "mdi:lightbulb"
+                },
+                {
                   "entity": "light.bed_led"
+                },
+                {
+                  "entity": "switch.tasmota_4",
+                  "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.bedrom_main_light",
+                  "icon": "mdi:lightbulb"
                 }
               ]
+            },
+            {
+              "type": "light",
+              "entity": "light.bed_led"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.tasmota_si7021_temperature_3",
+              "detail": 2,
+              "name": "Temperature"
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.tasmota_si7021_humidity_3",
+              "detail": 2,
+              "name": "Humidity"
             }
           ]
         },
@@ -214,18 +279,21 @@
                   "icon": "mdi:lightbulb"
                 },
                 {
-                  "entity": "switch.terrace_light",
+                  "entity": "switch.tasmota_5",
                   "icon": "mdi:lightbulb"
                 },
                 {
-                  "entity": "switch.tasmota_5",
-                  "icon": "mdi:lightbulb"
+                  "entity": "light.tasmota_4"
                 }
               ]
             },
             {
               "type": "light",
               "entity": "light.tasmota"
+            },
+            {
+              "type": "light",
+              "entity": "light.tasmota_4"
             },
             {
               "hours_to_show": 24,
@@ -242,6 +310,35 @@
               "detail": 2,
               "entity": "sensor.top_sensor_bme280_humidity",
               "name": "Humidity"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Settings",
+          "path": "mesh",
+          "icon": "mdi:hammer-wrench",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.tasmota_restart_reason_3"
+                },
+                {
+                  "entity": "sensor.tasmesh_1_mesh_mac_0"
+                },
+                {
+                  "entity": "sensor.tasmesh_1_mesh_channel"
+                },
+                {
+                  "entity": "sensor.tasmesh_1_mesh_nodes"
+                }
+              ],
+              "title": "Tasmesh 1",
+              "show_header_toggle": false,
+              "state_color": false
             }
           ]
         }

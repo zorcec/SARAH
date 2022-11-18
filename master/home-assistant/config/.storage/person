@@ -7,7 +7,9 @@
       {
         "name": "Tomislav",
         "user_id": "d81d3d7902634864b794b15fc153555e",
-        "device_trackers": [],
+        "device_trackers": [
+          "device_tracker.xiaomi"
+        ],
         "id": "tomislav"
       }
     ]

@@ -67,6 +67,37 @@
         "source": "mqtt",
         "unique_id": "tasmota",
         "disabled_by": null
+      },
+      {
+        "entry_id": "8f134553275f65442c583e8a8d0fc4bb",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "Xiaomi",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2022.10.2-full (2770)",
+          "device_name": "Xiaomi",
+          "manufacturer": "Xiaomi",
+          "model": "M2004J19C",
+          "os_name": "Android",
+          "os_version": "30",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "fQnnJ--QSAiQ8-RNNEKEwX:APA91bFn3-X2oytxNKfTS2g1vZnYsJ7jSM2J9qmtsVIJyg_TJQNHk2kXb_CrfRxASV4WcY-C1HLxNOG931DbW3To-_-oPW6uH28AkzA8udL6K1ZzO1GAybG0EajExXQEj7Jc3wpOcf5Y"
+          },
+          "device_id": "115479ec3e394736",
+          "webhook_id": "3a9616a15c248230259730674e0a07c23d1d73c0d4005b1cb2aa82fa40e75050",
+          "user_id": "d81d3d7902634864b794b15fc153555e"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
+        "disabled_by": null
       }
     ]
   }

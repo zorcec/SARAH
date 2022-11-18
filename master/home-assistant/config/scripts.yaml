@@ -1,0 +1,39 @@
+radiosilence:
+  alias: RadioSilence
+  sequence:
+  - condition: time
+    before: '21:30:00'
+    after: '21:00:00'
+    weekday:
+    - sat
+    - fri
+    - thu
+    - wed
+    - tue
+    - mon
+    - sun
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/event
+      payload: radioSilence
+      retain: true
+  - condition: time
+    before: 06:00:00
+    after: '17:30:00'
+    weekday:
+    - sat
+    - fri
+    - thu
+    - wed
+    - tue
+    - mon
+    - sun
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/event
+  mode: single
+  icon: mdi:radio-off
+new_script:
+  alias: New Script
+  sequence: []
+  mode: single

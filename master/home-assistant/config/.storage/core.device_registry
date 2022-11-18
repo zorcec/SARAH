@@ -388,30 +388,6 @@
         "via_device_id": null
       },
       {
-        "area_id": "living_room",
-        "config_entries": [
-          "18b02218197fab69398e60bed0a1f821"
-        ],
-        "configuration_url": "http://192.168.0.29/",
-        "connections": [
-          [
-            "mac",
-            "dc:4f:22:55:da:78"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "769459500b0edf3cc50fa09061fcae41",
-        "identifiers": [],
-        "manufacturer": "Tasmota",
-        "model": "Generic",
-        "name_by_user": null,
-        "name": "top-sensor",
-        "sw_version": "12.2.0",
-        "via_device_id": null
-      },
-      {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
@@ -436,7 +412,7 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
+        "area_id": "bathroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
@@ -456,6 +432,126 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bathroom-water",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "8f134553275f65442c583e8a8d0fc4bb"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1a21d2a93bcb563b7318dc1bb97882d6",
+        "identifiers": [
+          [
+            "mobile_app",
+            "115479ec3e394736"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "M2004J19C",
+        "name_by_user": null,
+        "name": "Xiaomi",
+        "sw_version": "30",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.37/",
+        "connections": [
+          [
+            "mac",
+            "bc:dd:c2:2d:2b:ce"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1a55d6267e1aeedc6e09c333795798d3",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "bedroom-sensor",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.38/",
+        "connections": [
+          [
+            "mac",
+            "60:01:94:ac:71:2f"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "aaaa83a159170ac7d5bf4c26d04896f5",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "MagicHome",
+        "name_by_user": null,
+        "name": "top-sofa-led",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.40/",
+        "connections": [
+          [
+            "mac",
+            "80:7d:3a:b7:ab:70"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "14496b15be5ab218a48e3ed6c108499f",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Wemos Teleinfo",
+        "name_by_user": null,
+        "name": "tasmesh-1",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.29/",
+        "connections": [
+          [
+            "mac",
+            "dc:4f:22:55:da:78"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "769459500b0edf3cc50fa09061fcae41",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "top-sensor",
         "sw_version": "12.2.0",
         "via_device_id": null
       }
