@@ -38,14 +38,3 @@ intent_script: !include customize/intent-scripts.yaml
 #switch: !include_dir_merge_list customize/switches/
 #sensor: !include_dir_merge_list customize/sensors/
 #climate: !include_dir_merge_list customize/climate/
-
-mqtt:
-  binary_sensor:
-    - platform: mqtt
-      name: "Top Hallway Motion"
-      state_topic: "stat/tasmota_C7CB0D/PIR"
-      availability_topic: "tele/tasmota_C7CB0D/LWT"
-      qos: 1
-      payload_available: "Online"
-      payload_not_available: "Offline"
-      device_class: motion
