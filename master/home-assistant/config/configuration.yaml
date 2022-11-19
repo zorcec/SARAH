@@ -6,8 +6,6 @@ frontend:
 # Enables configuration UI
 config:
 
-automation:
-
 http:
   base_url: http://zorcec.duckdns.org:8123
   #base_url: https://zorcec.duckdns.org:8123
@@ -29,12 +27,47 @@ logger:
   logs:
     custom_components: debug
 
-group: !include customize/groups.yaml
-script: !include customize/scripts.yaml
-automation: !include customize/automation.yaml
-intent_script: !include customize/intent-scripts.yaml
+group:
+script:
+automation:
+intent_script:
 
+mqtt:
+  binary_sensor:
+    - name: Top Hallway Motion Sensor
+      state_topic: stat/tasmota_C7CB0D/PIR
+      device_class: motion
+      force_update: true
+      availability_topic: tele/tasmota_C7CB0D/LWT
+      payload_on: "1"
+      payload_off: "0"
+      payload_available: Online
+      payload_not_available: Offline
+      unique_id: 'tasmota_C7CB0D_motion'
+
+    - name: Down Hallway Motion Sensor
+      state_topic: stat/tasmota_F985BB/PIR
+      device_class: motion
+      force_update: true
+      availability_topic: tele/tasmota_F985BB/LWT
+      payload_on: "1"
+      payload_off: "0"
+      payload_available: Online
+      payload_not_available: Offline
+      unique_id: 'tasmota_F985BB_motion'
+
+    - name: Middle Hallway Motion Sensor
+      state_topic: stat/tasmota_FA4CF2/PIR
+      device_class: motion
+      force_update: true
+      availability_topic: tele/tasmota_FA4CF2/LWT
+      payload_on: "1"
+      payload_off: "0"
+      payload_available: Online
+      payload_not_available: Offline
+      unique_id: 'tasmota_FA4CF2_motion'
+
+#sensor: !include_dir_merge_list customize/sensors/
 #light: !include_dir_merge_list customize/lights/
 #switch: !include_dir_merge_list customize/switches/
-#sensor: !include_dir_merge_list customize/sensors/
 #climate: !include_dir_merge_list customize/climate/

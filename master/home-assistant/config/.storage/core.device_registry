@@ -578,6 +578,30 @@
         "name": "bathroom-dimmer",
         "sw_version": "12.2.0",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "309484e349e26c9344076c88446c44e8"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "%macaddr%"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9e506eb4b1fa3ac001792766e840c7ce",
+        "identifiers": [],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": null,
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

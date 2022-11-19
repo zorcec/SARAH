@@ -125,6 +125,16 @@
               "detail": 2,
               "entity": "sensor.tasmota_si7021_humidity_2",
               "name": "Humidity"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "binary_sensor.down_hallway_motion_sensor"
+                }
+              ],
+              "hours_to_show": 1,
+              "title": "Hallway Motion"
             }
           ]
         },
@@ -246,6 +256,16 @@
               "entity": "sensor.tasmota_si7021_humidity_3",
               "detail": 2,
               "name": "Humidity"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "binary_sensor.middle_hallway_motion_sensor"
+                }
+              ],
+              "title": "Hallway Motion",
+              "hours_to_show": 1
             }
           ]
         },
@@ -317,6 +337,14 @@
               "detail": 2,
               "entity": "sensor.top_sensor_bme280_humidity",
               "name": "Humidity"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                "binary_sensor.top_hallway_motion_sensor"
+              ],
+              "title": "Hallway Motion",
+              "hours_to_show": 1
             }
           ]
         },
