@@ -138,10 +138,13 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "switch.tasmota_3",
-                  "icon": "mdi:lightbulb"
+                  "entity": "light.bathroom_main_light"
                 }
               ]
+            },
+            {
+              "type": "light",
+              "entity": "light.bathroom_main_light"
             },
             {
               "hours_to_show": 24,
@@ -158,14 +161,6 @@
               "entity": "sensor.tasmota_si7021_humidity",
               "detail": 2,
               "name": "Humidity"
-            },
-            {
-              "type": "history-graph",
-              "entities": [
-                "switch.tasmota"
-              ],
-              "title": "Motion",
-              "hours_to_show": 24
             },
             {
               "type": "conditional",
@@ -191,6 +186,14 @@
                 },
                 "name": "Water Temp."
               }
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                "switch.tasmota"
+              ],
+              "title": "Motion",
+              "hours_to_show": 24
             }
           ]
         },
@@ -216,6 +219,10 @@
                 },
                 {
                   "entity": "switch.bedrom_main_light",
+                  "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.tasmota_9",
                   "icon": "mdi:lightbulb"
                 }
               ]

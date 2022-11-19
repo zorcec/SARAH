@@ -124,30 +124,6 @@
         "via_device_id": null
       },
       {
-        "area_id": "bathroom",
-        "config_entries": [
-          "18b02218197fab69398e60bed0a1f821"
-        ],
-        "configuration_url": "http://192.168.0.12/",
-        "connections": [
-          [
-            "mac",
-            "84:0d:8e:49:99:e5"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "d6422fd2cc76109087b8f60b0bde773d",
-        "identifiers": [],
-        "manufacturer": "Tasmota",
-        "model": "Sonoff Basic",
-        "name_by_user": null,
-        "name": "bathoom-touch1",
-        "sw_version": "12.2.0",
-        "via_device_id": null
-      },
-      {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
@@ -508,7 +484,7 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
+        "area_id": "bedroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
@@ -532,7 +508,7 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
+        "area_id": "living_room",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
@@ -554,8 +530,71 @@
         "name": "top-sensor",
         "sw_version": "12.2.0",
         "via_device_id": null
+      },
+      {
+        "area_id": "bedroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.41/",
+        "connections": [
+          [
+            "mac",
+            "dc:4f:22:fa:4c:f2"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6de4528f248d9c6b0970515a0bf113e9",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "middle-hall-switch",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bathroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.42/",
+        "connections": [
+          [
+            "mac",
+            "d8:bf:c0:00:0f:7d"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "57edd179adcda8b16f654d9ff5360e1b",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Tuya MCU",
+        "name_by_user": null,
+        "name": "bathroom-dimmer",
+        "sw_version": "12.2.0",
+        "via_device_id": null
       }
     ],
-    "deleted_devices": []
+    "deleted_devices": [
+      {
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "connections": [
+          [
+            "mac",
+            "84:0d:8e:49:99:e5"
+          ]
+        ],
+        "identifiers": [],
+        "id": "d6422fd2cc76109087b8f60b0bde773d",
+        "orphaned_timestamp": null
+      }
+    ]
   }
 }
