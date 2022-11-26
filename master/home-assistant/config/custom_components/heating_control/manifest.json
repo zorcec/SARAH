@@ -1,0 +1,10 @@
+{
+    "domain": "heating_control",
+    "name": "Heating Control",
+    "documentation": "",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "version": "1.0",
+    "config_flow": true
+  }

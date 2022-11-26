@@ -7,7 +7,6 @@ frontend:
 config:
 
 http:
-  base_url: http://zorcec.duckdns.org:8123
   #base_url: https://zorcec.duckdns.org:8123
   #ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
   #ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
@@ -23,49 +22,49 @@ recorder:
 mobile_app:
 
 logger:
-  default: error
+  default: info
   logs:
     custom_components: debug
+    python_script: debug
 
 group:
-script:
-automation:
-intent_script:
 
-mqtt:
-  binary_sensor:
-    - name: Top Hallway Motion Sensor
-      state_topic: stat/tasmota_C7CB0D/PIR
-      device_class: motion
-      force_update: true
-      availability_topic: tele/tasmota_C7CB0D/LWT
-      payload_on: "1"
-      payload_off: "0"
-      payload_available: Online
-      payload_not_available: Offline
-      unique_id: 'tasmota_C7CB0D_motion'
+python_script:
 
-    - name: Down Hallway Motion Sensor
-      state_topic: stat/tasmota_F985BB/PIR
-      device_class: motion
-      force_update: true
-      availability_topic: tele/tasmota_F985BB/LWT
-      payload_on: "1"
-      payload_off: "0"
-      payload_available: Online
-      payload_not_available: Offline
-      unique_id: 'tasmota_F985BB_motion'
+# mqtt:
+#   binary_sensor:
+#     - name: Top Hallway Motion Sensor
+#       state_topic: stat/tasmota_C7CB0D/PIR
+#       device_class: motion
+#       force_update: true
+#       availability_topic: tele/tasmota_C7CB0D/LWT
+#       payload_on: "1"
+#       payload_off: "0"
+#       payload_available: Online
+#       payload_not_available: Offline
+#       unique_id: 'tasmota_C7CB0D_motion'
 
-    - name: Middle Hallway Motion Sensor
-      state_topic: stat/tasmota_FA4CF2/PIR
-      device_class: motion
-      force_update: true
-      availability_topic: tele/tasmota_FA4CF2/LWT
-      payload_on: "1"
-      payload_off: "0"
-      payload_available: Online
-      payload_not_available: Offline
-      unique_id: 'tasmota_FA4CF2_motion'
+#     - name: Down Hallway Motion Sensor
+#       state_topic: stat/tasmota_F985BB/PIR
+#       device_class: motion
+#       force_update: true
+#       availability_topic: tele/tasmota_F985BB/LWT
+#       payload_on: "1"
+#       payload_off: "0"
+#       payload_available: Online
+#       payload_not_available: Offline
+#       unique_id: 'tasmota_F985BB_motion'
+
+#     - name: Middle Hallway Motion Sensor
+#       state_topic: stat/tasmota_FA4CF2/PIR
+#       device_class: motion
+#       force_update: true
+#       availability_topic: tele/tasmota_FA4CF2/LWT
+#       payload_on: "1"
+#       payload_off: "0"
+#       payload_available: Online
+#       payload_not_available: Offline
+#       unique_id: 'tasmota_FA4CF2_motion'
 
 #sensor: !include_dir_merge_list customize/sensors/
 #light: !include_dir_merge_list customize/lights/

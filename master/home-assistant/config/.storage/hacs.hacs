@@ -12,7 +12,8 @@
       "nbogojevic/homeassistant-midea-dehumidifier-lan": "nbogojevic/homeassistant-midea-air-appliances-lan",
       "nikrolls/homeassistant-goldair-climate": "nicole-ashley/homeassistant-goldair-climate",
       "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
-      "wills106/homsassistant-solax-modbus": "wills106/homeassistant-solax-modbus"
+      "wills106/homsassistant-solax-modbus": "wills106/homeassistant-solax-modbus",
+      "mf-social/ps-date-countdown": "point-4ward/ps-date-countdown"
     },
     "ignored_repositories": []
   }
