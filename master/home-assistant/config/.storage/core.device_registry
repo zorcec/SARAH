@@ -630,7 +630,7 @@
       {
         "area_id": null,
         "config_entries": [
-          "c9bb6a8a3965f2e0e097f0284a7c13ad"
+          "ef023b42c2f0613c0f81f5df8aaa1a83"
         ],
         "configuration_url": "homeassistant://hacs",
         "connections": [],

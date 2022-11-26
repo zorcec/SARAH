@@ -18,7 +18,7 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 120796,
+      "downloads": 120839,
       "etag_repository": "W/\"8b063198a2e9c8d5abb451c93d9bb7d721af3cc079763565cbd504b0dfc26ec9\"",
       "full_name": "hacs/integration",
       "last_updated": "2022-11-26T09:56:51Z",
@@ -44,7 +44,7 @@
       "pushed_at": "2022-11-26T09:56:51",
       "releases": true,
       "version_installed": "1.28.3",
-      "last_fetched": 1669476597.255383
+      "last_fetched": 1669477284.608597
     },
     "191831638": {
       "repository_manifest": {
@@ -4488,7 +4488,7 @@
         "blitzortung",
         "lightning-network"
       ],
-      "last_fetched": 1662801888.233279
+      "last_fetched": 1669476848.743753
     },
     "253842395": {
       "repository_manifest": {
@@ -12579,7 +12579,7 @@
         "xiaomi",
         "xiaomi-miot"
       ],
-      "last_fetched": 1666451330.330554
+      "last_fetched": 1669477097.663574
     },
     "186605347": {
       "repository_manifest": {
@@ -12713,7 +12713,7 @@
         "xiaomi",
         "xiaomi-miot"
       ],
-      "last_fetched": 1666451166.598112
+      "last_fetched": 1669477002.064767
     },
     "335019855": {
       "repository_manifest": {

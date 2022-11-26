@@ -113,12 +113,12 @@
         "disabled_by": null
       },
       {
-        "entry_id": "c9bb6a8a3965f2e0e097f0284a7c13ad",
+        "entry_id": "ef023b42c2f0613c0f81f5df8aaa1a83",
         "version": 1,
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "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"
         },
         "options": {},
         "pref_disable_new_entities": false,
