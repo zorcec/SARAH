@@ -626,6 +626,30 @@
         "name": "down-heating-pump",
         "sw_version": "12.2.0",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c9bb6a8a3965f2e0e097f0284a7c13ad"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "de4f10cb24b483ddbffe3a4482df4817",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "sw_version": "1.28.3",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

@@ -13,16 +13,16 @@
           "user_id": "d81d3d7902634864b794b15fc153555e",
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2022-11-22T17:30:17.891553+00:00",
-        "last_updated": "2022-11-22T17:30:44.705811+00:00",
+        "last_changed": "2022-11-26T15:27:19.653740+00:00",
+        "last_updated": "2022-11-26T15:27:51.991690+00:00",
         "context": {
-          "id": "01GJG68S31VZQANGRZTW88P020",
+          "id": "01GJT8TN5QC2150RDEH2D26XV3",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -32,16 +32,16 @@
           "device_class": "motion",
           "friendly_name": "Top Hallway Motion Sensor"
         },
-        "last_changed": "2022-11-26T15:15:00.557731+00:00",
-        "last_updated": "2022-11-26T15:15:00.557731+00:00",
+        "last_changed": "2022-11-26T15:27:47.257224+00:00",
+        "last_updated": "2022-11-26T15:27:47.257224+00:00",
         "context": {
-          "id": "01GJT833TDK5FPP3JVB83HMNZ0",
+          "id": "01GJT8TGHSZ9GJH2RH4BZ3XH04",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -51,16 +51,16 @@
           "device_class": "motion",
           "friendly_name": "Down Hallway Motion Sensor"
         },
-        "last_changed": "2022-11-26T15:15:00.377554+00:00",
-        "last_updated": "2022-11-26T15:15:00.377554+00:00",
+        "last_changed": "2022-11-26T15:27:48.961130+00:00",
+        "last_updated": "2022-11-26T15:27:48.961130+00:00",
         "context": {
-          "id": "01GJT833MSEVC8GKFQB38NBZWB",
+          "id": "01GJT8TJ71AMP97M6GCHBH2TP9",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -70,16 +70,16 @@
           "device_class": "motion",
           "friendly_name": "Middle Hallway Motion Sensor"
         },
-        "last_changed": "2022-11-26T15:15:38.403026+00:00",
-        "last_updated": "2022-11-26T15:15:38.403026+00:00",
+        "last_changed": "2022-11-26T15:27:47.350725+00:00",
+        "last_updated": "2022-11-26T15:27:47.350725+00:00",
         "context": {
-          "id": "01GJT848S3KRAT4Q92PCX8Y4SQ",
+          "id": "01GJT8TGMPFJNVY7WC759ABHDP",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -90,10 +90,10 @@
           "icon": "mdi:sleep",
           "friendly_name": "xiaomi Detected Activity"
         },
-        "last_changed": "2022-11-26T13:09:00.793572+00:00",
-        "last_updated": "2022-11-26T14:12:40.495122+00:00",
+        "last_changed": "2022-11-26T15:27:39.669716+00:00",
+        "last_updated": "2022-11-26T15:27:39.669716+00:00",
         "context": {
-          "id": "01GJT4GZDF92GDEY0EM6YKXGBK",
+          "id": "01GJT8T94N8H3AQ8DK52QQ81QW",
           "parent_id": null,
           "user_id": null
         }
@@ -102,7 +102,7 @@
         "native_value": "still",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -115,10 +115,10 @@
           "icon": "mdi:battery-50",
           "friendly_name": "xiaomi Battery Level"
         },
-        "last_changed": "2022-11-26T14:12:41.032840+00:00",
-        "last_updated": "2022-11-26T14:12:41.032840+00:00",
+        "last_changed": "2022-11-26T15:27:39.670888+00:00",
+        "last_updated": "2022-11-26T15:27:39.670888+00:00",
         "context": {
-          "id": "01GJT4GZY86RFY1Z3MM5X73VGF",
+          "id": "01GJT8T94PYMBQRTKYTRZ9P0NK",
           "parent_id": null,
           "user_id": null
         }
@@ -127,7 +127,7 @@
         "native_value": 58,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -137,10 +137,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "xiaomi Battery State"
         },
-        "last_changed": "2022-11-22T17:30:36.378932+00:00",
-        "last_updated": "2022-11-22T17:30:36.378932+00:00",
+        "last_changed": "2022-11-26T15:27:39.671841+00:00",
+        "last_updated": "2022-11-26T15:27:39.671841+00:00",
         "context": {
-          "id": "01GJG68GYTC2QNFM89E717SASB",
+          "id": "01GJT8T94Q1Y7SFB3PQ8C8DCN5",
           "parent_id": null,
           "user_id": null
         }
@@ -149,7 +149,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -159,10 +159,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Charger Type"
         },
-        "last_changed": "2022-11-22T17:30:36.379797+00:00",
-        "last_updated": "2022-11-22T17:30:36.379797+00:00",
+        "last_changed": "2022-11-26T15:27:39.672657+00:00",
+        "last_updated": "2022-11-26T15:27:39.672657+00:00",
         "context": {
-          "id": "01GJG68GYVJ1MC95B7G5Q2XQMS",
+          "id": "01GJT8T94RMEYEBWY2JGT99ZVF",
           "parent_id": null,
           "user_id": null
         }
@@ -171,7 +171,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -181,10 +181,10 @@
           "icon": "mdi:battery-heart-variant",
           "friendly_name": "xiaomi Battery Health"
         },
-        "last_changed": "2022-11-22T17:30:36.381234+00:00",
-        "last_updated": "2022-11-22T17:30:36.381234+00:00",
+        "last_changed": "2022-11-26T15:27:39.673436+00:00",
+        "last_updated": "2022-11-26T15:27:39.673436+00:00",
         "context": {
-          "id": "01GJG68GYXAT65TRW396WNRW8P",
+          "id": "01GJT8T94STSAZ3W6X7ZNXQ08C",
           "parent_id": null,
           "user_id": null
         }
@@ -193,7 +193,7 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -206,10 +206,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Battery Temperature"
         },
-        "last_changed": "2022-11-26T15:14:31.305737+00:00",
-        "last_updated": "2022-11-26T15:14:31.305737+00:00",
+        "last_changed": "2022-11-26T15:27:39.674286+00:00",
+        "last_updated": "2022-11-26T15:27:39.674286+00:00",
         "context": {
-          "id": "01GJT827896D51BY1ZFMNTV92J",
+          "id": "01GJT8T94T6S5BVQV35ZH80CSK",
           "parent_id": null,
           "user_id": null
         }
@@ -218,7 +218,7 @@
         "native_value": 22.1,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -233,10 +233,10 @@
           "icon": "mdi:battery-plus",
           "friendly_name": "xiaomi Battery Power"
         },
-        "last_changed": "2022-11-26T15:14:31.307198+00:00",
-        "last_updated": "2022-11-26T15:14:31.307198+00:00",
+        "last_changed": "2022-11-26T15:27:39.675584+00:00",
+        "last_updated": "2022-11-26T15:27:39.675584+00:00",
         "context": {
-          "id": "01GJT8278BW4GN3KWDVC1FH9CN",
+          "id": "01GJT8T94VZ0HW133X1BD7HBBR",
           "parent_id": null,
           "user_id": null
         }
@@ -245,7 +245,7 @@
         "native_value": 3.39,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -256,16 +256,16 @@
           "icon": "mdi:power-plug-off",
           "friendly_name": "xiaomi Is Charging"
         },
-        "last_changed": "2022-11-22T17:30:36.384156+00:00",
-        "last_updated": "2022-11-22T17:30:36.384156+00:00",
+        "last_changed": "2022-11-26T15:27:39.676480+00:00",
+        "last_updated": "2022-11-26T15:27:39.676480+00:00",
         "context": {
-          "id": "01GJG68GZ0HSJAB75Y6MJDEWEE",
+          "id": "01GJT8T94WR9FYR7EQYQEBM6WP",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {
@@ -275,16 +275,16 @@
           "source_type": "gps",
           "friendly_name": "xiaomi"
         },
-        "last_changed": "2022-11-22T17:30:36.384973+00:00",
-        "last_updated": "2022-11-22T17:30:36.384973+00:00",
+        "last_changed": "2022-11-26T15:27:39.677339+00:00",
+        "last_updated": "2022-11-26T15:27:39.677339+00:00",
         "context": {
-          "id": "01GJG68GZ0HSMN8D6Y3MAM1JED",
+          "id": "01GJT8T94XF9TPD6PDVSM291GV",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-11-26T15:15:45.188893+00:00"
+      "last_seen": "2022-11-26T15:27:51.993222+00:00"
     },
     {
       "state": {

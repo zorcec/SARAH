@@ -111,6 +111,21 @@
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
         "disabled_by": null
+      },
+      {
+        "entry_id": "c9bb6a8a3965f2e0e097f0284a7c13ad",
+        "version": 1,
+        "domain": "hacs",
+        "title": "",
+        "data": {
+          "token": "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"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
       }
     ]
   }
