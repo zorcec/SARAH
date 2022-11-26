@@ -160,7 +160,7 @@
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
-              "entity": "sensor.tasmota_si7021_temperature",
+              "entity": "sensor.bathroom_sensor_si7021_temperature",
               "detail": 2,
               "name": "Temperature"
             },
@@ -168,7 +168,7 @@
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
-              "entity": "sensor.tasmota_si7021_humidity",
+              "entity": "sensor.bathroom_sensor_si7021_humidity",
               "detail": 2,
               "name": "Humidity"
             },
@@ -200,7 +200,9 @@
             {
               "type": "history-graph",
               "entities": [
-                "switch.tasmota"
+                {
+                  "entity": "switch.bathroom_sensor"
+                }
               ],
               "title": "Motion",
               "hours_to_show": 24
@@ -356,24 +358,102 @@
           "badges": [],
           "cards": [
             {
-              "type": "entities",
-              "entities": [
+              "type": "horizontal-stack",
+              "cards": [
                 {
-                  "entity": "sensor.tasmota_restart_reason_3"
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "mqtt.publish",
+                    "data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{   \"event\": \"pirOff\",   \"wifi\": \"1\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "icon": "mdi:white-balance-sunny",
+                  "show_state": false,
+                  "name": "Daytime"
                 },
                 {
-                  "entity": "sensor.tasmesh_1_mesh_mac_0"
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "mqtt.publish",
+                    "data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{   \"event\": \"pirOn\"  }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "name": "Evening",
+                  "icon": "mdi:weather-sunset"
                 },
                 {
-                  "entity": "sensor.tasmesh_1_mesh_channel"
-                },
-                {
-                  "entity": "sensor.tasmesh_1_mesh_nodes"
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "mqtt.publish",
+                    "data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{   \"event\": \"pirOff\",   \"event\": \"radioSilence\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "icon": "mdi:sleep",
+                  "name": "Sleep mode"
                 }
-              ],
-              "title": "Tasmesh 1",
-              "show_header_toggle": false,
-              "state_color": false
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "sensor.tasmota_energy_current",
+                      "name": "Current"
+                    },
+                    {
+                      "entity": "sensor.tasmota_energy_power",
+                      "name": "Power",
+                      "secondary_info": "none"
+                    }
+                  ],
+                  "title": "Heating Pump"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "icon": "mdi:heating-coil",
+                  "entity": "switch.tasmota",
+                  "name": "Heating Override",
+                  "show_state": true
+                }
+              ]
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "detail": 2,
+              "name": "Pump power",
+              "icon": "mdi:heat-pump",
+              "entity": "sensor.tasmota_energy_power"
             }
           ]
         }

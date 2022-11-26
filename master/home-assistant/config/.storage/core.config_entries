@@ -40,11 +40,24 @@
         "data": {
           "broker": "192.168.0.100",
           "port": 1883,
-          "discovery": true,
           "client_id": "home-assistant-dev",
-          "keepalive": 60,
+          "keepalive": 120,
+          "tls_insecure": false,
           "protocol": "3.1",
-          "discovery_prefix": "homeassistant"
+          "discovery": true,
+          "discovery_prefix": "homeassistant",
+          "birth_message": {
+            "topic": "homeassistant/status",
+            "payload": "online",
+            "qos": 0,
+            "retain": false
+          },
+          "will_message": {
+            "topic": "homeassistant/status",
+            "payload": "offline",
+            "qos": 0,
+            "retain": false
+          }
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -69,15 +82,15 @@
         "disabled_by": null
       },
       {
-        "entry_id": "8f134553275f65442c583e8a8d0fc4bb",
+        "entry_id": "8eb67a2cd58a24e75d3e4732bf73422e",
         "version": 1,
         "domain": "mobile_app",
-        "title": "Xiaomi",
+        "title": "xiaomi",
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
           "app_version": "2022.10.2-full (2770)",
-          "device_name": "Xiaomi",
+          "device_name": "xiaomi",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
           "os_name": "Android",
@@ -89,7 +102,7 @@
             "push_token": "fQnnJ--QSAiQ8-RNNEKEwX:APA91bFn3-X2oytxNKfTS2g1vZnYsJ7jSM2J9qmtsVIJyg_TJQNHk2kXb_CrfRxASV4WcY-C1HLxNOG931DbW3To-_-oPW6uH28AkzA8udL6K1ZzO1GAybG0EajExXQEj7Jc3wpOcf5Y"
           },
           "device_id": "115479ec3e394736",
-          "webhook_id": "3a9616a15c248230259730674e0a07c23d1d73c0d4005b1cb2aa82fa40e75050",
+          "webhook_id": "b2accb0d6509c3d1da0f412a78727ec693843500642fbcdc9f83f7a6238d5235",
           "user_id": "d81d3d7902634864b794b15fc153555e"
         },
         "options": {},

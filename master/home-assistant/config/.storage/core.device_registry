@@ -76,30 +76,6 @@
         "via_device_id": null
       },
       {
-        "area_id": "bathroom",
-        "config_entries": [
-          "18b02218197fab69398e60bed0a1f821"
-        ],
-        "configuration_url": "http://192.168.0.21/",
-        "connections": [
-          [
-            "mac",
-            "cc:50:e3:08:20:68"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "a8e362d845cdce7654b202094d3db3b7",
-        "identifiers": [],
-        "manufacturer": "Tasmota",
-        "model": "Generic",
-        "name_by_user": null,
-        "name": "bathroom-sensor",
-        "sw_version": "12.2.0",
-        "via_device_id": null
-      },
-      {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
@@ -392,7 +368,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.35/",
+        "configuration_url": "http://192.168.0.43/",
         "connections": [
           [
             "mac",
@@ -414,7 +390,7 @@
       {
         "area_id": null,
         "config_entries": [
-          "8f134553275f65442c583e8a8d0fc4bb"
+          "8eb67a2cd58a24e75d3e4732bf73422e"
         ],
         "configuration_url": null,
         "connections": [],
@@ -431,7 +407,7 @@
         "manufacturer": "Xiaomi",
         "model": "M2004J19C",
         "name_by_user": null,
-        "name": "Xiaomi",
+        "name": "xiaomi",
         "sw_version": "30",
         "via_device_id": null
       },
@@ -601,6 +577,54 @@
         "name_by_user": null,
         "name": null,
         "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "bathroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.21/",
+        "connections": [
+          [
+            "mac",
+            "cc:50:e3:08:20:68"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a8e362d845cdce7654b202094d3db3b7",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "bathroom-sensor",
+        "sw_version": "12.2.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.45/",
+        "connections": [
+          [
+            "mac",
+            "a4:cf:12:b8:18:b3"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d9c1192a0a6b61aa9da1071d149469a8",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Pow R2",
+        "name_by_user": null,
+        "name": "down-heating-pump",
+        "sw_version": "12.2.0",
         "via_device_id": null
       }
     ],
