@@ -1,9 +1,0 @@
-- platform: tasmota
-  internal_id: top/switch1
-  name: Test top/switch1 (as switch)
-  type: basic
-
-- platform: tasmota
-  internal_id: undefined/switch
-  name: Undefined switch
-  type: basic

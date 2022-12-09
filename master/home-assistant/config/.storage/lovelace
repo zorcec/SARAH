@@ -111,6 +111,10 @@
               "entity": "light.tasmota_2"
             },
             {
+              "type": "thermostat",
+              "entity": "climate.kitchen"
+            },
+            {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",

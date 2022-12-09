@@ -68,5 +68,5 @@ python_script:
 
 #sensor: !include_dir_merge_list customize/sensors/
 #light: !include_dir_merge_list customize/lights/
-#switch: !include_dir_merge_list customize/switches/
-#climate: !include_dir_merge_list customize/climate/
+switch: !include_dir_merge_list customize/switches/
+climate: !include_dir_merge_list customize/climate/

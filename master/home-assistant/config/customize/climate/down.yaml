@@ -1,9 +1,0 @@
-- platform: generic_thermostat
-  name: Down Termostat
-  heater: light.top_stairway
-  target_sensor: sensor.top_sensors_temperature
-  min_temp: 15
-  max_temp: 30
-  target_temp: 25
-  min_cycle_duration:
-    seconds: 5

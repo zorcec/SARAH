@@ -89,7 +89,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2022.10.2-full (2770)",
+          "app_version": "2022.11.0-full (2948)",
           "device_name": "xiaomi",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
@@ -113,12 +113,27 @@
         "disabled_by": null
       },
       {
-        "entry_id": "ef023b42c2f0613c0f81f5df8aaa1a83",
+        "entry_id": "2ebe536f6aceaf61b996d8625a468ddc",
         "version": 1,
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "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"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ec419de014bf58231d738854a12b7b11",
+        "version": 1,
+        "domain": "heating_control",
+        "title": "Heating Control",
+        "data": {
+          "heating_cycle": 5
         },
         "options": {},
         "pref_disable_new_entities": false,

@@ -1,0 +1,10 @@
+- platform: generic_thermostat
+  name: Kitchen
+  heater: switch.tasmota_dc4f2255da78_switch_relay_1
+  target_sensor: sensor.tasmota_si7021_temperature_2
+  min_temp: 15
+  max_temp: 23
+  target_temp: 21
+  cold_tolerance: 0.3
+  hot_tolerance: 0.3
+
