@@ -82,7 +82,37 @@
         "disabled_by": null
       },
       {
-        "entry_id": "8eb67a2cd58a24e75d3e4732bf73422e",
+        "entry_id": "2ebe536f6aceaf61b996d8625a468ddc",
+        "version": 1,
+        "domain": "hacs",
+        "title": "",
+        "data": {
+          "token": "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"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "892d5c2bbab824888a3cefb88a4213dd",
+        "version": 1,
+        "domain": "heating_control",
+        "title": "Heating Control",
+        "data": {
+          "heating_cycle": 600
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "9d8f062e05cfc457f15f23bec28d6833",
         "version": 1,
         "domain": "mobile_app",
         "title": "xiaomi",
@@ -99,10 +129,10 @@
           "app_data": {
             "push_websocket_channel": true,
             "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
-            "push_token": "fQnnJ--QSAiQ8-RNNEKEwX:APA91bFn3-X2oytxNKfTS2g1vZnYsJ7jSM2J9qmtsVIJyg_TJQNHk2kXb_CrfRxASV4WcY-C1HLxNOG931DbW3To-_-oPW6uH28AkzA8udL6K1ZzO1GAybG0EajExXQEj7Jc3wpOcf5Y"
+            "push_token": "fz-1GKu-RJqJqzVKzYSdI9:APA91bHD7AmzJCC8g838AvtgLl6Z3OfmduX-96xNY02ZIF87xCnDL1Ju_juGq61854gtwEIK9mLbl6ekqn81hJr6pu3qJqOEq0uiSm2PbkLgKZHto7DM3762evOd3eAdzv2f3P_5KECu"
           },
           "device_id": "115479ec3e394736",
-          "webhook_id": "b2accb0d6509c3d1da0f412a78727ec693843500642fbcdc9f83f7a6238d5235",
+          "webhook_id": "efa2bcaf68ae30a62fb7689937b7ac37ddd87d4ac6a7c0093095d320d583899a",
           "user_id": "d81d3d7902634864b794b15fc153555e"
         },
         "options": {},
@@ -110,36 +140,6 @@
         "pref_disable_polling": false,
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "2ebe536f6aceaf61b996d8625a468ddc",
-        "version": 1,
-        "domain": "hacs",
-        "title": "",
-        "data": {
-          "token": "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"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "ec419de014bf58231d738854a12b7b11",
-        "version": 1,
-        "domain": "heating_control",
-        "title": "Heating Control",
-        "data": {
-          "heating_cycle": 5
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": null,
         "disabled_by": null
       }
     ]

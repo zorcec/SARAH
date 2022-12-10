@@ -451,13 +451,22 @@
               ]
             },
             {
-              "hours_to_show": 24,
+              "hours_to_show": 6,
               "graph": "line",
               "type": "sensor",
               "detail": 2,
               "name": "Pump power",
               "icon": "mdi:heat-pump",
               "entity": "sensor.tasmota_energy_power"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "switch.tasmota"
+                }
+              ],
+              "hours_to_show": 6
             }
           ]
         }
