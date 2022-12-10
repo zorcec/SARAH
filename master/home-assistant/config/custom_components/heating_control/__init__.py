@@ -4,6 +4,7 @@ import threading
 import pytz
 import time
 
+from functools import partial
 from datetime import datetime, timedelta
 from homeassistant import config_entries, core
 from homeassistant.helpers.event import async_track_state_change_event
@@ -23,12 +24,9 @@ _HEAT_CYCLE_OVERRIDE = 600 # if not specified, the real config is taken
 
 _UTC = pytz.UTC
 
-# TODO pump protection
-# if all vents are getting closed, turn off the pump
-# subscribe to all the vents states updates, and if changed, recheck should_heat() and turn off if needed
-
 async def async_setup_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry) -> bool:
     _LOGGER.info("Heating control is initialized")
+    async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
     heating_cycle(hass, _HEAT_CYCLE_OVERRIDE or entry.data[CONF_HEATING_CYCLE])
     return True
 
@@ -85,3 +83,8 @@ def should_heat(hass):
 
     return False
 
+def pump_protection_check(hass, event):
+    """Called when vent state is changed"""
+    if not should_heat(hass):
+        _LOGGER.info("All vents are in closed state, turning pump off (pump protection)")
+        waitingCycle(hass)

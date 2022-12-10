@@ -6,23 +6,27 @@
     {
       "state": {
         "entity_id": "person.tomislav",
-        "state": "unknown",
+        "state": "not_home",
         "attributes": {
           "editable": true,
           "id": "tomislav",
+          "latitude": 48.2719674,
+          "longitude": 14.3141505,
+          "gps_accuracy": 15,
+          "source": "device_tracker.xiaomi",
           "user_id": "d81d3d7902634864b794b15fc153555e",
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2022-12-10T13:25:45.552376+00:00",
-        "last_updated": "2022-12-10T13:26:16.091605+00:00",
+        "last_changed": "2022-12-10T14:11:18.918224+00:00",
+        "last_updated": "2022-12-10T14:11:50.187745+00:00",
         "context": {
-          "id": "01GKY3E28V1GJCHBPARP65WN9S",
+          "id": "01GKY61G9BAAM0Z3FFS94D1C7W",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
     },
     {
       "state": {
@@ -42,16 +46,205 @@
           "friendly_name": "Kitchen",
           "supported_features": 1
         },
-        "last_changed": "2022-12-10T13:26:05.698835+00:00",
-        "last_updated": "2022-12-10T13:26:05.698835+00:00",
+        "last_changed": "2022-12-10T14:11:38.178299+00:00",
+        "last_updated": "2022-12-10T14:11:38.178299+00:00",
         "context": {
-          "id": "01GKY3DR42WS1Q7G3GXEYNYNBF",
+          "id": "01GKY614J24D46BEV9M2Y4KV2A",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_battery_level",
+        "state": "92",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-90",
+          "friendly_name": "xiaomi Battery Level"
+        },
+        "last_changed": "2022-12-10T14:11:42.522859+00:00",
+        "last_updated": "2022-12-10T14:11:42.522859+00:00",
+        "context": {
+          "id": "01GKY618STBCT13HT11N0T7B2A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 92,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_battery_state",
+        "state": "discharging",
+        "attributes": {
+          "icon": "mdi:battery-minus",
+          "friendly_name": "xiaomi Battery State"
+        },
+        "last_changed": "2022-12-10T14:11:42.524223+00:00",
+        "last_updated": "2022-12-10T14:11:42.524223+00:00",
+        "context": {
+          "id": "01GKY618SWC5QBXQJ6EB15CN62",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "discharging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_charger_type",
+        "state": "none",
+        "attributes": {
+          "icon": "mdi:battery",
+          "friendly_name": "xiaomi Charger Type"
+        },
+        "last_changed": "2022-12-10T14:11:42.525367+00:00",
+        "last_updated": "2022-12-10T14:11:42.525367+00:00",
+        "context": {
+          "id": "01GKY618SXZ870GADY7WV4JTX0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "none",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_battery_health",
+        "state": "good",
+        "attributes": {
+          "icon": "mdi:battery-heart-variant",
+          "friendly_name": "xiaomi Battery Health"
+        },
+        "last_changed": "2022-12-10T14:11:42.526188+00:00",
+        "last_updated": "2022-12-10T14:11:42.526188+00:00",
+        "context": {
+          "id": "01GKY618SY4DBGPBBM3Q46SRG9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "good",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_battery_temperature",
+        "state": "22.4",
+        "attributes": {
+          "state_class": "measurement",
+          "unit_of_measurement": "°C",
+          "device_class": "temperature",
+          "icon": "mdi:battery",
+          "friendly_name": "xiaomi Battery Temperature"
+        },
+        "last_changed": "2022-12-10T14:11:42.527372+00:00",
+        "last_updated": "2022-12-10T14:11:42.527372+00:00",
+        "context": {
+          "id": "01GKY618SZ6TFCSCCDKJJTVQ78",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 22.4,
+        "native_unit_of_measurement": "°C"
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.xiaomi_battery_power",
+        "state": "1.04",
+        "attributes": {
+          "state_class": "measurement",
+          "current": 0.245,
+          "voltage": 4.234,
+          "unit_of_measurement": "W",
+          "device_class": "power",
+          "icon": "mdi:battery-plus",
+          "friendly_name": "xiaomi Battery Power"
+        },
+        "last_changed": "2022-12-10T14:11:42.528474+00:00",
+        "last_updated": "2022-12-10T14:11:42.528474+00:00",
+        "context": {
+          "id": "01GKY618T01SJ9WRJG6N8Y6ZDH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1.04,
+        "native_unit_of_measurement": "W"
+      },
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.xiaomi_is_charging",
+        "state": "off",
+        "attributes": {
+          "device_class": "plug",
+          "icon": "mdi:power-plug-off",
+          "friendly_name": "xiaomi Is Charging"
+        },
+        "last_changed": "2022-12-10T14:11:42.529305+00:00",
+        "last_updated": "2022-12-10T14:11:42.529305+00:00",
+        "context": {
+          "id": "01GKY618T1SVG3JR3ZMFACRK1Z",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.xiaomi",
+        "state": "not_home",
+        "attributes": {
+          "source_type": "gps",
+          "latitude": 48.2719674,
+          "longitude": 14.3141505,
+          "gps_accuracy": 15,
+          "altitude": 307,
+          "course": 36,
+          "speed": 2,
+          "vertical_accuracy": 1,
+          "friendly_name": "xiaomi"
+        },
+        "last_changed": "2022-12-10T14:11:42.595961+00:00",
+        "last_updated": "2022-12-10T14:11:42.595961+00:00",
+        "context": {
+          "id": "01GKY618W3XS57RF70CX5GR8WC",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-10T14:11:50.190467+00:00"
     },
     {
       "state": {
@@ -75,189 +268,7 @@
         "native_value": "still",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_battery_level",
-        "state": "94",
-        "attributes": {
-          "state_class": "measurement",
-          "unit_of_measurement": "%",
-          "device_class": "battery",
-          "icon": "mdi:battery-90",
-          "friendly_name": "xiaomi Battery Level"
-        },
-        "last_changed": "2022-12-10T13:26:09.536910+00:00",
-        "last_updated": "2022-12-10T13:26:09.536910+00:00",
-        "context": {
-          "id": "01GKY3DVW0Y4DBEWNNJZHF243B",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": 94,
-        "native_unit_of_measurement": "%"
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_battery_state",
-        "state": "discharging",
-        "attributes": {
-          "icon": "mdi:battery-minus",
-          "friendly_name": "xiaomi Battery State"
-        },
-        "last_changed": "2022-12-10T13:26:09.537619+00:00",
-        "last_updated": "2022-12-10T13:26:09.537619+00:00",
-        "context": {
-          "id": "01GKY3DVW13JC9MXV02WKWM4GS",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": "discharging",
-        "native_unit_of_measurement": null
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_charger_type",
-        "state": "none",
-        "attributes": {
-          "icon": "mdi:battery",
-          "friendly_name": "xiaomi Charger Type"
-        },
-        "last_changed": "2022-12-10T13:26:09.538477+00:00",
-        "last_updated": "2022-12-10T13:26:09.538477+00:00",
-        "context": {
-          "id": "01GKY3DVW263V7H50B1X1X9MD5",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": "none",
-        "native_unit_of_measurement": null
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_battery_health",
-        "state": "good",
-        "attributes": {
-          "icon": "mdi:battery-heart-variant",
-          "friendly_name": "xiaomi Battery Health"
-        },
-        "last_changed": "2022-12-10T13:26:09.539335+00:00",
-        "last_updated": "2022-12-10T13:26:09.539335+00:00",
-        "context": {
-          "id": "01GKY3DVW3X0M2DP52QM9X6ANM",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": "good",
-        "native_unit_of_measurement": null
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_battery_temperature",
-        "state": "26.5",
-        "attributes": {
-          "state_class": "measurement",
-          "unit_of_measurement": "°C",
-          "device_class": "temperature",
-          "icon": "mdi:battery",
-          "friendly_name": "xiaomi Battery Temperature"
-        },
-        "last_changed": "2022-12-10T13:26:09.540132+00:00",
-        "last_updated": "2022-12-10T13:26:09.540132+00:00",
-        "context": {
-          "id": "01GKY3DVW4CAME3ECJ00GCFJMM",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": 26.5,
-        "native_unit_of_measurement": "°C"
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.xiaomi_battery_power",
-        "state": "2.28",
-        "attributes": {
-          "state_class": "measurement",
-          "current": 0.5384,
-          "voltage": 4.235,
-          "unit_of_measurement": "W",
-          "device_class": "power",
-          "icon": "mdi:battery-plus",
-          "friendly_name": "xiaomi Battery Power"
-        },
-        "last_changed": "2022-12-10T13:26:09.540871+00:00",
-        "last_updated": "2022-12-10T13:26:09.540871+00:00",
-        "context": {
-          "id": "01GKY3DVW4WF7WM5WZJ1SGEBQV",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": 2.28,
-        "native_unit_of_measurement": "W"
-      },
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "binary_sensor.xiaomi_is_charging",
-        "state": "off",
-        "attributes": {
-          "device_class": "plug",
-          "icon": "mdi:power-plug-off",
-          "friendly_name": "xiaomi Is Charging"
-        },
-        "last_changed": "2022-12-10T13:26:09.541506+00:00",
-        "last_updated": "2022-12-10T13:26:09.541506+00:00",
-        "context": {
-          "id": "01GKY3DVW541MTBYXH7QG7BFHX",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "device_tracker.xiaomi",
-        "state": "unknown",
-        "attributes": {
-          "source_type": "gps",
-          "friendly_name": "xiaomi"
-        },
-        "last_changed": "2022-12-10T13:26:09.542199+00:00",
-        "last_updated": "2022-12-10T13:26:09.542199+00:00",
-        "context": {
-          "id": "01GKY3DVW65D400149KJZGM9B8",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2022-12-10T13:26:16.102295+00:00"
+      "last_seen": "2022-12-10T13:30:59.792513+00:00"
     }
   ]
 }

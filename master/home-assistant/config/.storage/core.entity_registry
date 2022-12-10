@@ -6434,29 +6434,6 @@
         "capabilities": null,
         "config_entry_id": "18b02218197fab69398e60bed0a1f821",
         "device_class": null,
-        "device_id": "769459500b0edf3cc50fa09061fcae41",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "switch.tasmota_dc4f2255da78_switch_relay_1",
-        "hidden_by": null,
-        "icon": null,
-        "id": "f13db2ae409e53f5e0b2e5eb163c2678",
-        "has_entity_name": false,
-        "name": null,
-        "options": {},
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "",
-        "platform": "tasmota",
-        "supported_features": 0,
-        "unique_id": "DC4F2255DA78_switch_relay_1",
-        "unit_of_measurement": null
-      },
-      {
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
-        "device_class": null,
         "device_id": "d9c1192a0a6b61aa9da1071d149469a8",
         "disabled_by": null,
         "entity_category": null,
@@ -7037,9 +7014,7 @@
       },
       {
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "9d8f062e05cfc457f15f23bec28d6833",
         "device_class": null,
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -7154,9 +7129,7 @@
       },
       {
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "9d8f062e05cfc457f15f23bec28d6833",
         "device_class": null,
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -7179,9 +7152,7 @@
       },
       {
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "9d8f062e05cfc457f15f23bec28d6833",
         "device_class": null,
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -8377,6 +8348,129 @@
         "supported_features": 0,
         "unique_id": "efa2bcaf68ae30a62fb7689937b7ac37ddd87d4ac6a7c0093095d320d583899a_total_tx_gb",
         "unit_of_measurement": "GB"
+      },
+      {
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "device_class": null,
+        "device_id": "769459500b0edf3cc50fa09061fcae41",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.top_sensor_bme280_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "965084278fda83224842ff7f69f66997",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "top-sensor BME280 Temperature",
+        "platform": "tasmota",
+        "supported_features": 0,
+        "unique_id": "DC4F2255DA78_sensor_sensor_BME280_Temperature",
+        "unit_of_measurement": "°C"
+      },
+      {
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "device_class": null,
+        "device_id": "769459500b0edf3cc50fa09061fcae41",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.top_sensor_bme280_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "be3c3188d4ed651ac16c74dc19dff667",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "top-sensor BME280 Humidity",
+        "platform": "tasmota",
+        "supported_features": 0,
+        "unique_id": "DC4F2255DA78_sensor_sensor_BME280_Humidity",
+        "unit_of_measurement": "%"
+      },
+      {
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "device_class": null,
+        "device_id": "769459500b0edf3cc50fa09061fcae41",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.top_sensor_bme280_dewpoint",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5830b205cdd080e9eafe8d114a0a9e5e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": "temperature",
+        "original_icon": "mdi:weather-rainy",
+        "original_name": "top-sensor BME280 DewPoint",
+        "platform": "tasmota",
+        "supported_features": 0,
+        "unique_id": "DC4F2255DA78_sensor_sensor_BME280_DewPoint",
+        "unit_of_measurement": "°C"
+      },
+      {
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "device_class": null,
+        "device_id": "769459500b0edf3cc50fa09061fcae41",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.top_sensor_bme280_pressure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9a7eeb78b7f0aa9ae0e8cab1b2dd9409",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": "pressure",
+        "original_icon": null,
+        "original_name": "top-sensor BME280 Pressure",
+        "platform": "tasmota",
+        "supported_features": 0,
+        "unique_id": "DC4F2255DA78_sensor_sensor_BME280_Pressure",
+        "unit_of_measurement": "hPa"
+      },
+      {
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "device_class": null,
+        "device_id": "769459500b0edf3cc50fa09061fcae41",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.tasmota_dc4f2255da78_switch_relay_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "29b7a90605b1fc645b421ced94a44758",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "tasmota",
+        "supported_features": 0,
+        "unique_id": "DC4F2255DA78_switch_relay_1",
+        "unit_of_measurement": null
       }
     ]
   }
