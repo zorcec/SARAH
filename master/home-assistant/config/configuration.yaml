@@ -30,6 +30,7 @@ logger:
 group:
 
 python_script:
+heating_control:
 
 # mqtt:
 #   binary_sensor:

@@ -422,21 +422,6 @@
               "type": "horizontal-stack",
               "cards": [
                 {
-                  "type": "entities",
-                  "entities": [
-                    {
-                      "entity": "sensor.tasmota_energy_current",
-                      "name": "Current"
-                    },
-                    {
-                      "entity": "sensor.tasmota_energy_power",
-                      "name": "Power",
-                      "secondary_info": "none"
-                    }
-                  ],
-                  "title": "Heating Pump"
-                },
-                {
                   "show_name": true,
                   "show_icon": true,
                   "type": "button",
@@ -445,8 +430,37 @@
                   },
                   "icon": "mdi:heating-coil",
                   "entity": "switch.tasmota",
-                  "name": "Heating Override",
+                  "name": "Heating Pump",
                   "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "heating_control.heating_override_toggle",
+                    "data": {},
+                    "target": {}
+                  },
+                  "name": "Override",
+                  "icon": "mdi:lock-alert-outline",
+                  "show_state": true,
+                  "entity": "heating_control.heating_override"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.tasmota_energy_current",
+                  "name": "Current"
+                },
+                {
+                  "entity": "sensor.tasmota_energy_power",
+                  "name": "Power",
+                  "secondary_info": "none"
                 }
               ]
             },

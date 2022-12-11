@@ -11,37 +11,66 @@ from homeassistant.helpers.event import async_track_state_change_event
 from homeassistant.const import STATE_OFF, STATE_ON
 
 DOMAIN = "heating_control"
-CONF_HEATING_CYCLE = "heating_cycle"
+CONF_HEATING_PHAZE = "heating_phaze"
+CONF_WAITING_PHAZE = "waiting_phaze"
 
-STATE_HEATING_REQUESTS = "heating_requests"
+ATTR_HEATING_OVERRIDE_VALUE = "value"
 
+_STATE_HEATING_OVERRIDE = "heating_override"
 
 _LOGGER = logging.getLogger(__name__)
 _VENT_OPEN_TIME = 5 # TODO Should be corrected later
 _VENT_ENTITIES = ["switch.tasmota_dc4f2255da78_switch_relay_1"]
 _PUMP_ENTITY_ID = "switch.tasmota"
-_HEAT_CYCLE_OVERRIDE = 600 # if not specified, the real config is taken
+_HEAT_PHAZE_OVERRIDE = 1200 # 20min, if not specified, the real config is taken
+_WAIT_PHAZE_OVERRIDE = 900 # 15min, if not specified, the real config is taken
+
+_OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)
 
 _UTC = pytz.UTC
 
-async def async_setup_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry) -> bool:
-    _LOGGER.info("Heating control is initialized")
-    async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
-    heating_cycle(hass, _HEAT_CYCLE_OVERRIDE or entry.data[CONF_HEATING_CYCLE])
+def setup(hass, config):
+
+    def heating_override_toggle(call):
+        _heating_override = STATE_OFF
+        override_states = hass.states.get(_OVERRIDE_STATE_NAME)
+        if override_states and override_states.state == STATE_ON:
+            _heating_override = STATE_OFF
+        else:
+            _heating_override = STATE_ON
+        hass.states.set(_OVERRIDE_STATE_NAME, _heating_override)
+        _LOGGER.info("Heating override was set to: {}".format(_heating_override))
+
+    hass.services.register(DOMAIN, "heating_override_toggle", heating_override_toggle)
+
     return True
 
-async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry) -> bool:
+
+async def async_setup_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry):
+    _LOGGER.info("Heating control is initialized")
+    async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
+    heating_cycle(hass, _HEAT_PHAZE_OVERRIDE or entry.data[CONF_HEATING_PHAZE], _WAIT_PHAZE_OVERRIDE or entry.data[CONF_WAITING_PHAZE])
+    return True
+
+
+async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry):
     _LOGGER.warning("Heating control is unloaded")
     return True
 
-def heating_cycle(hass, heating_cycle_time, heatingUp = True):
 
-    threading.Timer(heating_cycle_time, heating_cycle, [hass, heating_cycle_time, not heatingUp]).start()
+def heating_cycle(hass, heating_phaze_time, waiting_phaze_time, heatingUp = True):
 
-    if heatingUp and should_heat(hass):
+    _override_states = hass.states.get(_OVERRIDE_STATE_NAME)
+    if _override_states and _override_states.state == STATE_ON:
+        _LOGGER.info("Heating override enabled, do not chage the pump state (recheck in 60s)")
+        threading.Timer(60, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
+    elif heatingUp and should_heat(hass):
+        threading.Timer(heating_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
         heatingUpCycle(hass)
     else:
+        threading.Timer(waiting_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
         waitingCycle(hass)
+
 
 def heatingUpCycle(hass):
     _pump_state = hass.states.get(_PUMP_ENTITY_ID)
@@ -56,6 +85,7 @@ def heatingUpCycle(hass):
     else:
         _LOGGER.info("Pump state is not known, ignoring")
 
+
 def waitingCycle(hass):
     _pump_state = hass.states.get(_PUMP_ENTITY_ID)
     if _pump_state:
@@ -68,6 +98,7 @@ def waitingCycle(hass):
             _LOGGER.info("Pump is already off, ignoring")
     else:
         _LOGGER.info("Pump state is not known, ignoring")
+
 
 def should_heat(hass):
     """ Checks if we should start the heating pump; Vent open time is considered in it"""
@@ -82,6 +113,7 @@ def should_heat(hass):
                 return True
 
     return False
+
 
 def pump_protection_check(hass, event):
     """Called when vent state is changed"""
