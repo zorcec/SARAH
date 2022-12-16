@@ -312,10 +312,6 @@
                   "icon": "mdi:lightbulb"
                 },
                 {
-                  "entity": "switch.tasmota_5",
-                  "icon": "mdi:lightbulb"
-                },
-                {
                   "entity": "light.tasmota_4"
                 }
               ]
@@ -480,7 +476,7 @@
                   "entity": "switch.tasmota"
                 }
               ],
-              "hours_to_show": 6
+              "hours_to_show": 12
             }
           ]
         }

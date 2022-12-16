@@ -10,23 +10,45 @@
         "attributes": {
           "editable": true,
           "id": "tomislav",
-          "latitude": 48.2719906,
-          "longitude": 14.3141706,
-          "gps_accuracy": 13,
+          "latitude": 48.2719698,
+          "longitude": 14.31416,
+          "gps_accuracy": 23,
           "source": "device_tracker.xiaomi",
           "user_id": "d81d3d7902634864b794b15fc153555e",
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2022-12-11T12:49:46.495827+00:00",
-        "last_updated": "2022-12-11T12:50:17.376138+00:00",
+        "last_changed": "2022-12-16T15:07:39.272459+00:00",
+        "last_updated": "2022-12-16T15:08:13.499867+00:00",
         "context": {
-          "id": "01GM0KRX50Q47WAZ8TNEJ94K1K",
+          "id": "01GMDQN29VTRXASNNER1SMQVM3",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "automation.reboot_ha_daily",
+        "state": "on",
+        "attributes": {
+          "last_triggered": "2022-12-16T15:00:00.003323+00:00",
+          "mode": "single",
+          "current": 0,
+          "id": "reboot_ha",
+          "friendly_name": "Reboot HA daily"
+        },
+        "last_changed": "2022-12-16T15:07:57.046655+00:00",
+        "last_updated": "2022-12-16T15:07:57.046655+00:00",
+        "context": {
+          "id": "01GMDQMJ7PFQJHQ2Q6HPWW0MWS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -40,46 +62,47 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.1,
-          "current_temperature": 20.7,
-          "temperature": 21.0,
+          "current_temperature": 19.8,
+          "temperature": 20.0,
           "hvac_action": "heating",
           "friendly_name": "Kitchen",
           "supported_features": 1
         },
-        "last_changed": "2022-12-11T12:50:05.711572+00:00",
-        "last_updated": "2022-12-11T12:52:45.664627+00:00",
+        "last_changed": "2022-12-16T15:08:22.176842+00:00",
+        "last_updated": "2022-12-16T21:28:15.803502+00:00",
         "context": {
-          "id": "01GM0KXDZ0MT1VBX4GMQX29WVJ",
+          "id": "01GMEDCY5V7MG18SH8NZT9ZDE1",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_level",
-        "state": "71",
+        "state": "32",
         "attributes": {
+          "state_class": "measurement",
           "unit_of_measurement": "%",
           "device_class": "battery",
-          "icon": "mdi:battery-70",
+          "icon": "mdi:battery-30",
           "friendly_name": "xiaomi Battery Level"
         },
-        "last_changed": "2022-12-11T12:50:09.171637+00:00",
-        "last_updated": "2022-12-11T12:50:09.171637+00:00",
+        "last_changed": "2022-12-16T20:27:04.292890+00:00",
+        "last_updated": "2022-12-16T20:27:04.292890+00:00",
         "context": {
-          "id": "01GM0KRN4KV60Z6X5DYCYR3TQ8",
+          "id": "01GME9WWQ45VP7BMZEJCFBFC8M",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 71,
+        "native_value": 32,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -89,10 +112,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "xiaomi Battery State"
         },
-        "last_changed": "2022-12-11T12:50:09.172903+00:00",
-        "last_updated": "2022-12-11T12:50:09.172903+00:00",
+        "last_changed": "2022-12-16T15:08:02.510133+00:00",
+        "last_updated": "2022-12-16T15:08:02.510133+00:00",
         "context": {
-          "id": "01GM0KRN4M9TSZAPEVG8K7N3JG",
+          "id": "01GMDQMQJEYFFMYB6VEBV5F206",
           "parent_id": null,
           "user_id": null
         }
@@ -101,7 +124,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -111,10 +134,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Charger Type"
         },
-        "last_changed": "2022-12-11T12:50:09.174690+00:00",
-        "last_updated": "2022-12-11T12:50:09.174690+00:00",
+        "last_changed": "2022-12-16T15:08:02.511099+00:00",
+        "last_updated": "2022-12-16T15:08:02.511099+00:00",
         "context": {
-          "id": "01GM0KRN4PGAGCWZYTGV4Q4R6D",
+          "id": "01GMDQMQJFK0QE19T563WPPYV9",
           "parent_id": null,
           "user_id": null
         }
@@ -123,7 +146,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -133,10 +156,10 @@
           "icon": "mdi:battery-heart-variant",
           "friendly_name": "xiaomi Battery Health"
         },
-        "last_changed": "2022-12-11T12:50:09.175980+00:00",
-        "last_updated": "2022-12-11T12:50:09.175980+00:00",
+        "last_changed": "2022-12-16T15:08:02.511929+00:00",
+        "last_updated": "2022-12-16T15:08:02.511929+00:00",
         "context": {
-          "id": "01GM0KRN4Q1QZ5KS12MHPHQ0AE",
+          "id": "01GMDQMQJFBSRGC791RT5SYDNS",
           "parent_id": null,
           "user_id": null
         }
@@ -145,12 +168,12 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_temperature",
-        "state": "22.6",
+        "state": "21.9",
         "attributes": {
           "state_class": "measurement",
           "unit_of_measurement": "°C",
@@ -158,46 +181,46 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Battery Temperature"
         },
-        "last_changed": "2022-12-11T12:50:09.177337+00:00",
-        "last_updated": "2022-12-11T12:50:09.177337+00:00",
+        "last_changed": "2022-12-16T21:17:11.536082+00:00",
+        "last_updated": "2022-12-16T21:17:11.536082+00:00",
         "context": {
-          "id": "01GM0KRN4SVMKEMWMG715KAT7A",
+          "id": "01GMECRNFG6Z7WPDQ0PV5EJ8QG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 22.6,
+        "native_value": 21.9,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_power",
-        "state": "4.06",
+        "state": "3.17",
         "attributes": {
           "state_class": "measurement",
-          "current": 1.0098,
-          "voltage": 4.016,
+          "current": 0.8402,
+          "voltage": 3.767,
           "unit_of_measurement": "W",
           "device_class": "power",
           "icon": "mdi:battery-plus",
           "friendly_name": "xiaomi Battery Power"
         },
-        "last_changed": "2022-12-11T12:50:09.179191+00:00",
-        "last_updated": "2022-12-11T12:50:09.179191+00:00",
+        "last_changed": "2022-12-16T21:17:11.537491+00:00",
+        "last_updated": "2022-12-16T21:17:11.537491+00:00",
         "context": {
-          "id": "01GM0KRN4V4MWQDN641RCDGNN8",
+          "id": "01GMECRNFHAQA042CS73FHQKRX",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 4.06,
+        "native_value": 3.17,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -208,16 +231,16 @@
           "icon": "mdi:power-plug-off",
           "friendly_name": "xiaomi Is Charging"
         },
-        "last_changed": "2022-12-11T12:50:09.180437+00:00",
-        "last_updated": "2022-12-11T12:50:09.180437+00:00",
+        "last_changed": "2022-12-16T15:08:02.514549+00:00",
+        "last_updated": "2022-12-16T15:08:02.514549+00:00",
         "context": {
-          "id": "01GM0KRN4W0436RGTX4C30113H",
+          "id": "01GMDQMQJJ0A4T7PDV8JAMVQBB",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {
@@ -225,25 +248,25 @@
         "state": "not_home",
         "attributes": {
           "source_type": "gps",
-          "latitude": 48.2719906,
-          "longitude": 14.3141706,
-          "gps_accuracy": 13,
+          "latitude": 48.2719698,
+          "longitude": 14.31416,
+          "gps_accuracy": 23,
           "altitude": 307,
           "course": 0,
           "speed": 0,
           "vertical_accuracy": 1,
           "friendly_name": "xiaomi"
         },
-        "last_changed": "2022-12-11T12:50:09.182277+00:00",
-        "last_updated": "2022-12-11T12:50:09.182277+00:00",
+        "last_changed": "2022-12-16T15:08:02.515873+00:00",
+        "last_updated": "2022-12-16T15:08:02.515873+00:00",
         "context": {
-          "id": "01GM0KRN4YSYCTVDASASB1MZK6",
+          "id": "01GMDQMQJKCN5WNE1ENHN4BXKX",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2022-12-11T12:53:59.595775+00:00"
+      "last_seen": "2022-12-16T21:38:13.543599+00:00"
     },
     {
       "state": {

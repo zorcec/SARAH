@@ -71,3 +71,5 @@ heating_control:
 #light: !include_dir_merge_list customize/lights/
 switch: !include_dir_merge_list customize/switches/
 climate: !include_dir_merge_list customize/climate/
+
+automation: !include customize/automation.yaml

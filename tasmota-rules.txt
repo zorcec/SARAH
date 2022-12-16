@@ -1,0 +1,83 @@
+Nodes
+---
+
+// To make all nodes to connect automatically
+// Not needed since we want router to invite us
+// rule1 ON system#init DO meshnode 80:7D:3A:B7:AB:71 ENDON
+
+GroupTopic2 tasnodes
+
+// Manual join
+// Not needed
+// MeshNode 80:7D:3A:B7:AB:71
+
+// Add a mesh peer to send a message via another node (if router is out of reach)
+// MeshPeer <MAC>
+
+---
+
+// on event redioSilence, wifi will get turned of
+// after 60 mins, or at 06:00 in the morning it will turn back on
+// retain the radioSilance event to keep turning off the wifi
+
+Rule1 
+  ON Time#Minute=360 DO Wifi 1 ENDON 
+  ON Time#Minute|60 DO Wifi 1 ENDON
+  ON Event#radioSilence DO IF (var1!=1) Wifi 0 ENDIF ENDON
+  ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
+  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
+  ON Power1#state DO VAR1=%value% ENDON
+
+  // for MESH ROUTER only (boot up and invite others)
+  ON system#boot DO meshbroker ENDON
+  ON Time#Minute|10 DO EVENT meshInvite ENDON
+
+
+PIR (sonoff switch)
+---
+
+// should be by the default
+// SwitchMode2 0
+// SwitchTopic 0
+
+// publish the motion and turn on the light
+Rule1 
+  ON Power2#state=1 DO POWER1 1 ENDON
+
+Rule2 
+  ON Power2#state=1 DO RuleTimer1 20 ENDON
+  ON Power2#state DO PUBLISH2 stat/%topic%/PIR %value% ENDON
+  ON Rules#Timer=1 DO POWER1 0 ENDON
+  ON Event#pirOff DO Rule1 0 ENDON
+  ON Event#pirOn DO Rule1 1 ENDON
+
+
+----- FOR RADIO SILENCE DEVICES -----
+Rule3
+  ON Time#Minute=360 DO Wifi 1 ENDON 
+  ON Time#Minute|60 DO Wifi 1 ENDON
+  ON Event#radioSilence DO IF (var1!=1) BACKLOG RuleTimer2 3600; Wifi 0 ENDIF ENDON
+  ON Rules#Timer=2 DO Wifi 1 ENDON
+  ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
+  ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
+  ON Event#debug DO PUBLISH cmnd/debug %var1% ENDON
+  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
+  ON Power1#state=1 DO BACKLOG Wifi 1; RuleTimer2 3600 ENDON
+  ON Power1#state DO VAR1 %value% ENDON
+
+----- FOR SENSOR DEVICES -----
+Rule3
+  ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
+  ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
+  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
+
+
+tasmotas - all
+tasmota-sensors - all sensor devices (always awake)
+
+cmnd/tasmotas/json
+{
+  "event": "pirOff",
+  "event": "radioSilence"
+}
+  

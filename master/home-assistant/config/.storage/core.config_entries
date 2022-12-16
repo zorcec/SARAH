@@ -124,7 +124,7 @@
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
           "os_name": "Android",
-          "os_version": "30",
+          "os_version": "31",
           "supports_encryption": false,
           "app_data": {
             "push_websocket_channel": true,

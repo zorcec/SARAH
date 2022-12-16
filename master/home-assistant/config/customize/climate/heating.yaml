@@ -4,8 +4,5 @@
   target_sensor: sensor.tasmota_si7021_temperature_2
   min_temp: 10
   max_temp: 25
-  target_temp: 21
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
-  min_cycle_duration: 60
-

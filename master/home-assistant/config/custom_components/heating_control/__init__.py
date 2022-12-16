@@ -19,11 +19,11 @@ ATTR_HEATING_OVERRIDE_VALUE = "value"
 _STATE_HEATING_OVERRIDE = "heating_override"
 
 _LOGGER = logging.getLogger(__name__)
-_VENT_OPEN_TIME = 5 # TODO Should be corrected later
+_VENT_OPEN_TIME = 0 # TODO Should be corrected later
 _VENT_ENTITIES = ["switch.tasmota_dc4f2255da78_switch_relay_1"]
 _PUMP_ENTITY_ID = "switch.tasmota"
-_HEAT_PHAZE_OVERRIDE = 1200 # 20min, if not specified, the real config is taken
-_WAIT_PHAZE_OVERRIDE = 900 # 15min, if not specified, the real config is taken
+_HEAT_PHAZE_OVERRIDE = 30 * 60 # 30min, if not specified, the real config is taken
+_WAIT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
 
 _OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)
 
@@ -42,6 +42,7 @@ def setup(hass, config):
         _LOGGER.info("Heating override was set to: {}".format(_heating_override))
 
     hass.services.register(DOMAIN, "heating_override_toggle", heating_override_toggle)
+    hass.states.set(_OVERRIDE_STATE_NAME, STATE_OFF)
 
     return True
 
