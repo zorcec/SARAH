@@ -48,7 +48,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "top-dimmer1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -72,7 +72,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "down-dimmer1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -96,7 +96,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "down-dimmer2",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -144,7 +144,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch2",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -168,7 +168,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "kid-dimmer1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -192,7 +192,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "top-switch1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -216,7 +216,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch3",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -240,7 +240,7 @@
         "model": "",
         "name_by_user": null,
         "name": "bedroom-led",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -264,7 +264,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -288,7 +288,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "top-touch2",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -312,7 +312,7 @@
         "model": "Sonoff Touch",
         "name_by_user": null,
         "name": "down-touch2",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -336,7 +336,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "down-touch1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -360,7 +360,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "down-switch1",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -432,7 +432,7 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bedroom-sensor",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -504,7 +504,7 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "top-sensor",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -528,7 +528,7 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "middle-hall-switch",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -552,7 +552,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "bathroom-dimmer",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -600,7 +600,7 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bathroom-sensor",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {
@@ -624,7 +624,7 @@
         "model": "Sonoff Pow R2",
         "name_by_user": null,
         "name": "down-heating-pump",
-        "sw_version": "12.2.0",
+        "sw_version": "12.3.1",
         "via_device_id": null
       },
       {

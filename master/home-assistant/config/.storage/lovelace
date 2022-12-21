@@ -305,7 +305,7 @@
               "type": "entities",
               "entities": [
                 {
-                  "entity": "light.tasmota"
+                  "entity": "light.top_main_light"
                 },
                 {
                   "entity": "switch.workplace_light",
@@ -318,7 +318,7 @@
             },
             {
               "type": "light",
-              "entity": "light.tasmota"
+              "entity": "light.top_main_light"
             },
             {
               "type": "light",
@@ -404,7 +404,7 @@
                     "service": "mqtt.publish",
                     "data": {
                       "topic": "cmnd/tasmotas/json",
-                      "payload": "{   \"event\": \"pirOff\",   \"event\": \"radioSilence\" }",
+                      "payload": "{  \"LedPower\": 0, \"SetOption31\": 1, \"event\": \"pirOff\",   \"event\": \"radioSilence\" }",
                       "retain": true
                     },
                     "target": {}
@@ -461,7 +461,7 @@
               ]
             },
             {
-              "hours_to_show": 6,
+              "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
               "detail": 2,
@@ -470,13 +470,25 @@
               "entity": "sensor.tasmota_energy_power"
             },
             {
+              "type": "entity",
+              "entity": "heating_control.status",
+              "name": "Heating Status",
+              "state_color": false
+            },
+            {
               "type": "history-graph",
               "entities": [
                 {
                   "entity": "switch.tasmota"
+                },
+                {
+                  "entity": "switch.fakevalve"
+                },
+                {
+                  "entity": "heating_control.status"
                 }
               ],
-              "hours_to_show": 12
+              "hours_to_show": 8
             }
           ]
         }

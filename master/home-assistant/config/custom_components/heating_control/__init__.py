@@ -17,15 +17,22 @@ CONF_WAITING_PHAZE = "waiting_phaze"
 ATTR_HEATING_OVERRIDE_VALUE = "value"
 
 _STATE_HEATING_OVERRIDE = "heating_override"
+_STATE_STATUS = "status"
+
+_STATE_STATUS_ON = "On"
+_STATE_STATUS_WAITING = "Waiting"
+_STATE_STATUS_OFF_PROTECTION = "Protection activated"
+_STATE_STATUS_OVERRIDE = "Override enabled"
 
 _LOGGER = logging.getLogger(__name__)
 _VENT_OPEN_TIME = 0 # TODO Should be corrected later
-_VENT_ENTITIES = ["switch.tasmota_dc4f2255da78_switch_relay_1"]
+_VENT_ENTITIES = ["switch.fakevalve"]
 _PUMP_ENTITY_ID = "switch.tasmota"
 _HEAT_PHAZE_OVERRIDE = 30 * 60 # 30min, if not specified, the real config is taken
 _WAIT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
 
 _OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)
+_STATUS_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_STATUS)
 
 _UTC = pytz.UTC
 
@@ -50,7 +57,7 @@ def setup(hass, config):
 async def async_setup_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry):
     _LOGGER.info("Heating control is initialized")
     async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
-    heating_cycle(hass, _HEAT_PHAZE_OVERRIDE or entry.data[CONF_HEATING_PHAZE], _WAIT_PHAZE_OVERRIDE or entry.data[CONF_WAITING_PHAZE])
+    threading.Timer(60, heating_cycle, [hass, _HEAT_PHAZE_OVERRIDE or entry.data[CONF_HEATING_PHAZE], _WAIT_PHAZE_OVERRIDE or entry.data[CONF_WAITING_PHAZE]]).start()
     return True
 
 
@@ -65,12 +72,15 @@ def heating_cycle(hass, heating_phaze_time, waiting_phaze_time, heatingUp = True
     if _override_states and _override_states.state == STATE_ON:
         _LOGGER.info("Heating override enabled, do not chage the pump state (recheck in 60s)")
         threading.Timer(60, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_OVERRIDE)
     elif heatingUp and should_heat(hass):
         threading.Timer(heating_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
         heatingUpCycle(hass)
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
     else:
         threading.Timer(waiting_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
         waitingCycle(hass)
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
 
 
 def heatingUpCycle(hass):
@@ -109,7 +119,7 @@ def should_heat(hass):
             _vent_state = _vent_states.state
             _vent_state_changed = _vent_states.last_changed 
             _current_time = _UTC.localize(datetime.now())
-            # If went is still not ready (check vent open time); it will be ignored
+            # If vent is still not ready (check vent open time); it will be ignored
             if _vent_state == STATE_ON and _current_time >= _vent_state_changed + timedelta(seconds=_VENT_OPEN_TIME):
                 return True
 
@@ -121,3 +131,4 @@ def pump_protection_check(hass, event):
     if not should_heat(hass):
         _LOGGER.info("All vents are in closed state, turning pump off (pump protection)")
         waitingCycle(hass)
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_OFF_PROTECTION)

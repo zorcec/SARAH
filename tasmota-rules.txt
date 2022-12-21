@@ -16,23 +16,6 @@ GroupTopic2 tasnodes
 
 ---
 
-// on event redioSilence, wifi will get turned of
-// after 60 mins, or at 06:00 in the morning it will turn back on
-// retain the radioSilance event to keep turning off the wifi
-
-Rule1 
-  ON Time#Minute=360 DO Wifi 1 ENDON 
-  ON Time#Minute|60 DO Wifi 1 ENDON
-  ON Event#radioSilence DO IF (var1!=1) Wifi 0 ENDIF ENDON
-  ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
-  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
-  ON Power1#state DO VAR1=%value% ENDON
-
-  // for MESH ROUTER only (boot up and invite others)
-  ON system#boot DO meshbroker ENDON
-  ON Time#Minute|10 DO EVENT meshInvite ENDON
-
-
 PIR (sonoff switch)
 ---
 
@@ -54,22 +37,24 @@ Rule2
 
 ----- FOR RADIO SILENCE DEVICES -----
 Rule3
-  ON Time#Minute=360 DO Wifi 1 ENDON 
   ON Time#Minute|60 DO Wifi 1 ENDON
-  ON Event#radioSilence DO IF (var1!=1) BACKLOG RuleTimer2 3600; Wifi 0 ENDIF ENDON
-  ON Rules#Timer=2 DO Wifi 1 ENDON
+  ON Power1#state DO VAR1 %value% ENDON
+  ON Power1#state=1 DO Wifi 1 ENDON
+  ON Event#radioSilence DO IF (var1!=1) Wifi 0 ENDIF ENDON
+
+  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
   ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
   ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
-  ON Event#debug DO PUBLISH cmnd/debug %var1% ENDON
-  ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
-  ON Power1#state=1 DO BACKLOG Wifi 1; RuleTimer2 3600 ENDON
-  ON Power1#state DO VAR1 %value% ENDON
 
 ----- FOR SENSOR DEVICES -----
 Rule3
   ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
   ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
   ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
+
+- add for mesh router -
+  ON system#boot DO meshbroker ENDON
+  ON Time#Minute|10 DO EVENT meshInvite ENDON
 
 
 tasmotas - all
@@ -81,3 +66,5 @@ cmnd/tasmotas/json
   "event": "radioSilence"
 }
   
+cmnd/tasmotas/upgrade
+12.3.0

@@ -6,3 +6,41 @@
     at: '03:00:00'
   action:
   - service: homeassistant.restart
+
+- id: activate-sleep-mode
+  alias: 'Activates sleep mode'
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  - platform: time
+    at: '23:59:00'
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/json
+      payload: '{ "event": "pirOff", "event": "radioSilence" }'
+      retain: true
+
+# - id: activate-sleep-heating
+#   alias: 'Activates sleep heating mode'
+#   trigger:
+#     platform: time
+#     at: "22:09:00"
+#   action:
+#     - service: climate.set_preset_mode
+#       target:
+#         entity_id: all
+#       data:
+#         preset_mode: "sleep"
+
+# - id: activate-normal-heating
+#   alias: 'Activates normal heating mode'
+#   trigger:
+#     platform: time
+#     at: "04:00:00"
+#   action:
+#     - service: climate.set_preset_mode
+#       target:
+#         entity_id: all
+#       data:
+#         preset_mode: "home"

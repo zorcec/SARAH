@@ -1,8 +1,13 @@
 - platform: generic_thermostat
   name: Kitchen
-  heater: switch.tasmota_dc4f2255da78_switch_relay_1
+  unique_id: kitchen-thermostat
+  heater: switch.fakevalve
   target_sensor: sensor.tasmota_si7021_temperature_2
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
+  sleep_temp: 19
+  home_temp: 20
+  min_cycle_duration:
+    minutes: 1
