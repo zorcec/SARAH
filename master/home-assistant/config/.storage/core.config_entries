@@ -119,7 +119,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2022.11.0-full (2948)",
+          "app_version": "2022.12.0-full (3026)",
           "device_name": "xiaomi",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",

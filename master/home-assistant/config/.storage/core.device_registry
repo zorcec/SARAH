@@ -551,7 +551,7 @@
         "manufacturer": "Tasmota",
         "model": "Tuya MCU",
         "name_by_user": null,
-        "name": "bathroom-dimmer",
+        "name": "bathroom-dimmer1",
         "sw_version": "12.3.1",
         "via_device_id": null
       },
@@ -649,6 +649,54 @@
         "name_by_user": null,
         "name": "HACS",
         "sw_version": "1.28.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.42/",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:7c:5e:b7"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f672540ae1b88bd4b474edba12efe8c8",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "heating_controller_1",
+        "sw_version": "12.3.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.43/",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:7a:af:b2"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0f4d624f89fdf75b4b975f5ecdcfaadf",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Generic",
+        "name_by_user": null,
+        "name": "heating_controller_2",
+        "sw_version": "12.3.1",
         "via_device_id": null
       }
     ],

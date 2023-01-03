@@ -2,5 +2,130 @@
   "version": 1,
   "minor_version": 1,
   "key": "trace.saved_traces",
-  "data": {}
+  "data": {
+    "automation.activate-sleep-mode": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "e4a117930c31c0904d187a87bef60c08",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-03T22:59:00.002975+00:00",
+            "finish": "2023-01-03T22:59:00.031229+00:00"
+          },
+          "domain": "automation",
+          "item_id": "activate-sleep-mode",
+          "trigger": "time",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-01-03T22:59:00.003385+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.activates_sleep_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-03T20:00:00.003409+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "activate-sleep-mode",
+                      "friendly_name": "Activates sleep mode"
+                    },
+                    "last_changed": "2023-01-03T22:51:23.688131+00:00",
+                    "last_updated": "2023-01-03T22:51:23.688131+00:00",
+                    "context": {
+                      "id": "01GNWXA358RZ7A572WSRN0Z74H",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-03T23:59:00.001396+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-03T22:59:00.010269+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GNWXR0S2DRC47P9THPRGP8DX",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "activate-sleep-mode",
+            "alias": "Activates sleep mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "21:00:00"
+              },
+              {
+                "platform": "time",
+                "at": "23:59:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                  "retain": true
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GNWXR0S2DRC47P9THPRGP8DX",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "e4a117930c31c0904d187a87bef60c08",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-03T22:59:00.002975+00:00",
+            "finish": "2023-01-03T22:59:00.031229+00:00"
+          },
+          "domain": "automation",
+          "item_id": "activate-sleep-mode",
+          "trigger": "time"
+        }
+      }
+    ]
+  }
 }
