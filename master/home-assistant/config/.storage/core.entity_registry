@@ -9710,7 +9710,7 @@
         "unit_of_measurement": null
       },
       {
-        "area_id": null,
+        "area_id": "living_room",
         "capabilities": {
           "hvac_modes": [
             "heat",
@@ -9735,7 +9735,7 @@
         "icon": null,
         "id": "472e9c63c55744162007dad661c3fe84",
         "has_entity_name": false,
-        "name": null,
+        "name": "Top",
         "options": {},
         "original_device_class": null,
         "original_icon": null,

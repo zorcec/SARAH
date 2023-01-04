@@ -34,6 +34,22 @@ Rule2
   ON Event#pirOff DO Rule1 0 ENDON
   ON Event#pirOn DO Rule1 1 ENDON
 
+----- FOR HEATING CONTROLER 1 -----
+
+Rule1
+  ON System#Boot DO
+    Backlog DS18Alias D93C4C0457945D28,1;
+    DS18Alias 0F3C270457550F28,2;
+  ENDON
+
+----- FOR HEATING CONTROLER 2 -----
+
+Rule1
+  ON System#Boot DO
+    Backlog DS18Alias A43C060457318228,1;
+    DS18Alias BE3C4B045790F028,2;
+  ENDON
+
 
 ----- FOR RADIO SILENCE DEVICES -----
 Rule3
@@ -48,6 +64,9 @@ Rule3
 
 ----- FOR SENSOR DEVICES -----
 Rule3
+  ON Time#Minute=180 DO Restart 1 ENDON
+
+- add or tasmesh -
   ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
   ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
   ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
@@ -55,18 +74,6 @@ Rule3
 - add for mesh router -
   ON system#boot DO meshbroker ENDON
   ON Time#Minute|10 DO EVENT meshInvite ENDON
-
-- add for heating controller I
-  ON System#Boot DO
-    Backlog DS18Alias D93C4C0457945D28,1;
-    DS18Alias 0F3C270457550F28,2;
-  ENDON
-
-- add for heating controller II
-  ON System#Boot DO
-    Backlog DS18Alias A43C060457318228,1;
-    DS18Alias BE3C4B045790F028,2;
-  ENDON
 
 tasmotas - all
 tasmota-sensors - all sensor devices (always awake)
@@ -79,10 +86,3 @@ cmnd/tasmotas/json
   
 cmnd/tasmotas/upgrade
 12.3.0
-
-
-Rule3
-  ON System#Boot DO
-    Backlog DS18Alias D93C4C0457945D28,1;
-    DS18Alias 0F3C270457550F28,2;
-  ENDON
