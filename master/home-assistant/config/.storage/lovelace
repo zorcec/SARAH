@@ -161,6 +161,10 @@
               "entity": "light.bathroom_main_light"
             },
             {
+              "type": "thermostat",
+              "entity": "climate.bathroom"
+            },
+            {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
@@ -248,6 +252,11 @@
               "entity": "light.bed_led"
             },
             {
+              "type": "thermostat",
+              "entity": "climate.master_bedroom",
+              "name": "Bedroom"
+            },
+            {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
@@ -323,6 +332,11 @@
             {
               "type": "light",
               "entity": "light.tasmota_4"
+            },
+            {
+              "type": "thermostat",
+              "entity": "climate.top",
+              "name": "Livingroom"
             },
             {
               "hours_to_show": 24,
@@ -432,6 +446,31 @@
               "name": "Pump power",
               "icon": "mdi:heat-pump",
               "entity": "sensor.tasmota_energy_power"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "sensor.heating_controller_1_input_temperature"
+                },
+                {
+                  "entity": "sensor.heating_controller_1_output_temperature"
+                }
+              ],
+              "title": "Temp. Comparison (Controller I, Down)"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "sensor.heating_controller_2_input_temperature"
+                },
+                {
+                  "entity": "sensor.heating_controller_2_output_temperature"
+                }
+              ],
+              "hours_to_show": 24,
+              "title": "Temp. Comparison (Controller II, Top)"
             }
           ]
         },
@@ -498,6 +537,34 @@
                   "name": "Sleep mode"
                 }
               ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.processor_use"
+                },
+                {
+                  "entity": "sensor.memory_use_percent"
+                },
+                {
+                  "entity": "sensor.disk_use_percent_config"
+                },
+                {
+                  "entity": "sensor.network_in_eth0"
+                },
+                {
+                  "entity": "sensor.network_out_eth0"
+                }
+              ]
+            },
+            {
+              "hours_to_show": 24,
+              "graph": "line",
+              "type": "sensor",
+              "detail": 2,
+              "name": "Master Node CPU",
+              "entity": "sensor.processor_temperature"
             }
           ]
         }

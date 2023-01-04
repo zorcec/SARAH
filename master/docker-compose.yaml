@@ -101,13 +101,6 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
      - ./portainer/data:/data portainer/portainer-ce
 
-  local:
-   build:
-     context: local
-   restart: always
-   cap_add:
-     - NET_ADMIN
-
   # netdata:
   #   image: netdata/netdata
   #   restart: always

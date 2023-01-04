@@ -7,7 +7,49 @@
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
+  sleep_temp: 18
+  home_temp: 20
+  min_cycle_duration:
+    minutes: 1
+
+- platform: generic_thermostat
+  name: Bathroom
+  unique_id: bathroom-thermostat
+  heater: switch.top_bathroom_valve
+  target_sensor: sensor.bathroom_sensor_si7021_temperature
+  min_temp: 10
+  max_temp: 25
+  cold_tolerance: 0.2 # when to switch on
+  hot_tolerance: 0    # when to switch off
+  sleep_temp: 18
+  home_temp: 21
+  min_cycle_duration:
+    minutes: 1
+
+- platform: generic_thermostat
+  name: Master Bedroom
+  unique_id: bedroom-thermostat
+  heater: switch.top_bedroom_valve
+  target_sensor: sensor.tasmota_si7021_temperature_3
+  min_temp: 10
+  max_temp: 25
+  cold_tolerance: 0.2 # when to switch on
+  hot_tolerance: 0    # when to switch off
   sleep_temp: 19
+  home_temp: 19
+  min_cycle_duration:
+    minutes: 1
+
+- platform: generic_thermostat
+  name: Top
+  unique_id: top-thermostat
+  heater: switch.top_valve
+  target_sensor: sensor.top_sensor_bme280_temperature
+  min_temp: 10
+  max_temp: 25
+  cold_tolerance: 0.2 # when to switch on
+  hot_tolerance: 0    # when to switch off
+  sleep_temp: 18
   home_temp: 20
   min_cycle_duration:
     minutes: 1

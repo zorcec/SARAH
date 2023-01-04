@@ -56,6 +56,17 @@ Rule3
   ON system#boot DO meshbroker ENDON
   ON Time#Minute|10 DO EVENT meshInvite ENDON
 
+- add for heating controller I
+  ON System#Boot DO
+    Backlog DS18Alias D93C4C0457945D28,1;
+    DS18Alias 0F3C270457550F28,2;
+  ENDON
+
+- add for heating controller II
+  ON System#Boot DO
+    Backlog DS18Alias A43C060457318228,1;
+    DS18Alias BE3C4B045790F028,2;
+  ENDON
 
 tasmotas - all
 tasmota-sensors - all sensor devices (always awake)
@@ -68,3 +79,10 @@ cmnd/tasmotas/json
   
 cmnd/tasmotas/upgrade
 12.3.0
+
+
+Rule3
+  ON System#Boot DO
+    Backlog DS18Alias D93C4C0457945D28,1;
+    DS18Alias 0F3C270457550F28,2;
+  ENDON
