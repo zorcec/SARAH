@@ -7,8 +7,8 @@
   action:
   - service: homeassistant.restart
 
-- id: activate-sleep-mode
-  alias: 'Activates sleep mode'
+- id: set-sleep-light-mode
+  alias: 'Activates sleep lights mode'
   trigger:
   - platform: time
     at: '21:00:00'
@@ -21,26 +21,38 @@
       payload: '{ "event": "pirOff", "event": "radioSilence" }'
       retain: true
 
-# - id: activate-sleep-heating
-#   alias: 'Activates sleep heating mode'
-#   trigger:
-#     platform: time
-#     at: "22:09:00"
-#   action:
-#     - service: climate.set_preset_mode
-#       target:
-#         entity_id: all
-#       data:
-#         preset_mode: "sleep"
+- id: set-evening-light-mode
+  alias: 'Activates evening lights mode'
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/json
+      payload: '{ "event": "pirOn" }'
+      retain: true
 
-# - id: activate-normal-heating
-#   alias: 'Activates normal heating mode'
-#   trigger:
-#     platform: time
-#     at: "04:00:00"
-#   action:
-#     - service: climate.set_preset_mode
-#       target:
-#         entity_id: all
-#       data:
-#         preset_mode: "home"
+- id: set-sleep-climate
+  alias: 'Set sleep climate mode'
+  trigger:
+  - platform: time
+    at: '20:00:00'
+  action:
+  - service: climate.set_preset_mode
+    target:
+        entity_id: all
+    data:
+      preset_mode: "sleep"
+
+- id: set-awake-climate
+  alias: 'Set awake climate mode'
+  trigger:
+  - platform: time
+    at: '05:00:00'
+  action:
+  - service: climate.set_preset_mode
+    target:
+        entity_id: all
+    data:
+      preset_mode: "home"

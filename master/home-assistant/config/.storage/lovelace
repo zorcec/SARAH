@@ -371,38 +371,6 @@
           "badges": [],
           "cards": [
             {
-              "type": "horizontal-stack",
-              "cards": [
-                {
-                  "show_name": true,
-                  "show_icon": true,
-                  "type": "button",
-                  "tap_action": {
-                    "action": "toggle"
-                  },
-                  "icon": "mdi:heating-coil",
-                  "entity": "switch.tasmota",
-                  "name": "Heating Pump",
-                  "show_state": true
-                },
-                {
-                  "show_name": true,
-                  "show_icon": true,
-                  "type": "button",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "heating_control.heating_override_toggle",
-                    "data": {},
-                    "target": {}
-                  },
-                  "name": "Override",
-                  "icon": "mdi:lock-alert-outline",
-                  "show_state": true,
-                  "entity": "heating_control.heating_override"
-                }
-              ]
-            },
-            {
               "type": "entity",
               "entity": "heating_control.status",
               "name": "Heating Status",
@@ -413,16 +381,60 @@
               "type": "history-graph",
               "entities": [
                 {
+                  "entity": "heating_control.status"
+                },
+                {
                   "entity": "switch.tasmota"
                 },
                 {
-                  "entity": "switch.fakevalve"
+                  "entity": "switch.top_bathroom_valve"
                 },
                 {
-                  "entity": "heating_control.status"
+                  "entity": "switch.top_bedroom_valve"
+                },
+                {
+                  "entity": "switch.top_wc_valve"
+                },
+                {
+                  "entity": "switch.top_kid_valve"
+                },
+                {
+                  "entity": "switch.top_valve"
+                },
+                {
+                  "entity": "switch.down_kitchen_vent"
                 }
               ],
-              "hours_to_show": 24
+              "hours_to_show": 8
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
+                  "entity": "sensor.heating_controller_2_input_temperature",
+                  "name": "Top Input",
+                  "min": 20,
+                  "max": 45,
+                  "severity": {
+                    "green": 20,
+                    "yellow": 35,
+                    "red": 40
+                  }
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.heating_controller_1_input_temperature",
+                  "name": "Down Input",
+                  "min": 20,
+                  "max": 45,
+                  "severity": {
+                    "green": 20,
+                    "yellow": 35,
+                    "red": 40
+                  }
+                }
+              ]
             },
             {
               "type": "entities",
@@ -457,7 +469,8 @@
                   "entity": "sensor.heating_controller_1_output_temperature"
                 }
               ],
-              "title": "Temp. Comparison (Controller I, Down)"
+              "title": "Temp. Comparison (Controller I, Down)",
+              "hours_to_show": 8
             },
             {
               "type": "history-graph",
@@ -469,7 +482,7 @@
                   "entity": "sensor.heating_controller_2_output_temperature"
                 }
               ],
-              "hours_to_show": 24,
+              "hours_to_show": 8,
               "title": "Temp. Comparison (Controller II, Top)"
             }
           ]

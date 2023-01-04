@@ -25,10 +25,21 @@ _STATE_STATUS_OFF_PROTECTION = "Protection activated"
 _STATE_STATUS_OVERRIDE = "Override enabled"
 
 _LOGGER = logging.getLogger(__name__)
-_VENT_OPEN_TIME = 0 # TODO Should be corrected later
-_VENT_ENTITIES = ["switch.fakevalve"]
-_PUMP_ENTITY_ID = "switch.tasmota"
-_HEAT_PHAZE_OVERRIDE = 30 * 60 # 30min, if not specified, the real config is taken
+_VENT_OPEN_TIME = 180 # 3 mins
+_VENT_ENTITIES = [
+    "switch.fakevalve",
+    "switch.down_backup_vent",
+    "switch.down_hallway_vent",
+    "switch.down_kitchen_vent",
+    "switch.down_toilet_vent",
+    "switch.top_bathroom_valve",
+    "switch.top_bedroom_valve",
+    "switch.top_kid_valve",
+    "switch.top_valve",
+    "switch.top_wc_valve"
+    ]
+_PUMP_ENTITY_ID = "switch.heating_pump"
+_HEAT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
 _WAIT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
 
 _OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)

@@ -1,7 +1,7 @@
 - platform: generic_thermostat
   name: Kitchen
   unique_id: kitchen-thermostat
-  heater: switch.fakevalve
+  heater: switch.down_kitchen_vent
   target_sensor: sensor.tasmota_si7021_temperature_2
   min_temp: 10
   max_temp: 25
