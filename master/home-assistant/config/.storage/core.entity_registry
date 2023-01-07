@@ -9649,6 +9649,7 @@
           "target_temp_step": 0.1,
           "preset_modes": [
             "none",
+            "comfort",
             "home",
             "sleep"
           ]
@@ -10323,6 +10324,29 @@
         "platform": "switch_as_x",
         "supported_features": 0,
         "unique_id": "5d065252c6e6708bff0e6047b274d820",
+        "unit_of_measurement": null
+      },
+      {
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "a3113585cb10637786c9509a5f6f2463",
+        "device_class": null,
+        "device_id": "0f20b8b22e1915070de571dd96415fc3",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.schedule_379834",
+        "hidden_by": null,
+        "icon": null,
+        "id": "af5b49a0b41862e869bddb5d0e1762b0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": "mdi:calendar-clock",
+        "original_name": "Schedule #379834",
+        "platform": "scheduler",
+        "supported_features": 0,
+        "unique_id": "379834",
         "unit_of_measurement": null
       }
     ]

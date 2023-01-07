@@ -5,9 +5,14 @@
   "data": {
     "items": [
       {
-        "url": "/hacsfiles/scheduler-card/scheduler-card.js?hacstag=286270157239",
+        "url": "/hacsfiles/scheduler-card/scheduler-card.js?hacstag=286270157241",
         "type": "module",
         "id": "1335da3ed0cc4c119e616f288f9362aa"
+      },
+      {
+        "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110",
+        "type": "module",
+        "id": "5965915ac0ec4394ae7c3232b785cf1d"
       }
     ]
   }

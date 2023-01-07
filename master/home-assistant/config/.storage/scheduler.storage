@@ -1,0 +1,103 @@
+{
+  "version": 3,
+  "minor_version": 1,
+  "key": "scheduler.storage",
+  "data": {
+    "schedules": [
+      {
+        "schedule_id": "379834",
+        "timeslots": [
+          {
+            "start": "00:00:00",
+            "stop": "04:00:00",
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_preset_mode",
+                "entity_id": "climate.bathroom",
+                "service_data": {
+                  "preset_mode": "sleep"
+                }
+              }
+            ]
+          },
+          {
+            "start": "04:00:00",
+            "stop": "07:00:00",
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_preset_mode",
+                "entity_id": "climate.bathroom",
+                "service_data": {
+                  "preset_mode": "comfort"
+                }
+              }
+            ]
+          },
+          {
+            "start": "07:00:00",
+            "stop": "15:00:00",
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_preset_mode",
+                "entity_id": "climate.bathroom",
+                "service_data": {
+                  "preset_mode": "home"
+                }
+              }
+            ]
+          },
+          {
+            "start": "15:00:00",
+            "stop": "18:00:00",
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_preset_mode",
+                "entity_id": "climate.bathroom",
+                "service_data": {
+                  "preset_mode": "comfort"
+                }
+              }
+            ]
+          },
+          {
+            "start": "18:00:00",
+            "stop": "00:00:00",
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_preset_mode",
+                "entity_id": "climate.bathroom",
+                "service_data": {
+                  "preset_mode": "sleep"
+                }
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": true
+      }
+    ],
+    "tags": []
+  }
+}

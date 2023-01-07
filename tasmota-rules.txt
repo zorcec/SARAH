@@ -86,3 +86,5 @@ cmnd/tasmotas/json
   
 cmnd/tasmotas/upgrade
 12.3.0
+
+token; gho_IwEFf8Out1sWbMi_FHfw9BQFAKU8yjx1oDVc3

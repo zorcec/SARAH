@@ -126,8 +126,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "a5229f28ddd67c9eae7d75f6de134c24",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "a5229f28ddd67c9eae7d75f6de134c24"
         ],
         "configuration_url": "http://192.168.0.28/",
         "connections": [
@@ -199,8 +199,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
         ],
         "configuration_url": "http://192.168.0.27/",
         "connections": [
@@ -272,8 +272,8 @@
       {
         "area_id": "living_room",
         "config_entries": [
-          "5d065252c6e6708bff0e6047b274d820",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "5d065252c6e6708bff0e6047b274d820"
         ],
         "configuration_url": "http://192.168.0.21/",
         "connections": [
@@ -297,8 +297,8 @@
       {
         "area_id": "kitchen",
         "config_entries": [
-          "382fb9a149318a1ffa6815b03dd73163",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "382fb9a149318a1ffa6815b03dd73163"
         ],
         "configuration_url": "http://192.168.0.32/",
         "connections": [
@@ -514,8 +514,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "7ef547c6ed4d170d1ecf8f37ca3e8288",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "7ef547c6ed4d170d1ecf8f37ca3e8288"
         ],
         "configuration_url": "http://192.168.0.15/",
         "connections": [
@@ -653,7 +653,7 @@
         "model": "",
         "name_by_user": null,
         "name": "HACS",
-        "sw_version": "1.28.3",
+        "sw_version": "1.29.1",
         "via_device_id": null
       },
       {
@@ -702,6 +702,30 @@
         "name_by_user": null,
         "name": "heating_controller_2",
         "sw_version": "12.3.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "a3113585cb10637786c9509a5f6f2463"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0f20b8b22e1915070de571dd96415fc3",
+        "identifiers": [
+          [
+            "scheduler",
+            "62f199d8720d"
+          ]
+        ],
+        "manufacturer": "@nielsfaber",
+        "model": "Scheduler",
+        "name_by_user": null,
+        "name": "Scheduler",
+        "sw_version": "3.2.14",
         "via_device_id": null
       }
     ],

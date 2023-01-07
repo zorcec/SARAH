@@ -87,9 +87,18 @@
         "domain": "hacs",
         "title": "",
         "data": {
-          "token": "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"
+          "token": "_token_"
         },
-        "options": {},
+        "options": {
+          "sidepanel_title": "HACS",
+          "sidepanel_icon": "hacs:hacs",
+          "release_limit": 5,
+          "country": "ALL",
+          "appdaemon": false,
+          "netdaemon": false,
+          "debug": false,
+          "experimental": false
+        },
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
         "source": "user",
@@ -220,6 +229,19 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a3113585cb10637786c9509a5f6f2463",
+        "version": 2,
+        "domain": "scheduler",
+        "title": "Scheduler",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "62f199d8720d",
         "disabled_by": null
       }
     ]

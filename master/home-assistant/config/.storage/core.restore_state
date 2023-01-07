@@ -17,16 +17,16 @@
           "user_id": "d81d3d7902634864b794b15fc153555e",
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2023-01-07T02:00:32.958856+00:00",
-        "last_updated": "2023-01-07T02:01:04.800641+00:00",
+        "last_changed": "2023-01-07T09:47:55.010840+00:00",
+        "last_updated": "2023-01-07T09:48:28.885484+00:00",
         "context": {
-          "id": "01GP4ZBJH09E4VXPV9ZN6SKX3A",
+          "id": "01GP5T3DANX3H3JFBSMT6V66ZG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -39,16 +39,16 @@
           "id": "reboot_ha",
           "friendly_name": "Reboot HA daily"
         },
-        "last_changed": "2023-01-07T02:00:51.806993+00:00",
-        "last_updated": "2023-01-07T02:00:51.806993+00:00",
+        "last_changed": "2023-01-07T09:48:15.430525+00:00",
+        "last_updated": "2023-01-07T09:48:15.430525+00:00",
         "context": {
-          "id": "01GP4ZB5TYSFB0NQHVJVWTF4XX",
+          "id": "01GP5T30662VDE6G7068A42DKJ",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -61,16 +61,16 @@
           "id": "set-sleep-light-mode",
           "friendly_name": "Activates sleep lights mode"
         },
-        "last_changed": "2023-01-07T02:00:51.808334+00:00",
-        "last_updated": "2023-01-07T02:00:51.808334+00:00",
+        "last_changed": "2023-01-07T09:48:15.432407+00:00",
+        "last_updated": "2023-01-07T09:48:15.432407+00:00",
         "context": {
-          "id": "01GP4ZB5V0AQMGDR39660868CK",
+          "id": "01GP5T30682SAS2DWHN9SGZXPP",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -83,16 +83,16 @@
           "id": "set-evening-light-mode",
           "friendly_name": "Activates evening lights mode"
         },
-        "last_changed": "2023-01-07T02:00:51.809389+00:00",
-        "last_updated": "2023-01-07T02:00:51.809389+00:00",
+        "last_changed": "2023-01-07T09:48:15.433942+00:00",
+        "last_updated": "2023-01-07T09:48:15.433942+00:00",
         "context": {
-          "id": "01GP4ZB5V14446VVFDKEZ7F8K2",
+          "id": "01GP5T3069YA5K6EZSZY1B7M66",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -105,16 +105,16 @@
           "id": "set-sleep-climate",
           "friendly_name": "Set sleep climate mode"
         },
-        "last_changed": "2023-01-07T02:00:51.812445+00:00",
-        "last_updated": "2023-01-07T02:00:51.812445+00:00",
+        "last_changed": "2023-01-07T09:48:15.435289+00:00",
+        "last_updated": "2023-01-07T09:48:15.435289+00:00",
         "context": {
-          "id": "01GP4ZB5V4RK9T4P251YVAHTAF",
+          "id": "01GP5T306BGR5SEE5SJ0E979N1",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -127,16 +127,16 @@
           "id": "set-awake-climate",
           "friendly_name": "Set awake climate mode"
         },
-        "last_changed": "2023-01-07T02:00:51.813713+00:00",
-        "last_updated": "2023-01-07T03:00:00.023520+00:00",
+        "last_changed": "2023-01-07T09:48:15.436553+00:00",
+        "last_updated": "2023-01-07T09:48:15.436553+00:00",
         "context": {
-          "id": "01GP52QEW3Q6YHGBXVGYYSHCBT",
+          "id": "01GP5T306CXGMG78BQJAW57N0X",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -155,23 +155,23 @@
             "home",
             "sleep"
           ],
-          "current_temperature": 20.1,
+          "current_temperature": 20.5,
           "temperature": 20.0,
           "hvac_action": "idle",
           "preset_mode": "home",
           "friendly_name": "Kitchen",
           "supported_features": 17
         },
-        "last_changed": "2023-01-07T02:00:53.420691+00:00",
-        "last_updated": "2023-01-07T09:11:12.446549+00:00",
+        "last_changed": "2023-01-07T09:48:18.135698+00:00",
+        "last_updated": "2023-01-07T09:48:28.597695+00:00",
         "context": {
-          "id": "01GP5QZ59Y6WHE3D8A80QW4DZ3",
+          "id": "01GP5T3D1NF5WY7K2QH074ESF6",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -187,26 +187,27 @@
           "target_temp_step": 0.1,
           "preset_modes": [
             "none",
+            "comfort",
             "home",
             "sleep"
           ],
-          "current_temperature": 19.4,
+          "current_temperature": 20.0,
           "temperature": 19.0,
           "hvac_action": "idle",
           "preset_mode": "home",
           "friendly_name": "Bathroom",
           "supported_features": 17
         },
-        "last_changed": "2023-01-07T02:00:53.422060+00:00",
-        "last_updated": "2023-01-07T09:13:42.527235+00:00",
+        "last_changed": "2023-01-07T09:48:18.137354+00:00",
+        "last_updated": "2023-01-07T09:48:28.637579+00:00",
         "context": {
-          "id": "01GP5R3QR1NFFAXEY87WZK3RGW",
+          "id": "01GP5T3D2XFT7C1QJB1V9RKYK0",
           "parent_id": null,
-          "user_id": "d81d3d7902634864b794b15fc153555e"
+          "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -225,23 +226,23 @@
             "home",
             "sleep"
           ],
-          "current_temperature": 18.7,
+          "current_temperature": 19.0,
           "temperature": 18.5,
           "hvac_action": "idle",
           "preset_mode": "home",
           "friendly_name": "Master Bedroom",
           "supported_features": 17
         },
-        "last_changed": "2023-01-07T02:00:53.423342+00:00",
-        "last_updated": "2023-01-07T09:07:40.603052+00:00",
+        "last_changed": "2023-01-07T09:48:18.140691+00:00",
+        "last_updated": "2023-01-07T09:48:28.427997+00:00",
         "context": {
-          "id": "01GP5QRPDV9M2PNV2QS686VWG8",
+          "id": "01GP5T3CWB0H5NFVA42CHBDF6Y",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -267,16 +268,16 @@
           "friendly_name": "Top",
           "supported_features": 17
         },
-        "last_changed": "2023-01-07T02:00:53.424994+00:00",
-        "last_updated": "2023-01-07T09:13:17.981303+00:00",
+        "last_changed": "2023-01-07T09:48:18.142520+00:00",
+        "last_updated": "2023-01-07T09:48:24.624350+00:00",
         "context": {
-          "id": "01GP5R2ZWXAHYMN6P2EPE72TZW",
+          "id": "01GP5T395G2FK439VQNA79WZ6C",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -289,10 +290,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Battery Level"
         },
-        "last_changed": "2023-01-07T09:13:02.694884+00:00",
-        "last_updated": "2023-01-07T09:13:02.857206+00:00",
+        "last_changed": "2023-01-07T09:48:18.331009+00:00",
+        "last_updated": "2023-01-07T09:48:18.331009+00:00",
         "context": {
-          "id": "01GP5R2H49HABRQ1HNBYPW1JA1",
+          "id": "01GP5T330VG6MA79SSCT0ACXT3",
           "parent_id": null,
           "user_id": null
         }
@@ -301,7 +302,7 @@
         "native_value": 100,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -311,10 +312,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "xiaomi Battery State"
         },
-        "last_changed": "2023-01-07T09:13:02.696135+00:00",
-        "last_updated": "2023-01-07T09:13:02.696135+00:00",
+        "last_changed": "2023-01-07T09:48:18.332374+00:00",
+        "last_updated": "2023-01-07T09:48:18.332374+00:00",
         "context": {
-          "id": "01GP5R2GZ896Z7E6YRCYHRXH22",
+          "id": "01GP5T330W3N905F3GT65XJ5AQ",
           "parent_id": null,
           "user_id": null
         }
@@ -323,7 +324,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -333,10 +334,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Charger Type"
         },
-        "last_changed": "2023-01-07T09:13:02.697770+00:00",
-        "last_updated": "2023-01-07T09:13:02.697770+00:00",
+        "last_changed": "2023-01-07T09:48:18.333309+00:00",
+        "last_updated": "2023-01-07T09:48:18.333309+00:00",
         "context": {
-          "id": "01GP5R2GZ91HY7SBDKKV8CSBKR",
+          "id": "01GP5T330XM1XW2RZ3VR1WDG3Q",
           "parent_id": null,
           "user_id": null
         }
@@ -345,7 +346,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -355,10 +356,10 @@
           "icon": "mdi:battery-heart-variant",
           "friendly_name": "xiaomi Battery Health"
         },
-        "last_changed": "2023-01-07T02:00:56.414590+00:00",
-        "last_updated": "2023-01-07T02:00:56.414590+00:00",
+        "last_changed": "2023-01-07T09:48:18.334102+00:00",
+        "last_updated": "2023-01-07T09:48:18.334102+00:00",
         "context": {
-          "id": "01GP4ZBAAYV8NJ02HQVVE1HHJA",
+          "id": "01GP5T330YQ3A7NRJ0KFMA48G8",
           "parent_id": null,
           "user_id": null
         }
@@ -367,12 +368,12 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_temperature",
-        "state": "25.3",
+        "state": "22.4",
         "attributes": {
           "state_class": "measurement",
           "unit_of_measurement": "°C",
@@ -380,46 +381,46 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Battery Temperature"
         },
-        "last_changed": "2023-01-07T09:15:28.053568+00:00",
-        "last_updated": "2023-01-07T09:15:28.053568+00:00",
+        "last_changed": "2023-01-07T09:48:18.334934+00:00",
+        "last_updated": "2023-01-07T09:48:18.334934+00:00",
         "context": {
-          "id": "01GP5R6YXNDSJVZ0731SR41APY",
+          "id": "01GP5T330YCCS6TYGD3G3650B0",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 25.3,
+        "native_value": 22.4,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_power",
-        "state": "2.24",
+        "state": "0.72",
         "attributes": {
           "state_class": "measurement",
-          "current": 0.5188,
-          "voltage": 4.326,
+          "current": 0.1646,
+          "voltage": 4.362,
           "unit_of_measurement": "W",
           "device_class": "power",
           "icon": "mdi:battery-plus",
           "friendly_name": "xiaomi Battery Power"
         },
-        "last_changed": "2023-01-07T09:15:28.055008+00:00",
-        "last_updated": "2023-01-07T09:15:28.055008+00:00",
+        "last_changed": "2023-01-07T09:48:18.335955+00:00",
+        "last_updated": "2023-01-07T09:48:18.335955+00:00",
         "context": {
-          "id": "01GP5R6YXQ8S8N7H3RSGYAP5R7",
+          "id": "01GP5T330ZEJT94SVBDG28SYAM",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 2.24,
+        "native_value": 0.72,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -430,16 +431,16 @@
           "icon": "mdi:power-plug-off",
           "friendly_name": "xiaomi Is Charging"
         },
-        "last_changed": "2023-01-07T09:13:02.697023+00:00",
-        "last_updated": "2023-01-07T09:13:02.697023+00:00",
+        "last_changed": "2023-01-07T09:48:18.336736+00:00",
+        "last_updated": "2023-01-07T09:48:18.336736+00:00",
         "context": {
-          "id": "01GP5R2GZ956VNDG5M9YC0555Y",
+          "id": "01GP5T3310873G3SC1ES0TEGPG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {
@@ -456,16 +457,16 @@
           "vertical_accuracy": 1,
           "friendly_name": "xiaomi"
         },
-        "last_changed": "2023-01-07T02:00:56.422744+00:00",
-        "last_updated": "2023-01-07T02:00:56.422744+00:00",
+        "last_changed": "2023-01-07T09:48:18.337994+00:00",
+        "last_updated": "2023-01-07T09:48:18.337994+00:00",
         "context": {
-          "id": "01GP4ZBAB6JRZ4NHS2PRMP9YDB",
+          "id": "01GP5T3311RBNXBQ4KGT1J3FKR",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-07T09:16:04.859159+00:00"
+      "last_seen": "2023-01-07T09:48:28.890205+00:00"
     },
     {
       "state": {

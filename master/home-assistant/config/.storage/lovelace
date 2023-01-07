@@ -181,31 +181,6 @@
               "name": "Humidity"
             },
             {
-              "type": "conditional",
-              "conditions": [
-                {
-                  "entity": "sensor.my_sensor",
-                  "state_not": "unknown"
-                },
-                {
-                  "entity": "sensor.my_sensor",
-                  "state_not": "unavailable"
-                }
-              ],
-              "card": {
-                "type": "gauge",
-                "entity": "sensor.tasmota_ds18b20_temperature",
-                "min": 25,
-                "max": 50,
-                "severity": {
-                  "green": 37,
-                  "yellow": 40,
-                  "red": 42
-                },
-                "name": "Water Temp."
-              }
-            },
-            {
               "type": "history-graph",
               "entities": [
                 {
@@ -214,6 +189,13 @@
               ],
               "title": "Motion",
               "hours_to_show": 24
+            },
+            {
+              "type": "custom:scheduler-card",
+              "include": [
+                "climate.bathroom"
+              ],
+              "exclude": []
             }
           ]
         },
