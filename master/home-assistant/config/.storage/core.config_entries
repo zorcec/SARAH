@@ -141,6 +141,86 @@
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
         "disabled_by": null
+      },
+      {
+        "entry_id": "382fb9a149318a1ffa6815b03dd73163",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Terrace Light",
+        "data": {},
+        "options": {
+          "entity_id": "switch.terrace_light",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a5229f28ddd67c9eae7d75f6de134c24",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Bedrom Bed Light",
+        "data": {},
+        "options": {
+          "entity_id": "switch.tasmota_4",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "38c9f9b6a8a2f6aadf3cdc10bbf48082",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Bedrom Balcony Light",
+        "data": {},
+        "options": {
+          "entity_id": "switch.bedrom_main_light",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "7ef547c6ed4d170d1ecf8f37ca3e8288",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Middle Hall Switch",
+        "data": {},
+        "options": {
+          "entity_id": "switch.tasmota_9",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "5d065252c6e6708bff0e6047b274d820",
+        "version": 1,
+        "domain": "switch_as_x",
+        "title": "Workplace Light",
+        "data": {},
+        "options": {
+          "entity_id": "switch.workplace_light",
+          "target_domain": "light"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
       }
     ]
   }

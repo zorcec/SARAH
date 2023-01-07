@@ -387,25 +387,25 @@
                   "entity": "switch.tasmota"
                 },
                 {
+                  "entity": "switch.down_kitchen_vent"
+                },
+                {
                   "entity": "switch.top_bathroom_valve"
                 },
                 {
                   "entity": "switch.top_bedroom_valve"
                 },
                 {
-                  "entity": "switch.top_wc_valve"
+                  "entity": "switch.top_valve"
                 },
                 {
                   "entity": "switch.top_kid_valve"
                 },
                 {
-                  "entity": "switch.top_valve"
-                },
-                {
-                  "entity": "switch.down_kitchen_vent"
+                  "entity": "switch.top_wc_valve"
                 }
               ],
-              "hours_to_show": 8
+              "hours_to_show": 24
             },
             {
               "type": "horizontal-stack",
@@ -414,7 +414,7 @@
                   "type": "gauge",
                   "entity": "sensor.heating_controller_2_input_temperature",
                   "name": "Top Input",
-                  "min": 20,
+                  "min": 25,
                   "max": 45,
                   "severity": {
                     "green": 20,
@@ -426,11 +426,11 @@
                   "type": "gauge",
                   "entity": "sensor.heating_controller_1_input_temperature",
                   "name": "Down Input",
-                  "min": 20,
+                  "min": 25,
                   "max": 45,
                   "severity": {
-                    "green": 20,
-                    "yellow": 35,
+                    "green": 33,
+                    "yellow": 38,
                     "red": 40
                   }
                 }
@@ -469,7 +469,7 @@
                   "entity": "sensor.heating_controller_1_output_temperature"
                 }
               ],
-              "title": "Temp. Comparison (Controller I, Down)",
+              "title": "Temp. Comparison 8h (Down)",
               "hours_to_show": 8
             },
             {
@@ -483,7 +483,7 @@
                 }
               ],
               "hours_to_show": 8,
-              "title": "Temp. Comparison (Controller II, Top)"
+              "title": "Temp. Comparison 8h (Top)"
             }
           ]
         },

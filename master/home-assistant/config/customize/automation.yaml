@@ -11,9 +11,9 @@
   alias: 'Activates sleep lights mode'
   trigger:
   - platform: time
-    at: '21:00:00'
+    at: '20:00:00'
   - platform: time
-    at: '23:59:00'
+    at: '23:00:00'
   action:
   - service: mqtt.publish
     data:
@@ -49,7 +49,7 @@
   alias: 'Set awake climate mode'
   trigger:
   - platform: time
-    at: '05:00:00'
+    at: '04:00:00'
   action:
   - service: climate.set_preset_mode
     target:

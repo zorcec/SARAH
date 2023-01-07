@@ -22,7 +22,8 @@
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
   sleep_temp: 18
-  home_temp: 21
+  home_temp: 19
+  comfort_temp: 20
   min_cycle_duration:
     minutes: 1
 
@@ -35,8 +36,8 @@
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
-  sleep_temp: 19
-  home_temp: 19
+  sleep_temp: 18.5
+  home_temp: 18.5
   min_cycle_duration:
     minutes: 1
 
@@ -50,6 +51,6 @@
   cold_tolerance: 0.2 # when to switch on
   hot_tolerance: 0    # when to switch off
   sleep_temp: 18
-  home_temp: 20
+  home_temp: 19
   min_cycle_duration:
     minutes: 1

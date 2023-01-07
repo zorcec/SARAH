@@ -39,7 +39,7 @@ _VENT_ENTITIES = [
     "switch.top_wc_valve"
     ]
 _PUMP_ENTITY_ID = "switch.heating_pump"
-_HEAT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
+_HEAT_PHAZE_OVERRIDE = 30 * 60 # 15min, if not specified, the real config is taken
 _WAIT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
 
 _OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)

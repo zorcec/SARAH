@@ -126,6 +126,7 @@
       {
         "area_id": "bedroom",
         "config_entries": [
+          "a5229f28ddd67c9eae7d75f6de134c24",
           "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.28/",
@@ -198,6 +199,7 @@
       {
         "area_id": "bedroom",
         "config_entries": [
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
           "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.27/",
@@ -270,6 +272,7 @@
       {
         "area_id": "living_room",
         "config_entries": [
+          "5d065252c6e6708bff0e6047b274d820",
           "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.21/",
@@ -294,6 +297,7 @@
       {
         "area_id": "kitchen",
         "config_entries": [
+          "382fb9a149318a1ffa6815b03dd73163",
           "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.32/",
@@ -510,6 +514,7 @@
       {
         "area_id": "bedroom",
         "config_entries": [
+          "7ef547c6ed4d170d1ecf8f37ca3e8288",
           "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.15/",

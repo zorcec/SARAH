@@ -3,40 +3,40 @@
   "minor_version": 1,
   "key": "trace.saved_traces",
   "data": {
-    "automation.activate-sleep-mode": [
+    "automation.set-awake-climate": [
       {
         "extended_dict": {
           "last_step": "action/0",
-          "run_id": "0fe5c68f8c18cfdb88fc3ac8ef756752",
+          "run_id": "6912624a8b124893784207e4e8d2925c",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-01-04T20:00:00.003045+00:00",
-            "finish": "2023-01-04T20:00:00.026732+00:00"
+            "start": "2023-01-06T03:00:00.003269+00:00",
+            "finish": "2023-01-06T03:00:00.031894+00:00"
           },
           "domain": "automation",
-          "item_id": "activate-sleep-mode",
+          "item_id": "set-awake-climate",
           "trigger": "time",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-                "timestamp": "2023-01-04T20:00:00.003430+00:00",
+                "timestamp": "2023-01-06T03:00:00.003523+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.activates_sleep_mode",
+                    "entity_id": "automation.set_slee_climate_mode_2",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2023-01-03T22:59:00.003962+00:00",
+                      "last_triggered": "2023-01-05T04:00:00.003777+00:00",
                       "mode": "single",
                       "current": 0,
-                      "id": "activate-sleep-mode",
-                      "friendly_name": "Activates sleep mode"
+                      "id": "set-awake-climate",
+                      "friendly_name": "Set awake climate mode"
                     },
-                    "last_changed": "2023-01-04T19:00:58.565213+00:00",
-                    "last_updated": "2023-01-04T19:00:58.565213+00:00",
+                    "last_changed": "2023-01-06T02:00:51.970421+00:00",
+                    "last_updated": "2023-01-06T02:00:51.970421+00:00",
                     "context": {
-                      "id": "01GNZ2GX25EXFYTNVQN8XX6TDY",
+                      "id": "01GP2CYF0282RFEPYTT0BH3SQW",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -46,7 +46,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time",
-                    "now": "2023-01-04T21:00:00.001401+01:00",
+                    "now": "2023-01-06T04:00:00.001588+01:00",
                     "description": "time",
                     "entity_id": null
                   }
@@ -56,10 +56,374 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2023-01-04T20:00:00.005690+00:00",
+                "timestamp": "2023-01-06T03:00:00.005749+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GNZ5WZG2RKNC37SHAG83PA6H",
+                    "id": "01GP2GAQW29J9JR2FY81NV93FY",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "set_preset_mode",
+                    "service_data": {
+                      "preset_mode": "home",
+                      "entity_id": "all"
+                    },
+                    "target": {
+                      "entity_id": "all"
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "set-awake-climate",
+            "alias": "Set awake climate mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "04:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "climate.set_preset_mode",
+                "target": {
+                  "entity_id": "all"
+                },
+                "data": {
+                  "preset_mode": "home"
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GP2GAQW29J9JR2FY81NV93FY",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "6912624a8b124893784207e4e8d2925c",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T03:00:00.003269+00:00",
+            "finish": "2023-01-06T03:00:00.031894+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-awake-climate",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.set-evening-light-mode": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "88a5f126a5f4e256eba63c4feae3d0b6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T16:00:00.003840+00:00",
+            "finish": "2023-01-06T16:00:00.033471+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-evening-light-mode",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-01-06T16:00:00.004094+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.activates_evening_lights_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-05T16:00:00.003835+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "set-evening-light-mode",
+                      "friendly_name": "Activates evening lights mode"
+                    },
+                    "last_changed": "2023-01-06T02:00:51.968357+00:00",
+                    "last_updated": "2023-01-06T02:00:51.968357+00:00",
+                    "context": {
+                      "id": "01GP2CYF00AP9T123K2AQWYP99",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-06T17:00:00.002051+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-06T16:00:00.011278+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GP3WYZ03GZM3BN49077RJY5C",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"pirOn\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "set-evening-light-mode",
+            "alias": "Activates evening lights mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "17:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"pirOn\" }",
+                  "retain": true
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GP3WYZ03GZM3BN49077RJY5C",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "88a5f126a5f4e256eba63c4feae3d0b6",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T16:00:00.003840+00:00",
+            "finish": "2023-01-06T16:00:00.033471+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-evening-light-mode",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.set-sleep-climate": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "bb30fcf57c52ac0c2ca2d966a6f82c5d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T19:00:00.003487+00:00",
+            "finish": "2023-01-06T19:00:00.060342+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-sleep-climate",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-01-06T19:00:00.003752+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.set_slee_climate_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-05T19:00:00.006315+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "set-sleep-climate",
+                      "friendly_name": "Set sleep climate mode"
+                    },
+                    "last_changed": "2023-01-06T02:00:51.969402+00:00",
+                    "last_updated": "2023-01-06T02:00:51.969402+00:00",
+                    "context": {
+                      "id": "01GP2CYF015RVNSYBG350G1HRH",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-06T20:00:00.001204+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-06T19:00:00.012739+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GP478HW3KRGE4WTMQJCZK270",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "set_preset_mode",
+                    "service_data": {
+                      "preset_mode": "sleep",
+                      "entity_id": "all"
+                    },
+                    "target": {
+                      "entity_id": "all"
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "set-sleep-climate",
+            "alias": "Set sleep climate mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "20:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "climate.set_preset_mode",
+                "target": {
+                  "entity_id": "all"
+                },
+                "data": {
+                  "preset_mode": "sleep"
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GP478HW3KRGE4WTMQJCZK270",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "bb30fcf57c52ac0c2ca2d966a6f82c5d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T19:00:00.003487+00:00",
+            "finish": "2023-01-06T19:00:00.060342+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-sleep-climate",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.set-sleep-light-mode": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "db6b952557d3f209cd3bb53ce0d90820",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T19:00:00.005909+00:00",
+            "finish": "2023-01-06T19:00:00.068558+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-sleep-light-mode",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-01-06T19:00:00.006106+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.activates_sleep_lights_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-05T22:00:00.005533+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "set-sleep-light-mode",
+                      "friendly_name": "Activates sleep lights mode"
+                    },
+                    "last_changed": "2023-01-06T02:00:51.966988+00:00",
+                    "last_updated": "2023-01-06T02:00:51.966988+00:00",
+                    "context": {
+                      "id": "01GP2CYEZYWFQ6QTR51DP11R8M",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-06T20:00:00.002107+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-06T19:00:00.014877+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GP478HW51EKHQ5CTR3XTJ2H8",
                     "parent_id": null,
                     "user_id": null
                   }
@@ -82,16 +446,16 @@
             ]
           },
           "config": {
-            "id": "activate-sleep-mode",
-            "alias": "Activates sleep mode",
+            "id": "set-sleep-light-mode",
+            "alias": "Activates sleep lights mode",
             "trigger": [
               {
                 "platform": "time",
-                "at": "21:00:00"
+                "at": "20:00:00"
               },
               {
                 "platform": "time",
-                "at": "23:59:00"
+                "at": "23:00:00"
               }
             ],
             "action": [
@@ -107,22 +471,256 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01GNZ5WZG2RKNC37SHAG83PA6H",
+            "id": "01GP478HW51EKHQ5CTR3XTJ2H8",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-          "run_id": "0fe5c68f8c18cfdb88fc3ac8ef756752",
+          "run_id": "db6b952557d3f209cd3bb53ce0d90820",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-01-04T20:00:00.003045+00:00",
-            "finish": "2023-01-04T20:00:00.026732+00:00"
+            "start": "2023-01-06T19:00:00.005909+00:00",
+            "finish": "2023-01-06T19:00:00.068558+00:00"
           },
           "domain": "automation",
-          "item_id": "activate-sleep-mode",
+          "item_id": "set-sleep-light-mode",
+          "trigger": "time"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "5ba668b8c32b71f31297995fcd1740f3",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T22:00:00.002594+00:00",
+            "finish": "2023-01-06T22:00:00.018348+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-sleep-light-mode",
+          "trigger": "time",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-01-06T22:00:00.002810+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.activates_sleep_lights_mode",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-06T19:00:00.006549+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "set-sleep-light-mode",
+                      "friendly_name": "Activates sleep lights mode"
+                    },
+                    "last_changed": "2023-01-06T02:00:51.966988+00:00",
+                    "last_updated": "2023-01-06T19:00:00.061162+00:00",
+                    "context": {
+                      "id": "01GP478HW51EKHQ5CTR3XTJ2H8",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-06T23:00:00.000998+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-06T22:00:00.005100+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GP4HJ4R2RAS5NKPY3GG4BXBJ",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "set-sleep-light-mode",
+            "alias": "Activates sleep lights mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "20:00:00"
+              },
+              {
+                "platform": "time",
+                "at": "23:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                  "retain": true
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GP4HJ4R2RAS5NKPY3GG4BXBJ",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "5ba668b8c32b71f31297995fcd1740f3",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-06T22:00:00.002594+00:00",
+            "finish": "2023-01-06T22:00:00.018348+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-sleep-light-mode",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.reboot_ha": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "39f40feba4195b0f12b8eeb7d0a3d236",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-07T02:00:00.002591+00:00",
+            "finish": "2023-01-07T02:00:00.129045+00:00"
+          },
+          "domain": "automation",
+          "item_id": "reboot_ha",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-01-07T02:00:00.002832+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.reboot_ha_daily",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-06T02:00:00.004614+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "reboot_ha",
+                      "friendly_name": "Reboot HA daily"
+                    },
+                    "last_changed": "2023-01-06T02:00:51.965466+00:00",
+                    "last_updated": "2023-01-06T02:00:51.965466+00:00",
+                    "context": {
+                      "id": "01GP2CYEZXRJ6NE0ZJ422KZKNX",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-07T03:00:00.001508+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-07T02:00:00.005131+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GP4Z9K82S1Y2N1PV6FP18GX4",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "homeassistant",
+                    "service": "restart",
+                    "service_data": {},
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "reboot_ha",
+            "initial_state": true,
+            "alias": "Reboot HA daily",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "03:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "homeassistant.restart"
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GP4Z9K82S1Y2N1PV6FP18GX4",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "39f40feba4195b0f12b8eeb7d0a3d236",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-07T02:00:00.002591+00:00",
+            "finish": "2023-01-07T02:00:00.129045+00:00"
+          },
+          "domain": "automation",
+          "item_id": "reboot_ha",
           "trigger": "time"
         }
       }
