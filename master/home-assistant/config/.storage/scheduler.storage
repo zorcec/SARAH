@@ -98,6 +98,7 @@
         "enabled": true
       }
     ],
-    "tags": []
+    "tags": [],
+    "time_shutdown": "2023-01-10T13:55:25.870710+00:00"
   }
 }

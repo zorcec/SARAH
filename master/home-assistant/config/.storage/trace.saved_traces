@@ -2,5 +2,128 @@
   "version": 1,
   "minor_version": 1,
   "key": "trace.saved_traces",
-  "data": {}
+  "data": {
+    "automation.set-awake-climate": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4acb1fc5f696d18427d3fd5621b66fd7",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-10T03:00:00.001680+00:00",
+            "finish": "2023-01-10T03:00:00.005129+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-awake-climate",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-01-10T03:00:00.001725+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.set_slee_climate_mode_2",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-01-07T03:00:00.004870+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "set-awake-climate",
+                      "friendly_name": "Set awake climate mode"
+                    },
+                    "last_changed": "2023-01-10T02:00:18.711458+00:00",
+                    "last_updated": "2023-01-10T02:00:18.711458+00:00",
+                    "context": {
+                      "id": "01GPCPGAGQQ9VC14S910D9WV7W",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-01-10T04:00:00.001291+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-01-10T03:00:00.002641+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01GPCSXKW1D850V7H62K1FTVNV",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "set_preset_mode",
+                    "service_data": {
+                      "preset_mode": "home",
+                      "entity_id": "all"
+                    },
+                    "target": {
+                      "entity_id": "all"
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "set-awake-climate",
+            "alias": "Set awake climate mode",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "04:00:00"
+              }
+            ],
+            "action": [
+              {
+                "service": "climate.set_preset_mode",
+                "target": {
+                  "entity_id": "all"
+                },
+                "data": {
+                  "preset_mode": "home"
+                }
+              }
+            ]
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01GPCSXKW1D850V7H62K1FTVNV",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4acb1fc5f696d18427d3fd5621b66fd7",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-01-10T03:00:00.001680+00:00",
+            "finish": "2023-01-10T03:00:00.005129+00:00"
+          },
+          "domain": "automation",
+          "item_id": "set-awake-climate",
+          "trigger": "time"
+        }
+      }
+    ]
+  }
 }
