@@ -3,60 +3,40 @@
   "minor_version": 1,
   "key": "trace.saved_traces",
   "data": {
-    "automation.set-awake-climate": [
+    "automation.set-evening-light-mode": [
       {
         "extended_dict": {
           "last_step": "action/0",
-<<<<<<< HEAD
-          "run_id": "4acb1fc5f696d18427d3fd5621b66fd7",
+          "run_id": "17bf06b461bdc47dcd2ae0e22f642f33",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-01-10T03:00:00.001680+00:00",
-            "finish": "2023-01-10T03:00:00.005129+00:00"
-=======
-          "run_id": "e8142743c85e9f94f38de595dc905a52",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2023-01-11T03:00:00.000959+00:00",
-            "finish": "2023-01-11T03:00:00.010167+00:00"
->>>>>>> 65364f3 (Correct heating)
+            "start": "2023-01-11T16:00:00.001248+00:00",
+            "finish": "2023-01-11T16:00:00.009972+00:00"
           },
           "domain": "automation",
-          "item_id": "set-awake-climate",
+          "item_id": "set-evening-light-mode",
           "trigger": "time",
           "trace": {
             "trigger/0": [
               {
                 "path": "trigger/0",
-<<<<<<< HEAD
-                "timestamp": "2023-01-10T03:00:00.001725+00:00",
-=======
-                "timestamp": "2023-01-11T03:00:00.001036+00:00",
->>>>>>> 65364f3 (Correct heating)
+                "timestamp": "2023-01-11T16:00:00.001325+00:00",
                 "changed_variables": {
                   "this": {
-                    "entity_id": "automation.set_slee_climate_mode_2",
+                    "entity_id": "automation.activates_evening_lights_mode",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2023-01-07T03:00:00.004870+00:00",
+                      "last_triggered": "2023-01-10T16:00:00.001492+00:00",
                       "mode": "single",
                       "current": 0,
-                      "id": "set-awake-climate",
-                      "friendly_name": "Set awake climate mode"
+                      "id": "set-evening-light-mode",
+                      "friendly_name": "Activates evening lights mode"
                     },
-<<<<<<< HEAD
-                    "last_changed": "2023-01-10T02:00:18.711458+00:00",
-                    "last_updated": "2023-01-10T02:00:18.711458+00:00",
+                    "last_changed": "2023-01-11T15:51:52.967353+00:00",
+                    "last_updated": "2023-01-11T15:51:52.967353+00:00",
                     "context": {
-                      "id": "01GPCPGAGQQ9VC14S910D9WV7W",
-=======
-                    "last_changed": "2023-01-11T02:00:17.604998+00:00",
-                    "last_updated": "2023-01-11T02:00:17.604998+00:00",
-                    "context": {
-                      "id": "01GPF8X0E48B3XY17565AMZ81B",
->>>>>>> 65364f3 (Correct heating)
+                      "id": "01GPGRFPC752PBKK8C5WF2TQJ6",
                       "parent_id": null,
                       "user_id": null
                     }
@@ -66,11 +46,7 @@
                     "idx": "0",
                     "alias": null,
                     "platform": "time",
-<<<<<<< HEAD
-                    "now": "2023-01-10T04:00:00.001291+01:00",
-=======
-                    "now": "2023-01-11T04:00:00.000460+01:00",
->>>>>>> 65364f3 (Correct heating)
+                    "now": "2023-01-11T17:00:00.000765+01:00",
                     "description": "time",
                     "entity_id": null
                   }
@@ -80,32 +56,24 @@
             "action/0": [
               {
                 "path": "action/0",
-<<<<<<< HEAD
-                "timestamp": "2023-01-10T03:00:00.002641+00:00",
+                "timestamp": "2023-01-11T16:00:00.003311+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01GPCSXKW1D850V7H62K1FTVNV",
-=======
-                "timestamp": "2023-01-11T03:00:00.001847+00:00",
-                "changed_variables": {
-                  "context": {
-                    "id": "01GPFCAAW0VK210HQ92ZSYKSYG",
->>>>>>> 65364f3 (Correct heating)
+                    "id": "01GPGRYJ01GX1XPMWN3WD7PXKG",
                     "parent_id": null,
                     "user_id": null
                   }
                 },
                 "result": {
                   "params": {
-                    "domain": "climate",
-                    "service": "set_preset_mode",
+                    "domain": "mqtt",
+                    "service": "publish",
                     "service_data": {
-                      "preset_mode": "home",
-                      "entity_id": "all"
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"pirOn\" }",
+                      "retain": true
                     },
-                    "target": {
-                      "entity_id": "all"
-                    }
+                    "target": {}
                   },
                   "running_script": false,
                   "limit": 10
@@ -114,57 +82,43 @@
             ]
           },
           "config": {
-            "id": "set-awake-climate",
-            "alias": "Set awake climate mode",
+            "id": "set-evening-light-mode",
+            "alias": "Activates evening lights mode",
             "trigger": [
               {
                 "platform": "time",
-                "at": "04:00:00"
+                "at": "17:00:00"
               }
             ],
             "action": [
               {
-                "service": "climate.set_preset_mode",
-                "target": {
-                  "entity_id": "all"
-                },
+                "service": "mqtt.publish",
                 "data": {
-                  "preset_mode": "home"
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"pirOn\" }",
+                  "retain": true
                 }
               }
             ]
           },
           "blueprint_inputs": null,
           "context": {
-<<<<<<< HEAD
-            "id": "01GPCSXKW1D850V7H62K1FTVNV",
-=======
-            "id": "01GPFCAAW0VK210HQ92ZSYKSYG",
->>>>>>> 65364f3 (Correct heating)
+            "id": "01GPGRYJ01GX1XPMWN3WD7PXKG",
             "parent_id": null,
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0",
-<<<<<<< HEAD
-          "run_id": "4acb1fc5f696d18427d3fd5621b66fd7",
+          "run_id": "17bf06b461bdc47dcd2ae0e22f642f33",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-01-10T03:00:00.001680+00:00",
-            "finish": "2023-01-10T03:00:00.005129+00:00"
-=======
-          "run_id": "e8142743c85e9f94f38de595dc905a52",
-          "state": "stopped",
-          "script_execution": "finished",
-          "timestamp": {
-            "start": "2023-01-11T03:00:00.000959+00:00",
-            "finish": "2023-01-11T03:00:00.010167+00:00"
->>>>>>> 65364f3 (Correct heating)
+            "start": "2023-01-11T16:00:00.001248+00:00",
+            "finish": "2023-01-11T16:00:00.009972+00:00"
           },
           "domain": "automation",
-          "item_id": "set-awake-climate",
+          "item_id": "set-evening-light-mode",
           "trigger": "time"
         }
       }

@@ -44,7 +44,7 @@
 - platform: generic_thermostat
   name: Top
   unique_id: top-thermostat
-  heater: switch.top_valve
+  heater: switch.top_livingroom_valve
   target_sensor: sensor.top_sensor_bme280_temperature
   min_temp: 10
   max_temp: 25

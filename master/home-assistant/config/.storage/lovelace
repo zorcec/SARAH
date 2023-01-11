@@ -392,7 +392,7 @@
                   "entity": "switch.top_bedroom_valve"
                 },
                 {
-                  "entity": "switch.top_valve"
+                  "entity": "switch.top_livingroom_valve"
                 },
                 {
                   "entity": "switch.top_kid_valve"
