@@ -3,10 +3,6 @@
   "minor_version": 1,
   "key": "http.auth",
   "data": {
-<<<<<<< HEAD
-    "content_user": "5acc2bf6bd1044129fb4dfeaf57897d6"
-=======
     "content_user": "a7cd76e79869435db968d4a797953f29"
->>>>>>> 65364f3 (Correct heating)
   }
 }
