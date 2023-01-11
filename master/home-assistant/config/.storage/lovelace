@@ -139,6 +139,13 @@
               ],
               "hours_to_show": 1,
               "title": "Hallway Motion"
+            },
+            {
+              "type": "custom:scheduler-card",
+              "include": [
+                "climate.kitchen"
+              ],
+              "exclude": []
             }
           ]
         },
@@ -343,6 +350,13 @@
               ],
               "title": "Hallway Motion",
               "hours_to_show": 1
+            },
+            {
+              "type": "custom:scheduler-card",
+              "include": [
+                "climate.top"
+              ],
+              "exclude": []
             }
           ]
         },

@@ -272,8 +272,8 @@
       {
         "area_id": "living_room",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "5d065252c6e6708bff0e6047b274d820"
+          "5d065252c6e6708bff0e6047b274d820",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.21/",
         "connections": [
@@ -297,8 +297,8 @@
       {
         "area_id": "kitchen",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "382fb9a149318a1ffa6815b03dd73163"
+          "382fb9a149318a1ffa6815b03dd73163",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.32/",
         "connections": [
@@ -394,7 +394,7 @@
       {
         "area_id": null,
         "config_entries": [
-          "9d8f062e05cfc457f15f23bec28d6833"
+          "d2f168f508117dd54d11515482054235"
         ],
         "configuration_url": null,
         "connections": [],
@@ -411,7 +411,7 @@
         "manufacturer": "Xiaomi",
         "model": "M2004J19C",
         "name_by_user": null,
-        "name": "xiaomi",
+        "name": "M2004J19C",
         "sw_version": "31",
         "via_device_id": null
       },
@@ -514,8 +514,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "7ef547c6ed4d170d1ecf8f37ca3e8288"
+          "7ef547c6ed4d170d1ecf8f37ca3e8288",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.15/",
         "connections": [

@@ -5,10 +5,18 @@
   "data": {
     "ssl_profile": "modern",
     "ip_ban_enabled": true,
+<<<<<<< HEAD
     "cors_allowed_origins": [
       "https://cast.home-assistant.io"
     ],
     "server_port": 8123,
     "login_attempts_threshold": -1
+=======
+    "login_attempts_threshold": -1,
+    "ssl_profile": "modern",
+    "cors_allowed_origins": [
+      "https://cast.home-assistant.io"
+    ]
+>>>>>>> 65364f3 (Correct heating)
   }
 }

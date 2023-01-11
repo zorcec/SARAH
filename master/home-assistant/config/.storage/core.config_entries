@@ -121,37 +121,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "9d8f062e05cfc457f15f23bec28d6833",
-        "version": 1,
-        "domain": "mobile_app",
-        "title": "xiaomi",
-        "data": {
-          "app_id": "io.homeassistant.companion.android",
-          "app_name": "Home Assistant",
-          "app_version": "2022.12.0-full (3026)",
-          "device_name": "xiaomi",
-          "manufacturer": "Xiaomi",
-          "model": "M2004J19C",
-          "os_name": "Android",
-          "os_version": "31",
-          "supports_encryption": false,
-          "app_data": {
-            "push_websocket_channel": true,
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
-            "push_token": "fz-1GKu-RJqJqzVKzYSdI9:APA91bHD7AmzJCC8g838AvtgLl6Z3OfmduX-96xNY02ZIF87xCnDL1Ju_juGq61854gtwEIK9mLbl6ekqn81hJr6pu3qJqOEq0uiSm2PbkLgKZHto7DM3762evOd3eAdzv2f3P_5KECu"
-          },
-          "device_id": "115479ec3e394736",
-          "webhook_id": "efa2bcaf68ae30a62fb7689937b7ac37ddd87d4ac6a7c0093095d320d583899a",
-          "user_id": "d81d3d7902634864b794b15fc153555e"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
-        "disabled_by": null
-      },
-      {
         "entry_id": "382fb9a149318a1ffa6815b03dd73163",
         "version": 1,
         "domain": "switch_as_x",
@@ -242,6 +211,37 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "62f199d8720d",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d2f168f508117dd54d11515482054235",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "M2004J19C",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2022.12.0-full (3026)",
+          "device_name": "M2004J19C",
+          "manufacturer": "Xiaomi",
+          "model": "M2004J19C",
+          "os_name": "Android",
+          "os_version": "31",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "fz-1GKu-RJqJqzVKzYSdI9:APA91bHD7AmzJCC8g838AvtgLl6Z3OfmduX-96xNY02ZIF87xCnDL1Ju_juGq61854gtwEIK9mLbl6ekqn81hJr6pu3qJqOEq0uiSm2PbkLgKZHto7DM3762evOd3eAdzv2f3P_5KECu"
+          },
+          "device_id": "115479ec3e394736",
+          "webhook_id": "eb0e011e5aa3eab3dbbf6347b0d85b7338a71d453344a1e8c0bfe4eaf29421ac",
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
         "disabled_by": null
       }
     ]

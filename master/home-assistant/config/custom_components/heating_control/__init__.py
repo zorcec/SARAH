@@ -21,13 +21,12 @@ _STATE_STATUS = "status"
 
 _STATE_STATUS_ON = "On"
 _STATE_STATUS_WAITING = "Waiting"
-_STATE_STATUS_OFF_PROTECTION = "Protection activated"
-_STATE_STATUS_OVERRIDE = "Override enabled"
+_STATE_STATUS_OFF_PROTECTION = "Waiting"
+_STATE_STATUS_OVERRIDE = "Override"
 
 _LOGGER = logging.getLogger(__name__)
 _VENT_OPEN_TIME = 180 # 3 mins
 _VENT_ENTITIES = [
-    "switch.fakevalve",
     "switch.down_backup_vent",
     "switch.down_hallway_vent",
     "switch.down_kitchen_vent",
