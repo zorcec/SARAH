@@ -126,8 +126,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "a5229f28ddd67c9eae7d75f6de134c24"
+          "a5229f28ddd67c9eae7d75f6de134c24",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.28/",
         "connections": [
@@ -199,8 +199,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.27/",
         "connections": [
@@ -726,6 +726,30 @@
         "name_by_user": null,
         "name": "Scheduler",
         "sw_version": "3.2.14",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bathroom",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.47/",
+        "connections": [
+          [
+            "mac",
+            "d8:f1:5b:c7:87:ad"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "abda588fde39a2ea6fdd0ae3687aecfd",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "BathroomFan",
+        "sw_version": "12.3.1",
         "via_device_id": null
       }
     ],

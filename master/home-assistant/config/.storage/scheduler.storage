@@ -36,7 +36,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20
+                  "temperature": 21
                 }
               }
             ]
@@ -100,7 +100,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 20
                 }
               }
             ]
@@ -134,7 +134,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 20
                 }
               }
             ]
@@ -197,7 +197,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 21
                 }
               }
             ]
@@ -231,7 +231,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 21
                 }
               }
             ]
@@ -294,7 +294,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 21
                 }
               }
             ]

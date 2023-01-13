@@ -69,7 +69,7 @@ heating_control:
 #       unique_id: 'tasmota_FA4CF2_motion'
 
 sensor: !include_dir_merge_list customize/sensors/
-#light: !include_dir_merge_list customize/lights/
+binary_sensor: !include_dir_merge_list customize/binary_sensors/
 switch: !include_dir_merge_list customize/switches/
 climate: !include_dir_merge_list customize/climate/
 

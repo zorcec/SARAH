@@ -172,6 +172,11 @@
               "entity": "climate.bathroom"
             },
             {
+              "type": "thermostat",
+              "entity": "climate.bathroom_fan",
+              "name": "Humidity Fan"
+            },
+            {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
@@ -411,24 +416,24 @@
                   "entity": "sensor.heating_controller_2_input_temperature",
                   "name": "Top Input",
                   "min": 25,
-                  "max": 45,
                   "severity": {
-                    "green": 20,
-                    "yellow": 35,
-                    "red": 40
-                  }
+                    "green": 25,
+                    "yellow": 40,
+                    "red": 45
+                  },
+                  "max": 60
                 },
                 {
                   "type": "gauge",
                   "entity": "sensor.heating_controller_1_input_temperature",
                   "name": "Down Input",
                   "min": 25,
-                  "max": 45,
                   "severity": {
-                    "green": 33,
-                    "yellow": 38,
-                    "red": 40
-                  }
+                    "green": 25,
+                    "yellow": 40,
+                    "red": 45
+                  },
+                  "max": 60
                 }
               ]
             },
