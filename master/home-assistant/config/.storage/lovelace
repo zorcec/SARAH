@@ -385,13 +385,6 @@
                   "entity": "heating_control.next_phaze_formatted",
                   "name": "Time",
                   "icon": "mdi:clock-time-five-outline"
-                },
-                {
-                  "type": "entity",
-                  "entity": "heating_control.next_phaze",
-                  "name": "Next",
-                  "state_color": false,
-                  "icon": "mdi:step-forward"
                 }
               ]
             },
@@ -450,6 +443,9 @@
                 },
                 {
                   "entity": "switch.top_wc_valve"
+                },
+                {
+                  "entity": "switch.down_hallway_vent"
                 }
               ],
               "hours_to_show": 24

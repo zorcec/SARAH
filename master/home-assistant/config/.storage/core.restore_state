@@ -26,7 +26,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -43,16 +43,16 @@
           "icon": "mdi:clock-outline",
           "friendly_name": "Heating Cycle"
         },
-        "last_changed": "2023-01-14T12:01:57.591458+00:00",
-        "last_updated": "2023-01-14T12:01:57.591458+00:00",
+        "last_changed": "2023-01-14T14:02:05.949778+00:00",
+        "last_updated": "2023-01-14T14:02:05.949778+00:00",
         "context": {
-          "id": "01GPR2GVAQZTY5RTANVRQKNZRR",
+          "id": "01GPR9CTQXAP8D8QT2CKHK3AVH",
           "parent_id": null,
-          "user_id": null
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -69,16 +69,16 @@
           "icon": "mdi:clock-outline",
           "friendly_name": "Waiting Cycle"
         },
-        "last_changed": "2023-01-14T12:01:57.591573+00:00",
-        "last_updated": "2023-01-14T12:01:57.591573+00:00",
+        "last_changed": "2023-01-14T14:02:07.247220+00:00",
+        "last_updated": "2023-01-14T14:02:07.247220+00:00",
         "context": {
-          "id": "01GPR2GVAQM65YCNF9ED8CW9ND",
+          "id": "01GPR9CW0EDK3HHNSAVCY12MB3",
           "parent_id": null,
-          "user_id": null
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -100,7 +100,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -122,7 +122,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -144,7 +144,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -166,7 +166,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -188,7 +188,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -202,22 +202,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.5,
-          "current_temperature": null,
+          "current_temperature": 21.0,
           "temperature": 21.0,
           "hvac_action": "idle",
           "friendly_name": "Kitchen",
           "supported_features": 1
         },
         "last_changed": "2023-01-14T12:01:58.357276+00:00",
-        "last_updated": "2023-01-14T12:01:58.357276+00:00",
+        "last_updated": "2023-01-14T13:08:46.348574+00:00",
         "context": {
-          "id": "01GPR2GW2NEX7VTSKN40SDTPEX",
+          "id": "01GPR6B64BM500MD60ZTHGN6MA",
           "parent_id": null,
-          "user_id": null
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -231,22 +231,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.5,
-          "current_temperature": null,
-          "temperature": 18.0,
+          "current_temperature": 19.5,
+          "temperature": 19.0,
           "hvac_action": "idle",
           "friendly_name": "Bathroom",
           "supported_features": 1
         },
         "last_changed": "2023-01-14T12:01:58.357496+00:00",
-        "last_updated": "2023-01-14T12:01:58.357496+00:00",
+        "last_updated": "2023-01-14T14:22:02.724669+00:00",
         "context": {
-          "id": "01GPR2GW2NG30MYZ00PP5PQR77",
+          "id": "01GPRAHBARE2BMFZ41QNK3WWS9",
           "parent_id": null,
-          "user_id": null
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -260,22 +260,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.5,
-          "current_temperature": null,
-          "temperature": 19.0,
-          "hvac_action": "idle",
+          "current_temperature": 19.5,
+          "temperature": 19.5,
+          "hvac_action": "heating",
           "friendly_name": "Master Bedroom",
           "supported_features": 1
         },
         "last_changed": "2023-01-14T12:01:58.357655+00:00",
-        "last_updated": "2023-01-14T12:01:58.357655+00:00",
+        "last_updated": "2023-01-14T14:23:25.399873+00:00",
         "context": {
-          "id": "01GPR2GW2NC8WKS980009HZATN",
+          "id": "01GPRAKW189Q21T7FV28PYCWDW",
           "parent_id": null,
-          "user_id": null
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -289,22 +289,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.5,
-          "current_temperature": null,
+          "current_temperature": 21.0,
           "temperature": 21.0,
           "hvac_action": "idle",
           "friendly_name": "Top",
           "supported_features": 1
         },
         "last_changed": "2023-01-14T12:01:58.357806+00:00",
-        "last_updated": "2023-01-14T12:01:58.357806+00:00",
+        "last_updated": "2023-01-14T13:38:43.529549+00:00",
         "context": {
-          "id": "01GPR2GW2NXBJ59FV33E6A8E7J",
+          "id": "01GPR82169N0HSVFWXDTHEV39Q",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -318,46 +318,47 @@
           "min_temp": 50,
           "max_temp": 100,
           "target_temp_step": 1,
-          "current_temperature": null,
+          "current_temperature": 66,
           "temperature": 60,
           "hvac_action": "off",
           "friendly_name": "Bathroom Fan",
           "supported_features": 1
         },
         "last_changed": "2023-01-14T12:01:58.357950+00:00",
-        "last_updated": "2023-01-14T12:01:58.357950+00:00",
+        "last_updated": "2023-01-14T14:17:13.371634+00:00",
         "context": {
-          "id": "01GPR2GW2NBEFMD42Q05T47XNY",
+          "id": "01GPRA8GWVTWHCCESBJH92PQGC",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.m2004j19c_battery_level",
-        "state": "70",
+        "state": "65",
         "attributes": {
+          "state_class": "measurement",
           "unit_of_measurement": "%",
           "device_class": "battery",
-          "icon": "mdi:battery-70",
+          "icon": "mdi:battery-60",
           "friendly_name": "M2004J19C Battery Level"
         },
-        "last_changed": "2023-01-14T12:01:58.461786+00:00",
-        "last_updated": "2023-01-14T12:01:58.461786+00:00",
+        "last_changed": "2023-01-14T14:18:44.710400+00:00",
+        "last_updated": "2023-01-14T14:18:44.710400+00:00",
         "context": {
-          "id": "01GPR2GW5X29YQ6DAGJ3SZCTDN",
+          "id": "01GPRABA36YDEVFWGB889FR0WE",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 70,
+        "native_value": 65,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -379,7 +380,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -401,7 +402,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -423,12 +424,12 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.m2004j19c_battery_temperature",
-        "state": "21.4",
+        "state": "25.0",
         "attributes": {
           "state_class": "measurement",
           "unit_of_measurement": "°C",
@@ -436,46 +437,46 @@
           "icon": "mdi:battery",
           "friendly_name": "M2004J19C Battery Temperature"
         },
-        "last_changed": "2023-01-14T12:01:58.462252+00:00",
-        "last_updated": "2023-01-14T12:01:58.462252+00:00",
+        "last_changed": "2023-01-14T14:27:35.474171+00:00",
+        "last_updated": "2023-01-14T14:27:35.474171+00:00",
         "context": {
-          "id": "01GPR2GW5Y7RRFP2W0TWKJRJVN",
+          "id": "01GPRAVGDJKWTKJGJ8SZSFKP50",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 21.4,
+        "native_value": 25.0,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.m2004j19c_battery_power",
-        "state": "1.21",
+        "state": "1.77",
         "attributes": {
           "state_class": "measurement",
-          "current": 0.3047,
-          "voltage": 3.981,
+          "current": 0.452,
+          "voltage": 3.919,
           "unit_of_measurement": "W",
           "device_class": "power",
           "icon": "mdi:battery-plus",
           "friendly_name": "M2004J19C Battery Power"
         },
-        "last_changed": "2023-01-14T12:01:58.462359+00:00",
-        "last_updated": "2023-01-14T12:01:58.462359+00:00",
+        "last_changed": "2023-01-14T14:27:35.474495+00:00",
+        "last_updated": "2023-01-14T14:27:35.474495+00:00",
         "context": {
-          "id": "01GPR2GW5YE7HE2RKXYTYTDRFY",
+          "id": "01GPRAVGDJRPD1CZTP5DG66QFV",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 1.21,
+        "native_value": 1.77,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -495,7 +496,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
@@ -521,7 +522,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-01-14T12:01:59.554167+00:00"
+      "last_seen": "2023-01-14T14:31:59.567550+00:00"
     },
     {
       "state": {
