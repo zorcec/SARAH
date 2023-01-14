@@ -6538,7 +6538,7 @@
           ],
           "min_temp": 10.0,
           "max_temp": 25.0,
-          "target_temp_step": 0.5
+          "target_temp_step": 0.1
         },
         "config_entry_id": null,
         "device_class": null,
@@ -7652,7 +7652,7 @@
           ],
           "min_temp": 10.0,
           "max_temp": 25.0,
-          "target_temp_step": 0.5
+          "target_temp_step": 0.1
         },
         "config_entry_id": null,
         "device_class": null,
@@ -7683,7 +7683,7 @@
           ],
           "min_temp": 10.0,
           "max_temp": 25.0,
-          "target_temp_step": 0.5
+          "target_temp_step": 0.1
         },
         "config_entry_id": null,
         "device_class": null,
@@ -7714,7 +7714,7 @@
           ],
           "min_temp": 10.0,
           "max_temp": 25.0,
-          "target_temp_step": 0.5
+          "target_temp_step": 0.1
         },
         "config_entry_id": null,
         "device_class": null,

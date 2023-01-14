@@ -459,7 +459,7 @@
                   "name": "Top Input",
                   "min": 25,
                   "severity": {
-                    "green": 25,
+                    "green": 30,
                     "yellow": 40,
                     "red": 45
                   },
@@ -471,7 +471,7 @@
                   "name": "Down Input",
                   "min": 25,
                   "severity": {
-                    "green": 25,
+                    "green": 30,
                     "yellow": 40,
                     "red": 45
                   },

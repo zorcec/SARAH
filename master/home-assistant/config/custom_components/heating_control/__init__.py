@@ -99,7 +99,6 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
 
 
 def start_next_phaze(hass):
-
     _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
     if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
         queue_wait_phaze(hass)
@@ -147,10 +146,12 @@ def should_heat(hass):
         _vent_states = hass.states.get(vent_entity)
         if _vent_states:
             _vent_state = _vent_states.state
-            _vent_state_changed = _vent_states.last_changed 
-            _current_time = _UTC.localize(datetime.now())
+            _vent_state_changed = _vent_states.last_changed
+            # it is assumed HA saves state with the UTC timestamp
+            _current_time = _UTC.localize(datetime.utcnow())
             # If vent is still not ready (check vent open time); it will be ignored
             if _vent_state == STATE_ON and _current_time >= _vent_state_changed + timedelta(seconds=_VENT_OPEN_TIME):
+                _LOGGER.info("Vent is ready: {}, changed at {}".format(vent_entity, _vent_state_changed))
                 return True
 
     return False
