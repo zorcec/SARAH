@@ -100,7 +100,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20
+                  "temperature": 21
                 }
               }
             ]
@@ -134,7 +134,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20
+                  "temperature": 21
                 }
               }
             ]

@@ -99,7 +99,7 @@ services:
      - 0.0.0.0:9000:9000
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
-     - ./portainer/data:/data portainer/portainer-ce
+     - ./portainer/data:/data
 
   # netdata:
   #   image: netdata/netdata

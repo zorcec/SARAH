@@ -106,21 +106,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "892d5c2bbab824888a3cefb88a4213dd",
-        "version": 1,
-        "domain": "heating_control",
-        "title": "Heating Control",
-        "data": {
-          "heating_cycle": 600
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
         "entry_id": "382fb9a149318a1ffa6815b03dd73163",
         "version": 1,
         "domain": "switch_as_x",

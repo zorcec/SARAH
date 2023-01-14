@@ -18,11 +18,11 @@
       "category": "integration",
       "description": "HACS gives you a powerful UI to handle downloads of all your custom needs.",
       "domain": "hacs",
-      "downloads": 14092,
-      "etag_repository": "W/\"107a2e30c95847b0b5a77eed9725c249d79ffb0de812bf3df96af216904b5005\"",
+      "downloads": 55267,
+      "etag_repository": "W/\"2b1a0d68e0cbb7d6255ca83bb5ff9ccff7c83f1433249fce54de69a98ef0280a\"",
       "full_name": "hacs/integration",
-      "last_updated": "2023-01-05T20:33:19Z",
-      "stargazers_count": 3224,
+      "last_updated": "2023-01-14T08:48:42Z",
+      "stargazers_count": 3250,
       "topics": [
         "community",
         "package-manager"
@@ -31,7 +31,7 @@
       "default_branch": "main",
       "installed_commit": "0a8b645",
       "installed": true,
-      "last_commit": "0a8b645",
+      "last_commit": "fab87eb",
       "last_version": "1.29.1",
       "manifest_name": "HACS",
       "open_issues": 4,
@@ -42,10 +42,10 @@
         "1.28.3",
         "1.28.2"
       ],
-      "pushed_at": "2023-01-05T20:33:19",
+      "pushed_at": "2023-01-14T08:48:42",
       "releases": true,
       "version_installed": "1.29.1",
-      "last_fetched": 1673084913.362267
+      "last_fetched": 1673690792.999581
     },
     "191831638": {
       "repository_manifest": {
@@ -4595,11 +4595,11 @@
       "category": "integration",
       "description": "Custom component for HA that enables the creation of scheduler entities",
       "domain": "scheduler",
-      "downloads": 49,
-      "etag_repository": "W/\"e344d43237a206cc4c35ebc62fe91b856c797b6afeff14ce9b290278b5d9b6f0\"",
+      "downloads": 53,
+      "etag_repository": "W/\"62264e43fe5023ac54137323b3bfc7be5db8327ee1d694951e44441d91cc25f0\"",
       "full_name": "nielsfaber/scheduler-component",
       "last_updated": "2022-12-15T18:50:24Z",
-      "stargazers_count": 364,
+      "stargazers_count": 368,
       "topics": [
         "scheduler"
       ],
@@ -4621,7 +4621,7 @@
       "pushed_at": "2022-12-15T18:50:24",
       "releases": true,
       "version_installed": "v3.2.14",
-      "last_fetched": 1673084940.846576
+      "last_fetched": 1673690792.828289
     },
     "153870340": {
       "repository_manifest": {
@@ -8157,11 +8157,11 @@
       "category": "plugin",
       "description": null,
       "domain": "",
-      "etag_repository": "W/\"086cfd12609f73be3d67ff7d97c8eb312c691ede056026cbe264f3907a7ca05c\"",
+      "etag_repository": "W/\"2100db114bec0d18c17fa1b9835fff417e7e2077922082688106a5eda8be64bb\"",
       "full_name": "custom-cards/bignumber-card",
       "last_updated": "2022-01-31T15:47:59Z",
-      "stargazers_count": 93,
-      "last_fetched": 1669592006.048549
+      "stargazers_count": 95,
+      "last_fetched": 1673643244.110125
     },
     "146194325": {
       "repository_manifest": {
@@ -9159,10 +9159,10 @@
       "category": "plugin",
       "description": "Replace input_number sliders with plus and minus buttons",
       "domain": "",
-      "etag_repository": "W/\"81b1a4a36c7ecf58b0007d6311d1269a5fa9d357d14380c1f73d9e59c6d19d64\"",
+      "etag_repository": "W/\"334687c8bf25cb3fa75ba60c194f2c0e25fa90fc46239f1c68d09d0803667f1c\"",
       "full_name": "htmltiger/numberbox-card",
-      "last_updated": "2022-11-27T17:12:14Z",
-      "stargazers_count": 64,
+      "last_updated": "2023-01-09T19:39:06Z",
+      "stargazers_count": 69,
       "topics": [
         "input",
         "lovelace-card",
@@ -9172,7 +9172,23 @@
         "numberbox-card",
         "slider"
       ],
-      "last_fetched": 1669592040.642777
+      "default_branch": "main",
+      "installed_commit": "82236b8",
+      "installed": true,
+      "last_commit": "82236b8",
+      "last_version": "4.3",
+      "open_issues": 6,
+      "published_tags": [
+        "4.3",
+        "4.1",
+        "4.0",
+        "3.17",
+        "3.16"
+      ],
+      "pushed_at": "2023-01-09T19:39:06",
+      "releases": true,
+      "version_installed": "4.3",
+      "last_fetched": 1673690792.7852
     },
     "172177543": {
       "repository_manifest": {
@@ -9637,23 +9653,6 @@
       "stargazers_count": 171,
       "last_fetched": 1669862034.78789
     },
-    "175727366": {
-      "repository_manifest": {
-        "name": "Reddit Card",
-        "render_readme": true,
-        "content_in_root": true,
-        "filename": "reddit-card.js"
-      },
-      "category": "plugin",
-      "description": "Reddit Card for Home Assistant",
-      "domain": "",
-      "downloads": 626,
-      "etag_repository": "W/\"78f903aab7f4c6f0a94866867f7470f45f9cf84a092bea7a4993ed06f8759e7c\"",
-      "full_name": "ljmerza/reddit-card",
-      "last_updated": "2022-07-11T21:45:30Z",
-      "stargazers_count": 9,
-      "last_fetched": 1657789339.042662
-    },
     "183499944": {
       "repository_manifest": {
         "name": "Tracking Number Card",
@@ -9664,11 +9663,11 @@
       "description": "Show Tracking Numbers from the Email Sensor for Home Assistant",
       "domain": "",
       "downloads": 211,
-      "etag_repository": "W/\"91793cffd6854f039674d9a039536e90a1bec0f4da2e4efc48b1c9d417a22e3c\"",
+      "etag_repository": "W/\"f4c1aa4515bfb86dd7de5951d6b30016cf8296121136cca223306dd99d4b3d29\"",
       "full_name": "ljmerza/tracking-number-card",
-      "last_updated": "2022-11-17T20:03:02Z",
-      "stargazers_count": 18,
-      "last_fetched": 1669592059.084745
+      "last_updated": "2022-11-29T16:30:22Z",
+      "stargazers_count": 20,
+      "last_fetched": 1673643252.65696
     },
     "236945951": {
       "repository_manifest": {},
@@ -9806,15 +9805,15 @@
       "category": "plugin",
       "description": "Select List Card displays an input_select entity as a list in lovelace",
       "domain": "",
-      "downloads": 7306,
+      "downloads": 7813,
       "etag_repository": "W/\"04fd01f046be8e1fd64207e3d8c819c55e1a7c6c932f95280aef7f745c8db5a2\"",
       "full_name": "mattieha/select-list-card",
-      "last_updated": "2022-07-21T04:13:07Z",
+      "last_updated": "2023-01-12T03:12:53Z",
       "stargazers_count": 54,
       "topics": [
         "lovelace-custom-card"
       ],
-      "last_fetched": 1670042040.084557
+      "last_fetched": 1673688767.466126
     },
     "256292682": {
       "repository_manifest": {
@@ -9897,11 +9896,11 @@
       "category": "plugin",
       "description": "HA Lovelace card for control of scheduler entities",
       "domain": "",
-      "downloads": 9452,
-      "etag_repository": "W/\"e20d52e8b088a7b6b0fa0e49c97cd71c500d9a2612e62a05434c56835b765698\"",
+      "downloads": 11379,
+      "etag_repository": "W/\"ca8110ef07a62463fae3fb7589774ac93915cf69d3a485398d0c0f4afa0e3451\"",
       "full_name": "nielsfaber/scheduler-card",
-      "last_updated": "2022-12-25T08:11:10Z",
-      "stargazers_count": 547,
+      "last_updated": "2023-01-12T09:22:21Z",
+      "stargazers_count": 555,
       "topics": [
         "assistant",
         "automation",
@@ -9927,10 +9926,10 @@
         "v2.3.8",
         "v2.3.7"
       ],
-      "pushed_at": "2022-12-25T08:11:10",
+      "pushed_at": "2023-01-12T09:22:21",
       "releases": true,
       "version_installed": "v2.4.1",
-      "last_fetched": 1673084913.228766
+      "last_fetched": 1673690792.954349
     },
     "238414582": {
       "repository_manifest": {
@@ -10460,11 +10459,11 @@
       },
       "category": "plugin",
       "description": "🔹 Add sliders to entity cards",
-      "etag_repository": "W/\"5f494e119d264d244e7ff0f8e96a53d7259aaf85b061d29fa6d43809b2027f11\"",
+      "etag_repository": "W/\"e715b7d71268f33ee7c359d124e59385cfa18f71dfc91958c797c8a37ed3add0\"",
       "full_name": "thomasloven/lovelace-slider-entity-row",
-      "last_updated": "2022-08-13T19:01:37Z",
-      "stargazers_count": 682,
-      "last_fetched": 1670042059.83937
+      "last_updated": "2022-12-26T01:55:34Z",
+      "stargazers_count": 692,
+      "last_fetched": 1673688713.751493
     },
     "180528950": {
       "repository_manifest": {
@@ -14994,11 +14993,11 @@
       "category": "plugin",
       "description": "Minimalistic graph card for Home Assistant Lovelace UI",
       "domain": "",
-      "downloads": 121183,
-      "etag_repository": "W/\"aeea074b10171457f0845955c0654e2596ae4a49ddb480caf67792beab6c1c5a\"",
+      "downloads": 124546,
+      "etag_repository": "W/\"450c8e5e69bad35e5e92dc6a0fb4548df8defa70244432722483a093d630caab\"",
       "full_name": "kalkih/mini-graph-card",
-      "last_updated": "2022-12-24T00:10:11Z",
-      "stargazers_count": 2174,
+      "last_updated": "2023-01-11T15:54:54Z",
+      "stargazers_count": 2186,
       "topics": [
         "automation",
         "custom",
@@ -15009,7 +15008,7 @@
       "installed": true,
       "last_commit": "88d91eb",
       "last_version": "v0.11.0",
-      "open_issues": 98,
+      "open_issues": 101,
       "published_tags": [
         "v0.11.0",
         "v0.10.0",
@@ -15017,10 +15016,10 @@
         "v0.9.3",
         "v0.9.2"
       ],
-      "pushed_at": "2022-12-24T00:10:11",
+      "pushed_at": "2023-01-11T15:54:54",
       "releases": true,
       "version_installed": "v0.11.0",
-      "last_fetched": 1673084913.331018
+      "last_fetched": 1673690792.929034
     },
     "201740996": {
       "repository_manifest": {
@@ -16426,23 +16425,6 @@
       "topics": [
         "ha"
       ]
-    },
-    "212657669": {
-      "repository_manifest": {
-        "name": "⛏️ Minecraft Version",
-        "render_readme": "true"
-      },
-      "authors": [
-        "@xMrVizzy"
-      ],
-      "category": "integration",
-      "description": "🌿 Minecraft Version Checker for Home Assistant.",
-      "domain": "minecraft_version",
-      "etag_repository": "W/\"958e918392b7446c17d9a31201268a4316716e2bfcac9b4617f2350ae60476dd\"",
-      "full_name": "Kraineff/minecraft-version",
-      "last_updated": "2020-01-16T12:36:24Z",
-      "stargazers_count": 4,
-      "last_fetched": 1653229796.133733
     },
     "403062943": {
       "repository_manifest": {
@@ -21217,18 +21199,18 @@
       },
       "category": "plugin",
       "description": "A button card with integrated slider",
-      "downloads": 5322,
-      "etag_repository": "W/\"0f49afb4adfb215ff665435830ae0038fc2b84f398b0ef9ed14e3d1825dc7b65\"",
+      "downloads": 9070,
+      "etag_repository": "W/\"cf377391a9ca761f297bafeeda57b7552829031819e4e4619b2e53dadeb3e555\"",
       "full_name": "custom-cards/slider-button-card",
-      "last_updated": "2022-11-18T17:42:46Z",
-      "stargazers_count": 43,
+      "last_updated": "2023-01-08T06:18:43Z",
+      "stargazers_count": 54,
       "topics": [
         "button-card",
         "card",
         "lovelace-custom-card",
         "slider"
       ],
-      "last_fetched": 1670222452.451229
+      "last_fetched": 1673688727.448576
     },
     "496755553": {
       "repository_manifest": {
@@ -24980,6 +24962,105 @@
         "component",
         "script",
         "switch-manager"
+      ]
+    },
+    "582268944": {
+      "repository_manifest": {
+        "name": "EPEX Spot",
+        "render_readme": true
+      },
+      "authors": [
+        "@mampfes"
+      ],
+      "category": "integration",
+      "description": "Adds EPEX Spot data to Home Assistant.",
+      "domain": "epex_spot",
+      "etag_repository": "W/\"c44ceb0d62ab92cd9c5bfa01591009b967c2f99f6d3dcdf21835c73c08086733\"",
+      "full_name": "mampfes/ha_epex_spot",
+      "new": true,
+      "stargazers_count": 5,
+      "topics": [
+        "epex",
+        "epex-spot"
+      ]
+    },
+    "402333014": {
+      "repository_manifest": {
+        "name": "openWB MQTT",
+        "render_readme": true
+      },
+      "authors": [
+        "@a529987659852"
+      ],
+      "category": "integration",
+      "description": "Custom component for home assistant supporting openWB wallbox",
+      "domain": "openwbmqtt",
+      "etag_repository": "W/\"16ea06353121b269e0635414265a57d34a2e6a10418a16a2fafca41e7abc237f\"",
+      "full_name": "a529987659852/openwbmqtt",
+      "new": true,
+      "stargazers_count": 22,
+      "topics": [
+        "mqtt"
+      ]
+    },
+    "582608844": {
+      "repository_manifest": {
+        "name": "Emu M-Bus Center",
+        "hacs": "1.6.0",
+        "homeassistant": "0.7.4",
+        "render_readme": true
+      },
+      "authors": [
+        "@redlukas"
+      ],
+      "category": "integration",
+      "description": "Reads Values from a Emu M-Bus Center and exposes them to Home assistant",
+      "domain": "emu_m_bus_center",
+      "etag_repository": "W/\"21653b64b6f3ff0b4041014d14d8698af868200ff4d77fb8d508aaf3238862cb\"",
+      "full_name": "redlukas/emu_mbus_center",
+      "new": true,
+      "topics": [
+        "m-bus",
+        "rest-client"
+      ]
+    },
+    "583379046": {
+      "repository_manifest": {
+        "name": "Mold Risk Index",
+        "homeassistant": "2022.8"
+      },
+      "authors": [
+        "@Strixx76"
+      ],
+      "category": "integration",
+      "description": "Calculate the level of risk of mold growth in a crawl space.",
+      "domain": "mold_risk_index",
+      "etag_repository": "W/\"af156357e1745a299788cc281f105d95f81a481950affaf4b8019decff1b67bb\"",
+      "full_name": "Strixx76/mold_risk_index",
+      "new": true,
+      "topics": [
+        "python3"
+      ]
+    },
+    "585050790": {
+      "repository_manifest": {
+        "name": "tdarr"
+      },
+      "authors": [
+        "@itchannel"
+      ],
+      "category": "integration",
+      "description": "Tdarr Home Assistant Integration",
+      "domain": "tdarr",
+      "etag_repository": "W/\"0a589aef5b83b444dd90019c1c95ee76439d509e7a3770e1f4367f7ddb3162f0\"",
+      "full_name": "itchannel/tdarr_ha",
+      "new": true,
+      "stargazers_count": 1,
+      "topics": [
+        "assistant",
+        "home",
+        "tdarr",
+        "transcoding"
       ]
     }
   }

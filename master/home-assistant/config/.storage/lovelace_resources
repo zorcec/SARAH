@@ -13,6 +13,11 @@
         "url": "/hacsfiles/mini-graph-card/mini-graph-card-bundle.js?hacstag=1512800620110",
         "type": "module",
         "id": "5965915ac0ec4394ae7c3232b785cf1d"
+      },
+      {
+        "url": "/hacsfiles/numberbox-card/numberbox-card.js?hacstag=30496791843",
+        "type": "module",
+        "id": "9c214e59e73c40a3a8130fa7f6d803ed"
       }
     ]
   }

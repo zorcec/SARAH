@@ -18,8 +18,15 @@ recorder:
   purge_keep_days: 30
   commit_interval: 10
   db_url: mysql://root:admin@mariadb/ha?charset=utf8mb4
+  exclude:
+    entities:
+      - heating_control.until_next_phaze
+      - heating_control.next_phaze
+      - heating_control.next_phaze_formatted
 
 mobile_app:
+
+energy:
 
 logger:
   default: info
@@ -32,6 +39,24 @@ group:
 python_script:
 
 heating_control:
+
+input_number:
+  heat_phaze:
+    name: Heating Cycle
+    initial: 20
+    min: 0
+    max: 60
+    step: 5
+    unit_of_measurement: "min"
+    icon: mdi:clock-outline
+  wait_phaze:
+    name: Waiting Cycle
+    initial: 10
+    min: 0
+    max: 60
+    step: 5
+    unit_of_measurement: "min"
+    icon: mdi:clock-outline
 
 # mqtt:
 #   binary_sensor:
@@ -72,5 +97,4 @@ sensor: !include_dir_merge_list customize/sensors/
 binary_sensor: !include_dir_merge_list customize/binary_sensors/
 switch: !include_dir_merge_list customize/switches/
 climate: !include_dir_merge_list customize/climate/
-
 automation: !include customize/automation.yaml

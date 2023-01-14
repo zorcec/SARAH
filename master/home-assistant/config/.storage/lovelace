@@ -372,20 +372,66 @@
           "badges": [],
           "cards": [
             {
-              "type": "entity",
-              "entity": "heating_control.status",
-              "name": "Heating Status",
-              "state_color": false,
-              "icon": "mdi:heat-pump"
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "entity",
+                  "entity": "heating_control.status",
+                  "name": "Current",
+                  "icon": "mdi:play"
+                },
+                {
+                  "type": "entity",
+                  "entity": "heating_control.next_phaze_formatted",
+                  "name": "Time",
+                  "icon": "mdi:clock-time-five-outline"
+                },
+                {
+                  "type": "entity",
+                  "entity": "heating_control.next_phaze",
+                  "name": "Next",
+                  "state_color": false,
+                  "icon": "mdi:step-forward"
+                }
+              ]
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "custom:numberbox-card",
+                  "border": true,
+                  "entity": "input_number.heat_phaze"
+                },
+                {
+                  "type": "custom:numberbox-card",
+                  "border": true,
+                  "entity": "input_number.wait_phaze"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "heating_control.skip_current_phaze",
+                    "data": {},
+                    "target": {}
+                  },
+                  "name": "Skip current phaze",
+                  "icon": "mdi:skip-next",
+                  "icon_height": "50px",
+                  "hold_action": {
+                    "action": "none"
+                  }
+                }
+              ]
             },
             {
               "type": "history-graph",
               "entities": [
                 {
                   "entity": "heating_control.status"
-                },
-                {
-                  "entity": "switch.tasmota"
                 },
                 {
                   "entity": "switch.down_kitchen_vent"

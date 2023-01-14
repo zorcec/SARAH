@@ -16,13 +16,18 @@ CONF_WAITING_PHAZE = "waiting_phaze"
 
 ATTR_HEATING_OVERRIDE_VALUE = "value"
 
-_STATE_HEATING_OVERRIDE = "heating_override"
 _STATE_STATUS = "status"
+_STATE_UNTIL_NEXT_PHAZE = "until_next_phaze"
+_STATE_NEXT_PHAZE = "next_phaze"
+_STATE_NEXT_PHAZE_FORMATTED = "next_phaze_formatted"
 
 _STATE_STATUS_ON = "On"
 _STATE_STATUS_WAITING = "Waiting"
 _STATE_STATUS_OFF_PROTECTION = "Waiting"
 _STATE_STATUS_OVERRIDE = "Override"
+
+_STATE_PHAZE_WAIT = "wait"
+_STATE_PHAZE_HEAT = "heat"
 
 _LOGGER = logging.getLogger(__name__)
 _VENT_OPEN_TIME = 180 # 3 mins
@@ -34,40 +39,55 @@ _VENT_ENTITIES = [
     "switch.top_bathroom_valve",
     "switch.top_bedroom_valve",
     "switch.top_kid_valve",
-    "switch.top_valve",
+    "switch.top_livingroom_valve",
     "switch.top_wc_valve"
     ]
 _PUMP_ENTITY_ID = "switch.heating_pump"
-_HEAT_PHAZE_OVERRIDE = 30 * 60 # 15min, if not specified, the real config is taken
-_WAIT_PHAZE_OVERRIDE = 15 * 60 # 15min, if not specified, the real config is taken
+_HEAT_PHAZE_DEFAULT = 20
+_WAIT_PHAZE_DEFAULT = 10
 
-_OVERRIDE_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_HEATING_OVERRIDE)
 _STATUS_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_STATUS)
+_STATUS_HEAT_PHAZE_NAME = "input_number.heat_phaze"
+_STATUS_WAIT_PHAZE_NAME = "input_number.wait_phaze"
+_STATUS_UNTIL_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_UNTIL_NEXT_PHAZE)
+_STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
+_STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
 
 _UTC = pytz.UTC
 
 def setup(hass, config):
 
-    def heating_override_toggle(call):
-        _heating_override = STATE_OFF
-        override_states = hass.states.get(_OVERRIDE_STATE_NAME)
-        if override_states and override_states.state == STATE_ON:
-            _heating_override = STATE_OFF
-        else:
-            _heating_override = STATE_ON
-        hass.states.set(_OVERRIDE_STATE_NAME, _heating_override)
-        _LOGGER.info("Heating override was set to: {}".format(_heating_override))
+    def skip_current_phaze(call):
+        _LOGGER.info("Skipping current phaze in 5s")
+        hass.states.set(_STATE_UNTIL_NEXT_PHAZE, 5)
 
-    hass.services.register(DOMAIN, "heating_override_toggle", heating_override_toggle)
-    hass.states.set(_OVERRIDE_STATE_NAME, STATE_OFF)
+    hass.services.register(DOMAIN, "skip_current_phaze", skip_current_phaze)
+
+    async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
+
+    # INITIAL PHAZE TIMES
+    # TODO create "input_number.heat_phaze" and "input_number.wait_phaze" by this integration
+    # _heat_phaze_time_state = hass.states.get(_STATUS_HEAT_PHAZE_NAME)
+    # if not _heat_phaze_time_state or not _heat_phaze_time_state.state:
+    #     hass.states.set(_STATUS_HEAT_PHAZE_NAME, _HEAT_PHAZE_DEFAULT)
+    
+    # _wait_phaze_time_state = hass.states.get(_STATUS_WAIT_PHAZE_NAME)
+    # if not _wait_phaze_time_state or not _wait_phaze_time_state.state:
+    #     hass.states.set(_STATUS_WAIT_PHAZE_NAME, _WAIT_PHAZE_DEFAULT)
+
+    hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
+    turn_pump_off(hass)
+    queue_heat_phaze(hass, _VENT_OPEN_TIME + 10)
+
+    tick(hass)
+
+    _LOGGER.info("Heating control is initialized")
 
     return True
 
 
 async def async_setup_entry(hass: core.HomeAssistant, entry: config_entries.ConfigEntry):
-    _LOGGER.info("Heating control is initialized")
-    async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
-    threading.Timer(60, heating_cycle, [hass, _HEAT_PHAZE_OVERRIDE or entry.data[CONF_HEATING_PHAZE], _WAIT_PHAZE_OVERRIDE or entry.data[CONF_WAITING_PHAZE]]).start()
+    """Config flow"""
     return True
 
 
@@ -76,38 +96,35 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
     return True
 
 
-def heating_cycle(hass, heating_phaze_time, waiting_phaze_time, heatingUp = True):
+def start_next_phaze(hass):
 
-    _override_states = hass.states.get(_OVERRIDE_STATE_NAME)
-    if _override_states and _override_states.state == STATE_ON:
-        _LOGGER.info("Heating override enabled, do not chage the pump state (recheck in 60s)")
-        threading.Timer(60, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
-        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_OVERRIDE)
-    elif heatingUp and should_heat(hass):
-        threading.Timer(heating_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
-        heatingUpCycle(hass)
+    _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
+    if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
+        queue_wait_phaze(hass)
+        turn_pump_on(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
     else:
-        threading.Timer(waiting_phaze_time, heating_cycle, [hass, heating_phaze_time, waiting_phaze_time, not heatingUp]).start()
-        waitingCycle(hass)
+        queue_heat_phaze(hass)
+        turn_pump_off(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
 
 
-def heatingUpCycle(hass):
+def turn_pump_on(hass):
     _pump_state = hass.states.get(_PUMP_ENTITY_ID)
     if _pump_state:
         if _pump_state.state == STATE_OFF:
-            _LOGGER.info("Turning pump on")
-            hass.services.call("switch", "turn_on", {
-                "entity_id": _PUMP_ENTITY_ID
-            })
+            if should_heat(hass):
+                _LOGGER.info("Turning pump on")
+                hass.services.call("switch", "turn_on", {
+                    "entity_id": _PUMP_ENTITY_ID
+                })
         else:
             _LOGGER.info("Pump is already on, ignoring")
     else:
         _LOGGER.info("Pump state is not known, ignoring")
 
 
-def waitingCycle(hass):
+def turn_pump_off(hass):
     _pump_state = hass.states.get(_PUMP_ENTITY_ID)
     if _pump_state:
         if _pump_state.state == STATE_ON:
@@ -140,5 +157,42 @@ def pump_protection_check(hass, event):
     """Called when vent state is changed"""
     if not should_heat(hass):
         _LOGGER.info("All vents are in closed state, turning pump off (pump protection)")
-        waitingCycle(hass)
+        turn_pump_off(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_OFF_PROTECTION)
+        queue_heat_phaze(hass, 60)
+
+
+def queue_wait_phaze(hass, seconds=None):
+    _heat_phaze_time = _HEAT_PHAZE_DEFAULT
+    if not seconds:
+        _heat_phaze_time_state = hass.states.get(_STATUS_HEAT_PHAZE_NAME)
+        _heat_phaze_time = (float)(_heat_phaze_time_state.state)
+
+    _next_phaze_time_seconds = seconds or _heat_phaze_time * 60
+    hass.states.set(_STATUS_NEXT_PHAZE_NAME, _STATE_PHAZE_WAIT)
+    hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _next_phaze_time_seconds)
+
+
+def queue_heat_phaze(hass, seconds=None):
+    _wait_phaze_time = _WAIT_PHAZE_DEFAULT
+    if not seconds:
+        _wait_phaze_time_state = hass.states.get(_STATUS_WAIT_PHAZE_NAME)
+        _wait_phaze_time = (float)(_wait_phaze_time_state.state)
+
+    _next_phaze_time_seconds = seconds or _heat_phaze_time * 60
+    hass.states.set(_STATUS_NEXT_PHAZE_NAME, _STATE_PHAZE_HEAT)
+    hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _next_phaze_time_seconds)
+
+
+def tick(hass):
+    """Called every second"""
+    _until_next_phaze_state = hass.states.get(_STATUS_UNTIL_NEXT_PHAZE_NAME)
+    if _until_next_phaze_state and _until_next_phaze_state.state:
+        _time_left = (float)(_until_next_phaze_state.state) - 1
+        if _time_left > 0:
+            hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _time_left)
+            hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME, timedelta(seconds=_time_left))
+        else:
+            start_next_phaze(hass)
+
+    threading.Timer(1, tick, [hass]).start()

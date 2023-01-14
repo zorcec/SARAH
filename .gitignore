@@ -13,6 +13,7 @@ master/appdeamon/apps/__pycache__/
 master/mariadb/data
 admin/tasmota-admin
 master/home-assistant/config/home-assistant_v2.db
+master/portainer/data
 tasmota
 
 master/home-assistant/config/.storage/auth
