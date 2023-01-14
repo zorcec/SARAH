@@ -21,10 +21,10 @@ _STATE_UNTIL_NEXT_PHAZE = "until_next_phaze"
 _STATE_NEXT_PHAZE = "next_phaze"
 _STATE_NEXT_PHAZE_FORMATTED = "next_phaze_formatted"
 
-_STATE_STATUS_ON = "On"
-_STATE_STATUS_WAITING = "Waiting"
-_STATE_STATUS_OFF_PROTECTION = "Waiting"
-_STATE_STATUS_OVERRIDE = "Override"
+_STATE_STATUS_ON = "on"
+_STATE_STATUS_WAITING = "waiting"
+_STATE_STATUS_OFF_PROTECTION = "waiting"
+_STATE_STATUS_OVERRIDE = "override"
 
 _STATE_PHAZE_WAIT = "wait"
 _STATE_PHAZE_HEAT = "heat"
@@ -59,10 +59,12 @@ def setup(hass, config):
 
     def skip_current_phaze(call):
         _LOGGER.info("Skipping current phaze in 5s")
-        hass.states.set(_STATE_UNTIL_NEXT_PHAZE, 5)
+        hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, 5)
 
-    hass.services.register(DOMAIN, "skip_current_phaze", skip_current_phaze)
+    # services registration
+    hass.services.async_register(DOMAIN, "skip_current_phaze", skip_current_phaze)
 
+    # subscriptions
     async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))
 
     # INITIAL PHAZE TIMES
@@ -104,7 +106,8 @@ def start_next_phaze(hass):
         turn_pump_on(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
     else:
-        queue_heat_phaze(hass)
+        _until_heating = None if should_heat(hass) else 60
+        queue_heat_phaze(hass, _until_heating)
         turn_pump_off(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
 
@@ -179,7 +182,7 @@ def queue_heat_phaze(hass, seconds=None):
         _wait_phaze_time_state = hass.states.get(_STATUS_WAIT_PHAZE_NAME)
         _wait_phaze_time = (float)(_wait_phaze_time_state.state)
 
-    _next_phaze_time_seconds = seconds or _heat_phaze_time * 60
+    _next_phaze_time_seconds = seconds or _wait_phaze_time * 60
     hass.states.set(_STATUS_NEXT_PHAZE_NAME, _STATE_PHAZE_HEAT)
     hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _next_phaze_time_seconds)
 
