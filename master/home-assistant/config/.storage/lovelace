@@ -411,7 +411,7 @@
                     "data": {},
                     "target": {}
                   },
-                  "name": "Skip current phaze",
+                  "name": "Skip current cycle",
                   "icon": "mdi:skip-next",
                   "icon_height": "50px",
                   "hold_action": {

@@ -101,14 +101,14 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
 def start_next_phaze(hass):
     _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
     if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
-        queue_wait_phaze(hass)
-        turn_pump_on(hass)
-        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+        if queue_wait_phaze(hass):
+            turn_pump_on(hass)
+            hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
     else:
         _until_heating = None if should_heat(hass) else 60
-        queue_heat_phaze(hass, _until_heating)
-        turn_pump_off(hass)
-        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
+        if queue_heat_phaze(hass, _until_heating):
+            turn_pump_off(hass)
+            hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
 
 
 def turn_pump_on(hass):
@@ -176,6 +176,8 @@ def queue_wait_phaze(hass, seconds=None):
     hass.states.set(_STATUS_NEXT_PHAZE_NAME, _STATE_PHAZE_WAIT)
     hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _next_phaze_time_seconds)
 
+    return _next_phaze_time_seconds > 0
+
 
 def queue_heat_phaze(hass, seconds=None):
     _wait_phaze_time = _WAIT_PHAZE_DEFAULT
@@ -186,6 +188,8 @@ def queue_heat_phaze(hass, seconds=None):
     _next_phaze_time_seconds = seconds or _wait_phaze_time * 60
     hass.states.set(_STATUS_NEXT_PHAZE_NAME, _STATE_PHAZE_HEAT)
     hass.states.set(_STATUS_UNTIL_NEXT_PHAZE_NAME, _next_phaze_time_seconds)
+
+    return _next_phaze_time_seconds > 0
 
 
 def tick(hass):
