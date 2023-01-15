@@ -97,4 +97,4 @@ sensor: !include_dir_merge_list customize/sensors/
 binary_sensor: !include_dir_merge_list customize/binary_sensors/
 switch: !include_dir_merge_list customize/switches/
 climate: !include_dir_merge_list customize/climate/
-automation: !include customize/automation.yaml
+automation: !include automations.yaml

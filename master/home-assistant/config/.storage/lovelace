@@ -383,8 +383,8 @@
                 {
                   "type": "entity",
                   "entity": "heating_control.next_phaze_formatted",
-                  "name": "Time",
-                  "icon": "mdi:clock-time-five-outline"
+                  "icon": "mdi:clock-time-five-outline",
+                  "name": "Next in"
                 }
               ]
             },
@@ -604,7 +604,10 @@
                   "entity": "sensor.memory_use_percent"
                 },
                 {
-                  "entity": "sensor.disk_use_percent_config"
+                  "entity": "sensor.disk_use"
+                },
+                {
+                  "entity": "sensor.disk_free"
                 },
                 {
                   "entity": "sensor.network_in_eth0"

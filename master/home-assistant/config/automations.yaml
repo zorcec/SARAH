@@ -1,0 +1,44 @@
+- id: '1673812308634'
+  alias: Disables PIR
+  description: ''
+  trigger:
+  - platform: time
+    at: '20:30:00'
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/event
+      payload: pirOff
+  mode: single
+- id: '1673812956297'
+  alias: Activates PIR
+  description: ''
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/event
+      payload: pirOn
+  mode: single
+- id: '1673812981370'
+  alias: Sets sleep retain status
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  - platform: time
+    at: '23:00:00'
+  - platform: time
+    at: 03:10:00
+  condition: []
+  action:
+  - service: mqtt.publish
+    data:
+      topic: cmnd/tasmotas/json
+      payload: '{ "event": "pirOff", "event": "radioSilence" }'
+      retain: true
+  mode: single
