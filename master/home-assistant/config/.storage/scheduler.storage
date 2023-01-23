@@ -19,7 +19,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19
+                  "temperature": 19.5
                 }
               }
             ]
@@ -36,7 +36,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 21
+                  "temperature": 20.5
                 }
               }
             ]
@@ -53,7 +53,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19
+                  "temperature": 19.5
                 }
               }
             ]
@@ -73,7 +73,7 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "05:00:00",
+            "stop": "04:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -83,13 +83,13 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 18
+                  "temperature": 19
                 }
               }
             ]
           },
           {
-            "start": "05:00:00",
+            "start": "04:30:00",
             "stop": "08:00:00",
             "conditions": [],
             "condition_type": null,
@@ -117,7 +117,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 18
+                  "temperature": 19
                 }
               }
             ]
@@ -147,10 +147,11 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_hvac_mode",
+                "service": "climate.set_temperature",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "off"
+                  "hvac_mode": "heat",
+                  "temperature": 19
                 }
               }
             ]
@@ -180,7 +181,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 18
+                  "temperature": 19
                 }
               }
             ]
@@ -244,10 +245,11 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_hvac_mode",
+                "service": "climate.set_temperature",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "off"
+                  "hvac_mode": "heat",
+                  "temperature": 19
                 }
               }
             ]
@@ -277,7 +279,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 18
+                  "temperature": 19
                 }
               }
             ]
@@ -294,7 +296,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20.5
+                  "temperature": 20
                 }
               }
             ]
@@ -311,7 +313,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 18
+                  "temperature": 19
                 }
               }
             ]
@@ -324,7 +326,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       }
     ],
     "tags": []

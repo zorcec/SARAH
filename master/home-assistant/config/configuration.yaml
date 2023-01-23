@@ -58,6 +58,8 @@ input_number:
     unit_of_measurement: "min"
     icon: mdi:clock-outline
 
+powercalc:
+
 # mqtt:
 #   binary_sensor:
 #     - name: Top Hallway Motion Sensor

@@ -1,0 +1,10 @@
+- platform: powercalc
+  entity_id: light.top_main_light
+  linear:
+    min_power: 5
+    max_power: 33 # 3x11w
+
+- platform: powercalc
+  entity_id: switch.workplace_light
+  fixed:
+    power: 16 # 2x8w

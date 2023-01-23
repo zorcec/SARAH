@@ -66,7 +66,7 @@ Rule3
 Rule3
   ON Time#Minute=180 DO Restart 1 ENDON
 
-- add or tasmesh -
+- add for tasmesh -
   ON Event#meshJoin DO meshnode 80:7D:3A:B7:AB:71 ENDON
   ON Event#meshInvite DO PUBLISH cmnd/tasmotas/meshnode %macaddr% ENDON
   ON Time#Minute DO PUBLISH2 tele/%topic%/LWT Online ENDON
@@ -88,3 +88,10 @@ cmnd/tasmotas/upgrade
 12.3.0
 
 token; gho_IwEFf8Out1sWbMi_FHfw9BQFAKU8yjx1oDVc3
+
+Rule3
+  ON Time#Minute|60 DO Wifi 1 ENDON
+  ON Power1#state DO VAR1 %value% ENDON
+  ON Power1#state=1 DO Wifi 1 ENDON
+  ON Event#radioSilence DO IF (var1!=1) Wifi 0 ENDIF ENDON
+  ON Power1#state=1 DO Dimmer + ENDON
