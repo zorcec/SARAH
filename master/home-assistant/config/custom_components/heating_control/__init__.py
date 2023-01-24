@@ -44,7 +44,7 @@ _VENT_ENTITIES = [
     ]
 _PUMP_ENTITY_ID = "switch.heating_pump"
 _HEAT_PHAZE_DEFAULT = 20
-_WAIT_PHAZE_DEFAULT = 10
+_WAIT_PHAZE_DEFAULT = 0
 
 _STATUS_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_STATUS)
 _STATUS_HEAT_PHAZE_NAME = "input_number.heat_phaze"

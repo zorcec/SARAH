@@ -8,3 +8,8 @@
   entity_id: switch.workplace_light
   fixed:
     power: 16 # 2x8w
+
+- platform: powercalc
+  entity_id: light.bathroom_main_light
+  linear:
+    max_power: 80

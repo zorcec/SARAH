@@ -1,33 +1,38 @@
 {
   "version": 1,
-  "minor_version": 1,
+  "minor_version": 3,
   "key": "core.area_registry",
   "data": {
     "areas": [
       {
         "name": "Top",
         "id": "living_room",
-        "picture": null
+        "picture": null,
+        "aliases": []
       },
       {
         "name": "Downstairs",
         "id": "kitchen",
-        "picture": null
+        "picture": null,
+        "aliases": []
       },
       {
         "name": "Master Bedroom",
         "id": "bedroom",
-        "picture": null
+        "picture": null,
+        "aliases": []
       },
       {
         "name": "Bathroom",
         "id": "bathroom",
-        "picture": null
+        "picture": null,
+        "aliases": []
       },
       {
         "name": "Kid",
         "id": "kid",
-        "picture": null
+        "picture": null,
+        "aliases": []
       }
     ]
   }

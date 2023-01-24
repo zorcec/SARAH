@@ -10,6 +10,13 @@
         "domain": "mqtt",
         "is_persistent": false,
         "issue_id": "deprecated_yaml_broker_settings"
+      },
+      {
+        "created": "2023-01-24T09:36:22.837325+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "country_not_configured"
       }
     ]
   }

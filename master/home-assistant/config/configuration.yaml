@@ -43,7 +43,6 @@ heating_control:
 input_number:
   heat_phaze:
     name: Heating Cycle
-    initial: 20
     min: 0
     max: 60
     step: 5
@@ -51,7 +50,6 @@ input_number:
     icon: mdi:clock-outline
   wait_phaze:
     name: Waiting Cycle
-    initial: 10
     min: 0
     max: 60
     step: 5
