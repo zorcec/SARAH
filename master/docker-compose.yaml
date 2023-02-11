@@ -101,22 +101,15 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
      - ./portainer/data:/data
 
-  # netdata:
-  #   image: netdata/netdata
-  #   restart: always
-  #   ports:
-  #     - "0.0.0.0:19999:19999"
-
-
-#  dnsmasq:
-#    build:
-#      context: dnsmasq
-#    restart: always
-#    ports:
-#      - 0.0.0.0:53:53/udp
-#      - 0.0.0.0:5380:8080
-#    cap_add:
-#      - NET_ADMIN
-#    network_mode: host
-#    volumes:
-#      - ./dnsmasq/etc/config:/etc/config
+  dnsmasq:
+    build:
+      context: dnsmasq
+    restart: always
+    ports:
+      - 0.0.0.0:53:53/udp
+      - 0.0.0.0:5380:8080
+    cap_add:
+      - NET_ADMIN
+    network_mode: host
+    volumes:
+      - ./dnsmasq/etc/config:/etc/config

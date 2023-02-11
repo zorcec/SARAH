@@ -28,6 +28,10 @@ mobile_app:
 
 energy:
 
+powercalc:
+
+backup:
+
 logger:
   default: info
   logs:
@@ -55,8 +59,6 @@ input_number:
     step: 5
     unit_of_measurement: "min"
     icon: mdi:clock-outline
-
-powercalc:
 
 # mqtt:
 #   binary_sensor:

@@ -1,2 +1,8 @@
 192.168.0.1     router router.home
-192.168.0.100   test
+192.168.0.100   master master.home dns dns.home mqtt mqtt.home
+
+dhcp-host=2C:44:FD:14:96:3F,192.168.10.100 # master
+dhcp-host=74:DA:88:42:3B:0A,192.168.10.2   # wifi1
+dhcp-host=74:DA:88:42:3A:F2,192.168.10.3   # wifi2
+dhcp-host=02:26:5A:E0:CF:6C,192.168.10.4   # dlink
+dhcp-host=98:DA:C4:78:E6:38,192.168.10.5   # PowerLine AP

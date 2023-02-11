@@ -3,7 +3,39 @@
   "minor_version": 1,
   "key": "energy",
   "data": {
-    "energy_sources": [],
+    "energy_sources": [
+      {
+        "type": "grid",
+        "flow_from": [
+          {
+            "stat_energy_from": "sensor.workplace_light_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.bathroom_main_light_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.tasmota_energy_total",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.top_main_light_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          }
+        ],
+        "flow_to": [],
+        "cost_adjustment_day": 0.0
+      }
+    ],
     "device_consumption": []
   }
 }

@@ -19,7 +19,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 19
                 }
               }
             ]
@@ -36,7 +36,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20.5
+                  "temperature": 20
                 }
               }
             ]
@@ -53,7 +53,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19.5
+                  "temperature": 19
                 }
               }
             ]

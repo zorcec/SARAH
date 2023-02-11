@@ -202,11 +202,11 @@
         "entry_id": "d2f168f508117dd54d11515482054235",
         "version": 1,
         "domain": "mobile_app",
-        "title": "M2004J19C",
+        "title": "Xiaomi",
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2022.12.0-full (3026)",
+          "app_version": "2023.1.1-full (3124)",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",

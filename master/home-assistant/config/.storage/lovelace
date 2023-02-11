@@ -177,6 +177,14 @@
               "name": "Humidity Fan"
             },
             {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.bathroom_fan"
+                }
+              ]
+            },
+            {
               "hours_to_show": 24,
               "graph": "line",
               "type": "sensor",
