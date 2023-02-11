@@ -80,7 +80,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.180/",
+        "configuration_url": "http://192.168.0.24/",
         "connections": [
           [
             "mac",
@@ -541,7 +541,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.26/",
+        "configuration_url": "http://192.168.0.245/",
         "connections": [
           [
             "mac",

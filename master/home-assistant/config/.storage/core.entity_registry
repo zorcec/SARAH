@@ -11441,7 +11441,7 @@
         "icon": "mdi:fan",
         "id": "a472ef2948a5cc1481c57bf1d41f2b40",
         "has_entity_name": false,
-        "name": null,
+        "name": "Fan Controll",
         "options": {},
         "original_device_class": null,
         "original_icon": null,
@@ -11942,6 +11942,31 @@
         "translation_key": null,
         "unique_id": "eb0e011e5aa3eab3dbbf6347b0d85b7338a71d453344a1e8c0bfe4eaf29421ac_mobile_tx_gb",
         "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.automation_3",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2072975e6f00a294af52c80bc22f8ed1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Bathroom fan only when lights are off",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1676149800565",
+        "unit_of_measurement": null
       }
     ]
   }
