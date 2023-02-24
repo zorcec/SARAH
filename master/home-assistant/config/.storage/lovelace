@@ -205,9 +205,11 @@
               "entities": [
                 {
                   "entity": "switch.bathroom_sensor"
+                },
+                {
+                  "entity": "switch.bathroom_fan"
                 }
               ],
-              "title": "Motion",
               "hours_to_show": 24
             },
             {
@@ -216,6 +218,14 @@
                 "climate.bathroom"
               ],
               "exclude": []
+            },
+            {
+              "type": "custom:scheduler-card",
+              "include": [
+                "climate.bathroom_fan"
+              ],
+              "exclude": [],
+              "title": "Humidity"
             }
           ]
         },

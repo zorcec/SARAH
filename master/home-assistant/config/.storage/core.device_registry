@@ -126,8 +126,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "a5229f28ddd67c9eae7d75f6de134c24"
+          "a5229f28ddd67c9eae7d75f6de134c24",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.247/",
         "connections": [
@@ -177,7 +177,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.22/",
+        "configuration_url": "http://192.168.0.167/",
         "connections": [
           [
             "mac",

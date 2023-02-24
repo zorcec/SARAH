@@ -1,15 +1,42 @@
+# TOP
+
 - platform: powercalc
   entity_id: light.top_main_light
   linear:
-    min_power: 5
-    max_power: 33 # 3x11w
+    max_power: 12 # 3x4w
 
 - platform: powercalc
   entity_id: switch.workplace_light
   fixed:
-    power: 16 # 2x8w
+    power: 24 # 3x8w
+
+# BATHROOM
 
 - platform: powercalc
   entity_id: light.bathroom_main_light
   linear:
-    max_power: 80
+    max_power: 100
+
+- platform: powercalc
+  entity_id: switch.bathroom_fan
+  fixed:
+    power: 14
+
+# KITCHEN
+
+- platform: powercalc
+  entity_id: light.tasmota_3 # kitchen table
+  linear:
+    max_power: 24 # 6*4w
+
+- platform: powercalc
+  entity_id: switch.kitchen_light
+  fixed:
+    power: 38
+
+- platform: powercalc
+  entity_id: light.tasmota_2 # kitchen main light
+  linear:
+    max_power: 17
+
+# BEDROOM

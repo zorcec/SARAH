@@ -30,6 +30,30 @@
             "stat_cost": null,
             "entity_energy_price": null,
             "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.bathroom_fan_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.kitchen_light_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.tasmota_3_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
+          },
+          {
+            "stat_energy_from": "sensor.tasmota_2_energy",
+            "stat_cost": null,
+            "entity_energy_price": null,
+            "number_energy_price": null
           }
         ],
         "flow_to": [],

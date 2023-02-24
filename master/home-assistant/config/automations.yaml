@@ -75,3 +75,31 @@
         target:
           entity_id: climate.bathroom_fan
   mode: single
+- id: '1676485313446'
+  alias: Bathroom night fan
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 60
+    target:
+      entity_id: climate.bathroom_fan
+  mode: single
+- id: '1676485612150'
+  alias: Bathroom daytime fan
+  description: ''
+  trigger:
+  - platform: time
+    at: 08:00:00
+  condition: []
+  action:
+  - service: climate.set_temperature
+    data:
+      temperature: 55
+    target:
+      entity_id: climate.bathroom_fan
+  mode: single

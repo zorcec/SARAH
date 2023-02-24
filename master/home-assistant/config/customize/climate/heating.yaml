@@ -60,7 +60,6 @@
   max_temp: 100
   cold_tolerance: 0
   hot_tolerance: 2
-  target_temp: 60
   precision: 1
   min_cycle_duration:
-    minutes: 1
+    minutes: 5

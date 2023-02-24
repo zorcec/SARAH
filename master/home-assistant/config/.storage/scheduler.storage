@@ -73,24 +73,23 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "04:30:00",
+            "stop": "03:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
           },
           {
-            "start": "04:30:00",
-            "stop": "08:00:00",
+            "start": "03:30:00",
+            "stop": "06:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -106,7 +105,7 @@
             ]
           },
           {
-            "start": "08:00:00",
+            "start": "06:30:00",
             "stop": "15:30:00",
             "conditions": [],
             "condition_type": null,
@@ -147,11 +146,10 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
@@ -171,24 +169,23 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "07:00:00",
+            "stop": "06:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
           },
           {
-            "start": "07:00:00",
-            "stop": "09:30:00",
+            "start": "06:00:00",
+            "stop": "08:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -204,7 +201,7 @@
             ]
           },
           {
-            "start": "09:30:00",
+            "start": "08:30:00",
             "stop": "15:00:00",
             "conditions": [],
             "condition_type": null,
@@ -245,11 +242,10 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
@@ -327,6 +323,126 @@
         "repeat_type": "repeat",
         "name": null,
         "enabled": false
+      },
+      {
+        "schedule_id": "58cc83",
+        "timeslots": [
+          {
+            "start": "00:00:00",
+            "stop": null,
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_temperature",
+                "entity_id": "climate.bathroom_fan",
+                "service_data": {
+                  "hvac_mode": "cool",
+                  "temperature": 55
+                }
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": false
+      },
+      {
+        "schedule_id": "5ad7bc",
+        "timeslots": [
+          {
+            "start": "00:20:00",
+            "stop": null,
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_temperature",
+                "entity_id": "climate.bathroom_fan",
+                "service_data": {
+                  "hvac_mode": "cool",
+                  "temperature": 65
+                }
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": false
+      },
+      {
+        "schedule_id": "451208",
+        "timeslots": [
+          {
+            "start": "21:00:00",
+            "stop": null,
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_temperature",
+                "entity_id": "climate.bathroom_fan",
+                "service_data": {
+                  "hvac_mode": "cool",
+                  "temperature": 70
+                }
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": true
+      },
+      {
+        "schedule_id": "e3010f",
+        "timeslots": [
+          {
+            "start": "08:00:00",
+            "stop": null,
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "climate.set_temperature",
+                "entity_id": "climate.bathroom_fan",
+                "service_data": {
+                  "hvac_mode": "cool",
+                  "temperature": 65
+                }
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": true
       }
     ],
     "tags": []
