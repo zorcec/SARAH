@@ -94,4 +94,3 @@ Rule3
   ON Power1#state DO VAR1 %value% ENDON
   ON Power1#state=1 DO Wifi 1 ENDON
   ON Event#radioSilence DO IF (var1!=1) Wifi 0 ENDIF ENDON
-  ON Power1#state=1 DO Dimmer + ENDON

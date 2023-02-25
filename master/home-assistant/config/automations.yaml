@@ -85,7 +85,7 @@
   action:
   - service: climate.set_temperature
     data:
-      temperature: 60
+      temperature: 70
     target:
       entity_id: climate.bathroom_fan
   mode: single
@@ -99,7 +99,111 @@
   action:
   - service: climate.set_temperature
     data:
-      temperature: 55
+      temperature: 65
     target:
       entity_id: climate.bathroom_fan
+  mode: single
+- id: '1677363623906'
+  alias: Correct top dimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.top_main_light
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - if:
+    - condition: state
+      entity_id: light.top_main_light
+      state: 'on'
+    then:
+    - type: turn_off
+      device_id: 5f7953a4dcd36d3b3815c06c8bb50127
+      entity_id: light.top_main_light
+      domain: light
+  mode: single
+- id: '1677363742332'
+  alias: Correct bathroom dimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.bathroom_main_light
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - if:
+    - condition: state
+      entity_id: light.bathroom_main_light
+      state: 'on'
+    then:
+    - type: turn_off
+      device_id: 5f7953a4dcd36d3b3815c06c8bb50127
+      entity_id: light.top_main_light
+      domain: light
+  mode: single
+- id: '1677364084822'
+  alias: Correct kitchen main dimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.tasmota_2
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - if:
+    - condition: state
+      entity_id: light.tasmota_2
+      state: 'on'
+    then:
+    - type: turn_off
+      device_id: 25d3ef8988dc0179e7b6fa79f87efc3e
+      entity_id: light.tasmota_2
+      domain: light
+  mode: single
+- id: '1677364163504'
+  alias: Correct kitchen table dimmer
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.tasmota_3
+    to: 'off'
+    from: 'on'
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - if:
+    - condition: state
+      entity_id: light.tasmota_3
+      state: 'on'
+    then:
+    - type: turn_off
+      device_id: 24e2f44a884006a8f9d8f10b8fb2ca91
+      entity_id: light.tasmota_3
+      domain: light
   mode: single
