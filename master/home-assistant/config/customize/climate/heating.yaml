@@ -58,8 +58,8 @@
   ac_mode: True
   min_temp: 50
   max_temp: 100
-  cold_tolerance: 2
+  cold_tolerance: 3
   hot_tolerance: 0
   precision: 1
   min_cycle_duration:
-    minutes: 5
+    minutes: 15

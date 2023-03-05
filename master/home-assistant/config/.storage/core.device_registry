@@ -32,7 +32,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.227/",
+        "configuration_url": "http://192.168.0.30/",
         "connections": [
           [
             "mac",
@@ -129,7 +129,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "a5229f28ddd67c9eae7d75f6de134c24"
         ],
-        "configuration_url": "http://192.168.0.28/",
+        "configuration_url": "http://192.168.0.248/",
         "connections": [
           [
             "mac",
@@ -202,7 +202,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "38c9f9b6a8a2f6aadf3cdc10bbf48082"
         ],
-        "configuration_url": "http://192.168.0.27/",
+        "configuration_url": "http://192.168.0.184/",
         "connections": [
           [
             "mac",
@@ -275,7 +275,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "5d065252c6e6708bff0e6047b274d820"
         ],
-        "configuration_url": "http://192.168.0.21/",
+        "configuration_url": "http://192.168.0.219/",
         "connections": [
           [
             "mac",
@@ -300,7 +300,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "382fb9a149318a1ffa6815b03dd73163"
         ],
-        "configuration_url": "http://192.168.0.32/",
+        "configuration_url": "http://192.168.0.201/",
         "connections": [
           [
             "mac",
@@ -420,7 +420,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.16/",
+        "configuration_url": "http://192.168.0.167/",
         "connections": [
           [
             "mac",
@@ -557,7 +557,7 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "bathroom-dimmer1",
-        "sw_version": "12.3.1",
+        "sw_version": "12.4.0",
         "via_device_id": null
       },
       {

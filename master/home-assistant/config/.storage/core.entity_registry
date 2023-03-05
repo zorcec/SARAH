@@ -9431,7 +9431,7 @@
         "name": null,
         "options": {},
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-40",
+        "original_icon": "mdi:battery-90",
         "original_name": "M2004J19C Battery Level",
         "platform": "mobile_app",
         "supported_features": 0,

@@ -114,13 +114,13 @@ services:
     volumes:
       - ./dnsmasq/etc/config:/etc/config
 
-  tasmo-backup:
-    ports:
-        - '0.0.0.0:8259:80'
-    volumes:
-        - ./tasmo-backup/data:/var/www/html/data
-    environment:
-        - DBTYPE=sqlite
-        - DBNAME=data/tasmobackup
-    container_name: tasmo-backup
-    image: 'danmed/tasmobackupv1'
+#  tasmo-backup:
+#    ports:
+#        - '0.0.0.0:8259:80'
+#    volumes:
+#        - ./tasmo-backup/data:/var/www/html/data
+#    environment:
+#        - DBTYPE=sqlite
+#        - DBNAME=data/tasmobackup
+#    container_name: tasmo-backup
+#    image: 'danmed/tasmobackupv1'

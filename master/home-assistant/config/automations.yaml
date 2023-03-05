@@ -31,9 +31,7 @@
   - platform: time
     at: '21:00:00'
   - platform: time
-    at: '23:00:00'
-  - platform: time
-    at: 03:10:00
+    at: '12:00:00'
   condition: []
   action:
   - service: mqtt.publish
@@ -117,7 +115,7 @@
   - delay:
       hours: 0
       minutes: 0
-      seconds: 1
+      seconds: 2
       milliseconds: 0
   - if:
     - condition: state
@@ -143,7 +141,7 @@
   - delay:
       hours: 0
       minutes: 0
-      seconds: 1
+      seconds: 2
       milliseconds: 0
   - if:
     - condition: state
@@ -151,8 +149,8 @@
       state: 'on'
     then:
     - type: turn_off
-      device_id: 5f7953a4dcd36d3b3815c06c8bb50127
-      entity_id: light.top_main_light
+      device_id: 57edd179adcda8b16f654d9ff5360e1b
+      entity_id: light.bathroom_main_light
       domain: light
   mode: single
 - id: '1677364084822'
@@ -195,7 +193,7 @@
   - delay:
       hours: 0
       minutes: 0
-      seconds: 1
+      seconds: 2
       milliseconds: 0
   - if:
     - condition: state

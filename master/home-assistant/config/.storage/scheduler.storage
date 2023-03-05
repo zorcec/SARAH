@@ -112,11 +112,10 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
@@ -208,11 +207,10 @@
             "track_conditions": false,
             "actions": [
               {
-                "service": "climate.set_temperature",
+                "service": "climate.set_hvac_mode",
                 "entity_id": "climate.bathroom",
                 "service_data": {
-                  "hvac_mode": "heat",
-                  "temperature": 19
+                  "hvac_mode": "off"
                 }
               }
             ]
@@ -322,7 +320,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": false
+        "enabled": true
       },
       {
         "schedule_id": "58cc83",
@@ -418,7 +416,7 @@
         "schedule_id": "e3010f",
         "timeslots": [
           {
-            "start": "08:00:00",
+            "start": "08:30:00",
             "stop": null,
             "conditions": [],
             "condition_type": null,
