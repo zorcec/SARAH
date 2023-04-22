@@ -3,7 +3,7 @@
   description: ''
   trigger:
   - platform: time
-    at: '20:30:00'
+    at: '21:20:00'
   condition: []
   action:
   - service: mqtt.publish
@@ -68,38 +68,15 @@
         entity_id: light.bathroom_main_light
         state: 'off'
       sequence:
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 3
+          milliseconds: 0
       - service: climate.turn_on
         data: {}
         target:
           entity_id: climate.bathroom_fan
-  mode: single
-- id: '1676485313446'
-  alias: Bathroom night fan
-  description: ''
-  trigger:
-  - platform: time
-    at: '21:00:00'
-  condition: []
-  action:
-  - service: climate.set_temperature
-    data:
-      temperature: 70
-    target:
-      entity_id: climate.bathroom_fan
-  mode: single
-- id: '1676485612150'
-  alias: Bathroom daytime fan
-  description: ''
-  trigger:
-  - platform: time
-    at: 08:00:00
-  condition: []
-  action:
-  - service: climate.set_temperature
-    data:
-      temperature: 65
-    target:
-      entity_id: climate.bathroom_fan
   mode: single
 - id: '1677363623906'
   alias: Correct top dimmer

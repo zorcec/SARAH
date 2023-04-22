@@ -27,22 +27,11 @@
         "community",
         "package-manager"
       ],
-      "config_flow": true,
-      "default_branch": "main",
       "installed_commit": "0a8b645",
       "installed": true,
       "last_commit": "d601f3d",
       "last_version": "1.30.0",
       "manifest_name": "HACS",
-      "open_issues": 4,
-      "published_tags": [
-        "1.30.0",
-        "1.29.1",
-        "1.29.0",
-        "1.28.4",
-        "1.28.3"
-      ],
-      "pushed_at": "2023-01-23T10:37:57",
       "releases": true,
       "version_installed": "1.29.1",
       "last_fetched": 1674497614.923374
@@ -4593,22 +4582,11 @@
       "topics": [
         "scheduler"
       ],
-      "config_flow": true,
-      "default_branch": "main",
       "installed_commit": "ef9875b",
       "installed": true,
       "last_commit": "ef9875b",
       "last_version": "v3.2.14",
       "manifest_name": "Scheduler",
-      "open_issues": 13,
-      "published_tags": [
-        "v3.2.14",
-        "v3.2.13",
-        "v3.2.12",
-        "v3.2.11",
-        "v3.2.10"
-      ],
-      "pushed_at": "2022-12-15T18:50:24",
       "releases": true,
       "version_installed": "v3.2.14",
       "last_fetched": 1674497614.833916
@@ -9152,20 +9130,10 @@
         "numberbox-card",
         "slider"
       ],
-      "default_branch": "main",
       "installed_commit": "82236b8",
       "installed": true,
       "last_commit": "82236b8",
       "last_version": "4.3",
-      "open_issues": 6,
-      "published_tags": [
-        "4.3",
-        "4.1",
-        "4.0",
-        "3.17",
-        "3.16"
-      ],
-      "pushed_at": "2023-01-09T19:39:06",
       "releases": true,
       "version_installed": "4.3",
       "last_fetched": 1674497614.727956
@@ -9873,20 +9841,10 @@
         "week",
         "weekly"
       ],
-      "default_branch": "main",
       "installed_commit": "1a4cb6c",
       "installed": true,
       "last_commit": "1a4cb6c",
       "last_version": "v2.4.1",
-      "open_issues": 24,
-      "published_tags": [
-        "v2.4.1",
-        "v2.4.0",
-        "v2.3.9",
-        "v2.3.8",
-        "v2.3.7"
-      ],
-      "pushed_at": "2023-01-12T09:22:21",
       "releases": true,
       "version_installed": "v2.4.1",
       "last_fetched": 1674497614.894121
@@ -14790,22 +14748,11 @@
         "metering",
         "power"
       ],
-      "config_flow": true,
-      "default_branch": "master",
       "installed_commit": "7a868bf",
       "installed": true,
       "last_commit": "7a868bf",
       "last_version": "v1.3.2",
       "manifest_name": "Powercalc",
-      "open_issues": 8,
-      "published_tags": [
-        "v1.3.2",
-        "v1.3.1",
-        "v1.3.0",
-        "v1.2.4",
-        "v1.2.3"
-      ],
-      "pushed_at": "2023-01-21T14:37:38",
       "releases": true,
       "version_installed": "v1.3.2",
       "last_fetched": 1674497615.056712
@@ -14883,20 +14830,10 @@
         "custom",
         "graph"
       ],
-      "default_branch": "master",
       "installed_commit": "88d91eb",
       "installed": true,
       "last_commit": "88d91eb",
       "last_version": "v0.11.0",
-      "open_issues": 103,
-      "published_tags": [
-        "v0.11.0",
-        "v0.10.0",
-        "v0.9.4",
-        "v0.9.3",
-        "v0.9.2"
-      ],
-      "pushed_at": "2023-01-11T15:54:54",
       "releases": true,
       "version_installed": "v0.11.0",
       "last_fetched": 1674497614.824714

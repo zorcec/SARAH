@@ -17,7 +17,7 @@
         "pref_disable_polling": false,
         "source": "onboarding",
         "unique_id": null,
-        "disabled_by": null
+        "disabled_by": "user"
       },
       {
         "entry_id": "7c3b832799f4056db7fb89efe4af3466",
@@ -30,7 +30,7 @@
         "pref_disable_polling": false,
         "source": "onboarding",
         "unique_id": null,
-        "disabled_by": null
+        "disabled_by": "user"
       },
       {
         "entry_id": "309484e349e26c9344076c88446c44e8",
@@ -206,7 +206,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2023.1.1-full (3124)",
+          "app_version": "2023.3.0-full (3260)",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
@@ -227,6 +227,26 @@
         "pref_disable_polling": false,
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "08bb88c1ea49b34ab608f867e4dbc0a0",
+        "version": 2,
+        "domain": "openweathermap",
+        "title": "OpenWeatherMap",
+        "data": {
+          "api_key": "de6e34415327e0be6a73b90dc74b90a8",
+          "name": "OpenWeatherMap",
+          "latitude": 48.277764,
+          "longitude": 14.3073539,
+          "mode": "daily",
+          "language": "en"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "48.277764-14.3073539",
         "disabled_by": null
       }
     ]

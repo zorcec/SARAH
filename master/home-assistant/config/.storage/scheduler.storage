@@ -73,7 +73,7 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "03:30:00",
+            "stop": "04:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -88,7 +88,7 @@
             ]
           },
           {
-            "start": "03:30:00",
+            "start": "04:30:00",
             "stop": "06:30:00",
             "conditions": [],
             "condition_type": null,
@@ -122,7 +122,7 @@
           },
           {
             "start": "15:30:00",
-            "stop": "19:00:00",
+            "stop": "17:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -138,7 +138,7 @@
             ]
           },
           {
-            "start": "19:00:00",
+            "start": "17:30:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
@@ -168,7 +168,7 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "06:00:00",
+            "stop": "06:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -183,7 +183,7 @@
             ]
           },
           {
-            "start": "06:00:00",
+            "start": "06:30:00",
             "stop": "08:30:00",
             "conditions": [],
             "condition_type": null,
@@ -217,7 +217,7 @@
           },
           {
             "start": "15:00:00",
-            "stop": "19:00:00",
+            "stop": "17:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -233,7 +233,7 @@
             ]
           },
           {
-            "start": "19:00:00",
+            "start": "17:30:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
@@ -397,7 +397,7 @@
                 "entity_id": "climate.bathroom_fan",
                 "service_data": {
                   "hvac_mode": "cool",
-                  "temperature": 70
+                  "temperature": 75
                 }
               }
             ]
@@ -440,7 +440,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       }
     ],
     "tags": []

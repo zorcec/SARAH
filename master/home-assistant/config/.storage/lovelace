@@ -8,73 +8,6 @@
       "views": [
         {
           "theme": "Backend-selected",
-          "title": "General",
-          "path": "general",
-          "badges": [],
-          "cards": [
-            {
-              "show_current": true,
-              "show_forecast": true,
-              "type": "weather-forecast",
-              "entity": "weather.forecast_linz"
-            },
-            {
-              "type": "entity-filter",
-              "entities": [
-                {
-                  "entity": "light.bed_led"
-                },
-                {
-                  "entity": "switch.tasmota_4"
-                },
-                {
-                  "entity": "switch.tasmota_3"
-                },
-                {
-                  "entity": "switch.bedrom_main_light"
-                },
-                {
-                  "entity": "switch.main_light"
-                },
-                {
-                  "entity": "light.tasmota_2"
-                },
-                {
-                  "entity": "light.kid_dimmer1"
-                },
-                {
-                  "entity": "light.tasmota_3"
-                },
-                {
-                  "entity": "switch.kitchen_light"
-                },
-                {
-                  "entity": "switch.tasmota_6"
-                },
-                {
-                  "entity": "switch.tasmota_5"
-                },
-                {
-                  "entity": "light.tasmota"
-                },
-                {
-                  "entity": "switch.workplace_light"
-                }
-              ],
-              "state_filter": [
-                "on",
-                "open"
-              ],
-              "show_empty": false,
-              "card": {
-                "type": "glance",
-                "title": "lights and switches currently on"
-              }
-            }
-          ]
-        },
-        {
-          "theme": "Backend-selected",
           "path": "default_view",
           "title": "Downstairs",
           "badges": [],
@@ -99,6 +32,9 @@
                 {
                   "entity": "switch.terrace_light",
                   "icon": "mdi:lightbulb"
+                },
+                {
+                  "entity": "switch.downterraceambient"
                 }
               ]
             },
@@ -642,6 +578,23 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "icon": "mdi:watering-can",
+          "badges": [],
+          "cards": [
+            {
+              "show_name": true,
+              "show_icon": true,
+              "type": "button",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "entity": "switch.downwateringvent",
+              "name": "Watering (down)"
             }
           ]
         }

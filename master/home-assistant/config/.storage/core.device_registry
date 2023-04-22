@@ -11,7 +11,7 @@
         ],
         "configuration_url": "https://www.met.no/en",
         "connections": [],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": "service",
         "hw_version": null,
         "id": "9f193044c6866d50a0fdc573b82395c9",
@@ -32,7 +32,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.30/",
+        "configuration_url": "http://192.168.0.16/",
         "connections": [
           [
             "mac",
@@ -56,7 +56,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.31/",
+        "configuration_url": "http://192.168.0.27/",
         "connections": [
           [
             "mac",
@@ -80,7 +80,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.24/",
+        "configuration_url": "http://192.168.0.15/",
         "connections": [
           [
             "mac",
@@ -104,7 +104,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.33/",
+        "configuration_url": "http://192.168.0.13/",
         "connections": [
           [
             "mac",
@@ -129,7 +129,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "a5229f28ddd67c9eae7d75f6de134c24"
         ],
-        "configuration_url": "http://192.168.0.248/",
+        "configuration_url": "http://192.168.0.30/",
         "connections": [
           [
             "mac",
@@ -153,7 +153,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.25/",
+        "configuration_url": "http://192.168.0.29/",
         "connections": [
           [
             "mac",
@@ -177,7 +177,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.22/",
+        "configuration_url": "http://192.168.0.23/",
         "connections": [
           [
             "mac",
@@ -202,7 +202,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "38c9f9b6a8a2f6aadf3cdc10bbf48082"
         ],
-        "configuration_url": "http://192.168.0.184/",
+        "configuration_url": "http://192.168.0.31/",
         "connections": [
           [
             "mac",
@@ -226,7 +226,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.20/",
         "connections": [
           [
             "mac",
@@ -250,7 +250,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.151/",
+        "configuration_url": "http://192.168.0.32/",
         "connections": [
           [
             "mac",
@@ -275,7 +275,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "5d065252c6e6708bff0e6047b274d820"
         ],
-        "configuration_url": "http://192.168.0.219/",
+        "configuration_url": "http://192.168.0.25/",
         "connections": [
           [
             "mac",
@@ -300,7 +300,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "382fb9a149318a1ffa6815b03dd73163"
         ],
-        "configuration_url": "http://192.168.0.201/",
+        "configuration_url": "http://192.168.0.21/",
         "connections": [
           [
             "mac",
@@ -324,7 +324,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.20/",
+        "configuration_url": "http://192.168.0.37/",
         "connections": [
           [
             "mac",
@@ -348,7 +348,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.240/",
         "connections": [
           [
             "mac",
@@ -420,7 +420,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.167/",
+        "configuration_url": "http://192.168.0.28/",
         "connections": [
           [
             "mac",
@@ -492,7 +492,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.12/",
+        "configuration_url": "http://192.168.0.36/",
         "connections": [
           [
             "mac",
@@ -517,7 +517,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "7ef547c6ed4d170d1ecf8f37ca3e8288"
         ],
-        "configuration_url": "http://192.168.0.13/",
+        "configuration_url": "http://192.168.0.19/",
         "connections": [
           [
             "mac",
@@ -541,7 +541,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.246/",
+        "configuration_url": "http://192.168.0.18/",
         "connections": [
           [
             "mac",
@@ -589,7 +589,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.160/",
+        "configuration_url": "http://192.168.0.33/",
         "connections": [
           [
             "mac",
@@ -613,7 +613,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.17/",
+        "configuration_url": "http://192.168.0.22/",
         "connections": [
           [
             "mac",
@@ -661,7 +661,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.42/",
+        "configuration_url": "http://192.168.0.14/",
         "connections": [
           [
             "mac",
@@ -685,7 +685,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.11/",
+        "configuration_url": "http://192.168.0.26/",
         "connections": [
           [
             "mac",
@@ -733,7 +733,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.34/",
+        "configuration_url": "http://192.168.0.11/",
         "connections": [
           [
             "mac",
@@ -749,6 +749,78 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "BathroomFan",
+        "sw_version": "12.3.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.40/",
+        "connections": [
+          [
+            "mac",
+            "d8:f1:5b:c7:df:5f"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5f21788e0c0408a7d621ebfa2603cdc1",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "down-watering-vent",
+        "sw_version": "12.4.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.40/",
+        "connections": [
+          [
+            "mac",
+            "84:f3:eb:93:41:41"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "99ffc356be0959a2982a6e41849e73ff",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "Tasmota",
+        "sw_version": "12.4.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.39/",
+        "connections": [
+          [
+            "mac",
+            "c4:4f:33:8a:d8:50"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a328df3d5bac89c1c7b63f287ecfed4d",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "down-terrace-ambient",
         "sw_version": "12.3.1",
         "via_device_id": null
       }

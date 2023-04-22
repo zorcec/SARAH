@@ -101,26 +101,26 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
      - ./portainer/data:/data
 
-  dnsmasq:
-    build:
-      context: dnsmasq
-    restart: always
-    ports:
-      - 0.0.0.0:53:53/udp
-      - 0.0.0.0:5380:8080
-    cap_add:
-      - NET_ADMIN
-    network_mode: host
-    volumes:
-      - ./dnsmasq/etc/config:/etc/config
-
-#  tasmo-backup:
+#  dnsmasq:
+#    build:
+#      context: dnsmasq
+#    restart: always
 #    ports:
-#        - '0.0.0.0:8259:80'
+#      - 0.0.0.0:53:53/udp
+#      - 0.0.0.0:5380:8080
+#    cap_add:
+#      - NET_ADMIN
+#    network_mode: host
 #    volumes:
-#        - ./tasmo-backup/data:/var/www/html/data
-#    environment:
-#        - DBTYPE=sqlite
-#        - DBNAME=data/tasmobackup
-#    container_name: tasmo-backup
-#    image: 'danmed/tasmobackupv1'
+#      - ./dnsmasq/etc/config:/etc/config
+
+  tasmo-backup:
+    ports:
+        - '0.0.0.0:8259:80'
+    volumes:
+        - ./tasmo-backup/data:/var/www/html/data
+    environment:
+        - DBTYPE=sqlite
+        - DBNAME=data/tasmobackup
+    container_name: tasmo-backup
+    image: 'danmed/tasmobackupv1'

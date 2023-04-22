@@ -15,9 +15,11 @@ http:
 history:
 
 recorder:
+  auto_purge: True
+  auto_repack: True
   purge_keep_days: 30
   commit_interval: 10
-  db_url: mysql://root:admin@mariadb/ha?charset=utf8mb4
+  db_url: mysql://root:admin@mariadb/ha
   exclude:
     entities:
       - heating_control.until_next_phaze
