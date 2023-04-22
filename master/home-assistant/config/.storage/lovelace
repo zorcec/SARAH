@@ -486,6 +486,23 @@
         },
         {
           "theme": "Backend-selected",
+          "icon": "mdi:watering-can",
+          "badges": [],
+          "cards": [
+            {
+              "show_name": true,
+              "show_icon": true,
+              "type": "button",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "entity": "switch.downwateringvent",
+              "name": "Watering (down)"
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
           "title": "Settings",
           "path": "mesh",
           "icon": "mdi:hammer-wrench",
@@ -578,23 +595,6 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
-            }
-          ]
-        },
-        {
-          "theme": "Backend-selected",
-          "icon": "mdi:watering-can",
-          "badges": [],
-          "cards": [
-            {
-              "show_name": true,
-              "show_icon": true,
-              "type": "button",
-              "tap_action": {
-                "action": "toggle"
-              },
-              "entity": "switch.downwateringvent",
-              "name": "Watering (down)"
             }
           ]
         }
