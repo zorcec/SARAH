@@ -116,7 +116,7 @@ services:
 
   tasmo-backup:
     ports:
-        - '0.0.0.0:8259:80'
+        - 0.0.0.0:8259:80
     volumes:
         - ./tasmo-backup/data:/var/www/html/data
     environment:
@@ -124,3 +124,13 @@ services:
         - DBNAME=data/tasmobackup
     container_name: tasmo-backup
     image: 'danmed/tasmobackupv1'
+
+  hyperion:
+      image: sirfragalot/hyperion.ng:2.0.15
+      volumes:
+        - /hyperion:/root/.hyperion:rw
+      ports:
+        - 0.0.0.0:19400:19400
+        - 0.0.0.0:19445:19445
+        - 0.0.0.0:19444:19444
+        - 0.0.0.0:8090:8090

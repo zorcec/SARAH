@@ -66,7 +66,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "ec893a",
@@ -161,7 +161,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "fd6cb4",
@@ -256,7 +256,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "ce4320",
@@ -320,7 +320,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "58cc83",
@@ -397,7 +397,7 @@
                 "entity_id": "climate.bathroom_fan",
                 "service_data": {
                   "hvac_mode": "cool",
-                  "temperature": 75
+                  "temperature": 80
                 }
               }
             ]
@@ -410,7 +410,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "e3010f",
@@ -427,7 +427,7 @@
                 "entity_id": "climate.bathroom_fan",
                 "service_data": {
                   "hvac_mode": "cool",
-                  "temperature": 65
+                  "temperature": 80
                 }
               }
             ]

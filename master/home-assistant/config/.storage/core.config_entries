@@ -206,7 +206,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2023.3.0-full (3260)",
+          "app_version": "2023.6.0-full (10170)",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
@@ -230,23 +230,19 @@
         "disabled_by": null
       },
       {
-        "entry_id": "08bb88c1ea49b34ab608f867e4dbc0a0",
-        "version": 2,
-        "domain": "openweathermap",
-        "title": "OpenWeatherMap",
+        "entry_id": "e4e601d9ab873cc89c82fe7f5d04f053",
+        "version": 1,
+        "domain": "hyperion",
+        "title": "192.168.0.100:19444",
         "data": {
-          "api_key": "de6e34415327e0be6a73b90dc74b90a8",
-          "name": "OpenWeatherMap",
-          "latitude": 48.277764,
-          "longitude": 14.3073539,
-          "mode": "daily",
-          "language": "en"
+          "host": "192.168.0.100",
+          "port": 19444
         },
         "options": {},
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
         "source": "user",
-        "unique_id": "48.277764-14.3073539",
+        "unique_id": "73ba1c96-70af-5a88-a149-94896b69e101",
         "disabled_by": null
       }
     ]

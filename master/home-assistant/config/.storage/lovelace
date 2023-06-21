@@ -35,6 +35,9 @@
                 },
                 {
                   "entity": "switch.downterraceambient"
+                },
+                {
+                  "entity": "switch.kitchen_power"
                 }
               ]
             },
@@ -270,6 +273,9 @@
                 },
                 {
                   "entity": "light.tasmota_4"
+                },
+                {
+                  "entity": "light.toptable"
                 }
               ]
             },
