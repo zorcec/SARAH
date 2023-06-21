@@ -8576,7 +8576,11 @@
         "id": "4242fa000b49cbf7fc2c7d9c1fff98ab",
         "has_entity_name": false,
         "name": null,
-        "options": {},
+        "options": {
+          "switch_as_x": {
+            "entity_id": "switch.terrace_light"
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Terrace Light",
@@ -8605,7 +8609,11 @@
         "id": "ad237aa6034247461d231ac7ca92eb1a",
         "has_entity_name": false,
         "name": null,
-        "options": {},
+        "options": {
+          "switch_as_x": {
+            "entity_id": "switch.tasmota_4"
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Bedrom Bed Light",
@@ -8634,7 +8642,11 @@
         "id": "f31af91fce45b7ef0983670a64473d10",
         "has_entity_name": false,
         "name": null,
-        "options": {},
+        "options": {
+          "switch_as_x": {
+            "entity_id": "switch.bedrom_main_light"
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Bedrom Balcony Light",
@@ -8663,7 +8675,11 @@
         "id": "f692314b88bf5fe9a69009ee6386a969",
         "has_entity_name": false,
         "name": null,
-        "options": {},
+        "options": {
+          "switch_as_x": {
+            "entity_id": "switch.tasmota_9"
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Middle Hall Switch",
@@ -8692,7 +8708,11 @@
         "id": "7d6995d8e9ad4c445ad88afd630f3a20",
         "has_entity_name": false,
         "name": null,
-        "options": {},
+        "options": {
+          "switch_as_x": {
+            "entity_id": "switch.workplace_light"
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Workplace Light",
@@ -10955,7 +10975,7 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "8CAAB57AAFB2_sensor_sensor_DS18Sens-2_Id",
-        "unit_of_measurement": " "
+        "unit_of_measurement": null
       },
       {
         "aliases": [],
@@ -10980,7 +11000,7 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "8CAAB57AAFB2_sensor_sensor_DS18Sens-1_Id",
-        "unit_of_measurement": " "
+        "unit_of_measurement": null
       },
       {
         "aliases": [],
@@ -12303,7 +12323,7 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "8CAAB57C5EB7_sensor_sensor_DS18Sens-1_Id",
-        "unit_of_measurement": " "
+        "unit_of_measurement": null
       },
       {
         "aliases": [],
@@ -12328,7 +12348,7 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "8CAAB57C5EB7_sensor_sensor_DS18Sens-2_Id",
-        "unit_of_measurement": " "
+        "unit_of_measurement": null
       },
       {
         "aliases": [],
