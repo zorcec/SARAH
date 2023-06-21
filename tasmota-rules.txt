@@ -87,8 +87,6 @@ cmnd/tasmotas/json
 cmnd/tasmotas/upgrade
 12.3.0
 
-token; gho_IwEFf8Out1sWbMi_FHfw9BQFAKU8yjx1oDVc3
-
 Rule3
   ON Time#Minute|60 DO Wifi 1 ENDON
   ON Power1#state DO VAR1 %value% ENDON

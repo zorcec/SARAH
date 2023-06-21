@@ -7,9 +7,9 @@ frontend:
 config:
 
 http:
-  #base_url: https://zorcec.duckdns.org:8123
-  #ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
-  #ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
+  base_url: https://zorcec.duckdns.org:8123
+  ssl_certificate: /letsencrypt/keys/letsencrypt/cert.pem
+  ssl_key: /letsencrypt/keys/letsencrypt/privkey.pem
 
 # Enables support for tracking state changes over time
 history:

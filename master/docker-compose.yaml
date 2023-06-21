@@ -33,26 +33,26 @@ services:
     ports:
       - "0.0.0.0:8888:80"
 
-  # letsencrypt:
-  #  image: linuxserver/swag
-  #  restart: always
-  #  container_name: letsencrypt
-  #  cap_add:
-  #    - NET_ADMIN
-  #  environment:
-  #    - PUID=1000
-  #    - PGID=1000
-  #    - TZ=Europe/London
-  #    - URL=zorcec.duckdns.org
-  #    - VALIDATION=http
-  #    - DUCKDNSTOKEN=ff8777ce-260b-47fc-8939-8d08493546cd
-  #    - EMAIL=zorcec@gmail.com
-  #    - STAGING=false
-  #  volumes:
-  #    - ./letsencrypt:/config
-  #  ports:
-  #    - "0.0.0.0:443:443"
-  #    - "0.0.0.0:80:80"
+  letsencrypt:
+   image: linuxserver/swag
+   restart: always
+   container_name: letsencrypt
+   cap_add:
+     - NET_ADMIN
+   environment:
+     - PUID=1000
+     - PGID=1000
+     - TZ=Europe/London
+     - URL=zorcec.duckdns.org
+     - VALIDATION=http
+     - DUCKDNSTOKEN=ff8777ce-260b-47fc-8939-8d08493546cd
+     - EMAIL=zorcec@gmail.com
+     - STAGING=false
+   volumes:
+     - ./letsencrypt:/config
+   ports:
+     - "0.0.0.0:443:443"
+     - "0.0.0.0:80:80"
 
   duckdns:
    image: linuxserver/duckdns
