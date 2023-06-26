@@ -276,6 +276,12 @@
                 },
                 {
                   "entity": "light.toptable"
+                },
+                {
+                  "entity": "light.wled"
+                },
+                {
+                  "entity": "light.wled_2"
                 }
               ]
             },
@@ -503,7 +509,16 @@
                 "action": "toggle"
               },
               "entity": "switch.downwateringvent",
-              "name": "Watering (down)"
+              "name": "Watering (down)",
+              "icon_height": "35px"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "switch.downwateringvent"
+                }
+              ]
             }
           ]
         },

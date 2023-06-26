@@ -7,6 +7,7 @@
       "language": "en",
       "number_format": "language",
       "time_format": "language",
+      "date_format": "language",
       "first_weekday": "language"
     }
   }

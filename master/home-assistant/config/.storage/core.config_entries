@@ -244,6 +244,36 @@
         "source": "user",
         "unique_id": "73ba1c96-70af-5a88-a149-94896b69e101",
         "disabled_by": null
+      },
+      {
+        "entry_id": "d385da7c2caa22c01a75c5b164360c1b",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.42"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57cd6f7",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "077f338dd23b32da75732c8e03bac2e6",
+        "version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.21"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57ce69d",
+        "disabled_by": null
       }
     ]
   }

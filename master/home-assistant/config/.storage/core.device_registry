@@ -202,7 +202,7 @@
           "38c9f9b6a8a2f6aadf3cdc10bbf48082",
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.183/",
+        "configuration_url": "http://192.168.0.31/",
         "connections": [
           [
             "mac",
@@ -324,7 +324,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.224/",
         "connections": [
           [
             "mac",
@@ -757,7 +757,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.17/",
+        "configuration_url": "http://192.168.0.238/",
         "connections": [
           [
             "mac",
@@ -844,7 +844,7 @@
         "manufacturer": "Hyperion",
         "model": "Hyperion-NG",
         "name_by_user": null,
-        "name": "First LED Hardware instance",
+        "name": "TOP_PC",
         "sw_version": null,
         "via_device_id": null
       },
@@ -853,7 +853,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.246/",
+        "configuration_url": "http://192.168.0.20/",
         "connections": [
           [
             "mac",
@@ -897,11 +897,12 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
+        "area_id": "living_room",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "077f338dd23b32da75732c8e03bac2e6"
         ],
-        "configuration_url": "http://192.168.0.221/",
+        "configuration_url": "http://192.168.0.21",
         "connections": [
           [
             "mac",
@@ -910,14 +911,72 @@
         ],
         "disabled_by": null,
         "entry_type": null,
-        "hw_version": null,
+        "hw_version": "esp8266",
         "id": "22bba0515b3024cd596043b6cd59fb2f",
-        "identifiers": [],
-        "manufacturer": "Tasmota",
-        "model": "Sonoff Basic",
+        "identifiers": [
+          [
+            "wled",
+            "8caab57ce69d"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
         "name_by_user": null,
-        "name": "Tasmota",
-        "sw_version": "12.5.0",
+        "name": "WLED",
+        "sw_version": "0.14.0-b3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "d385da7c2caa22c01a75c5b164360c1b"
+        ],
+        "configuration_url": "http://192.168.0.42",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:7c:d6:f7"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "esp8266",
+        "id": "2bb61f7024458f42a7405371fe585c68",
+        "identifiers": [
+          [
+            "wled",
+            "8caab57cd6f7"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
+        "name_by_user": null,
+        "name": "WLED",
+        "sw_version": "0.14.0-b3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "e4e601d9ab873cc89c82fe7f5d04f053"
+        ],
+        "configuration_url": "http://192.168.0.100:8090/#remote",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "dca5da0363cf3bdc2accb6f8746596e2",
+        "identifiers": [
+          [
+            "hyperion",
+            "73ba1c96-70af-5a88-a149-94896b69e101_1"
+          ]
+        ],
+        "manufacturer": "Hyperion",
+        "model": "Hyperion-NG",
+        "name_by_user": null,
+        "name": "TOP_TV",
+        "sw_version": null,
         "via_device_id": null
       }
     ],

@@ -125,12 +125,20 @@ services:
     container_name: tasmo-backup
     image: 'danmed/tasmobackupv1'
 
-  hyperion:
+  hyperion-pc:
       image: sirfragalot/hyperion.ng:2.0.15
       volumes:
-        - /hyperion:/root/.hyperion:rw
+        - ./hyperion:/root/.hyperion:rw
       ports:
         - 0.0.0.0:19400:19400
         - 0.0.0.0:19445:19445
         - 0.0.0.0:19444:19444
         - 0.0.0.0:8090:8090
+
+  hyperion-tv:
+      image: sirfragalot/hyperion.ng:2.0.15
+      volumes:
+        - ./hyperion-tv:/root/.hyperion:rw
+      ports:
+        - 0.0.0.0:19446:19445
+        - 0.0.0.0:8091:8090

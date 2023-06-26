@@ -182,3 +182,101 @@
       entity_id: light.tasmota_3
       domain: light
   mode: single
+- id: '1687685658556'
+  alias: Ambi PC
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.wled
+    to: 'on'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: binary_sensor.pc
+      state: 'on'
+    then:
+    - service: light.turn_on
+      data:
+        transition: 2
+      target:
+        entity_id: light.toptable
+    else:
+    - service: light.turn_off
+      data:
+        transition: 2
+      target:
+        entity_id: light.toptable
+    - service: light.turn_off
+      data:
+        transition: 2
+      target:
+        device_id: 2bb61f7024458f42a7405371fe585c68
+  mode: single
+- id: '1687687698221'
+  alias: Ambi TV
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - light.wled_2
+    to: 'on'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: light.top_tv
+      state: 'on'
+    then: []
+    else:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.wled_2
+  mode: single
+- id: '1687802197772'
+  alias: Watering Down
+  description: ''
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  - platform: time
+    at: '12:00:00'
+  - platform: time
+    at: 03:00:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.downwateringvent
+  - delay:
+      hours: 0
+      minutes: 3
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.downwateringvent
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - service: automation.turn_off
+    data:
+      stop_actions: true
+    target:
+      entity_id: automation.watering_down
+  - if:
+    - condition: state
+      entity_id: switch.downwateringvent
+      state: 'off'
+    then: []
+    else:
+    - service: notify.notify
+      data:
+        message: Can't turn off watering vent!
+  mode: single

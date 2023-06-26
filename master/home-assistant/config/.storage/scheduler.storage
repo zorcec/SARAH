@@ -441,6 +441,33 @@
         "repeat_type": "repeat",
         "name": null,
         "enabled": false
+      },
+      {
+        "schedule_id": "bde8da",
+        "timeslots": [
+          {
+            "start": "21:00:00",
+            "stop": null,
+            "conditions": [],
+            "condition_type": null,
+            "track_conditions": false,
+            "actions": [
+              {
+                "service": "switch.turn_on",
+                "entity_id": "switch.downwateringvent",
+                "service_data": {}
+              }
+            ]
+          }
+        ],
+        "weekdays": [
+          "daily"
+        ],
+        "start_date": null,
+        "end_date": null,
+        "repeat_type": "repeat",
+        "name": null,
+        "enabled": true
       }
     ],
     "tags": []
