@@ -261,12 +261,82 @@
         "disabled_by": null
       },
       {
-        "entry_id": "077f338dd23b32da75732c8e03bac2e6",
+        "entry_id": "61d75a1ce1e0d384be7e9972b04b8c9b",
+        "version": 1,
+        "domain": "powercalc",
+        "title": "Ambi TV",
+        "data": {
+          "entity_id": "light.wled_2",
+          "mode": "wled",
+          "manufacturer": "WLED",
+          "model": "FOSS",
+          "wled": {
+            "voltage": 5.0,
+            "power_factor": 0.9
+          },
+          "unique_id": "pc_8caab57ce69d_0",
+          "sensor_type": "virtual_power",
+          "name": "Ambi TV"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": "pc_8caab57ce69d_0",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "95cd168eab540f9e31429adb04da0057",
+        "version": 1,
+        "domain": "powercalc",
+        "title": "Ambi PC",
+        "data": {
+          "entity_id": "light.wled",
+          "mode": "wled",
+          "manufacturer": "WLED",
+          "model": "FOSS",
+          "wled": {
+            "voltage": 5.0,
+            "power_factor": 0.9
+          },
+          "unique_id": "pc_8caab57cd6f7_0",
+          "sensor_type": "virtual_power",
+          "name": "Ambi PC"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": "pc_8caab57cd6f7_0",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "8cacd51d29c565c1c797256173146888",
+        "version": 1,
+        "domain": "accuweather",
+        "title": "House",
+        "data": {
+          "api_key": "mB3vrBGGDPNMugFGcEVOPFSnFlRKPxmi",
+          "latitude": 48.2738308,
+          "longitude": 14.315704,
+          "name": "House"
+        },
+        "options": {
+          "forecast": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "951073",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "300e8499695b2d7b959a39c872d91cc8",
         "version": 1,
         "domain": "wled",
         "title": "WLED",
         "data": {
-          "host": "192.168.0.21"
+          "host": "192.168.0.55"
         },
         "options": {},
         "pref_disable_new_entities": false,

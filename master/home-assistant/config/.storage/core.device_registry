@@ -199,8 +199,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
         ],
         "configuration_url": "http://192.168.0.31/",
         "connections": [
@@ -300,7 +300,7 @@
           "382fb9a149318a1ffa6815b03dd73163",
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.200/",
+        "configuration_url": "http://192.168.0.32/",
         "connections": [
           [
             "mac",
@@ -685,7 +685,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.203/",
+        "configuration_url": "http://192.168.0.11/",
         "connections": [
           [
             "mac",
@@ -757,7 +757,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.238/",
+        "configuration_url": "http://192.168.0.17/",
         "connections": [
           [
             "mac",
@@ -853,7 +853,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.20/",
+        "configuration_url": "http://192.168.0.246/",
         "connections": [
           [
             "mac",
@@ -868,7 +868,7 @@
         "manufacturer": "Tasmota",
         "model": "Arilux LC01",
         "name_by_user": null,
-        "name": "Tasmota",
+        "name": "top-table",
         "sw_version": "12.4.0",
         "via_device_id": null
       },
@@ -894,36 +894,6 @@
         "name_by_user": "Kitchen Power",
         "name": "kitchen-power",
         "sw_version": "12.5.0",
-        "via_device_id": null
-      },
-      {
-        "area_id": "living_room",
-        "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "077f338dd23b32da75732c8e03bac2e6"
-        ],
-        "configuration_url": "http://192.168.0.21",
-        "connections": [
-          [
-            "mac",
-            "8c:aa:b5:7c:e6:9d"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": "esp8266",
-        "id": "22bba0515b3024cd596043b6cd59fb2f",
-        "identifiers": [
-          [
-            "wled",
-            "8caab57ce69d"
-          ]
-        ],
-        "manufacturer": "WLED",
-        "model": "FOSS",
-        "name_by_user": null,
-        "name": "WLED",
-        "sw_version": "0.14.0-b3",
         "via_device_id": null
       },
       {
@@ -956,27 +926,56 @@
         "via_device_id": null
       },
       {
-        "area_id": "living_room",
+        "area_id": null,
         "config_entries": [
-          "e4e601d9ab873cc89c82fe7f5d04f053"
+          "8cacd51d29c565c1c797256173146888"
         ],
-        "configuration_url": "http://192.168.0.100:8090/#remote",
+        "configuration_url": "http://accuweather.com/en/_/_/951073/weather-forecast/951073/",
         "connections": [],
         "disabled_by": null,
-        "entry_type": null,
+        "entry_type": "service",
         "hw_version": null,
-        "id": "dca5da0363cf3bdc2accb6f8746596e2",
+        "id": "c27132a160eb1a7d64e3734e3798524c",
         "identifiers": [
           [
-            "hyperion",
-            "73ba1c96-70af-5a88-a149-94896b69e101_1"
+            "accuweather",
+            "951073"
           ]
         ],
-        "manufacturer": "Hyperion",
-        "model": "Hyperion-NG",
+        "manufacturer": "AccuWeather, Inc.",
+        "model": null,
         "name_by_user": null,
-        "name": "TOP_TV",
+        "name": "House",
         "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "300e8499695b2d7b959a39c872d91cc8"
+        ],
+        "configuration_url": "http://192.168.0.55",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:7c:e6:9d"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "esp8266",
+        "id": "22bba0515b3024cd596043b6cd59fb2f",
+        "identifiers": [
+          [
+            "wled",
+            "8caab57ce69d"
+          ]
+        ],
+        "manufacturer": "WLED",
+        "model": "FOSS",
+        "name_by_user": null,
+        "name": "WLED",
+        "sw_version": "0.14.0-b3",
         "via_device_id": null
       }
     ],
@@ -994,6 +993,32 @@
         "identifiers": [],
         "id": "d6422fd2cc76109087b8f60b0bde773d",
         "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "e4e601d9ab873cc89c82fe7f5d04f053"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hyperion",
+            "73ba1c96-70af-5a88-a149-94896b69e101_1"
+          ]
+        ],
+        "id": "dca5da0363cf3bdc2accb6f8746596e2",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "openweathermap",
+            "48.277764-14.3073539"
+          ]
+        ],
+        "id": "5841d09897fd762d104138f6be90e91d",
+        "orphaned_timestamp": 1687867998.8655155
       }
     ]
   }

@@ -190,6 +190,9 @@
     entity_id:
     - light.wled
     to: 'on'
+  - platform: state
+    entity_id:
+    - binary_sensor.pc
   condition: []
   action:
   - if:
@@ -265,11 +268,10 @@
       minutes: 0
       seconds: 5
       milliseconds: 0
-  - service: automation.turn_off
-    data:
-      stop_actions: true
+  - service: switch.turn_off
+    data: {}
     target:
-      entity_id: automation.watering_down
+      entity_id: switch.downwateringvent
   - if:
     - condition: state
       entity_id: switch.downwateringvent
