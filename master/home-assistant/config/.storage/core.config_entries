@@ -230,22 +230,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "e4e601d9ab873cc89c82fe7f5d04f053",
-        "version": 1,
-        "domain": "hyperion",
-        "title": "192.168.0.100:19444",
-        "data": {
-          "host": "192.168.0.100",
-          "port": 19444
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "73ba1c96-70af-5a88-a149-94896b69e101",
-        "disabled_by": null
-      },
-      {
         "entry_id": "d385da7c2caa22c01a75c5b164360c1b",
         "version": 1,
         "domain": "wled",
@@ -258,7 +242,7 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "8caab57cd6f7",
-        "disabled_by": null
+        "disabled_by": "user"
       },
       {
         "entry_id": "61d75a1ce1e0d384be7e9972b04b8c9b",
@@ -343,7 +327,7 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "8caab57ce69d",
-        "disabled_by": null
+        "disabled_by": "user"
       }
     ]
   }

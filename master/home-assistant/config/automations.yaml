@@ -3,7 +3,7 @@
   description: ''
   trigger:
   - platform: time
-    at: '21:20:00'
+    at: '22:00:00'
   condition: []
   action:
   - service: mqtt.publish
@@ -16,7 +16,7 @@
   description: ''
   trigger:
   - platform: time
-    at: '17:00:00'
+    at: '18:00:00'
   condition: []
   action:
   - service: mqtt.publish
@@ -237,6 +237,16 @@
       data: {}
       target:
         entity_id: light.wled_2
+  - if:
+    - condition: state
+      entity_id: binary_sensor.tv_box
+      state: 'on'
+    then: []
+    else:
+    - service: light.turn_off
+      data: {}
+      target:
+        device_id: 22bba0515b3024cd596043b6cd59fb2f
   mode: single
 - id: '1687802197772'
   alias: Watering Down
@@ -245,9 +255,9 @@
   - platform: time
     at: '21:00:00'
   - platform: time
-    at: '12:00:00'
+    at: 01:00:00
   - platform: time
-    at: 03:00:00
+    at: 06:00:00
   condition: []
   action:
   - service: switch.turn_on

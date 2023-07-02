@@ -126,8 +126,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "a5229f28ddd67c9eae7d75f6de134c24",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "a5229f28ddd67c9eae7d75f6de134c24"
         ],
         "configuration_url": "http://192.168.0.247/",
         "connections": [
@@ -272,8 +272,8 @@
       {
         "area_id": "living_room",
         "config_entries": [
-          "5d065252c6e6708bff0e6047b274d820",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "5d065252c6e6708bff0e6047b274d820"
         ],
         "configuration_url": "http://192.168.0.218/",
         "connections": [
@@ -297,8 +297,8 @@
       {
         "area_id": "kitchen",
         "config_entries": [
-          "382fb9a149318a1ffa6815b03dd73163",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "382fb9a149318a1ffa6815b03dd73163"
         ],
         "configuration_url": "http://192.168.0.32/",
         "connections": [
@@ -324,7 +324,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.224/",
+        "configuration_url": "http://192.168.0.23/",
         "connections": [
           [
             "mac",
@@ -348,7 +348,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.49/",
+        "configuration_url": "http://192.168.0.39/",
         "connections": [
           [
             "mac",
@@ -420,7 +420,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.167/",
+        "configuration_url": "http://192.168.0.36/",
         "connections": [
           [
             "mac",
@@ -514,10 +514,10 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "7ef547c6ed4d170d1ecf8f37ca3e8288",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "7ef547c6ed4d170d1ecf8f37ca3e8288"
         ],
-        "configuration_url": "http://192.168.0.19/",
+        "configuration_url": "http://192.168.0.179/",
         "connections": [
           [
             "mac",
@@ -685,7 +685,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.11/",
+        "configuration_url": "http://192.168.0.203/",
         "connections": [
           [
             "mac",
@@ -825,30 +825,6 @@
         "via_device_id": null
       },
       {
-        "area_id": "living_room",
-        "config_entries": [
-          "e4e601d9ab873cc89c82fe7f5d04f053"
-        ],
-        "configuration_url": "http://192.168.0.100:8090/#remote",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "7704ee569ef99a5e9795852e9d79f153",
-        "identifiers": [
-          [
-            "hyperion",
-            "73ba1c96-70af-5a88-a149-94896b69e101_0"
-          ]
-        ],
-        "manufacturer": "Hyperion",
-        "model": "Hyperion-NG",
-        "name_by_user": null,
-        "name": "TOP_PC",
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
         "area_id": null,
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
@@ -908,7 +884,7 @@
             "8c:aa:b5:7c:d6:f7"
           ]
         ],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": "esp8266",
         "id": "2bb61f7024458f42a7405371fe585c68",
@@ -961,7 +937,7 @@
             "8c:aa:b5:7c:e6:9d"
           ]
         ],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": "esp8266",
         "id": "22bba0515b3024cd596043b6cd59fb2f",
@@ -976,6 +952,30 @@
         "name_by_user": null,
         "name": "WLED",
         "sw_version": "0.14.0-b3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "18b02218197fab69398e60bed0a1f821"
+        ],
+        "configuration_url": "http://192.168.0.237/",
+        "connections": [
+          [
+            "mac",
+            "d8:f1:5b:c7:a9:a8"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8efe309a73fe74b791b693e08e352cb5",
+        "identifiers": [],
+        "manufacturer": "Tasmota",
+        "model": "Sonoff Basic",
+        "name_by_user": null,
+        "name": "top-watering-vent",
+        "sw_version": "12.5.0",
         "via_device_id": null
       }
     ],
@@ -995,9 +995,7 @@
         "orphaned_timestamp": null
       },
       {
-        "config_entries": [
-          "e4e601d9ab873cc89c82fe7f5d04f053"
-        ],
+        "config_entries": [],
         "connections": [],
         "identifiers": [
           [
@@ -1006,7 +1004,7 @@
           ]
         ],
         "id": "dca5da0363cf3bdc2accb6f8746596e2",
-        "orphaned_timestamp": null
+        "orphaned_timestamp": 1688056943.0169802
       },
       {
         "config_entries": [],
@@ -1019,6 +1017,18 @@
         ],
         "id": "5841d09897fd762d104138f6be90e91d",
         "orphaned_timestamp": 1687867998.8655155
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "hyperion",
+            "73ba1c96-70af-5a88-a149-94896b69e101_0"
+          ]
+        ],
+        "id": "7704ee569ef99a5e9795852e9d79f153",
+        "orphaned_timestamp": 1688056943.0169802
       }
     ]
   }

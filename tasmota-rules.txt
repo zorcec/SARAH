@@ -75,6 +75,11 @@ Rule3
   ON system#boot DO meshbroker ENDON
   ON Time#Minute|10 DO EVENT meshInvite ENDON
 
+----- FOR WATERING VENTS -----
+Rule3
+  ON Power1#state=1 DO RuleTimer1 300 ENDON
+  ON Rules#Timer=1 DO POWER1 0 ENDON
+
 tasmotas - all
 tasmota-sensors - all sensor devices (always awake)
 

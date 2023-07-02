@@ -3,16 +3,552 @@
   "minor_version": 1,
   "key": "trace.saved_traces",
   "data": {
+    "automation.1676149800565": [
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "c1a63b9158c51846aa0ca471c6e969e9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-01T23:20:11.473943+00:00",
+            "finish": "2023-07-01T23:20:11.493645+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-07-01T23:20:11.473984+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-01T21:20:27.727062+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1676149800565",
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.169902+00:00",
+                    "last_updated": "2023-07-01T23:20:09.169902+00:00",
+                    "context": {
+                      "id": "01H49W3D6HB5Q2YX004HHF3MEA",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "restored": true,
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-01T23:20:10.224797+00:00",
+                      "last_updated": "2023-07-01T23:20:10.224797+00:00",
+                      "context": {
+                        "id": "01H49W3E7G5250CBSQKTSDNX30",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-01T23:20:10.224797+00:00",
+                      "last_updated": "2023-07-01T23:20:11.437771+00:00",
+                      "context": {
+                        "id": "01H49W3FDD657T2P0QTBBG5XA3",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-01T23:20:11.486867+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H49W3FEHQH2J8VY4XSQWAYGD",
+                    "parent_id": "01H49W3FDD657T2P0QTBBG5XA3",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2023-07-01T23:20:11.487100+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2023-07-01T23:20:11.487131+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2023-07-01T23:20:11.487154+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2023-07-01T23:20:11.487224+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2023-07-01T23:20:11.487248+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2023-07-01T23:20:11.487269+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "off"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H49W3FEHQH2J8VY4XSQWAYGD",
+            "parent_id": "01H49W3FDD657T2P0QTBBG5XA3",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "c1a63b9158c51846aa0ca471c6e969e9",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-01T23:20:11.473943+00:00",
+            "finish": "2023-07-01T23:20:11.493645+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "b2b0921df896ca67b1054df2b70bcf6a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-01T23:20:12.556507+00:00",
+            "finish": "2023-07-01T23:20:15.568192+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-07-01T23:20:12.556591+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-01T23:20:11.474060+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1676149800565",
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.169902+00:00",
+                    "last_updated": "2023-07-01T23:20:11.487361+00:00",
+                    "context": {
+                      "id": "01H49W3FEHQH2J8VY4XSQWAYGD",
+                      "parent_id": "01H49W3FDD657T2P0QTBBG5XA3",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-01T23:20:10.224797+00:00",
+                      "last_updated": "2023-07-01T23:20:11.437771+00:00",
+                      "context": {
+                        "id": "01H49W3FDD657T2P0QTBBG5XA3",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-01T23:20:12.547356+00:00",
+                      "last_updated": "2023-07-01T23:20:12.547356+00:00",
+                      "context": {
+                        "id": "01H49W3GG3B8VXDQN6K2P7AR7C",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-01T23:20:12.561152+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H49W3GGC5N3C69Q954SCVJW3",
+                    "parent_id": "01H49W3GG3B8VXDQN6K2P7AR7C",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": 1
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2023-07-01T23:20:12.561257+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2023-07-01T23:20:12.561299+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2023-07-01T23:20:12.561342+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2023-07-01T23:20:12.561443+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2023-07-01T23:20:12.561478+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2023-07-01T23:20:12.561509+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/0": [
+              {
+                "path": "action/0/choose/1/sequence/0",
+                "timestamp": "2023-07-01T23:20:12.562034+00:00",
+                "result": {
+                  "delay": 3.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/1": [
+              {
+                "path": "action/0/choose/1/sequence/1",
+                "timestamp": "2023-07-01T23:20:15.564177+00:00",
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "climate.bathroom_fan"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H49W3GGC5N3C69Q954SCVJW3",
+            "parent_id": "01H49W3GG3B8VXDQN6K2P7AR7C",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "b2b0921df896ca67b1054df2b70bcf6a",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-01T23:20:12.556507+00:00",
+            "finish": "2023-07-01T23:20:15.568192+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      }
+    ],
     "automation.1687685658556": [
       {
         "extended_dict": {
           "last_step": "action/0/then/0",
-          "run_id": "3c6173a4df8e5080ae16989c1b7e9a10",
+          "run_id": "0ddb3125c17d9165f6afabcc33b5712e",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-06-27T14:12:16.322726+00:00",
-            "finish": "2023-06-27T14:12:16.336126+00:00"
+            "start": "2023-07-02T12:13:12.936702+00:00",
+            "finish": "2023-07-02T12:13:12.944217+00:00"
           },
           "domain": "automation",
           "item_id": "1687685658556",
@@ -21,23 +557,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2023-06-27T14:12:16.322794+00:00",
+                "timestamp": "2023-07-02T12:13:12.936803+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.pc_ambi",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2023-06-27T14:10:56.809254+00:00",
+                      "last_triggered": "2023-07-02T12:13:02.937866+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "1687685658556",
                       "friendly_name": "Ambi PC"
                     },
-                    "last_changed": "2023-06-27T14:12:07.080819+00:00",
-                    "last_updated": "2023-06-27T14:12:07.080819+00:00",
+                    "last_changed": "2023-07-01T23:20:09.170560+00:00",
+                    "last_updated": "2023-07-02T12:13:02.943623+00:00",
                     "context": {
-                      "id": "01H3YK51S8NVGG2FGTF5AVGM57",
-                      "parent_id": null,
+                      "id": "01H4B8AM2S7FFWXBS55K3PTNBM",
+                      "parent_id": "01H4B8AM2RG5CHX8ZJ4GR1C5A7",
                       "user_id": null
                     }
                   },
@@ -51,17 +587,17 @@
                       "entity_id": "binary_sensor.pc",
                       "state": "on",
                       "attributes": {
-                        "round_trip_time_avg": 1.314,
-                        "round_trip_time_max": 2.67,
+                        "round_trip_time_avg": 1.539,
+                        "round_trip_time_max": 3.607,
                         "round_trip_time_mdev": "",
-                        "round_trip_time_min": 0.769,
+                        "round_trip_time_min": 0.899,
                         "device_class": "connectivity",
                         "friendly_name": "PC"
                       },
-                      "last_changed": "2023-06-27T14:12:07.311443+00:00",
-                      "last_updated": "2023-06-27T14:12:07.311443+00:00",
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:02.936209+00:00",
                       "context": {
-                        "id": "01H3YK520F3RZ7BZ66Q8HHC7ZY",
+                        "id": "01H4B8AM2RG5CHX8ZJ4GR1C5A7",
                         "parent_id": null,
                         "user_id": null
                       }
@@ -70,17 +606,17 @@
                       "entity_id": "binary_sensor.pc",
                       "state": "on",
                       "attributes": {
-                        "round_trip_time_avg": 1.023,
-                        "round_trip_time_max": 1.09,
+                        "round_trip_time_avg": 1.021,
+                        "round_trip_time_max": 1.144,
                         "round_trip_time_mdev": "",
-                        "round_trip_time_min": 0.977,
+                        "round_trip_time_min": 0.889,
                         "device_class": "connectivity",
                         "friendly_name": "PC"
                       },
-                      "last_changed": "2023-06-27T14:12:07.311443+00:00",
-                      "last_updated": "2023-06-27T14:12:16.321579+00:00",
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:12.935450+00:00",
                       "context": {
-                        "id": "01H3YK5AT1WRJCZSDFH31G69XA",
+                        "id": "01H4B8AXV7FP2HTR26VCJMMYCK",
                         "parent_id": null,
                         "user_id": null
                       }
@@ -95,11 +631,11 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2023-06-27T14:12:16.323334+00:00",
+                "timestamp": "2023-07-02T12:13:12.938543+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01H3YK5AT2N3A66Z3T467NQAW6",
-                    "parent_id": "01H3YK5AT1WRJCZSDFH31G69XA",
+                    "id": "01H4B8AXV89ND8GA6117GPAYB9",
+                    "parent_id": "01H4B8AXV7FP2HTR26VCJMMYCK",
                     "user_id": null
                   }
                 },
@@ -111,7 +647,7 @@
             "action/0/if": [
               {
                 "path": "action/0/if",
-                "timestamp": "2023-06-27T14:12:16.323603+00:00",
+                "timestamp": "2023-07-02T12:13:12.938628+00:00",
                 "result": {
                   "result": true
                 }
@@ -120,7 +656,7 @@
             "action/0/if/condition/0": [
               {
                 "path": "action/0/if/condition/0",
-                "timestamp": "2023-06-27T14:12:16.323654+00:00",
+                "timestamp": "2023-07-02T12:13:12.938695+00:00",
                 "result": {
                   "result": true
                 }
@@ -129,7 +665,7 @@
             "action/0/if/condition/0/entity_id/0": [
               {
                 "path": "action/0/if/condition/0/entity_id/0",
-                "timestamp": "2023-06-27T14:12:16.323693+00:00",
+                "timestamp": "2023-07-02T12:13:12.938733+00:00",
                 "result": {
                   "result": true,
                   "state": "on",
@@ -140,7 +676,7 @@
             "action/0/then/0": [
               {
                 "path": "action/0/then/0",
-                "timestamp": "2023-06-27T14:12:16.324148+00:00",
+                "timestamp": "2023-07-02T12:13:12.939813+00:00",
                 "result": {
                   "params": {
                     "domain": "light",
@@ -229,19 +765,19 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01H3YK5AT2N3A66Z3T467NQAW6",
-            "parent_id": "01H3YK5AT1WRJCZSDFH31G69XA",
+            "id": "01H4B8AXV89ND8GA6117GPAYB9",
+            "parent_id": "01H4B8AXV7FP2HTR26VCJMMYCK",
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0/then/0",
-          "run_id": "3c6173a4df8e5080ae16989c1b7e9a10",
+          "run_id": "0ddb3125c17d9165f6afabcc33b5712e",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-06-27T14:12:16.322726+00:00",
-            "finish": "2023-06-27T14:12:16.336126+00:00"
+            "start": "2023-07-02T12:13:12.936702+00:00",
+            "finish": "2023-07-02T12:13:12.944217+00:00"
           },
           "domain": "automation",
           "item_id": "1687685658556",
@@ -251,12 +787,12 @@
       {
         "extended_dict": {
           "last_step": "action/0/then/0",
-          "run_id": "0374b71e60af67848d41423859726a43",
+          "run_id": "2c8589804a55cb6a1e6c3b3e327bf6d9",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-06-27T14:12:26.329998+00:00",
-            "finish": "2023-06-27T14:12:26.337354+00:00"
+            "start": "2023-07-02T12:13:22.937408+00:00",
+            "finish": "2023-07-02T12:13:22.946316+00:00"
           },
           "domain": "automation",
           "item_id": "1687685658556",
@@ -265,23 +801,23 @@
             "trigger/1": [
               {
                 "path": "trigger/1",
-                "timestamp": "2023-06-27T14:12:26.330108+00:00",
+                "timestamp": "2023-07-02T12:13:22.937507+00:00",
                 "changed_variables": {
                   "this": {
                     "entity_id": "automation.pc_ambi",
                     "state": "on",
                     "attributes": {
-                      "last_triggered": "2023-06-27T14:12:16.322977+00:00",
+                      "last_triggered": "2023-07-02T12:13:12.936917+00:00",
                       "mode": "single",
                       "current": 0,
                       "id": "1687685658556",
                       "friendly_name": "Ambi PC"
                     },
-                    "last_changed": "2023-06-27T14:12:07.080819+00:00",
-                    "last_updated": "2023-06-27T14:12:16.335974+00:00",
+                    "last_changed": "2023-07-01T23:20:09.170560+00:00",
+                    "last_updated": "2023-07-02T12:13:12.943376+00:00",
                     "context": {
-                      "id": "01H3YK5AT2N3A66Z3T467NQAW6",
-                      "parent_id": "01H3YK5AT1WRJCZSDFH31G69XA",
+                      "id": "01H4B8AXV89ND8GA6117GPAYB9",
+                      "parent_id": "01H4B8AXV7FP2HTR26VCJMMYCK",
                       "user_id": null
                     }
                   },
@@ -295,17 +831,17 @@
                       "entity_id": "binary_sensor.pc",
                       "state": "on",
                       "attributes": {
-                        "round_trip_time_avg": 1.023,
-                        "round_trip_time_max": 1.09,
+                        "round_trip_time_avg": 1.021,
+                        "round_trip_time_max": 1.144,
                         "round_trip_time_mdev": "",
-                        "round_trip_time_min": 0.977,
+                        "round_trip_time_min": 0.889,
                         "device_class": "connectivity",
                         "friendly_name": "PC"
                       },
-                      "last_changed": "2023-06-27T14:12:07.311443+00:00",
-                      "last_updated": "2023-06-27T14:12:16.321579+00:00",
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:12.935450+00:00",
                       "context": {
-                        "id": "01H3YK5AT1WRJCZSDFH31G69XA",
+                        "id": "01H4B8AXV7FP2HTR26VCJMMYCK",
                         "parent_id": null,
                         "user_id": null
                       }
@@ -314,17 +850,17 @@
                       "entity_id": "binary_sensor.pc",
                       "state": "on",
                       "attributes": {
-                        "round_trip_time_avg": 1.739,
-                        "round_trip_time_max": 5.051,
+                        "round_trip_time_avg": 0.927,
+                        "round_trip_time_max": 1.048,
                         "round_trip_time_mdev": "",
-                        "round_trip_time_min": 0.788,
+                        "round_trip_time_min": 0.791,
                         "device_class": "connectivity",
                         "friendly_name": "PC"
                       },
-                      "last_changed": "2023-06-27T14:12:07.311443+00:00",
-                      "last_updated": "2023-06-27T14:12:26.327424+00:00",
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:22.935903+00:00",
                       "context": {
-                        "id": "01H3YK5MJQ8F9TYPSQNRAB1JGR",
+                        "id": "01H4B8B7KQ9XPM0ZR3V6X3PZ7Q",
                         "parent_id": null,
                         "user_id": null
                       }
@@ -339,11 +875,11 @@
             "action/0": [
               {
                 "path": "action/0",
-                "timestamp": "2023-06-27T14:12:26.331404+00:00",
+                "timestamp": "2023-07-02T12:13:22.939213+00:00",
                 "changed_variables": {
                   "context": {
-                    "id": "01H3YK5MJSTB6YBS1ZR4XZCEME",
-                    "parent_id": "01H3YK5MJQ8F9TYPSQNRAB1JGR",
+                    "id": "01H4B8B7KSY14T2FEVQT7N9YGX",
+                    "parent_id": "01H4B8B7KQ9XPM0ZR3V6X3PZ7Q",
                     "user_id": null
                   }
                 },
@@ -355,7 +891,7 @@
             "action/0/if": [
               {
                 "path": "action/0/if",
-                "timestamp": "2023-06-27T14:12:26.331973+00:00",
+                "timestamp": "2023-07-02T12:13:22.939339+00:00",
                 "result": {
                   "result": true
                 }
@@ -364,7 +900,7 @@
             "action/0/if/condition/0": [
               {
                 "path": "action/0/if/condition/0",
-                "timestamp": "2023-06-27T14:12:26.332029+00:00",
+                "timestamp": "2023-07-02T12:13:22.939377+00:00",
                 "result": {
                   "result": true
                 }
@@ -373,7 +909,7 @@
             "action/0/if/condition/0/entity_id/0": [
               {
                 "path": "action/0/if/condition/0/entity_id/0",
-                "timestamp": "2023-06-27T14:12:26.332071+00:00",
+                "timestamp": "2023-07-02T12:13:22.939413+00:00",
                 "result": {
                   "result": true,
                   "state": "on",
@@ -384,7 +920,7 @@
             "action/0/then/0": [
               {
                 "path": "action/0/then/0",
-                "timestamp": "2023-06-27T14:12:26.332544+00:00",
+                "timestamp": "2023-07-02T12:13:22.939969+00:00",
                 "result": {
                   "params": {
                     "domain": "light",
@@ -473,23 +1009,1305 @@
           },
           "blueprint_inputs": null,
           "context": {
-            "id": "01H3YK5MJSTB6YBS1ZR4XZCEME",
-            "parent_id": "01H3YK5MJQ8F9TYPSQNRAB1JGR",
+            "id": "01H4B8B7KSY14T2FEVQT7N9YGX",
+            "parent_id": "01H4B8B7KQ9XPM0ZR3V6X3PZ7Q",
             "user_id": null
           }
         },
         "short_dict": {
           "last_step": "action/0/then/0",
-          "run_id": "0374b71e60af67848d41423859726a43",
+          "run_id": "2c8589804a55cb6a1e6c3b3e327bf6d9",
           "state": "stopped",
           "script_execution": "finished",
           "timestamp": {
-            "start": "2023-06-27T14:12:26.329998+00:00",
-            "finish": "2023-06-27T14:12:26.337354+00:00"
+            "start": "2023-07-02T12:13:22.937408+00:00",
+            "finish": "2023-07-02T12:13:22.946316+00:00"
           },
           "domain": "automation",
           "item_id": "1687685658556",
           "trigger": "state of binary_sensor.pc"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "dd6983cba21bd1dab315c1743f873c5e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:32.939559+00:00",
+            "finish": "2023-07-02T12:13:32.947824+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-07-02T12:13:32.939685+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pc_ambi",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-02T12:13:22.937615+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1687685658556",
+                      "friendly_name": "Ambi PC"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.170560+00:00",
+                    "last_updated": "2023-07-02T12:13:22.943544+00:00",
+                    "context": {
+                      "id": "01H4B8B7KSY14T2FEVQT7N9YGX",
+                      "parent_id": "01H4B8B7KQ9XPM0ZR3V6X3PZ7Q",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "from_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 0.927,
+                        "round_trip_time_max": 1.048,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.791,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:22.935903+00:00",
+                      "context": {
+                        "id": "01H4B8B7KQ9XPM0ZR3V6X3PZ7Q",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 1.099,
+                        "round_trip_time_max": 1.268,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.982,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:32.938088+00:00",
+                      "context": {
+                        "id": "01H4B8BHCANRVYDBMC5QWJ5R5S",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of binary_sensor.pc"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T12:13:32.941433+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B8BHCB1146RDGTDYGZ9VJV",
+                    "parent_id": "01H4B8BHCANRVYDBMC5QWJ5R5S",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": "then"
+                }
+              }
+            ],
+            "action/0/if": [
+              {
+                "path": "action/0/if",
+                "timestamp": "2023-07-02T12:13:32.941519+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0": [
+              {
+                "path": "action/0/if/condition/0",
+                "timestamp": "2023-07-02T12:13:32.941555+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0/entity_id/0": [
+              {
+                "path": "action/0/if/condition/0/entity_id/0",
+                "timestamp": "2023-07-02T12:13:32.941590+00:00",
+                "result": {
+                  "result": true,
+                  "state": "on",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/then/0": [
+              {
+                "path": "action/0/then/0",
+                "timestamp": "2023-07-02T12:13:32.942028+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {
+                      "transition": 2,
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1687685658556",
+            "alias": "Ambi PC",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.wled"
+                ],
+                "to": "on"
+              },
+              {
+                "platform": "state",
+                "entity_id": [
+                  "binary_sensor.pc"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "service": "light.turn_on",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  }
+                ],
+                "else": [
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  },
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "device_id": "2bb61f7024458f42a7405371fe585c68"
+                    }
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B8BHCB1146RDGTDYGZ9VJV",
+            "parent_id": "01H4B8BHCANRVYDBMC5QWJ5R5S",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "dd6983cba21bd1dab315c1743f873c5e",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:32.939559+00:00",
+            "finish": "2023-07-02T12:13:32.947824+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "ff98044ab924df3fb6cfbb720abca983",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:42.948343+00:00",
+            "finish": "2023-07-02T12:13:42.953686+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-07-02T12:13:42.948422+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pc_ambi",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-02T12:13:32.939811+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1687685658556",
+                      "friendly_name": "Ambi PC"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.170560+00:00",
+                    "last_updated": "2023-07-02T12:13:32.946503+00:00",
+                    "context": {
+                      "id": "01H4B8BHCB1146RDGTDYGZ9VJV",
+                      "parent_id": "01H4B8BHCANRVYDBMC5QWJ5R5S",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "from_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 1.099,
+                        "round_trip_time_max": 1.268,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.982,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:32.938088+00:00",
+                      "context": {
+                        "id": "01H4B8BHCANRVYDBMC5QWJ5R5S",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 1.562,
+                        "round_trip_time_max": 4.045,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.785,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:42.946325+00:00",
+                      "context": {
+                        "id": "01H4B8BV52XYBXVJAHQFM392P4",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of binary_sensor.pc"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T12:13:42.949488+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B8BV54P1BVZCCZ69G1DV0B",
+                    "parent_id": "01H4B8BV52XYBXVJAHQFM392P4",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": "then"
+                }
+              }
+            ],
+            "action/0/if": [
+              {
+                "path": "action/0/if",
+                "timestamp": "2023-07-02T12:13:42.949552+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0": [
+              {
+                "path": "action/0/if/condition/0",
+                "timestamp": "2023-07-02T12:13:42.949580+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0/entity_id/0": [
+              {
+                "path": "action/0/if/condition/0/entity_id/0",
+                "timestamp": "2023-07-02T12:13:42.949607+00:00",
+                "result": {
+                  "result": true,
+                  "state": "on",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/then/0": [
+              {
+                "path": "action/0/then/0",
+                "timestamp": "2023-07-02T12:13:42.949927+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {
+                      "transition": 2,
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1687685658556",
+            "alias": "Ambi PC",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.wled"
+                ],
+                "to": "on"
+              },
+              {
+                "platform": "state",
+                "entity_id": [
+                  "binary_sensor.pc"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "service": "light.turn_on",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  }
+                ],
+                "else": [
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  },
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "device_id": "2bb61f7024458f42a7405371fe585c68"
+                    }
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B8BV54P1BVZCCZ69G1DV0B",
+            "parent_id": "01H4B8BV52XYBXVJAHQFM392P4",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "ff98044ab924df3fb6cfbb720abca983",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:42.948343+00:00",
+            "finish": "2023-07-02T12:13:42.953686+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "576d988b3d9ce4384cb216b32701d6cb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:52.944781+00:00",
+            "finish": "2023-07-02T12:13:52.952516+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-07-02T12:13:52.944890+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.pc_ambi",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-02T12:13:42.948519+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1687685658556",
+                      "friendly_name": "Ambi PC"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.170560+00:00",
+                    "last_updated": "2023-07-02T12:13:42.952893+00:00",
+                    "context": {
+                      "id": "01H4B8BV54P1BVZCCZ69G1DV0B",
+                      "parent_id": "01H4B8BV52XYBXVJAHQFM392P4",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "from_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 1.562,
+                        "round_trip_time_max": 4.045,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.785,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:42.946325+00:00",
+                      "context": {
+                        "id": "01H4B8BV52XYBXVJAHQFM392P4",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "binary_sensor.pc",
+                      "state": "on",
+                      "attributes": {
+                        "round_trip_time_avg": 0.978,
+                        "round_trip_time_max": 1.115,
+                        "round_trip_time_mdev": "",
+                        "round_trip_time_min": 0.867,
+                        "device_class": "connectivity",
+                        "friendly_name": "PC"
+                      },
+                      "last_changed": "2023-07-02T09:23:04.059263+00:00",
+                      "last_updated": "2023-07-02T12:13:52.943369+00:00",
+                      "context": {
+                        "id": "01H4B8C4XFSMKVH3ZGCHKK6BPH",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of binary_sensor.pc"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T12:13:52.946625+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B8C4XGCTJN7BWXQ7TPVBQQ",
+                    "parent_id": "01H4B8C4XFSMKVH3ZGCHKK6BPH",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": "then"
+                }
+              }
+            ],
+            "action/0/if": [
+              {
+                "path": "action/0/if",
+                "timestamp": "2023-07-02T12:13:52.946736+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0": [
+              {
+                "path": "action/0/if/condition/0",
+                "timestamp": "2023-07-02T12:13:52.946774+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/if/condition/0/entity_id/0": [
+              {
+                "path": "action/0/if/condition/0/entity_id/0",
+                "timestamp": "2023-07-02T12:13:52.946808+00:00",
+                "result": {
+                  "result": true,
+                  "state": "on",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/then/0": [
+              {
+                "path": "action/0/then/0",
+                "timestamp": "2023-07-02T12:13:52.947222+00:00",
+                "result": {
+                  "params": {
+                    "domain": "light",
+                    "service": "turn_on",
+                    "service_data": {
+                      "transition": 2,
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    },
+                    "target": {
+                      "entity_id": [
+                        "light.toptable"
+                      ]
+                    }
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1687685658556",
+            "alias": "Ambi PC",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.wled"
+                ],
+                "to": "on"
+              },
+              {
+                "platform": "state",
+                "entity_id": [
+                  "binary_sensor.pc"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "binary_sensor.pc",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "service": "light.turn_on",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  }
+                ],
+                "else": [
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "entity_id": "light.toptable"
+                    }
+                  },
+                  {
+                    "service": "light.turn_off",
+                    "data": {
+                      "transition": 2
+                    },
+                    "target": {
+                      "device_id": "2bb61f7024458f42a7405371fe585c68"
+                    }
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B8C4XGCTJN7BWXQ7TPVBQQ",
+            "parent_id": "01H4B8C4XFSMKVH3ZGCHKK6BPH",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/then/0",
+          "run_id": "576d988b3d9ce4384cb216b32701d6cb",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T12:13:52.944781+00:00",
+            "finish": "2023-07-02T12:13:52.952516+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1687685658556",
+          "trigger": "state of binary_sensor.pc"
+        }
+      }
+    ],
+    "automation.1673812981370": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "df4195d7b8c83241cee3f09a1d8691e0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T10:00:00.167341+00:00",
+            "finish": "2023-07-02T10:00:00.172787+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1673812981370",
+          "trigger": "time",
+          "trace": {
+            "trigger/1": [
+              {
+                "path": "trigger/1",
+                "timestamp": "2023-07-02T10:00:00.167401+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sets_sleep_retain_status",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-01T19:00:00.372348+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1673812981370",
+                      "friendly_name": "Sets sleep retain status"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.169761+00:00",
+                    "last_updated": "2023-07-01T23:20:09.169761+00:00",
+                    "context": {
+                      "id": "01H49W3D6HD5F66YQ0NH3ACJ8T",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "1",
+                    "idx": "1",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2023-07-02T12:00:00.167007+02:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T10:00:00.167927+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B0Q0D7R2RQXFB7H4R7DNKK",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false,
+                  "limit": 10
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1673812981370",
+            "alias": "Sets sleep retain status",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "21:00:00"
+              },
+              {
+                "platform": "time",
+                "at": "12:00:00"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"pirOff\", \"event\": \"radioSilence\" }",
+                  "retain": true
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B0Q0D7R2RQXFB7H4R7DNKK",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "df4195d7b8c83241cee3f09a1d8691e0",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T10:00:00.167341+00:00",
+            "finish": "2023-07-02T10:00:00.172787+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1673812981370",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.1677364163504": [
+      {
+        "extended_dict": {
+          "last_step": "action/1/then/0",
+          "run_id": "2adec2974577dca8ad330a47b41eacee",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T11:24:46.765548+00:00",
+            "finish": "2023-07-02T11:24:48.773007+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677364163504",
+          "trigger": "state of light.tasmota_3",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-07-02T11:24:46.765595+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.correct_kitchen_table_dimmer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-01T11:30:36.881179+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1677364163504",
+                      "friendly_name": "Correct kitchen table dimmer"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.170431+00:00",
+                    "last_updated": "2023-07-01T23:20:09.170431+00:00",
+                    "context": {
+                      "id": "01H49W3D6J9AZ2HRQD5Y0592FB",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.tasmota_3",
+                    "from_state": {
+                      "entity_id": "light.tasmota_3",
+                      "state": "on",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": "brightness",
+                        "brightness": 255,
+                        "friendly_name": "Kitchen Table Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-02T09:45:39.027739+00:00",
+                      "last_updated": "2023-07-02T09:45:39.027739+00:00",
+                      "context": {
+                        "id": "01H4AZWQEKT0R5JFBRQR9HXVEZ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.tasmota_3",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Kitchen Table Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-02T11:24:46.764700+00:00",
+                      "last_updated": "2023-07-02T11:24:46.764700+00:00",
+                      "context": {
+                        "id": "01H4B5J7SCRZ8834FJNY8MW8JJ",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.tasmota_3"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T11:24:46.766516+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+                    "parent_id": "01H4B5J7SCRZ8834FJNY8MW8JJ",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "delay": 2.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-07-02T11:24:48.767795+00:00",
+                "result": {
+                  "choice": "then"
+                }
+              }
+            ],
+            "action/1/if": [
+              {
+                "path": "action/1/if",
+                "timestamp": "2023-07-02T11:24:48.768061+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/1/if/condition/0": [
+              {
+                "path": "action/1/if/condition/0",
+                "timestamp": "2023-07-02T11:24:48.768104+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/1/if/condition/0/entity_id/0": [
+              {
+                "path": "action/1/if/condition/0/entity_id/0",
+                "timestamp": "2023-07-02T11:24:48.768136+00:00",
+                "result": {
+                  "result": true,
+                  "state": "on",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/1/then/0": [
+              {
+                "path": "action/1/then/0",
+                "timestamp": "2023-07-02T11:24:48.768639+00:00"
+              }
+            ]
+          },
+          "config": {
+            "id": "1677364163504",
+            "alias": "Correct kitchen table dimmer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.tasmota_3"
+                ],
+                "to": "off",
+                "from": "on"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "light.tasmota_3",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "type": "turn_off",
+                    "device_id": "24e2f44a884006a8f9d8f10b8fb2ca91",
+                    "entity_id": "light.tasmota_3",
+                    "domain": "light"
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+            "parent_id": "01H4B5J7SCRZ8834FJNY8MW8JJ",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1/then/0",
+          "run_id": "2adec2974577dca8ad330a47b41eacee",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T11:24:46.765548+00:00",
+            "finish": "2023-07-02T11:24:48.773007+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677364163504",
+          "trigger": "state of light.tasmota_3"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "8865deb27bfda6739000392d6e449d18",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T11:24:49.334251+00:00",
+            "finish": "2023-07-02T11:24:51.336641+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677364163504",
+          "trigger": "state of light.tasmota_3",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2023-07-02T11:24:49.334323+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.correct_kitchen_table_dimmer",
+                    "state": "on",
+                    "attributes": {
+                      "last_triggered": "2023-07-02T11:24:46.765690+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "id": "1677364163504",
+                      "friendly_name": "Correct kitchen table dimmer"
+                    },
+                    "last_changed": "2023-07-01T23:20:09.170431+00:00",
+                    "last_updated": "2023-07-02T11:24:48.772846+00:00",
+                    "context": {
+                      "id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+                      "parent_id": "01H4B5J7SCRZ8834FJNY8MW8JJ",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.tasmota_3",
+                    "from_state": {
+                      "entity_id": "light.tasmota_3",
+                      "state": "on",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": "brightness",
+                        "brightness": 255,
+                        "friendly_name": "Kitchen Table Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-02T11:24:46.764981+00:00",
+                      "last_updated": "2023-07-02T11:24:46.764981+00:00",
+                      "context": {
+                        "id": "01H4B5J7SCACAH0VW3WSQAMZ2Q",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.tasmota_3",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Kitchen Table Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2023-07-02T11:24:49.333717+00:00",
+                      "last_updated": "2023-07-02T11:24:49.333717+00:00",
+                      "context": {
+                        "id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+                        "parent_id": "01H4B5J7SCRZ8834FJNY8MW8JJ",
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.tasmota_3"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2023-07-02T11:24:49.334872+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01H4B5JA9PW5ZPBS28N49WR8CN",
+                    "parent_id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "delay": 2.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2023-07-02T11:24:51.335737+00:00"
+              }
+            ],
+            "action/1/if": [
+              {
+                "path": "action/1/if",
+                "timestamp": "2023-07-02T11:24:51.335837+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0": [
+              {
+                "path": "action/1/if/condition/0",
+                "timestamp": "2023-07-02T11:24:51.335873+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0/entity_id/0": [
+              {
+                "path": "action/1/if/condition/0/entity_id/0",
+                "timestamp": "2023-07-02T11:24:51.335910+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1677364163504",
+            "alias": "Correct kitchen table dimmer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.tasmota_3"
+                ],
+                "to": "off",
+                "from": "on"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "light.tasmota_3",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "type": "turn_off",
+                    "device_id": "24e2f44a884006a8f9d8f10b8fb2ca91",
+                    "entity_id": "light.tasmota_3",
+                    "domain": "light"
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01H4B5JA9PW5ZPBS28N49WR8CN",
+            "parent_id": "01H4B5J7SD0DNTX68N7TJA1BQ0",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "8865deb27bfda6739000392d6e449d18",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2023-07-02T11:24:49.334251+00:00",
+            "finish": "2023-07-02T11:24:51.336641+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677364163504",
+          "trigger": "state of light.tasmota_3"
         }
       }
     ]

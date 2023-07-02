@@ -502,23 +502,43 @@
           "badges": [],
           "cards": [
             {
-              "show_name": true,
-              "show_icon": true,
-              "type": "button",
-              "tap_action": {
-                "action": "toggle"
-              },
-              "entity": "switch.downwateringvent",
-              "name": "Watering (down)",
-              "icon_height": "35px"
+              "type": "gauge",
+              "entity": "sensor.rainfall_24h",
+              "max": 10,
+              "needle": false
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                {
+                  "entity": "sensor.house_precipitation"
+                }
+              ],
+              "hours_to_show": 24
             },
             {
               "type": "history-graph",
               "entities": [
                 {
                   "entity": "switch.downwateringvent"
+                },
+                {
+                  "entity": "switch.top_watering_vent"
                 }
-              ]
+              ],
+              "hours_to_show": 12
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.downwateringvent"
+                },
+                {
+                  "entity": "switch.top_watering_vent"
+                }
+              ],
+              "state_color": false
             }
           ]
         },

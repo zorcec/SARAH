@@ -1,0 +1,6 @@
+- platform: statistics
+  name: "Rainfall 24h"
+  entity_id: sensor.house_precipitation
+  state_characteristic: mean
+  max_age:
+    hours: 24
