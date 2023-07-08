@@ -258,7 +258,11 @@
     at: 01:00:00
   - platform: time
     at: 06:00:00
-  condition: []
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.rainfall_24h
+    attribute: source_value_valid
+    below: 1
   action:
   - service: switch.turn_on
     data: {}
@@ -273,22 +277,54 @@
     data: {}
     target:
       entity_id: switch.downwateringvent
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 5
-      milliseconds: 0
-  - service: switch.turn_off
-    data: {}
-    target:
-      entity_id: switch.downwateringvent
   - if:
     - condition: state
       entity_id: switch.downwateringvent
       state: 'off'
     then: []
     else:
-    - service: notify.notify
+    - service: notify.simplepush
       data:
-        message: Can't turn off watering vent!
+        message: Can't turn off watering vent "down"!
+  mode: single
+- id: '1688744623083'
+  alias: Watering Up
+  description: ''
+  trigger:
+  - platform: time
+    at: 01:00:00
+  - platform: time
+    at: 02:00:00
+    enabled: false
+  - platform: time
+    at: 03:00:00
+    enabled: true
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.rainfall_24h
+    attribute: source_value_valid
+    below: 1
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.top_watering_vent
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.top_watering_vent
+  - if:
+    - condition: state
+      entity_id: switch.top_watering_vent
+      state: 'off'
+    then: []
+    else:
+    - service: notify.simplepush
+      data:
+        message: Can't turn off watering vent "up"!
   mode: single

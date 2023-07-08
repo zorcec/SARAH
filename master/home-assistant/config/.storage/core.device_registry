@@ -32,7 +32,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.30/",
+        "configuration_url": "http://192.168.0.226/",
         "connections": [
           [
             "mac",
@@ -56,7 +56,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.28/",
+        "configuration_url": "http://192.168.0.207/",
         "connections": [
           [
             "mac",
@@ -80,7 +80,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.26/",
+        "configuration_url": "http://192.168.0.180/",
         "connections": [
           [
             "mac",
@@ -153,7 +153,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.29/",
+        "configuration_url": "http://192.168.0.235/",
         "connections": [
           [
             "mac",
@@ -177,7 +177,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.27/",
+        "configuration_url": "http://192.168.0.166/",
         "connections": [
           [
             "mac",
@@ -199,10 +199,10 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
+          "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.31/",
+        "configuration_url": "http://192.168.0.183/",
         "connections": [
           [
             "mac",
@@ -297,10 +297,10 @@
       {
         "area_id": "kitchen",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "382fb9a149318a1ffa6815b03dd73163"
+          "382fb9a149318a1ffa6815b03dd73163",
+          "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.32/",
+        "configuration_url": "http://192.168.0.200/",
         "connections": [
           [
             "mac",
@@ -324,7 +324,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.224/",
         "connections": [
           [
             "mac",
@@ -420,7 +420,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.36/",
+        "configuration_url": "http://192.168.0.167/",
         "connections": [
           [
             "mac",
@@ -541,7 +541,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.24/",
+        "configuration_url": "http://192.168.0.19/",
         "connections": [
           [
             "mac",
@@ -589,7 +589,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.25/",
+        "configuration_url": "http://192.168.0.17/",
         "connections": [
           [
             "mac",
@@ -613,7 +613,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.22/",
+        "configuration_url": "http://192.168.0.168/",
         "connections": [
           [
             "mac",
@@ -661,7 +661,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.14/",
+        "configuration_url": "http://192.168.0.22/",
         "connections": [
           [
             "mac",
@@ -757,7 +757,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.17/",
+        "configuration_url": "http://192.168.0.14/",
         "connections": [
           [
             "mac",
@@ -976,6 +976,30 @@
         "name_by_user": null,
         "name": "top-watering-vent",
         "sw_version": "12.5.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "2949faf7761a4679e11194d6586339a8"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2a6c3102f816b9bb8c95d21729c6404d",
+        "identifiers": [
+          [
+            "mobile_app",
+            "9ff121b94a4f794f"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-M135F",
+        "name_by_user": null,
+        "name": "samsung-dragica",
+        "sw_version": "33",
         "via_device_id": null
       }
     ],

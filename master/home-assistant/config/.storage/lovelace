@@ -504,8 +504,8 @@
             {
               "type": "gauge",
               "entity": "sensor.rainfall_24h",
-              "max": 10,
-              "needle": false
+              "needle": false,
+              "max": 1
             },
             {
               "type": "history-graph",

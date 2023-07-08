@@ -328,6 +328,53 @@
         "source": "user",
         "unique_id": "8caab57ce69d",
         "disabled_by": "user"
+      },
+      {
+        "entry_id": "2949faf7761a4679e11194d6586339a8",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "samsung-dragica",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2023.6.0-full (10170)",
+          "device_name": "samsung-dragica",
+          "manufacturer": "samsung",
+          "model": "SM-M135F",
+          "os_name": "Android",
+          "os_version": "33",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "f1lgMogJQkC6t22Tl7adqW:APA91bE6UoZYuycgV0q5-2VsBoifeGwjqz8vVuOSvEdpduFQTORP0a0nP2Gh9HoyGiTElNAJQsqguYwXu5TBE890EQdlafoY1N-oudkbC5i8ui_mX4okrzsdv0vaAiVLc0OKIPHAYgdM"
+          },
+          "device_id": "9ff121b94a4f794f",
+          "webhook_id": "9cf156e8d673627d18b997038c91d695fc64f4fc8196ee1a43d3d5764a0a1110",
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-9ff121b94a4f794f",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "052a33dea9693ef4294126ae5197b113",
+        "version": 1,
+        "domain": "simplepush",
+        "title": "simplepush",
+        "data": {
+          "device_key": "wfuaqw",
+          "name": "simplepush"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "wfuaqw",
+        "disabled_by": null
       }
     ]
   }
