@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "minor_version": 3,
+  "minor_version": 4,
   "key": "core.device_registry",
   "data": {
     "devices": [
@@ -25,7 +25,8 @@
         "name_by_user": null,
         "name": "Forecast",
         "sw_version": null,
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -49,7 +50,8 @@
         "name_by_user": null,
         "name": "top-dimmer1",
         "sw_version": "12.4.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -73,7 +75,8 @@
         "name_by_user": null,
         "name": "down-dimmer1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -97,7 +100,8 @@
         "name_by_user": null,
         "name": "down-dimmer2",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -121,7 +125,8 @@
         "name_by_user": null,
         "name": "down-sensor",
         "sw_version": "12.2.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -146,7 +151,8 @@
         "name_by_user": null,
         "name": "bedroom-touch2",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kid",
@@ -170,7 +176,8 @@
         "name_by_user": null,
         "name": "kid-dimmer1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -194,7 +201,8 @@
         "name_by_user": null,
         "name": "top-switch1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -219,7 +227,8 @@
         "name_by_user": null,
         "name": "bedroom-touch3",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -243,7 +252,8 @@
         "name_by_user": null,
         "name": "bedroom-led",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -267,7 +277,8 @@
         "name_by_user": null,
         "name": "bedroom-touch1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -292,7 +303,8 @@
         "name_by_user": null,
         "name": "top-touch2",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -317,7 +329,8 @@
         "name_by_user": null,
         "name": "down-touch2",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -341,7 +354,8 @@
         "name_by_user": null,
         "name": "down-touch1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -365,7 +379,8 @@
         "name_by_user": null,
         "name": "Tasmota",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bathroom",
@@ -389,7 +404,8 @@
         "name_by_user": null,
         "name": "bathroom-water",
         "sw_version": "12.2.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -413,7 +429,8 @@
         "name_by_user": null,
         "name": "M2004J19C",
         "sw_version": "31",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -437,7 +454,8 @@
         "name_by_user": null,
         "name": "bedroom-sensor",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -461,7 +479,8 @@
         "name_by_user": null,
         "name": "top-sofa-led",
         "sw_version": "12.2.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -485,7 +504,8 @@
         "name_by_user": null,
         "name": "tasmesh-1",
         "sw_version": "12.2.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -509,7 +529,8 @@
         "name_by_user": null,
         "name": "top-sensor",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bedroom",
@@ -534,7 +555,8 @@
         "name_by_user": null,
         "name": "middle-hall-switch",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bathroom",
@@ -558,7 +580,8 @@
         "name_by_user": null,
         "name": "bathroom-dimmer1",
         "sw_version": "12.4.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -582,7 +605,8 @@
         "name_by_user": null,
         "name": null,
         "sw_version": null,
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bathroom",
@@ -606,7 +630,8 @@
         "name_by_user": null,
         "name": "bathroom-sensor",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -630,7 +655,8 @@
         "name_by_user": null,
         "name": "down-heating-pump",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -654,7 +680,8 @@
         "name_by_user": null,
         "name": "HACS",
         "sw_version": "1.29.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -678,7 +705,8 @@
         "name_by_user": null,
         "name": "heating_controller_1",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -702,7 +730,8 @@
         "name_by_user": null,
         "name": "heating_controller_2",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -726,7 +755,8 @@
         "name_by_user": null,
         "name": "Scheduler",
         "sw_version": "3.2.14",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "bathroom",
@@ -750,7 +780,8 @@
         "name_by_user": null,
         "name": "BathroomFan",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -774,7 +805,8 @@
         "name_by_user": null,
         "name": "Tasmota",
         "sw_version": "12.4.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -798,7 +830,8 @@
         "name_by_user": null,
         "name": "Tasmota",
         "sw_version": "12.4.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -822,7 +855,8 @@
         "name_by_user": null,
         "name": "down-terrace-ambient",
         "sw_version": "12.3.1",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -846,7 +880,8 @@
         "name_by_user": null,
         "name": "top-table",
         "sw_version": "12.4.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "kitchen",
@@ -870,7 +905,8 @@
         "name_by_user": "Kitchen Power",
         "name": "kitchen-power",
         "sw_version": "12.5.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -899,7 +935,8 @@
         "name_by_user": null,
         "name": "WLED",
         "sw_version": "0.14.0-b3",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -923,7 +960,8 @@
         "name_by_user": null,
         "name": "House",
         "sw_version": null,
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -952,7 +990,8 @@
         "name_by_user": null,
         "name": "WLED",
         "sw_version": "0.14.0-b3",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": "living_room",
@@ -976,7 +1015,8 @@
         "name_by_user": null,
         "name": "top-watering-vent",
         "sw_version": "12.5.0",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       },
       {
         "area_id": null,
@@ -1000,7 +1040,8 @@
         "name_by_user": null,
         "name": "samsung-dragica",
         "sw_version": "33",
-        "via_device_id": null
+        "via_device_id": null,
+        "serial_number": null
       }
     ],
     "deleted_devices": [
