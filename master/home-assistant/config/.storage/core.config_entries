@@ -206,7 +206,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2023.6.0-full (10170)",
+          "app_version": "2023.10.2-full (11484)",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
@@ -337,7 +337,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2023.6.0-full (10170)",
+          "app_version": "2023.7.5-full (10506)",
           "device_name": "samsung-dragica",
           "manufacturer": "samsung",
           "model": "SM-M135F",

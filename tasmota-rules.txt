@@ -77,7 +77,7 @@ Rule3
 
 ----- FOR WATERING VENTS -----
 Rule3
-  ON Power1#state=1 DO RuleTimer1 300 ENDON
+  ON Power1#state=1 DO RuleTimer1 120 ENDON
   ON Rules#Timer=1 DO POWER1 0 ENDON
 
 tasmotas - all

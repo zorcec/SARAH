@@ -255,14 +255,10 @@
   - platform: time
     at: '21:00:00'
   - platform: time
-    at: 01:00:00
+    at: 03:00:00
   - platform: time
     at: 06:00:00
-  condition:
-  - condition: numeric_state
-    entity_id: sensor.rainfall_24h
-    attribute: source_value_valid
-    below: 1
+  condition: []
   action:
   - service: switch.turn_on
     data: {}
@@ -270,13 +266,18 @@
       entity_id: switch.downwateringvent
   - delay:
       hours: 0
-      minutes: 3
+      minutes: 2
       seconds: 0
       milliseconds: 0
   - service: switch.turn_off
     data: {}
     target:
       entity_id: switch.downwateringvent
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
   - if:
     - condition: state
       entity_id: switch.downwateringvent
@@ -292,18 +293,14 @@
   description: ''
   trigger:
   - platform: time
-    at: 01:00:00
+    at: '21:00:00'
   - platform: time
-    at: 02:00:00
-    enabled: false
-  - platform: time
-    at: 03:00:00
+    at: '23:00:00'
     enabled: true
-  condition:
-  - condition: numeric_state
-    entity_id: sensor.rainfall_24h
-    attribute: source_value_valid
-    below: 1
+  - platform: time
+    at: 06:30:00
+    enabled: true
+  condition: []
   action:
   - service: switch.turn_on
     data: {}
@@ -318,6 +315,11 @@
     data: {}
     target:
       entity_id: switch.top_watering_vent
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
   - if:
     - condition: state
       entity_id: switch.top_watering_vent

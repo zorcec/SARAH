@@ -505,7 +505,7 @@
               "type": "gauge",
               "entity": "sensor.rainfall_24h",
               "needle": false,
-              "max": 1
+              "max": 2
             },
             {
               "type": "history-graph",
@@ -526,7 +526,7 @@
                   "entity": "switch.top_watering_vent"
                 }
               ],
-              "hours_to_show": 12
+              "hours_to_show": 6
             },
             {
               "type": "entities",
