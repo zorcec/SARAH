@@ -182,72 +182,6 @@
       entity_id: light.tasmota_3
       domain: light
   mode: single
-- id: '1687685658556'
-  alias: Ambi PC
-  description: ''
-  trigger:
-  - platform: state
-    entity_id:
-    - light.wled
-    to: 'on'
-  - platform: state
-    entity_id:
-    - binary_sensor.pc
-  condition: []
-  action:
-  - if:
-    - condition: state
-      entity_id: binary_sensor.pc
-      state: 'on'
-    then:
-    - service: light.turn_on
-      data:
-        transition: 2
-      target:
-        entity_id: light.toptable
-    else:
-    - service: light.turn_off
-      data:
-        transition: 2
-      target:
-        entity_id: light.toptable
-    - service: light.turn_off
-      data:
-        transition: 2
-      target:
-        device_id: 2bb61f7024458f42a7405371fe585c68
-  mode: single
-- id: '1687687698221'
-  alias: Ambi TV
-  description: ''
-  trigger:
-  - platform: state
-    entity_id:
-    - light.wled_2
-    to: 'on'
-  condition: []
-  action:
-  - if:
-    - condition: state
-      entity_id: light.top_tv
-      state: 'on'
-    then: []
-    else:
-    - service: light.turn_off
-      data: {}
-      target:
-        entity_id: light.wled_2
-  - if:
-    - condition: state
-      entity_id: binary_sensor.tv_box
-      state: 'on'
-    then: []
-    else:
-    - service: light.turn_off
-      data: {}
-      target:
-        device_id: 22bba0515b3024cd596043b6cd59fb2f
-  mode: single
 - id: '1687802197772'
   alias: Watering Down
   description: ''
@@ -329,4 +263,35 @@
     - service: notify.simplepush
       data:
         message: Can't turn off watering vent "up"!
+  mode: single
+- id: '1704456499215'
+  alias: Hallway heating
+  description: ''
+  trigger:
+  - platform: time_pattern
+    hours: /2
+  condition: []
+  action:
+  - if:
+    - condition: time
+      after: 05:00:00
+      before: '18:00:00'
+    then:
+    - service: switch.turn_on
+      data: {}
+      target:
+        entity_id:
+        - switch.top_wc_valve
+        - switch.down_hallway_vent
+  - delay:
+      hours: 0
+      minutes: 15
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id:
+      - switch.down_hallway_vent
+      - switch.top_wc_valve
   mode: single

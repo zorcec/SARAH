@@ -24,16 +24,16 @@
         "model": "Forecast",
         "name_by_user": null,
         "name": "Forecast",
+        "serial_number": null,
         "sw_version": null,
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.30/",
+        "configuration_url": "http://192.168.0.31/",
         "connections": [
           [
             "mac",
@@ -49,16 +49,16 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "top-dimmer1",
+        "serial_number": null,
         "sw_version": "12.4.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.36/",
+        "configuration_url": "http://192.168.0.32/",
         "connections": [
           [
             "mac",
@@ -74,16 +74,16 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "down-dimmer1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.32/",
+        "configuration_url": "http://192.168.0.29/",
         "connections": [
           [
             "mac",
@@ -99,16 +99,16 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "down-dimmer2",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.22/",
+        "configuration_url": "http://192.168.0.21/",
         "connections": [
           [
             "mac",
@@ -124,9 +124,9 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "down-sensor",
+        "serial_number": null,
         "sw_version": "12.2.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
@@ -134,7 +134,7 @@
           "a5229f28ddd67c9eae7d75f6de134c24",
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.33/",
+        "configuration_url": "http://192.168.0.37/",
         "connections": [
           [
             "mac",
@@ -150,16 +150,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch2",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kid",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.38/",
+        "configuration_url": "http://192.168.0.30/",
         "connections": [
           [
             "mac",
@@ -175,16 +175,16 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "kid-dimmer1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.37/",
+        "configuration_url": "http://192.168.0.28/",
         "connections": [
           [
             "mac",
@@ -200,17 +200,17 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "top-switch1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
+          "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.40/",
+        "configuration_url": "http://192.168.0.34/",
         "connections": [
           [
             "mac",
@@ -226,16 +226,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch3",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.21/",
+        "configuration_url": "http://192.168.0.38/",
         "connections": [
           [
             "mac",
@@ -251,16 +251,16 @@
         "model": "",
         "name_by_user": null,
         "name": "bedroom-led",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.34/",
+        "configuration_url": "http://192.168.0.33/",
         "connections": [
           [
             "mac",
@@ -276,9 +276,9 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "bedroom-touch1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
@@ -286,7 +286,7 @@
           "5d065252c6e6708bff0e6047b274d820",
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.16/",
+        "configuration_url": "http://192.168.0.26/",
         "connections": [
           [
             "mac",
@@ -302,17 +302,17 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "top-touch2",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "382fb9a149318a1ffa6815b03dd73163"
+          "382fb9a149318a1ffa6815b03dd73163",
+          "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.39/",
+        "configuration_url": "http://192.168.0.36/",
         "connections": [
           [
             "mac",
@@ -328,16 +328,16 @@
         "model": "Sonoff Touch",
         "name_by_user": null,
         "name": "down-touch2",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.31/",
+        "configuration_url": "http://192.168.0.27/",
         "connections": [
           [
             "mac",
@@ -353,16 +353,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "down-touch1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.46/",
+        "configuration_url": "http://192.168.0.44/",
         "connections": [
           [
             "mac",
@@ -378,9 +378,9 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "Tasmota",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bathroom",
@@ -403,9 +403,9 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bathroom-water",
+        "serial_number": null,
         "sw_version": "12.2.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -428,16 +428,16 @@
         "model": "M2004J19C",
         "name_by_user": null,
         "name": "M2004J19C",
+        "serial_number": null,
         "sw_version": "31",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.28/",
+        "configuration_url": "http://192.168.0.18/",
         "connections": [
           [
             "mac",
@@ -453,9 +453,9 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bedroom-sensor",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
@@ -478,9 +478,9 @@
         "model": "MagicHome",
         "name_by_user": null,
         "name": "top-sofa-led",
+        "serial_number": null,
         "sw_version": "12.2.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
@@ -503,16 +503,16 @@
         "model": "Wemos Teleinfo",
         "name_by_user": null,
         "name": "tasmesh-1",
+        "serial_number": null,
         "sw_version": "12.2.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.12/",
+        "configuration_url": "http://192.168.0.16/",
         "connections": [
           [
             "mac",
@@ -528,15 +528,15 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "top-sensor",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "7ef547c6ed4d170d1ecf8f37ca3e8288"
+          "7ef547c6ed4d170d1ecf8f37ca3e8288",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.18/",
         "connections": [
@@ -554,16 +554,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "middle-hall-switch",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bathroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.29/",
+        "configuration_url": "http://192.168.0.23/",
         "connections": [
           [
             "mac",
@@ -579,9 +579,9 @@
         "model": "Tuya MCU",
         "name_by_user": null,
         "name": "bathroom-dimmer1",
+        "serial_number": null,
         "sw_version": "12.4.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -604,16 +604,16 @@
         "model": null,
         "name_by_user": null,
         "name": null,
+        "serial_number": null,
         "sw_version": null,
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bathroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.14/",
+        "configuration_url": "http://192.168.0.13/",
         "connections": [
           [
             "mac",
@@ -629,16 +629,16 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "bathroom-sensor",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.20/",
+        "configuration_url": "http://192.168.0.24/",
         "connections": [
           [
             "mac",
@@ -654,9 +654,9 @@
         "model": "Sonoff Pow R2",
         "name_by_user": null,
         "name": "down-heating-pump",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -679,16 +679,16 @@
         "model": "",
         "name_by_user": null,
         "name": "HACS",
+        "serial_number": null,
         "sw_version": "1.29.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.22/",
         "connections": [
           [
             "mac",
@@ -704,16 +704,16 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "heating_controller_1",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.13/",
+        "configuration_url": "http://192.168.0.14/",
         "connections": [
           [
             "mac",
@@ -729,9 +729,9 @@
         "model": "Generic",
         "name_by_user": null,
         "name": "heating_controller_2",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -754,16 +754,16 @@
         "model": "Scheduler",
         "name_by_user": null,
         "name": "Scheduler",
+        "serial_number": null,
         "sw_version": "3.2.14",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "bathroom",
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.27/",
+        "configuration_url": "http://192.168.0.25/",
         "connections": [
           [
             "mac",
@@ -779,16 +779,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "BathroomFan",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.26/",
+        "configuration_url": "http://192.168.0.19/",
         "connections": [
           [
             "mac",
@@ -804,9 +804,9 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "Tasmota",
+        "serial_number": null,
         "sw_version": "12.4.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -829,16 +829,16 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "Tasmota",
+        "serial_number": null,
         "sw_version": "12.4.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.24/",
+        "configuration_url": "http://192.168.0.20/",
         "connections": [
           [
             "mac",
@@ -854,9 +854,9 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "down-terrace-ambient",
+        "serial_number": null,
         "sw_version": "12.3.1",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -879,9 +879,9 @@
         "model": "Arilux LC01",
         "name_by_user": null,
         "name": "top-table",
+        "serial_number": null,
         "sw_version": "12.4.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "kitchen",
@@ -904,9 +904,9 @@
         "model": "SHP8",
         "name_by_user": "Kitchen Power",
         "name": "kitchen-power",
+        "serial_number": null,
         "sw_version": "12.5.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
@@ -934,9 +934,9 @@
         "model": "FOSS",
         "name_by_user": null,
         "name": "WLED",
+        "serial_number": null,
         "sw_version": "0.14.0-b3",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -959,9 +959,9 @@
         "model": null,
         "name_by_user": null,
         "name": "House",
+        "serial_number": null,
         "sw_version": null,
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
@@ -989,9 +989,9 @@
         "model": "FOSS",
         "name_by_user": null,
         "name": "WLED",
+        "serial_number": null,
         "sw_version": "0.14.0-b3",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": "living_room",
@@ -1014,9 +1014,9 @@
         "model": "Sonoff Basic",
         "name_by_user": null,
         "name": "top-watering-vent",
+        "serial_number": null,
         "sw_version": "12.5.0",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       },
       {
         "area_id": null,
@@ -1039,9 +1039,9 @@
         "model": "SM-M135F",
         "name_by_user": null,
         "name": "samsung-dragica",
+        "serial_number": null,
         "sw_version": "33",
-        "via_device_id": null,
-        "serial_number": null
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

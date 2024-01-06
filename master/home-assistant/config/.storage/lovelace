@@ -26,18 +26,11 @@
                   "icon": "mdi:lightbulb"
                 },
                 {
-                  "entity": "switch.tasmota_6",
-                  "icon": "mdi:lightbulb"
-                },
-                {
                   "entity": "switch.terrace_light",
                   "icon": "mdi:lightbulb"
                 },
                 {
                   "entity": "switch.downterraceambient"
-                },
-                {
-                  "entity": "switch.kitchen_power"
                 }
               ]
             },
@@ -276,12 +269,6 @@
                 },
                 {
                   "entity": "light.toptable"
-                },
-                {
-                  "entity": "light.wled"
-                },
-                {
-                  "entity": "light.wled_2"
                 }
               ]
             },
