@@ -7,6 +7,7 @@
       {
         "entry_id": "1fad98852b40103460bfea301f46391b",
         "version": 1,
+        "minor_version": 1,
         "domain": "met",
         "title": "Home",
         "data": {
@@ -22,6 +23,7 @@
       {
         "entry_id": "7c3b832799f4056db7fb89efe4af3466",
         "version": 1,
+        "minor_version": 1,
         "domain": "radio_browser",
         "title": "Radio Browser",
         "data": {},
@@ -35,6 +37,7 @@
       {
         "entry_id": "309484e349e26c9344076c88446c44e8",
         "version": 1,
+        "minor_version": 1,
         "domain": "mqtt",
         "title": "192.168.0.100",
         "data": {
@@ -69,6 +72,7 @@
       {
         "entry_id": "18b02218197fab69398e60bed0a1f821",
         "version": 1,
+        "minor_version": 1,
         "domain": "tasmota",
         "title": "Tasmota",
         "data": {
@@ -84,6 +88,7 @@
       {
         "entry_id": "2ebe536f6aceaf61b996d8625a468ddc",
         "version": 1,
+        "minor_version": 1,
         "domain": "hacs",
         "title": "",
         "data": {
@@ -108,6 +113,7 @@
       {
         "entry_id": "382fb9a149318a1ffa6815b03dd73163",
         "version": 1,
+        "minor_version": 1,
         "domain": "switch_as_x",
         "title": "Terrace Light",
         "data": {},
@@ -124,6 +130,7 @@
       {
         "entry_id": "a5229f28ddd67c9eae7d75f6de134c24",
         "version": 1,
+        "minor_version": 1,
         "domain": "switch_as_x",
         "title": "Bedrom Bed Light",
         "data": {},
@@ -140,6 +147,7 @@
       {
         "entry_id": "38c9f9b6a8a2f6aadf3cdc10bbf48082",
         "version": 1,
+        "minor_version": 1,
         "domain": "switch_as_x",
         "title": "Bedrom Balcony Light",
         "data": {},
@@ -156,6 +164,7 @@
       {
         "entry_id": "7ef547c6ed4d170d1ecf8f37ca3e8288",
         "version": 1,
+        "minor_version": 1,
         "domain": "switch_as_x",
         "title": "Middle Hall Switch",
         "data": {},
@@ -172,6 +181,7 @@
       {
         "entry_id": "5d065252c6e6708bff0e6047b274d820",
         "version": 1,
+        "minor_version": 1,
         "domain": "switch_as_x",
         "title": "Workplace Light",
         "data": {},
@@ -188,6 +198,7 @@
       {
         "entry_id": "a3113585cb10637786c9509a5f6f2463",
         "version": 2,
+        "minor_version": 1,
         "domain": "scheduler",
         "title": "Scheduler",
         "data": {},
@@ -201,6 +212,7 @@
       {
         "entry_id": "d2f168f508117dd54d11515482054235",
         "version": 1,
+        "minor_version": 1,
         "domain": "mobile_app",
         "title": "Xiaomi",
         "data": {
@@ -232,6 +244,7 @@
       {
         "entry_id": "d385da7c2caa22c01a75c5b164360c1b",
         "version": 1,
+        "minor_version": 1,
         "domain": "wled",
         "title": "WLED",
         "data": {
@@ -247,6 +260,7 @@
       {
         "entry_id": "61d75a1ce1e0d384be7e9972b04b8c9b",
         "version": 1,
+        "minor_version": 1,
         "domain": "powercalc",
         "title": "Ambi TV",
         "data": {
@@ -272,6 +286,7 @@
       {
         "entry_id": "95cd168eab540f9e31429adb04da0057",
         "version": 1,
+        "minor_version": 1,
         "domain": "powercalc",
         "title": "Ambi PC",
         "data": {
@@ -297,6 +312,7 @@
       {
         "entry_id": "8cacd51d29c565c1c797256173146888",
         "version": 1,
+        "minor_version": 1,
         "domain": "accuweather",
         "title": "House",
         "data": {
@@ -317,6 +333,7 @@
       {
         "entry_id": "300e8499695b2d7b959a39c872d91cc8",
         "version": 1,
+        "minor_version": 1,
         "domain": "wled",
         "title": "WLED",
         "data": {
@@ -332,6 +349,7 @@
       {
         "entry_id": "2949faf7761a4679e11194d6586339a8",
         "version": 1,
+        "minor_version": 1,
         "domain": "mobile_app",
         "title": "samsung-dragica",
         "data": {
@@ -363,6 +381,7 @@
       {
         "entry_id": "052a33dea9693ef4294126ae5197b113",
         "version": 1,
+        "minor_version": 1,
         "domain": "simplepush",
         "title": "simplepush",
         "data": {
@@ -374,6 +393,89 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "wfuaqw",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "67560dc9b4fbebe7e9b6e97e22fd92cc",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "ping",
+        "title": "PC",
+        "data": {
+          "imported_by": "binary_sensor"
+        },
+        "options": {
+          "host": "192.168.0.15",
+          "count": 5,
+          "consider_home": 180
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "68100d925beac8d13b52fc9219bce2cb",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "ping",
+        "title": "TV box",
+        "data": {
+          "imported_by": "binary_sensor"
+        },
+        "options": {
+          "host": "192.168.0.35",
+          "count": 5,
+          "consider_home": 180
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "4e296ce046ad18b2a0c2dd0265fe52c7",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "systemmonitor",
+        "title": "System Monitor",
+        "data": {},
+        "options": {
+          "sensor": {
+            "process": []
+          },
+          "resources": [
+            "disk_use_percent_/config",
+            "disk_use_/",
+            "disk_free_/",
+            "memory_use_percent_",
+            "memory_use_",
+            "memory_free_",
+            "swap_use_percent_",
+            "swap_use_",
+            "swap_free_",
+            "load_1m_",
+            "load_5m_",
+            "load_15m_",
+            "network_in_eth0",
+            "network_out_eth0",
+            "throughput_network_in_eth0",
+            "throughput_network_out_eth0",
+            "packets_in_eth0",
+            "packets_out_eth0",
+            "ipv4_address_eth0",
+            "ipv6_address_eth0",
+            "processor_use_",
+            "processor_temperature_",
+            "last_boot_"
+          ]
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
         "disabled_by": null
       }
     ]

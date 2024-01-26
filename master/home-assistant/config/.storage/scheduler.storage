@@ -73,7 +73,7 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "04:30:00",
+            "stop": "05:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -88,8 +88,8 @@
             ]
           },
           {
-            "start": "04:30:00",
-            "stop": "06:30:00",
+            "start": "05:00:00",
+            "stop": "07:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -105,8 +105,8 @@
             ]
           },
           {
-            "start": "06:30:00",
-            "stop": "16:30:00",
+            "start": "07:00:00",
+            "stop": "17:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -121,8 +121,8 @@
             ]
           },
           {
-            "start": "16:30:00",
-            "stop": "18:30:00",
+            "start": "17:00:00",
+            "stop": "19:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -138,7 +138,7 @@
             ]
           },
           {
-            "start": "18:30:00",
+            "start": "19:00:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
@@ -194,14 +194,14 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 22.1
+                  "temperature": 22
                 }
               }
             ]
           },
           {
             "start": "08:30:00",
-            "stop": "15:00:00",
+            "stop": "13:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -216,8 +216,8 @@
             ]
           },
           {
-            "start": "15:00:00",
-            "stop": "17:30:00",
+            "start": "13:00:00",
+            "stop": "18:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -227,13 +227,13 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 22.1
+                  "temperature": 21
                 }
               }
             ]
           },
           {
-            "start": "17:30:00",
+            "start": "18:00:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
