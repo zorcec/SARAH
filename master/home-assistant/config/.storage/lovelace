@@ -324,6 +324,18 @@
               ]
             },
             {
+              "type": "entities",
+              "entities": [
+                "input_select.heating_type"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "input_number.target_output"
+              ]
+            },
+            {
               "type": "vertical-stack",
               "cards": [
                 {

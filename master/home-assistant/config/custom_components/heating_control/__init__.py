@@ -30,7 +30,7 @@ _STATE_PHAZE_WAIT = "wait"
 _STATE_PHAZE_HEAT = "heat"
 
 _LOGGER = logging.getLogger(__name__)
-_VENT_OPEN_TIME = 180 # 3 mins
+_VENT_OPEN_TIME = 0#180 # 3 mins
 _VENT_ENTITIES = [
     "switch.down_backup_vent",
     "switch.down_hallway_vent",
@@ -49,6 +49,8 @@ _WAIT_PHAZE_DEFAULT = 0
 _STATUS_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_STATUS)
 _STATUS_HEAT_PHAZE_NAME = "input_number.heat_phaze"
 _STATUS_WAIT_PHAZE_NAME = "input_number.wait_phaze"
+_STATUS_HEATING_TYPE_NAME = "input_select.heating_type"
+_STATUS_TARGET_OUTPUT_NAME = "input_number.target_output"
 _STATUS_UNTIL_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_UNTIL_NEXT_PHAZE)
 _STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
 _STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
@@ -99,16 +101,49 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
 
 
 def start_next_phaze(hass):
-    _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
-    if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
-        if queue_wait_phaze(hass):
+    _heat_type_state = hass.states.get(_STATUS_HEATING_TYPE_NAME)
+    if not _heat_type_state or _heat_type_state.state == "Target":
+        output_temp_too_low = False
+        target_temperature = (float)(hass.states.get(_STATUS_TARGET_OUTPUT_NAME).state)
+        temperature_down = (float)(hass.states.get("sensor.heating_controller_1_output_temperature").state)
+        temperature_top =  (float)(hass.states.get("sensor.heating_controller_2_output_temperature").state)
+        for vent_entity in _VENT_ENTITIES:
+            _vent_states = hass.states.get(vent_entity)
+            if _vent_states and _vent_states.state == STATE_ON:
+                if "down" in _vent_states.entity_id and temperature_down <= target_temperature:
+                    output_temp_too_low = True
+                if "top" in _vent_states.entity_id and temperature_top <= target_temperature:
+                    output_temp_too_low = True
+        if output_temp_too_low:
+            _LOGGER.info("Output temp. is too low")
             turn_pump_on(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
-    else:
-        _until_heating = None if should_heat(hass) else 60
-        if queue_heat_phaze(hass, _until_heating):
+        else:
+            _LOGGER.info("Heating is not needed")
             turn_pump_off(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
+        queue_heat_phaze(hass, 60)
+    elif _heat_type_state.state == "Continuous":
+        if should_heat(hass) and queue_heat_phaze(hass, _until_heating):
+            turn_pump_on(hass)
+            hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+        else:
+            delay_phaze(hass, 60)
+    elif _heat_type_state.state == "Rotation":
+        _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
+        if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
+            if queue_wait_phaze(hass):
+                turn_pump_on(hass)
+                hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+        else:
+            delay_phaze(hass, 60)
+
+
+def delay_phaze(hass, delay = 60):
+    _until_heating = None if should_heat(hass) else delay
+    if queue_heat_phaze(hass, _until_heating):
+        turn_pump_off(hass)
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
 
 
 def turn_pump_on(hass):

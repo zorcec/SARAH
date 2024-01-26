@@ -9692,9 +9692,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "d2f168f508117dd54d11515482054235",
         "device_class": "battery",
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -9824,9 +9822,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "d2f168f508117dd54d11515482054235",
         "device_class": "temperature",
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -9852,9 +9848,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "d2f168f508117dd54d11515482054235",
         "device_class": "power",
         "device_id": "1a21d2a93bcb563b7318dc1bb97882d6",
@@ -12459,7 +12453,7 @@
         "has_entity_name": false,
         "name": null,
         "options": {},
-        "original_device_class": "energy",
+        "original_device_class": null,
         "original_icon": "mdi:lightning-bolt",
         "original_name": "Kitchen Main Light energy",
         "platform": "powercalc",
@@ -20922,9 +20916,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2949faf7761a4679e11194d6586339a8",
         "device_class": "battery",
         "device_id": "2a6c3102f816b9bb8c95d21729c6404d",
@@ -24524,6 +24516,64 @@
         "unique_id": "67560dc9b4fbebe7e9b6e97e22fd92cc",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Target",
+            "Pulse",
+            "Continuous"
+          ]
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_select.heating_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c7b3483c8ee91537e47db6e8949717c1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": "mdi:format-list-bulleted-type",
+        "original_name": "Type",
+        "platform": "input_select",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "heating_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.target_output",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4ed4c83471b52644b8f63cc0c5827b85",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": "mdi:temperature",
+        "original_name": "Target Temp.",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "target_output",
+        "previous_unique_id": null,
+        "unit_of_measurement": "°C"
       }
     ],
     "deleted_entities": [

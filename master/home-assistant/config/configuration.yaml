@@ -61,6 +61,23 @@ input_number:
     step: 5
     unit_of_measurement: "min"
     icon: mdi:clock-outline
+  target_output:
+    name: Target Temp.
+    min: 25
+    max: 40
+    step: 1
+    unit_of_measurement: "°C"
+    icon: mdi:temperature
+
+input_select:
+  heating_type:
+    name: Type
+    options:
+      - Target
+      - Rotation
+      - Continuous
+    initial: Target
+    icon: mdi:format-list-bulleted-type
 
 # mqtt:
 #   binary_sensor:
