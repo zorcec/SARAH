@@ -122,13 +122,13 @@ def start_next_phaze(hass):
             _LOGGER.info("Heating is not needed")
             turn_pump_off(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
-        queue_heat_phaze(hass, 60)
+        queue_heat_phaze(hass)
     elif _heat_type_state.state == "Continuous":
         if should_heat(hass) and queue_heat_phaze(hass, _until_heating):
             turn_pump_on(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
         else:
-            delay_phaze(hass, 60)
+            delay_phaze(hass)
     elif _heat_type_state.state == "Cycles":
         _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
         if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
@@ -136,7 +136,7 @@ def start_next_phaze(hass):
                 turn_pump_on(hass)
                 hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
         else:
-            delay_phaze(hass, 60)
+            delay_phaze(hass)
 
 
 def delay_phaze(hass, delay = 60):

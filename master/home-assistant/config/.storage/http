@@ -6,13 +6,13 @@
     "base_url": "https://zorcec.duckdns.org:8123",
     "ssl_certificate": "/letsencrypt/keys/letsencrypt/cert.pem",
     "ssl_key": "/letsencrypt/keys/letsencrypt/privkey.pem",
+    "ssl_profile": "modern",
+    "ip_ban_enabled": true,
+    "server_port": 8123,
+    "login_attempts_threshold": -1,
     "cors_allowed_origins": [
       "https://cast.home-assistant.io"
     ],
-    "server_port": 8123,
-    "login_attempts_threshold": -1,
-    "ip_ban_enabled": true,
-    "ssl_profile": "modern",
     "use_x_frame_options": true
   }
 }
