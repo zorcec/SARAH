@@ -76,7 +76,6 @@ input_select:
       - Target
       - Cycles
       - Continuous
-    initial: Target
     icon: mdi:format-list-bulleted-type
 
 # mqtt:

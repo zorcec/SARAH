@@ -12509,7 +12509,7 @@
         "has_entity_name": false,
         "name": null,
         "options": {},
-        "original_device_class": "energy",
+        "original_device_class": null,
         "original_icon": "mdi:lightning-bolt",
         "original_name": "Kitchen Light energy",
         "platform": "powercalc",
