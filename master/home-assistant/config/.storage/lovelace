@@ -330,12 +330,6 @@
               ]
             },
             {
-              "type": "entities",
-              "entities": [
-                "input_number.target_output"
-              ]
-            },
-            {
               "type": "vertical-stack",
               "cards": [
                 {
@@ -347,6 +341,12 @@
                   "type": "custom:numberbox-card",
                   "border": true,
                   "entity": "input_number.wait_phaze"
+                },
+                {
+                  "type": "custom:numberbox-card",
+                  "border": true,
+                  "entity": "input_number.target_output",
+                  "icon": "mdi:coolant-temperature"
                 },
                 {
                   "show_name": true,

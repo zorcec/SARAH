@@ -24523,7 +24523,7 @@
         "capabilities": {
           "options": [
             "Target",
-            "Rotation",
+            "Cycles",
             "Continuous"
           ]
         },
