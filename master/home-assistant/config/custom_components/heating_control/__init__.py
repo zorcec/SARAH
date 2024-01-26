@@ -55,6 +55,8 @@ _STATUS_UNTIL_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_UNTIL_NEXT_PHAZE)
 _STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
 _STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
 
+_TARGET_MODE_VALVES = []
+
 _UTC = pytz.UTC
 
 def setup(hass, config):
@@ -101,27 +103,41 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
 
 
 def start_next_phaze(hass):
+    global _TARGET_MODE_VALVES
     _heat_type_state = hass.states.get(_STATUS_HEATING_TYPE_NAME)
     _status = hass.states.get(_STATUS_STATE_NAME).state
     if not _heat_type_state or _heat_type_state.state == "Target":
-        output_temp_too_low = False
-        target_temperature = (float)(hass.states.get(_STATUS_TARGET_OUTPUT_NAME).state)
-        temperature_down = (float)(hass.states.get("sensor.heating_controller_1_output_temperature").state)
-        temperature_top =  (float)(hass.states.get("sensor.heating_controller_2_output_temperature").state)
-        for vent_entity in _VENT_ENTITIES:
-            _vent_states = hass.states.get(vent_entity)
-            if _vent_states and _vent_states.state == STATE_ON:
-                if "down" in _vent_states.entity_id and temperature_down <= target_temperature:
-                    output_temp_too_low = True
-                if "top" in _vent_states.entity_id and temperature_top <= target_temperature:
-                    output_temp_too_low = True
-        if output_temp_too_low:
+        open_valves = get_open_valves(hass)
+        if open_valves == _TARGET_MODE_VALVES or len(open_valves) < len(_TARGET_MODE_VALVES):
+            _TARGET_MODE_VALVES = open_valves
+            output_temp_too_low = False
+            target_temperature = (float)(hass.states.get(_STATUS_TARGET_OUTPUT_NAME).state)
+            temperature_down = (float)(hass.states.get("sensor.heating_controller_1_output_temperature").state)
+            temperature_top =  (float)(hass.states.get("sensor.heating_controller_2_output_temperature").state)
+            for vent_entity in _VENT_ENTITIES:
+                _vent_states = hass.states.get(vent_entity)
+                if _vent_states and _vent_states.state == STATE_ON:
+                    if hass.states.get(_STATUS_STATE_NAME) == _STATE_STATUS_WAITING:
+                        target_temperature -= target_temperature * 0.1 # when temp. drops 10%
+                    if "down" in _vent_states.entity_id and temperature_down <= target_temperature:
+                        output_temp_too_low = True
+                    if "top" in _vent_states.entity_id and temperature_top <= target_temperature:
+                        output_temp_too_low = True
+            if output_temp_too_low:
+                turn_pump_on(hass)
+                hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+                queue_heat_phaze(hass, 60)
+            else:
+                turn_pump_off(hass)
+                hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
+                queue_heat_phaze(hass, 60)
+        else:
+            # new valve was opened
+            _TARGET_MODE_VALVES = open_valves
             turn_pump_on(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
-        else:
-            turn_pump_off(hass)
-            hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
-        queue_heat_phaze(hass, 60)
+            queue_heat_phaze(hass, 300)
+            _LOGGER.info("New valve was opened, heating for 5 min")
     elif _heat_type_state.state == "Continuous":
         if should_heat(hass):
             turn_pump_on(hass)
@@ -186,6 +202,15 @@ def should_heat(hass):
                 return True
 
     return False
+
+
+def get_open_valves(hass):
+    _valves = []
+    for vent_entity in _VENT_ENTITIES:
+        _vent_states = hass.states.get(vent_entity)
+        if _vent_states and _vent_states.state == STATE_ON:
+            _valves.append(vent_entity)
+    return sorted(_valves)
 
 
 def pump_protection_check(hass, event):
