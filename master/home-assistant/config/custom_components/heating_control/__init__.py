@@ -129,7 +129,7 @@ def start_next_phaze(hass):
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
         else:
             delay_phaze(hass, 60)
-    elif _heat_type_state.state == "Rotation":
+    elif _heat_type_state.state == "Cycles":
         _next_phaze_status = hass.states.get(_STATUS_NEXT_PHAZE_NAME)
         if _next_phaze_status and _next_phaze_status.state == _STATE_PHAZE_HEAT and should_heat(hass):
             if queue_wait_phaze(hass):
