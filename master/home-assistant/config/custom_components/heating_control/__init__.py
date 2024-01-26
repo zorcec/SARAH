@@ -30,7 +30,7 @@ _STATE_PHAZE_WAIT = "wait"
 _STATE_PHAZE_HEAT = "heat"
 
 _LOGGER = logging.getLogger(__name__)
-_VENT_OPEN_TIME = 0#180 # 3 mins
+_VENT_OPEN_TIME = 180 # 3 mins
 _VENT_ENTITIES = [
     "switch.down_backup_vent",
     "switch.down_hallway_vent",
