@@ -349,6 +349,12 @@
                   "icon": "mdi:coolant-temperature"
                 },
                 {
+                  "type": "custom:numberbox-card",
+                  "border": true,
+                  "entity": "input_number.target_output_drop",
+                  "icon": "mdi:thermometer-chevron-down"
+                },
+                {
                   "show_name": true,
                   "show_icon": true,
                   "type": "button",

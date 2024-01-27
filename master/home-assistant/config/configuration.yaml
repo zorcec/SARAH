@@ -68,6 +68,13 @@ input_number:
     step: 1
     unit_of_measurement: "°C"
     icon: mdi:temperature
+  target_output_drop:
+    name: Target Drop
+    min: 20
+    max: 40
+    step: 1
+    unit_of_measurement: "°C"
+    icon: mdi:temperature
 
 input_select:
   heating_type:

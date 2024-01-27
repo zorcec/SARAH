@@ -2,5 +2,2309 @@
   "version": 1,
   "minor_version": 1,
   "key": "trace.saved_traces",
-  "data": {}
+  "data": {
+    "automation.1704456499215": [
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "3d62dd46845084b681198f81598985f5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T19:00:00.441821+00:00",
+            "finish": "2024-01-27T19:12:00.450279+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1704456499215",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T19:00:00.441899+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.hallway_heating",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1704456499215",
+                      "last_triggered": "2024-01-27T17:00:00.239416+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Hallway heating"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.524707+00:00",
+                    "last_updated": "2024-01-27T18:29:41.524707+00:00",
+                    "context": {
+                      "id": "01HN62YG0MK2S0KYWREWCZNKNY",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2024-01-27T20:00:00.441516+01:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T19:00:00.442458+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN64P09SH1NF012Y3PJT5Q5J",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/0/if": [
+              {
+                "path": "action/0/if",
+                "timestamp": "2024-01-27T19:00:00.442713+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/if/condition/0": [
+              {
+                "path": "action/0/if/condition/0",
+                "timestamp": "2024-01-27T19:00:00.442766+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "05:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "20:00:00.442792"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "18:00:00"
+                  },
+                  "result": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2024-01-27T19:00:00.442927+00:00",
+                "result": {
+                  "delay": 720.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2024-01-27T19:12:00.444568+00:00",
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.down_hallway_vent",
+                        "switch.top_wc_valve"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1704456499215",
+            "alias": "Hallway heating",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time_pattern",
+                "hours": "/2"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "if": [
+                  {
+                    "condition": "time",
+                    "after": "05:00:00",
+                    "before": "18:00:00"
+                  }
+                ],
+                "then": [
+                  {
+                    "service": "switch.turn_on",
+                    "data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.top_wc_valve",
+                        "switch.down_hallway_vent"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 12,
+                  "seconds": 0,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "service": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": [
+                    "switch.down_hallway_vent",
+                    "switch.top_wc_valve"
+                  ]
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN64P09SH1NF012Y3PJT5Q5J",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "3d62dd46845084b681198f81598985f5",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T19:00:00.441821+00:00",
+            "finish": "2024-01-27T19:12:00.450279+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1704456499215",
+          "trigger": "time pattern"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/2",
+          "run_id": "890ebaeb9ca12125d1fb459aba810dbe",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T21:00:00.440540+00:00",
+            "finish": "2024-01-27T21:12:00.447885+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1704456499215",
+          "trigger": "time pattern",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T21:00:00.440587+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.hallway_heating",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1704456499215",
+                      "last_triggered": "2024-01-27T19:00:00.442061+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Hallway heating"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.524707+00:00",
+                    "last_updated": "2024-01-27T19:12:00.450099+00:00",
+                    "context": {
+                      "id": "01HN65BZE2ZCJ0NVKRYZ4X1SYZ",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time_pattern",
+                    "now": "2024-01-27T22:00:00.440267+01:00",
+                    "description": "time pattern"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T21:00:00.441122+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6BHQHRCA79CH75B96HXWTY",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/0/if": [
+              {
+                "path": "action/0/if",
+                "timestamp": "2024-01-27T21:00:00.441203+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/if/condition/0": [
+              {
+                "path": "action/0/if/condition/0",
+                "timestamp": "2024-01-27T21:00:00.441956+00:00",
+                "result": {
+                  "after": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "05:00:00"
+                  },
+                  "now_time": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "22:00:00.441979"
+                  },
+                  "before": {
+                    "__type": "<class 'datetime.time'>",
+                    "isoformat": "18:00:00"
+                  },
+                  "result": false
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2024-01-27T21:00:00.442083+00:00",
+                "result": {
+                  "delay": 720.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/2": [
+              {
+                "path": "action/2",
+                "timestamp": "2024-01-27T21:12:00.443212+00:00",
+                "result": {
+                  "params": {
+                    "domain": "switch",
+                    "service": "turn_off",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.down_hallway_vent",
+                        "switch.top_wc_valve"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1704456499215",
+            "alias": "Hallway heating",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time_pattern",
+                "hours": "/2"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "if": [
+                  {
+                    "condition": "time",
+                    "after": "05:00:00",
+                    "before": "18:00:00"
+                  }
+                ],
+                "then": [
+                  {
+                    "service": "switch.turn_on",
+                    "data": {},
+                    "target": {
+                      "entity_id": [
+                        "switch.top_wc_valve",
+                        "switch.down_hallway_vent"
+                      ]
+                    }
+                  }
+                ]
+              },
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 12,
+                  "seconds": 0,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "service": "switch.turn_off",
+                "data": {},
+                "target": {
+                  "entity_id": [
+                    "switch.down_hallway_vent",
+                    "switch.top_wc_valve"
+                  ]
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6BHQHRCA79CH75B96HXWTY",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/2",
+          "run_id": "890ebaeb9ca12125d1fb459aba810dbe",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T21:00:00.440540+00:00",
+            "finish": "2024-01-27T21:12:00.447885+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1704456499215",
+          "trigger": "time pattern"
+        }
+      }
+    ],
+    "automation.1673812981370": [
+      {
+        "extended_dict": {
+          "last_step": "action/0",
+          "run_id": "4d2c8ba7d3debc8f8d66cad44891febf",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:00:00.152336+00:00",
+            "finish": "2024-01-27T20:00:00.158261+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1673812981370",
+          "trigger": "time",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T20:00:00.152410+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.sets_sleep_retain_status",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1673812981370",
+                      "last_triggered": "2024-01-26T20:00:00.363075+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Sets sleep retain status"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523343+00:00",
+                    "last_updated": "2024-01-27T18:29:41.523343+00:00",
+                    "context": {
+                      "id": "01HN62YG0KD5F66YQ0NH3ACJ8T",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "time",
+                    "now": "2024-01-27T21:00:00.152018+01:00",
+                    "description": "time",
+                    "entity_id": null
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T20:00:00.152939+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN683VMRHEJ4SWGB7QWBZKW0",
+                    "parent_id": null,
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "params": {
+                    "domain": "mqtt",
+                    "service": "publish",
+                    "service_data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{ \"event\": \"radioSilence\" }",
+                      "retain": true
+                    },
+                    "target": {}
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1673812981370",
+            "alias": "Sets sleep retain status",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "time",
+                "at": "21:00:00"
+              },
+              {
+                "platform": "time",
+                "at": "12:00:00",
+                "enabled": false
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "service": "mqtt.publish",
+                "data": {
+                  "topic": "cmnd/tasmotas/json",
+                  "payload": "{ \"event\": \"radioSilence\" }",
+                  "retain": true
+                }
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN683VMRHEJ4SWGB7QWBZKW0",
+            "parent_id": null,
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0",
+          "run_id": "4d2c8ba7d3debc8f8d66cad44891febf",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:00:00.152336+00:00",
+            "finish": "2024-01-27T20:00:00.158261+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1673812981370",
+          "trigger": "time"
+        }
+      }
+    ],
+    "automation.1677363623906": [
+      {
+        "extended_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "73e92efae1f921496cbfb462abaad3f8",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:16:32.641023+00:00",
+            "finish": "2024-01-27T20:16:34.646122+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677363623906",
+          "trigger": "state of light.top_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T20:16:32.641082+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.top_dimmer_correction",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1677363623906",
+                      "last_triggered": "2024-01-27T15:02:25.780474+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Correct top dimmer"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523693+00:00",
+                    "last_updated": "2024-01-27T18:29:41.523693+00:00",
+                    "context": {
+                      "id": "01HN62YG0K19VH2CCE3CF7V55K",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.top_main_light",
+                    "from_state": {
+                      "entity_id": "light.top_main_light",
+                      "state": "on",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": "brightness",
+                        "brightness": 71,
+                        "friendly_name": "Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T18:29:48.388591+00:00",
+                      "last_updated": "2024-01-27T20:13:01.636621+00:00",
+                      "context": {
+                        "id": "01HN68VPT4PVQMNTSPSVGCHD10",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.top_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:16:32.639478+00:00",
+                      "last_updated": "2024-01-27T20:16:32.639478+00:00",
+                      "context": {
+                        "id": "01HN6924NPA62MZHJN6GF6WPDE",
+                        "parent_id": null,
+                        "user_id": "72222965dcbb42cb81f18047d2ae1df4"
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.top_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T20:16:32.643849+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6924W0KQ155HKDHDHQH4S7",
+                    "parent_id": "01HN6924NPA62MZHJN6GF6WPDE",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "delay": 2.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2024-01-27T20:16:34.644682+00:00"
+              }
+            ],
+            "action/1/if": [
+              {
+                "path": "action/1/if",
+                "timestamp": "2024-01-27T20:16:34.644937+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0": [
+              {
+                "path": "action/1/if/condition/0",
+                "timestamp": "2024-01-27T20:16:34.644979+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0/entity_id/0": [
+              {
+                "path": "action/1/if/condition/0/entity_id/0",
+                "timestamp": "2024-01-27T20:16:34.645012+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1677363623906",
+            "alias": "Correct top dimmer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.top_main_light"
+                ],
+                "to": "off",
+                "from": "on"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "light.top_main_light",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "type": "turn_off",
+                    "device_id": "5f7953a4dcd36d3b3815c06c8bb50127",
+                    "entity_id": "light.top_main_light",
+                    "domain": "light"
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6924W0KQ155HKDHDHQH4S7",
+            "parent_id": "01HN6924NPA62MZHJN6GF6WPDE",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "73e92efae1f921496cbfb462abaad3f8",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:16:32.641023+00:00",
+            "finish": "2024-01-27T20:16:34.646122+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677363623906",
+          "trigger": "state of light.top_main_light"
+        }
+      }
+    ],
+    "automation.1676149800565": [
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "260116f7472a246dc0cd94caf487acfc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:43:57.025379+00:00",
+            "finish": "2024-01-27T20:44:00.036356+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T20:43:57.025481+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1676149800565",
+                      "last_triggered": "2024-01-27T20:40:10.407193+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523516+00:00",
+                    "last_updated": "2024-01-27T20:40:10.413183+00:00",
+                    "context": {
+                      "id": "01HN6ADDD6X0KGAWEAHC1NMGE8",
+                      "parent_id": "01HN6ADDD5KFDX23CA1Y8XQTM0",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "on",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": "brightness",
+                        "brightness": 242,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:40:07.748826+00:00",
+                      "last_updated": "2024-01-27T20:40:10.405894+00:00",
+                      "context": {
+                        "id": "01HN6ADDD5KFDX23CA1Y8XQTM0",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:43:57.023956+00:00",
+                      "last_updated": "2024-01-27T20:43:57.023956+00:00",
+                      "context": {
+                        "id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T20:43:57.029722+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6AMAQ1BBCZEGXBNAXJYA0M",
+                    "parent_id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": 1
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2024-01-27T20:43:57.029813+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2024-01-27T20:43:57.029848+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T20:43:57.029884+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2024-01-27T20:43:57.029979+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2024-01-27T20:43:57.030009+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T20:43:57.030038+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/0": [
+              {
+                "path": "action/0/choose/1/sequence/0",
+                "timestamp": "2024-01-27T20:43:57.030967+00:00",
+                "result": {
+                  "delay": 3.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/1": [
+              {
+                "path": "action/0/choose/1/sequence/1",
+                "timestamp": "2024-01-27T20:44:00.031866+00:00",
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "climate.bathroom_fan"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6AMAQ1BBCZEGXBNAXJYA0M",
+            "parent_id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "260116f7472a246dc0cd94caf487acfc",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:43:57.025379+00:00",
+            "finish": "2024-01-27T20:44:00.036356+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "0c20cdcb8df72051b08dc85171f9cf26",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T21:59:56.757727+00:00",
+            "finish": "2024-01-27T21:59:56.758821+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T21:59:56.757796+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1676149800565",
+                      "last_triggered": "2024-01-27T20:43:57.025581+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523516+00:00",
+                    "last_updated": "2024-01-27T20:44:00.035616+00:00",
+                    "context": {
+                      "id": "01HN6AMAQ1BBCZEGXBNAXJYA0M",
+                      "parent_id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:43:57.023956+00:00",
+                      "last_updated": "2024-01-27T20:43:57.023956+00:00",
+                      "context": {
+                        "id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T21:59:56.756076+00:00",
+                      "last_updated": "2024-01-27T21:59:56.756076+00:00",
+                      "context": {
+                        "id": "01HN6EZFJMTWTRRD377QVWEGGC",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T21:59:56.758268+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6EZFJNSD7Z008ASRJHVRYH",
+                    "parent_id": "01HN6EZFJMTWTRRD377QVWEGGC",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2024-01-27T21:59:56.758349+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2024-01-27T21:59:56.758386+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T21:59:56.758421+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2024-01-27T21:59:56.758514+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2024-01-27T21:59:56.758545+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T21:59:56.758575+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "off"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6EZFJNSD7Z008ASRJHVRYH",
+            "parent_id": "01HN6EZFJMTWTRRD377QVWEGGC",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "0c20cdcb8df72051b08dc85171f9cf26",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T21:59:56.757727+00:00",
+            "finish": "2024-01-27T21:59:56.758821+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "db098cf7abc979ca8443f3aeab37a104",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:01:46.349011+00:00",
+            "finish": "2024-01-27T22:01:49.356564+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T22:01:46.349117+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1676149800565",
+                      "last_triggered": "2024-01-27T21:59:56.757889+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523516+00:00",
+                    "last_updated": "2024-01-27T21:59:56.758702+00:00",
+                    "context": {
+                      "id": "01HN6EZFJNSD7Z008ASRJHVRYH",
+                      "parent_id": "01HN6EZFJMTWTRRD377QVWEGGC",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T21:59:56.756076+00:00",
+                      "last_updated": "2024-01-27T21:59:56.756076+00:00",
+                      "context": {
+                        "id": "01HN6EZFJMTWTRRD377QVWEGGC",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T22:01:46.340155+00:00",
+                      "last_updated": "2024-01-27T22:01:46.340155+00:00",
+                      "context": {
+                        "id": "01HN6F2TK4ZGP29AXYTHSZPS6Z",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T22:01:46.350018+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6F2TKC1XESZPA0MDVGAJ31",
+                    "parent_id": "01HN6F2TK4ZGP29AXYTHSZPS6Z",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": 1
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2024-01-27T22:01:46.350095+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2024-01-27T22:01:46.350129+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:01:46.350163+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2024-01-27T22:01:46.350255+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2024-01-27T22:01:46.350286+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:01:46.350314+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/0": [
+              {
+                "path": "action/0/choose/1/sequence/0",
+                "timestamp": "2024-01-27T22:01:46.353427+00:00",
+                "result": {
+                  "delay": 3.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/1": [
+              {
+                "path": "action/0/choose/1/sequence/1",
+                "timestamp": "2024-01-27T22:01:49.355047+00:00",
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "climate.bathroom_fan"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6F2TKC1XESZPA0MDVGAJ31",
+            "parent_id": "01HN6F2TK4ZGP29AXYTHSZPS6Z",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "db098cf7abc979ca8443f3aeab37a104",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:01:46.349011+00:00",
+            "finish": "2024-01-27T22:01:49.356564+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "7e8744629c5b47e44de9b61c3a9e222d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:24:51.897672+00:00",
+            "finish": "2024-01-27T22:24:51.899241+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T22:24:51.897742+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1676149800565",
+                      "last_triggered": "2024-01-27T22:01:46.349213+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523516+00:00",
+                    "last_updated": "2024-01-27T22:01:49.356422+00:00",
+                    "context": {
+                      "id": "01HN6F2TKC1XESZPA0MDVGAJ31",
+                      "parent_id": "01HN6F2TK4ZGP29AXYTHSZPS6Z",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T22:01:46.340155+00:00",
+                      "last_updated": "2024-01-27T22:01:46.340155+00:00",
+                      "context": {
+                        "id": "01HN6F2TK4ZGP29AXYTHSZPS6Z",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T22:24:51.895856+00:00",
+                      "last_updated": "2024-01-27T22:24:51.895856+00:00",
+                      "context": {
+                        "id": "01HN6GD3NQD17CJ2JRP8PT50XC",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T22:24:51.898259+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6GD3NSPV2306DQ7570NFD8",
+                    "parent_id": "01HN6GD3NQD17CJ2JRP8PT50XC",
+                    "user_id": null
+                  }
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2024-01-27T22:24:51.898335+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2024-01-27T22:24:51.898370+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:24:51.898404+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2024-01-27T22:24:51.898496+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2024-01-27T22:24:51.898526+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:24:51.898555+00:00",
+                "result": {
+                  "result": false,
+                  "state": "unavailable",
+                  "wanted_state": "off"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6GD3NSPV2306DQ7570NFD8",
+            "parent_id": "01HN6GD3NQD17CJ2JRP8PT50XC",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/conditions/0/entity_id/0",
+          "run_id": "7e8744629c5b47e44de9b61c3a9e222d",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:24:51.897672+00:00",
+            "finish": "2024-01-27T22:24:51.899241+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      },
+      {
+        "extended_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "e2a959207e24b9067a043fed9855cacf",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:24:52.535227+00:00",
+            "finish": "2024-01-27T22:24:55.540484+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T22:24:52.535332+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.automation_3",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1676149800565",
+                      "last_triggered": "2024-01-27T22:24:51.897832+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Bathroom fan only when lights are off"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523516+00:00",
+                    "last_updated": "2024-01-27T22:24:51.898680+00:00",
+                    "context": {
+                      "id": "01HN6GD3NSPV2306DQ7570NFD8",
+                      "parent_id": "01HN6GD3NQD17CJ2JRP8PT50XC",
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "unavailable",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T22:24:51.895856+00:00",
+                      "last_updated": "2024-01-27T22:24:51.895856+00:00",
+                      "context": {
+                        "id": "01HN6GD3NQD17CJ2JRP8PT50XC",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T22:24:52.533308+00:00",
+                      "last_updated": "2024-01-27T22:24:52.533308+00:00",
+                      "context": {
+                        "id": "01HN6GD49NS8CB4A8ZE52Q2V5W",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T22:24:52.535857+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6GD49QD0TQNXSKS7CCMD78",
+                    "parent_id": "01HN6GD49NS8CB4A8ZE52Q2V5W",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "choice": 1
+                }
+              }
+            ],
+            "action/0/choose/0": [
+              {
+                "path": "action/0/choose/0",
+                "timestamp": "2024-01-27T22:24:52.535935+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0": [
+              {
+                "path": "action/0/choose/0/conditions/0",
+                "timestamp": "2024-01-27T22:24:52.535969+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/0/choose/0/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/0/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:24:52.536003+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ],
+            "action/0/choose/1": [
+              {
+                "path": "action/0/choose/1",
+                "timestamp": "2024-01-27T22:24:52.536095+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0": [
+              {
+                "path": "action/0/choose/1/conditions/0",
+                "timestamp": "2024-01-27T22:24:52.536126+00:00",
+                "result": {
+                  "result": true
+                }
+              }
+            ],
+            "action/0/choose/1/conditions/0/entity_id/0": [
+              {
+                "path": "action/0/choose/1/conditions/0/entity_id/0",
+                "timestamp": "2024-01-27T22:24:52.536155+00:00",
+                "result": {
+                  "result": true,
+                  "state": "off",
+                  "wanted_state": "off"
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/0": [
+              {
+                "path": "action/0/choose/1/sequence/0",
+                "timestamp": "2024-01-27T22:24:52.537075+00:00",
+                "result": {
+                  "delay": 3.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/0/choose/1/sequence/1": [
+              {
+                "path": "action/0/choose/1/sequence/1",
+                "timestamp": "2024-01-27T22:24:55.539009+00:00",
+                "result": {
+                  "params": {
+                    "domain": "climate",
+                    "service": "turn_on",
+                    "service_data": {},
+                    "target": {
+                      "entity_id": [
+                        "climate.bathroom_fan"
+                      ]
+                    }
+                  },
+                  "running_script": false
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1676149800565",
+            "alias": "Bathroom fan only when lights are off",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ]
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "choose": [
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "on"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "service": "climate.turn_off",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      },
+                      {
+                        "type": "turn_off",
+                        "device_id": "abda588fde39a2ea6fdd0ae3687aecfd",
+                        "entity_id": "switch.bathroom_fan",
+                        "domain": "switch"
+                      }
+                    ]
+                  },
+                  {
+                    "conditions": [
+                      {
+                        "condition": "state",
+                        "entity_id": "light.bathroom_main_light",
+                        "state": "off"
+                      }
+                    ],
+                    "sequence": [
+                      {
+                        "delay": {
+                          "hours": 0,
+                          "minutes": 0,
+                          "seconds": 3,
+                          "milliseconds": 0
+                        }
+                      },
+                      {
+                        "service": "climate.turn_on",
+                        "data": {},
+                        "target": {
+                          "entity_id": "climate.bathroom_fan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6GD49QD0TQNXSKS7CCMD78",
+            "parent_id": "01HN6GD49NS8CB4A8ZE52Q2V5W",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/0/choose/1/sequence/1",
+          "run_id": "e2a959207e24b9067a043fed9855cacf",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T22:24:52.535227+00:00",
+            "finish": "2024-01-27T22:24:55.540484+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1676149800565",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      }
+    ],
+    "automation.1677363742332": [
+      {
+        "extended_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "795913475719c77866f57f37b2923dea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:43:57.025787+00:00",
+            "finish": "2024-01-27T20:43:59.033650+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677363742332",
+          "trigger": "state of light.bathroom_main_light",
+          "trace": {
+            "trigger/0": [
+              {
+                "path": "trigger/0",
+                "timestamp": "2024-01-27T20:43:57.025827+00:00",
+                "changed_variables": {
+                  "this": {
+                    "entity_id": "automation.bathroom_dimmer_correction",
+                    "state": "on",
+                    "attributes": {
+                      "id": "1677363742332",
+                      "last_triggered": "2024-01-27T18:25:34.038399+00:00",
+                      "mode": "single",
+                      "current": 0,
+                      "friendly_name": "Correct bathroom dimmer"
+                    },
+                    "last_changed": "2024-01-27T18:29:41.523875+00:00",
+                    "last_updated": "2024-01-27T18:29:41.523875+00:00",
+                    "context": {
+                      "id": "01HN62YG0KPNX9HW2H8Y9ZDK4Z",
+                      "parent_id": null,
+                      "user_id": null
+                    }
+                  },
+                  "trigger": {
+                    "id": "0",
+                    "idx": "0",
+                    "alias": null,
+                    "platform": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "from_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "on",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": "brightness",
+                        "brightness": 242,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:40:07.748826+00:00",
+                      "last_updated": "2024-01-27T20:40:10.405894+00:00",
+                      "context": {
+                        "id": "01HN6ADDD5KFDX23CA1Y8XQTM0",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "to_state": {
+                      "entity_id": "light.bathroom_main_light",
+                      "state": "off",
+                      "attributes": {
+                        "supported_color_modes": [
+                          "brightness"
+                        ],
+                        "color_mode": null,
+                        "brightness": null,
+                        "friendly_name": "Bathroom Main Light",
+                        "supported_features": 0
+                      },
+                      "last_changed": "2024-01-27T20:43:57.023956+00:00",
+                      "last_updated": "2024-01-27T20:43:57.023956+00:00",
+                      "context": {
+                        "id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                        "parent_id": null,
+                        "user_id": null
+                      }
+                    },
+                    "for": null,
+                    "attribute": null,
+                    "description": "state of light.bathroom_main_light"
+                  }
+                }
+              }
+            ],
+            "action/0": [
+              {
+                "path": "action/0",
+                "timestamp": "2024-01-27T20:43:57.030293+00:00",
+                "changed_variables": {
+                  "context": {
+                    "id": "01HN6AMAQ1T0S4GQ9NS7CFP8S0",
+                    "parent_id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+                    "user_id": null
+                  }
+                },
+                "result": {
+                  "delay": 2.0,
+                  "done": true
+                }
+              }
+            ],
+            "action/1": [
+              {
+                "path": "action/1",
+                "timestamp": "2024-01-27T20:43:59.032264+00:00"
+              }
+            ],
+            "action/1/if": [
+              {
+                "path": "action/1/if",
+                "timestamp": "2024-01-27T20:43:59.032524+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0": [
+              {
+                "path": "action/1/if/condition/0",
+                "timestamp": "2024-01-27T20:43:59.032561+00:00",
+                "result": {
+                  "result": false
+                }
+              }
+            ],
+            "action/1/if/condition/0/entity_id/0": [
+              {
+                "path": "action/1/if/condition/0/entity_id/0",
+                "timestamp": "2024-01-27T20:43:59.032591+00:00",
+                "result": {
+                  "result": false,
+                  "state": "off",
+                  "wanted_state": "on"
+                }
+              }
+            ]
+          },
+          "config": {
+            "id": "1677363742332",
+            "alias": "Correct bathroom dimmer",
+            "description": "",
+            "trigger": [
+              {
+                "platform": "state",
+                "entity_id": [
+                  "light.bathroom_main_light"
+                ],
+                "to": "off",
+                "from": "on"
+              }
+            ],
+            "condition": [],
+            "action": [
+              {
+                "delay": {
+                  "hours": 0,
+                  "minutes": 0,
+                  "seconds": 2,
+                  "milliseconds": 0
+                }
+              },
+              {
+                "if": [
+                  {
+                    "condition": "state",
+                    "entity_id": "light.bathroom_main_light",
+                    "state": "on"
+                  }
+                ],
+                "then": [
+                  {
+                    "type": "turn_off",
+                    "device_id": "57edd179adcda8b16f654d9ff5360e1b",
+                    "entity_id": "light.bathroom_main_light",
+                    "domain": "light"
+                  }
+                ]
+              }
+            ],
+            "mode": "single"
+          },
+          "blueprint_inputs": null,
+          "context": {
+            "id": "01HN6AMAQ1T0S4GQ9NS7CFP8S0",
+            "parent_id": "01HN6AMAPZBQWKNM8GWSJKZ76C",
+            "user_id": null
+          }
+        },
+        "short_dict": {
+          "last_step": "action/1/if/condition/0/entity_id/0",
+          "run_id": "795913475719c77866f57f37b2923dea",
+          "state": "stopped",
+          "script_execution": "finished",
+          "timestamp": {
+            "start": "2024-01-27T20:43:57.025787+00:00",
+            "finish": "2024-01-27T20:43:59.033650+00:00"
+          },
+          "domain": "automation",
+          "item_id": "1677363742332",
+          "trigger": "state of light.bathroom_main_light"
+        }
+      }
+    ]
+  }
 }

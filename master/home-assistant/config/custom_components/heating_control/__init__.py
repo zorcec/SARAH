@@ -51,6 +51,7 @@ _STATUS_HEAT_PHAZE_NAME = "input_number.heat_phaze"
 _STATUS_WAIT_PHAZE_NAME = "input_number.wait_phaze"
 _STATUS_HEATING_TYPE_NAME = "input_select.heating_type"
 _STATUS_TARGET_OUTPUT_NAME = "input_number.target_output"
+_STATUS_TARGET_TEMPERATURE_DROP_NAME = "input_number.target_output_drop" 
 _STATUS_UNTIL_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_UNTIL_NEXT_PHAZE)
 _STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
 _STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
@@ -112,21 +113,22 @@ def start_next_phaze(hass):
             _TARGET_MODE_VALVES = open_valves
             output_temp_too_low = False
             target_temperature = (float)(hass.states.get(_STATUS_TARGET_OUTPUT_NAME).state)
+            target_temperature_drop = (float)(hass.states.get(_STATUS_TARGET_TEMPERATURE_DROP_NAME).state)
             temperature_down = (float)(hass.states.get("sensor.heating_controller_1_output_temperature").state)
             temperature_top =  (float)(hass.states.get("sensor.heating_controller_2_output_temperature").state)
             for vent_entity in _VENT_ENTITIES:
                 _vent_states = hass.states.get(vent_entity)
                 if _vent_states and _vent_states.state == STATE_ON:
                     if hass.states.get(_STATUS_STATE_NAME) == _STATE_STATUS_WAITING:
-                        target_temperature -= target_temperature * 0.1 # when temp. drops 10%
+                        target_temperature = target_temperature_drop
                     if "down" in _vent_states.entity_id and temperature_down <= target_temperature:
                         output_temp_too_low = True
                     if "top" in _vent_states.entity_id and temperature_top <= target_temperature:
                         output_temp_too_low = True
-            if output_temp_too_low:
+            if output_temp_too_low and should_heat(hass):
                 turn_pump_on(hass)
                 hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
-                queue_heat_phaze(hass, 60)
+                queue_heat_phaze(hass, 300) # 5 mins
             else:
                 turn_pump_off(hass)
                 hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
@@ -136,8 +138,8 @@ def start_next_phaze(hass):
             _TARGET_MODE_VALVES = open_valves
             turn_pump_on(hass)
             hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
-            queue_heat_phaze(hass, 300)
-            _LOGGER.info("New valve was opened, heating for 5 min")
+            queue_heat_phaze(hass, 900) # 15 mins
+            _LOGGER.info("New valve was opened, heating for at least 15 min")
     elif _heat_type_state.state == "Continuous":
         if should_heat(hass):
             turn_pump_on(hass)
