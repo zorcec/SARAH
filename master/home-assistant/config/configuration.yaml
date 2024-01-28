@@ -63,8 +63,8 @@ input_number:
     icon: mdi:clock-outline
   target_output:
     name: Target Temp.
-    min: 25
-    max: 40
+    min: 20
+    max: 35
     step: 1
     unit_of_measurement: "°C"
     icon: mdi:temperature
@@ -80,6 +80,7 @@ input_select:
   heating_type:
     name: Type
     options:
+      - Hybrid
       - Target
       - Cycles
       - Continuous

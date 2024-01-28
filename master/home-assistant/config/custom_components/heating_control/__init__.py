@@ -30,7 +30,7 @@ _STATE_PHAZE_WAIT = "wait"
 _STATE_PHAZE_HEAT = "heat"
 
 _LOGGER = logging.getLogger(__name__)
-_VENT_OPEN_TIME = 180 # 3 mins
+_VENT_OPEN_TIME = 5 # 3 mins
 _VENT_ENTITIES = [
     "switch.down_backup_vent",
     "switch.down_hallway_vent",
@@ -57,6 +57,7 @@ _STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
 _STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
 
 _TARGET_MODE_VALVES = []
+_NEW_VALVE = []
 
 _UTC = pytz.UTC
 
@@ -105,9 +106,38 @@ async def async_unload_entry(hass: core.HomeAssistant, entry: config_entries.Con
 
 def start_next_phaze(hass):
     global _TARGET_MODE_VALVES
+    global _NEW_VALVE
     _heat_type_state = hass.states.get(_STATUS_HEATING_TYPE_NAME)
     _status = hass.states.get(_STATUS_STATE_NAME).state
-    if not _heat_type_state or _heat_type_state.state == "Target":
+    if not _heat_type_state or _heat_type_state.state == "Hybrid":
+        open_valves = get_open_valves(hass)
+        if _NEW_VALVE:
+            _NEW_VALVE = False
+            turn_pump_on(hass)
+            hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+            queue_heat_phaze(hass)
+        else:
+            output_temp_too_low = False
+            target_temperature = (float)(hass.states.get(_STATUS_TARGET_OUTPUT_NAME).state)
+            target_temperature_drop = (float)(hass.states.get(_STATUS_TARGET_TEMPERATURE_DROP_NAME).state)
+            temperature_down = (float)(hass.states.get("sensor.heating_controller_1_output_temperature").state)
+            temperature_top =  (float)(hass.states.get("sensor.heating_controller_2_output_temperature").state)
+            for vent_entity in _VENT_ENTITIES:
+                _vent_states = hass.states.get(vent_entity)
+                if _vent_states and _vent_states.state == STATE_ON:
+                    if "down" in _vent_states.entity_id and temperature_down <= target_temperature:
+                        output_temp_too_low = True
+                    if "top" in _vent_states.entity_id and temperature_top <= target_temperature:
+                        output_temp_too_low = True
+            if output_temp_too_low and should_heat(hass):
+                turn_pump_on(hass)
+                hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_ON)
+                queue_heat_phaze(hass, 60)
+            else:
+                turn_pump_off(hass)
+                hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_WAITING)
+                queue_heat_phaze(hass)
+    elif _heat_type_state.state == "Target":
         open_valves = get_open_valves(hass)
         if open_valves == _TARGET_MODE_VALVES or len(open_valves) < len(_TARGET_MODE_VALVES):
             _TARGET_MODE_VALVES = open_valves
@@ -170,9 +200,9 @@ def turn_pump_on(hass):
         if _pump_state.state == STATE_OFF:
             if should_heat(hass):
                 _LOGGER.info("Turning pump on")
-                hass.services.call("switch", "turn_on", {
-                    "entity_id": _PUMP_ENTITY_ID
-                })
+                # hass.services.call("switch", "turn_on", {
+                #     "entity_id": _PUMP_ENTITY_ID
+                # })
     else:
         _LOGGER.info("Pump state is not known, ignoring")
 
@@ -217,11 +247,20 @@ def get_open_valves(hass):
 
 def pump_protection_check(hass, event):
     """Called when vent state is changed"""
-    if not should_heat(hass):
+    global _TARGET_MODE_VALVES
+    _heat_type_state = hass.states.get(_STATUS_HEATING_TYPE_NAME)
+    open_valves = get_open_valves(hass)
+    if len(open_valves) > 0 and _heat_type_state and _heat_type_state.state == "Hybrid"):
+        if len(open_valves) > len(_TARGET_MODE_VALVES):
+            queue_heat_phaze(hass, _VENT_OPEN_TIME + 5)
+            _NEW_VALVE = True
+            _LOGGER.info("New valve is opening, heating one heat cycle after valve has opened")
+    elif not should_heat(hass):
         _LOGGER.info("All vents are in closed state, turning pump off (pump protection)")
         turn_pump_off(hass)
         hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_OFF_PROTECTION)
         queue_heat_phaze(hass, 60)
+    _TARGET_MODE_VALVES = open_valves
 
 
 def queue_wait_phaze(hass, seconds=None):
