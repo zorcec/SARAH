@@ -99,7 +99,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 22
+                  "temperature": 23.5
                 }
               }
             ]
@@ -132,7 +132,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 22
+                  "temperature": 23.5
                 }
               }
             ]
@@ -194,7 +194,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 22
+                  "temperature": 23.5
                 }
               }
             ]
@@ -227,7 +227,7 @@
                 "entity_id": "climate.bathroom",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 21
+                  "temperature": 22
                 }
               }
             ]
@@ -290,7 +290,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20
+                  "temperature": 21
                 }
               }
             ]
@@ -443,7 +443,6 @@
         "enabled": false
       }
     ],
-    "tags": [],
-    "time_shutdown": "2024-01-27T22:33:46.173898+00:00"
+    "tags": []
   }
 }

@@ -233,8 +233,128 @@
               ]
             },
             {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.wled_kid"
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "light.turn_on",
+                    "target": {
+                      "device_id": "cce853a7aa3dbf3723b78edf68c82faf"
+                    },
+                    "data": {
+                      "brightness_pct": 25,
+                      "effect": "Palette"
+                    }
+                  },
+                  "icon_height": "50px",
+                  "name": "Rainbow",
+                  "icon": "mdi:looks"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "light.turn_on",
+                    "target": {
+                      "device_id": "cce853a7aa3dbf3723b78edf68c82faf"
+                    },
+                    "data": {
+                      "rgb_color": [
+                        255,
+                        149,
+                        0
+                      ],
+                      "brightness_pct": 15,
+                      "effect": "Candle Multi"
+                    }
+                  },
+                  "name": "Reading",
+                  "icon": "mdi:book",
+                  "show_state": false,
+                  "icon_height": "50px"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "light.turn_on",
+                    "target": {
+                      "device_id": "cce853a7aa3dbf3723b78edf68c82faf"
+                    },
+                    "data": {
+                      "rgb_color": [
+                        255,
+                        149,
+                        0
+                      ],
+                      "effect": "Solid",
+                      "brightness_pct": 2
+                    }
+                  },
+                  "icon": "mdi:sleep",
+                  "show_state": false,
+                  "icon_height": "50px",
+                  "name": "Sleep"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "light.turn_on",
+                    "target": {
+                      "device_id": "cce853a7aa3dbf3723b78edf68c82faf"
+                    },
+                    "data": {
+                      "rgb_color": [
+                        255,
+                        149,
+                        0
+                      ],
+                      "effect": "Solid",
+                      "brightness_pct": 1
+                    }
+                  },
+                  "icon": "mdi:weather-night",
+                  "show_state": false,
+                  "icon_height": "50px",
+                  "name": "Night"
+                }
+              ]
+            },
+            {
               "type": "light",
               "entity": "light.kid_dimmer1"
+            },
+            {
+              "type": "thermostat",
+              "entity": "climate.kid",
+              "features": [
+                {
+                  "type": "climate-hvac-modes",
+                  "hvac_modes": [
+                    "heat",
+                    "off"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -260,6 +380,13 @@
                 {
                   "entity": "light.toptable"
                 }
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "light.wled",
+                "light.wled_tv"
               ]
             },
             {
@@ -312,14 +439,14 @@
                 {
                   "type": "entity",
                   "entity": "heating_control.status",
-                  "name": "Current",
+                  "name": "Status",
                   "icon": "mdi:play"
                 },
                 {
                   "type": "entity",
                   "entity": "heating_control.next_phaze_formatted",
                   "icon": "mdi:clock-time-five-outline",
-                  "name": "Next in"
+                  "name": "Locked for"
                 }
               ]
             },

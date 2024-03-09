@@ -296,3 +296,33 @@
       - switch.down_hallway_vent
       - switch.top_wc_valve
   mode: single
+- id: '1708102790983'
+  alias: KID ON
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00:00'
+  condition: []
+  action:
+  - service: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 25
+      effect: Palette
+    target:
+      device_id: cce853a7aa3dbf3723b78edf68c82faf
+  mode: single
+- id: '1708102863532'
+  alias: KID OFF
+  description: ''
+  trigger:
+  - platform: time
+    at: 08:00:00
+  condition: []
+  action:
+  - service: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: cce853a7aa3dbf3723b78edf68c82faf
+  mode: single

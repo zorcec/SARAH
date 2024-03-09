@@ -218,7 +218,7 @@
         "data": {
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
-          "app_version": "2023.12.4-full (11898)",
+          "app_version": "2024.1.5-full (12102)",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
@@ -240,22 +240,6 @@
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-115479ec3e394736",
         "disabled_by": null
-      },
-      {
-        "entry_id": "d385da7c2caa22c01a75c5b164360c1b",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.0.42"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "8caab57cd6f7",
-        "disabled_by": "user"
       },
       {
         "entry_id": "61d75a1ce1e0d384be7e9972b04b8c9b",
@@ -281,7 +265,7 @@
         "pref_disable_polling": false,
         "source": "integration_discovery",
         "unique_id": "pc_8caab57ce69d_0",
-        "disabled_by": null
+        "disabled_by": "user"
       },
       {
         "entry_id": "95cd168eab540f9e31429adb04da0057",
@@ -307,7 +291,7 @@
         "pref_disable_polling": false,
         "source": "integration_discovery",
         "unique_id": "pc_8caab57cd6f7_0",
-        "disabled_by": null
+        "disabled_by": "user"
       },
       {
         "entry_id": "8cacd51d29c565c1c797256173146888",
@@ -329,22 +313,6 @@
         "source": "user",
         "unique_id": "951073",
         "disabled_by": null
-      },
-      {
-        "entry_id": "300e8499695b2d7b959a39c872d91cc8",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.0.55"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "8caab57ce69d",
-        "disabled_by": "user"
       },
       {
         "entry_id": "2949faf7761a4679e11194d6586339a8",
@@ -476,6 +444,54 @@
         "pref_disable_polling": false,
         "source": "import",
         "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "45a9a94382ce26ded8a0f4ed1f7666b6",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED KID",
+        "data": {
+          "host": "192.168.0.44"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "58bf25d25409",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c23101cf1cebcc392baa96f1062c9c58",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED TV",
+        "data": {
+          "host": "192.168.0.55"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57ce69d",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ba772d68efa4e74c08ba634ed131f1ba",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.42"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57cd6f7",
         "disabled_by": null
       }
     ]
