@@ -68,6 +68,9 @@ _UTC = pytz.UTC
 _HYBRID_VALVE_NEW = "new"
 _HYBRID_VALVE_OFF = "off"
 _HYBRID_LOCK_UNTIL = _UTC.localize(datetime.utcnow())
+_HYBRID_REHEAT = "reheat"
+
+waiting_to_heat = False
 
 def setup(hass, config):
 
@@ -126,7 +129,7 @@ def start_next_phaze(hass):
         -> else -> ON -> END
 
         temp changed
-        -> if temp >= limit and not "locked" -> OFF -> trigger after wait cycle -> HEAT
+        -> if temp >= limit and not "locked" -> OFF -> block future triggers until HEAT -> trigger after wait cycle -> HEAT
         """
     elif _heat_type_state.state == "Target":
         open_valves = get_open_valves(hass)
@@ -193,6 +196,11 @@ def hybrid_heat(hass, action):
         debug(hass, "[HYBRID] Hybrid heat: ON + LOCK")
         hybrid_on(hass)
         hybrid_set_lock(hass, "heat")
+    elif action == _HYBRID_REHEAT:
+        debug(hass, "[HYBRID] Hybrid heat: REHEAT")
+        global waiting_to_heat
+        waiting_to_heat = False
+        hybrid_on(hass)
     else:
         debug(hass, "[HYBRID] Hybrid heat: ON")
         hybrid_on(hass)
@@ -264,12 +272,15 @@ def hybrid_is_temperature_high(hass):
 
 
 def hybrid_temperature_changed(hass, event):
+   global waiting_to_heat
    if is_hybrid(hass) and not hybrid_is_locked(hass):
         is_temperature_high = hybrid_is_temperature_high(hass)
         debug(hass, "[HYBRID] Is temperature high: %s" % is_temperature_high)
         if is_temperature_high:
             hybrid_off(hass)
-            threading.Timer(get_wait_duration(hass) + 5, hybrid_on, [hass]).start()
+            if not waiting_to_heat:
+                waiting_to_heat = True
+                threading.Timer(get_wait_duration(hass) + 5, hybrid_on, [hass, _HYBRID_REHEAT]).start()
 
 
 def hybrid_vent_state_changed(hass, event):
