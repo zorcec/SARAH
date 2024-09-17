@@ -28,9 +28,9 @@ recorder:
 
 mobile_app:
 
-energy:
+#energy:
 
-powercalc:
+#powercalc:
 
 backup:
 
@@ -80,6 +80,7 @@ input_select:
   heating_type:
     name: Type
     options:
+      - Hybrid
       - Target
       - Cycles
       - Continuous

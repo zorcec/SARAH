@@ -477,6 +477,38 @@
         "source": "import",
         "unique_id": null,
         "disabled_by": null
+      },
+      {
+        "entry_id": "e7a6bcacbf349acdf6423cb710c667c7",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "mobile_app",
+        "title": "xiaomi",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2024.7.3-full (13278)",
+          "device_name": "xiaomi",
+          "manufacturer": "Xiaomi",
+          "model": "23124RA7EO",
+          "os_name": "Android",
+          "os_version": "34",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "dtev5xhWRVKgFdwZsChllx:APA91bFYU-07iu5_uozwV_t0gvVCJuzt6mXrAS2IfhV0nQRE3RqDaE_-6MsPaQfSI5McacyJZGOYsbAqqf1_YK-DeGsytvOnCsWJl_QZpJWwDwjZ-ptFXIha7hDahir8l7FoThyKj4sF"
+          },
+          "device_id": "54735f9a2b6f1137",
+          "webhook_id": "a88c95c58226cc1a0cb5992e6e4b1c0448964780ac04a734d0d8f38061b486ad",
+          "user_id": "6ab73dfb34ab49b9afd9c1fb4697084e"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-54735f9a2b6f1137",
+        "disabled_by": null
       }
     ]
   }

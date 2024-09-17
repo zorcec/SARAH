@@ -66,7 +66,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "ec893a",
@@ -161,7 +161,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "fd6cb4",
@@ -256,7 +256,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "ce4320",
@@ -320,7 +320,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "58cc83",
@@ -443,7 +443,6 @@
         "enabled": false
       }
     ],
-    "tags": [],
-    "time_shutdown": "2024-01-27T22:33:46.173898+00:00"
+    "tags": []
   }
 }
