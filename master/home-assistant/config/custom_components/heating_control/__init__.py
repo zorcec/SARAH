@@ -219,6 +219,7 @@ def hybrid_on(hass):
 def hybrid_set_lock(hass, type):
     global _HYBRID_LOCK_UNTIL
     duration = 0
+    // TODO add reheat wait, add value to the UI and set this lock on hybrid_heat reheat
     if type == "heat":
         duration = get_heat_duration(hass)
     else:
