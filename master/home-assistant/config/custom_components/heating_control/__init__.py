@@ -54,6 +54,7 @@ _WAIT_PHAZE_DEFAULT = 0
 _STATUS_STATE_NAME = "{}.{}".format(DOMAIN, _STATE_STATUS)
 _STATUS_HEAT_PHAZE_NAME = "input_number.heat_phaze"
 _STATUS_WAIT_PHAZE_NAME = "input_number.wait_phaze"
+_STATUS_REHEAT_PHAZE_NAME = "input_number.reheat_time"
 _STATUS_HEATING_TYPE_NAME = "input_select.heating_type"
 _STATUS_TARGET_OUTPUT_NAME = "input_number.target_output"
 _STATUS_TARGET_TEMPERATURE_DROP_NAME = "input_number.target_output_drop" 
@@ -129,7 +130,7 @@ def start_next_phaze(hass):
         -> else -> ON -> END
 
         temp changed
-        -> if temp >= limit and not "locked" -> OFF -> block future triggers until HEAT -> trigger after wait cycle -> HEAT
+        -> if temp >= limit and not "locked" -> OFF -> block future triggers until HEAT -> trigger after wait cycle -> HEAT (REHEAT)
         """
     elif _heat_type_state.state == "Target":
         open_valves = get_open_valves(hass)
@@ -201,6 +202,7 @@ def hybrid_heat(hass, action):
         global waiting_to_heat
         waiting_to_heat = False
         hybrid_on(hass)
+        hybrid_set_lock(hass, _HYBRID_REHEAT)
     else:
         debug(hass, "[HYBRID] Hybrid heat: ON")
         hybrid_on(hass)
@@ -219,14 +221,19 @@ def hybrid_on(hass):
 def hybrid_set_lock(hass, type):
     global _HYBRID_LOCK_UNTIL
     duration = 0
-    // TODO add reheat wait, add value to the UI and set this lock on hybrid_heat reheat
     if type == "heat":
         duration = get_heat_duration(hass)
+    elif type == _HYBRID_REHEAT:
+        duration = get_reheat_duration(hass)
     else:
        duration = get_wait_duration(hass)
-    _HYBRID_LOCK_UNTIL = _UTC.localize(datetime.utcnow()) + timedelta(minutes=duration)
-    debug(hass, "[HYBRID] Lock was set for %sm" % duration)
-    hybrid_set_status(hass, "", duration * 60)
+    new_lock_time = _UTC.localize(datetime.utcnow()) + timedelta(minutes=duration)
+    if new_lock_time > _HYBRID_LOCK_UNTIL:
+        _HYBRID_LOCK_UNTIL = new_lock_time
+        debug(hass, "[HYBRID] Lock was set for %sm" % duration)
+        hybrid_set_status(hass, "", duration * 60)
+    else:
+        debug(hass, "[HYBRID] New lock time was ignored")
     
 
 def hybrid_set_status(hass, text="", seconds=0):
@@ -243,6 +250,11 @@ def get_wait_duration(hass):
 
 def get_heat_duration(hass):
     _heat_phaze_time_state = hass.states.get(_STATUS_HEAT_PHAZE_NAME)
+    return (float)(_heat_phaze_time_state.state)
+
+
+def get_reheat_duration(hass):
+    _heat_phaze_time_state = hass.states.get(_STATUS_REHEAT_PHAZE_NAME)
     return (float)(_heat_phaze_time_state.state)
 
 
@@ -281,7 +293,7 @@ def hybrid_temperature_changed(hass, event):
             hybrid_off(hass)
             if not waiting_to_heat:
                 waiting_to_heat = True
-                threading.Timer(get_wait_duration(hass) + 5, hybrid_on, [hass, _HYBRID_REHEAT]).start()
+                threading.Timer(get_wait_duration(hass) + 5, hybrid_heat, [hass, _HYBRID_REHEAT]).start()
 
 
 def hybrid_vent_state_changed(hass, event):

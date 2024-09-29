@@ -314,12 +314,6 @@
                   "entity": "heating_control.status",
                   "name": "Current",
                   "icon": "mdi:play"
-                },
-                {
-                  "type": "entity",
-                  "entity": "heating_control.next_phaze_formatted",
-                  "icon": "mdi:clock-time-five-outline",
-                  "name": "Next in"
                 }
               ]
             },
@@ -345,31 +339,13 @@
                 {
                   "type": "custom:numberbox-card",
                   "border": true,
-                  "entity": "input_number.target_output",
-                  "icon": "mdi:coolant-temperature"
+                  "entity": "input_number.reheat_time"
                 },
                 {
                   "type": "custom:numberbox-card",
                   "border": true,
-                  "entity": "input_number.target_output_drop",
-                  "icon": "mdi:thermometer-chevron-down"
-                },
-                {
-                  "show_name": true,
-                  "show_icon": true,
-                  "type": "button",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "heating_control.skip_current_phaze",
-                    "data": {},
-                    "target": {}
-                  },
-                  "name": "Skip current cycle",
-                  "icon": "mdi:skip-next",
-                  "icon_height": "50px",
-                  "hold_action": {
-                    "action": "none"
-                  }
+                  "entity": "input_number.target_output",
+                  "icon": "mdi:coolant-temperature"
                 }
               ]
             },

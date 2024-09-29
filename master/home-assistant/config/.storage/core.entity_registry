@@ -12065,7 +12065,7 @@
         "has_entity_name": false,
         "name": null,
         "options": {},
-        "original_device_class": "energy",
+        "original_device_class": null,
         "original_icon": "mdi:lightning-bolt",
         "original_name": "Main Light energy",
         "platform": "powercalc",
@@ -12399,7 +12399,7 @@
         "has_entity_name": false,
         "name": null,
         "options": {},
-        "original_device_class": "energy",
+        "original_device_class": null,
         "original_icon": "mdi:lightning-bolt",
         "original_name": "Kitchen Main Light energy",
         "platform": "powercalc",
@@ -12511,7 +12511,7 @@
         "has_entity_name": false,
         "name": null,
         "options": {},
-        "original_device_class": "energy",
+        "original_device_class": null,
         "original_icon": "mdi:lightning-bolt",
         "original_name": "Downstairs Main Light energy",
         "platform": "powercalc",
@@ -24468,6 +24468,7 @@
         "area_id": null,
         "capabilities": {
           "options": [
+            "Hybrid",
             "Target",
             "Cycles",
             "Continuous"
@@ -27282,6 +27283,32 @@
         "unique_id": "8CAAB57AAFB2_sensor_sensor_DS18Sens-1_Temperature",
         "previous_unique_id": null,
         "unit_of_measurement": "°C"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.reheat_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dc8db7fefc3898e9dc6914e8fddcdbd8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": "mdi:clock-outline",
+        "original_name": "Reheat time",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reheat_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": "min"
       }
     ],
     "deleted_entities": [
@@ -27292,6 +27319,14 @@
         "orphaned_timestamp": null,
         "platform": "scheduler",
         "unique_id": "bde8da"
+      },
+      {
+        "config_entry_id": "18b02218197fab69398e60bed0a1f821",
+        "entity_id": "sensor.down_heating_pump_energy_period",
+        "id": "432b94df8a6425e89e356ab451ea37e1",
+        "orphaned_timestamp": null,
+        "platform": "tasmota",
+        "unique_id": "A4CF12B818B3_sensor_sensor_ENERGY_Period"
       }
     ]
   }
