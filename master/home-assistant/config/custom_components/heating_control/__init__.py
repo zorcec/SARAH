@@ -292,7 +292,7 @@ def hybrid_temperature_changed(hass, event):
    if is_hybrid(hass) and not hybrid_is_locked(hass):
         is_temperature_high = hybrid_is_temperature_high(hass)
         _pump_state = hass.states.get(_PUMP_ENTITY_ID)
-        if is_temperature_high and _pump_state and _pump_state.state == STATE_OFF:
+        if is_temperature_high and _pump_state and _pump_state.state == STATE_ON:
             debug(hass, "[HYBRID] Temperature is high and pump is on: OFF + LOCK")
             hybrid_off(hass)
             hybrid_set_lock(hass, _STATE_PHAZE_WAIT) # wait for "wait" time
