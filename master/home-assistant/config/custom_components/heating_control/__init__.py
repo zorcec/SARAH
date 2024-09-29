@@ -21,6 +21,7 @@ ATTR_HEATING_OVERRIDE_VALUE = "value"
 
 _STATE_STATUS = "status"
 _STATE_UNTIL_NEXT_PHAZE = "until_next_phaze"
+_STATE_HYBRID_STATE = "hybrid_state"
 _STATE_NEXT_PHAZE = "next_phaze"
 _STATE_NEXT_PHAZE_FORMATTED = "next_phaze_formatted"
 
@@ -61,6 +62,7 @@ _STATUS_TARGET_TEMPERATURE_DROP_NAME = "input_number.target_output_drop"
 _STATUS_UNTIL_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_UNTIL_NEXT_PHAZE)
 _STATUS_NEXT_PHAZE_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE)
 _STATUS_UNTIL_NEXT_PHAZE_FORMATTED_NAME = "{}.{}".format(DOMAIN, _STATE_NEXT_PHAZE_FORMATTED)
+_STATUS_HYBRID_STATE = "{}.{}".format(DOMAIN, _STATE_HYBRID_STATE)
 
 _TARGET_MODE_VALVES = []
 
@@ -117,6 +119,7 @@ def start_next_phaze(hass):
     _current_time = _UTC.localize(datetime.utcnow())
     _heat_type_state = hass.states.get(_STATUS_HEATING_TYPE_NAME)
     if not _heat_type_state or is_hybrid(hass):
+        debug(hass, "Hybrid heating mode")
         """
         --- HYBRID IS FULLY ASYNC ---
 
@@ -198,7 +201,7 @@ def hybrid_heat(hass, action):
         hybrid_on(hass)
         hybrid_set_lock(hass, "heat")
     elif action == _HYBRID_REHEAT:
-        debug(hass, "[HYBRID] Hybrid heat: REHEAT")
+        debug(hass, "[HYBRID] Hybrid heat: REHEAT + LOCK")
         global waiting_to_heat
         waiting_to_heat = False
         hybrid_on(hass)
@@ -288,10 +291,12 @@ def hybrid_temperature_changed(hass, event):
    global waiting_to_heat
    if is_hybrid(hass) and not hybrid_is_locked(hass):
         is_temperature_high = hybrid_is_temperature_high(hass)
-        debug(hass, "[HYBRID] Is temperature high: %s" % is_temperature_high)
-        if is_temperature_high:
+        _pump_state = hass.states.get(_PUMP_ENTITY_ID)
+        if is_temperature_high and _pump_state and _pump_state.state == STATE_OFF:
+            debug(hass, "[HYBRID] Temperature is high and pump is on: OFF + LOCK")
             hybrid_off(hass)
-            if not waiting_to_heat:
+            hybrid_set_lock(hass, _STATE_PHAZE_WAIT) # wait for "wait" time
+        elif not waiting_to_heat:
                 waiting_to_heat = True
                 threading.Timer(get_wait_duration(hass) + 5, hybrid_heat, [hass, _HYBRID_REHEAT]).start()
 

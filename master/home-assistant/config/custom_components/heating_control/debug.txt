@@ -1,0 +1,32 @@
+home-assistant  | 2024-09-18 21:11:36.992 INFO (Thread-4) [custom_components.heating_control] [HYBRID] Hybrid heat: ON + LOCK
+home-assistant  | 2024-09-18 21:11:36.992 INFO (Thread-4) [custom_components.heating_control] Vent is ready: switch.down_kitchen_vent, changed at 2024-09-18 19:08:31.989800+00:00
+home-assistant  | 2024-09-18 21:11:36.992 INFO (Thread-4) [custom_components.heating_control] Turning pump on
+home-assistant  | 2024-09-18 21:11:36.997 INFO (Thread-4) [custom_components.heating_control] [HYBRID] Lock was set for 5.0m
+home-assistant  | 2024-09-18 21:16:59.698 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Temperature down: 23.9, top: 24.7, target: 25.0
+home-assistant  | 2024-09-18 21:16:59.699 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Is temperature high: False
+home-assistant  | 2024-09-18 21:17:29.721 INFO (SyncWorker_11) [custom_components.heating_control] [HYBRID] Temperature down: 23.9, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:17:29.721 INFO (SyncWorker_11) [custom_components.heating_control] [HYBRID] Is temperature high: False
+home-assistant  | 2024-09-18 21:18:13.161 INFO (SyncWorker_6) [custom_components.heating_control] [HYBRID] Temperature down: 24.0, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:18:13.162 INFO (SyncWorker_6) [custom_components.heating_control] [HYBRID] Is temperature high: False
+home-assistant  | 2024-09-18 21:19:13.181 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Temperature down: 24.3, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:19:13.181 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Is temperature high: False
+home-assistant  | 2024-09-18 21:19:43.204 INFO (SyncWorker_5) [custom_components.heating_control] [HYBRID] Temperature down: 24.7, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:19:43.204 INFO (SyncWorker_5) [custom_components.heating_control] [HYBRID] Is temperature high: False
+home-assistant  | 2024-09-18 21:20:13.164 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Temperature down: 25.2, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:20:13.165 INFO (SyncWorker_4) [custom_components.heating_control] [HYBRID] Is temperature high: True
+home-assistant  | 2024-09-18 21:20:13.165 INFO (SyncWorker_4) [custom_components.heating_control] Turning pump off and waiting
+home-assistant  | 2024-09-18 21:20:23.167 INFO (Thread-5) [custom_components.heating_control] [HYBRID] Hybrid heat: reheat
+home-assistant  | 2024-09-18 21:20:23.167 INFO (Thread-5) [custom_components.heating_control] Vent is ready: switch.down_kitchen_vent, changed at 2024-09-18 19:08:31.989800+00:00
+home-assistant  | 2024-09-18 21:20:23.167 INFO (Thread-5) [custom_components.heating_control] [HYBRID] Hybrid heat: REHEAT
+home-assistant  | 2024-09-18 21:20:23.167 INFO (Thread-5) [custom_components.heating_control] Vent is ready: switch.down_kitchen_vent, changed at 2024-09-18 19:08:31.989800+00:00
+home-assistant  | 2024-09-18 21:20:23.167 INFO (Thread-5) [custom_components.heating_control] Turning pump on
+home-assistant  | 2024-09-18 21:20:23.171 INFO (Thread-5) [custom_components.heating_control] [HYBRID] Lock was set for 3.0m
+home-assistant  | 2024-09-18 21:23:43.191 INFO (SyncWorker_2) [custom_components.heating_control] [HYBRID] Temperature down: 28.2, top: 24.6, target: 25.0
+home-assistant  | 2024-09-18 21:23:43.191 INFO (SyncWorker_2) [custom_components.heating_control] [HYBRID] Is temperature high: True
+home-assistant  | 2024-09-18 21:23:43.191 INFO (SyncWorker_2) [custom_components.heating_control] Turning pump off and waiting
+home-assistant  | 2024-09-18 21:23:53.194 INFO (Thread-6) [custom_components.heating_control] [HYBRID] Hybrid heat: reheat (TODO shouldn't happen, target temp was bellow?)
+home-assistant  | 2024-09-18 21:23:53.194 INFO (Thread-6) [custom_components.heating_control] Vent is ready: switch.down_kitchen_vent, changed at 2024-09-18 19:08:31.989800+00:00
+home-assistant  | 2024-09-18 21:23:53.194 INFO (Thread-6) [custom_components.heating_control] [HYBRID] Hybrid heat: REHEAT
+home-assistant  | 2024-09-18 21:23:53.194 INFO (Thread-6) [custom_components.heating_control] Vent is ready: switch.down_kitchen_vent, changed at 2024-09-18 19:08:31.989800+00:00
+home-assistant  | 2024-09-18 21:23:53.194 INFO (Thread-6) [custom_components.heating_control] Turning pump on
+home-assistant  | 2024-09-18 21:23:53.196 INFO (Thread-6) [custom_components.heating_control] [HYBRID] Lock was set for 3.0m

@@ -36,7 +36,7 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 21
+                  "temperature": 20
                 }
               }
             ]
@@ -161,7 +161,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "fd6cb4",
@@ -256,7 +256,7 @@
         "end_date": null,
         "repeat_type": "repeat",
         "name": null,
-        "enabled": true
+        "enabled": false
       },
       {
         "schedule_id": "ce4320",

@@ -20,146 +20,16 @@
           ],
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2024-09-29T09:09:26.886305+00:00",
-        "last_updated": "2024-09-29T09:09:38.022208+00:00",
+        "last_changed": "2024-09-29T14:01:40.404583+00:00",
+        "last_updated": "2024-09-29T14:01:51.473489+00:00",
         "context": {
-          "id": "01J8YGNT363X3W9SSYXCD9GH0K",
+          "id": "01J8Z1CWKHTPTCP8C5GY3A2RTW",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_number.heat_phaze",
-        "state": "15.0",
-        "attributes": {
-          "initial": null,
-          "editable": false,
-          "min": 0.0,
-          "max": 60.0,
-          "step": 5.0,
-          "mode": "slider",
-          "unit_of_measurement": "min",
-          "icon": "mdi:clock-outline",
-          "friendly_name": "Heating Cycle"
-        },
-        "last_changed": "2024-09-29T09:09:27.343136+00:00",
-        "last_updated": "2024-09-29T09:09:27.343136+00:00",
-        "context": {
-          "id": "01J8YGNFNFBTQPBXAJ7P2MSVH6",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_number.wait_phaze",
-        "state": "15.0",
-        "attributes": {
-          "initial": null,
-          "editable": false,
-          "min": 0.0,
-          "max": 60.0,
-          "step": 5.0,
-          "mode": "slider",
-          "unit_of_measurement": "min",
-          "icon": "mdi:clock-outline",
-          "friendly_name": "Waiting Cycle"
-        },
-        "last_changed": "2024-09-29T09:09:27.343300+00:00",
-        "last_updated": "2024-09-29T09:09:27.343300+00:00",
-        "context": {
-          "id": "01J8YGNFNFCXTTSY4MAZG2JYC7",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_number.reheat_time",
-        "state": "5.0",
-        "attributes": {
-          "initial": null,
-          "editable": false,
-          "min": 0.0,
-          "max": 60.0,
-          "step": 1.0,
-          "mode": "slider",
-          "unit_of_measurement": "min",
-          "icon": "mdi:clock-outline",
-          "friendly_name": "Reheat time"
-        },
-        "last_changed": "2024-09-29T09:09:27.343458+00:00",
-        "last_updated": "2024-09-29T09:09:27.343458+00:00",
-        "context": {
-          "id": "01J8YGNFNFEYBFEFMK3B6R6Z5D",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_number.target_output",
-        "state": "29.0",
-        "attributes": {
-          "initial": null,
-          "editable": false,
-          "min": 25.0,
-          "max": 40.0,
-          "step": 1.0,
-          "mode": "slider",
-          "unit_of_measurement": "°C",
-          "icon": "mdi:temperature",
-          "friendly_name": "Target Temp."
-        },
-        "last_changed": "2024-09-29T09:09:27.343591+00:00",
-        "last_updated": "2024-09-29T09:09:27.343591+00:00",
-        "context": {
-          "id": "01J8YGNFNFRJGB43VE7X2F0NNF",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "input_number.target_output_drop",
-        "state": "25.0",
-        "attributes": {
-          "initial": null,
-          "editable": false,
-          "min": 20.0,
-          "max": 40.0,
-          "step": 1.0,
-          "mode": "slider",
-          "unit_of_measurement": "°C",
-          "icon": "mdi:temperature",
-          "friendly_name": "Target Drop"
-        },
-        "last_changed": "2024-09-29T09:09:27.343731+00:00",
-        "last_updated": "2024-09-29T09:09:27.343731+00:00",
-        "context": {
-          "id": "01J8YGNFNFNC5Z7R2M7P9YWJEE",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -176,16 +46,146 @@
           "icon": "mdi:format-list-bulleted-type",
           "friendly_name": "Type"
         },
-        "last_changed": "2024-09-29T09:09:27.343922+00:00",
-        "last_updated": "2024-09-29T09:09:27.343922+00:00",
+        "last_changed": "2024-09-29T14:01:40.841609+00:00",
+        "last_updated": "2024-09-29T14:01:40.841609+00:00",
         "context": {
-          "id": "01J8YGNFNFB6TK0R09M147ZBQS",
+          "id": "01J8Z1CJ793R4MB2QXZ4G6EJJ0",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.heat_phaze",
+        "state": "10.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 60.0,
+          "step": 5.0,
+          "mode": "slider",
+          "unit_of_measurement": "min",
+          "icon": "mdi:clock-outline",
+          "friendly_name": "Heating Cycle"
+        },
+        "last_changed": "2024-09-29T14:01:40.843697+00:00",
+        "last_updated": "2024-09-29T14:01:40.843697+00:00",
+        "context": {
+          "id": "01J8Z1CJ7BT752T89HYYBHEFYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.wait_phaze",
+        "state": "20.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 60.0,
+          "step": 5.0,
+          "mode": "slider",
+          "unit_of_measurement": "min",
+          "icon": "mdi:clock-outline",
+          "friendly_name": "Waiting Cycle"
+        },
+        "last_changed": "2024-09-29T14:01:40.843858+00:00",
+        "last_updated": "2024-09-29T14:01:40.843858+00:00",
+        "context": {
+          "id": "01J8Z1CJ7BVYZYPQ3XA2RH50RD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.reheat_time",
+        "state": "10.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 0.0,
+          "max": 60.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "min",
+          "icon": "mdi:clock-outline",
+          "friendly_name": "Reheat time"
+        },
+        "last_changed": "2024-09-29T14:01:40.843992+00:00",
+        "last_updated": "2024-09-29T14:01:40.843992+00:00",
+        "context": {
+          "id": "01J8Z1CJ7B57N2BNT9FCPNP7R6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.target_output",
+        "state": "28.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 25.0,
+          "max": 40.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "°C",
+          "icon": "mdi:temperature",
+          "friendly_name": "Target Temp."
+        },
+        "last_changed": "2024-09-29T14:01:40.844133+00:00",
+        "last_updated": "2024-09-29T14:01:40.844133+00:00",
+        "context": {
+          "id": "01J8Z1CJ7CWCW1BVX9QWDXTG87",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "input_number.target_output_drop",
+        "state": "25.0",
+        "attributes": {
+          "initial": null,
+          "editable": false,
+          "min": 20.0,
+          "max": 40.0,
+          "step": 1.0,
+          "mode": "slider",
+          "unit_of_measurement": "°C",
+          "icon": "mdi:temperature",
+          "friendly_name": "Target Drop"
+        },
+        "last_changed": "2024-09-29T14:01:40.844262+00:00",
+        "last_updated": "2024-09-29T14:01:40.844262+00:00",
+        "context": {
+          "id": "01J8Z1CJ7C3NV6V4BSWBJAM4AJ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -198,16 +198,16 @@
           "current": 0,
           "friendly_name": "Disables PIR"
         },
-        "last_changed": "2024-09-29T09:09:27.923403+00:00",
-        "last_updated": "2024-09-29T09:09:27.923403+00:00",
+        "last_changed": "2024-09-29T14:01:40.983940+00:00",
+        "last_updated": "2024-09-29T14:01:40.983940+00:00",
         "context": {
-          "id": "01J8YGNG7KS95P1MVHDGHSQEB2",
+          "id": "01J8Z1CJBQADEVRP3T42SYDV7N",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -220,16 +220,16 @@
           "current": 0,
           "friendly_name": "Activates PIR"
         },
-        "last_changed": "2024-09-29T09:09:27.923611+00:00",
-        "last_updated": "2024-09-29T09:09:27.923611+00:00",
+        "last_changed": "2024-09-29T14:01:40.984120+00:00",
+        "last_updated": "2024-09-29T14:01:40.984120+00:00",
         "context": {
-          "id": "01J8YGNG7KYQCPA3WZ69Y9JSPD",
+          "id": "01J8Z1CJBR67936W31T18Q472D",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -242,16 +242,16 @@
           "current": 0,
           "friendly_name": "Sets sleep retain status"
         },
-        "last_changed": "2024-09-29T09:09:27.923785+00:00",
-        "last_updated": "2024-09-29T09:09:27.923785+00:00",
+        "last_changed": "2024-09-29T14:01:40.984290+00:00",
+        "last_updated": "2024-09-29T14:01:40.984290+00:00",
         "context": {
-          "id": "01J8YGNG7K8MVV48CQ31JB2WKC",
+          "id": "01J8Z1CJBRZ8AKHB79K34M3MXC",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -259,21 +259,21 @@
         "state": "on",
         "attributes": {
           "id": "1676149800565",
-          "last_triggered": "2024-09-29T09:03:19.838984+00:00",
+          "last_triggered": "2024-09-29T13:25:47.322951+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Bathroom fan only when lights are off"
         },
-        "last_changed": "2024-09-29T09:09:27.923968+00:00",
-        "last_updated": "2024-09-29T09:09:27.923968+00:00",
+        "last_changed": "2024-09-29T14:01:40.984478+00:00",
+        "last_updated": "2024-09-29T14:01:40.984478+00:00",
         "context": {
-          "id": "01J8YGNG7KMMADKGWE4A5BMH51",
+          "id": "01J8Z1CJBRHWKSK23Q2470F3YC",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -286,16 +286,16 @@
           "current": 0,
           "friendly_name": "Correct top dimmer"
         },
-        "last_changed": "2024-09-29T09:09:27.924143+00:00",
-        "last_updated": "2024-09-29T09:09:27.924143+00:00",
+        "last_changed": "2024-09-29T14:01:40.984672+00:00",
+        "last_updated": "2024-09-29T14:01:40.984672+00:00",
         "context": {
-          "id": "01J8YGNG7M4KWTHR2B6V32NCXG",
+          "id": "01J8Z1CJBRHRWKBASS16MZN8KS",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -303,21 +303,21 @@
         "state": "on",
         "attributes": {
           "id": "1677363742332",
-          "last_triggered": "2024-09-20T14:01:00.231031+00:00",
+          "last_triggered": "2024-09-29T13:25:47.323304+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Correct bathroom dimmer"
         },
-        "last_changed": "2024-09-29T09:09:27.924313+00:00",
-        "last_updated": "2024-09-29T09:09:27.924313+00:00",
+        "last_changed": "2024-09-29T14:01:40.984847+00:00",
+        "last_updated": "2024-09-29T14:01:40.984847+00:00",
         "context": {
-          "id": "01J8YGNG7M7XACQ25ZHDP6F7RG",
+          "id": "01J8Z1CJBR8GXZV83WNKMBNC3Q",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -330,16 +330,16 @@
           "current": 0,
           "friendly_name": "Correct kitchen main dimmer"
         },
-        "last_changed": "2024-09-29T09:09:27.924480+00:00",
-        "last_updated": "2024-09-29T09:09:27.924480+00:00",
+        "last_changed": "2024-09-29T14:01:40.985029+00:00",
+        "last_updated": "2024-09-29T14:01:40.985029+00:00",
         "context": {
-          "id": "01J8YGNG7MKQY9BDABX5QBRJY4",
+          "id": "01J8Z1CJBS16YX8R5PEPWDHNZA",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -352,16 +352,16 @@
           "current": 0,
           "friendly_name": "Correct kitchen table dimmer"
         },
-        "last_changed": "2024-09-29T09:09:27.924661+00:00",
-        "last_updated": "2024-09-29T09:09:27.924661+00:00",
+        "last_changed": "2024-09-29T14:01:40.985196+00:00",
+        "last_updated": "2024-09-29T14:01:40.985196+00:00",
         "context": {
-          "id": "01J8YGNG7MHGGMYY9AKP0JMRFW",
+          "id": "01J8Z1CJBSJ2TDGMN7KKNWP8DV",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -374,16 +374,16 @@
           "current": 0,
           "friendly_name": "Watering Down"
         },
-        "last_changed": "2024-09-29T09:09:27.924807+00:00",
-        "last_updated": "2024-09-29T09:09:27.924807+00:00",
+        "last_changed": "2024-09-29T14:01:40.985345+00:00",
+        "last_updated": "2024-09-29T14:01:40.985345+00:00",
         "context": {
-          "id": "01J8YGNG7MGC9JK41DQP1ZERZY",
+          "id": "01J8Z1CJBSSRTPT5K1XM0G491X",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -396,16 +396,16 @@
           "current": 0,
           "friendly_name": "Watering Up"
         },
-        "last_changed": "2024-09-29T09:09:27.924942+00:00",
-        "last_updated": "2024-09-29T09:09:27.924942+00:00",
+        "last_changed": "2024-09-29T14:01:40.985538+00:00",
+        "last_updated": "2024-09-29T14:01:40.985538+00:00",
         "context": {
-          "id": "01J8YGNG7MD5F66YQ0NH3ACJ8T",
+          "id": "01J8Z1CJBSS95P1MVHDGHSQEB2",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -418,264 +418,16 @@
           "current": 0,
           "friendly_name": "Hallway heating"
         },
-        "last_changed": "2024-09-29T09:09:27.925073+00:00",
-        "last_updated": "2024-09-29T09:09:27.925073+00:00",
+        "last_changed": "2024-09-29T14:01:40.985666+00:00",
+        "last_updated": "2024-09-29T14:01:40.985666+00:00",
         "context": {
-          "id": "01J8YGNG7NB5Q2YX004HHF3MEA",
+          "id": "01J8Z1CJBSYQCPA3WZ69Y9JSPD",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.top_main_light_energy",
-        "state": "unavailable",
-        "attributes": {
-          "state_class": "total",
-          "unit_of_measurement": "kWh",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Main Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:31.030646+00:00",
-        "last_updated": "2024-09-29T09:09:31.030646+00:00",
-        "context": {
-          "id": "01J8YGNK8PY9WBSP4BDVEF8C3T",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "7.9018"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.top_main_light_power",
-        "last_valid_state": "7.901821734802502777796524999"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.workplace_light_energy",
-        "state": "120.4484",
-        "attributes": {
-          "state_class": "total",
-          "source_entity": "switch.workplace_light",
-          "source_domain": "switch",
-          "source": "sensor.workplace_light_power",
-          "unit_of_measurement": "kWh",
-          "device_class": "energy",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Workplace Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:33.585082+00:00",
-        "last_updated": "2024-09-29T09:09:33.585082+00:00",
-        "context": {
-          "id": "01J8YGNNRHV4X3TB96EJRXSGKH",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "120.4484"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.workplace_light_power",
-        "last_valid_state": "120.4484000000000000000000000"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.bathroom_main_light_energy",
-        "state": "34.9019",
-        "attributes": {
-          "state_class": "total",
-          "source_entity": "light.bathroom_main_light",
-          "source_domain": "light",
-          "source": "sensor.bathroom_main_light_power",
-          "unit_of_measurement": "kWh",
-          "device_class": "energy",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Bathroom Main Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:33.582317+00:00",
-        "last_updated": "2024-09-29T09:09:33.582317+00:00",
-        "context": {
-          "id": "01J8YGNNREQ6FNBX7S1HE2NHJE",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "34.9019"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.bathroom_main_light_power",
-        "last_valid_state": "34.90186730209306110978074172"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.bathroom_fan_energy",
-        "state": "8.6027",
-        "attributes": {
-          "state_class": "total",
-          "source_entity": "switch.bathroom_fan",
-          "source_domain": "switch",
-          "source": "sensor.bathroom_fan_power",
-          "unit_of_measurement": "kWh",
-          "device_class": "energy",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Bathroom Fan energy"
-        },
-        "last_changed": "2024-09-29T09:09:33.547324+00:00",
-        "last_updated": "2024-09-29T09:09:33.547324+00:00",
-        "context": {
-          "id": "01J8YGNNQBW6YVSASECRXJ434X",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "8.6027"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.bathroom_fan_power",
-        "last_valid_state": "8.602685972226111112151316876"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.tasmota_3_energy",
-        "state": "unavailable",
-        "attributes": {
-          "state_class": "total",
-          "unit_of_measurement": "kWh",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Kitchen Main Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:31.035545+00:00",
-        "last_updated": "2024-09-29T09:09:31.035545+00:00",
-        "context": {
-          "id": "01J8YGNK8VG561S9JSTFDSH9NJ",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "8.7492"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.tasmota_3_power",
-        "last_valid_state": "8.749200000000000000000000000"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.kitchen_light_energy",
-        "state": "53.5409",
-        "attributes": {
-          "state_class": "total",
-          "source_entity": "switch.kitchen_light",
-          "source_domain": "switch",
-          "source": "sensor.kitchen_light_power",
-          "unit_of_measurement": "kWh",
-          "device_class": "energy",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Kitchen Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:33.585407+00:00",
-        "last_updated": "2024-09-29T09:09:33.585407+00:00",
-        "context": {
-          "id": "01J8YGNNRH462RNPZ27BFZCD2V",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "53.5409"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.kitchen_light_power",
-        "last_valid_state": "53.54085960666111111154050503"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.tasmota_2_energy",
-        "state": "unavailable",
-        "attributes": {
-          "state_class": "total",
-          "unit_of_measurement": "kWh",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Downstairs Main Light energy"
-        },
-        "last_changed": "2024-09-29T09:09:31.038333+00:00",
-        "last_updated": "2024-09-29T09:09:31.038333+00:00",
-        "context": {
-          "id": "01J8YGNK8YH2TVCEGRWZEHD52Y",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "6.5474"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.tasmota_2_power",
-        "last_valid_state": "6.547400000000000000000000000"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "sensor.ambi_pc_energy",
-        "state": "unavailable",
-        "attributes": {
-          "state_class": "total",
-          "unit_of_measurement": "kWh",
-          "icon": "mdi:lightning-bolt",
-          "friendly_name": "Ambi PC energy"
-        },
-        "last_changed": "2024-09-29T09:09:31.045198+00:00",
-        "last_updated": "2024-09-29T09:09:31.045198+00:00",
-        "context": {
-          "id": "01J8YGNK954XWHKP2AJZQRR817",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": {
-        "native_value": {
-          "__type": "<class 'decimal.Decimal'>",
-          "decimal_str": "0.0232"
-        },
-        "native_unit_of_measurement": "kWh",
-        "source_entity": "sensor.ambi_pc_power",
-        "last_valid_state": "0.02324422019817777781943144254"
-      },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -689,22 +441,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.1,
-          "current_temperature": 19.1,
-          "temperature": 21.0,
-          "hvac_action": "heating",
+          "current_temperature": 20.2,
+          "temperature": 20.0,
+          "hvac_action": "idle",
           "friendly_name": "Kitchen",
           "supported_features": 1
         },
-        "last_changed": "2024-09-29T09:09:31.048918+00:00",
-        "last_updated": "2024-09-29T09:09:35.826940+00:00",
+        "last_changed": "2024-09-29T14:01:44.515044+00:00",
+        "last_updated": "2024-09-29T14:01:49.758412+00:00",
         "context": {
-          "id": "01J8YGNQYJV73BDZPEQ3R29BS0",
+          "id": "01J8Z1CTXYMSW1T96XKY8HJT5A",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -718,22 +470,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.1,
-          "current_temperature": 19.6,
-          "temperature": 25.0,
+          "current_temperature": 19.5,
+          "temperature": 21.0,
           "hvac_action": "off",
           "friendly_name": "Bathroom",
           "supported_features": 1
         },
-        "last_changed": "2024-09-29T09:09:31.049399+00:00",
-        "last_updated": "2024-09-29T09:09:35.374025+00:00",
+        "last_changed": "2024-09-29T14:01:44.515584+00:00",
+        "last_updated": "2024-09-29T14:01:48.845213+00:00",
         "context": {
-          "id": "01J8YGNQGE21CH0GAHDEEFC17Y",
+          "id": "01J8Z1CT1D3QN4VM5XPDR6BPBE",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -747,22 +499,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.1,
-          "current_temperature": 20.0,
-          "temperature": 20.0,
+          "current_temperature": 20.9,
+          "temperature": 21.0,
           "hvac_action": "off",
           "friendly_name": "Master Bedroom",
           "supported_features": 1
         },
-        "last_changed": "2024-09-29T09:09:31.049861+00:00",
-        "last_updated": "2024-09-29T09:09:37.398397+00:00",
+        "last_changed": "2024-09-29T14:01:44.516058+00:00",
+        "last_updated": "2024-09-29T14:01:49.986509+00:00",
         "context": {
-          "id": "01J8YGNSFPAKRYKTKS9SADA3D4",
+          "id": "01J8Z1CV52CA20HZKZHC03WHFF",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -776,22 +528,22 @@
           "min_temp": 10.0,
           "max_temp": 25.0,
           "target_temp_step": 0.1,
-          "current_temperature": 19.3,
+          "current_temperature": 20.9,
           "temperature": 20.0,
           "hvac_action": "off",
           "friendly_name": "Top",
           "supported_features": 1
         },
-        "last_changed": "2024-09-29T09:09:31.050325+00:00",
-        "last_updated": "2024-09-29T09:09:35.395671+00:00",
+        "last_changed": "2024-09-29T14:01:44.516509+00:00",
+        "last_updated": "2024-09-29T14:01:48.679008+00:00",
         "context": {
-          "id": "01J8YGNQH3K26V3ASGC5VM9SWH",
+          "id": "01J8Z1CSW7QAQ3F07XSAX6PPJ7",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -805,23 +557,23 @@
           "min_temp": 50,
           "max_temp": 100,
           "target_temp_step": 1,
-          "current_temperature": 77,
+          "current_temperature": 72,
           "temperature": 90,
           "hvac_action": "idle",
           "icon": "mdi:fan",
           "friendly_name": "Fan Control",
           "supported_features": 1
         },
-        "last_changed": "2024-09-29T09:09:31.050734+00:00",
-        "last_updated": "2024-09-29T09:09:35.375414+00:00",
+        "last_changed": "2024-09-29T14:01:44.516835+00:00",
+        "last_updated": "2024-09-29T14:01:48.846179+00:00",
         "context": {
-          "id": "01J8YGNQGFQGY2XCTST68AKTDS",
+          "id": "01J8Z1CT1E5JQT96K5D849NW4C",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -833,10 +585,10 @@
           "icon": "mdi:battery-40",
           "friendly_name": "M2004J19C Battery level"
         },
-        "last_changed": "2024-09-29T09:09:31.222872+00:00",
-        "last_updated": "2024-09-29T09:09:31.222872+00:00",
+        "last_changed": "2024-09-29T14:01:44.547576+00:00",
+        "last_updated": "2024-09-29T14:01:44.547576+00:00",
         "context": {
-          "id": "01J8YGNKEP0Z0FDT4X53J5K76N",
+          "id": "01J8Z1CNV3HR4XWBGSMY7HWRDS",
           "parent_id": null,
           "user_id": null
         }
@@ -845,7 +597,7 @@
         "native_value": 43,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -855,10 +607,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "M2004J19C Battery state"
         },
-        "last_changed": "2024-09-29T09:09:31.223062+00:00",
-        "last_updated": "2024-09-29T09:09:31.223062+00:00",
+        "last_changed": "2024-09-29T14:01:44.547776+00:00",
+        "last_updated": "2024-09-29T14:01:44.547776+00:00",
         "context": {
-          "id": "01J8YGNKEQ1VYW5CYKGYV6MGZF",
+          "id": "01J8Z1CNV3SWMGV0988WY4RWZJ",
           "parent_id": null,
           "user_id": null
         }
@@ -867,7 +619,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -877,10 +629,10 @@
           "icon": "mdi:battery",
           "friendly_name": "M2004J19C Charger type"
         },
-        "last_changed": "2024-09-29T09:09:31.223263+00:00",
-        "last_updated": "2024-09-29T09:09:31.223263+00:00",
+        "last_changed": "2024-09-29T14:01:44.547952+00:00",
+        "last_updated": "2024-09-29T14:01:44.547952+00:00",
         "context": {
-          "id": "01J8YGNKEQ2AYM6DGB7ZYM7JBZ",
+          "id": "01J8Z1CNV3RN290SXH7KR7F3C0",
           "parent_id": null,
           "user_id": null
         }
@@ -889,7 +641,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -899,10 +651,10 @@
           "icon": "mdi:battery-heart-variant",
           "friendly_name": "M2004J19C Battery health"
         },
-        "last_changed": "2024-09-29T09:09:31.223456+00:00",
-        "last_updated": "2024-09-29T09:09:31.223456+00:00",
+        "last_changed": "2024-09-29T14:01:44.548124+00:00",
+        "last_updated": "2024-09-29T14:01:44.548124+00:00",
         "context": {
-          "id": "01J8YGNKEQCSVNX7SCXZ7D5CDP",
+          "id": "01J8Z1CNV41FGTVKTA3WZJ6M57",
           "parent_id": null,
           "user_id": null
         }
@@ -911,7 +663,7 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -923,10 +675,10 @@
           "icon": "mdi:battery",
           "friendly_name": "M2004J19C Battery temperature"
         },
-        "last_changed": "2024-09-29T09:09:31.223645+00:00",
-        "last_updated": "2024-09-29T09:09:31.223645+00:00",
+        "last_changed": "2024-09-29T14:01:44.548314+00:00",
+        "last_updated": "2024-09-29T14:01:44.548314+00:00",
         "context": {
-          "id": "01J8YGNKEQE12ATDNDRCBB244B",
+          "id": "01J8Z1CNV4X4HHFCFFN1MS6YEB",
           "parent_id": null,
           "user_id": null
         }
@@ -935,7 +687,7 @@
         "native_value": 25.9,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -949,10 +701,10 @@
           "icon": "mdi:battery-plus",
           "friendly_name": "M2004J19C Battery power"
         },
-        "last_changed": "2024-09-29T09:09:31.223830+00:00",
-        "last_updated": "2024-09-29T09:09:31.223830+00:00",
+        "last_changed": "2024-09-29T14:01:44.548501+00:00",
+        "last_updated": "2024-09-29T14:01:44.548501+00:00",
         "context": {
-          "id": "01J8YGNKEQE7SB5B31KW60X164",
+          "id": "01J8Z1CNV420NJAENTRYW6MHXX",
           "parent_id": null,
           "user_id": null
         }
@@ -961,7 +713,7 @@
         "native_value": 0.92,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -972,16 +724,16 @@
           "icon": "mdi:power-plug-off",
           "friendly_name": "M2004J19C Is charging"
         },
-        "last_changed": "2024-09-29T09:09:31.224392+00:00",
-        "last_updated": "2024-09-29T09:09:31.224392+00:00",
+        "last_changed": "2024-09-29T14:01:44.549223+00:00",
+        "last_updated": "2024-09-29T14:01:44.549223+00:00",
         "context": {
-          "id": "01J8YGNKER2JAA6KFDR4FQTQZ6",
+          "id": "01J8Z1CNV5H5KE2NXRDAPHC3HH",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -998,16 +750,16 @@
           "vertical_accuracy": 1,
           "friendly_name": "M2004J19C"
         },
-        "last_changed": "2024-09-29T09:09:31.225008+00:00",
-        "last_updated": "2024-09-29T09:09:31.225008+00:00",
+        "last_changed": "2024-09-29T14:01:44.549837+00:00",
+        "last_updated": "2024-09-29T14:01:44.549837+00:00",
         "context": {
-          "id": "01J8YGNKESXD6K2736ZMZN5GQ2",
+          "id": "01J8Z1CNV5PDKSMCT2EQCA6WQG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1020,10 +772,10 @@
           "icon": "mdi:battery-80",
           "friendly_name": "samsung-dragica Battery level"
         },
-        "last_changed": "2024-09-29T09:09:31.225447+00:00",
-        "last_updated": "2024-09-29T09:09:31.225447+00:00",
+        "last_changed": "2024-09-29T14:01:44.550284+00:00",
+        "last_updated": "2024-09-29T14:01:44.550284+00:00",
         "context": {
-          "id": "01J8YGNKESA36PK8JNS6HENDXQ",
+          "id": "01J8Z1CNV6A35WZJJVWCH991ZF",
           "parent_id": null,
           "user_id": null
         }
@@ -1032,7 +784,7 @@
         "native_value": 84,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1042,10 +794,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "samsung-dragica Battery state"
         },
-        "last_changed": "2024-09-29T09:09:31.225628+00:00",
-        "last_updated": "2024-09-29T09:09:31.225628+00:00",
+        "last_changed": "2024-09-29T14:01:44.550457+00:00",
+        "last_updated": "2024-09-29T14:01:44.550457+00:00",
         "context": {
-          "id": "01J8YGNKESKKAWZMAG6NAGWD1G",
+          "id": "01J8Z1CNV6042WZZDCQZVBPHXV",
           "parent_id": null,
           "user_id": null
         }
@@ -1054,7 +806,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1064,10 +816,10 @@
           "icon": "mdi:battery",
           "friendly_name": "samsung-dragica Charger type"
         },
-        "last_changed": "2024-09-29T09:09:31.225811+00:00",
-        "last_updated": "2024-09-29T09:09:31.225811+00:00",
+        "last_changed": "2024-09-29T14:01:44.550620+00:00",
+        "last_updated": "2024-09-29T14:01:44.550620+00:00",
         "context": {
-          "id": "01J8YGNKESEEV1XKN681ESSQVE",
+          "id": "01J8Z1CNV6P1ET9PM4N1PFHA00",
           "parent_id": null,
           "user_id": null
         }
@@ -1076,7 +828,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1086,40 +838,40 @@
           "source_type": "gps",
           "friendly_name": "samsung-dragica"
         },
-        "last_changed": "2024-09-29T09:09:31.226766+00:00",
-        "last_updated": "2024-09-29T09:09:31.226766+00:00",
+        "last_changed": "2024-09-29T14:01:44.551597+00:00",
+        "last_updated": "2024-09-29T14:01:44.551597+00:00",
         "context": {
-          "id": "01J8YGNKETX9ZPT436JRBH6HXQ",
+          "id": "01J8Z1CNV7K8X4K72W4AMZX84C",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_level",
-        "state": "72",
+        "state": "36",
         "attributes": {
           "unit_of_measurement": "%",
           "device_class": "battery",
-          "icon": "mdi:battery-70",
+          "icon": "mdi:battery-30",
           "friendly_name": "xiaomi Battery level"
         },
-        "last_changed": "2024-09-29T09:09:31.227270+00:00",
-        "last_updated": "2024-09-29T09:09:31.227270+00:00",
+        "last_changed": "2024-09-29T14:01:44.552067+00:00",
+        "last_updated": "2024-09-29T14:01:44.552067+00:00",
         "context": {
-          "id": "01J8YGNKEV0VGZRZS32C7S8W74",
+          "id": "01J8Z1CNV8NSQ52PBDZ35CTWTB",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 72,
+        "native_value": 36,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1136,10 +888,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "xiaomi Battery state"
         },
-        "last_changed": "2024-09-29T09:09:31.227462+00:00",
-        "last_updated": "2024-09-29T09:09:31.227462+00:00",
+        "last_changed": "2024-09-29T14:01:44.552238+00:00",
+        "last_updated": "2024-09-29T14:01:44.552238+00:00",
         "context": {
-          "id": "01J8YGNKEVX54T4FFK1NFJ3210",
+          "id": "01J8Z1CNV842Y6YRPPBTJ28KKY",
           "parent_id": null,
           "user_id": null
         }
@@ -1148,7 +900,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1166,10 +918,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Charger type"
         },
-        "last_changed": "2024-09-29T09:09:31.227639+00:00",
-        "last_updated": "2024-09-29T09:09:31.227639+00:00",
+        "last_changed": "2024-09-29T14:01:44.552413+00:00",
+        "last_updated": "2024-09-29T14:01:44.552413+00:00",
         "context": {
-          "id": "01J8YGNKEVPX68QM19Q8WAA12M",
+          "id": "01J8Z1CNV838ZACDFBSK1K3Z2Q",
           "parent_id": null,
           "user_id": null
         }
@@ -1178,7 +930,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
     },
     {
       "state": {
@@ -1188,16 +940,267 @@
           "source_type": "gps",
           "friendly_name": "xiaomi"
         },
-        "last_changed": "2024-09-29T09:09:31.228282+00:00",
-        "last_updated": "2024-09-29T09:09:31.228282+00:00",
+        "last_changed": "2024-09-29T14:01:44.553033+00:00",
+        "last_updated": "2024-09-29T14:01:44.553033+00:00",
         "context": {
-          "id": "01J8YGNKEWD0QE7EBN1Y2JK7A9",
+          "id": "01J8Z1CNV9Q8SS658A1EZ4TBCC",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-09-29T09:09:38.026408+00:00"
+      "last_seen": "2024-09-29T14:01:51.473668+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.top_main_light_energy",
+        "state": "unavailable",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Main Light energy"
+        },
+        "last_changed": "2024-09-29T14:00:17.454733+00:00",
+        "last_updated": "2024-09-29T14:00:17.454733+00:00",
+        "context": {
+          "id": "01J8Z1A0SEMX999NJ3D9DCEZ1Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "7.9018"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.top_main_light_power",
+        "last_valid_state": "7.901821734802502777796524999"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.workplace_light_energy",
+        "state": "120.5524",
+        "attributes": {
+          "state_class": "total",
+          "source_entity": "switch.workplace_light",
+          "source_domain": "switch",
+          "source": "sensor.workplace_light_power",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Workplace Light energy"
+        },
+        "last_changed": "2024-09-29T13:59:26.422797+00:00",
+        "last_updated": "2024-09-29T13:59:26.422797+00:00",
+        "context": {
+          "id": "01J8Z18EYPH0J4HAC9D6QYP4G2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "120.5524"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.workplace_light_power",
+        "last_valid_state": "120.5523752666200000003430641"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bathroom_main_light_energy",
+        "state": "34.9999",
+        "attributes": {
+          "state_class": "total",
+          "source_entity": "light.bathroom_main_light",
+          "source_domain": "light",
+          "source": "sensor.bathroom_main_light_power",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Bathroom Main Light energy"
+        },
+        "last_changed": "2024-09-29T13:39:28.857296+00:00",
+        "last_updated": "2024-09-29T13:39:28.857296+00:00",
+        "context": {
+          "id": "01J8Z03XESZ01BAZFKPRMQ7Z1E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "34.9999"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.bathroom_main_light_power",
+        "last_valid_state": "34.99990000000000000000000000"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bathroom_fan_energy",
+        "state": "8.6131",
+        "attributes": {
+          "state_class": "total",
+          "source_entity": "switch.bathroom_fan",
+          "source_domain": "switch",
+          "source": "sensor.bathroom_fan_power",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Bathroom Fan energy"
+        },
+        "last_changed": "2024-09-29T13:54:42.260581+00:00",
+        "last_updated": "2024-09-29T13:54:42.260581+00:00",
+        "context": {
+          "id": "01J8Z0ZSEMWEYCE2MMAKHQP4GM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "8.6131"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.bathroom_fan_power",
+        "last_valid_state": "8.613147672986666666693859421"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.tasmota_3_energy",
+        "state": "unavailable",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Kitchen Main Light energy"
+        },
+        "last_changed": "2024-09-29T14:00:25.145299+00:00",
+        "last_updated": "2024-09-29T14:00:25.145299+00:00",
+        "context": {
+          "id": "01J8Z1A89SRARSS9ASD3XKM4TZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "8.7492"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.tasmota_3_power",
+        "last_valid_state": "8.749200000000000000000000000"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.kitchen_light_energy",
+        "state": "53.5409",
+        "attributes": {
+          "state_class": "total",
+          "source_entity": "switch.kitchen_light",
+          "source_domain": "switch",
+          "source": "sensor.kitchen_light_power",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Kitchen Light energy"
+        },
+        "last_changed": "2024-09-29T13:39:28.887221+00:00",
+        "last_updated": "2024-09-29T13:39:28.887221+00:00",
+        "context": {
+          "id": "01J8Z03XFQ462RNPZ27BFZCD2V",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "53.5409"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.kitchen_light_power",
+        "last_valid_state": "53.54090000000000000000000000"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.tasmota_2_energy",
+        "state": "unavailable",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "kWh",
+          "device_class": "energy",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Downstairs Main Light energy"
+        },
+        "last_changed": "2024-09-29T14:00:22.894892+00:00",
+        "last_updated": "2024-09-29T14:00:22.894892+00:00",
+        "context": {
+          "id": "01J8Z1A63EZMF9GXT7DHN74EWZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "6.5474"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.tasmota_2_power",
+        "last_valid_state": "6.547400000000000000000000000"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.ambi_pc_energy",
+        "state": "unavailable",
+        "attributes": {
+          "state_class": "total",
+          "unit_of_measurement": "kWh",
+          "icon": "mdi:lightning-bolt",
+          "friendly_name": "Ambi PC energy"
+        },
+        "last_changed": "2024-09-29T13:39:26.437491+00:00",
+        "last_updated": "2024-09-29T13:39:26.437491+00:00",
+        "context": {
+          "id": "01J8Z03V35680W9GBFAJH9ASES",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": {
+          "__type": "<class 'decimal.Decimal'>",
+          "decimal_str": "0.0232"
+        },
+        "native_unit_of_measurement": "kWh",
+        "source_entity": "sensor.ambi_pc_power",
+        "last_valid_state": "0.02324422019817777781943144254"
+      },
+      "last_seen": "2024-09-29T14:01:34.875031+00:00"
     }
   ]
 }
