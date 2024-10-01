@@ -65,12 +65,12 @@ input_number:
     name: Reheat time
     min: 0
     max: 60
-    step: 1
+    step: 5
     unit_of_measurement: "min"
     icon: mdi:clock-outline
   target_output:
     name: Target Temp.
-    min: 25
+    min: 20
     max: 40
     step: 1
     unit_of_measurement: "°C"

@@ -73,8 +73,6 @@ _HYBRID_VALVE_OFF = "off"
 _HYBRID_LOCK_UNTIL = _UTC.localize(datetime.utcnow())
 _HYBRID_REHEAT = "reheat"
 
-waiting_to_heat = False
-
 def setup(hass, config):
 
     def skip_current_phaze(call):
@@ -191,26 +189,6 @@ def is_hybrid(hass):
     return not _heat_type_state or _heat_type_state.state == "Hybrid"
 
 
-def hybrid_heat(hass, action):
-    debug(hass, "[HYBRID] Hybrid heat: %s" % action)
-    if not should_heat(hass):
-        debug(hass, "[HYBRID] Hybrid heat: OFF")
-        hybrid_off(hass)
-    elif action == _HYBRID_VALVE_NEW:
-        debug(hass, "[HYBRID] Hybrid heat: ON + LOCK")
-        hybrid_on(hass)
-        hybrid_set_lock(hass, "heat")
-    elif action == _HYBRID_REHEAT:
-        debug(hass, "[HYBRID] Hybrid heat: REHEAT + LOCK")
-        global waiting_to_heat
-        waiting_to_heat = False
-        hybrid_on(hass)
-        hybrid_set_lock(hass, _HYBRID_REHEAT)
-    else:
-        debug(hass, "[HYBRID] Hybrid heat: ON")
-        hybrid_on(hass)
-
-
 def hybrid_off(hass):
     turn_pump_off(hass)
     hybrid_set_status(hass, _STATE_STATUS_WAITING)
@@ -288,7 +266,6 @@ def hybrid_is_temperature_high(hass):
 
 
 def hybrid_temperature_changed(hass, event):
-   global waiting_to_heat
    if is_hybrid(hass) and not hybrid_is_locked(hass):
         is_temperature_high = hybrid_is_temperature_high(hass)
         _pump_state = hass.states.get(_PUMP_ENTITY_ID)
@@ -296,9 +273,8 @@ def hybrid_temperature_changed(hass, event):
             debug(hass, "[HYBRID] Temperature is high and pump is on: OFF + LOCK")
             hybrid_off(hass)
             hybrid_set_lock(hass, _STATE_PHAZE_WAIT) # wait for "wait" time
-        elif not waiting_to_heat:
-                waiting_to_heat = True
-                threading.Timer(get_wait_duration(hass) + 5, hybrid_heat, [hass, _HYBRID_REHEAT]).start()
+        elif not is_temperature_high and should_heat(hass) and _pump_state and _pump_state.state == STATE_OFF:
+            hybrid_heat(hass, _HYBRID_REHEAT)
 
 
 def hybrid_vent_state_changed(hass, event):
@@ -307,6 +283,24 @@ def hybrid_vent_state_changed(hass, event):
         if event.data["new_state"].state == STATE_ON and event.data["old_state"].state == STATE_OFF:
             debug(hass, "[HYBRID] Delay vent_open_time")
             threading.Timer(_VENT_OPEN_TIME + 5, hybrid_heat, [hass, _HYBRID_VALVE_NEW]).start()
+
+
+def hybrid_heat(hass, action):
+    debug(hass, "[HYBRID] Hybrid heat action: %s" % action)
+    if not should_heat(hass):
+        debug(hass, "[HYBRID] Hybrid heat: OFF (no need to heat)")
+        hybrid_off(hass)
+    elif action == _HYBRID_VALVE_NEW:
+        debug(hass, "[HYBRID] Hybrid heat: ON + LOCK")
+        hybrid_on(hass)
+        hybrid_set_lock(hass, "heat")
+    elif action == _HYBRID_REHEAT:
+        debug(hass, "[HYBRID] Hybrid heat: REHEAT + LOCK")
+        hybrid_on(hass)
+        hybrid_set_lock(hass, _HYBRID_REHEAT)
+    else:
+        debug(hass, "[HYBRID] Hybrid heat: ON")
+        hybrid_on(hass)
 
 
 def delay_phaze(hass, delay = 60):
@@ -321,10 +315,10 @@ def turn_pump_on(hass):
         if _pump_state.state == STATE_OFF:
             if should_heat(hass):
                 _LOGGER.info("Turning pump on")
-                if not _DEBUG:
-                    hass.services.call("switch", "turn_on", {
-                        "entity_id": _PUMP_ENTITY_ID
-                    })
+            if not _DEBUG:
+                hass.services.call("switch", "turn_on", {
+                    "entity_id": _PUMP_ENTITY_ID
+                })
     else:
         _LOGGER.info("Pump state is not known, ignoring")
 
