@@ -101,17 +101,17 @@ services:
      - /var/run/docker.sock:/var/run/docker.sock
      - ./portainer/data:/data
 
-  tasmo-backup:
-    restart: always
-    ports:
-        - 0.0.0.0:8259:80
-    volumes:
-        - ./tasmo-backup/data:/var/www/html/data
-    environment:
-        - DBTYPE=sqlite
-        - DBNAME=data/tasmobackup
-    container_name: tasmo-backup
-    image: 'danmed/tasmobackupv1'
+#  tasmo-backup:
+#    restart: always
+#    ports:
+#        - 0.0.0.0:8259:80
+#    volumes:
+#        - ./tasmo-backup/data:/var/www/html/data
+#    environment:
+#        - DBTYPE=sqlite
+#        - DBNAME=data/tasmobackup
+#    container_name: tasmo-backup
+#    image: 'danmed/tasmobackupv1'
 
   hyperion-pc:
     restart: always
