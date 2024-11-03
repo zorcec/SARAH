@@ -106,7 +106,16 @@
             {
               "type": "thermostat",
               "entity": "climate.bathroom_fan",
-              "name": "Humidity Fan"
+              "name": "Humidity Fan",
+              "features": [
+                {
+                  "type": "climate-hvac-modes",
+                  "hvac_modes": [
+                    "cool",
+                    "off"
+                  ]
+                }
+              ]
             },
             {
               "type": "entities",
@@ -235,6 +244,19 @@
             {
               "type": "light",
               "entity": "light.kid_dimmer1"
+            },
+            {
+              "type": "thermostat",
+              "entity": "climate.kid_bedroom",
+              "features": [
+                {
+                  "type": "climate-hvac-modes",
+                  "hvac_modes": [
+                    "heat",
+                    "off"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -396,6 +418,23 @@
                 },
                 {
                   "type": "gauge",
+                  "entity": "sensor.heating_controller_2_output_temperature",
+                  "name": "Top Output",
+                  "min": 20,
+                  "max": 45,
+                  "severity": {
+                    "green": 25,
+                    "yellow": 30,
+                    "red": 35
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "type": "gauge",
                   "entity": "sensor.heating_controller_1_input_temperature",
                   "name": "Down Input",
                   "min": 25,
@@ -405,6 +444,18 @@
                     "red": 45
                   },
                   "max": 60
+                },
+                {
+                  "type": "gauge",
+                  "entity": "sensor.heating_controller_1_output_temperature",
+                  "name": "Down Output",
+                  "min": 20,
+                  "max": 45,
+                  "severity": {
+                    "green": 25,
+                    "yellow": 30,
+                    "red": 35
+                  }
                 }
               ]
             },

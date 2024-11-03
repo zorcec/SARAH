@@ -38,6 +38,19 @@
     minutes: 1
 
 - platform: generic_thermostat
+  name: Kid Bedroom
+  unique_id: kid-thermostat
+  heater: switch.top_kid_valve
+  target_sensor: sensor.tasmota_si7021_temperature_3
+  min_temp: 10
+  max_temp: 25
+  cold_tolerance: 0.2 # when to switch on
+  hot_tolerance: 0    # when to switch off
+  precision: 0.1
+  min_cycle_duration:
+    minutes: 1
+
+- platform: generic_thermostat
   name: Top
   unique_id: top-thermostat
   heater: switch.top_livingroom_valve
