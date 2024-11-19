@@ -41,7 +41,7 @@
   name: Kid Bedroom
   unique_id: kid-thermostat
   heater: switch.top_kid_valve
-  target_sensor: sensor.tasmota_si7021_temperature_3
+  target_sensor: sensor.kid_si7021_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on

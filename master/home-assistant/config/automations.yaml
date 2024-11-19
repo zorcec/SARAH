@@ -286,7 +286,7 @@
         - switch.down_hallway_vent
   - delay:
       hours: 0
-      minutes: 12
+      minutes: 5
       seconds: 0
       milliseconds: 0
   - service: switch.turn_off

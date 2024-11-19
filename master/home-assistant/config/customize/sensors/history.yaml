@@ -1,0 +1,15 @@
+- platform: history_stats
+  name: Heating today
+  entity_id: heating_control.status
+  state: "on"
+  type: time
+  start: "{{ now().replace(hour=0, minute=0, second=0) }}"
+  end: "{{ now() }}"
+
+- platform: history_stats
+  name: Heating yesterday
+  entity_id: heating_control.status
+  state: "on"
+  type: time
+  start: "{{ now().replace(hour=0, minute=0, second=0) - timedelta(days=1) }}"
+  end: "{{ now().replace(hour=0, minute=0, second=0) }}"

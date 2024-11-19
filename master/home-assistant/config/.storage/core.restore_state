@@ -20,16 +20,16 @@
           ],
           "friendly_name": "Tomislav"
         },
-        "last_changed": "2024-11-03T16:23:17.052032+00:00",
-        "last_updated": "2024-11-03T16:23:30.822768+00:00",
+        "last_changed": "2024-11-10T19:35:32.161244+00:00",
+        "last_updated": "2024-11-10T19:35:47.401751+00:00",
         "context": {
-          "id": "01JBSDDDR6HNYREJ5S77PVKR59",
+          "id": "01JCBS6GY9GJ9PQW7X1CJM0NF9",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -46,16 +46,16 @@
           "icon": "mdi:clock-outline",
           "friendly_name": "Heating Cycle"
         },
-        "last_changed": "2024-11-03T16:23:17.670353+00:00",
-        "last_updated": "2024-11-03T16:23:17.670353+00:00",
+        "last_changed": "2024-11-10T19:35:35.879660+00:00",
+        "last_updated": "2024-11-10T19:35:35.879660+00:00",
         "context": {
-          "id": "01JBSDD0X65A7BTJ4FFQA42V2Q",
+          "id": "01JCBS65P73R4MB2QXZ4G6EJJ0",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -72,16 +72,16 @@
           "icon": "mdi:clock-outline",
           "friendly_name": "Waiting Cycle"
         },
-        "last_changed": "2024-11-03T16:23:17.670516+00:00",
-        "last_updated": "2024-11-03T16:23:17.670516+00:00",
+        "last_changed": "2024-11-10T19:35:35.879828+00:00",
+        "last_updated": "2024-11-10T19:35:35.879828+00:00",
         "context": {
-          "id": "01JBSDD0X6T752T89HYYBHEFYD",
+          "id": "01JCBS65P75A7BTJ4FFQA42V2Q",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -98,21 +98,21 @@
           "icon": "mdi:clock-outline",
           "friendly_name": "Reheat time"
         },
-        "last_changed": "2024-11-03T16:23:17.670687+00:00",
-        "last_updated": "2024-11-03T16:23:17.670687+00:00",
+        "last_changed": "2024-11-10T19:35:35.879967+00:00",
+        "last_updated": "2024-11-10T19:35:35.879967+00:00",
         "context": {
-          "id": "01JBSDD0X6VYZYPQ3XA2RH50RD",
+          "id": "01JCBS65P7T752T89HYYBHEFYD",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
         "entity_id": "input_number.target_output",
-        "state": "27.0",
+        "state": "28.0",
         "attributes": {
           "initial": null,
           "editable": false,
@@ -124,16 +124,16 @@
           "icon": "mdi:temperature",
           "friendly_name": "Target Temp."
         },
-        "last_changed": "2024-11-03T16:23:17.670829+00:00",
-        "last_updated": "2024-11-03T16:23:17.670829+00:00",
+        "last_changed": "2024-11-14T05:37:18.905010+00:00",
+        "last_updated": "2024-11-14T05:37:18.905010+00:00",
         "context": {
-          "id": "01JBSDD0X657N2BNT9FCPNP7R6",
+          "id": "01JCMJT3HQ29DV66AW10NWGWDT",
           "parent_id": null,
-          "user_id": null
+          "user_id": "6ab73dfb34ab49b9afd9c1fb4697084e"
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -150,16 +150,16 @@
           "icon": "mdi:temperature",
           "friendly_name": "Target Drop"
         },
-        "last_changed": "2024-11-03T16:23:17.670955+00:00",
-        "last_updated": "2024-11-03T16:23:17.670955+00:00",
+        "last_changed": "2024-11-10T19:35:35.880238+00:00",
+        "last_updated": "2024-11-10T19:35:35.880238+00:00",
         "context": {
-          "id": "01JBSDD0X6WCW1BVX9QWDXTG87",
+          "id": "01JCBS65P857N2BNT9FCPNP7R6",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -176,16 +176,16 @@
           "icon": "mdi:format-list-bulleted-type",
           "friendly_name": "Type"
         },
-        "last_changed": "2024-11-03T16:23:17.671122+00:00",
-        "last_updated": "2024-11-03T16:23:17.671122+00:00",
+        "last_changed": "2024-11-10T19:35:35.880410+00:00",
+        "last_updated": "2024-11-10T19:35:35.880410+00:00",
         "context": {
-          "id": "01JBSDD0X73NV6V4BSWBJAM4AJ",
+          "id": "01JCBS65P8WCW1BVX9QWDXTG87",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -198,16 +198,16 @@
           "current": 0,
           "friendly_name": "Disables PIR"
         },
-        "last_changed": "2024-11-03T16:23:19.166999+00:00",
-        "last_updated": "2024-11-03T16:23:19.166999+00:00",
+        "last_changed": "2024-11-10T19:35:36.195956+00:00",
+        "last_updated": "2024-11-10T19:35:36.195956+00:00",
         "context": {
-          "id": "01JBSDD2BY7D14QE96K8JP81YB",
+          "id": "01JCBS660316YX8R5PEPWDHNZA",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -220,16 +220,16 @@
           "current": 0,
           "friendly_name": "Activates PIR"
         },
-        "last_changed": "2024-11-03T16:23:19.168326+00:00",
-        "last_updated": "2024-11-03T16:23:19.168326+00:00",
+        "last_changed": "2024-11-10T19:35:36.196129+00:00",
+        "last_updated": "2024-11-10T19:35:36.196129+00:00",
         "context": {
-          "id": "01JBSDD2C006277HRES2VDQCJY",
+          "id": "01JCBS6604J2TDGMN7KKNWP8DV",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -237,21 +237,21 @@
         "state": "on",
         "attributes": {
           "id": "1673812981370",
-          "last_triggered": "2024-11-02T20:00:00.314011+00:00",
+          "last_triggered": "2024-11-18T20:00:00.303059+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Sets sleep retain status"
         },
-        "last_changed": "2024-11-03T16:23:19.168559+00:00",
-        "last_updated": "2024-11-03T16:23:19.168559+00:00",
+        "last_changed": "2024-11-10T19:35:36.196289+00:00",
+        "last_updated": "2024-11-18T20:00:00.307573+00:00",
         "context": {
-          "id": "01JBSDD2C076D0PA0G28CXS7G5",
+          "id": "01JD0DRKSE59BEZ89M812MVVTE",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -259,21 +259,21 @@
         "state": "on",
         "attributes": {
           "id": "1676149800565",
-          "last_triggered": "2024-11-03T15:59:54.630065+00:00",
+          "last_triggered": "2024-11-19T18:40:35.467822+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Bathroom fan only when lights are off"
         },
-        "last_changed": "2024-11-03T16:23:19.168757+00:00",
-        "last_updated": "2024-11-03T16:23:19.168757+00:00",
+        "last_changed": "2024-11-10T19:35:36.196488+00:00",
+        "last_updated": "2024-11-19T18:40:38.473645+00:00",
         "context": {
-          "id": "01JBSDD2C0R3H3Y6D9BC60JEJX",
-          "parent_id": null,
+          "id": "01JD2VKXMBNTTR4TNMFJB19WWR",
+          "parent_id": "01JD2VKXMB6DXJA2JBB4C9C3MZ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -281,21 +281,21 @@
         "state": "on",
         "attributes": {
           "id": "1677363623906",
-          "last_triggered": "2024-11-02T21:37:47.704299+00:00",
+          "last_triggered": "2024-11-19T17:55:58.276465+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Correct top dimmer"
         },
-        "last_changed": "2024-11-03T16:23:19.168943+00:00",
-        "last_updated": "2024-11-03T16:23:19.168943+00:00",
+        "last_changed": "2024-11-10T19:35:36.196667+00:00",
+        "last_updated": "2024-11-19T17:56:00.278931+00:00",
         "context": {
-          "id": "01JBSDD2C0KJXG1JETDP9QA7P4",
-          "parent_id": null,
+          "id": "01JD2S2764ECAXF3EZ36F2H5SE",
+          "parent_id": "01JD2S2763N9C26D9STNGNJG96",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -303,21 +303,21 @@
         "state": "on",
         "attributes": {
           "id": "1677363742332",
-          "last_triggered": "2024-11-03T15:59:54.630414+00:00",
+          "last_triggered": "2024-11-19T18:40:35.468087+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Correct bathroom dimmer"
         },
-        "last_changed": "2024-11-03T16:23:19.169128+00:00",
-        "last_updated": "2024-11-03T16:23:19.169128+00:00",
+        "last_changed": "2024-11-10T19:35:36.196827+00:00",
+        "last_updated": "2024-11-19T18:40:37.470680+00:00",
         "context": {
-          "id": "01JBSDD2C18K3RC6TGMXVYGQ9Z",
-          "parent_id": null,
+          "id": "01JD2VKXMBCD1KP3NZZK5M79MC",
+          "parent_id": "01JD2VKXMB6DXJA2JBB4C9C3MZ",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -325,21 +325,21 @@
         "state": "on",
         "attributes": {
           "id": "1677364084822",
-          "last_triggered": "2024-10-29T17:26:30.741376+00:00",
+          "last_triggered": "2024-11-19T17:41:03.615336+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Correct kitchen main dimmer"
         },
-        "last_changed": "2024-11-03T16:23:19.169298+00:00",
-        "last_updated": "2024-11-03T16:23:19.169298+00:00",
+        "last_changed": "2024-11-10T19:35:36.196985+00:00",
+        "last_updated": "2024-11-19T17:41:04.617377+00:00",
         "context": {
-          "id": "01JBSDD2C1JZM5CRG3H07AVBY6",
-          "parent_id": null,
+          "id": "01JD2R6XFZ42ZYWKM0SQ8MA6EY",
+          "parent_id": "01JD2R6XFXP4TV2656J6KJTW17",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -347,21 +347,21 @@
         "state": "on",
         "attributes": {
           "id": "1677364163504",
-          "last_triggered": "2024-11-03T15:38:23.212675+00:00",
+          "last_triggered": "2024-11-19T17:41:03.611097+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Correct kitchen table dimmer"
         },
-        "last_changed": "2024-11-03T16:23:19.169484+00:00",
-        "last_updated": "2024-11-03T16:23:19.169484+00:00",
+        "last_changed": "2024-11-10T19:35:36.197145+00:00",
+        "last_updated": "2024-11-19T17:41:05.614489+00:00",
         "context": {
-          "id": "01JBSDD2C17A7P9PYTX9CNQZ5P",
-          "parent_id": null,
+          "id": "01JD2R6XFT18SE37FCM86DS0ME",
+          "parent_id": "01JD2R6XFTXQF72CC56JS4NZ20",
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -374,16 +374,16 @@
           "current": 0,
           "friendly_name": "Watering Down"
         },
-        "last_changed": "2024-11-03T16:23:19.169649+00:00",
-        "last_updated": "2024-11-03T16:23:19.169649+00:00",
+        "last_changed": "2024-11-10T19:35:36.197282+00:00",
+        "last_updated": "2024-11-10T19:35:36.197282+00:00",
         "context": {
-          "id": "01JBSDD2C1V2A6B8VCZ2GES24R",
+          "id": "01JCBS66057XACQ25ZHDP6F7RG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -396,38 +396,213 @@
           "current": 0,
           "friendly_name": "Watering Up"
         },
-        "last_changed": "2024-11-03T16:23:19.169901+00:00",
-        "last_updated": "2024-11-03T16:23:19.169901+00:00",
+        "last_changed": "2024-11-10T19:35:36.197423+00:00",
+        "last_updated": "2024-11-10T19:35:36.197423+00:00",
         "context": {
-          "id": "01JBSDD2C15Y3FB9130MXAK04W",
+          "id": "01JCBS6605KQY9BDABX5QBRJY4",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
         "entity_id": "automation.hallway_heating",
-        "state": "off",
+        "state": "on",
         "attributes": {
           "id": "1704456499215",
-          "last_triggered": "2024-09-01T12:00:00.336381+00:00",
+          "last_triggered": "2024-11-19T19:00:00.280227+00:00",
           "mode": "single",
           "current": 0,
           "friendly_name": "Hallway heating"
         },
-        "last_changed": "2024-11-03T16:23:19.170093+00:00",
-        "last_updated": "2024-11-03T16:23:19.170093+00:00",
+        "last_changed": "2024-11-12T15:50:51.152877+00:00",
+        "last_updated": "2024-11-19T19:05:00.284630+00:00",
         "context": {
-          "id": "01JBSDD2C2KNRRKT7MNP0FH2FA",
+          "id": "01JD2X0M3WMT13TY8N23YH4TJ0",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.kitchen",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "off"
+          ],
+          "min_temp": 10.0,
+          "max_temp": 25.0,
+          "target_temp_step": 0.1,
+          "current_temperature": 20.8,
+          "temperature": 20.0,
+          "hvac_action": "idle",
+          "friendly_name": "Kitchen",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-10T19:35:41.479595+00:00",
+        "last_updated": "2024-11-19T19:32:43.334491+00:00",
+        "context": {
+          "id": "01JD2YKC66CEHDD1V9X53RFQHA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.bathroom",
+        "state": "off",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "off"
+          ],
+          "min_temp": 10.0,
+          "max_temp": 25.0,
+          "target_temp_step": 0.1,
+          "current_temperature": 21.1,
+          "temperature": 22.0,
+          "hvac_action": "off",
+          "friendly_name": "Bathroom",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-19T17:00:00.003078+00:00",
+        "last_updated": "2024-11-19T19:34:46.422031+00:00",
+        "context": {
+          "id": "01JD2YQ4CPXSN58C8B3X7KB8C2",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.master_bedroom",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "off"
+          ],
+          "min_temp": 10.0,
+          "max_temp": 25.0,
+          "target_temp_step": 0.1,
+          "current_temperature": 20.1,
+          "temperature": 20.0,
+          "hvac_action": "idle",
+          "friendly_name": "Master Bedroom",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-10T19:35:41.481321+00:00",
+        "last_updated": "2024-11-19T19:27:47.910275+00:00",
+        "context": {
+          "id": "01JD2YABP61T77N0Q1B96C2GJM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.kid_bedroom",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "off"
+          ],
+          "min_temp": 10.0,
+          "max_temp": 25.0,
+          "target_temp_step": 0.1,
+          "current_temperature": 20.2,
+          "temperature": 19.0,
+          "hvac_action": "idle",
+          "friendly_name": "Kid Bedroom",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-10T19:35:41.482089+00:00",
+        "last_updated": "2024-11-19T19:06:53.874486+00:00",
+        "context": {
+          "id": "01JD2X431JW8B2T6H9BVDAEETP",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.top",
+        "state": "heat",
+        "attributes": {
+          "hvac_modes": [
+            "heat",
+            "off"
+          ],
+          "min_temp": 10.0,
+          "max_temp": 25.0,
+          "target_temp_step": 0.1,
+          "current_temperature": 20.7,
+          "temperature": 19.0,
+          "hvac_action": "idle",
+          "friendly_name": "Top",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-10T19:35:41.482587+00:00",
+        "last_updated": "2024-11-19T19:33:42.368800+00:00",
+        "context": {
+          "id": "01JD2YN5V0H2BK2MBR2NB8W2T4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "climate.bathroom_fan",
+        "state": "cool",
+        "attributes": {
+          "hvac_modes": [
+            "cool",
+            "off"
+          ],
+          "min_temp": 50,
+          "max_temp": 100,
+          "target_temp_step": 1,
+          "current_temperature": 75,
+          "temperature": 80,
+          "hvac_action": "idle",
+          "icon": "mdi:fan",
+          "friendly_name": "Fan Control",
+          "supported_features": 1
+        },
+        "last_changed": "2024-11-19T18:40:38.473207+00:00",
+        "last_updated": "2024-11-19T19:26:46.501025+00:00",
+        "context": {
+          "id": "01JD2Y8FQ5WH4RKBWSE6BK11MZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -439,10 +614,10 @@
           "icon": "mdi:battery-40",
           "friendly_name": "M2004J19C Battery level"
         },
-        "last_changed": "2024-11-03T16:23:22.905294+00:00",
-        "last_updated": "2024-11-03T16:23:22.905294+00:00",
+        "last_changed": "2024-11-10T19:35:41.486296+00:00",
+        "last_updated": "2024-11-10T19:35:41.486296+00:00",
         "context": {
-          "id": "01JBSDD60S3JBAGEXT5NGZXC8D",
+          "id": "01JCBS6B5EPKGJF0A8PQ5M4MBR",
           "parent_id": null,
           "user_id": null
         }
@@ -451,7 +626,7 @@
         "native_value": 43,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -461,10 +636,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "M2004J19C Battery state"
         },
-        "last_changed": "2024-11-03T16:23:22.905501+00:00",
-        "last_updated": "2024-11-03T16:23:22.905501+00:00",
+        "last_changed": "2024-11-10T19:35:41.486557+00:00",
+        "last_updated": "2024-11-10T19:35:41.486557+00:00",
         "context": {
-          "id": "01JBSDD60SEYQEQM3K5718QP4N",
+          "id": "01JCBS6B5ESJSNQYEAZ7JYSC2K",
           "parent_id": null,
           "user_id": null
         }
@@ -473,7 +648,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -483,10 +658,10 @@
           "icon": "mdi:battery",
           "friendly_name": "M2004J19C Charger type"
         },
-        "last_changed": "2024-11-03T16:23:22.905675+00:00",
-        "last_updated": "2024-11-03T16:23:22.905675+00:00",
+        "last_changed": "2024-11-10T19:35:41.486798+00:00",
+        "last_updated": "2024-11-10T19:35:41.486798+00:00",
         "context": {
-          "id": "01JBSDD60SH2TVCEGRWZEHD52Y",
+          "id": "01JCBS6B5E4S1P61C4Z89DCM2K",
           "parent_id": null,
           "user_id": null
         }
@@ -495,7 +670,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -505,10 +680,10 @@
           "icon": "mdi:battery-heart-variant",
           "friendly_name": "M2004J19C Battery health"
         },
-        "last_changed": "2024-11-03T16:23:22.907241+00:00",
-        "last_updated": "2024-11-03T16:23:22.907241+00:00",
+        "last_changed": "2024-11-10T19:35:41.487020+00:00",
+        "last_updated": "2024-11-10T19:35:41.487020+00:00",
         "context": {
-          "id": "01JBSDD60V0VY7CANMARNESCMX",
+          "id": "01JCBS6B5FE79BG74C3ET60NFX",
           "parent_id": null,
           "user_id": null
         }
@@ -517,7 +692,7 @@
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -529,10 +704,10 @@
           "icon": "mdi:battery",
           "friendly_name": "M2004J19C Battery temperature"
         },
-        "last_changed": "2024-11-03T16:23:22.907487+00:00",
-        "last_updated": "2024-11-03T16:23:22.907487+00:00",
+        "last_changed": "2024-11-10T19:35:41.487280+00:00",
+        "last_updated": "2024-11-10T19:35:41.487280+00:00",
         "context": {
-          "id": "01JBSDD60VBMHBNQ7GYF5Z6TGC",
+          "id": "01JCBS6B5FXSZMQ34SG8RZV93V",
           "parent_id": null,
           "user_id": null
         }
@@ -541,7 +716,7 @@
         "native_value": 25.9,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -555,10 +730,10 @@
           "icon": "mdi:battery-plus",
           "friendly_name": "M2004J19C Battery power"
         },
-        "last_changed": "2024-11-03T16:23:22.907986+00:00",
-        "last_updated": "2024-11-03T16:23:22.907986+00:00",
+        "last_changed": "2024-11-10T19:35:41.487524+00:00",
+        "last_updated": "2024-11-10T19:35:41.487524+00:00",
         "context": {
-          "id": "01JBSDD60V7WGBK83ZYRNYEH60",
+          "id": "01JCBS6B5FXQ7G4NQJDF76TTVH",
           "parent_id": null,
           "user_id": null
         }
@@ -567,7 +742,7 @@
         "native_value": 0.92,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -578,16 +753,16 @@
           "icon": "mdi:power-plug-off",
           "friendly_name": "M2004J19C Is charging"
         },
-        "last_changed": "2024-11-03T16:23:22.908806+00:00",
-        "last_updated": "2024-11-03T16:23:22.908806+00:00",
+        "last_changed": "2024-11-10T19:35:41.488585+00:00",
+        "last_updated": "2024-11-10T19:35:41.488585+00:00",
         "context": {
-          "id": "01JBSDD60WVTAY9WZW0TBX0MRM",
+          "id": "01JCBS6B5G76TP9HC55MA0HJHE",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -604,16 +779,16 @@
           "vertical_accuracy": 1,
           "friendly_name": "M2004J19C"
         },
-        "last_changed": "2024-11-03T16:23:22.909462+00:00",
-        "last_updated": "2024-11-03T16:23:22.909462+00:00",
+        "last_changed": "2024-11-10T19:35:41.489527+00:00",
+        "last_updated": "2024-11-10T19:35:41.489527+00:00",
         "context": {
-          "id": "01JBSDD60X1QPAYDNZ1SJMGKNR",
+          "id": "01JCBS6B5H680W9GBFAJH9ASES",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -626,10 +801,10 @@
           "icon": "mdi:battery-80",
           "friendly_name": "samsung-dragica Battery level"
         },
-        "last_changed": "2024-11-03T16:23:22.909910+00:00",
-        "last_updated": "2024-11-03T16:23:22.909910+00:00",
+        "last_changed": "2024-11-10T19:35:41.490029+00:00",
+        "last_updated": "2024-11-10T19:35:41.490029+00:00",
         "context": {
-          "id": "01JBSDD60XYCWPXA2EWQ20Q2CK",
+          "id": "01JCBS6B5J66FWJM3DSC5K7ZG0",
           "parent_id": null,
           "user_id": null
         }
@@ -638,7 +813,7 @@
         "native_value": 84,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -648,10 +823,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "samsung-dragica Battery state"
         },
-        "last_changed": "2024-11-03T16:23:22.910089+00:00",
-        "last_updated": "2024-11-03T16:23:22.910089+00:00",
+        "last_changed": "2024-11-10T19:35:41.490244+00:00",
+        "last_updated": "2024-11-10T19:35:41.490244+00:00",
         "context": {
-          "id": "01JBSDD60Y4Q6RZ5K0Q81WT363",
+          "id": "01JCBS6B5JRASHVFFAN0FZQMCB",
           "parent_id": null,
           "user_id": null
         }
@@ -660,7 +835,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -670,10 +845,10 @@
           "icon": "mdi:battery",
           "friendly_name": "samsung-dragica Charger type"
         },
-        "last_changed": "2024-11-03T16:23:22.910281+00:00",
-        "last_updated": "2024-11-03T16:23:22.910281+00:00",
+        "last_changed": "2024-11-10T19:35:41.490440+00:00",
+        "last_updated": "2024-11-10T19:35:41.490440+00:00",
         "context": {
-          "id": "01JBSDD60YWHSHQWW1X0X5D426",
+          "id": "01JCBS6B5JFCS836DRMGVW5Q7X",
           "parent_id": null,
           "user_id": null
         }
@@ -682,7 +857,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -692,41 +867,40 @@
           "source_type": "gps",
           "friendly_name": "samsung-dragica"
         },
-        "last_changed": "2024-11-03T16:23:22.911260+00:00",
-        "last_updated": "2024-11-03T16:23:22.911260+00:00",
+        "last_changed": "2024-11-10T19:35:41.492740+00:00",
+        "last_updated": "2024-11-10T19:35:41.492740+00:00",
         "context": {
-          "id": "01JBSDD60ZFP729W56DHPE828Y",
+          "id": "01JCBS6B5M3YTYMZDEBCW3ZK0G",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.xiaomi_battery_level",
-        "state": "52",
+        "state": "30",
         "attributes": {
-          "state_class": "measurement",
           "unit_of_measurement": "%",
           "device_class": "battery",
-          "icon": "mdi:battery-50",
+          "icon": "mdi:battery-30",
           "friendly_name": "xiaomi Battery level"
         },
-        "last_changed": "2024-11-03T16:23:22.911845+00:00",
-        "last_updated": "2024-11-03T16:23:22.911845+00:00",
+        "last_changed": "2024-11-19T17:23:36.139352+00:00",
+        "last_updated": "2024-11-19T17:23:36.139352+00:00",
         "context": {
-          "id": "01JBSDD60ZRSX0G8XY1EQPRR00",
+          "id": "01JD2Q6YJBGVSSWAD883E3E53J",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": 52,
+        "native_value": 30,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -743,10 +917,10 @@
           "icon": "mdi:battery-minus",
           "friendly_name": "xiaomi Battery state"
         },
-        "last_changed": "2024-11-03T16:23:22.912040+00:00",
-        "last_updated": "2024-11-03T16:23:22.912040+00:00",
+        "last_changed": "2024-11-11T05:43:47.783639+00:00",
+        "last_updated": "2024-11-11T05:43:47.783639+00:00",
         "context": {
-          "id": "01JBSDD61090P81WF6C9PW0T34",
+          "id": "01JCCVZTA79Y7KP5ZN9VGV2WE9",
           "parent_id": null,
           "user_id": null
         }
@@ -755,7 +929,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -773,10 +947,10 @@
           "icon": "mdi:battery",
           "friendly_name": "xiaomi Charger type"
         },
-        "last_changed": "2024-11-03T16:23:22.912219+00:00",
-        "last_updated": "2024-11-03T16:23:22.912219+00:00",
+        "last_changed": "2024-11-11T05:43:47.783846+00:00",
+        "last_updated": "2024-11-11T05:43:47.783846+00:00",
         "context": {
-          "id": "01JBSDD6109HQPH8YP18XSJCAZ",
+          "id": "01JCCVZTA7XK3T2ZRJ7Y8G5XNT",
           "parent_id": null,
           "user_id": null
         }
@@ -785,7 +959,7 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     },
     {
       "state": {
@@ -795,191 +969,16 @@
           "source_type": "gps",
           "friendly_name": "xiaomi"
         },
-        "last_changed": "2024-11-03T16:23:22.912937+00:00",
-        "last_updated": "2024-11-03T16:23:22.912937+00:00",
+        "last_changed": "2024-11-10T19:35:41.494715+00:00",
+        "last_updated": "2024-11-10T19:35:41.494715+00:00",
         "context": {
-          "id": "01JBSDD610PJ8WJV11G7AE45CG",
+          "id": "01JCBS6B5PRSGA3TN666RR4BWJ",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.kitchen",
-        "state": "heat",
-        "attributes": {
-          "hvac_modes": [
-            "heat",
-            "off"
-          ],
-          "min_temp": 10.0,
-          "max_temp": 25.0,
-          "target_temp_step": 0.1,
-          "current_temperature": 22.3,
-          "temperature": 21.5,
-          "hvac_action": "idle",
-          "friendly_name": "Kitchen",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:23:22.960502+00:00",
-        "last_updated": "2024-11-03T16:52:49.551835+00:00",
-        "context": {
-          "id": "01JBSF338FAZBXKK1QJ13196TP",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.bathroom",
-        "state": "off",
-        "attributes": {
-          "hvac_modes": [
-            "heat",
-            "off"
-          ],
-          "min_temp": 10.0,
-          "max_temp": 25.0,
-          "target_temp_step": 0.1,
-          "current_temperature": 20.3,
-          "temperature": 22.0,
-          "hvac_action": "off",
-          "friendly_name": "Bathroom",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:23:22.961016+00:00",
-        "last_updated": "2024-11-03T16:50:41.669483+00:00",
-        "context": {
-          "id": "01JBSEZ6C5AKHSC6WV5XXF8G6E",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.master_bedroom",
-        "state": "heat",
-        "attributes": {
-          "hvac_modes": [
-            "heat",
-            "off"
-          ],
-          "min_temp": 10.0,
-          "max_temp": 25.0,
-          "target_temp_step": 0.1,
-          "current_temperature": 22.0,
-          "temperature": 22.0,
-          "hvac_action": "heating",
-          "friendly_name": "Master Bedroom",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:23:22.961473+00:00",
-        "last_updated": "2024-11-03T16:51:59.485042+00:00",
-        "context": {
-          "id": "01JBSF1JBXCEFAQAYNKSBCVTH7",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.kid_bedroom",
-        "state": "heat",
-        "attributes": {
-          "hvac_modes": [
-            "heat",
-            "off"
-          ],
-          "min_temp": 10.0,
-          "max_temp": 25.0,
-          "target_temp_step": 0.1,
-          "current_temperature": 22.0,
-          "temperature": 22.0,
-          "hvac_action": "heating",
-          "friendly_name": "Kid Bedroom",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:26:07.606557+00:00",
-        "last_updated": "2024-11-03T16:51:59.485374+00:00",
-        "context": {
-          "id": "01JBSF1JBXVHNN3XYH7QXMGNJG",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.top",
-        "state": "heat",
-        "attributes": {
-          "hvac_modes": [
-            "heat",
-            "off"
-          ],
-          "min_temp": 10.0,
-          "max_temp": 25.0,
-          "target_temp_step": 0.1,
-          "current_temperature": 20.3,
-          "temperature": 20.0,
-          "hvac_action": "idle",
-          "friendly_name": "Top",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:23:22.963043+00:00",
-        "last_updated": "2024-11-03T16:48:03.058802+00:00",
-        "context": {
-          "id": "01JBSETBFJVFNVD0TRAHA5AH45",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
-    },
-    {
-      "state": {
-        "entity_id": "climate.bathroom_fan",
-        "state": "cool",
-        "attributes": {
-          "hvac_modes": [
-            "cool",
-            "off"
-          ],
-          "min_temp": 50,
-          "max_temp": 100,
-          "target_temp_step": 1,
-          "current_temperature": 66,
-          "temperature": 95,
-          "hvac_action": "idle",
-          "icon": "mdi:fan",
-          "friendly_name": "Fan Control",
-          "supported_features": 1
-        },
-        "last_changed": "2024-11-03T16:23:22.963318+00:00",
-        "last_updated": "2024-11-03T16:50:11.635001+00:00",
-        "context": {
-          "id": "01JBSEY91KS3H2J51BT7RYAJTK",
-          "parent_id": null,
-          "user_id": null
-        }
-      },
-      "extra_data": null,
-      "last_seen": "2024-11-03T16:53:30.825043+00:00"
+      "last_seen": "2024-11-19T19:35:48.082645+00:00"
     }
   ]
 }

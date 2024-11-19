@@ -257,6 +257,20 @@
                   ]
                 }
               ]
+            },
+            {
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.kid_si7021_humidity",
+              "detail": 1,
+              "name": "Humidity"
+            },
+            {
+              "graph": "line",
+              "type": "sensor",
+              "entity": "sensor.kid_si7021_temperature",
+              "detail": 1,
+              "name": "Temperature"
             }
           ]
         },
@@ -346,6 +360,18 @@
               ]
             },
             {
+              "type": "entities",
+              "entities": [
+                "sensor.heating_yesterday"
+              ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.heating_today"
+              ]
+            },
+            {
               "type": "vertical-stack",
               "cards": [
                 {
@@ -402,20 +428,20 @@
               "hours_to_show": 24
             },
             {
+              "type": "gauge",
+              "entity": "sensor.heating_controller_1_input_temperature",
+              "name": "Input",
+              "min": 25,
+              "severity": {
+                "green": 30,
+                "yellow": 40,
+                "red": 45
+              },
+              "max": 60
+            },
+            {
               "type": "horizontal-stack",
               "cards": [
-                {
-                  "type": "gauge",
-                  "entity": "sensor.heating_controller_2_input_temperature",
-                  "name": "Top Input",
-                  "min": 25,
-                  "severity": {
-                    "green": 30,
-                    "yellow": 40,
-                    "red": 45
-                  },
-                  "max": 60
-                },
                 {
                   "type": "gauge",
                   "entity": "sensor.heating_controller_2_output_temperature",
@@ -433,18 +459,6 @@
             {
               "type": "horizontal-stack",
               "cards": [
-                {
-                  "type": "gauge",
-                  "entity": "sensor.heating_controller_1_input_temperature",
-                  "name": "Down Input",
-                  "min": 25,
-                  "severity": {
-                    "green": 30,
-                    "yellow": 40,
-                    "red": 45
-                  },
-                  "max": 60
-                },
                 {
                   "type": "gauge",
                   "entity": "sensor.heating_controller_1_output_temperature",
@@ -485,9 +499,6 @@
             {
               "type": "history-graph",
               "entities": [
-                {
-                  "entity": "sensor.heating_controller_1_input_temperature"
-                },
                 {
                   "entity": "sensor.heating_controller_1_output_temperature"
                 }
