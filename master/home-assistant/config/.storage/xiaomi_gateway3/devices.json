@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "xiaomi_gateway3/devices.json",
+  "data": {
+    "408951760": {
+      "cloud_name": "Mi Smart Home Hub",
+      "cloud_fw": "1.5.0_0026",
+      "uid": "54ef44287617",
+      "last_report_ts": 1732813367
+    },
+    "lumi.a4c138ce96500566": {
+      "uid": "0xa4c138ce96500566",
+      "last_report_ts": 1732813702,
+      "last_seen": {
+        "54ef44287617": 1732813702
+      }
+    },
+    "lumi.a4c138b332ae0478": {
+      "uid": "0xa4c138b332ae0478",
+      "last_report_ts": 1732727135,
+      "last_seen": {
+        "54ef44287617": 1732647212
+      }
+    },
+    "lumi.a4c138a15222bfa7": {
+      "uid": "0xa4c138a15222bfa7",
+      "last_report_ts": 1732813457,
+      "last_seen": {
+        "54ef44287617": 1732813457
+      }
+    },
+    "lumi.a4c13875e736e5ba": {
+      "uid": "0xa4c13875e736e5ba",
+      "last_report_ts": 1732813695,
+      "last_seen": {
+        "54ef44287617": 1732813695
+      }
+    },
+    "lumi.a4c138c59818879e": {
+      "uid": "0xa4c138c59818879e",
+      "last_report_ts": 1732812956,
+      "last_seen": {
+        "54ef44287617": 1732812956
+      }
+    },
+    "lumi.70b3d52b600fde29": {
+      "uid": "0x70b3d52b600fde29",
+      "last_report_ts": 1732813337,
+      "last_seen": {
+        "54ef44287617": 1732813668
+      }
+    },
+    "lumi.a4c13804d8cb3275": {
+      "uid": "0xa4c13804d8cb3275",
+      "last_report_ts": 1732813523,
+      "last_seen": {
+        "54ef44287617": 1732813523
+      }
+    }
+  }
+}

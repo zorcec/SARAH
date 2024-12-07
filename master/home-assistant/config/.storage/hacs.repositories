@@ -34,7 +34,7 @@
       "manifest_name": "HACS",
       "releases": true,
       "version_installed": "1.29.1",
-      "last_fetched": 1674497614.923374
+      "last_fetched": 1732045121.61752
     },
     "191831638": {
       "repository_manifest": {
@@ -12102,26 +12102,31 @@
     "291484700": {
       "repository_manifest": {
         "name": "Xiaomi Gateway 3",
+        "homeassistant": "2023.2.0",
         "render_readme": true
       },
       "authors": [
         "@AlexxIT"
       ],
       "category": "integration",
-      "description": "Control Zigbee, BLE and Mesh devices from Home Assistant with Xiaomi Gateway 3 on original firmware",
+      "description": "Home Assistant custom component for control Xiaomi Multimode Gateway (aka Gateway 3), Xiaomi Multimode Gateway 2, Aqara Hub E1 on default firmwares over LAN",
       "domain": "xiaomi_gateway3",
-      "etag_repository": "W/\"85fbe239cca69b419c3ebf3840f754b2bc3b14529afa730deee408ee293cb992\"",
+      "etag_repository": "W/\"96186815597fef740fe9c5dfa024059e655d855ec68e9e5516541e86c2752981\"",
       "full_name": "AlexxIT/XiaomiGateway3",
-      "last_updated": "2023-01-17T15:39:38Z",
-      "stargazers_count": 1738,
+      "last_updated": "2024-11-28T14:29:23Z",
+      "stargazers_count": 2474,
       "topics": [
         "aqara",
         "ble",
+        "matter",
         "mesh",
+        "mihome",
         "xiaomi",
-        "zigbee"
+        "zha",
+        "zigbee",
+        "zigbee2mqtt"
       ],
-      "last_fetched": 1674160356.382443
+      "last_fetched": 1732808614.599693
     },
     "334523683": {
       "repository_manifest": {
@@ -12553,7 +12558,8 @@
         "zip_release": true,
         "filename": "xiaomi_miot.zip",
         "render_readme": true,
-        "homeassistant": "2022.7.0"
+        "hide_default_branch": true,
+        "homeassistant": "2023.1.0"
       },
       "authors": [
         "@al-one"
@@ -12561,11 +12567,11 @@
       "category": "integration",
       "description": "Automatic integrate all Xiaomi devices to HomeAssistant via miot-spec, support Wi-Fi, BLE, ZigBee devices. 小米米家智能家居设备接入Hass集成",
       "domain": "xiaomi_miot",
-      "downloads": 8818,
-      "etag_repository": "W/\"614629a84e525bd3711f00bb832190afb520d99a18f50a5924efbf4a553e6b26\"",
+      "downloads": 24701,
+      "etag_repository": "W/\"e1adc252f0d96444026ca1b760ec36293c9c3a2ae1a7862552fff996fe14f7c3\"",
       "full_name": "al-one/hass-xiaomi-miot",
-      "last_updated": "2023-01-18T09:02:10Z",
-      "stargazers_count": 2037,
+      "last_updated": "2024-11-25T05:14:52Z",
+      "stargazers_count": 4685,
       "topics": [
         "iot",
         "miio",
@@ -12576,7 +12582,7 @@
         "xiaomi",
         "xiaomi-miot"
       ],
-      "last_fetched": 1674160369.27792
+      "last_fetched": 1732808574.973468
     },
     "335019855": {
       "repository_manifest": {

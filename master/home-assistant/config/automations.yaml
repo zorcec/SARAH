@@ -30,9 +30,6 @@
   trigger:
   - platform: time
     at: '21:00:00'
-  - platform: time
-    at: '12:00:00'
-    enabled: false
   condition: []
   action:
   - service: mqtt.publish
@@ -286,7 +283,7 @@
         - switch.down_hallway_vent
   - delay:
       hours: 0
-      minutes: 5
+      minutes: 4
       seconds: 0
       milliseconds: 0
   - service: switch.turn_off
@@ -295,4 +292,74 @@
       entity_id:
       - switch.down_hallway_vent
       - switch.top_wc_valve
+  mode: single
+- id: '1733597752568'
+  alias: Open window notification (bathroom)
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: 3650456fef0d585ceff3c398192d4691
+    entity_id: 493ea6de4a7673c5cdda23719accf51d
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Prozor u kupaonici je otvoren
+      title: Upozorenje
+  mode: single
+- id: '1733597920601'
+  alias: Open window notification (kid)
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: 6466a2424bfb63a6705e90276c5cfee2
+    entity_id: 987f2fad356ea3a3b77343c20693cecf
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Prozor u kupaonici je otvoren
+      title: Prozor u kupaonici
+  - service: notify.notify
+    metadata: {}
+    data:
+      message: Prozor u dječji sobi je otvoren
+      title: Upozorenje
+  mode: single
+- id: '1733597939534'
+  alias: Open window notification (master bedroom)
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: ffe02fdd65caaeae4dca8e5f2fa95d36
+    entity_id: 858f45462aba889ba3451ad8c31c02e6
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      message: Prozor u spavacoj je otvoren
+      title: Prozor u kupaonici
+  - service: notify.notify
+    metadata: {}
+    data:
+      message: Prozor u dječji sobi je otvoren
+      title: Upozorenje
   mode: single

@@ -2,7 +2,7 @@
   name: Kitchen
   unique_id: kitchen-thermostat
   heater: switch.down_kitchen_vent
-  target_sensor: sensor.tasmota_si7021_temperature_2
+  target_sensor: sensor.0xa4c138c59818879e_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
@@ -15,7 +15,7 @@
   name: Bathroom
   unique_id: bathroom-thermostat
   heater: switch.top_bathroom_valve
-  target_sensor: sensor.bathroom_sensor_si7021_temperature
+  target_sensor: sensor.0xa4c13875e736e5ba_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
@@ -28,7 +28,7 @@
   name: Master Bedroom
   unique_id: bedroom-thermostat
   heater: switch.top_bedroom_valve
-  target_sensor: sensor.tasmota_si7021_temperature_3
+  target_sensor: sensor.0xa4c13804d8cb3275_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
@@ -41,7 +41,7 @@
   name: Kid Bedroom
   unique_id: kid-thermostat
   heater: switch.top_kid_valve
-  target_sensor: sensor.kid_si7021_temperature
+  target_sensor: sensor.0xa4c138ce96500566_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
@@ -54,7 +54,7 @@
   name: Top
   unique_id: top-thermostat
   heater: switch.top_livingroom_valve
-  target_sensor: sensor.top_sensor_bme280_temperature
+  target_sensor: sensor.0xa4c138a15222bfa7_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
@@ -67,7 +67,7 @@
   name: Bathroom Fan
   unique_id: bathroom-fan
   heater: switch.bathroom_fan
-  target_sensor: sensor.bathroom_sensor_si7021_humidity
+  target_sensor: sensor.0xa4c13875e736e5ba_humidity
   ac_mode: True
   min_temp: 50
   max_temp: 100

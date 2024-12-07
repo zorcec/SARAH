@@ -242,74 +242,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "d385da7c2caa22c01a75c5b164360c1b",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.0.42"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "8caab57cd6f7",
-        "disabled_by": "user"
-      },
-      {
-        "entry_id": "61d75a1ce1e0d384be7e9972b04b8c9b",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "powercalc",
-        "title": "Ambi TV",
-        "data": {
-          "entity_id": "light.wled_2",
-          "mode": "wled",
-          "manufacturer": "WLED",
-          "model": "FOSS",
-          "wled": {
-            "voltage": 5.0,
-            "power_factor": 0.9
-          },
-          "unique_id": "pc_8caab57ce69d_0",
-          "sensor_type": "virtual_power",
-          "name": "Ambi TV"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "integration_discovery",
-        "unique_id": "pc_8caab57ce69d_0",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "95cd168eab540f9e31429adb04da0057",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "powercalc",
-        "title": "Ambi PC",
-        "data": {
-          "entity_id": "light.wled",
-          "mode": "wled",
-          "manufacturer": "WLED",
-          "model": "FOSS",
-          "wled": {
-            "voltage": 5.0,
-            "power_factor": 0.9
-          },
-          "unique_id": "pc_8caab57cd6f7_0",
-          "sensor_type": "virtual_power",
-          "name": "Ambi PC"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "integration_discovery",
-        "unique_id": "pc_8caab57cd6f7_0",
-        "disabled_by": null
-      },
-      {
         "entry_id": "8cacd51d29c565c1c797256173146888",
         "version": 1,
         "minor_version": 1,
@@ -329,22 +261,6 @@
         "source": "user",
         "unique_id": "951073",
         "disabled_by": null
-      },
-      {
-        "entry_id": "300e8499695b2d7b959a39c872d91cc8",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "wled",
-        "title": "WLED",
-        "data": {
-          "host": "192.168.0.55"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "8caab57ce69d",
-        "disabled_by": "user"
       },
       {
         "entry_id": "2949faf7761a4679e11194d6586339a8",
@@ -508,6 +424,110 @@
         "pref_disable_polling": false,
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-54735f9a2b6f1137",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "5fb5cb159b6a26e5345214904075495b",
+        "version": 4,
+        "minor_version": 1,
+        "domain": "xiaomi_gateway3",
+        "title": "zorcec.freelance@gmail.com",
+        "data": {
+          "username": "zorcec.freelance@gmail.com",
+          "password": "Livada12",
+          "servers": [
+            "cn"
+          ]
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "07d9fcd66b92d6f411acfabc07f3462c",
+        "version": 4,
+        "minor_version": 1,
+        "domain": "xiaomi_gateway3",
+        "title": "192.168.0.40",
+        "data": {},
+        "options": {
+          "host": "192.168.0.40",
+          "token": "476346466f537667463467676d6c6631",
+          "key": "ICdRTJhBahyJI0wb",
+          "stats": true
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "6afdbae8eb9aeb5c8e8480a3ca4d9ef2",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED TV",
+        "data": {
+          "host": "192.168.0.55"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57ce69d",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c5e2730ae194240cb8bda2355e92fb19",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.56"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "58bf25d25409",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a506cc5b15f8a6b8ca79dddf5af59a00",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "wled",
+        "title": "WLED",
+        "data": {
+          "host": "192.168.0.42"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "8caab57cd6f7",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "82d1313dcd79ce0b5d8b5a44135f7fc0",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "hyperion",
+        "title": "192.168.0.100:19444",
+        "data": {
+          "host": "192.168.0.100",
+          "port": 19444
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "5b87e26a-e4ff-52ce-abc6-41e7fa8e7534",
         "disabled_by": null
       }
     ]

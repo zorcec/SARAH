@@ -19,3 +19,9 @@ tasmota
 master/home-assistant/config/.storage/auth
 master/home-assistant/config/home-assistant.log.*
 master/home-assistant/config/home-assistant.log.1
+master/home-assistant/config/home-assistant.log.1
+master/home-assistant/config/.storage/core.entity_registry
+master/home-assistant/config/.storage/core.restore_state
+master/home-assistant/config/.storage/hacs.repositories
+master/home-assistant/config/.storage/http
+master/home-assistant/config/.storage/trace.saved_traces

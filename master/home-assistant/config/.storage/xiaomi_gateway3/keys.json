@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "xiaomi_gateway3/keys.json",
+  "data": {
+    "408951760": {
+      "did": "408951760",
+      "key": "ICdRTJhBahyJI0wb",
+      "mac": "54:EF:44:28:76:17",
+      "model": "lumi.gateway.mgl03",
+      "token": "476346466f537667463467676d6c6631",
+      "version": "1.5.0_0026",
+      "host": "192.168.0.40"
+    }
+  }
+}

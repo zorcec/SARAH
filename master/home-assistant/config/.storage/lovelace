@@ -47,20 +47,20 @@
               "entity": "climate.kitchen"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
-              "entity": "sensor.tasmota_si7021_temperature_2",
               "detail": 2,
-              "name": "Temperature"
+              "name": "Temperature",
+              "entity": "sensor.0xa4c138c59818879e_temperature"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
               "detail": 2,
-              "entity": "sensor.tasmota_si7021_humidity_2",
-              "name": "Humidity"
+              "name": "Humidity",
+              "entity": "sensor.0xa4c138c59818879e_humidity"
             },
             {
               "type": "history-graph",
@@ -126,20 +126,20 @@
               ]
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
-              "entity": "sensor.bathroom_sensor_si7021_temperature",
               "detail": 2,
-              "name": "Temperature"
+              "name": "Temperature",
+              "entity": "sensor.0xa4c13875e736e5ba_temperature"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
-              "entity": "sensor.bathroom_sensor_si7021_humidity",
               "detail": 2,
-              "name": "Humidity"
+              "name": "Humidity",
+              "entity": "sensor.0xa4c13875e736e5ba_humidity"
             },
             {
               "type": "history-graph",
@@ -149,6 +149,9 @@
                 },
                 {
                   "entity": "switch.bathroom_fan"
+                },
+                {
+                  "entity": "binary_sensor.0xa4c1388432c1031b_binary"
                 }
               ],
               "hours_to_show": 24
@@ -210,20 +213,27 @@
               "name": "Bedroom"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
-              "entity": "sensor.tasmota_si7021_temperature_3",
               "detail": 2,
-              "name": "Temperature"
+              "name": "Temperature",
+              "entity": "sensor.0xa4c13804d8cb3275_temperature"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
-              "entity": "sensor.tasmota_si7021_humidity_3",
               "detail": 2,
-              "name": "Humidity"
+              "name": "Humidity",
+              "entity": "sensor.0xa4c13804d8cb3275_humidity"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                "binary_sensor.0xa4c1388c620bfea3_binary"
+              ],
+              "title": "Window"
             }
           ]
         },
@@ -238,6 +248,9 @@
               "entities": [
                 {
                   "entity": "light.kid_dimmer1"
+                },
+                {
+                  "entity": "light.wled"
                 }
               ]
             },
@@ -261,16 +274,23 @@
             {
               "graph": "line",
               "type": "sensor",
-              "entity": "sensor.kid_si7021_humidity",
               "detail": 1,
-              "name": "Humidity"
+              "name": "Humidity",
+              "entity": "sensor.0xa4c138ce96500566_humidity"
             },
             {
               "graph": "line",
               "type": "sensor",
-              "entity": "sensor.kid_si7021_temperature",
               "detail": 1,
-              "name": "Temperature"
+              "name": "Temperature",
+              "entity": "sensor.0xa4c138ce96500566_temperature"
+            },
+            {
+              "type": "history-graph",
+              "entities": [
+                "binary_sensor.0xa4c1386ee9ede5dc_binary"
+              ],
+              "title": "Window"
             }
           ]
         },
@@ -299,6 +319,18 @@
               ]
             },
             {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "light.wled_tv"
+                },
+                {
+                  "entity": "light.wled_2"
+                }
+              ],
+              "title": "Ambient"
+            },
+            {
               "type": "light",
               "entity": "light.top_main_light"
             },
@@ -312,20 +344,20 @@
               "name": "Livingroom"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
               "detail": 2,
-              "entity": "sensor.top_sensor_bme280_temperature",
-              "name": "Temperature"
+              "name": "Temperature",
+              "entity": "sensor.0xa4c138a15222bfa7_temperature"
             },
             {
-              "hours_to_show": 24,
               "graph": "line",
+              "hours_to_show": 24,
               "type": "sensor",
               "detail": 2,
-              "entity": "sensor.top_sensor_bme280_humidity",
-              "name": "Humidity"
+              "name": "Humidity",
+              "entity": "sensor.0xa4c138a15222bfa7_humidity"
             },
             {
               "type": "custom:scheduler-card",
@@ -523,52 +555,6 @@
         },
         {
           "theme": "Backend-selected",
-          "icon": "mdi:watering-can",
-          "badges": [],
-          "cards": [
-            {
-              "type": "gauge",
-              "entity": "sensor.rainfall_24h",
-              "needle": false,
-              "max": 2
-            },
-            {
-              "type": "history-graph",
-              "entities": [
-                {
-                  "entity": "sensor.house_precipitation"
-                }
-              ],
-              "hours_to_show": 24
-            },
-            {
-              "type": "history-graph",
-              "entities": [
-                {
-                  "entity": "switch.downwateringvent"
-                },
-                {
-                  "entity": "switch.top_watering_vent"
-                }
-              ],
-              "hours_to_show": 6
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "switch.downwateringvent"
-                },
-                {
-                  "entity": "switch.top_watering_vent"
-                }
-              ],
-              "state_color": false
-            }
-          ]
-        },
-        {
-          "theme": "Backend-selected",
           "title": "Settings",
           "path": "mesh",
           "icon": "mdi:hammer-wrench",
@@ -591,9 +577,9 @@
                     },
                     "target": {}
                   },
-                  "icon": "mdi:white-balance-sunny",
+                  "icon": "mdi:wifi",
                   "show_state": false,
-                  "name": "Daytime"
+                  "name": "WIFI ON"
                 },
                 {
                   "show_name": true,
@@ -604,30 +590,30 @@
                     "service": "mqtt.publish",
                     "data": {
                       "topic": "cmnd/tasmotas/json",
-                      "payload": "{   \"event\": \"pirOn\"  }",
-                      "retain": true
-                    },
-                    "target": {}
-                  },
-                  "name": "Evening",
-                  "icon": "mdi:weather-sunset"
-                },
-                {
-                  "show_name": true,
-                  "show_icon": true,
-                  "type": "button",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "mqtt.publish",
-                    "data": {
-                      "topic": "cmnd/tasmotas/json",
-                      "payload": "{  \"LedPower\": 0, \"SetOption31\": 1, \"event\": \"pirOff\",   \"event\": \"radioSilence\" }",
+                      "payload": "{  \"LedPower\": 0, \"SetOption31\": 1, \"event\": \"radioSilence\" }",
                       "retain": true
                     },
                     "target": {}
                   },
                   "icon": "mdi:sleep",
-                  "name": "Sleep mode"
+                  "name": "WIFI OFF"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "mqtt.publish",
+                    "data": {
+                      "topic": "cmnd/tasmotas/json",
+                      "payload": "{  \"LedPower\": 0, \"SetOption31\": 1 }",
+                      "retain": false
+                    },
+                    "target": {}
+                  },
+                  "name": "CONFIG",
+                  "icon": "mdi:wrench"
                 }
               ]
             },
@@ -661,6 +647,29 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
+            }
+          ]
+        },
+        {
+          "title": "Wäscherei",
+          "path": "wascherei",
+          "icon": "mdi:washing-machine",
+          "badges": [],
+          "cards": [
+            {
+              "show_name": false,
+              "show_icon": true,
+              "show_state": true,
+              "type": "glance",
+              "entities": [
+                {
+                  "entity": "sensor.0x70b3d52b600fa043_power"
+                },
+                {
+                  "entity": "switch.0x70b3d52b600fa043_plug"
+                }
+              ],
+              "title": "Waschmaschine"
             }
           ]
         }

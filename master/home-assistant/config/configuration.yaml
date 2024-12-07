@@ -46,6 +46,9 @@ python_script:
 
 heating_control:
 
+hacs:
+  token: !secret github_token
+
 input_number:
   heat_phaze:
     name: Heating Cycle

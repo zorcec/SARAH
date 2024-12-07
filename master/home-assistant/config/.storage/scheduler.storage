@@ -217,7 +217,7 @@
           },
           {
             "start": "12:00:00",
-            "stop": "17:00:00",
+            "stop": "16:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -233,7 +233,7 @@
             ]
           },
           {
-            "start": "17:00:00",
+            "start": "16:00:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
@@ -290,7 +290,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 21
+                  "temperature": 20
                 }
               }
             ]
@@ -307,7 +307,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 19
+                  "temperature": 20
                 }
               }
             ]

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "xiaomi_gateway3/zorcec.freelance@gmail.com.json",
+  "data": [
+    {
+      "did": "408951760",
+      "uid": 8274357649,
+      "token": "476346466f537667463467676d6c6631",
+      "name": "Mi Smart Home Hub",
+      "pid": 0,
+      "localip": "192.168.0.40",
+      "mac": "54:EF:44:28:76:17",
+      "ssid": "z",
+      "bssid": "00:1D:D1:9F:8C:70",
+      "rssi": -41,
+      "longitude": "0.00000000",
+      "latitude": "0.00000000",
+      "show_mode": 1,
+      "model": "lumi.gateway.mgl03",
+      "permitLevel": 16,
+      "isOnline": true,
+      "spec_type": "urn:miot-spec-v2:device:gateway:0000A019:lumi-mgl03:2",
+      "extra": {
+        "isSetPincode": 0,
+        "pincodeType": 0,
+        "fw_version": "1.5.0_0026",
+        "isSubGroup": false,
+        "showGroupMember": false,
+        "split": {}
+      },
+      "orderTime": 1732648504,
+      "freqFlag": true,
+      "hide_mode": 0,
+      "cnt": 8,
+      "comFlag": 129,
+      "carPicInfo": ""
+    }
+  ]
+}
