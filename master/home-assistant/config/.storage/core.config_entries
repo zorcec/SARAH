@@ -554,6 +554,27 @@
         "source": "registration",
         "unique_id": "io.homeassistant.companion.android-9ff121b94a4f794f",
         "disabled_by": null
+      },
+      {
+        "entry_id": "600bb5776d804b1410ba7ff56966f956",
+        "version": 4,
+        "minor_version": 1,
+        "domain": "zha",
+        "title": "socket://192.168.0.40:8888",
+        "data": {
+          "device": {
+            "path": "socket://192.168.0.40:8888",
+            "baudrate": 115200,
+            "flow_control": "software"
+          },
+          "radio_type": "ezsp"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
       }
     ]
   }

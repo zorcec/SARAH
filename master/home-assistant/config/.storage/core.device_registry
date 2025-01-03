@@ -131,8 +131,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "a5229f28ddd67c9eae7d75f6de134c24"
+          "a5229f28ddd67c9eae7d75f6de134c24",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.31/",
         "connections": [
@@ -207,8 +207,8 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "38c9f9b6a8a2f6aadf3cdc10bbf48082",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "38c9f9b6a8a2f6aadf3cdc10bbf48082"
         ],
         "configuration_url": "http://192.168.0.30/",
         "connections": [
@@ -283,8 +283,8 @@
       {
         "area_id": "living_room",
         "config_entries": [
-          "18b02218197fab69398e60bed0a1f821",
-          "5d065252c6e6708bff0e6047b274d820"
+          "5d065252c6e6708bff0e6047b274d820",
+          "18b02218197fab69398e60bed0a1f821"
         ],
         "configuration_url": "http://192.168.0.14/",
         "connections": [
@@ -1121,6 +1121,7 @@
       {
         "area_id": "kid",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1136,14 +1137,18 @@
         "id": "1680ec1064924328826f444b1fc0b26a",
         "identifiers": [
           [
+            "zha",
+            "a4:c1:38:ce:96:50:05:66"
+          ],
+          [
             "xiaomi_gateway3",
             "0xa4c138ce96500566"
           ]
         ],
-        "manufacturer": "Tuya",
-        "model": "Zigbee: IH-K009, TS0201",
+        "manufacturer": "_TZ3000_fllyghyj",
+        "model": "TS0201",
         "name_by_user": "Kid Sensor",
-        "name": "TH sensor",
+        "name": "_TZ3000_fllyghyj TS0201",
         "serial_number": null,
         "sw_version": 70,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1151,6 +1156,7 @@
       {
         "area_id": "bedroom",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1168,12 +1174,16 @@
           [
             "xiaomi_gateway3",
             "0xa4c13804d8cb3275"
+          ],
+          [
+            "zha",
+            "a4:c1:38:04:d8:cb:32:75"
           ]
         ],
-        "manufacturer": "Tuya",
-        "model": "Zigbee: IH-K009, TS0201",
+        "manufacturer": "_TZ3000_fllyghyj",
+        "model": "TS0201",
         "name_by_user": "Master Bedroom Sensor",
-        "name": "TH sensor",
+        "name": "_TZ3000_fllyghyj TS0201",
         "serial_number": null,
         "sw_version": 70,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1181,6 +1191,7 @@
       {
         "area_id": "living_room",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1198,12 +1209,16 @@
           [
             "xiaomi_gateway3",
             "0xa4c138a15222bfa7"
+          ],
+          [
+            "zha",
+            "a4:c1:38:a1:52:22:bf:a7"
           ]
         ],
-        "manufacturer": "Tuya",
-        "model": "Zigbee: IH-K009, TS0201",
+        "manufacturer": "_TZ3000_fllyghyj",
+        "model": "TS0201",
         "name_by_user": "Top Sensor",
-        "name": "TH sensor",
+        "name": "_TZ3000_fllyghyj TS0201",
         "serial_number": null,
         "sw_version": 70,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1326,6 +1341,7 @@
       {
         "area_id": "kid",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1341,14 +1357,18 @@
         "id": "c78224264354eb4bf1755c7239e38773",
         "identifiers": [
           [
+            "zha",
+            "a4:c1:38:5e:e8:3e:a9:48"
+          ],
+          [
             "xiaomi_gateway3",
             "0xa4c1385ee83ea948"
           ]
         ],
-        "manufacturer": null,
-        "model": "Zigbee: TS0041",
+        "manufacturer": "_TZ3000_mrpevh8p",
+        "model": "TS0041",
         "name_by_user": "Button Kid",
-        "name": "Unknown zigbee",
+        "name": "_TZ3000_mrpevh8p TS0041",
         "serial_number": null,
         "sw_version": 68,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1356,6 +1376,7 @@
       {
         "area_id": "bathroom",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1373,12 +1394,16 @@
           [
             "xiaomi_gateway3",
             "0xa4c1388432c1031b"
+          ],
+          [
+            "zha",
+            "a4:c1:38:84:32:c1:03:1b"
           ]
         ],
-        "manufacturer": null,
-        "model": "Zigbee: TS0601",
+        "manufacturer": "_TZE200_pay2byax",
+        "model": "TS0601",
         "name_by_user": "Bathroom Window",
-        "name": "Unknown zigbee",
+        "name": "_TZE200_pay2byax TS0601",
         "serial_number": null,
         "sw_version": 145,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1386,6 +1411,7 @@
       {
         "area_id": "kid",
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1401,14 +1427,18 @@
         "id": "6466a2424bfb63a6705e90276c5cfee2",
         "identifiers": [
           [
+            "zha",
+            "a4:c1:38:6e:e9:ed:e5:dc"
+          ],
+          [
             "xiaomi_gateway3",
             "0xa4c1386ee9ede5dc"
           ]
         ],
-        "manufacturer": null,
-        "model": "Zigbee: TS0601",
+        "manufacturer": "_TZE200_pay2byax",
+        "model": "TS0601",
         "name_by_user": "Kid Window",
-        "name": "Unknown zigbee",
+        "name": "_TZE200_pay2byax TS0601",
         "serial_number": null,
         "sw_version": 145,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1446,6 +1476,7 @@
       {
         "area_id": null,
         "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956",
           "07d9fcd66b92d6f411acfabc07f3462c"
         ],
         "configuration_url": null,
@@ -1463,12 +1494,16 @@
           [
             "xiaomi_gateway3",
             "0x70b3d52b600fa043"
+          ],
+          [
+            "zha",
+            "70:b3:d5:2b:60:0f:a0:43"
           ]
         ],
-        "manufacturer": "Neo",
-        "model": "Zigbee: NAS-WR01B, TS011F",
+        "manufacturer": "_TZ3000_wzmuk9ai",
+        "model": "TS011F",
         "name_by_user": "Power Plug Waschmaschine",
-        "name": "Power Plug",
+        "name": "_TZ3000_wzmuk9ai TS011F",
         "serial_number": null,
         "sw_version": 100,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
@@ -1637,6 +1672,66 @@
         "serial_number": null,
         "sw_version": 103,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "cc:86:ec:ff:fe:82:11:0b"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6fac8cba2dd2cfb5f2819bd307b67893",
+        "identifiers": [
+          [
+            "zha",
+            "cc:86:ec:ff:fe:82:11:0b"
+          ]
+        ],
+        "manufacturer": "Unknown",
+        "model": "Unknown",
+        "name_by_user": null,
+        "name": "Zigbee Coordinator",
+        "serial_number": null,
+        "sw_version": "6.6.2.0 build 126",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "600bb5776d804b1410ba7ff56966f956"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "70:b3:d5:2b:60:10:96:63"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d7eb729eb34fec046f84f53431e50c7a",
+        "identifiers": [
+          [
+            "zha",
+            "70:b3:d5:2b:60:10:96:63"
+          ]
+        ],
+        "manufacturer": "_TZ3000_wzmuk9ai",
+        "model": "TS011F",
+        "name_by_user": "Power Plug Dryer",
+        "name": "_TZ3000_wzmuk9ai TS011F",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

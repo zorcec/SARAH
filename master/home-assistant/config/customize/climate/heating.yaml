@@ -54,7 +54,7 @@
   name: Top
   unique_id: top-thermostat
   heater: switch.top_livingroom_valve
-  target_sensor: sensor.0xa4c138a15222bfa7_temperature
+  target_sensor: sensor.top_sensor_temperature
   min_temp: 10
   max_temp: 25
   cold_tolerance: 0.2 # when to switch on
