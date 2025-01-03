@@ -31,6 +31,27 @@
         "domain": "homeassistant",
         "is_persistent": false,
         "issue_id": "deprecated_yaml_systemmonitor"
+      },
+      {
+        "created": "2024-12-09T17:34:11.889417+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_binary_sensor_ping"
+      },
+      {
+        "created": "2024-12-09T17:34:13.562554+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_sensor_systemmonitor"
+      },
+      {
+        "created": "2024-12-09T17:34:21.031857+00:00",
+        "dismissed_version": null,
+        "domain": "http",
+        "is_persistent": false,
+        "issue_id": "ssl_configured_without_configured_urls"
       }
     ]
   }

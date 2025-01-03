@@ -33,7 +33,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.17/",
+        "configuration_url": "http://192.168.0.26/",
         "connections": [
           [
             "mac",
@@ -58,7 +58,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.35/",
+        "configuration_url": "http://192.168.0.27/",
         "connections": [
           [
             "mac",
@@ -83,7 +83,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.32/",
+        "configuration_url": "http://192.168.0.24/",
         "connections": [
           [
             "mac",
@@ -108,7 +108,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.29/",
+        "configuration_url": "http://192.168.0.17/",
         "connections": [
           [
             "mac",
@@ -131,10 +131,10 @@
       {
         "area_id": "bedroom",
         "config_entries": [
-          "a5229f28ddd67c9eae7d75f6de134c24",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "a5229f28ddd67c9eae7d75f6de134c24"
         ],
-        "configuration_url": "http://192.168.0.27/",
+        "configuration_url": "http://192.168.0.31/",
         "connections": [
           [
             "mac",
@@ -159,7 +159,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.33/",
+        "configuration_url": "http://192.168.0.25/",
         "connections": [
           [
             "mac",
@@ -184,7 +184,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.19/",
+        "configuration_url": "http://192.168.0.23/",
         "connections": [
           [
             "mac",
@@ -210,7 +210,7 @@
           "38c9f9b6a8a2f6aadf3cdc10bbf48082",
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.22/",
+        "configuration_url": "http://192.168.0.30/",
         "connections": [
           [
             "mac",
@@ -260,7 +260,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.34/",
+        "configuration_url": "http://192.168.0.28/",
         "connections": [
           [
             "mac",
@@ -283,8 +283,8 @@
       {
         "area_id": "living_room",
         "config_entries": [
-          "5d065252c6e6708bff0e6047b274d820",
-          "18b02218197fab69398e60bed0a1f821"
+          "18b02218197fab69398e60bed0a1f821",
+          "5d065252c6e6708bff0e6047b274d820"
         ],
         "configuration_url": "http://192.168.0.14/",
         "connections": [
@@ -312,7 +312,7 @@
           "18b02218197fab69398e60bed0a1f821",
           "382fb9a149318a1ffa6815b03dd73163"
         ],
-        "configuration_url": "http://192.168.0.25/",
+        "configuration_url": "http://192.168.0.29/",
         "connections": [
           [
             "mac",
@@ -337,7 +337,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.30/",
+        "configuration_url": "http://192.168.0.22/",
         "connections": [
           [
             "mac",
@@ -437,7 +437,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.26/",
+        "configuration_url": "http://192.168.0.18/",
         "connections": [
           [
             "mac",
@@ -487,7 +487,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.28/",
+        "configuration_url": "http://192.168.0.12/",
         "connections": [
           [
             "mac",
@@ -538,7 +538,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.16/",
+        "configuration_url": "http://192.168.0.12/",
         "connections": [
           [
             "mac",
@@ -588,7 +588,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.18/",
+        "configuration_url": "http://192.168.0.15/",
         "connections": [
           [
             "mac",
@@ -613,7 +613,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.24/",
+        "configuration_url": "http://192.168.0.20/",
         "connections": [
           [
             "mac",
@@ -663,7 +663,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.11/",
+        "configuration_url": "http://192.168.0.21/",
         "connections": [
           [
             "mac",
@@ -688,7 +688,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.13/",
+        "configuration_url": "http://192.168.0.11/",
         "connections": [
           [
             "mac",
@@ -738,7 +738,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.20/",
+        "configuration_url": "http://192.168.0.19/",
         "connections": [
           [
             "mac",
@@ -936,7 +936,7 @@
       {
         "area_id": null,
         "config_entries": [
-          "2949faf7761a4679e11194d6586339a8"
+          "753f881e671020b84d2964f2464698a3"
         ],
         "configuration_url": null,
         "connections": [],
@@ -953,9 +953,9 @@
         "manufacturer": "samsung",
         "model": "SM-M135F",
         "name_by_user": null,
-        "name": "samsung-dragica",
+        "name": "Samsung-DRAGICA",
         "serial_number": null,
-        "sw_version": "33",
+        "sw_version": "34",
         "via_device_id": null
       },
       {
@@ -1005,7 +1005,7 @@
         "name_by_user": null,
         "name": "xiaomi",
         "serial_number": null,
-        "sw_version": "34",
+        "sw_version": "35",
         "via_device_id": null
       },
       {
@@ -1038,7 +1038,7 @@
         "config_entries": [
           "18b02218197fab69398e60bed0a1f821"
         ],
-        "configuration_url": "http://192.168.0.23/",
+        "configuration_url": "http://192.168.0.19/",
         "connections": [
           [
             "mac",
@@ -1299,66 +1299,6 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
-        "config_entries": [
-          "07d9fcd66b92d6f411acfabc07f3462c"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "zigbee",
-            "a4:c1:38:75:e7:36:e5:ba"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": 0,
-        "id": "4eb87c9545cd185fc7627666adf1e2ae",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "0xa4c13875e736e5ba"
-          ]
-        ],
-        "manufacturer": null,
-        "model": "Zigbee: TY0201",
-        "name_by_user": "Bathroom Thermostat",
-        "name": "Unknown zigbee",
-        "serial_number": null,
-        "sw_version": 103,
-        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "07d9fcd66b92d6f411acfabc07f3462c"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "zigbee",
-            "a4:c1:38:c5:98:18:87:9e"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": 0,
-        "id": "d6ad46ed8d528aec3e4c4bbe81bbfe4b",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "0xa4c138c59818879e"
-          ]
-        ],
-        "manufacturer": null,
-        "model": "Zigbee: TY0201",
-        "name_by_user": "Kitchen Thermostat",
-        "name": "Unknown zigbee",
-        "serial_number": null,
-        "sw_version": 103,
-        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
-      },
-      {
         "area_id": "living_room",
         "config_entries": [
           "82d1313dcd79ce0b5d8b5a44135f7fc0"
@@ -1444,36 +1384,6 @@
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
       },
       {
-        "area_id": null,
-        "config_entries": [
-          "07d9fcd66b92d6f411acfabc07f3462c"
-        ],
-        "configuration_url": null,
-        "connections": [
-          [
-            "zigbee",
-            "70:b3:d5:2b:60:0f:a0:43"
-          ]
-        ],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": 0,
-        "id": "9b4b92c42c7aa57ea6ef528470036bb1",
-        "identifiers": [
-          [
-            "xiaomi_gateway3",
-            "0x70b3d52b600fa043"
-          ]
-        ],
-        "manufacturer": "Neo",
-        "model": "Zigbee: NAS-WR01B, TS011F",
-        "name_by_user": "Power Plug Waschmaschine",
-        "name": "Power Plug",
-        "serial_number": null,
-        "sw_version": 100,
-        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
-      },
-      {
         "area_id": "kid",
         "config_entries": [
           "07d9fcd66b92d6f411acfabc07f3462c"
@@ -1531,6 +1441,201 @@
         "name": "Unknown zigbee",
         "serial_number": null,
         "sw_version": 145,
+        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "07d9fcd66b92d6f411acfabc07f3462c"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "70:b3:d5:2b:60:0f:a0:43"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "9b4b92c42c7aa57ea6ef528470036bb1",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0x70b3d52b600fa043"
+          ]
+        ],
+        "manufacturer": "Neo",
+        "model": "Zigbee: NAS-WR01B, TS011F",
+        "name_by_user": "Power Plug Waschmaschine",
+        "name": "Power Plug",
+        "serial_number": null,
+        "sw_version": 100,
+        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "67560dc9b4fbebe7e9b6e97e22fd92cc"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "de3088c8d0aad04cacbb765f35398414",
+        "identifiers": [
+          [
+            "homeassistant",
+            "67560dc9b4fbebe7e9b6e97e22fd92cc"
+          ]
+        ],
+        "manufacturer": "Ping",
+        "model": null,
+        "name_by_user": null,
+        "name": "PC",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "044f95ae6bef0e7607fb86e6d6c0883c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "81fadc1fadb837a57fef76f734b2a154",
+        "identifiers": [
+          [
+            "homeassistant",
+            "044f95ae6bef0e7607fb86e6d6c0883c"
+          ]
+        ],
+        "manufacturer": "Ping",
+        "model": null,
+        "name_by_user": null,
+        "name": "PC",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "68100d925beac8d13b52fc9219bce2cb"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e1b49e74dea7ec276b5ef8199c1642c9",
+        "identifiers": [
+          [
+            "homeassistant",
+            "68100d925beac8d13b52fc9219bce2cb"
+          ]
+        ],
+        "manufacturer": "Ping",
+        "model": null,
+        "name_by_user": null,
+        "name": "TV box",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "07d9fcd66b92d6f411acfabc07f3462c"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "a4:c1:38:75:e7:36:e5:ba"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "4eb87c9545cd185fc7627666adf1e2ae",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0xa4c13875e736e5ba"
+          ]
+        ],
+        "manufacturer": null,
+        "model": "Zigbee: TY0201",
+        "name_by_user": null,
+        "name": "Unknown zigbee",
+        "serial_number": null,
+        "sw_version": 103,
+        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "07d9fcd66b92d6f411acfabc07f3462c"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "70:b3:d5:2b:60:11:b5:12"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "53ddabc3a9490c371230f5244bb509d9",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0x70b3d52b6011b512"
+          ]
+        ],
+        "manufacturer": "Tuya",
+        "model": "Zigbee: TS0001, TS0001",
+        "name_by_user": "Signal Downstairs",
+        "name": "Relay",
+        "serial_number": null,
+        "sw_version": 100,
+        "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "07d9fcd66b92d6f411acfabc07f3462c"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "a4:c1:38:c5:98:18:87:9e"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": 0,
+        "id": "d6ad46ed8d528aec3e4c4bbe81bbfe4b",
+        "identifiers": [
+          [
+            "xiaomi_gateway3",
+            "0xa4c138c59818879e"
+          ]
+        ],
+        "manufacturer": null,
+        "model": "Zigbee: TY0201",
+        "name_by_user": "Kitchen Thermostat",
+        "name": "Unknown zigbee",
+        "serial_number": null,
+        "sw_version": 103,
         "via_device_id": "c865a3a1bffe32a94c51c7e6615c4939"
       }
     ],

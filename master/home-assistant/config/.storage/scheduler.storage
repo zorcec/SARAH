@@ -26,7 +26,7 @@
           },
           {
             "start": "05:00:00",
-            "stop": "17:00:00",
+            "stop": "16:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -36,13 +36,13 @@
                 "entity_id": "climate.kitchen",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 21
+                  "temperature": 20.5
                 }
               }
             ]
           },
           {
-            "start": "17:00:00",
+            "start": "16:00:00",
             "stop": "00:00:00",
             "conditions": [],
             "condition_type": null,
@@ -73,7 +73,7 @@
         "timeslots": [
           {
             "start": "00:00:00",
-            "stop": "05:00:00",
+            "stop": "04:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -88,8 +88,8 @@
             ]
           },
           {
-            "start": "05:00:00",
-            "stop": "07:00:00",
+            "start": "04:30:00",
+            "stop": "06:30:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -105,8 +105,8 @@
             ]
           },
           {
-            "start": "07:00:00",
-            "stop": "16:00:00",
+            "start": "06:30:00",
+            "stop": "17:00:00",
             "conditions": [],
             "condition_type": null,
             "track_conditions": false,
@@ -121,7 +121,7 @@
             ]
           },
           {
-            "start": "16:00:00",
+            "start": "17:00:00",
             "stop": "18:00:00",
             "conditions": [],
             "condition_type": null,
@@ -290,7 +290,7 @@
                 "entity_id": "climate.top",
                 "service_data": {
                   "hvac_mode": "heat",
-                  "temperature": 20
+                  "temperature": 20.5
                 }
               }
             ]

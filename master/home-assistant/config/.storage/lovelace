@@ -101,7 +101,17 @@
             },
             {
               "type": "thermostat",
-              "entity": "climate.bathroom"
+              "entity": "climate.bathroom",
+              "show_current_as_primary": false,
+              "features": [
+                {
+                  "type": "climate-hvac-modes",
+                  "hvac_modes": [
+                    "heat",
+                    "off"
+                  ]
+                }
+              ]
             },
             {
               "type": "thermostat",
@@ -647,6 +657,20 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "select.54ef44287617_command",
+                  "name": "Command"
+                },
+                {
+                  "entity": "select.54ef44287617_data",
+                  "name": "Data"
+                }
+              ],
+              "title": "Mi Smart Home Hub"
             }
           ]
         },
@@ -663,13 +687,17 @@
               "type": "glance",
               "entities": [
                 {
+                  "entity": "switch.0x70b3d52b600fa043_plug"
+                },
+                {
                   "entity": "sensor.0x70b3d52b600fa043_power"
                 },
                 {
-                  "entity": "switch.0x70b3d52b600fa043_plug"
+                  "entity": "input_select.washmachine_status"
                 }
               ],
-              "title": "Waschmaschine"
+              "title": "Waschmaschine",
+              "state_color": true
             }
           ]
         }

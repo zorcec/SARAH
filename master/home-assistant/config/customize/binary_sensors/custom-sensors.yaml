@@ -1,0 +1,4 @@
+- platform: ping
+  name: PC
+  host: 192.168.0.101
+  scan_interval: 5

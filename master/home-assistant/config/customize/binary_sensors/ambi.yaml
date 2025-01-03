@@ -1,9 +1,0 @@
-- platform: ping
-  name: PC
-  host: 192.168.0.15
-  scan_interval: 5
-
-- platform: ping
-  name: TV box
-  host: 192.168.0.35
-  scan_interval: 5

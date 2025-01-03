@@ -29,6 +29,7 @@ _STATE_STATUS_ON = "on"
 _STATE_STATUS_WAITING = "waiting"
 _STATE_STATUS_OFF_PROTECTION = "waiting"
 _STATE_STATUS_OVERRIDE = "override"
+_STATE_STATUS_DEACTIVATED = "deactivated"
 
 _STATE_PHAZE_WAIT = "wait"
 _STATE_PHAZE_HEAT = "heat"
@@ -195,8 +196,11 @@ def hybrid_off(hass):
 
 
 def hybrid_on(hass):
-    turn_pump_on(hass)
-    hybrid_set_status(hass, _STATE_STATUS_ON)
+    if get_heat_duration(hass) > 0:
+        turn_pump_on(hass)
+        hybrid_set_status(hass, _STATE_STATUS_ON)
+    else:
+        hass.states.set(_STATUS_STATE_NAME, _STATE_STATUS_DEACTIVATED)
 
 
 def hybrid_set_lock(hass, type):

@@ -1,29 +1,3 @@
-- id: '1673812308634'
-  alias: Disables PIR
-  description: ''
-  trigger:
-  - platform: time
-    at: '22:00:00'
-  condition: []
-  action:
-  - service: mqtt.publish
-    data:
-      topic: cmnd/tasmotas/event
-      payload: pirOff
-  mode: single
-- id: '1673812956297'
-  alias: Activates PIR
-  description: ''
-  trigger:
-  - platform: time
-    at: '18:00:00'
-  condition: []
-  action:
-  - service: mqtt.publish
-    data:
-      topic: cmnd/tasmotas/event
-      payload: pirOn
-  mode: single
 - id: '1673812981370'
   alias: Sets sleep retain status
   description: ''
@@ -180,88 +154,6 @@
       entity_id: light.tasmota_3
       domain: light
   mode: single
-- id: '1687802197772'
-  alias: Watering Down
-  description: ''
-  trigger:
-  - platform: time
-    at: '21:00:00'
-  - platform: time
-    at: 03:00:00
-  - platform: time
-    at: 06:00:00
-  condition: []
-  action:
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id: switch.downwateringvent
-  - delay:
-      hours: 0
-      minutes: 2
-      seconds: 0
-      milliseconds: 0
-  - service: switch.turn_off
-    data: {}
-    target:
-      entity_id: switch.downwateringvent
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 5
-      milliseconds: 0
-  - if:
-    - condition: state
-      entity_id: switch.downwateringvent
-      state: 'off'
-    then: []
-    else:
-    - service: notify.simplepush
-      data:
-        message: Can't turn off watering vent "down"!
-  mode: single
-- id: '1688744623083'
-  alias: Watering Up
-  description: ''
-  trigger:
-  - platform: time
-    at: '21:00:00'
-  - platform: time
-    at: '23:00:00'
-    enabled: true
-  - platform: time
-    at: 06:30:00
-    enabled: true
-  condition: []
-  action:
-  - service: switch.turn_on
-    data: {}
-    target:
-      entity_id: switch.top_watering_vent
-  - delay:
-      hours: 0
-      minutes: 2
-      seconds: 0
-      milliseconds: 0
-  - service: switch.turn_off
-    data: {}
-    target:
-      entity_id: switch.top_watering_vent
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 5
-      milliseconds: 0
-  - if:
-    - condition: state
-      entity_id: switch.top_watering_vent
-      state: 'off'
-    then: []
-    else:
-    - service: notify.simplepush
-      data:
-        message: Can't turn off watering vent "up"!
-  mode: single
 - id: '1704456499215'
   alias: Hallway heating
   description: ''
@@ -283,7 +175,7 @@
         - switch.down_hallway_vent
   - delay:
       hours: 0
-      minutes: 4
+      minutes: 5
       seconds: 0
       milliseconds: 0
   - service: switch.turn_off
@@ -306,7 +198,12 @@
       hours: 0
       minutes: 15
       seconds: 0
-  condition: []
+  condition:
+  - type: is_open
+    condition: device
+    device_id: 3650456fef0d585ceff3c398192d4691
+    entity_id: 493ea6de4a7673c5cdda23719accf51d
+    domain: binary_sensor
   action:
   - service: notify.notify
     data:
@@ -326,17 +223,17 @@
       hours: 0
       minutes: 15
       seconds: 0
-  condition: []
+  condition:
+  - type: is_open
+    condition: device
+    device_id: 6466a2424bfb63a6705e90276c5cfee2
+    entity_id: 987f2fad356ea3a3b77343c20693cecf
+    domain: binary_sensor
   action:
   - service: notify.notify
     data:
-      message: Prozor u kupaonici je otvoren
-      title: Prozor u kupaonici
-  - service: notify.notify
-    metadata: {}
-    data:
-      message: Prozor u dječji sobi je otvoren
-      title: Upozorenje
+      message: Prozor v dječjoj je otvoren
+      title: 'Upozorenje '
   mode: single
 - id: '1733597939534'
   alias: Open window notification (master bedroom)
@@ -351,15 +248,149 @@
       hours: 0
       minutes: 15
       seconds: 0
-  condition: []
+  condition:
+  - type: is_open
+    condition: device
+    device_id: ffe02fdd65caaeae4dca8e5f2fa95d36
+    entity_id: 858f45462aba889ba3451ad8c31c02e6
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
   action:
   - service: notify.notify
     data:
       message: Prozor u spavacoj je otvoren
-      title: Prozor u kupaonici
+      title: 'Upozorenje '
+  mode: single
+- id: '1733606138125'
+  alias: Set washmachine to active
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: 9b4b92c42c7aa57ea6ef528470036bb1
+    entity_id: a503d6d3658d538c9af97134547cf1cd
+    domain: sensor
+    above: 10
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  condition: []
+  action:
+  - service: input_select.set_options
+    target:
+      entity_id: input_select.washmachine_status
+    data:
+      options: active
+  mode: single
+- id: '1733606523695'
+  alias: Set washmachine to idle
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: 9b4b92c42c7aa57ea6ef528470036bb1
+    entity_id: a503d6d3658d538c9af97134547cf1cd
+    domain: sensor
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+    below: 1
+  condition: []
+  action:
+  - service: input_select.set_options
+    target:
+      entity_id: input_select.washmachine_status
+    data:
+      options: idle
+  mode: single
+- id: '1733664384108'
+  alias: Waschmaschine notification
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_select.washmachine_status
+    from: active
+    to: idle
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  condition: []
+  action:
   - service: notify.notify
     metadata: {}
     data:
-      message: Prozor u dječji sobi je otvoren
-      title: Upozorenje
+      message: Vešmašina je gotova!
+      title: 'Vešmašina '
+  mode: single
+- id: '1733664738196'
+  alias: Windows status
+  description: ''
+  trigger:
+  - type: not_opened
+    platform: device
+    device_id: 3650456fef0d585ceff3c398192d4691
+    entity_id: 493ea6de4a7673c5cdda23719accf51d
+    domain: binary_sensor
+  - type: not_opened
+    platform: device
+    device_id: 6466a2424bfb63a6705e90276c5cfee2
+    entity_id: 987f2fad356ea3a3b77343c20693cecf
+    domain: binary_sensor
+  - type: not_opened
+    platform: device
+    device_id: ffe02fdd65caaeae4dca8e5f2fa95d36
+    entity_id: 858f45462aba889ba3451ad8c31c02e6
+    domain: binary_sensor
+  condition: []
+  action:
+  - service: notify.notify
+    metadata: {}
+    data:
+      title: Prozori
+      message: ''
+      Djecja:
+        '[object Object]':
+  mode: single
+- id: '1735160021975'
+  alias: Low temp. warning
+  description: ''
+  trigger:
+  - type: temperature
+    platform: device
+    device_id: d6ad46ed8d528aec3e4c4bbe81bbfe4b
+    entity_id: 3d04cd4c3c1d9786d0f561bdec1000ac
+    domain: sensor
+    below: 10
+    for:
+      hours: 1
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - service: notify.notify
+    metadata: {}
+    data:
+      message: Temperatura je ispod 10°C
+  - service: input_number.set_value
+    target:
+      entity_id: input_number.heat_phaze
+    data:
+      value: 5
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: input_number.set_value
+    target:
+      entity_id: input_number.heat_phaze
+    data:
+      value: 0
   mode: single

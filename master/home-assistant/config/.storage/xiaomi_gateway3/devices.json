@@ -7,13 +7,13 @@
       "cloud_name": "Mi Smart Home Hub",
       "cloud_fw": "1.5.0_0026",
       "uid": "54ef44287617",
-      "last_report_ts": 1732813367
+      "last_report_ts": 1735908974
     },
     "lumi.a4c138ce96500566": {
       "uid": "0xa4c138ce96500566",
-      "last_report_ts": 1732813702,
+      "last_report_ts": 1735909490,
       "last_seen": {
-        "54ef44287617": 1732813702
+        "54ef44287617": 1735909490
       }
     },
     "lumi.a4c138b332ae0478": {
@@ -25,37 +25,79 @@
     },
     "lumi.a4c138a15222bfa7": {
       "uid": "0xa4c138a15222bfa7",
-      "last_report_ts": 1732813457,
+      "last_report_ts": 1735908751,
       "last_seen": {
-        "54ef44287617": 1732813457
+        "54ef44287617": 1735908751
       }
     },
     "lumi.a4c13875e736e5ba": {
       "uid": "0xa4c13875e736e5ba",
-      "last_report_ts": 1732813695,
+      "last_report_ts": 1735908626,
       "last_seen": {
-        "54ef44287617": 1732813695
+        "54ef44287617": 1735908626
       }
     },
     "lumi.a4c138c59818879e": {
       "uid": "0xa4c138c59818879e",
-      "last_report_ts": 1732812956,
+      "last_report_ts": 1735903591,
       "last_seen": {
-        "54ef44287617": 1732812956
+        "54ef44287617": 1735903591
       }
     },
     "lumi.70b3d52b600fde29": {
       "uid": "0x70b3d52b600fde29",
-      "last_report_ts": 1732813337,
+      "last_report_ts": 1734702853,
       "last_seen": {
-        "54ef44287617": 1732813668
+        "54ef44287617": 1734702992
       }
     },
     "lumi.a4c13804d8cb3275": {
       "uid": "0xa4c13804d8cb3275",
-      "last_report_ts": 1732813523,
+      "last_report_ts": 1735907819,
       "last_seen": {
-        "54ef44287617": 1732813523
+        "54ef44287617": 1735907819
+      }
+    },
+    "lumi.a4c1385ee83ea948": {
+      "uid": "0xa4c1385ee83ea948",
+      "last_report_ts": 1735905996,
+      "last_seen": {
+        "54ef44287617": 1735905996
+      }
+    },
+    "lumi.a4c1388432c1031b": {
+      "uid": "0xa4c1388432c1031b",
+      "last_report_ts": 1735909438,
+      "last_seen": {
+        "54ef44287617": 1735909438
+      }
+    },
+    "lumi.70b3d52b600fa043": {
+      "uid": "0x70b3d52b600fa043",
+      "last_report_ts": 1735909394,
+      "last_seen": {
+        "54ef44287617": 1735909394
+      }
+    },
+    "lumi.a4c1386ee9ede5dc": {
+      "uid": "0xa4c1386ee9ede5dc",
+      "last_report_ts": 1735909197,
+      "last_seen": {
+        "54ef44287617": 1735909197
+      }
+    },
+    "lumi.a4c1388c620bfea3": {
+      "uid": "0xa4c1388c620bfea3",
+      "last_report_ts": 1735909432,
+      "last_seen": {
+        "54ef44287617": 1735909432
+      }
+    },
+    "lumi.70b3d52b6011b512": {
+      "uid": "0x70b3d52b6011b512",
+      "last_report_ts": 1735904533,
+      "last_seen": {
+        "54ef44287617": 1735904533
       }
     }
   }

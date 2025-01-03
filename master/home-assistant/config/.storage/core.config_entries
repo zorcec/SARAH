@@ -41,25 +41,25 @@
         "domain": "mqtt",
         "title": "192.168.0.100",
         "data": {
-          "broker": "192.168.0.100",
-          "port": 1883,
-          "client_id": "home-assistant-dev",
-          "keepalive": 120,
-          "tls_insecure": false,
-          "protocol": "3.1",
-          "discovery": true,
-          "discovery_prefix": "homeassistant",
           "birth_message": {
-            "topic": "homeassistant/status",
             "payload": "online",
             "qos": 0,
-            "retain": false
+            "retain": false,
+            "topic": "homeassistant/status"
           },
+          "broker": "192.168.0.100",
+          "client_id": "home-assistant-dev",
+          "discovery": true,
+          "discovery_prefix": "homeassistant",
+          "keepalive": 120,
+          "port": 1883,
+          "protocol": "3.1",
+          "tls_insecure": false,
           "will_message": {
-            "topic": "homeassistant/status",
             "payload": "offline",
             "qos": 0,
-            "retain": false
+            "retain": false,
+            "topic": "homeassistant/status"
           }
         },
         "options": {},
@@ -95,14 +95,14 @@
           "token": "_token_"
         },
         "options": {
-          "sidepanel_title": "HACS",
-          "sidepanel_icon": "hacs:hacs",
-          "release_limit": 5,
-          "country": "ALL",
           "appdaemon": false,
-          "netdaemon": false,
+          "country": "ALL",
           "debug": false,
-          "experimental": false
+          "experimental": false,
+          "netdaemon": false,
+          "release_limit": 5,
+          "sidepanel_icon": "hacs:hacs",
+          "sidepanel_title": "HACS"
         },
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
@@ -113,12 +113,13 @@
       {
         "entry_id": "382fb9a149318a1ffa6815b03dd73163",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 2,
         "domain": "switch_as_x",
         "title": "Terrace Light",
         "data": {},
         "options": {
           "entity_id": "switch.terrace_light",
+          "invert": false,
           "target_domain": "light"
         },
         "pref_disable_new_entities": false,
@@ -130,12 +131,13 @@
       {
         "entry_id": "a5229f28ddd67c9eae7d75f6de134c24",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 2,
         "domain": "switch_as_x",
         "title": "Bedrom Bed Light",
         "data": {},
         "options": {
           "entity_id": "switch.tasmota_4",
+          "invert": false,
           "target_domain": "light"
         },
         "pref_disable_new_entities": false,
@@ -147,12 +149,13 @@
       {
         "entry_id": "38c9f9b6a8a2f6aadf3cdc10bbf48082",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 2,
         "domain": "switch_as_x",
         "title": "Bedrom Balcony Light",
         "data": {},
         "options": {
           "entity_id": "switch.bedrom_main_light",
+          "invert": false,
           "target_domain": "light"
         },
         "pref_disable_new_entities": false,
@@ -164,12 +167,13 @@
       {
         "entry_id": "7ef547c6ed4d170d1ecf8f37ca3e8288",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 2,
         "domain": "switch_as_x",
         "title": "Middle Hall Switch",
         "data": {},
         "options": {
           "entity_id": "switch.tasmota_9",
+          "invert": false,
           "target_domain": "light"
         },
         "pref_disable_new_entities": false,
@@ -181,12 +185,13 @@
       {
         "entry_id": "5d065252c6e6708bff0e6047b274d820",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 2,
         "domain": "switch_as_x",
         "title": "Workplace Light",
         "data": {},
         "options": {
           "entity_id": "switch.workplace_light",
+          "invert": false,
           "target_domain": "light"
         },
         "pref_disable_new_entities": false,
@@ -216,23 +221,23 @@
         "domain": "mobile_app",
         "title": "Xiaomi",
         "data": {
+          "app_data": {
+            "push_token": "fz-1GKu-RJqJqzVKzYSdI9:APA91bHD7AmzJCC8g838AvtgLl6Z3OfmduX-96xNY02ZIF87xCnDL1Ju_juGq61854gtwEIK9mLbl6ekqn81hJr6pu3qJqOEq0uiSm2PbkLgKZHto7DM3762evOd3eAdzv2f3P_5KECu",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_websocket_channel": true
+          },
           "app_id": "io.homeassistant.companion.android",
           "app_name": "Home Assistant",
           "app_version": "2023.12.4-full (11898)",
+          "device_id": "115479ec3e394736",
           "device_name": "M2004J19C",
           "manufacturer": "Xiaomi",
           "model": "M2004J19C",
           "os_name": "Android",
           "os_version": "31",
           "supports_encryption": false,
-          "app_data": {
-            "push_websocket_channel": true,
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
-            "push_token": "fz-1GKu-RJqJqzVKzYSdI9:APA91bHD7AmzJCC8g838AvtgLl6Z3OfmduX-96xNY02ZIF87xCnDL1Ju_juGq61854gtwEIK9mLbl6ekqn81hJr6pu3qJqOEq0uiSm2PbkLgKZHto7DM3762evOd3eAdzv2f3P_5KECu"
-          },
-          "device_id": "115479ec3e394736",
-          "webhook_id": "eb0e011e5aa3eab3dbbf6347b0d85b7338a71d453344a1e8c0bfe4eaf29421ac",
-          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
+          "user_id": "72222965dcbb42cb81f18047d2ae1df4",
+          "webhook_id": "eb0e011e5aa3eab3dbbf6347b0d85b7338a71d453344a1e8c0bfe4eaf29421ac"
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -263,38 +268,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "2949faf7761a4679e11194d6586339a8",
-        "version": 1,
-        "minor_version": 1,
-        "domain": "mobile_app",
-        "title": "samsung-dragica",
-        "data": {
-          "app_id": "io.homeassistant.companion.android",
-          "app_name": "Home Assistant",
-          "app_version": "2023.7.5-full (10506)",
-          "device_name": "samsung-dragica",
-          "manufacturer": "samsung",
-          "model": "SM-M135F",
-          "os_name": "Android",
-          "os_version": "33",
-          "supports_encryption": false,
-          "app_data": {
-            "push_websocket_channel": true,
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
-            "push_token": "f1lgMogJQkC6t22Tl7adqW:APA91bE6UoZYuycgV0q5-2VsBoifeGwjqz8vVuOSvEdpduFQTORP0a0nP2Gh9HoyGiTElNAJQsqguYwXu5TBE890EQdlafoY1N-oudkbC5i8ui_mX4okrzsdv0vaAiVLc0OKIPHAYgdM"
-          },
-          "device_id": "9ff121b94a4f794f",
-          "webhook_id": "9cf156e8d673627d18b997038c91d695fc64f4fc8196ee1a43d3d5764a0a1110",
-          "user_id": "72222965dcbb42cb81f18047d2ae1df4"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.homeassistant.companion.android-9ff121b94a4f794f",
-        "disabled_by": null
-      },
-      {
         "entry_id": "052a33dea9693ef4294126ae5197b113",
         "version": 1,
         "minor_version": 1,
@@ -321,9 +294,9 @@
           "imported_by": "binary_sensor"
         },
         "options": {
-          "host": "192.168.0.15",
+          "consider_home": 180,
           "count": 5,
-          "consider_home": 180
+          "host": "192.168.0.15"
         },
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
@@ -341,9 +314,9 @@
           "imported_by": "binary_sensor"
         },
         "options": {
-          "host": "192.168.0.35",
+          "consider_home": 180,
           "count": 5,
-          "consider_home": 180
+          "host": "192.168.0.35"
         },
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
@@ -354,12 +327,12 @@
       {
         "entry_id": "4e296ce046ad18b2a0c2dd0265fe52c7",
         "version": 1,
-        "minor_version": 1,
+        "minor_version": 3,
         "domain": "systemmonitor",
         "title": "System Monitor",
         "data": {},
         "options": {
-          "sensor": {
+          "binary_sensor": {
             "process": []
           },
           "resources": [
@@ -401,23 +374,23 @@
         "domain": "mobile_app",
         "title": "xiaomi",
         "data": {
-          "app_id": "io.homeassistant.companion.android",
-          "app_name": "Home Assistant",
-          "app_version": "2024.10.3-full (14058)",
-          "device_name": "xiaomi",
-          "manufacturer": "Xiaomi",
-          "model": "23124RA7EO",
-          "os_name": "Android",
-          "os_version": "34",
-          "supports_encryption": false,
           "app_data": {
             "push_websocket_channel": true,
             "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
             "push_token": "dtev5xhWRVKgFdwZsChllx:APA91bFYU-07iu5_uozwV_t0gvVCJuzt6mXrAS2IfhV0nQRE3RqDaE_-6MsPaQfSI5McacyJZGOYsbAqqf1_YK-DeGsytvOnCsWJl_QZpJWwDwjZ-ptFXIha7hDahir8l7FoThyKj4sF"
           },
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2024.12.1-full (14604)",
           "device_id": "54735f9a2b6f1137",
-          "webhook_id": "a88c95c58226cc1a0cb5992e6e4b1c0448964780ac04a734d0d8f38061b486ad",
-          "user_id": "6ab73dfb34ab49b9afd9c1fb4697084e"
+          "device_name": "xiaomi",
+          "manufacturer": "Xiaomi",
+          "model": "23124RA7EO",
+          "os_name": "Android",
+          "os_version": "35",
+          "supports_encryption": false,
+          "user_id": "6ab73dfb34ab49b9afd9c1fb4697084e",
+          "webhook_id": "a88c95c58226cc1a0cb5992e6e4b1c0448964780ac04a734d0d8f38061b486ad"
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -433,11 +406,11 @@
         "domain": "xiaomi_gateway3",
         "title": "zorcec.freelance@gmail.com",
         "data": {
-          "username": "zorcec.freelance@gmail.com",
           "password": "Livada12",
           "servers": [
             "cn"
-          ]
+          ],
+          "username": "zorcec.freelance@gmail.com"
         },
         "options": {},
         "pref_disable_new_entities": false,
@@ -455,9 +428,9 @@
         "data": {},
         "options": {
           "host": "192.168.0.40",
-          "token": "476346466f537667463467676d6c6631",
           "key": "ICdRTJhBahyJI0wb",
-          "stats": true
+          "stats": true,
+          "token": "476346466f537667463467676d6c6631"
         },
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
@@ -528,6 +501,58 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "5b87e26a-e4ff-52ce-abc6-41e7fa8e7534",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "044f95ae6bef0e7607fb86e6d6c0883c",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "ping",
+        "title": "PC",
+        "data": {
+          "imported_by": "binary_sensor"
+        },
+        "options": {
+          "consider_home": 180,
+          "count": 5,
+          "host": "192.168.0.101"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "753f881e671020b84d2964f2464698a3",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "mobile_app",
+        "title": "Samsung-DRAGICA",
+        "data": {
+          "app_data": {
+            "push_token": "eAxN8eGnSpOEf6bKsps5rG:APA91bFO79P-j9asXpv45F3eNHEavhuozoEYo1b0NIyvHsXYMZGm-qnqugReisBnN4YgvvVfj9YS1CsqNhvvW-iHceADuZY2a1VSY0gsqi8xk3HsIsZSsus",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_websocket_channel": true
+          },
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2024.10.3-full (14058)",
+          "device_id": "9ff121b94a4f794f",
+          "device_name": "Samsung-DRAGICA",
+          "manufacturer": "samsung",
+          "model": "SM-M135F",
+          "os_name": "Android",
+          "os_version": "34",
+          "supports_encryption": false,
+          "user_id": "6ab73dfb34ab49b9afd9c1fb4697084e",
+          "webhook_id": "f8efa30b6912eca68fae835a939f6788e075bc0768eace70cef4b8bca2a96c3a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-9ff121b94a4f794f",
         "disabled_by": null
       }
     ]

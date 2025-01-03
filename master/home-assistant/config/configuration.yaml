@@ -95,6 +95,12 @@ input_select:
       - Cycles
       - Continuous
     icon: mdi:format-list-bulleted-type
+  washmachine_status:
+    name: Type
+    options:
+      - idle
+      - active
+    icon: mdi:washing-machine
 
 # mqtt:
 #   binary_sensor:
