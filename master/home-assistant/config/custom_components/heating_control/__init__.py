@@ -83,7 +83,7 @@ def setup(hass, config):
         _HYBRID_LOCK_UNTIL = _UTC.localize(datetime.utcnow())
 
     # services registration
-    hass.services.async_register(DOMAIN, "skip_current_phaze", skip_current_phaze)
+    # hass.services.async_register(DOMAIN, "skip_current_phaze", skip_current_phaze)
 
     # subscriptions
     async_track_state_change_event(hass, _VENT_ENTITIES, partial(pump_protection_check, hass))

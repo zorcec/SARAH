@@ -86,8 +86,8 @@ input_number:
     unit_of_measurement: "°C"
     icon: mdi:temperature
 
-#zha:
-#  custom_quirks_path: /config/zha_quirks/
+zha:
+  custom_quirks_path: /config/zha_quirks/
 
 input_select:
   heating_type:

@@ -7,7 +7,7 @@ master/letsencrypt/
 master/find3/
 master/home-assistant/src
 master/home-assistant/config/**/*.log
-master/home-assistant/config/**/*.log.*
+master/home-assistant/config/**/*.log.1
 master/appdeamon/files/appdeamon.yaml
 master/appdeamon/apps/__pycache__/
 master/mariadb/data

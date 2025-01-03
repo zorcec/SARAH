@@ -52,7 +52,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.0xa4c138c59818879e_temperature"
+              "entity": "sensor.kitchen_thermostat_temperature"
             },
             {
               "graph": "line",
@@ -60,7 +60,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.0xa4c138c59818879e_humidity"
+              "entity": "sensor.kitchen_thermostat_humidity"
             },
             {
               "type": "history-graph",
@@ -141,7 +141,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.0xa4c13875e736e5ba_temperature"
+              "entity": "sensor.tz3000_bjawzodf_ty0201_temperature"
             },
             {
               "graph": "line",
@@ -149,7 +149,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.0xa4c13875e736e5ba_humidity"
+              "entity": "sensor.tz3000_bjawzodf_ty0201_humidity"
             },
             {
               "type": "history-graph",
@@ -228,7 +228,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.0xa4c13804d8cb3275_temperature"
+              "entity": "sensor.master_bedroom_sensor_temperature"
             },
             {
               "graph": "line",
@@ -236,7 +236,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.0xa4c13804d8cb3275_humidity"
+              "entity": "sensor.master_bedroom_sensor_humidity"
             },
             {
               "type": "history-graph",
@@ -286,14 +286,14 @@
               "type": "sensor",
               "detail": 1,
               "name": "Humidity",
-              "entity": "sensor.0xa4c138ce96500566_humidity"
+              "entity": "sensor.kid_sensor_humidity"
             },
             {
               "graph": "line",
               "type": "sensor",
               "detail": 1,
               "name": "Temperature",
-              "entity": "sensor.0xa4c138ce96500566_temperature"
+              "entity": "sensor.kid_sensor_temperature"
             },
             {
               "type": "history-graph",
@@ -359,7 +359,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.0xa4c138a15222bfa7_temperature"
+              "entity": "sensor.top_sensor_temperature"
             },
             {
               "graph": "line",
@@ -367,7 +367,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.0xa4c138a15222bfa7_humidity"
+              "entity": "sensor.master_bedroom_sensor_humidity"
             },
             {
               "type": "custom:scheduler-card",

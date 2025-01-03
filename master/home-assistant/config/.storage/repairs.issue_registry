@@ -52,6 +52,13 @@
         "domain": "http",
         "is_persistent": false,
         "issue_id": "ssl_configured_without_configured_urls"
+      },
+      {
+        "created": "2025-01-03T13:55:10.420339+00:00",
+        "dismissed_version": null,
+        "domain": "sensor",
+        "is_persistent": false,
+        "issue_id": "state_class_removed_sensor.xiaomi_battery_level"
       }
     ]
   }
