@@ -157,177 +157,169 @@
 - id: '1704456499215'
   alias: Hallway heating
   description: ''
-  trigger:
-  - platform: time_pattern
-    hours: /2
-  condition: []
-  action:
+  triggers:
+  - hours: /2
+    trigger: time_pattern
+  conditions: []
+  actions:
   - if:
     - condition: time
       after: 05:00:00
       before: '18:00:00'
     then:
-    - service: switch.turn_on
-      data: {}
+    - data: {}
       target:
         entity_id:
         - switch.top_wc_valve
         - switch.down_hallway_vent
+      action: switch.turn_on
   - delay:
       hours: 0
-      minutes: 5
+      minutes: 8
       seconds: 0
       milliseconds: 0
-  - service: switch.turn_off
-    data: {}
+  - data: {}
     target:
       entity_id:
       - switch.down_hallway_vent
       - switch.top_wc_valve
+    action: switch.turn_off
   mode: single
 - id: '1733597752568'
   alias: Open window notification (bathroom)
   description: ''
-  trigger:
+  triggers:
   - type: opened
-    platform: device
     device_id: 3650456fef0d585ceff3c398192d4691
-    entity_id: 493ea6de4a7673c5cdda23719accf51d
+    entity_id: 52f89f17e1e4170b3d9bc3b6c208fcbc
+    domain: binary_sensor
+    trigger: device
+  conditions:
+  - type: is_open
+    condition: device
+    device_id: 3650456fef0d585ceff3c398192d4691
+    entity_id: 52f89f17e1e4170b3d9bc3b6c208fcbc
     domain: binary_sensor
     for:
       hours: 0
       minutes: 15
       seconds: 0
-  condition:
-  - type: is_open
-    condition: device
-    device_id: 3650456fef0d585ceff3c398192d4691
-    entity_id: 493ea6de4a7673c5cdda23719accf51d
-    domain: binary_sensor
-  action:
-  - service: notify.notify
-    data:
+  actions:
+  - data:
       message: Prozor u kupaonici je otvoren
       title: Upozorenje
+    action: notify.notify
   mode: single
 - id: '1733597920601'
   alias: Open window notification (kid)
   description: ''
-  trigger:
+  triggers:
   - type: opened
-    platform: device
     device_id: 6466a2424bfb63a6705e90276c5cfee2
-    entity_id: 987f2fad356ea3a3b77343c20693cecf
+    entity_id: 88d247f1e8c8cf9f8fb3b64433f2ee04
     domain: binary_sensor
-    for:
-      hours: 0
-      minutes: 15
-      seconds: 0
-  condition:
+    trigger: device
+  conditions:
   - type: is_open
     condition: device
     device_id: 6466a2424bfb63a6705e90276c5cfee2
-    entity_id: 987f2fad356ea3a3b77343c20693cecf
+    entity_id: 88d247f1e8c8cf9f8fb3b64433f2ee04
     domain: binary_sensor
-  action:
-  - service: notify.notify
-    data:
+  actions:
+  - data:
       message: Prozor v dječjoj je otvoren
       title: 'Upozorenje '
+    action: notify.notify
   mode: single
 - id: '1733597939534'
   alias: Open window notification (master bedroom)
   description: ''
-  trigger:
+  triggers:
   - type: opened
-    platform: device
     device_id: ffe02fdd65caaeae4dca8e5f2fa95d36
-    entity_id: 858f45462aba889ba3451ad8c31c02e6
+    entity_id: 9ea36114346056d5116cf06d40baa69e
     domain: binary_sensor
-    for:
-      hours: 0
-      minutes: 15
-      seconds: 0
-  condition:
+    trigger: device
+  conditions:
   - type: is_open
     condition: device
     device_id: ffe02fdd65caaeae4dca8e5f2fa95d36
-    entity_id: 858f45462aba889ba3451ad8c31c02e6
+    entity_id: 9ea36114346056d5116cf06d40baa69e
     domain: binary_sensor
     for:
       hours: 0
       minutes: 15
       seconds: 0
-  action:
-  - service: notify.notify
-    data:
+  actions:
+  - data:
       message: Prozor u spavacoj je otvoren
       title: 'Upozorenje '
+    action: notify.notify
   mode: single
 - id: '1733606138125'
   alias: Set washmachine to active
   description: ''
-  trigger:
+  triggers:
   - type: power
-    platform: device
     device_id: 9b4b92c42c7aa57ea6ef528470036bb1
-    entity_id: a503d6d3658d538c9af97134547cf1cd
+    entity_id: 80404132ebaae930f2527be2e0af71ac
     domain: sensor
-    above: 10
+    trigger: device
+    above: 3
     for:
       hours: 0
       minutes: 1
       seconds: 0
-  condition: []
-  action:
-  - service: input_select.set_options
-    target:
+  conditions: []
+  actions:
+  - target:
       entity_id: input_select.washmachine_status
     data:
       options: active
+    action: input_select.set_options
   mode: single
 - id: '1733606523695'
   alias: Set washmachine to idle
   description: ''
-  trigger:
+  triggers:
   - type: power
-    platform: device
     device_id: 9b4b92c42c7aa57ea6ef528470036bb1
-    entity_id: a503d6d3658d538c9af97134547cf1cd
+    entity_id: 80404132ebaae930f2527be2e0af71ac
     domain: sensor
+    trigger: device
+    below: 3
     for:
       hours: 0
       minutes: 3
       seconds: 0
-    below: 1
-  condition: []
-  action:
-  - service: input_select.set_options
-    target:
+  conditions: []
+  actions:
+  - target:
       entity_id: input_select.washmachine_status
     data:
       options: idle
+    action: input_select.set_options
   mode: single
 - id: '1733664384108'
   alias: Waschmaschine notification
   description: ''
-  trigger:
-  - platform: state
-    entity_id:
+  triggers:
+  - entity_id:
     - input_select.washmachine_status
     from: active
     to: idle
     for:
       hours: 0
-      minutes: 1
+      minutes: 0
       seconds: 0
-  condition: []
-  action:
-  - service: notify.notify
-    metadata: {}
+    trigger: state
+  conditions: []
+  actions:
+  - metadata: {}
     data:
       message: Vešmašina je gotova!
       title: 'Vešmašina '
+    action: notify.notify
   mode: single
 - id: '1733664738196'
   alias: Windows status
