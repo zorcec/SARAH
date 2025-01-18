@@ -104,6 +104,12 @@ input_select:
       - idle
       - active
     icon: mdi:washing-machine
+  dryer_status:
+    name: Type
+    options:
+      - idle
+      - active
+    icon: mdi:tumble-dryer
 
 # mqtt:
 #   binary_sensor:

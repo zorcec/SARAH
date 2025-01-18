@@ -225,6 +225,10 @@
     device_id: 6466a2424bfb63a6705e90276c5cfee2
     entity_id: 88d247f1e8c8cf9f8fb3b64433f2ee04
     domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
   actions:
   - data:
       message: Prozor v dječjoj je otvoren
@@ -385,4 +389,48 @@
       entity_id: input_number.heat_phaze
     data:
       value: 0
+  mode: single
+- id: '1737203979676'
+  alias: Set dryer to idle
+  description: ''
+  triggers:
+  - type: power
+    device_id: d7eb729eb34fec046f84f53431e50c7a
+    entity_id: 11453766c044dbef8728214568b456aa
+    domain: sensor
+    trigger: device
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+    below: 3
+  conditions: []
+  actions:
+  - data:
+      options: idle
+    action: input_select.set_options
+    target:
+      entity_id: input_select.dryer_status
+  mode: single
+- id: '1737204017917'
+  alias: Set dryer active
+  description: ''
+  triggers:
+  - type: power
+    device_id: d7eb729eb34fec046f84f53431e50c7a
+    entity_id: 11453766c044dbef8728214568b456aa
+    domain: sensor
+    trigger: device
+    above: 3
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  conditions: []
+  actions:
+  - data:
+      options: active
+    action: input_select.set_options
+    target:
+      entity_id: input_select.dryer_status
   mode: single
