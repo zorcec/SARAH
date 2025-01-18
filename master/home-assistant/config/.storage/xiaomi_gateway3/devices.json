@@ -7,7 +7,7 @@
       "cloud_name": "Mi Smart Home Hub",
       "cloud_fw": "1.5.0_0026",
       "uid": "54ef44287617",
-      "last_report_ts": 1735918613
+      "last_report_ts": 1736975405
     },
     "lumi.a4c138ce96500566": {
       "uid": "0xa4c138ce96500566",
@@ -55,7 +55,7 @@
       "uid": "0xa4c13804d8cb3275",
       "last_report_ts": 1735909619,
       "last_seen": {
-        "54ef44287617": 1735909619
+        "54ef44287617": 1735986398
       }
     },
     "lumi.a4c1385ee83ea948": {

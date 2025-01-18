@@ -59,6 +59,13 @@
         "domain": "sensor",
         "is_persistent": false,
         "issue_id": "state_class_removed_sensor.xiaomi_battery_level"
+      },
+      {
+        "created": "2025-01-11T16:09:53.641821+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.low_temp_warning_validation_failed_triggers"
       }
     ]
   }

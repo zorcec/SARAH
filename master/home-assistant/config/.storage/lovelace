@@ -161,7 +161,7 @@
                   "entity": "switch.bathroom_fan"
                 },
                 {
-                  "entity": "binary_sensor.0xa4c1388432c1031b_binary"
+                  "entity": "binary_sensor.bathroom_window_opening"
                 }
               ],
               "hours_to_show": 24
@@ -172,14 +172,6 @@
                 "climate.bathroom"
               ],
               "exclude": []
-            },
-            {
-              "type": "custom:scheduler-card",
-              "include": [
-                "climate.bathroom_fan"
-              ],
-              "exclude": [],
-              "title": "Humidity"
             }
           ]
         },
@@ -241,7 +233,9 @@
             {
               "type": "history-graph",
               "entities": [
-                "binary_sensor.0xa4c1388c620bfea3_binary"
+                {
+                  "entity": "binary_sensor.master_bedroom_window_opening"
+                }
               ],
               "title": "Window"
             }
@@ -298,7 +292,9 @@
             {
               "type": "history-graph",
               "entities": [
-                "binary_sensor.0xa4c1386ee9ede5dc_binary"
+                {
+                  "entity": "binary_sensor.kid_window_opening_2"
+                }
               ],
               "title": "Window"
             }
@@ -657,20 +653,6 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "select.54ef44287617_command",
-                  "name": "Command"
-                },
-                {
-                  "entity": "select.54ef44287617_data",
-                  "name": "Data"
-                }
-              ],
-              "title": "Mi Smart Home Hub"
             }
           ]
         },
@@ -687,10 +669,7 @@
               "type": "glance",
               "entities": [
                 {
-                  "entity": "switch.0x70b3d52b600fa043_plug"
-                },
-                {
-                  "entity": "sensor.0x70b3d52b600fa043_power"
+                  "entity": "sensor.power_plug_waschmaschine_power"
                 },
                 {
                   "entity": "input_select.washmachine_status"
@@ -698,6 +677,22 @@
               ],
               "title": "Waschmaschine",
               "state_color": true
+            },
+            {
+              "show_name": false,
+              "show_icon": true,
+              "show_state": true,
+              "type": "glance",
+              "entities": [
+                {
+                  "entity": "sensor.tz3000_wzmuk9ai_ts011f_power"
+                },
+                {
+                  "entity": "input_select.dryer_status"
+                }
+              ],
+              "state_color": true,
+              "title": "Dryer"
             }
           ]
         }

@@ -4,907 +4,904 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.tomislav","state":"not_home","attributes":{"editable":true,"id":"tomislav","device_trackers":["device_tracker.xiaomi"],"latitude":48.2719698,"longitude":14.31416,"gps_accuracy":23,"source":"person.tomislav","user_id":"d81d3d7902634864b794b15fc153555e","friendly_name":"Tomislav"},"last_changed":"2025-01-03T16:26:35.204298+00:00","last_reported":"2025-01-03T16:26:35.204298+00:00","last_updated":"2025-01-03T16:26:35.204298+00:00","context":{"id":"01JGPFTWT48X28SJX2NDFFM9SF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.tomislav","state":"not_home","attributes":{"editable":true,"id":"tomislav","device_trackers":["device_tracker.xiaomi"],"latitude":48.2719698,"longitude":14.31416,"gps_accuracy":23,"source":"device_tracker.xiaomi","user_id":"d81d3d7902634864b794b15fc153555e","friendly_name":"Tomislav"},"last_changed":"2025-01-11T16:09:50.391214+00:00","last_reported":"2025-01-11T16:10:01.114068+00:00","last_updated":"2025-01-11T16:10:01.114068+00:00","context":{"id":"01JHB22A0T29P5Z607DPEM68Q4","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_number.heat_phaze","state":"5.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Heating Cycle"},"last_changed":"2025-01-03T16:26:35.382585+00:00","last_reported":"2025-01-03T16:26:35.382585+00:00","last_updated":"2025-01-03T16:26:35.382585+00:00","context":{"id":"01JGPFTWZP40WVPF9X3FJTKJ4D","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_number.heat_phaze","state":"5.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Heating Cycle"},"last_changed":"2025-01-11T16:09:50.557727+00:00","last_reported":"2025-01-11T16:09:50.557727+00:00","last_updated":"2025-01-11T16:09:50.557727+00:00","context":{"id":"01JHB21ZPX40WVPF9X3FJTKJ4D","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_number.wait_phaze","state":"30.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Waiting Cycle"},"last_changed":"2025-01-03T16:26:35.382712+00:00","last_reported":"2025-01-03T16:26:35.382712+00:00","last_updated":"2025-01-03T16:26:35.382712+00:00","context":{"id":"01JGPFTWZPTADXEJRXN1PG675V","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_number.wait_phaze","state":"30.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Waiting Cycle"},"last_changed":"2025-01-11T16:09:50.557882+00:00","last_reported":"2025-01-11T16:09:50.557882+00:00","last_updated":"2025-01-11T16:09:50.557882+00:00","context":{"id":"01JHB21ZPXTADXEJRXN1PG675V","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_number.reheat_time","state":"5.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Reheat time"},"last_changed":"2025-01-03T16:26:35.382845+00:00","last_reported":"2025-01-03T16:26:35.382845+00:00","last_updated":"2025-01-03T16:26:35.382845+00:00","context":{"id":"01JGPFTWZPSTFC3SH3TQG429FF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_number.reheat_time","state":"5.0","attributes":{"initial":null,"editable":false,"min":0.0,"max":60.0,"step":5.0,"mode":"slider","unit_of_measurement":"min","icon":"mdi:clock-outline","friendly_name":"Reheat time"},"last_changed":"2025-01-11T16:09:50.557992+00:00","last_reported":"2025-01-11T16:09:50.557992+00:00","last_updated":"2025-01-11T16:09:50.557992+00:00","context":{"id":"01JHB21ZPXSTFC3SH3TQG429FF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_number.target_output","state":"28.0","attributes":{"initial":null,"editable":false,"min":20.0,"max":40.0,"step":1.0,"mode":"slider","unit_of_measurement":"°C","icon":"mdi:temperature","friendly_name":"Target Temp."},"last_changed":"2025-01-03T16:26:35.382953+00:00","last_reported":"2025-01-03T16:26:35.382953+00:00","last_updated":"2025-01-03T16:26:35.382953+00:00","context":{"id":"01JGPFTWZPEA7GRNDKXSR420H1","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_number.target_output","state":"28.0","attributes":{"initial":null,"editable":false,"min":20.0,"max":40.0,"step":1.0,"mode":"slider","unit_of_measurement":"°C","icon":"mdi:temperature","friendly_name":"Target Temp."},"last_changed":"2025-01-14T19:11:58.320300+00:00","last_reported":"2025-01-14T19:11:58.320300+00:00","last_updated":"2025-01-14T19:11:58.320300+00:00","context":{"id":"01JHK3NMBFY228CAHW4YXBFP0K","parent_id":null,"user_id":"6ab73dfb34ab49b9afd9c1fb4697084e"}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_number.target_output_drop","state":"25.0","attributes":{"initial":null,"editable":false,"min":20.0,"max":40.0,"step":1.0,"mode":"slider","unit_of_measurement":"°C","icon":"mdi:temperature","friendly_name":"Target Drop"},"last_changed":"2025-01-03T16:26:35.383071+00:00","last_reported":"2025-01-03T16:26:35.383071+00:00","last_updated":"2025-01-03T16:26:35.383071+00:00","context":{"id":"01JGPFTWZQA8N10CZFQA8QWT5M","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_number.target_output_drop","state":"25.0","attributes":{"initial":null,"editable":false,"min":20.0,"max":40.0,"step":1.0,"mode":"slider","unit_of_measurement":"°C","icon":"mdi:temperature","friendly_name":"Target Drop"},"last_changed":"2025-01-11T16:09:50.558203+00:00","last_reported":"2025-01-11T16:09:50.558203+00:00","last_updated":"2025-01-11T16:09:50.558203+00:00","context":{"id":"01JHB21ZPYA8N10CZFQA8QWT5M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_select.heating_type","state":"Hybrid","attributes":{"options":["Hybrid","Target","Cycles","Continuous"],"editable":false,"icon":"mdi:format-list-bulleted-type","friendly_name":"Type"},"last_changed":"2025-01-03T16:26:36.345125+00:00","last_reported":"2025-01-03T16:26:36.345125+00:00","last_updated":"2025-01-03T16:26:36.345125+00:00","context":{"id":"01JGPFTXXS19VH2CCE3CF7V55K","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_select.heating_type","state":"Hybrid","attributes":{"options":["Hybrid","Target","Cycles","Continuous"],"editable":false,"icon":"mdi:format-list-bulleted-type","friendly_name":"Type"},"last_changed":"2025-01-11T16:09:51.024802+00:00","last_reported":"2025-01-11T16:09:51.024802+00:00","last_updated":"2025-01-11T16:09:51.024802+00:00","context":{"id":"01JHB2205G9PTCR8TSCGBK4PP6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"input_select.washmachine_status","state":"idle","attributes":{"options":["idle","active"],"editable":false,"icon":"mdi:washing-machine","friendly_name":"Type"},"last_changed":"2025-01-03T16:26:36.345264+00:00","last_reported":"2025-01-03T16:26:36.345264+00:00","last_updated":"2025-01-03T16:26:36.345264+00:00","context":{"id":"01JGPFTXXSPNX9HW2H8Y9ZDK4Z","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_select.washmachine_status","state":"active","attributes":{"options":["idle","active"],"editable":false,"icon":"mdi:washing-machine","friendly_name":"Type"},"last_changed":"2025-01-18T11:31:03.644531+00:00","last_reported":"2025-01-18T12:38:32.956551+00:00","last_updated":"2025-01-18T12:38:32.956712+00:00","context":{"id":"01JHWPR47WWWN434JBAR0AM20M","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.m2004j19c_is_charging","state":"off","attributes":{"device_class":"plug","icon":"mdi:power-plug-off","friendly_name":"M2004J19C Is charging"},"last_changed":"2025-01-03T16:26:38.162143+00:00","last_reported":"2025-01-03T16:26:38.162143+00:00","last_updated":"2025-01-03T16:26:38.162143+00:00","context":{"id":"01JGPFTZPJCH6WR38PRKMK51QP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.m2004j19c_is_charging","state":"off","attributes":{"device_class":"plug","icon":"mdi:power-plug-off","friendly_name":"M2004J19C Is charging"},"last_changed":"2025-01-11T16:09:53.086081+00:00","last_reported":"2025-01-11T16:09:53.086081+00:00","last_updated":"2025-01-11T16:09:53.086081+00:00","context":{"id":"01JHB2225Y23B983C9202SKYWC","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"device_tracker.xiaomi","state":"not_home","attributes":{"source_type":"gps","latitude":48.2719698,"longitude":14.31416,"gps_accuracy":23,"altitude":307,"course":0,"speed":0,"vertical_accuracy":1,"friendly_name":"M2004J19C"},"last_changed":"2025-01-03T16:26:38.166853+00:00","last_reported":"2025-01-03T16:26:38.166853+00:00","last_updated":"2025-01-03T16:26:38.166853+00:00","context":{"id":"01JGPFTZPPT0575WRMQXQZC7CF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"device_tracker.xiaomi","state":"not_home","attributes":{"source_type":"gps","latitude":48.2719698,"longitude":14.31416,"gps_accuracy":23,"altitude":307,"course":0,"speed":0,"vertical_accuracy":1,"friendly_name":"M2004J19C"},"last_changed":"2025-01-11T16:09:53.087869+00:00","last_reported":"2025-01-11T16:09:53.087869+00:00","last_updated":"2025-01-11T16:09:53.087869+00:00","context":{"id":"01JHB2225ZESTMMEBRAA8EAYAD","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_battery_level","state":"43","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-40","friendly_name":"M2004J19C Battery level"},"last_changed":"2025-01-03T16:26:38.167600+00:00","last_reported":"2025-01-03T16:26:38.167600+00:00","last_updated":"2025-01-03T16:26:38.167600+00:00","context":{"id":"01JGPFTZPQ23B983C9202SKYWC","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_battery_level","state":"43","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-40","friendly_name":"M2004J19C Battery level"},"last_changed":"2025-01-11T16:09:53.088499+00:00","last_reported":"2025-01-11T16:09:53.088499+00:00","last_updated":"2025-01-11T16:09:53.088499+00:00","context":{"id":"01JHB22260D1MKFXJZTTKZ8CRX","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": 43,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_battery_state","state":"discharging","attributes":{"icon":"mdi:battery-minus","friendly_name":"M2004J19C Battery state"},"last_changed":"2025-01-03T16:26:38.167825+00:00","last_reported":"2025-01-03T16:26:38.167825+00:00","last_updated":"2025-01-03T16:26:38.167825+00:00","context":{"id":"01JGPFTZPQT1FNGKQR8H087PYQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_battery_state","state":"discharging","attributes":{"icon":"mdi:battery-minus","friendly_name":"M2004J19C Battery state"},"last_changed":"2025-01-11T16:09:53.088736+00:00","last_reported":"2025-01-11T16:09:53.088736+00:00","last_updated":"2025-01-11T16:09:53.088736+00:00","context":{"id":"01JHB22260YQYGEW4GJRSVXB9E","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_charger_type","state":"none","attributes":{"icon":"mdi:battery","friendly_name":"M2004J19C Charger type"},"last_changed":"2025-01-03T16:26:38.168011+00:00","last_reported":"2025-01-03T16:26:38.168011+00:00","last_updated":"2025-01-03T16:26:38.168011+00:00","context":{"id":"01JGPFTZPRESTMMEBRAA8EAYAD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_charger_type","state":"none","attributes":{"icon":"mdi:battery","friendly_name":"M2004J19C Charger type"},"last_changed":"2025-01-11T16:09:53.088932+00:00","last_reported":"2025-01-11T16:09:53.088932+00:00","last_updated":"2025-01-11T16:09:53.088932+00:00","context":{"id":"01JHB22260TGMAQR7JA56HTP0P","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_battery_health","state":"good","attributes":{"icon":"mdi:battery-heart-variant","friendly_name":"M2004J19C Battery health"},"last_changed":"2025-01-03T16:26:38.168200+00:00","last_reported":"2025-01-03T16:26:38.168200+00:00","last_updated":"2025-01-03T16:26:38.168200+00:00","context":{"id":"01JGPFTZPRD1MKFXJZTTKZ8CRX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_battery_health","state":"good","attributes":{"icon":"mdi:battery-heart-variant","friendly_name":"M2004J19C Battery health"},"last_changed":"2025-01-11T16:09:53.089128+00:00","last_reported":"2025-01-11T16:09:53.089128+00:00","last_updated":"2025-01-11T16:09:53.089128+00:00","context":{"id":"01JHB22261S7145QXRPASE6TKG","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "good",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_battery_temperature","state":"25.9","attributes":{"unit_of_measurement":"°C","device_class":"temperature","icon":"mdi:battery","friendly_name":"M2004J19C Battery temperature"},"last_changed":"2025-01-03T16:26:38.168407+00:00","last_reported":"2025-01-03T16:26:38.168407+00:00","last_updated":"2025-01-03T16:26:38.168407+00:00","context":{"id":"01JGPFTZPRYQYGEW4GJRSVXB9E","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_battery_temperature","state":"25.9","attributes":{"unit_of_measurement":"°C","device_class":"temperature","icon":"mdi:battery","friendly_name":"M2004J19C Battery temperature"},"last_changed":"2025-01-11T16:09:53.089352+00:00","last_reported":"2025-01-11T16:09:53.089352+00:00","last_updated":"2025-01-11T16:09:53.089352+00:00","context":{"id":"01JHB22261D417XC4YJTG8QJWB","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": 25.9,
         "native_unit_of_measurement": "°C"
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.m2004j19c_battery_power","state":"0.92","attributes":{"current":0.2401,"voltage":3.821,"unit_of_measurement":"W","device_class":"power","icon":"mdi:battery-plus","friendly_name":"M2004J19C Battery power"},"last_changed":"2025-01-03T16:26:38.168596+00:00","last_reported":"2025-01-03T16:26:38.168596+00:00","last_updated":"2025-01-03T16:26:38.168596+00:00","context":{"id":"01JGPFTZPRTGMAQR7JA56HTP0P","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.m2004j19c_battery_power","state":"0.92","attributes":{"current":0.2401,"voltage":3.821,"unit_of_measurement":"W","device_class":"power","icon":"mdi:battery-plus","friendly_name":"M2004J19C Battery power"},"last_changed":"2025-01-11T16:09:53.089565+00:00","last_reported":"2025-01-11T16:09:53.089565+00:00","last_updated":"2025-01-11T16:09:53.089565+00:00","context":{"id":"01JHB222615JFB7QZEZ8WYMRRP","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": 0.92,
         "native_unit_of_measurement": "W"
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"device_tracker.xiaomi_2","state":"unknown","attributes":{"source_type":"gps","friendly_name":"xiaomi"},"last_changed":"2025-01-03T16:26:38.169325+00:00","last_reported":"2025-01-03T16:26:38.169325+00:00","last_updated":"2025-01-03T16:26:38.169325+00:00","context":{"id":"01JGPFTZPSS7145QXRPASE6TKG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"device_tracker.xiaomi_2","state":"unknown","attributes":{"source_type":"gps","friendly_name":"xiaomi"},"last_changed":"2025-01-11T16:09:53.092066+00:00","last_reported":"2025-01-11T16:09:53.092066+00:00","last_updated":"2025-01-11T16:09:53.092066+00:00","context":{"id":"01JHB2226486ECWST8KYMJKHTD","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.xiaomi_battery_level","state":"33","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-30","friendly_name":"xiaomi Battery level"},"last_changed":"2025-01-03T16:26:38.169773+00:00","last_reported":"2025-01-03T16:26:38.169773+00:00","last_updated":"2025-01-03T16:26:38.169773+00:00","context":{"id":"01JGPFTZPSD417XC4YJTG8QJWB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.xiaomi_battery_level","state":"94","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-90","friendly_name":"xiaomi Battery level"},"last_changed":"2025-01-18T10:47:47.003814+00:00","last_reported":"2025-01-18T10:47:47.003814+00:00","last_updated":"2025-01-18T10:47:47.003814+00:00","context":{"id":"01JHWGDA1VPN40T4594267MKN4","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": 33,
+        "native_value": 94,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.xiaomi_battery_state","state":"discharging","attributes":{"options":["charging","discharging","full","not_charging"],"device_class":"enum","icon":"mdi:battery-minus","friendly_name":"xiaomi Battery state"},"last_changed":"2025-01-03T16:26:38.169967+00:00","last_reported":"2025-01-03T16:26:38.169967+00:00","last_updated":"2025-01-03T16:26:38.169967+00:00","context":{"id":"01JGPFTZPS5JFB7QZEZ8WYMRRP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.xiaomi_battery_state","state":"discharging","attributes":{"options":["charging","discharging","full","not_charging"],"device_class":"enum","icon":"mdi:battery-minus","friendly_name":"xiaomi Battery state"},"last_changed":"2025-01-11T16:09:53.092833+00:00","last_reported":"2025-01-11T16:09:53.092833+00:00","last_updated":"2025-01-11T16:09:53.092833+00:00","context":{"id":"01JHB22264MFVN2K47D9ASA32P","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.xiaomi_charger_type","state":"none","attributes":{"options":["ac","usb","wireless","dock","none"],"device_class":"enum","icon":"mdi:battery","friendly_name":"xiaomi Charger type"},"last_changed":"2025-01-03T16:26:38.170153+00:00","last_reported":"2025-01-03T16:26:38.170153+00:00","last_updated":"2025-01-03T16:26:38.170153+00:00","context":{"id":"01JGPFTZPT86ECWST8KYMJKHTD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.xiaomi_charger_type","state":"none","attributes":{"options":["ac","usb","wireless","dock","none"],"device_class":"enum","icon":"mdi:battery","friendly_name":"xiaomi Charger type"},"last_changed":"2025-01-11T16:09:53.093044+00:00","last_reported":"2025-01-11T16:09:53.093044+00:00","last_updated":"2025-01-11T16:09:53.093044+00:00","context":{"id":"01JHB22265E2KKRRK2Q78AJ4WK","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"device_tracker.samsung_dragica","state":"unknown","attributes":{"source_type":"gps","friendly_name":"Samsung-DRAGICA"},"last_changed":"2025-01-03T16:26:38.170805+00:00","last_reported":"2025-01-03T16:26:38.170805+00:00","last_updated":"2025-01-03T16:26:38.170805+00:00","context":{"id":"01JGPFTZPTPQ236CDJ6X7C6E60","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"device_tracker.samsung_dragica","state":"unknown","attributes":{"source_type":"gps","friendly_name":"Samsung-DRAGICA"},"last_changed":"2025-01-11T16:09:53.093742+00:00","last_reported":"2025-01-11T16:09:53.093742+00:00","last_updated":"2025-01-11T16:09:53.093742+00:00","context":{"id":"01JHB22265MJHS79XEGRC06QVM","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.samsung_dragica_battery_level","state":"49","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-40","friendly_name":"Samsung-DRAGICA Battery level"},"last_changed":"2025-01-03T16:26:38.176767+00:00","last_reported":"2025-01-03T16:26:38.176767+00:00","last_updated":"2025-01-03T16:26:38.176767+00:00","context":{"id":"01JGPFTZQ0MFVN2K47D9ASA32P","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.samsung_dragica_battery_level","state":"32","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-30","friendly_name":"Samsung-DRAGICA Battery level"},"last_changed":"2025-01-11T16:09:53.094206+00:00","last_reported":"2025-01-11T16:09:53.094206+00:00","last_updated":"2025-01-11T16:09:53.094206+00:00","context":{"id":"01JHB22266RRNRZWNH189GDHBT","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": 49,
+        "native_value": 32,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.samsung_dragica_battery_state","state":"discharging","attributes":{"icon":"mdi:battery-minus","friendly_name":"Samsung-DRAGICA Battery state","options":["charging","discharging","full","not_charging"],"device_class":"enum"},"last_changed":"2025-01-03T16:26:38.176993+00:00","last_reported":"2025-01-03T16:26:38.176993+00:00","last_updated":"2025-01-03T16:26:38.176993+00:00","context":{"id":"01JGPFTZQ0E2KKRRK2Q78AJ4WK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.samsung_dragica_battery_state","state":"discharging","attributes":{"icon":"mdi:battery-minus","friendly_name":"Samsung-DRAGICA Battery state","options":["charging","discharging","full","not_charging"],"device_class":"enum"},"last_changed":"2025-01-11T16:09:53.094426+00:00","last_reported":"2025-01-11T16:09:53.094426+00:00","last_updated":"2025-01-11T16:09:53.094426+00:00","context":{"id":"01JHB2226620DA0PE9VCFJRE14","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.samsung_dragica_charger_type","state":"none","attributes":{"icon":"mdi:battery","friendly_name":"Samsung-DRAGICA Charger type","options":["ac","usb","wireless","dock","none"],"device_class":"enum"},"last_changed":"2025-01-03T16:26:38.177373+00:00","last_reported":"2025-01-03T16:26:38.177373+00:00","last_updated":"2025-01-03T16:26:38.177373+00:00","context":{"id":"01JGPFTZQ1MJHS79XEGRC06QVM","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.samsung_dragica_charger_type","state":"none","attributes":{"icon":"mdi:battery","friendly_name":"Samsung-DRAGICA Charger type","options":["ac","usb","wireless","dock","none"],"device_class":"enum"},"last_changed":"2025-01-11T16:09:53.094630+00:00","last_reported":"2025-01-11T16:09:53.094630+00:00","last_updated":"2025-01-11T16:09:53.094630+00:00","context":{"id":"01JHB2226639K2M79B787Y0G1A","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.kitchen","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":19.4,"temperature":20.0,"hvac_action":"heating","friendly_name":"Kitchen","supported_features":385},"last_changed":"2025-01-03T16:26:38.228626+00:00","last_reported":"2025-01-03T16:26:47.005406+00:00","last_updated":"2025-01-03T16:26:47.005406+00:00","context":{"id":"01JGPFV8AXB8VXDQN6K2P7AR7C","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.wled_tv_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"WLED TV Restart"},"last_changed":"2025-01-11T16:09:53.497285+00:00","last_reported":"2025-01-11T16:09:53.497285+00:00","last_updated":"2025-01-11T16:09:53.497285+00:00","context":{"id":"01JHB222JSXRYGYPDCE6TPNWR9","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.bathroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":19.8,"temperature":22.0,"hvac_action":"heating","friendly_name":"Bathroom","supported_features":385},"last_changed":"2025-01-03T16:26:38.229298+00:00","last_reported":"2025-01-03T16:26:47.004937+00:00","last_updated":"2025-01-03T16:26:47.004937+00:00","context":{"id":"01JGPFV8AWFM4RQ9C6DJ741N9V","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.wled_tv_firmware","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"WLED TV Firmware","supported_features":3},"last_changed":"2025-01-11T16:09:53.507693+00:00","last_reported":"2025-01-11T16:09:53.507693+00:00","last_updated":"2025-01-11T16:09:53.507693+00:00","context":{"id":"01JHB222K329T6KXGE0EXSKJWK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.master_bedroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":17.7,"temperature":18.0,"hvac_action":"heating","friendly_name":"Master Bedroom","supported_features":385},"last_changed":"2025-01-03T16:26:38.229851+00:00","last_reported":"2025-01-03T16:26:47.004689+00:00","last_updated":"2025-01-03T16:26:47.004689+00:00","context":{"id":"01JGPFV8AW8FSGS4Q0RY09K0QH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.wled_restart_2","state":"unknown","attributes":{"device_class":"restart","friendly_name":"PC WLED Restart"},"last_changed":"2025-01-11T16:09:53.508320+00:00","last_reported":"2025-01-11T16:09:53.508320+00:00","last_updated":"2025-01-11T16:09:53.508320+00:00","context":{"id":"01JHB222K4GG46EC80FM5GVAZJ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.kid_bedroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":16.0,"temperature":18.0,"hvac_action":"heating","friendly_name":"Kid Bedroom","supported_features":385},"last_changed":"2025-01-03T16:26:38.230390+00:00","last_reported":"2025-01-03T16:26:47.004425+00:00","last_updated":"2025-01-03T16:26:47.004425+00:00","context":{"id":"01JGPFV8AWCTBV5JJK7CNDK3ME","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.wled_firmware_2","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"PC WLED Firmware","supported_features":3},"last_changed":"2025-01-11T16:09:53.514939+00:00","last_reported":"2025-01-11T16:09:53.514939+00:00","last_updated":"2025-01-11T16:09:53.514939+00:00","context":{"id":"01JHB222KAXQ7G4NQJDF76TTVH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.top","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":20.0,"temperature":20.5,"hvac_action":"heating","friendly_name":"Top","supported_features":385},"last_changed":"2025-01-03T16:26:38.230919+00:00","last_reported":"2025-01-03T16:26:47.004082+00:00","last_updated":"2025-01-03T16:26:47.004082+00:00","context":{"id":"01JGPFV8AWSWMRNRM4JVWTB6WF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.wled_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"KID WLED Restart"},"last_changed":"2025-01-11T21:31:52.242027+00:00","last_reported":"2025-01-11T21:39:58.581707+00:00","last_updated":"2025-01-11T21:31:52.242027+00:00","context":{"id":"01JHBMFMHJQAFTP3FM4RNV14GV","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"climate.bathroom_fan","state":"cool","attributes":{"hvac_modes":["cool","off"],"min_temp":50,"max_temp":100,"target_temp_step":1.0,"current_temperature":56,"temperature":79,"hvac_action":"idle","icon":"mdi:fan","friendly_name":"Fan Control","supported_features":385},"last_changed":"2025-01-03T16:26:38.231518+00:00","last_reported":"2025-01-03T16:26:47.005178+00:00","last_updated":"2025-01-03T16:26:47.005178+00:00","context":{"id":"01JGPFV8AX6VDVM7KN1SW10R38","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.wled_firmware","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"KID WLED Firmware","supported_features":3},"last_changed":"2025-01-11T21:31:52.243210+00:00","last_reported":"2025-01-11T21:39:58.583472+00:00","last_updated":"2025-01-11T21:31:52.243210+00:00","context":{"id":"01JHBMFMHK42TH070GA2637XF1","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.wled_tv_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"WLED TV Restart"},"last_changed":"2025-01-03T16:26:38.641768+00:00","last_reported":"2025-01-03T16:26:38.641768+00:00","last_updated":"2025-01-03T16:26:38.641768+00:00","context":{"id":"01JGPFV05HENSCR7B5MAJN3AK6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.sets_sleep_retain_status","state":"on","attributes":{"id":"1673812981370","last_triggered":"2025-01-17T20:00:00.276267+00:00","mode":"single","current":0,"friendly_name":"Sets sleep retain status"},"last_changed":"2025-01-11T16:09:53.639658+00:00","last_reported":"2025-01-17T20:00:00.278493+00:00","last_updated":"2025-01-17T20:00:00.278493+00:00","context":{"id":"01JHTXKQRM0BKK2NNEFVNQRRCW","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.wled_tv_firmware","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"WLED TV Firmware","supported_features":3},"last_changed":"2025-01-03T16:26:38.655957+00:00","last_reported":"2025-01-03T16:26:38.655957+00:00","last_updated":"2025-01-03T16:26:38.655957+00:00","context":{"id":"01JGPFV05ZFCSZW6GPKD4WXC54","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.automation_3","state":"on","attributes":{"id":"1676149800565","last_triggered":"2025-01-18T06:58:12.908025+00:00","mode":"single","current":0,"friendly_name":"Bathroom fan only when lights are off"},"last_changed":"2025-01-11T16:09:53.639884+00:00","last_reported":"2025-01-18T06:58:15.914890+00:00","last_updated":"2025-01-18T06:58:15.914890+00:00","context":{"id":"01JHW38YSBY82QRJWJ8T1T2VTZ","parent_id":"01JHW38YSB94NVXAZ3FDVHGA4D","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.wled_restart_2","state":"unknown","attributes":{"device_class":"restart","friendly_name":"PC WLED Restart"},"last_changed":"2025-01-03T16:26:38.656984+00:00","last_reported":"2025-01-03T16:26:38.656984+00:00","last_updated":"2025-01-03T16:26:38.656984+00:00","context":{"id":"01JGPFV060MPFCV28ACMK0KQNF","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.top_dimmer_correction","state":"on","attributes":{"id":"1677363623906","last_triggered":"2025-01-17T21:34:05.667586+00:00","mode":"single","current":0,"friendly_name":"Correct top dimmer"},"last_changed":"2025-01-11T16:09:53.640048+00:00","last_reported":"2025-01-17T21:34:07.669594+00:00","last_updated":"2025-01-17T21:34:07.669594+00:00","context":{"id":"01JHV300V360CQ40GSMWPC2RQN","parent_id":"01JHV300V3AJC820DDWE9J919H","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.wled_firmware_2","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"PC WLED Firmware","supported_features":3},"last_changed":"2025-01-03T16:26:38.665853+00:00","last_reported":"2025-01-03T16:26:38.665853+00:00","last_updated":"2025-01-03T16:26:38.665853+00:00","context":{"id":"01JGPFV0691QVQHASWPC32PDPK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.bathroom_dimmer_correction","state":"on","attributes":{"id":"1677363742332","last_triggered":"2025-01-18T06:58:12.909481+00:00","mode":"single","current":0,"friendly_name":"Correct bathroom dimmer"},"last_changed":"2025-01-11T16:09:53.640202+00:00","last_reported":"2025-01-18T06:58:14.911309+00:00","last_updated":"2025-01-18T06:58:14.911309+00:00","context":{"id":"01JHW38YSDMYD67JEBQPH2XZNF","parent_id":"01JHW38YSB94NVXAZ3FDVHGA4D","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.wled_restart","state":"unknown","attributes":{"device_class":"restart","friendly_name":"KID WLED Restart"},"last_changed":"2025-01-03T16:26:38.666459+00:00","last_reported":"2025-01-03T16:26:38.666459+00:00","last_updated":"2025-01-03T16:26:38.666459+00:00","context":{"id":"01JGPFV06AK9GFRT6DHMPKTKGH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.correct_kitchen_dimmer_i","state":"on","attributes":{"id":"1677364084822","last_triggered":"2025-01-16T17:09:00.351724+00:00","mode":"single","current":0,"friendly_name":"Correct kitchen main dimmer"},"last_changed":"2025-01-11T16:09:53.640356+00:00","last_reported":"2025-01-16T17:09:01.353165+00:00","last_updated":"2025-01-16T17:09:01.353165+00:00","context":{"id":"01JHR1DX9Z0PMBWXG4E5H3BN5S","parent_id":"01JHR1DX9YBZB6YQAVB1KCW8PE","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.wled_firmware","state":"on","attributes":{"auto_update":false,"display_precision":0,"installed_version":"0.14.3","in_progress":false,"latest_version":"0.15.0","release_summary":null,"release_url":"https://github.com/Aircoookie/WLED/releases/tag/v0.15.0","skipped_version":null,"title":"WLED","update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/wled/icon.png","friendly_name":"KID WLED Firmware","supported_features":3},"last_changed":"2025-01-03T16:26:38.686446+00:00","last_reported":"2025-01-03T16:26:38.686446+00:00","last_updated":"2025-01-03T16:26:38.686446+00:00","context":{"id":"01JGPFV06Y29T6KXGE0EXSKJWK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.correct_kitchen_table_dimmer","state":"on","attributes":{"id":"1677364163504","last_triggered":"2025-01-17T16:38:37.984768+00:00","mode":"single","current":0,"friendly_name":"Correct kitchen table dimmer"},"last_changed":"2025-01-11T16:09:53.640505+00:00","last_reported":"2025-01-17T16:38:39.987236+00:00","last_updated":"2025-01-17T16:38:39.987236+00:00","context":{"id":"01JHTJ30N0V924PR7VS550FC9F","parent_id":"01JHTJ2XJG1BY1CCRT9QMG2Y7S","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.sets_sleep_retain_status","state":"on","attributes":{"id":"1673812981370","last_triggered":"2025-01-02T20:00:00.259346+00:00","mode":"single","current":0,"friendly_name":"Sets sleep retain status"},"last_changed":"2025-01-03T16:26:38.822924+00:00","last_reported":"2025-01-03T16:26:38.822924+00:00","last_updated":"2025-01-03T16:26:38.822924+00:00","context":{"id":"01JGPFV0B64PHR95BA9NDG9JVX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.hallway_heating","state":"on","attributes":{"id":"1704456499215","last_triggered":"2025-01-18T11:00:00.434350+00:00","mode":"single","current":0,"friendly_name":"Hallway heating"},"last_changed":"2025-01-11T16:09:53.640691+00:00","last_reported":"2025-01-18T11:08:00.439605+00:00","last_updated":"2025-01-18T11:08:00.439605+00:00","context":{"id":"01JHWHJB1QDGFWN0YM61T3GJAY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.automation_3","state":"on","attributes":{"id":"1676149800565","last_triggered":"2025-01-03T16:20:44.919377+00:00","mode":"single","current":0,"friendly_name":"Bathroom fan only when lights are off"},"last_changed":"2025-01-03T16:26:38.823119+00:00","last_reported":"2025-01-03T16:26:38.823119+00:00","last_updated":"2025-01-03T16:26:38.823119+00:00","context":{"id":"01JGPFV0B7D1941MHC6M2GVK95","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.open_window_notification","state":"on","attributes":{"id":"1733597752568","last_triggered":"2024-12-20T08:43:59.859278+00:00","mode":"single","current":0,"friendly_name":"Open window notification (bathroom)"},"last_changed":"2025-01-11T16:09:53.640837+00:00","last_reported":"2025-01-11T16:09:53.640837+00:00","last_updated":"2025-01-11T16:09:53.640837+00:00","context":{"id":"01JHB222Q8NSQ52PBDZ35CTWTB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.top_dimmer_correction","state":"on","attributes":{"id":"1677363623906","last_triggered":"2025-01-02T21:06:25.928526+00:00","mode":"single","current":0,"friendly_name":"Correct top dimmer"},"last_changed":"2025-01-03T16:26:38.823273+00:00","last_reported":"2025-01-03T16:26:38.823273+00:00","last_updated":"2025-01-03T16:26:38.823273+00:00","context":{"id":"01JGPFV0B7AKXDJRX7VD11D6NS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.open_window_notification_kid","state":"on","attributes":{"id":"1733597920601","last_triggered":"2025-01-08T18:12:35.289935+00:00","mode":"single","current":0,"friendly_name":"Open window notification (kid)"},"last_changed":"2025-01-11T16:09:53.640981+00:00","last_reported":"2025-01-11T16:09:53.640981+00:00","last_updated":"2025-01-11T16:09:53.640981+00:00","context":{"id":"01JHB222Q842Y6YRPPBTJ28KKY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.bathroom_dimmer_correction","state":"on","attributes":{"id":"1677363742332","last_triggered":"2025-01-03T16:20:44.920248+00:00","mode":"single","current":0,"friendly_name":"Correct bathroom dimmer"},"last_changed":"2025-01-03T16:26:38.823451+00:00","last_reported":"2025-01-03T16:26:38.823451+00:00","last_updated":"2025-01-03T16:26:38.823451+00:00","context":{"id":"01JGPFV0B7QQP7NQSY21D2G7A8","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.open_window_notification_kid_2","state":"on","attributes":{"id":"1733597939534","last_triggered":"2024-12-20T06:47:22.321350+00:00","mode":"single","current":0,"friendly_name":"Open window notification (master bedroom)"},"last_changed":"2025-01-11T16:09:53.641127+00:00","last_reported":"2025-01-11T16:09:53.641127+00:00","last_updated":"2025-01-11T16:09:53.641127+00:00","context":{"id":"01JHB222Q938ZACDFBSK1K3Z2Q","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.correct_kitchen_dimmer_i","state":"on","attributes":{"id":"1677364084822","last_triggered":"2025-01-03T15:22:04.933324+00:00","mode":"single","current":0,"friendly_name":"Correct kitchen main dimmer"},"last_changed":"2025-01-03T16:26:38.823635+00:00","last_reported":"2025-01-03T16:26:38.823635+00:00","last_updated":"2025-01-03T16:26:38.823635+00:00","context":{"id":"01JGPFV0B73ENQW67X0TD4Q1TY","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.set_washmachine_to_active","state":"on","attributes":{"id":"1733606138125","last_triggered":"2025-01-18T11:48:35.473721+00:00","mode":"single","current":0,"friendly_name":"Set washmachine to active"},"last_changed":"2025-01-11T16:09:53.641273+00:00","last_reported":"2025-01-18T11:48:35.474735+00:00","last_updated":"2025-01-18T11:48:35.474735+00:00","context":{"id":"01JHWKWN0H8AEZ3C5GWWZ06J9X","parent_id":"01JHWKTTDE8D0R28AKJXMKP2ED","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.correct_kitchen_table_dimmer","state":"on","attributes":{"id":"1677364163504","last_triggered":"2024-12-20T17:32:59.336493+00:00","mode":"single","current":0,"friendly_name":"Correct kitchen table dimmer"},"last_changed":"2025-01-03T16:26:38.823775+00:00","last_reported":"2025-01-03T16:26:38.823775+00:00","last_updated":"2025-01-03T16:26:38.823775+00:00","context":{"id":"01JGPFV0B7VYTSXGPYRZX677C2","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.set_washmachine_to_idle","state":"on","attributes":{"id":"1733606523695","last_triggered":"2025-01-17T17:09:28.218746+00:00","mode":"single","current":0,"friendly_name":"Set washmachine to idle"},"last_changed":"2025-01-11T16:09:53.641416+00:00","last_reported":"2025-01-17T17:09:28.219862+00:00","last_updated":"2025-01-17T17:09:28.219862+00:00","context":{"id":"01JHTKVFGT158A4QJJKEVH3V4X","parent_id":"01JHTKNZQQRYCM6K3TBGMAKQVF","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.hallway_heating","state":"on","attributes":{"id":"1704456499215","last_triggered":"2025-01-03T15:00:00.292563+00:00","mode":"single","current":0,"friendly_name":"Hallway heating"},"last_changed":"2025-01-03T16:26:38.825272+00:00","last_reported":"2025-01-03T16:26:38.825272+00:00","last_updated":"2025-01-03T16:26:38.825272+00:00","context":{"id":"01JGPFV0B9M8045GWSNH1218H6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.vesmasina_je_gotova_obavijest","state":"on","attributes":{"id":"1733664384108","last_triggered":"2025-01-17T17:09:28.220065+00:00","mode":"single","current":0,"friendly_name":"Waschmaschine notification"},"last_changed":"2025-01-11T16:09:53.641566+00:00","last_reported":"2025-01-17T17:09:29.158734+00:00","last_updated":"2025-01-17T17:09:29.158734+00:00","context":{"id":"01JHTKVFGVVDVVZYCNPHP234A8","parent_id":"01JHTKVFGT158A4QJJKEVH3V4X","user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.open_window_notification","state":"on","attributes":{"id":"1733597752568","last_triggered":"2024-12-20T08:43:59.859278+00:00","mode":"single","current":0,"friendly_name":"Open window notification (bathroom)"},"last_changed":"2025-01-03T16:26:38.825546+00:00","last_reported":"2025-01-03T16:26:38.825546+00:00","last_updated":"2025-01-03T16:26:38.825546+00:00","context":{"id":"01JGPFV0B9XXWT7SD724637D50","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.windows_is_closed","state":"off","attributes":{"id":"1733664738196","last_triggered":"2024-12-08T13:48:31.969306+00:00","mode":"single","current":0,"friendly_name":"Windows status"},"last_changed":"2025-01-11T16:09:53.641697+00:00","last_reported":"2025-01-11T16:09:53.641697+00:00","last_updated":"2025-01-11T16:09:53.641697+00:00","context":{"id":"01JHB222Q9JXVCMPSN4W46TMME","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.open_window_notification_kid","state":"on","attributes":{"id":"1733597920601","last_triggered":"2025-01-03T14:40:23.352236+00:00","mode":"single","current":0,"friendly_name":"Open window notification (kid)"},"last_changed":"2025-01-03T16:26:38.825687+00:00","last_reported":"2025-01-03T16:26:38.825687+00:00","last_updated":"2025-01-03T16:26:38.825687+00:00","context":{"id":"01JGPFV0B97KGSX3RY5T84MT4Y","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.kid_window_opening","state":"off","attributes":{"device_class":"opening","friendly_name":"Kid Window Opening"},"last_changed":"2025-01-17T06:39:37.391163+00:00","last_reported":"2025-01-17T06:39:37.391163+00:00","last_updated":"2025-01-17T06:39:37.391163+00:00","context":{"id":"01JHSFT6DF5M92KH0XYGZV8N3T","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.open_window_notification_kid_2","state":"on","attributes":{"id":"1733597939534","last_triggered":"2024-12-20T06:47:22.321350+00:00","mode":"single","current":0,"friendly_name":"Open window notification (master bedroom)"},"last_changed":"2025-01-03T16:26:38.825837+00:00","last_reported":"2025-01-03T16:26:38.825837+00:00","last_updated":"2025-01-03T16:26:38.825837+00:00","context":{"id":"01JGPFV0B921EAJN6CBNR4XVQS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.kid_window_opening_2","state":"off","attributes":{"device_class":"opening","friendly_name":"Kid Window Opening"},"last_changed":"2025-01-18T06:46:09.940483+00:00","last_reported":"2025-01-18T06:46:09.940483+00:00","last_updated":"2025-01-18T06:46:09.940483+00:00","context":{"id":"01JHW2JWRMH45NGXYVCNC2XAHT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_washmachine_to_active","state":"on","attributes":{"id":"1733606138125","last_triggered":"2025-01-03T09:50:43.505689+00:00","mode":"single","current":0,"friendly_name":"Set washmachine to active"},"last_changed":"2025-01-03T16:26:38.825983+00:00","last_reported":"2025-01-03T16:26:38.825983+00:00","last_updated":"2025-01-03T16:26:38.825983+00:00","context":{"id":"01JGPFV0B9W93Z635JV87GSP4M","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.bathroom_window_opening","state":"on","attributes":{"device_class":"opening","friendly_name":"Bathroom Window Opening"},"last_changed":"2025-01-18T12:25:50.491217+00:00","last_reported":"2025-01-18T12:25:50.491217+00:00","last_updated":"2025-01-18T12:25:50.491217+00:00","context":{"id":"01JHWP0VMVCHCSSTPEWTWRGB0P","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.set_washmachine_to_idle","state":"on","attributes":{"id":"1733606523695","last_triggered":"2025-01-03T12:13:43.970395+00:00","mode":"single","current":0,"friendly_name":"Set washmachine to idle"},"last_changed":"2025-01-03T16:26:38.826129+00:00","last_reported":"2025-01-03T16:26:38.826129+00:00","last_updated":"2025-01-03T16:26:38.826129+00:00","context":{"id":"01JGPFV0BATJTQCCT7JY23G0PS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.bathroom_window_opening_2","state":"on","attributes":{"device_class":"opening","friendly_name":"Bathroom Window Opening"},"last_changed":"2025-01-18T12:25:49.929289+00:00","last_reported":"2025-01-18T12:25:49.929289+00:00","last_updated":"2025-01-18T12:25:49.929289+00:00","context":{"id":"01JHWP0V3901GCE2RKM2B96EDR","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.vesmasina_je_gotova_obavijest","state":"off","attributes":{"id":"1733664384108","last_triggered":"2024-12-13T10:47:56.642868+00:00","mode":"single","current":0,"friendly_name":"Waschmaschine notification"},"last_changed":"2025-01-03T16:26:38.826251+00:00","last_reported":"2025-01-03T16:26:38.826251+00:00","last_updated":"2025-01-03T16:26:38.826251+00:00","context":{"id":"01JGPFV0BA57GJ29DPGMZ5X7KE","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.master_bedroom_window_opening","state":"off","attributes":{"device_class":"opening","friendly_name":"Master Bedroom Window Opening"},"last_changed":"2025-01-18T06:46:59.383889+00:00","last_reported":"2025-01-18T06:46:59.383889+00:00","last_updated":"2025-01-18T06:46:59.383889+00:00","context":{"id":"01JHW2MD1QYPNB9JMJ4HA5G3TH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.windows_is_closed","state":"off","attributes":{"id":"1733664738196","last_triggered":"2024-12-08T13:48:31.969306+00:00","mode":"single","current":0,"friendly_name":"Windows status"},"last_changed":"2025-01-03T16:26:38.826376+00:00","last_reported":"2025-01-03T16:26:38.826376+00:00","last_updated":"2025-01-03T16:26:38.826376+00:00","context":{"id":"01JGPFV0BAAHGEWCAFPQW1XBDY","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.master_bedroom_window_opening_2","state":"off","attributes":{"device_class":"opening","friendly_name":"Master Bedroom Window Opening"},"last_changed":"2025-01-18T06:46:58.824963+00:00","last_reported":"2025-01-18T06:46:58.824963+00:00","last_updated":"2025-01-18T06:46:58.824963+00:00","context":{"id":"01JHW2MCG82FXH3C895TNJJERC","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"automation.low_temp_warning","state":"on","attributes":{"id":"1735160021975","last_triggered":"2024-12-29T08:40:39.936241+00:00","mode":"single","current":0,"friendly_name":"Low temp. warning"},"last_changed":"2025-01-03T16:26:38.826512+00:00","last_reported":"2025-01-03T16:26:38.826512+00:00","last_updated":"2025-01-03T16:26:38.826512+00:00","context":{"id":"01JGPFV0BAYDEJ93QWTXPZEEYS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.power_plug_waschmaschine_identify","state":"2025-01-03T13:17:07.230120+00:00","attributes":{"device_class":"identify","friendly_name":"Power Plug Waschmaschine Identify"},"last_changed":"2025-01-14T20:20:21.590506+00:00","last_reported":"2025-01-14T20:20:21.590506+00:00","last_updated":"2025-01-14T20:20:21.590506+00:00","context":{"id":"01JHK7JVEP2XJG51WAXVTP0GAS","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.kid_window_opening","state":"off","attributes":{"device_class":"opening","friendly_name":"Kid Window Opening"},"last_changed":"2025-01-03T16:26:46.965445+00:00","last_reported":"2025-01-03T16:26:46.965445+00:00","last_updated":"2025-01-03T16:26:46.965445+00:00","context":{"id":"01JGPFV89ND0NA9B44GVCKMAMB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.top_sensor_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Top Sensor Identify"},"last_changed":"2025-01-14T20:20:21.590772+00:00","last_reported":"2025-01-14T20:20:21.590772+00:00","last_updated":"2025-01-14T20:20:21.590772+00:00","context":{"id":"01JHK7JVEPZV4BQTAJ022ESNJG","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.kid_window_opening_2","state":"off","attributes":{"device_class":"opening","friendly_name":"Kid Window Opening"},"last_changed":"2025-01-03T16:26:46.965821+00:00","last_reported":"2025-01-03T16:26:46.965821+00:00","last_updated":"2025-01-03T16:26:46.965821+00:00","context":{"id":"01JGPFV89NRK24FBMT4A6QB14G","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.kid_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Kid Window Identify"},"last_changed":"2025-01-14T20:20:21.591002+00:00","last_reported":"2025-01-14T20:20:21.591002+00:00","last_updated":"2025-01-14T20:20:21.591002+00:00","context":{"id":"01JHK7JVEQFRHJP2GVPXPHN0KK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.bathroom_window_opening","state":"on","attributes":{"device_class":"opening","friendly_name":"Bathroom Window Opening"},"last_changed":"2025-01-03T16:26:46.966145+00:00","last_reported":"2025-01-03T16:26:46.966145+00:00","last_updated":"2025-01-03T16:26:46.966145+00:00","context":{"id":"01JGPFV89PMHTF70X8QNKV91VP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.tz3000_wzmuk9ai_ts011f_identify","state":"2025-01-03T13:30:46.828205+00:00","attributes":{"device_class":"identify","friendly_name":"Power Plug Dryer Identify"},"last_changed":"2025-01-14T20:20:21.591253+00:00","last_reported":"2025-01-14T20:20:21.591253+00:00","last_updated":"2025-01-14T20:20:21.591253+00:00","context":{"id":"01JHK7JVEQ2GJSP1M7X58FD38R","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.bathroom_window_opening_2","state":"on","attributes":{"device_class":"opening","friendly_name":"Bathroom Window Opening"},"last_changed":"2025-01-03T16:26:46.966831+00:00","last_reported":"2025-01-03T16:26:46.966831+00:00","last_updated":"2025-01-03T16:26:46.966831+00:00","context":{"id":"01JGPFV89PM1ESVE4136R1T0Q6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.bathroom_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Bathroom Window Identify"},"last_changed":"2025-01-14T20:20:21.592858+00:00","last_reported":"2025-01-14T20:20:21.592858+00:00","last_updated":"2025-01-14T20:20:21.592858+00:00","context":{"id":"01JHK7JVER9Q41KYY9X19MP27K","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.master_bedroom_window_opening","state":"off","attributes":{"device_class":"opening","friendly_name":"Master Bedroom Window Opening"},"last_changed":"2025-01-03T16:26:46.967148+00:00","last_reported":"2025-01-03T16:26:46.967148+00:00","last_updated":"2025-01-03T16:26:46.967148+00:00","context":{"id":"01JGPFV89Q261EMTK5N993M67W","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.kid_sensor_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Kid Sensor Identify"},"last_changed":"2025-01-14T20:20:21.600365+00:00","last_reported":"2025-01-14T20:20:21.600365+00:00","last_updated":"2025-01-14T20:20:21.600365+00:00","context":{"id":"01JHK7JVF0W4G104VW9JTN14FS","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.master_bedroom_window_opening_2","state":"off","attributes":{"device_class":"opening","friendly_name":"Master Bedroom Window Opening"},"last_changed":"2025-01-03T16:26:46.967440+00:00","last_reported":"2025-01-03T16:26:46.967440+00:00","last_updated":"2025-01-03T16:26:46.967440+00:00","context":{"id":"01JGPFV89Q3NQJZM261SVESNHG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.master_bedroom_sensor_identify","state":"2025-01-03T14:19:58.537015+00:00","attributes":{"device_class":"identify","friendly_name":"Master Bedroom Sensor Identify"},"last_changed":"2025-01-14T20:20:21.602365+00:00","last_reported":"2025-01-14T20:20:21.602365+00:00","last_updated":"2025-01-14T20:20:21.602365+00:00","context":{"id":"01JHK7JVF2M4YTDY8SY364256X","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.power_plug_waschmaschine_identify","state":"2025-01-03T13:17:07.230120+00:00","attributes":{"device_class":"identify","friendly_name":"Power Plug Waschmaschine Identify"},"last_changed":"2025-01-03T16:26:46.967987+00:00","last_reported":"2025-01-03T16:26:46.967987+00:00","last_updated":"2025-01-03T16:26:46.967987+00:00","context":{"id":"01JGPFV89Q1EMYZT47S5XF2AXH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.master_bedroom_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Master Bedroom Window Identify"},"last_changed":"2025-01-14T20:20:21.602769+00:00","last_reported":"2025-01-14T20:20:21.602769+00:00","last_updated":"2025-01-14T20:20:21.602769+00:00","context":{"id":"01JHK7JVF2007TJ2P2NPEXKTX8","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.top_sensor_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Top Sensor Identify"},"last_changed":"2025-01-03T16:26:46.968290+00:00","last_reported":"2025-01-03T16:26:46.968290+00:00","last_updated":"2025-01-03T16:26:46.968290+00:00","context":{"id":"01JGPFV89RZMTV7CXFNSWVYDR6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.tz3000_bjawzodf_ty0201_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Bathroom Thermostat Identify"},"last_changed":"2025-01-14T20:20:21.603072+00:00","last_reported":"2025-01-14T20:20:21.603072+00:00","last_updated":"2025-01-14T20:20:21.603072+00:00","context":{"id":"01JHK7JVF3BHZAXXNYD4Y86B1H","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.kid_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Kid Window Identify"},"last_changed":"2025-01-03T16:26:46.968553+00:00","last_reported":"2025-01-03T16:26:46.968553+00:00","last_updated":"2025-01-03T16:26:46.968553+00:00","context":{"id":"01JGPFV89RXTN0VX0B594N14CQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.signal_downstairs_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Signal Downstairs Identify"},"last_changed":"2025-01-14T20:20:21.603391+00:00","last_reported":"2025-01-14T20:20:21.603391+00:00","last_updated":"2025-01-14T20:20:21.603391+00:00","context":{"id":"01JHK7JVF30DGQ5CMAVCYZ556N","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.tz3000_wzmuk9ai_ts011f_identify","state":"2025-01-03T13:30:46.828205+00:00","attributes":{"device_class":"identify","friendly_name":"Power Plug Dryer Identify"},"last_changed":"2025-01-03T16:26:46.968847+00:00","last_reported":"2025-01-03T16:26:46.968847+00:00","last_updated":"2025-01-03T16:26:46.968847+00:00","context":{"id":"01JGPFV89RE4FXJN1Y8HMZTK34","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"light.signal_downstairs_light","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"off_with_transition":false,"off_brightness":null,"friendly_name":"Signal Downstairs Light","supported_features":8},"last_changed":"2025-01-14T20:20:21.604496+00:00","last_reported":"2025-01-14T20:20:22.037241+00:00","last_updated":"2025-01-14T20:20:21.604496+00:00","context":{"id":"01JHK7JVF4QNKZ9WNXZBT2W586","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.bathroom_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Bathroom Window Identify"},"last_changed":"2025-01-03T16:26:46.969255+00:00","last_reported":"2025-01-03T16:26:46.969255+00:00","last_updated":"2025-01-03T16:26:46.969255+00:00","context":{"id":"01JGPFV89SP86PWVZ9CCSG6V81","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"select.power_plug_waschmaschine_power_on_state","state":"On","attributes":{"options":["Off","On","LastState"],"friendly_name":"Power Plug Waschmaschine Power on state"},"last_changed":"2025-01-14T20:20:21.605094+00:00","last_reported":"2025-01-14T20:20:21.605094+00:00","last_updated":"2025-01-14T20:20:21.605094+00:00","context":{"id":"01JHK7JVF5XN99X59F0QZ2H4A6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.kid_sensor_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Kid Sensor Identify"},"last_changed":"2025-01-03T16:26:46.969656+00:00","last_reported":"2025-01-03T16:26:46.969656+00:00","last_updated":"2025-01-03T16:26:46.969656+00:00","context":{"id":"01JGPFV89SYXSWM3BT99THE5AK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"select.power_plug_waschmaschine_backlight_mode","state":"Off","attributes":{"options":["Off","LightWhenOn","LightWhenOff"],"friendly_name":"Power Plug Waschmaschine Backlight mode"},"last_changed":"2025-01-14T20:20:21.605479+00:00","last_reported":"2025-01-14T20:20:21.605479+00:00","last_updated":"2025-01-14T20:20:21.605479+00:00","context":{"id":"01JHK7JVF57G6MBYCTWWP2ZAHH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.master_bedroom_sensor_identify","state":"2025-01-03T14:19:58.537015+00:00","attributes":{"device_class":"identify","friendly_name":"Master Bedroom Sensor Identify"},"last_changed":"2025-01-03T16:26:46.969971+00:00","last_reported":"2025-01-03T16:26:46.969971+00:00","last_updated":"2025-01-03T16:26:46.969971+00:00","context":{"id":"01JGPFV89SQ5Z9Q2Q2DXVQ2TT9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"select.tz3000_wzmuk9ai_ts011f_power_on_state","state":"On","attributes":{"options":["Off","On","LastState"],"friendly_name":"Power Plug Dryer Power on state"},"last_changed":"2025-01-14T20:20:21.605767+00:00","last_reported":"2025-01-14T20:20:21.605767+00:00","last_updated":"2025-01-14T20:20:21.605767+00:00","context":{"id":"01JHK7JVF5XVCNN7BFREGSDJQK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.master_bedroom_window_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Master Bedroom Window Identify"},"last_changed":"2025-01-03T16:26:46.970256+00:00","last_reported":"2025-01-03T16:26:46.970256+00:00","last_updated":"2025-01-03T16:26:46.970256+00:00","context":{"id":"01JGPFV89TDH5EY549KQ5SDST8","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"select.tz3000_wzmuk9ai_ts011f_backlight_mode","state":"LightWhenOn","attributes":{"options":["Off","LightWhenOn","LightWhenOff"],"friendly_name":"Power Plug Dryer Backlight mode"},"last_changed":"2025-01-14T20:20:21.606025+00:00","last_reported":"2025-01-14T20:20:21.606025+00:00","last_updated":"2025-01-14T20:20:21.606025+00:00","context":{"id":"01JHK7JVF6EQ0W8M1DWJVRCYZ5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.tz3000_bjawzodf_ty0201_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Bathroom Thermostat Identify"},"last_changed":"2025-01-03T16:26:46.970544+00:00","last_reported":"2025-01-03T16:26:46.970544+00:00","last_updated":"2025-01-03T16:26:46.970544+00:00","context":{"id":"01JGPFV89TXDV7DF89M1ZR62WZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.button_kid_battery","state":"90","attributes":{"state_class":"measurement","battery_voltage":2.9,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Button Kid Battery"},"last_changed":"2025-01-14T20:20:21.616899+00:00","last_reported":"2025-01-14T20:20:21.616899+00:00","last_updated":"2025-01-14T20:20:21.616899+00:00","context":{"id":"01JHK7JVFG412W676QTYG04TWF","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.signal_downstairs_identify","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Signal Downstairs Identify"},"last_changed":"2025-01-03T16:26:46.970828+00:00","last_reported":"2025-01-03T16:26:46.970828+00:00","last_updated":"2025-01-03T16:26:46.970828+00:00","context":{"id":"01JGPFV89TF6JXEY488ZN4W8ZS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.power_plug_waschmaschine_current","state":"0.6","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Waschmaschine Current"},"last_changed":"2025-01-18T12:39:28.382243+00:00","last_reported":"2025-01-18T12:39:28.382243+00:00","last_updated":"2025-01-18T12:39:28.382243+00:00","context":{"id":"01JHWPSTBY7C295XVEJZBWCJ8J","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"button.kitchen_thermostat_identify","state":"2025-01-03T14:45:47.389848+00:00","attributes":{"device_class":"identify","friendly_name":"Kitchen Thermostat Identify"},"last_changed":"2025-01-03T16:26:46.971145+00:00","last_reported":"2025-01-03T16:26:46.971145+00:00","last_updated":"2025-01-03T16:26:46.971145+00:00","context":{"id":"01JGPFV89VTQ4S56K684TG0RXX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.power_plug_waschmaschine_voltage","state":"236","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Waschmaschine Voltage"},"last_changed":"2025-01-18T12:39:28.382591+00:00","last_reported":"2025-01-18T12:39:28.382591+00:00","last_updated":"2025-01-18T12:39:28.382591+00:00","context":{"id":"01JHWPSTBYY42N8KRT771ZKCX3","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"light.signal_downstairs_light","state":"off","attributes":{"supported_color_modes":["onoff"],"color_mode":null,"off_with_transition":false,"off_brightness":null,"friendly_name":"Signal Downstairs Light","supported_features":8},"last_changed":"2025-01-03T16:26:46.971691+00:00","last_reported":"2025-01-03T16:26:46.971691+00:00","last_updated":"2025-01-03T16:26:46.971691+00:00","context":{"id":"01JGPFV89VG9274BV2P9CFHJTM","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.power_plug_waschmaschine_power","state":"93","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Waschmaschine Power"},"last_changed":"2025-01-18T12:39:28.381814+00:00","last_reported":"2025-01-18T12:39:28.381814+00:00","last_updated":"2025-01-18T12:39:28.381814+00:00","context":{"id":"01JHWPSTBXEBN6NKKXQHBPTJV5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"select.power_plug_waschmaschine_power_on_state","state":"On","attributes":{"options":["Off","On","LastState"],"friendly_name":"Power Plug Waschmaschine Power on state"},"last_changed":"2025-01-03T16:26:46.972147+00:00","last_reported":"2025-01-03T16:26:46.972147+00:00","last_updated":"2025-01-03T16:26:46.972147+00:00","context":{"id":"01JGPFV89WC36Z19458YZ8CZM2","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.power_plug_waschmaschine_summation_delivered","state":"18.67","attributes":{"state_class":"total_increasing","zcl_unit_of_measurement":0,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Waschmaschine Summation delivered"},"last_changed":"2025-01-18T12:33:21.476250+00:00","last_reported":"2025-01-18T12:33:21.476250+00:00","last_updated":"2025-01-18T12:33:21.476250+00:00","context":{"id":"01JHWPEM24NCGADRDGF16HQZMB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"select.power_plug_waschmaschine_backlight_mode","state":"Off","attributes":{"options":["Off","LightWhenOn","LightWhenOff"],"friendly_name":"Power Plug Waschmaschine Backlight mode"},"last_changed":"2025-01-03T16:26:46.972428+00:00","last_reported":"2025-01-03T16:26:46.972428+00:00","last_updated":"2025-01-03T16:26:46.972428+00:00","context":{"id":"01JGPFV89WAHTY596BD8E6H351","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.top_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Top Sensor Battery"},"last_changed":"2025-01-14T20:20:21.620622+00:00","last_reported":"2025-01-14T20:20:21.620622+00:00","last_updated":"2025-01-14T20:20:21.620622+00:00","context":{"id":"01JHK7JVFMRRS8J60MWVW75CCE","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"select.tz3000_wzmuk9ai_ts011f_power_on_state","state":"On","attributes":{"options":["Off","On","LastState"],"friendly_name":"Power Plug Dryer Power on state"},"last_changed":"2025-01-03T16:26:46.972710+00:00","last_reported":"2025-01-03T16:26:46.972710+00:00","last_updated":"2025-01-03T16:26:46.972710+00:00","context":{"id":"01JGPFV89WF92YRBG9GXFZQA2N","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.top_sensor_temperature","state":"19.2","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Top Sensor Temperature"},"last_changed":"2025-01-18T12:17:30.185464+00:00","last_reported":"2025-01-18T12:17:30.185464+00:00","last_updated":"2025-01-18T12:17:30.185464+00:00","context":{"id":"01JHWNHK29TBM1V7D6YP93NWC2","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"select.tz3000_wzmuk9ai_ts011f_backlight_mode","state":"LightWhenOn","attributes":{"options":["Off","LightWhenOn","LightWhenOff"],"friendly_name":"Power Plug Dryer Backlight mode"},"last_changed":"2025-01-03T16:26:46.972983+00:00","last_reported":"2025-01-03T16:26:46.972983+00:00","last_updated":"2025-01-03T16:26:46.972983+00:00","context":{"id":"01JGPFV89WWRAA84CQ4Y599FPG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.top_sensor_humidity","state":"44.3","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Top Sensor Humidity"},"last_changed":"2025-01-18T12:20:12.056563+00:00","last_reported":"2025-01-18T12:20:12.056563+00:00","last_updated":"2025-01-18T12:20:12.056563+00:00","context":{"id":"01JHWNPH4RVEBNT18XXD8JNFZ0","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.button_kid_battery","state":"90","attributes":{"state_class":"measurement","battery_voltage":2.9,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Button Kid Battery"},"last_changed":"2025-01-03T16:26:46.981225+00:00","last_reported":"2025-01-03T16:26:46.981225+00:00","last_updated":"2025-01-03T16:26:46.981225+00:00","context":{"id":"01JGPFV8A5VNTHESTM2TZ6Z6FW","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_window_battery","state":"100","attributes":{"state_class":"measurement","battery_size":"AAA","battery_quantity":2,"battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Window Battery"},"last_changed":"2025-01-14T20:20:21.621882+00:00","last_reported":"2025-01-18T11:05:58.048346+00:00","last_updated":"2025-01-18T11:05:58.048346+00:00","context":{"id":"01JHWHEKH03CSXKRVRSSZY2K3K","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.power_plug_waschmaschine_current","state":"0.2","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Waschmaschine Current"},"last_changed":"2025-01-03T16:26:46.982044+00:00","last_reported":"2025-01-03T16:26:46.982044+00:00","last_updated":"2025-01-03T16:26:46.982044+00:00","context":{"id":"01JGPFV8A62E2G165VSW8SCZYR","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_window_illuminance","state":"1","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-18T11:45:46.475770+00:00","last_reported":"2025-01-18T11:45:46.475770+00:00","last_updated":"2025-01-18T11:45:46.475770+00:00","context":{"id":"01JHWKQFZBWF3D4YZTE5JQQE4B","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.power_plug_waschmaschine_voltage","state":"235","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Waschmaschine Voltage"},"last_changed":"2025-01-03T16:26:46.982440+00:00","last_reported":"2025-01-03T16:26:46.982440+00:00","last_updated":"2025-01-03T16:26:46.982440+00:00","context":{"id":"01JGPFV8A63DBD78JGAATJ9KXK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_window_illuminance_2","state":"1550.0","attributes":{"device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-18T11:45:45.488984+00:00","last_reported":"2025-01-18T11:45:45.488984+00:00","last_updated":"2025-01-18T11:45:45.488984+00:00","context":{"id":"01JHWKQF0GX0JDYK6SYAP36D6C","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.power_plug_waschmaschine_power","state":"16","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Waschmaschine Power"},"last_changed":"2025-01-03T16:26:46.983398+00:00","last_reported":"2025-01-03T16:26:46.983398+00:00","last_updated":"2025-01-03T16:26:46.983398+00:00","context":{"id":"01JGPFV8A7DEWECST93K0NZ7BS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_current","state":"0.1","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Dryer Current"},"last_changed":"2025-01-17T19:11:26.090940+00:00","last_reported":"2025-01-17T19:11:26.090940+00:00","last_updated":"2025-01-17T19:11:26.090940+00:00","context":{"id":"01JHTTTSWA7J5HMZSTX661NF6W","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.power_plug_waschmaschine_summation_delivered","state":"12.42","attributes":{"state_class":"total_increasing","zcl_unit_of_measurement":0,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Waschmaschine Summation delivered"},"last_changed":"2025-01-03T16:26:46.983877+00:00","last_reported":"2025-01-03T16:26:46.983877+00:00","last_updated":"2025-01-03T16:26:46.983877+00:00","context":{"id":"01JGPFV8A7N87A1F3SDHWA3Z02","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_voltage","state":"234","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Dryer Voltage"},"last_changed":"2025-01-18T12:39:57.958856+00:00","last_reported":"2025-01-18T12:39:57.958856+00:00","last_updated":"2025-01-18T12:39:57.958856+00:00","context":{"id":"01JHWPTQ86WD1AD8J1SAND7YM4","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.top_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Top Sensor Battery"},"last_changed":"2025-01-03T16:26:46.984251+00:00","last_reported":"2025-01-03T16:26:46.984251+00:00","last_updated":"2025-01-03T16:26:46.984251+00:00","context":{"id":"01JGPFV8A8WAFW9E01E4434CFK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_power","state":"0","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Dryer Power"},"last_changed":"2025-01-18T12:36:37.541454+00:00","last_reported":"2025-01-18T12:36:37.541454+00:00","last_updated":"2025-01-18T12:36:37.541454+00:00","context":{"id":"01JHWPMKH540WJS645PKH9GS6K","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.top_sensor_temperature","state":"20.0","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Top Sensor Temperature"},"last_changed":"2025-01-03T16:26:46.984583+00:00","last_reported":"2025-01-03T16:26:46.984583+00:00","last_updated":"2025-01-03T16:26:46.984583+00:00","context":{"id":"01JGPFV8A8SPHYDNGQGPMKE506","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_summation_delivered","state":"2.89","attributes":{"state_class":"total_increasing","zcl_unit_of_measurement":0,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Dryer Summation delivered"},"last_changed":"2025-01-17T19:09:31.130437+00:00","last_reported":"2025-01-17T19:09:31.130437+00:00","last_updated":"2025-01-17T19:09:31.130437+00:00","context":{"id":"01JHTTQ9KT3XW4SQ9379X3TJR5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.top_sensor_humidity","state":"47.8","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Top Sensor Humidity"},"last_changed":"2025-01-03T16:26:46.985153+00:00","last_reported":"2025-01-03T16:26:46.985153+00:00","last_updated":"2025-01-03T16:26:46.985153+00:00","context":{"id":"01JGPFV8A9BKR1SBKSRE9X26WQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.bathroom_window_battery","state":"100","attributes":{"state_class":"measurement","battery_size":"AAA","battery_quantity":2,"battery_voltage":2.8,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Window Battery"},"last_changed":"2025-01-14T20:20:21.627846+00:00","last_reported":"2025-01-18T11:24:35.246984+00:00","last_updated":"2025-01-18T11:24:35.246984+00:00","context":{"id":"01JHWJGPHEYQNZNJBQF4P65FF0","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_window_battery","state":"100","attributes":{"state_class":"measurement","battery_quantity":2,"battery_voltage":3.0,"battery_size":"AAA","unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Window Battery"},"last_changed":"2025-01-03T16:26:46.985986+00:00","last_reported":"2025-01-03T16:26:46.985986+00:00","last_updated":"2025-01-03T16:26:46.985986+00:00","context":{"id":"01JGPFV8A9G8N7HBG7F0PCPA02","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.bathroom_window_illuminance","state":"1558","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-18T12:25:51.395741+00:00","last_reported":"2025-01-18T12:25:51.395741+00:00","last_updated":"2025-01-18T12:25:51.395741+00:00","context":{"id":"01JHWP0WH3Z00BZK3WYBFDGXQM","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_window_illuminance","state":"0","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-03T16:26:46.986617+00:00","last_reported":"2025-01-03T16:26:46.986617+00:00","last_updated":"2025-01-03T16:26:46.986617+00:00","context":{"id":"01JGPFV8AAMKVRA7TD3AE2T37Y","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.bathroom_window_illuminance_2","state":"1558.0","attributes":{"device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-18T12:25:50.740894+00:00","last_reported":"2025-01-18T12:25:50.740894+00:00","last_updated":"2025-01-18T12:25:50.740894+00:00","context":{"id":"01JHWP0VWMWEYB87TA41SEZMKP","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_window_illuminance_2","state":"0.0","attributes":{"device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-03T16:26:46.987516+00:00","last_reported":"2025-01-03T16:26:46.987516+00:00","last_updated":"2025-01-03T16:26:46.987516+00:00","context":{"id":"01JGPFV8AB0C0S57JZ0TC35DMS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Sensor Battery"},"last_changed":"2025-01-14T20:20:21.633600+00:00","last_reported":"2025-01-14T20:20:21.633600+00:00","last_updated":"2025-01-14T20:20:21.633600+00:00","context":{"id":"01JHK7JVG1XCG1RZSRZ9YVX1NR","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_current","state":"0.1","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Dryer Current"},"last_changed":"2025-01-03T16:26:46.987982+00:00","last_reported":"2025-01-03T16:26:46.987982+00:00","last_updated":"2025-01-03T16:26:46.987982+00:00","context":{"id":"01JGPFV8ABTRDFHM4HYGRSFGY7","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_sensor_temperature","state":"18.1","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kid Sensor Temperature"},"last_changed":"2025-01-18T12:02:39.102843+00:00","last_reported":"2025-01-18T12:02:39.102843+00:00","last_updated":"2025-01-18T12:02:39.102843+00:00","context":{"id":"01JHWMPCVYM8D8ZMCM6TCRQ8AP","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_voltage","state":"236","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Dryer Voltage"},"last_changed":"2025-01-03T16:26:46.988389+00:00","last_reported":"2025-01-03T16:26:46.988389+00:00","last_updated":"2025-01-03T16:26:46.988389+00:00","context":{"id":"01JGPFV8ACJXSKMTSXB2A5AQT0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kid_sensor_humidity","state":"64.9","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kid Sensor Humidity"},"last_changed":"2025-01-18T12:32:39.037821+00:00","last_reported":"2025-01-18T12:32:39.037821+00:00","last_updated":"2025-01-18T12:32:39.037821+00:00","context":{"id":"01JHWPDAKXZ9N4ZD7151AVDBKT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_power","state":"0","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Dryer Power"},"last_changed":"2025-01-03T16:26:46.988996+00:00","last_reported":"2025-01-03T16:26:46.988996+00:00","last_updated":"2025-01-03T16:26:46.988996+00:00","context":{"id":"01JGPFV8ACBNRC2505EHYRESCW","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Sensor Battery"},"last_changed":"2025-01-14T20:20:21.635478+00:00","last_reported":"2025-01-14T20:20:21.635478+00:00","last_updated":"2025-01-14T20:20:21.635478+00:00","context":{"id":"01JHK7JVG3X1EGXXTYRKP62WBP","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_wzmuk9ai_ts011f_summation_delivered","state":"0.0","attributes":{"state_class":"total_increasing","zcl_unit_of_measurement":0,"unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Dryer Summation delivered"},"last_changed":"2025-01-03T16:26:46.989395+00:00","last_reported":"2025-01-03T16:26:46.989395+00:00","last_updated":"2025-01-03T16:26:46.989395+00:00","context":{"id":"01JGPFV8ADTKTZ1C0GMQR69J8C","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_sensor_temperature","state":"19.1","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Master Bedroom Sensor Temperature"},"last_changed":"2025-01-18T12:34:19.931688+00:00","last_reported":"2025-01-18T12:34:19.931688+00:00","last_updated":"2025-01-18T12:34:19.931688+00:00","context":{"id":"01JHWPGD4V4E1V1WZG4CPS8XWH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.bathroom_window_battery","state":"100","attributes":{"state_class":"measurement","battery_quantity":2,"battery_voltage":3.0,"battery_size":"AAA","unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Window Battery"},"last_changed":"2025-01-03T16:26:46.989813+00:00","last_reported":"2025-01-03T16:26:46.989813+00:00","last_updated":"2025-01-03T16:26:46.989813+00:00","context":{"id":"01JGPFV8ADT874XFX524FG0MAR","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_sensor_humidity","state":"53.0","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Master Bedroom Sensor Humidity"},"last_changed":"2025-01-18T12:34:20.056998+00:00","last_reported":"2025-01-18T12:34:20.056998+00:00","last_updated":"2025-01-18T12:34:20.056998+00:00","context":{"id":"01JHWPGD8R4JP0ZAP1BBTT12PN","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.bathroom_window_illuminance","state":"457","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-03T16:26:46.990161+00:00","last_reported":"2025-01-03T16:26:46.990161+00:00","last_updated":"2025-01-03T16:26:46.990161+00:00","context":{"id":"01JGPFV8AEENXECCHVFA2FCAJG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_window_battery","state":"100","attributes":{"state_class":"measurement","battery_size":"AAA","battery_quantity":2,"battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Window Battery"},"last_changed":"2025-01-14T20:20:21.636856+00:00","last_reported":"2025-01-18T09:43:21.826575+00:00","last_updated":"2025-01-18T09:43:21.826575+00:00","context":{"id":"01JHWCQBF2CCW63955JRAS5C7P","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.bathroom_window_illuminance_2","state":"457.0","attributes":{"device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-03T16:26:46.990865+00:00","last_reported":"2025-01-03T16:26:46.990865+00:00","last_updated":"2025-01-03T16:26:46.990865+00:00","context":{"id":"01JGPFV8AE8ZG48784CKV2CYQ9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_window_illuminance","state":"1","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-18T11:47:11.249212+00:00","last_reported":"2025-01-18T11:47:11.249212+00:00","last_updated":"2025-01-18T11:47:11.249212+00:00","context":{"id":"01JHWKT2RHRNJN40ET59HZ5PZT","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Sensor Battery"},"last_changed":"2025-01-03T16:26:46.991217+00:00","last_reported":"2025-01-03T16:26:46.991217+00:00","last_updated":"2025-01-03T16:26:46.991217+00:00","context":{"id":"01JGPFV8AFG811V6ZV7K3EZGXS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.master_bedroom_window_illuminance_2","state":"920.0","attributes":{"device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-18T11:46:40.781561+00:00","last_reported":"2025-01-18T11:46:40.781561+00:00","last_updated":"2025-01-18T11:46:40.781561+00:00","context":{"id":"01JHWKS50D3V5PN4J6EMSS22WV","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_sensor_temperature","state":"16.0","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kid Sensor Temperature"},"last_changed":"2025-01-03T16:26:46.991550+00:00","last_reported":"2025-01-03T16:26:46.991550+00:00","last_updated":"2025-01-03T16:26:46.991550+00:00","context":{"id":"01JGPFV8AFQ1E1WRP13CPNCE90","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_battery","state":"96","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Thermostat Battery"},"last_changed":"2025-01-18T01:21:10.609712+00:00","last_reported":"2025-01-18T01:21:10.609712+00:00","last_updated":"2025-01-18T01:21:10.609712+00:00","context":{"id":"01JHVFZTEHZRVWHYJ6DEPMZATX","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kid_sensor_humidity","state":"50.2","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kid Sensor Humidity"},"last_changed":"2025-01-03T16:26:46.993121+00:00","last_reported":"2025-01-03T16:26:46.993121+00:00","last_updated":"2025-01-03T16:26:46.993121+00:00","context":{"id":"01JGPFV8AH3HD9K9W1QNFAEEJ6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_temperature","state":"18.4","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Bathroom Thermostat Temperature"},"last_changed":"2025-01-18T12:36:12.504859+00:00","last_reported":"2025-01-18T12:36:12.504859+00:00","last_updated":"2025-01-18T12:36:12.504859+00:00","context":{"id":"01JHWPKV2R4FBV5TXHJKXSRMQQ","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_sensor_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Sensor Battery"},"last_changed":"2025-01-03T16:26:46.993541+00:00","last_reported":"2025-01-03T16:26:46.993541+00:00","last_updated":"2025-01-03T16:26:46.993541+00:00","context":{"id":"01JGPFV8AHAN8MRZBM3B9YCPT6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_humidity","state":"66.0","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Bathroom Thermostat Humidity"},"last_changed":"2025-01-18T12:37:43.668589+00:00","last_reported":"2025-01-18T12:37:43.668589+00:00","last_updated":"2025-01-18T12:37:43.668589+00:00","context":{"id":"01JHWPPM3MZ8WYV2TG1VYZAZSA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_sensor_temperature","state":"17.7","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Master Bedroom Sensor Temperature"},"last_changed":"2025-01-03T16:26:46.993880+00:00","last_reported":"2025-01-03T16:26:46.993880+00:00","last_updated":"2025-01-03T16:26:46.993880+00:00","context":{"id":"01JGPFV8AH842Q7FYA6G0GQ1GG","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.power_plug_waschmaschine_switch","state":"on","attributes":{"friendly_name":"Power Plug Waschmaschine Switch"},"last_changed":"2025-01-14T20:20:21.650076+00:00","last_reported":"2025-01-14T20:20:21.912562+00:00","last_updated":"2025-01-14T20:20:21.650076+00:00","context":{"id":"01JHK7JVGJE7KXBZHKD9GQQ8CE","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_sensor_humidity","state":"53.9","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Master Bedroom Sensor Humidity"},"last_changed":"2025-01-03T16:26:46.994490+00:00","last_reported":"2025-01-03T16:26:46.994490+00:00","last_updated":"2025-01-03T16:26:46.994490+00:00","context":{"id":"01JGPFV8AJNGMXQC3C303WGZ72","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.power_plug_waschmaschine_child_lock","state":"on","attributes":{"friendly_name":"Power Plug Waschmaschine Child lock"},"last_changed":"2025-01-14T20:20:21.650402+00:00","last_reported":"2025-01-14T20:20:21.650402+00:00","last_updated":"2025-01-14T20:20:21.650402+00:00","context":{"id":"01JHK7JVGJ2X8E7X8NVEHTN4PY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_window_battery","state":"unknown","attributes":{"state_class":"measurement","battery_quantity":2,"battery_voltage":3.0,"battery_size":"AAA","unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Window Battery"},"last_changed":"2025-01-03T16:26:46.994836+00:00","last_reported":"2025-01-03T16:26:46.994836+00:00","last_updated":"2025-01-03T16:26:46.994836+00:00","context":{"id":"01JGPFV8AJAWB8D5KD01QM2DT3","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.tz3000_wzmuk9ai_ts011f_switch","state":"on","attributes":{"friendly_name":"Power Plug Dryer Switch"},"last_changed":"2025-01-14T20:20:21.650680+00:00","last_reported":"2025-01-14T20:20:22.061213+00:00","last_updated":"2025-01-14T20:20:21.650680+00:00","context":{"id":"01JHK7JVGJSSAXTY3S3CPGN0JB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_window_illuminance","state":"251","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-03T16:26:46.995149+00:00","last_reported":"2025-01-03T16:26:46.995149+00:00","last_updated":"2025-01-03T16:26:46.995149+00:00","context":{"id":"01JGPFV8AK53RH7DSCAW1QAJQS","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.tz3000_wzmuk9ai_ts011f_child_lock","state":"off","attributes":{"friendly_name":"Power Plug Dryer Child lock"},"last_changed":"2025-01-14T20:20:21.650919+00:00","last_reported":"2025-01-14T20:20:21.650919+00:00","last_updated":"2025-01-14T20:20:21.650919+00:00","context":{"id":"01JHK7JVGJ0QBFDSVCGSYZ1SE5","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.master_bedroom_window_illuminance_2","state":"251.0","attributes":{"device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-03T16:26:46.995889+00:00","last_reported":"2025-01-03T16:26:46.995889+00:00","last_updated":"2025-01-03T16:26:46.995889+00:00","context":{"id":"01JGPFV8AK1QF3KGV56D2G6N66","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.button_kid_firmware","state":"off","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x00000044","in_progress":false,"latest_version":"0x00000044","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Button Kid Firmware","supported_features":23},"last_changed":"2025-01-14T20:20:21.651409+00:00","last_reported":"2025-01-14T20:20:21.651409+00:00","last_updated":"2025-01-14T20:20:21.651409+00:00","context":{"id":"01JHK7JVGKVCV839YD1XTXZM0Z","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_battery","state":"100","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Thermostat Battery"},"last_changed":"2025-01-03T16:26:46.996243+00:00","last_reported":"2025-01-03T16:26:46.996243+00:00","last_updated":"2025-01-03T16:26:46.996243+00:00","context":{"id":"01JGPFV8AMVGYDTVWBRJK5HZER","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.top_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Top Sensor Firmware","supported_features":23},"last_changed":"2025-01-14T20:20:21.651681+00:00","last_reported":"2025-01-14T20:20:21.651681+00:00","last_updated":"2025-01-14T20:20:21.651681+00:00","context":{"id":"01JHK7JVGKVYZBGRS1BGQM0178","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_temperature","state":"19.8","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Bathroom Thermostat Temperature"},"last_changed":"2025-01-03T16:26:46.996559+00:00","last_reported":"2025-01-03T16:26:46.996559+00:00","last_updated":"2025-01-03T16:26:46.996559+00:00","context":{"id":"01JGPFV8AMAS99TJC5XZ364A47","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.kid_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Kid Sensor Firmware","supported_features":23},"last_changed":"2025-01-14T20:20:21.651930+00:00","last_reported":"2025-01-14T20:20:21.651930+00:00","last_updated":"2025-01-14T20:20:21.651930+00:00","context":{"id":"01JHK7JVGKJ3SPZFDJMW23FRK1","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_humidity","state":"56.5","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Bathroom Thermostat Humidity"},"last_changed":"2025-01-03T16:26:46.997107+00:00","last_reported":"2025-01-03T16:26:46.997107+00:00","last_updated":"2025-01-03T16:26:46.997107+00:00","context":{"id":"01JGPFV8ANX041R8C0HF49ZJWT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.master_bedroom_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Master Bedroom Sensor Firmware","supported_features":23},"last_changed":"2025-01-14T20:20:21.652211+00:00","last_reported":"2025-01-14T20:20:21.652211+00:00","last_updated":"2025-01-14T20:20:21.652211+00:00","context":{"id":"01JHK7JVGMACNQMRX1VDH55MGY","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kitchen_thermostat_battery","state":"99","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kitchen Thermostat Battery"},"last_changed":"2025-01-03T16:26:46.997973+00:00","last_reported":"2025-01-03T16:26:46.997973+00:00","last_updated":"2025-01-03T16:26:46.997973+00:00","context":{"id":"01JGPFV8AN4DV54F4C3NQ3558S","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.tz3000_bjawzodf_ty0201_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x10013001","in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Bathroom Thermostat Firmware","supported_features":23},"last_changed":"2025-01-14T20:49:44.247515+00:00","last_reported":"2025-01-14T20:49:44.247515+00:00","last_updated":"2025-01-14T20:49:44.247515+00:00","context":{"id":"01JHK98MSQWD607SS03K7Y6KRR","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kitchen_thermostat_temperature","state":"19.4","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kitchen Thermostat Temperature"},"last_changed":"2025-01-03T16:26:46.998316+00:00","last_reported":"2025-01-03T16:26:46.998316+00:00","last_updated":"2025-01-03T16:26:46.998316+00:00","context":{"id":"01JGPFV8AP6HW4C3DZ6PR2PCBD","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"button.tz3000_bjawzodf_ty0201_identify_2","state":"unknown","attributes":{"device_class":"identify","friendly_name":"Kitchen Thermostat Identify"},"last_changed":"2025-01-15T21:16:10.082273+00:00","last_reported":"2025-01-15T21:16:38.558601+00:00","last_updated":"2025-01-15T21:16:38.558601+00:00","context":{"id":"01JHNX6M8Y0C2MPYYRRV4DB3ZB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"sensor.kitchen_thermostat_humidity","state":"57.0","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kitchen Thermostat Humidity"},"last_changed":"2025-01-03T16:26:46.998882+00:00","last_reported":"2025-01-03T16:26:46.998882+00:00","last_updated":"2025-01-03T16:26:46.998882+00:00","context":{"id":"01JGPFV8AP6JDPRDPGZP34DEPE","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_battery_2","state":"95","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kitchen Thermostat Battery"},"last_changed":"2025-01-16T22:53:11.959270+00:00","last_reported":"2025-01-16T22:53:11.959270+00:00","last_updated":"2025-01-16T22:53:11.959270+00:00","context":{"id":"01JHRN44WQ2Q9PE5YB3M5FD6MK","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"switch.power_plug_waschmaschine_switch","state":"on","attributes":{"friendly_name":"Power Plug Waschmaschine Switch"},"last_changed":"2025-01-03T16:26:46.999716+00:00","last_reported":"2025-01-03T16:26:46.999716+00:00","last_updated":"2025-01-03T16:26:46.999716+00:00","context":{"id":"01JGPFV8AQW0A9XNR399C8ZTV5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"update.tz3000_bjawzodf_ty0201_firmware_2","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x10013001","in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Kitchen Thermostat Firmware","supported_features":23},"last_changed":"2025-01-15T21:17:45.341667+00:00","last_reported":"2025-01-15T21:17:45.341667+00:00","last_updated":"2025-01-15T21:17:45.341667+00:00","context":{"id":"01JHNX8NFXW2GYQCC85A0F126H","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"switch.power_plug_waschmaschine_child_lock","state":"on","attributes":{"friendly_name":"Power Plug Waschmaschine Child lock"},"last_changed":"2025-01-03T16:26:46.999999+00:00","last_reported":"2025-01-03T16:26:46.999999+00:00","last_updated":"2025-01-03T16:26:46.999999+00:00","context":{"id":"01JGPFV8AQGE7S4E9VR5PE8GDK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.kitchen_thermostat_temperature","state":"20.1","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kitchen Thermostat Temperature"},"last_changed":"2025-01-18T12:26:52.670503+00:00","last_reported":"2025-01-18T12:26:52.670503+00:00","last_updated":"2025-01-18T12:26:52.670503+00:00","context":{"id":"01JHWP2RBY3K3EAXDCM7C1JCD2","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"switch.tz3000_wzmuk9ai_ts011f_switch","state":"on","attributes":{"friendly_name":"Power Plug Dryer Switch"},"last_changed":"2025-01-03T16:26:47.000264+00:00","last_reported":"2025-01-03T16:26:47.000264+00:00","last_updated":"2025-01-03T16:26:47.000264+00:00","context":{"id":"01JGPFV8ARMFCPQBES3D6ZXM5B","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"input_select.dryer_status","state":"idle","attributes":{"options":["idle","active"],"editable":false,"icon":"mdi:tumble-dryer","friendly_name":"Type"},"last_changed":"2025-01-18T12:38:33.019260+00:00","last_reported":"2025-01-18T12:38:33.019260+00:00","last_updated":"2025-01-18T12:38:33.019260+00:00","context":{"id":"01JHWPR49VH9CH42DE14NC0BR6","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"switch.tz3000_wzmuk9ai_ts011f_child_lock","state":"off","attributes":{"friendly_name":"Power Plug Dryer Child lock"},"last_changed":"2025-01-03T16:26:47.000527+00:00","last_reported":"2025-01-03T16:26:47.000527+00:00","last_updated":"2025-01-03T16:26:47.000527+00:00","context":{"id":"01JGPFV8ARSVYEVTFM27V9DAV0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.kitchen","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":20.1,"temperature":20.0,"hvac_action":"idle","friendly_name":"Kitchen","supported_features":385},"last_changed":"2025-01-18T12:38:33.095826+00:00","last_reported":"2025-01-18T12:38:33.095826+00:00","last_updated":"2025-01-18T12:38:33.095826+00:00","context":{"id":"01JHWPR4C719HB2JHAJXQDMSB0","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.button_kid_firmware","state":"off","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x00000044","in_progress":false,"latest_version":"0x00000044","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Button Kid Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.000986+00:00","last_reported":"2025-01-03T16:26:47.000986+00:00","last_updated":"2025-01-03T16:26:47.000986+00:00","context":{"id":"01JGPFV8AR5SKA026NKEWMV702","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.bathroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":18.4,"temperature":18.0,"hvac_action":"idle","friendly_name":"Bathroom","supported_features":385},"last_changed":"2025-01-18T12:38:33.096790+00:00","last_reported":"2025-01-18T12:38:33.096790+00:00","last_updated":"2025-01-18T12:38:33.096790+00:00","context":{"id":"01JHWPR4C8FC8E3Q8DRDPN8X76","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.top_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Top Sensor Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.001278+00:00","last_reported":"2025-01-03T16:26:47.001278+00:00","last_updated":"2025-01-03T16:26:47.001278+00:00","context":{"id":"01JGPFV8ASBWKVXDPQ4XBQWDPQ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.master_bedroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":19.1,"temperature":19.0,"hvac_action":"idle","friendly_name":"Master Bedroom","supported_features":385},"last_changed":"2025-01-18T12:38:33.097546+00:00","last_reported":"2025-01-18T12:38:33.097546+00:00","last_updated":"2025-01-18T12:38:33.097546+00:00","context":{"id":"01JHWPR4C9WTB6TPY6EXRTBTTH","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.kid_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Kid Sensor Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.001591+00:00","last_reported":"2025-01-03T16:26:47.001591+00:00","last_updated":"2025-01-03T16:26:47.001591+00:00","context":{"id":"01JGPFV8ASQBD65NNTHS2WVMJB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.kid_bedroom","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":18.1,"temperature":18.0,"hvac_action":"idle","friendly_name":"Kid Bedroom","supported_features":385},"last_changed":"2025-01-18T12:38:33.098273+00:00","last_reported":"2025-01-18T12:38:33.098273+00:00","last_updated":"2025-01-18T12:38:33.098273+00:00","context":{"id":"01JHWPR4CAS41CR873FV1CF40T","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.master_bedroom_sensor_firmware","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":null,"in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Master Bedroom Sensor Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.001858+00:00","last_reported":"2025-01-03T16:26:47.001858+00:00","last_updated":"2025-01-03T16:26:47.001858+00:00","context":{"id":"01JGPFV8ASDX14RPBTCBXD4WE9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.top","state":"heat","attributes":{"hvac_modes":["heat","off"],"min_temp":10.0,"max_temp":25.0,"target_temp_step":0.1,"current_temperature":19.2,"temperature":19.5,"hvac_action":"heating","friendly_name":"Top","supported_features":385},"last_changed":"2025-01-18T12:38:33.098965+00:00","last_reported":"2025-01-18T12:38:33.098965+00:00","last_updated":"2025-01-18T12:38:33.098965+00:00","context":{"id":"01JHWPR4CAA8SYK9V07QSY8G28","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.tz3000_bjawzodf_ty0201_firmware","state":"off","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x10013001","in_progress":false,"latest_version":"0x10013001","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Bathroom Thermostat Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.002147+00:00","last_reported":"2025-01-03T16:26:47.002147+00:00","last_updated":"2025-01-03T16:26:47.002147+00:00","context":{"id":"01JGPFV8ATCY4YT7DSV8DB9RHP","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"climate.bathroom_fan","state":"cool","attributes":{"hvac_modes":["cool","off"],"min_temp":50,"max_temp":100,"target_temp_step":1.0,"current_temperature":66,"temperature":75,"hvac_action":"idle","icon":"mdi:fan","friendly_name":"Fan Control","supported_features":385},"last_changed":"2025-01-18T12:38:33.099640+00:00","last_reported":"2025-01-18T12:38:33.099640+00:00","last_updated":"2025-01-18T12:38:33.099640+00:00","context":{"id":"01JHWPR4CB13PK716DAKECX40E","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"update.kitchen_thermostat_firmware","state":"off","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x10013001","in_progress":false,"latest_version":"0x10013001","release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Kitchen Thermostat Firmware","supported_features":23},"last_changed":"2025-01-03T16:26:47.002680+00:00","last_reported":"2025-01-03T16:26:47.002680+00:00","last_updated":"2025-01-03T16:26:47.002680+00:00","context":{"id":"01JGPFV8ATGT9SK87ES0598A4Y","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"automation.set_dryer_to_idle","state":"on","attributes":{"id":"1737203979676","last_triggered":null,"mode":"single","current":0,"friendly_name":"Set dryer to idle"},"last_changed":"2025-01-18T12:39:46.391586+00:00","last_reported":"2025-01-18T12:39:46.391586+00:00","last_updated":"2025-01-18T12:39:46.391586+00:00","context":{"id":"01JHWPTBYQ8VCFNGHPNJ92YQRA","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2025-01-03T16:26:47.012004+00:00"
+      "last_seen": "2025-01-18T12:40:01.749709+00:00"
     },
     {
-      "state": {"entity_id":"alarm_control_panel.54ef44287617_alarm","state":"disarmed","attributes":{"code_format":null,"changed_by":null,"code_arm_required":false,"friendly_name":"Mi Smart Home Hub Alarm","supported_features":15},"last_changed":"2025-01-03T14:25:23.255630+00:00","last_reported":"2025-01-03T14:31:53.625859+00:00","last_updated":"2025-01-03T14:25:23.255630+00:00","context":{"id":"01JGP8WZ9QY1GECHZ9SBY1D71H","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"alarm_control_panel.54ef44287617_alarm","state":"disarmed","attributes":{"code_format":null,"changed_by":null,"code_arm_required":false,"friendly_name":"Mi Smart Home Hub Alarm","supported_features":15},"last_changed":"2025-01-15T21:07:53.732089+00:00","last_reported":"2025-01-15T21:07:54.165510+00:00","last_updated":"2025-01-15T21:07:53.732089+00:00","context":{"id":"01JHNWPKR4MB0BVVK121150YJ1","parent_id":null,"user_id":null}},
       "extra_data": {
         "alarm": "disarmed"
       },
-      "last_seen": "2025-01-03T15:45:28.449154+00:00"
+      "last_seen": "2025-01-15T21:10:44.399431+00:00"
     },
     {
-      "state": {"entity_id":"switch.54ef44287617_alarm_trigger","state":"off","attributes":{"icon":"mdi:alarm-bell","friendly_name":"Mi Smart Home Hub Alarm Trigger"},"last_changed":"2025-01-03T14:25:23.256150+00:00","last_reported":"2025-01-03T14:31:53.625939+00:00","last_updated":"2025-01-03T14:25:23.256150+00:00","context":{"id":"01JGP8WZ9REV4X7XXC3XZS6J2H","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.54ef44287617_alarm_trigger","state":"off","attributes":{"icon":"mdi:alarm-bell","friendly_name":"Mi Smart Home Hub Alarm Trigger"},"last_changed":"2025-01-15T21:07:53.732587+00:00","last_reported":"2025-01-15T21:07:54.165583+00:00","last_updated":"2025-01-15T21:07:53.732587+00:00","context":{"id":"01JHNWPKR41BENHHMTVTDHTKFS","parent_id":null,"user_id":null}},
       "extra_data": {
         "alarm_trigger": false
       },
-      "last_seen": "2025-01-03T15:45:28.461588+00:00"
+      "last_seen": "2025-01-15T21:10:44.411225+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c138ce96500566_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kid Sensor Temperature"},"last_changed":"2025-01-03T14:25:23.278397+00:00","last_reported":"2025-01-03T14:25:28.115397+00:00","last_updated":"2025-01-03T14:25:23.278397+00:00","context":{"id":"01JGP8WZAECG74S3VVP063W866","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c138ce96500566_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kid Sensor Temperature"},"last_changed":"2025-01-11T16:32:48.752564+00:00","last_reported":"2025-01-15T21:07:53.782916+00:00","last_updated":"2025-01-15T21:07:53.782916+00:00","context":{"id":"01JHNWPKSP5EYR07AEHNZQJCB0","parent_id":null,"user_id":null}},
       "extra_data": {
         "temperature": 15.620000000000001
       },
-      "last_seen": "2025-01-03T15:45:28.451474+00:00"
+      "last_seen": "2025-01-15T21:10:44.408452+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c138ce96500566_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kid Sensor Humidity"},"last_changed":"2025-01-03T14:25:23.278948+00:00","last_reported":"2025-01-03T14:25:28.115435+00:00","last_updated":"2025-01-03T14:25:23.278948+00:00","context":{"id":"01JGP8WZAEY30TZZ5ERWWPCVN3","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c138ce96500566_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kid Sensor Humidity"},"last_changed":"2025-01-11T16:32:48.753220+00:00","last_reported":"2025-01-15T21:07:53.783480+00:00","last_updated":"2025-01-15T21:07:53.783480+00:00","context":{"id":"01JHNWPKSQ37S5BA951A08QPCC","parent_id":null,"user_id":null}},
       "extra_data": {
         "humidity": 47.64
       },
-      "last_seen": "2025-01-03T15:45:28.456556+00:00"
+      "last_seen": "2025-01-15T21:10:44.408597+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c138a15222bfa7_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Top Sensor Temperature"},"last_changed":"2025-01-03T14:21:35.171073+00:00","last_reported":"2025-01-03T14:25:28.113713+00:00","last_updated":"2025-01-03T14:25:23.281371+00:00","context":{"id":"01JGP8WZAHZ34TFW5W9CTTQS61","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c138a15222bfa7_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Top Sensor Temperature"},"last_changed":"2025-01-11T16:32:48.780409+00:00","last_reported":"2025-01-15T21:07:53.811874+00:00","last_updated":"2025-01-15T21:07:53.811874+00:00","context":{"id":"01JHNWPKTKB5SRYKQ8P8WG961J","parent_id":null,"user_id":null}},
       "extra_data": {
         "temperature": 19.69
       },
-      "last_seen": "2025-01-03T15:45:28.456801+00:00"
+      "last_seen": "2025-01-15T21:10:44.410166+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c138a15222bfa7_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Top Sensor Humidity"},"last_changed":"2025-01-03T14:21:35.171734+00:00","last_reported":"2025-01-03T14:25:28.113752+00:00","last_updated":"2025-01-03T14:25:23.281887+00:00","context":{"id":"01JGP8WZAHHWP3QHNE3RY1EXVY","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c138a15222bfa7_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Top Sensor Humidity"},"last_changed":"2025-01-11T16:32:48.780982+00:00","last_reported":"2025-01-15T21:07:53.812961+00:00","last_updated":"2025-01-15T21:07:53.812961+00:00","context":{"id":"01JHNWPKTMHYNXC97TZGE73KHP","parent_id":null,"user_id":null}},
       "extra_data": {
         "humidity": 46.59
       },
-      "last_seen": "2025-01-03T15:45:28.456972+00:00"
+      "last_seen": "2025-01-15T21:10:44.410306+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1385ee83ea948_battery_voltage","state":"2900","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Button Kid Battery Voltage"},"last_changed":"2025-01-03T14:25:23.288102+00:00","last_reported":"2025-01-03T14:25:28.112808+00:00","last_updated":"2025-01-03T14:25:23.288102+00:00","context":{"id":"01JGP8WZAR7MV4KKZCS2WZEAP9","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1385ee83ea948_battery_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Button Kid Battery Voltage"},"last_changed":"2025-01-11T16:32:48.740510+00:00","last_reported":"2025-01-15T21:07:53.770805+00:00","last_updated":"2025-01-15T21:07:53.770805+00:00","context":{"id":"01JHNWPKSA0F4S4SFK5YQN56AF","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery_voltage": 2900
       },
-      "last_seen": "2025-01-03T15:45:28.457131+00:00"
+      "last_seen": "2025-01-15T21:10:44.408003+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388432c1031b_battery","state":"200","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Window Battery"},"last_changed":"2025-01-03T14:25:23.293209+00:00","last_reported":"2025-01-03T14:25:28.114950+00:00","last_updated":"2025-01-03T14:25:23.293209+00:00","context":{"id":"01JGP8WZAXQEB0E34GY65XKM7Y","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388432c1031b_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Window Battery"},"last_changed":"2025-01-11T16:32:48.760059+00:00","last_reported":"2025-01-15T21:07:53.791551+00:00","last_updated":"2025-01-15T21:07:53.791551+00:00","context":{"id":"01JHNWPKSZK1N6EHR36DSEM7AM","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery": 200
       },
-      "last_seen": "2025-01-03T15:45:28.457290+00:00"
+      "last_seen": "2025-01-15T21:10:44.408743+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388432c1031b_battery_voltage","state":"2800","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Bathroom Window Battery Voltage"},"last_changed":"2025-01-03T14:25:23.293848+00:00","last_reported":"2025-01-03T14:25:28.114993+00:00","last_updated":"2025-01-03T14:25:23.293848+00:00","context":{"id":"01JGP8WZAXGBP3THDJSJDF799M","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388432c1031b_battery_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Bathroom Window Battery Voltage"},"last_changed":"2025-01-11T16:32:48.760716+00:00","last_reported":"2025-01-15T21:07:53.792142+00:00","last_updated":"2025-01-15T21:07:53.792142+00:00","context":{"id":"01JHNWPKT0W4YN6DNSBYGZ3168","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery_voltage": 2800
       },
-      "last_seen": "2025-01-03T15:45:28.457444+00:00"
+      "last_seen": "2025-01-15T21:10:44.408888+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.0xa4c1388432c1031b_binary","state":"off","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-03T14:25:23.294432+00:00","last_reported":"2025-01-03T14:25:28.115025+00:00","last_updated":"2025-01-03T14:25:23.294432+00:00","context":{"id":"01JGP8WZAY9JM2SA8R9XPQR0ET","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.0xa4c1388432c1031b_binary","state":"unavailable","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-11T16:32:48.761304+00:00","last_reported":"2025-01-15T21:07:53.792681+00:00","last_updated":"2025-01-15T21:07:53.792681+00:00","context":{"id":"01JHNWPKT0VV8WMPYBJDFP76GN","parent_id":null,"user_id":null}},
       "extra_data": {
         "binary": false
       },
-      "last_seen": "2025-01-03T15:45:28.449501+00:00"
+      "last_seen": "2025-01-15T21:10:44.399945+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388432c1031b_illuminance","state":"31370","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-03T14:25:23.295055+00:00","last_reported":"2025-01-03T14:25:28.115065+00:00","last_updated":"2025-01-03T14:25:23.295055+00:00","context":{"id":"01JGP8WZAZ6BNFHTXJRCYX5H9Z","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388432c1031b_illuminance","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Bathroom Window Illuminance"},"last_changed":"2025-01-11T16:32:48.761890+00:00","last_reported":"2025-01-15T21:07:53.793253+00:00","last_updated":"2025-01-15T21:07:53.793253+00:00","context":{"id":"01JHNWPKT1RHWNT2DW36KX3KSX","parent_id":null,"user_id":null}},
       "extra_data": {
         "illuminance": 31370
       },
-      "last_seen": "2025-01-03T15:45:28.457591+00:00"
+      "last_seen": "2025-01-15T21:10:44.409031+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_battery","state":"200","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Window Battery"},"last_changed":"2025-01-03T14:25:23.299939+00:00","last_reported":"2025-01-03T14:25:28.114260+00:00","last_updated":"2025-01-03T14:25:23.299939+00:00","context":{"id":"01JGP8WZB3BK0W3JDEV068BD7G","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Kid Window Battery"},"last_changed":"2025-01-11T16:32:48.774005+00:00","last_reported":"2025-01-15T21:07:53.808674+00:00","last_updated":"2025-01-15T21:07:53.808674+00:00","context":{"id":"01JHNWPKTGWHDY117PK3E5TQNV","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery": 200
       },
-      "last_seen": "2025-01-03T15:45:28.457737+00:00"
+      "last_seen": "2025-01-15T21:10:44.409739+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_battery_voltage","state":"3000","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Kid Window Battery Voltage"},"last_changed":"2025-01-03T14:25:23.300576+00:00","last_reported":"2025-01-03T14:25:28.114304+00:00","last_updated":"2025-01-03T14:25:23.300576+00:00","context":{"id":"01JGP8WZB41B1SSV39MX5NYTF8","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_battery_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Kid Window Battery Voltage"},"last_changed":"2025-01-11T16:32:48.774593+00:00","last_reported":"2025-01-15T21:07:53.809247+00:00","last_updated":"2025-01-15T21:07:53.809247+00:00","context":{"id":"01JHNWPKTH3WJAQ8ZV0BNPWE7G","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery_voltage": 3000
       },
-      "last_seen": "2025-01-03T15:45:28.457882+00:00"
+      "last_seen": "2025-01-15T21:10:44.409882+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.0xa4c1386ee9ede5dc_binary","state":"on","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-03T14:25:23.301137+00:00","last_reported":"2025-01-03T14:25:28.114344+00:00","last_updated":"2025-01-03T14:25:23.301137+00:00","context":{"id":"01JGP8WZB5KV2M59WT8HAV32P8","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.0xa4c1386ee9ede5dc_binary","state":"unavailable","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-11T16:32:48.775160+00:00","last_reported":"2025-01-15T21:07:53.809793+00:00","last_updated":"2025-01-15T21:07:53.809793+00:00","context":{"id":"01JHNWPKTH17DP2FFGMPQ3WNBN","parent_id":null,"user_id":null}},
       "extra_data": {
         "binary": true
       },
-      "last_seen": "2025-01-03T15:45:28.449672+00:00"
+      "last_seen": "2025-01-15T21:10:44.400104+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_illuminance","state":"763","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-03T14:25:23.301759+00:00","last_reported":"2025-01-03T14:25:28.114388+00:00","last_updated":"2025-01-03T14:25:23.301759+00:00","context":{"id":"01JGP8WZB589HZ8FVA069HDECK","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1386ee9ede5dc_illuminance","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Kid Window Illuminance"},"last_changed":"2025-01-11T16:32:48.778302+00:00","last_reported":"2025-01-15T21:07:53.810349+00:00","last_updated":"2025-01-15T21:07:53.810349+00:00","context":{"id":"01JHNWPKTJWXW8ZPB77QGXSWDF","parent_id":null,"user_id":null}},
       "extra_data": {
         "illuminance": 763
       },
-      "last_seen": "2025-01-03T15:45:28.458028+00:00"
+      "last_seen": "2025-01-15T21:10:44.410023+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_battery","state":"200","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Window Battery"},"last_changed":"2025-01-03T14:25:23.306617+00:00","last_reported":"2025-01-03T14:25:28.116446+00:00","last_updated":"2025-01-03T14:25:23.306617+00:00","context":{"id":"01JGP8WZBA3GCNSS9W01G6KTDT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Master Bedroom Window Battery"},"last_changed":"2025-01-11T16:32:48.734097+00:00","last_reported":"2025-01-15T21:07:53.763193+00:00","last_updated":"2025-01-15T21:07:53.763193+00:00","context":{"id":"01JHNWPKS3SRAVRPEEN826GM3F","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery": 200
       },
-      "last_seen": "2025-01-03T15:45:28.458170+00:00"
+      "last_seen": "2025-01-15T21:10:44.407393+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_battery_voltage","state":"2800","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Master Bedroom Window Battery Voltage"},"last_changed":"2025-01-03T14:25:23.307263+00:00","last_reported":"2025-01-03T14:25:28.116489+00:00","last_updated":"2025-01-03T14:25:23.307263+00:00","context":{"id":"01JGP8WZBBHFF1THGQCVFMMNWN","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_battery_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"mV","device_class":"voltage","friendly_name":"Master Bedroom Window Battery Voltage"},"last_changed":"2025-01-11T16:32:48.734694+00:00","last_reported":"2025-01-15T21:07:53.763796+00:00","last_updated":"2025-01-15T21:07:53.763796+00:00","context":{"id":"01JHNWPKS3ZGQX625Y7EQ7VQRC","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery_voltage": 2800
       },
-      "last_seen": "2025-01-03T15:45:28.458313+00:00"
+      "last_seen": "2025-01-15T21:10:44.407551+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_model","state":"TS0601","attributes":{"icon":"mdi:information","friendly_name":"Master Bedroom Window Model"},"last_changed":"2025-01-03T14:25:23.307885+00:00","last_reported":"2025-01-03T14:25:28.118814+00:00","last_updated":"2025-01-03T14:25:23.307885+00:00","context":{"id":"01JGP8WZBBXHR5FAF7C789RQ6Q","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_model","state":"unavailable","attributes":{"icon":"mdi:information","friendly_name":"Master Bedroom Window Model"},"last_changed":"2025-01-11T16:32:48.735282+00:00","last_reported":"2025-01-15T21:07:53.764351+00:00","last_updated":"2025-01-15T21:07:53.764351+00:00","context":{"id":"01JHNWPKS40NVH5HRPBGWWNKNF","parent_id":null,"user_id":null}},
       "extra_data": {
         "model": "TS0601"
       },
-      "last_seen": "2025-01-03T15:45:28.458453+00:00"
+      "last_seen": "2025-01-15T21:10:44.407703+00:00"
     },
     {
-      "state": {"entity_id":"binary_sensor.0xa4c1388c620bfea3_binary","state":"off","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-03T14:25:23.308431+00:00","last_reported":"2025-01-03T14:25:28.118864+00:00","last_updated":"2025-01-03T14:25:23.308431+00:00","context":{"id":"01JGP8WZBC99PJP9TYM9D2AJ45","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"binary_sensor.0xa4c1388c620bfea3_binary","state":"unavailable","attributes":{"device_class":"window","friendly_name":"Window"},"last_changed":"2025-01-11T16:32:48.735959+00:00","last_reported":"2025-01-15T21:07:53.767237+00:00","last_updated":"2025-01-15T21:07:53.767237+00:00","context":{"id":"01JHNWPKS7ZCAV0Z93932MSQXT","parent_id":null,"user_id":null}},
       "extra_data": {
         "binary": false
       },
-      "last_seen": "2025-01-03T15:45:28.449834+00:00"
+      "last_seen": "2025-01-15T21:10:44.399776+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_illuminance","state":"27994","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-03T14:25:23.309059+00:00","last_reported":"2025-01-03T14:25:28.118913+00:00","last_updated":"2025-01-03T14:25:23.309059+00:00","context":{"id":"01JGP8WZBDBKY6YAQM87KGF5JH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c1388c620bfea3_illuminance","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"lx","device_class":"illuminance","friendly_name":"Master Bedroom Window Illuminance"},"last_changed":"2025-01-11T16:32:48.736561+00:00","last_reported":"2025-01-15T21:07:53.767925+00:00","last_updated":"2025-01-15T21:07:53.767925+00:00","context":{"id":"01JHNWPKS7PC181X75FJ92PFBS","parent_id":null,"user_id":null}},
       "extra_data": {
         "illuminance": 27994
       },
-      "last_seen": "2025-01-03T15:45:28.458589+00:00"
+      "last_seen": "2025-01-15T21:10:44.407852+00:00"
     },
     {
-      "state": {"entity_id":"switch.0x70b3d52b600fa043_plug","state":"unavailable","attributes":{"icon":"mdi:power-plug","friendly_name":"Power Plug Waschmaschine Plug"},"last_changed":"2025-01-03T14:21:35.208424+00:00","last_reported":"2025-01-03T14:25:28.113153+00:00","last_updated":"2025-01-03T14:25:23.310471+00:00","context":{"id":"01JGP8WZBEGX9EVWK6GGKQACFJ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.0x70b3d52b600fa043_plug","state":"unavailable","attributes":{"icon":"mdi:power-plug","friendly_name":"Power Plug Waschmaschine Plug"},"last_changed":"2025-01-11T16:32:48.786339+00:00","last_reported":"2025-01-15T21:07:53.816634+00:00","last_updated":"2025-01-15T21:07:53.816634+00:00","context":{"id":"01JHNWPKTRTKK1D1M94V783MNX","parent_id":null,"user_id":null}},
       "extra_data": {
         "plug": true
       },
-      "last_seen": "2025-01-03T15:45:28.461736+00:00"
+      "last_seen": "2025-01-15T21:10:44.411546+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fa043_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Waschmaschine Voltage"},"last_changed":"2025-01-03T14:21:35.209047+00:00","last_reported":"2025-01-03T14:25:28.113197+00:00","last_updated":"2025-01-03T14:25:23.313075+00:00","context":{"id":"01JGP8WZBHF156HBC69QJNT4EJ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fa043_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Waschmaschine Voltage"},"last_changed":"2025-01-11T16:32:48.786947+00:00","last_reported":"2025-01-15T21:07:53.817153+00:00","last_updated":"2025-01-15T21:07:53.817153+00:00","context":{"id":"01JHNWPKTSC05J92JZA879MD82","parent_id":null,"user_id":null}},
       "extra_data": {
         "voltage": 235
       },
-      "last_seen": "2025-01-03T15:45:28.458729+00:00"
+      "last_seen": "2025-01-15T21:10:44.410447+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fa043_current","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Waschmaschine Current"},"last_changed":"2025-01-03T14:21:35.209599+00:00","last_reported":"2025-01-03T14:25:28.113233+00:00","last_updated":"2025-01-03T14:25:23.313642+00:00","context":{"id":"01JGP8WZBHNF1WREF55MTXSBC1","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fa043_current","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Waschmaschine Current"},"last_changed":"2025-01-11T16:32:48.787506+00:00","last_reported":"2025-01-15T21:07:53.817672+00:00","last_updated":"2025-01-15T21:07:53.817672+00:00","context":{"id":"01JHNWPKTSMFPKV4EXS2W9J8R2","parent_id":null,"user_id":null}},
       "extra_data": {
         "current": 0.10300000000000001
       },
-      "last_seen": "2025-01-03T15:45:28.458872+00:00"
+      "last_seen": "2025-01-15T21:10:44.410586+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fa043_power","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Waschmaschine Power"},"last_changed":"2025-01-03T14:21:35.210117+00:00","last_reported":"2025-01-03T14:25:28.113266+00:00","last_updated":"2025-01-03T14:25:23.315169+00:00","context":{"id":"01JGP8WZBKD3DKS5EK0ESNMD5E","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fa043_power","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Waschmaschine Power"},"last_changed":"2025-01-11T16:32:48.788018+00:00","last_reported":"2025-01-15T21:07:53.821902+00:00","last_updated":"2025-01-15T21:07:53.821902+00:00","context":{"id":"01JHNWPKTXKR9GH8JPYCJFVQ2G","parent_id":null,"user_id":null}},
       "extra_data": {
         "power": 0
       },
-      "last_seen": "2025-01-03T15:45:28.459012+00:00"
+      "last_seen": "2025-01-15T21:10:44.410726+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fa043_energy","state":"unavailable","attributes":{"state_class":"total","unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Waschmaschine Energy"},"last_changed":"2025-01-03T14:21:35.210634+00:00","last_reported":"2025-01-03T14:25:28.113297+00:00","last_updated":"2025-01-03T14:25:23.315781+00:00","context":{"id":"01JGP8WZBK0C0A8P1A76S1MF47","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fa043_energy","state":"unavailable","attributes":{"state_class":"total","unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Waschmaschine Energy"},"last_changed":"2025-01-11T16:32:48.788529+00:00","last_reported":"2025-01-15T21:07:53.822424+00:00","last_updated":"2025-01-15T21:07:53.822424+00:00","context":{"id":"01JHNWPKTYT5DMR49WP68NJ6P3","parent_id":null,"user_id":null}},
       "extra_data": {
         "energy": 11.24
       },
-      "last_seen": "2025-01-03T15:45:28.459162+00:00"
+      "last_seen": "2025-01-15T21:10:44.410865+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13804d8cb3275_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Master Bedroom Temperature"},"last_changed":"2025-01-03T14:21:35.216937+00:00","last_reported":"2025-01-03T14:25:28.115910+00:00","last_updated":"2025-01-03T14:25:23.321172+00:00","context":{"id":"01JGP8WZBSXXF7CCPKZEW9WYCB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13804d8cb3275_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Master Bedroom Temperature"},"last_changed":"2025-01-11T16:32:48.742410+00:00","last_reported":"2025-01-15T21:07:53.774541+00:00","last_updated":"2025-01-15T21:07:53.774541+00:00","context":{"id":"01JHNWPKSEY5ZCH5XJXDZGGQ50","parent_id":null,"user_id":null}},
       "extra_data": {
         "temperature": 17.34
       },
-      "last_seen": "2025-01-03T15:45:28.459336+00:00"
+      "last_seen": "2025-01-15T21:10:44.408153+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13804d8cb3275_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Master Bedroom Humidity"},"last_changed":"2025-01-03T14:21:35.217460+00:00","last_reported":"2025-01-03T14:25:28.115947+00:00","last_updated":"2025-01-03T14:25:23.321700+00:00","context":{"id":"01JGP8WZBSGVSAWZVW3MG9QA4E","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13804d8cb3275_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Master Bedroom Humidity"},"last_changed":"2025-01-11T16:32:48.742951+00:00","last_reported":"2025-01-15T21:07:53.775128+00:00","last_updated":"2025-01-15T21:07:53.775128+00:00","context":{"id":"01JHNWPKSF4ZW9Q2FFWC4BHG1T","parent_id":null,"user_id":null}},
       "extra_data": {
         "humidity": 53.27
       },
-      "last_seen": "2025-01-03T15:45:28.459480+00:00"
+      "last_seen": "2025-01-15T21:10:44.408305+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Bathroom Thermostat Temperature"},"last_changed":"2025-01-03T15:40:53.768831+00:00","last_reported":"2025-01-03T15:40:53.768831+00:00","last_updated":"2025-01-03T15:40:53.768831+00:00","context":{"id":"01JGPD77M87MCZK25JHHKA7949","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Bathroom Thermostat Temperature"},"last_changed":"2025-01-11T16:32:48.766963+00:00","last_reported":"2025-01-15T21:07:53.797145+00:00","last_updated":"2025-01-15T21:07:53.797145+00:00","context":{"id":"01JHNWPKT5CRYBH3NM7S234JVJ","parent_id":null,"user_id":null}},
       "extra_data": {
         "temperature": 16.7
       },
-      "last_seen": "2025-01-03T15:45:28.459664+00:00"
+      "last_seen": "2025-01-15T21:10:44.409175+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Bathroom Thermostat Humidity"},"last_changed":"2025-01-03T15:40:53.768938+00:00","last_reported":"2025-01-03T15:40:53.768938+00:00","last_updated":"2025-01-03T15:40:53.768938+00:00","context":{"id":"01JGPD77M8NKC5Z1RXWSW9K4WT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Bathroom Thermostat Humidity"},"last_changed":"2025-01-11T16:32:48.767588+00:00","last_reported":"2025-01-15T21:07:53.797719+00:00","last_updated":"2025-01-15T21:07:53.797719+00:00","context":{"id":"01JHNWPKT5C1W30D3X1044HB82","parent_id":null,"user_id":null}},
       "extra_data": {
         "humidity": 67.8
       },
-      "last_seen": "2025-01-03T15:45:28.459843+00:00"
+      "last_seen": "2025-01-15T21:10:44.409317+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Thermostat Battery"},"last_changed":"2025-01-03T15:40:53.769027+00:00","last_reported":"2025-01-03T15:40:53.769027+00:00","last_updated":"2025-01-03T15:40:53.769027+00:00","context":{"id":"01JGPD77M97GRRP3XFQVAZ9HY1","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Bathroom Thermostat Battery"},"last_changed":"2025-01-11T16:32:48.768173+00:00","last_reported":"2025-01-15T21:07:53.798290+00:00","last_updated":"2025-01-15T21:07:53.798290+00:00","context":{"id":"01JHNWPKT678JC8YTYE441KW52","parent_id":null,"user_id":null}},
       "extra_data": {
         "battery": 200
       },
-      "last_seen": "2025-01-03T15:45:28.460020+00:00"
+      "last_seen": "2025-01-15T21:10:44.409458+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_model","state":"unavailable","attributes":{"icon":"mdi:information","friendly_name":"Bathroom Thermostat Model"},"last_changed":"2025-01-03T15:40:53.769104+00:00","last_reported":"2025-01-03T15:40:53.769104+00:00","last_updated":"2025-01-03T15:40:53.769104+00:00","context":{"id":"01JGPD77M9V6M47D4CF1ACBCKH","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0xa4c13875e736e5ba_model","state":"unavailable","attributes":{"icon":"mdi:information","friendly_name":"Bathroom Thermostat Model"},"last_changed":"2025-01-11T16:32:48.768762+00:00","last_reported":"2025-01-15T21:07:53.798842+00:00","last_updated":"2025-01-15T21:07:53.798842+00:00","context":{"id":"01JHNWPKT66JB82C92WWKYNX6P","parent_id":null,"user_id":null}},
       "extra_data": {
         "model": "TY0201"
       },
-      "last_seen": "2025-01-03T15:45:28.460183+00:00"
+      "last_seen": "2025-01-15T21:10:44.409599+00:00"
     },
     {
-      "state": {"entity_id":"switch.0x70b3d52b6011b512_switch","state":"unavailable","attributes":{"device_class":"switch","friendly_name":"Signal Downstairs Switch"},"last_changed":"2025-01-03T14:21:35.236599+00:00","last_reported":"2025-01-03T14:29:33.037718+00:00","last_updated":"2025-01-03T14:25:23.330868+00:00","context":{"id":"01JGP8WZC2DRBZFGTG7ZYCEDRZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.0x70b3d52b6011b512_switch","state":"unavailable","attributes":{"device_class":"switch","friendly_name":"Signal Downstairs Switch"},"last_changed":"2025-01-11T16:32:48.793898+00:00","last_reported":"2025-01-15T21:07:53.826056+00:00","last_updated":"2025-01-15T21:07:53.826056+00:00","context":{"id":"01JHNWPKV2GRWT7WPWTS3YXSJS","parent_id":null,"user_id":null}},
       "extra_data": {
         "switch": false
       },
-      "last_seen": "2025-01-03T15:45:28.461871+00:00"
+      "last_seen": "2025-01-15T21:10:44.411689+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0xa4c138c59818879e_temperature","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kitchen Thermostat Temperature"},"last_changed":"2025-01-03T14:21:35.248980+00:00","last_reported":"2025-01-03T14:30:59.721925+00:00","last_updated":"2025-01-03T14:25:23.336999+00:00","context":{"id":"01JGP8WZC8RHJ4Y5NN3E0P7B2A","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "temperature": 19.8
-      },
-      "last_seen": "2025-01-03T15:45:28.460322+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.0xa4c138c59818879e_humidity","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"humidity","friendly_name":"Kitchen Thermostat Humidity"},"last_changed":"2025-01-03T14:21:35.249530+00:00","last_reported":"2025-01-03T14:30:59.721966+00:00","last_updated":"2025-01-03T14:25:23.337608+00:00","context":{"id":"01JGP8WZC9R0GHFK74M7BP2RZH","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "humidity": 61.9
-      },
-      "last_seen": "2025-01-03T15:45:28.460470+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.0xa4c138c59818879e_battery","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"%","device_class":"battery","friendly_name":"Kitchen Thermostat Battery"},"last_changed":"2025-01-03T14:21:35.250036+00:00","last_reported":"2025-01-03T14:30:59.722002+00:00","last_updated":"2025-01-03T14:25:23.338193+00:00","context":{"id":"01JGP8WZCAJQTWKHMCX67ZKK8C","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "battery": 196
-      },
-      "last_seen": "2025-01-03T15:45:28.460607+00:00"
-    },
-    {
-      "state": {"entity_id":"sensor.0xa4c138c59818879e_model","state":"unavailable","attributes":{"icon":"mdi:information","friendly_name":"Kitchen Thermostat Model"},"last_changed":"2025-01-03T14:21:35.250533+00:00","last_reported":"2025-01-03T14:30:59.722036+00:00","last_updated":"2025-01-03T14:25:23.340915+00:00","context":{"id":"01JGP8WZCCCDB05H2CAMPMDVE5","parent_id":null,"user_id":null}},
-      "extra_data": {
-        "model": "TY0201"
-      },
-      "last_seen": "2025-01-03T15:45:28.460742+00:00"
-    },
-    {
-      "state": {"entity_id":"switch.0x70b3d52b600fde29_plug","state":"unavailable","attributes":{"icon":"mdi:power-plug","friendly_name":"Power Plug Exit Doors Plug"},"last_changed":"2025-01-03T14:21:35.251755+00:00","last_reported":"2025-01-03T14:25:23.342124+00:00","last_updated":"2025-01-03T14:25:23.342124+00:00","context":{"id":"01JGP8WZCEBJRPTA6SZJVZKHNA","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"switch.0x70b3d52b600fde29_plug","state":"unavailable","attributes":{"icon":"mdi:power-plug","friendly_name":"Power Plug Exit Doors Plug"},"last_changed":"2025-01-11T16:32:48.713797+00:00","last_reported":"2025-01-15T21:07:53.753773+00:00","last_updated":"2025-01-15T21:07:53.753773+00:00","context":{"id":"01JHNWPKRSS2F4W8EEMYQCH9CJ","parent_id":null,"user_id":null}},
       "extra_data": {
         "plug": true
       },
-      "last_seen": "2025-01-03T15:45:28.462005+00:00"
+      "last_seen": "2025-01-15T21:10:44.411403+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fde29_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Exit Doors Voltage"},"last_changed":"2025-01-03T14:21:35.252222+00:00","last_reported":"2025-01-03T14:25:23.342668+00:00","last_updated":"2025-01-03T14:25:23.342668+00:00","context":{"id":"01JGP8WZCEYN4WK2A3YS119ACT","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fde29_voltage","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"V","device_class":"voltage","friendly_name":"Power Plug Exit Doors Voltage"},"last_changed":"2025-01-11T16:32:48.715612+00:00","last_reported":"2025-01-15T21:07:53.754390+00:00","last_updated":"2025-01-15T21:07:53.754390+00:00","context":{"id":"01JHNWPKRT5WZ0VE8KVJK43J5W","parent_id":null,"user_id":null}},
       "extra_data": {
         "voltage": 234
       },
-      "last_seen": "2025-01-03T15:45:28.460876+00:00"
+      "last_seen": "2025-01-15T21:10:44.401731+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fde29_current","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Exit Doors Current"},"last_changed":"2025-01-03T14:21:35.252676+00:00","last_reported":"2025-01-03T14:25:23.343190+00:00","last_updated":"2025-01-03T14:25:23.343190+00:00","context":{"id":"01JGP8WZCFPQKRHY7SDH3GXHT0","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fde29_current","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"A","device_class":"current","friendly_name":"Power Plug Exit Doors Current"},"last_changed":"2025-01-11T16:32:48.716212+00:00","last_reported":"2025-01-15T21:07:53.754921+00:00","last_updated":"2025-01-15T21:07:53.754921+00:00","context":{"id":"01JHNWPKRTSKQHZVNVT2HM90H8","parent_id":null,"user_id":null}},
       "extra_data": {
         "current": 0.08700000000000001
       },
-      "last_seen": "2025-01-03T15:45:28.461012+00:00"
+      "last_seen": "2025-01-15T21:10:44.406791+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fde29_power","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Exit Doors Power"},"last_changed":"2025-01-03T14:21:35.254691+00:00","last_reported":"2025-01-03T14:25:23.343727+00:00","last_updated":"2025-01-03T14:25:23.343727+00:00","context":{"id":"01JGP8WZCFS1YV1025T5WBFE6E","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fde29_power","state":"unavailable","attributes":{"state_class":"measurement","unit_of_measurement":"W","device_class":"power","friendly_name":"Power Plug Exit Doors Power"},"last_changed":"2025-01-11T16:32:48.716713+00:00","last_reported":"2025-01-15T21:07:53.755455+00:00","last_updated":"2025-01-15T21:07:53.755455+00:00","context":{"id":"01JHNWPKRVK47Q0VV76RZ2ND3D","parent_id":null,"user_id":null}},
       "extra_data": {
         "power": 1
       },
-      "last_seen": "2025-01-03T15:45:28.461146+00:00"
+      "last_seen": "2025-01-15T21:10:44.407022+00:00"
     },
     {
-      "state": {"entity_id":"sensor.0x70b3d52b600fde29_energy","state":"unavailable","attributes":{"state_class":"total","unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Exit Doors Energy"},"last_changed":"2025-01-03T14:21:35.255209+00:00","last_reported":"2025-01-03T14:25:23.344227+00:00","last_updated":"2025-01-03T14:25:23.344227+00:00","context":{"id":"01JGP8WZCGCE4C57PR19702AZ2","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.0x70b3d52b600fde29_energy","state":"unavailable","attributes":{"state_class":"total","unit_of_measurement":"kWh","device_class":"energy","friendly_name":"Power Plug Exit Doors Energy"},"last_changed":"2025-01-11T16:32:48.717223+00:00","last_reported":"2025-01-15T21:07:53.755946+00:00","last_updated":"2025-01-15T21:07:53.755946+00:00","context":{"id":"01JHNWPKRVCS9KZZCWPMF193PC","parent_id":null,"user_id":null}},
       "extra_data": {
         "energy": 0.05
       },
-      "last_seen": "2025-01-03T15:45:28.461283+00:00"
+      "last_seen": "2025-01-15T21:10:44.407191+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.tz3000_bjawzodf_ty0201_temperature_2","state":"22.5","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kitchen Thermostat Temperature"},"last_changed":"2025-01-15T21:16:10.084640+00:00","last_reported":"2025-01-15T21:16:38.559035+00:00","last_updated":"2025-01-15T21:16:38.559035+00:00","context":{"id":"01JHNX6M8ZTQ9KRERK7TA644CJ","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-01-15T21:17:01.122235+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.kitchen_thermostat_temperature_2","state":"21.4","attributes":{"state_class":"measurement","unit_of_measurement":"°C","device_class":"temperature","friendly_name":"Kitchen Thermostat Temperature"},"last_changed":"2025-01-11T16:35:48.743074+00:00","last_reported":"2025-01-11T16:35:48.743074+00:00","last_updated":"2025-01-11T16:35:48.743074+00:00","context":{"id":"01JHB3HHC77NJSFDS63YXSE8AK","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-01-11T16:36:33.452335+00:00"
+    },
+    {
+      "state": {"entity_id":"button.kitchen_thermostat_identify_2","state":"2025-01-15T21:13:50.688838+00:00","attributes":{"device_class":"identify","friendly_name":"Kitchen Thermostat Identify"},"last_changed":"2025-01-15T21:13:50.688892+00:00","last_reported":"2025-01-15T21:13:50.688892+00:00","last_updated":"2025-01-15T21:13:50.688892+00:00","context":{"id":"01JHNX1GB03R0M9JCN2QXDEZAS","parent_id":null,"user_id":"6ab73dfb34ab49b9afd9c1fb4697084e"}},
+      "extra_data": null,
+      "last_seen": "2025-01-15T21:15:49.690343+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.kitchen_thermostat_battery_2","state":"96","attributes":{"state_class":"measurement","battery_voltage":3.0,"unit_of_measurement":"%","device_class":"battery","friendly_name":"Kitchen Thermostat Battery"},"last_changed":"2025-01-15T21:11:48.534449+00:00","last_reported":"2025-01-15T21:11:48.534449+00:00","last_updated":"2025-01-15T21:11:48.534449+00:00","context":{"id":"01JHNWXS1PVZDYNRJD8SH7DH60","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-01-15T21:15:49.690635+00:00"
+    },
+    {
+      "state": {"entity_id":"update.kitchen_thermostat_firmware_2","state":"unknown","attributes":{"auto_update":false,"display_precision":2,"installed_version":"0x10013001","in_progress":false,"latest_version":null,"release_summary":null,"release_url":null,"skipped_version":null,"title":null,"update_percentage":null,"device_class":"firmware","entity_picture":"https://brands.home-assistant.io/_/zha/icon.png","friendly_name":"Kitchen Thermostat Firmware","supported_features":23},"last_changed":"2025-01-15T21:11:46.742329+00:00","last_reported":"2025-01-15T21:11:46.742329+00:00","last_updated":"2025-01-15T21:11:46.742329+00:00","context":{"id":"01JHNWXQ9PB7VKJ6ETFTT029ZH","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2025-01-15T21:15:49.690917+00:00"
     }
   ]
 }
