@@ -264,16 +264,14 @@
   alias: Set washmachine to active
   description: ''
   triggers:
-  - type: power
-    device_id: 9b4b92c42c7aa57ea6ef528470036bb1
-    entity_id: 80404132ebaae930f2527be2e0af71ac
-    domain: sensor
-    trigger: device
-    above: 3
+  - trigger: numeric_state
+    entity_id:
+    - sensor.washing_machine_plug_energy
     for:
       hours: 0
-      minutes: 1
-      seconds: 0
+      minutes: 0
+      seconds: 30
+    above: 5
   conditions: []
   actions:
   - target:
@@ -286,16 +284,14 @@
   alias: Set washmachine to idle
   description: ''
   triggers:
-  - type: power
-    device_id: 9b4b92c42c7aa57ea6ef528470036bb1
-    entity_id: 80404132ebaae930f2527be2e0af71ac
-    domain: sensor
-    trigger: device
-    below: 3
+  - trigger: numeric_state
+    entity_id:
+    - sensor.washing_machine_plug_power
     for:
       hours: 0
-      minutes: 3
-      seconds: 0
+      minutes: 0
+      seconds: 30
+    below: 5
   conditions: []
   actions:
   - target:
@@ -394,16 +390,14 @@
   alias: Set dryer to idle
   description: ''
   triggers:
-  - type: power
-    device_id: d7eb729eb34fec046f84f53431e50c7a
-    entity_id: 11453766c044dbef8728214568b456aa
-    domain: sensor
-    trigger: device
+  - trigger: numeric_state
+    entity_id:
+    - sensor.dryer_plug_power
     for:
       hours: 0
-      minutes: 3
-      seconds: 0
-    below: 3
+      minutes: 0
+      seconds: 15
+    below: 10
   conditions: []
   actions:
   - data:
@@ -416,16 +410,14 @@
   alias: Set dryer active
   description: ''
   triggers:
-  - type: power
-    device_id: d7eb729eb34fec046f84f53431e50c7a
-    entity_id: 11453766c044dbef8728214568b456aa
-    domain: sensor
-    trigger: device
-    above: 3
+  - trigger: numeric_state
+    entity_id:
+    - sensor.dryer_plug_power
     for:
       hours: 0
-      minutes: 1
-      seconds: 0
+      minutes: 0
+      seconds: 30
+    above: 10
   conditions: []
   actions:
   - data:
@@ -433,4 +425,40 @@
     action: input_select.set_options
     target:
       entity_id: input_select.dryer_status
+  mode: single
+- id: '1737204377307'
+  alias: Dryer notification
+  description: ''
+  triggers:
+  - entity_id:
+    - input_select.dryer_status
+    from: active
+    to: idle
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+    trigger: state
+  conditions: []
+  actions:
+  - metadata: {}
+    data:
+      message: Sušilica je gotova!
+      title: Sušilica
+    action: notify.notify
+  mode: single
+- id: '1737479515478'
+  alias: Kid Wled ON
+  description: ''
+  triggers:
+  - trigger: time
+    at: '18:45:00'
+  conditions: []
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 35
+    target:
+      device_id: 11cc94c6865a4b2cb3e18285fcbc2ee7
   mode: single

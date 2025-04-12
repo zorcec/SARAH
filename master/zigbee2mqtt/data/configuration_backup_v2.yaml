@@ -1,0 +1,8 @@
+homeassistant: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: 'mqtt://mqtt:1883'
+serial:
+  port: '/dev/ttyUSB0'
+frontend:
+  port: 8080

@@ -1,0 +1,78 @@
+{
+    "0xa4c1385ee83ea948": {
+        "battery": 62,
+        "voltage": 2800,
+        "linkquality": 75
+    },
+    "0xa4c138880ab6f3ec": {
+        "linkquality": 141
+    },
+    "0xa4c13875e736e5ba": {
+        "humidity": 51.1,
+        "linkquality": 138,
+        "temperature": 19.8,
+        "battery": 42
+    },
+    "0x70b3d52b6011b512": {
+        "linkquality": 138
+    },
+    "0xa4c1383df345d654": {
+        "temperature": 21.6,
+        "humidity": 46.7,
+        "battery": 100,
+        "linkquality": 84,
+        "update": {
+            "state": "idle",
+            "installed_version": 268513281,
+            "latest_version": 268513281
+        }
+    },
+    "0xa4c1384f77f3eb19": {
+        "linkquality": 138,
+        "temperature": 19.1,
+        "humidity": 56.4,
+        "battery": 100
+    },
+    "0xa4c138c59818879e": {
+        "temperature": 20.8,
+        "humidity": 51,
+        "battery": 75,
+        "linkquality": 138,
+        "update": {
+            "state": "idle",
+            "installed_version": 268513281,
+            "latest_version": 268513281
+        }
+    },
+    "0xa4c138f05fb80021": {
+        "temperature": 20.9,
+        "humidity": 49.2,
+        "battery": 100,
+        "update": {
+            "state": "idle",
+            "installed_version": 268513281,
+            "latest_version": 268513281
+        },
+        "linkquality": 72
+    },
+    "0x70b3d52b60109663": {
+        "linkquality": 0,
+        "state": "ON",
+        "indicator_mode": "on",
+        "power_outage_memory": "on",
+        "power": 0,
+        "current": 0.09,
+        "voltage": 237,
+        "energy": 0
+    },
+    "0x70b3d52b600fa043": {
+        "power": 0,
+        "current": 0.08,
+        "voltage": 237,
+        "state": "ON",
+        "energy": 0,
+        "linkquality": 135,
+        "indicator_mode": "on",
+        "power_outage_memory": "on"
+    }
+}

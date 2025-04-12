@@ -52,7 +52,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.kitchen_thermostat_temperature"
+              "entity": "sensor.kitchen_thermostat_temperature_2"
             },
             {
               "graph": "line",
@@ -141,7 +141,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.tz3000_bjawzodf_ty0201_temperature"
+              "entity": "sensor.bathroom_thermostat_temperature"
             },
             {
               "graph": "line",
@@ -149,7 +149,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.tz3000_bjawzodf_ty0201_humidity"
+              "entity": "sensor.bathroom_thermostat_humidity"
             },
             {
               "type": "history-graph",
@@ -220,7 +220,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.master_bedroom_sensor_temperature"
+              "entity": "sensor.bedroom_thermostat_temperature"
             },
             {
               "graph": "line",
@@ -228,7 +228,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.master_bedroom_sensor_humidity"
+              "entity": "sensor.bedroom_thermostat_humidity"
             },
             {
               "type": "history-graph",
@@ -280,14 +280,14 @@
               "type": "sensor",
               "detail": 1,
               "name": "Humidity",
-              "entity": "sensor.kid_sensor_humidity"
+              "entity": "sensor.kid_thermostat_humidity"
             },
             {
               "graph": "line",
               "type": "sensor",
               "detail": 1,
               "name": "Temperature",
-              "entity": "sensor.kid_sensor_temperature"
+              "entity": "sensor.kid_thermostat_temperature"
             },
             {
               "type": "history-graph",
@@ -355,7 +355,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Temperature",
-              "entity": "sensor.top_sensor_temperature"
+              "entity": "sensor.top_thermostat_temperature"
             },
             {
               "graph": "line",
@@ -363,7 +363,7 @@
               "type": "sensor",
               "detail": 2,
               "name": "Humidity",
-              "entity": "sensor.master_bedroom_sensor_humidity"
+              "entity": "sensor.top_thermostat_humidity"
             },
             {
               "type": "custom:scheduler-card",
@@ -472,10 +472,10 @@
               "min": 25,
               "severity": {
                 "green": 30,
-                "yellow": 40,
-                "red": 45
+                "yellow": 35,
+                "red": 37
               },
-              "max": 60
+              "max": 40
             },
             {
               "type": "horizontal-stack",
@@ -653,6 +653,20 @@
               "detail": 2,
               "name": "Master Node CPU",
               "entity": "sensor.processor_temperature"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.zigbee2mqtt_bridge_permit_join",
+                  "name": "Permit join"
+                },
+                {
+                  "entity": "button.zigbee2mqtt_bridge_restart",
+                  "name": "Restart"
+                }
+              ],
+              "title": "Zigbee2MQTT Bridge"
             }
           ]
         },
@@ -669,10 +683,10 @@
               "type": "glance",
               "entities": [
                 {
-                  "entity": "sensor.power_plug_waschmaschine_power"
+                  "entity": "input_select.washmachine_status"
                 },
                 {
-                  "entity": "input_select.washmachine_status"
+                  "entity": "sensor.washing_machine_plug_power"
                 }
               ],
               "title": "Waschmaschine",
@@ -685,10 +699,10 @@
               "type": "glance",
               "entities": [
                 {
-                  "entity": "sensor.tz3000_wzmuk9ai_ts011f_power"
+                  "entity": "input_select.dryer_status"
                 },
                 {
-                  "entity": "input_select.dryer_status"
+                  "entity": "sensor.dryer_plug_power"
                 }
               ],
               "state_color": true,

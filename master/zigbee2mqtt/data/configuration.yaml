@@ -1,0 +1,36 @@
+homeassistant:
+  enabled: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://mqtt:1883
+serial:
+  port: /dev/ttyUSB0
+frontend:
+  enabled: true
+  port: 8080
+version: 4
+external_converters:
+  - custom-devices/ts0201.js
+devices:
+  '0xa4c1385ee83ea948':
+    friendly_name: Kid Push
+  '0xa4c138880ab6f3ec':
+    friendly_name: Middle Repeater
+  '0xa4c13875e736e5ba':
+    friendly_name: Bathroom Thermostat
+  '0x70b3d52b6011b512':
+    friendly_name: Down Repeater
+  '0xa4c1383df345d654':
+    friendly_name: Top Thermostat
+  '0xa4c1384f77f3eb19':
+    friendly_name: Kid Thermostat
+  '0xa4c138c59818879e':
+    friendly_name: Kitchen Thermostat
+  '0xa4c138f05fb80021':
+    friendly_name: Bedroom Thermostat
+  '0x70b3d52b60109663':
+    friendly_name: Washing Machine Plug
+  '0x70b3d52b600fa043':
+    friendly_name: Dryer Plug
+advanced:
+  log_level: info

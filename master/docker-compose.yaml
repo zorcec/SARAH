@@ -1,15 +1,14 @@
-version: "2.4"
 services:
 
   mosquitto:
     image: eclipse-mosquitto:1.6.14
-    restart: always
+    restart: unless-stopped
     ports:
       - "0.0.0.0:1883:1883"
   
   home-assistant:
     container_name: home-assistant
-    restart: always
+    restart: unless-stopped
     build:
       context: ./home-assistant
     ports:
@@ -26,7 +25,7 @@ services:
 
   tasmota-webserver:
     image: nginx
-    restart: always
+    restart: unless-stopped
     container_name: tasmota-webserver
     volumes:
       - ./tasmota-webserver:/usr/share/nginx/html
@@ -35,7 +34,7 @@ services:
 
   letsencrypt:
    image: linuxserver/swag
-   restart: always
+   restart: unless-stopped
    container_name: letsencrypt
    cap_add:
      - NET_ADMIN
@@ -56,7 +55,7 @@ services:
 
   duckdns:
    image: linuxserver/duckdns
-   restart: always
+   restart: unless-stopped
    container_name: duckdns
    environment:
      - TZ=Europe/London
@@ -66,7 +65,7 @@ services:
 
   mariadb:
     image: mariadb
-    restart: always
+    restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: admin
     volumes:
@@ -74,7 +73,7 @@ services:
 
   ntp:
     image: cturra/ntp
-    restart: always
+    restart: unless-stopped
     ports:
       - "0.0.0.0:123:123/udp"
     tmpfs:
@@ -86,7 +85,7 @@ services:
       
   adminer:
     image: adminer
-    restart: always
+    restart: unless-stopped
     ports:
       - 0.0.0.0:1111:8080
     links:
@@ -94,27 +93,27 @@ services:
       
   portainer:
     image: portainer/portainer
-    restart: always
+    restart: unless-stopped
     ports:
      - 0.0.0.0:9000:9000
     volumes:
      - /var/run/docker.sock:/var/run/docker.sock
      - ./portainer/data:/data
 
-#  tasmo-backup:
-#    restart: always
-#    ports:
-#        - 0.0.0.0:8259:80
-#    volumes:
-#        - ./tasmo-backup/data:/var/www/html/data
-#    environment:
-#        - DBTYPE=sqlite
-#        - DBNAME=data/tasmobackup
-#    container_name: tasmo-backup
-#    image: 'danmed/tasmobackupv1'
+  tasmo-backup:
+    restart: unless-stopped
+    ports:
+        - 0.0.0.0:8259:80
+    volumes:
+        - ./tasmo-backup/data:/var/www/html/data
+    environment:
+        - DBTYPE=sqlite
+        - DBNAME=data/tasmobackup
+    container_name: tasmo-backup
+    image: 'danmed/tasmobackupv1'
 
   hyperion-pc:
-    restart: always
+    restart: unless-stopped
     image: sirfragalot/hyperion.ng:2.0.15
     volumes:
       - ./hyperion:/root/.hyperion:rw
@@ -125,7 +124,7 @@ services:
       - 0.0.0.0:8090:8090
 
   hyperion-tv:
-    restart: always
+    restart: unless-stopped
     image: sirfragalot/hyperion.ng:2.0.15
     volumes:
       - ./hyperion-tv:/root/.hyperion:rw
@@ -133,3 +132,17 @@ services:
       - 0.0.0.0:19446:19445
       - 0.0.0.0:19401:19400
       - 0.0.0.0:8091:8090
+
+  zigbee2mqtt:
+    container_name: zigbee2mqtt
+    image: koenkk/zigbee2mqtt
+    restart: unless-stopped
+    volumes:
+      - ./zigbee2mqtt/data:/app/data
+      - /run/udev:/run/udev:ro
+    devices:
+      - /dev/serial/by-id/usb-ITead_Sonoff_Zigbee_3.0_USB_Dongle_Plus_361540efd21bef118f389ed94909ffd0-if00-port0:/dev/ttyUSB0
+    ports:
+      - 0.0.0.0:9090:8080
+    external_links:
+      - mosquitto:mqtt

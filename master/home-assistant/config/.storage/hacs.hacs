@@ -17,7 +17,13 @@
       "wernerhp/ha_integration_load_shedding": "wernerhp/ha.integration.load_shedding",
       "wills106/homsassistant-solax-modbus": "wills106/homeassistant-solax-modbus",
       "mf-social/ps-date-countdown": "point-4ward/ps-date-countdown",
-      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo"
+      "fuatakgun/kia_uvo": "Hyundai-Kia-Connect/kia_uvo",
+      "htmltiger/numberbox-card": "junkfix/numberbox-card",
+      "MiguelAngelLV/gas_station_spain": "MiguelAngelLV/ha-gas-station-spain",
+      "miguelangellv/balance_neto": "MiguelAngelLV/ha-balance-neto",
+      "MiguelAngelLV/octopus_spain": "MiguelAngelLV/ha-octopus-spain",
+      "miguelangellv/tarifa_20td": "MiguelAngelLV/ha-tarifa-20td",
+      "zakery292/monitormysolar": "Monitor-My-Solar/monitormysolar"
     },
     "ignored_repositories": []
   }
