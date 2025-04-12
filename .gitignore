@@ -1,4 +1,5 @@
 .idea
+*.log
 /**/*.pyc
 /**/secret.json
 /**/secrets.yaml
@@ -25,3 +26,5 @@ master/home-assistant/config/.storage/core.restore_state
 master/home-assistant/config/.storage/hacs.repositories
 master/home-assistant/config/.storage/http
 master/home-assistant/config/.storage/trace.saved_traces
+master/home-assistant/config/.storage/xiaomi_gateway3/tomislav.zorcec@gmail.com.json
+master/zigbee2mqtt/data/state.json
